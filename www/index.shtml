@@ -9,6 +9,10 @@
 <body class="page_home" itemscope itemtype="http://schema.org/WebPage">
 
 	<!--#include virtual="_header.shtml?data=something&image=cool"-->
+	<hr>
+	<!--#include virtual="_header.shtml?data=something&image=col"-->
+	<hr>
+	<!--#include virtual="_header.shtml?q"-->
 
 	<!--#include virtual="_footer.shtml"-->
 

@@ -1,10 +1,17 @@
+AddDefaultCharset utf-8
+
 #RewriteEngine On
 #RewriteBase /
 
-Options +Indexes +Includes
+#Options +Indexes +Includes
 Options +Includes
  
 #AddType text/html .html 
 #AddHandler server-parsed  .html
 
-AddDefaultCharset utf-8
+
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
+#AddHandler server-parsed  .shtml
+
+#SSILegacyExprParser on

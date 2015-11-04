@@ -1,0 +1,354 @@
+
+html {
+	font-size: 62.5%; /* =10px */
+	width: 100%;
+
+}
+body {
+	line-height: 1.2;
+	font-size: 1.6rem; /* 1.6*10px = 16px */
+	min-width: 950px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+/* для плавающих блоков */
+.clearfix:after {
+	display: block;
+	height: 0;
+	clear: both;
+	content: '';
+	visibility: hidden;
+}
+
+.wrapper { /* не должен быть на одном блоке с классом .table */
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+/*.margin-bottom-10 {
+	margin-bottom: 10px;
+}*/
+/*.margin-bottom-15 {
+	margin-bottom: 15px;
+}*/
+/*.margin-bottom {
+	margin-bottom: 30px;
+}*/
+
+
+
+
+
+
+
+/* табличная модель */
+.table {
+	display: table;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.table-cell {
+	padding-left: 20px;
+	/*width: 33.3%;*/
+}
+.table-cell:first-child {
+	padding-left: 0;
+	/*width: 33.4%;*/
+}
+
+/* колонки 20-auto-20 */
+.table.COL-sym > .table-cell.column-left {
+	width: 20%;
+	padding-right: 20px;
+}
+.table.COL-sym > .table-cell.column-right {
+	width: 20%;
+	padding-left: 20px;
+}
+.table.COL-sym > .table-cell.column-central {
+	padding: 0;
+	width: auto;
+}
+
+/* колонки 20-auto-24,45 */
+.table.COL-asym > .table-cell.column-left {
+	width: 20%;
+	padding-right: 20px;
+}
+.table.COL-asym > .table-cell.column-right {
+	width: 25.45%;
+	padding-left: 20px;
+}
+.table.COL-asym > .table-cell.column-central {
+	padding: 0;
+	width: auto;
+}
+
+/* правая колонка шириной на две */
+/*.table.COL-double > .table-cell.column-left {
+	width: 20%;
+	padding-right: 20px;
+}
+.table.COL-double > .table-cell.column-right {
+	padding: 0;
+	width: auto;
+}*/
+
+/*.table.COL-double .column-double {
+	margin: 10px 0 0 0;
+}*/
+/*.table.COL-double .three-columns .table-cell {
+	width: 33.3%;
+}*/
+/*.table.COL-double > .table-cell > .column-left {
+	padding-left: 0;
+	width: auto;
+}
+.table.COL-double > .table-cell > .column-right {
+	padding-left: 20px;
+	width: 25%;
+}*/
+
+.table.COL-four > .table-cell {
+	width: 25%;
+}
+.table.COL-three > .table-cell {
+	width: 33.3%;
+}
+.table.COL-three > .table-cell.double {
+	width: 66.7%;
+}
+
+
+.table.COL-two > .table-cell {
+	width: 50%;
+}
+
+
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid #e5e5e5;
+}
+
+
+
+
+
+b {
+	font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	font-family: 'Noto Serif', serif;	
+}
+h6 {
+	font-size: 14px;
+}
+h5 {
+	font-size: 16px;
+}
+h4 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 20px;
+}
+h2 {
+	font-size: 24px;
+}
+h1 {
+	font-size: 30px;
+}
+h3.equal-height {
+  	padding: 10px 0 12px 0;
+}
+
+
+
+
+
+
+
+
+a {
+	text-decoration: underline;
+	color: #0e53b2;
+}
+a:hover {
+	text-decoration: none;
+}
+
+
+
+/* формы */
+/* плавное изменение прозрачности  placeholder-а при фокусе */
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder, 
+input[type="password"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-weight: bold; font-family: 'Open Sans', sans-serif;}
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder, 
+input[type="number"]::-moz-placeholder, 
+input[type="password"]::-moz-placeholder, 
+input[type="tel"]::-moz-placeholder, 
+input[type="url"]::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-weight: bold; font-family: 'Open Sans', sans-serif;} /* Firefox 19+ */
+input[type="text"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder, 
+input[type="number"]:-moz-placeholder, 
+input[type="password"]:-moz-placeholder, 
+input[type="tel"]:-moz-placeholder, 
+input[type="url"]:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-weight: bold; font-family: 'Open Sans', sans-serif;} /* Firefox 18- */
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder, 
+input[type="number"]:-ms-input-placeholder, 
+input[type="password"]:-ms-input-placeholder, 
+input[type="tel"]:-ms-input-placeholder, 
+input[type="url"]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-weight: bold; font-family: 'Open Sans', sans-serif;}
+input[type="text"]:focus::-webkit-input-placeholder,
+input[type="email"]:focus::-webkit-input-placeholder, 
+input[type="number"]:focus::-webkit-input-placeholder, 
+input[type="password"]:focus::-webkit-input-placeholder, 
+input[type="tel"]:focus::-webkit-input-placeholder, 
+input[type="url"]:focus::-webkit-input-placeholder {opacity: 0;}
+input[type="text"]:focus::-moz-placeholder,
+input[type="email"]:focus::-moz-placeholder, 
+input[type="number"]:focus::-moz-placeholder, 
+input[type="password"]:focus::-moz-placeholder, 
+input[type="tel"]:focus::-moz-placeholder, 
+input[type="url"] :focus::-moz-placeholder         {opacity: 0;}
+input[type="text"]:focus:-moz-placeholder,
+input[type="email"]:focus:-moz-placeholder, 
+input[type="number"]:focus:-moz-placeholder, 
+input[type="password"]:focus:-moz-placeholder, 
+input[type="tel"]:focus:-moz-placeholder, 
+input[type="url"]:focus:-moz-placeholder           {opacity: 0;}
+input[type="text"]:focus:-ms-input-placeholder,
+input[type="email"]:focus:-ms-input-placeholder, 
+input[type="number"]:focus:-ms-input-placeholder, 
+input[type="password"]:focus:-ms-input-placeholder, 
+input[type="tel"]:focus:-ms-input-placeholder, 
+input[type="url"]:focus:-ms-input-placeholder      {opacity: 0;}
+
+
+/* регулярные формы - попапы и проч */
+
+input[type="email"], 
+input[type="number"], 
+input[type="password"], 
+input[type="tel"], 
+input[type="url"], 
+input[type="text"] {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	border: 2px solid #e1e1e1;
+	font-weight: bold;
+	padding: 8px 8px 7px;
+	width: 100%;
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	margin-bottom: 14px;
+}
+input[type="submit"] {
+	width: 220px;
+	border: 0;
+	background: #0e53b2;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	color: #fff;
+	padding: 9px 8px 8px;
+	cursor: pointer;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+input[type="submit"]:hover {
+	opacity: .85;
+}
+input.center {
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* лэйблы, чекбоксы, радиобатоны */
+label {
+	color: #747474;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	margin-bottom: 7px;
+	display: inline-block;
+}
+/*label.checkboxWrap,
+label.radioWrap {
+	color: #000;
+	cursor: pointer;
+	position: relative;
+	padding-left: 21px;
+}
+.checkboxWrap input[type="checkbox"],
+.radioWrap input[type="radio"]{
+	display: none;
+}
+.radioWrap:before,
+.checkboxWrap:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	cursor: pointer;
+	background: url("../images/sprite_forms.png");
+}
+.checkboxWrap:before {
+	background-position: 0 0;
+}
+.checkboxWrap.checked:before {
+	background-position: 0 -14px;
+}
+.radioWrap:before {
+	background-position: 14px 0;
+}
+.radioWrap.checked:before {
+	background-position: 14px -14px;
+}*/
+
+
+
+
+
+
+
+
+
+
+

@@ -8,7 +8,7 @@
 </head>
 <body class="page_home" itemscope itemtype="http://schema.org/WebPage">
 
-	<!--#include virtual="_header.shtml"-->
+	<!--#include virtual="_header.shtml?data=something&image=cool"-->
 
 	<!--#include virtual="_footer.shtml"-->
 

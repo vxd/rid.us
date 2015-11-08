@@ -1,4 +1,19 @@
-<footer itemscope itemtype="http://schema.org/WPFooter">
+<footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 
+	<section class="footer__tags">
+		<div class="wrapper">
+			<ul>
+				<li><a href="#" title="">тэги и прочая хрень</a></li>
+				<li><a href="#" title="">тэги и прочая хрень</a></li>
+				<li><a href="#" title="">тэги и прочая хрень</a></li>
+				<li><a href="#" title="">тэги и прочая хрень</a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="footer__copyrights">
+		<div class="wrapper">
+			копирайт на черном фоне
+		</div>
+	</section>
 
 </footer>

@@ -7,7 +7,7 @@ html {
 body {
 	line-height: 1.2;
 	font-size: 1.6rem; /* 1.6*10px = 16px */
-	min-width: 950px;
+	min-width: 768px;
 	width: 100%;
 }
 
@@ -16,11 +16,14 @@ body {
 
 /*
 768 - минимальная ширина, дальше не уменьшается
-769-1024 - таблетка, фиксированная ширина 768
-1025-1279 - десктоп, фиксированная ширина 1024
+
+768-1023 - таблетка, резина, 2 колонки
+1024 - таблетка, резина, 3 колонки
+
+1024 - js? переход на моб девайсы скриптом?
+
+1024-1279 - десктоп, фиксированная ширина 1024
 1280.. - десктоп, фиксированная ширина 1280
-
-
 */
 
 
@@ -34,22 +37,23 @@ body {
 	visibility: hidden;
 }
 
-.wrapper { /* не должен быть на одном блоке с классом .table */
-	max-width: 1920px;
+
+/* класс определяет только ширину */
+.wrapper { 
+	max-width: 1280px;
 	margin: 0 auto;
-	padding: 0 20px;
+	width: 100%; /* для 768 и 1024 одинаково */
 }
-/*.margin-bottom-10 {
-	margin-bottom: 10px;
-}*/
-/*.margin-bottom-15 {
-	margin-bottom: 15px;
-}*/
-/*.margin-bottom {
-	margin-bottom: 30px;
-}*/
-
-
+@media screen and (min-width: 1024px) {
+	.wrapper { 
+		width: 1024px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.wrapper { 
+		width: 1280px; /* дубликат max-width */
+	}
+}
 
 
 

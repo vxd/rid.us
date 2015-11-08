@@ -15,8 +15,8 @@
 	<meta property="og:title" content="Ридус" /><!-- Название страницы -->
 	<meta property="og:type" content="website" />
 
-	<meta property="og:description" content="Ридус - новостное агентство" /><!-- Описание страницы -->
-	<meta itemprop="description" name="description" content="Ридус - новостное агентство" />	
+	<meta property="og:description" content="Ридус - агентство гражданской журналистики" /><!-- Описание страницы -->
+	<meta itemprop="description" name="description" content="Ридус - агентство гражданской журналистики" />	
 
 	<meta itemprop="keywords" name="keywords" content="Ridus.ru, агентство, гражданской, журналистики, точка зрения, спецпроекты, сюжеты, новости, расследование, репортаж, фото, видео" />
 	<meta itemprop="inLanguage" content="ru" />
@@ -25,7 +25,9 @@
 
 	<link href="_css/reset.css" rel="stylesheet" type="text/css">
 	<link href="_css/main.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	
 
 	<!--[if lt IE 9]><script src="_js/html5shiv.js" type="text/javascript"></script><![endif]-->
 

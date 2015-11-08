@@ -1,4 +1,4 @@
-<footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<footer itemscope itemtype="http://schema.org/WPFooter">
 
 	<section class="footer__tags">
 		<div class="wrapper">

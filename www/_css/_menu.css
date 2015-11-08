@@ -1,0 +1,8 @@
+menu {
+	width: 100%;
+	min-width: 768px;
+	background: #000000;
+	position: fixed;
+	color: #fff;
+	top: 0;
+}

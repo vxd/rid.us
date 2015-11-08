@@ -1,34 +1,14 @@
 <header itemscope itemtype="http://schema.org/WPHeader">
 
-	<menu class="main-menu">
-<!--#echo var='QUERY_STRING' --><br>
+	<!--#include virtual="_menu.shtml"-->
 
-<!-- // set default value for SSI variable "data" -->    
-<!--#set var="data" value="" -->
-<!--#set var="image" value="" -->
+	<a href="" class="banner__top wrapper">
+		nissan
+	</a>
 
-<!-- // get "data" value from URL --> 
-<!--#if expr="\"$QUERY_STRING\" = /data=([a-zA-Z0-9]+)/" -->
-<!--#set var="data" value="$1" -->
-<!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /image=([a-zA-Z0-9]+)/" -->
-<!--#set var="image" value="$1" -->
-<!--#endif -->
-<br>
-<!-- // print the "data" value -->     
-d: <!--#echo var="data" --><br>
-i: <!--#echo var="image" --><br>
-<br>
+	<section class="globalInfo wrapper">
+		USD
+	</section>
 
-<!--#if expr="\"$QUERY_STRING\" = \"data\=something\&image\=cool\"" -->
-cool<br>
-<!--#else -->
-col<br>
-<!--#endif -->
-
-<br>
-
-
-	</menu>
 
 </header>

@@ -8,12 +8,51 @@
 </head>
 <body class="page_home" itemscope itemtype="http://schema.org/WebPage">
 
-	<!--#include virtual="_header.shtml?data=something&image=cool"-->
-	<hr>
-	<!--#include virtual="_header.shtml?data=something&image=col"-->
-	<hr>
-	<!--#include virtual="_header.shtml?q"-->
 
+
+	<!--#include virtual="_header.shtml"-->
+	<section class="wrapper clearfix">
+		<div class="brick">
+			d
+		</div>
+		<div class="brick">
+			d
+		</div>
+		<div class="brick">
+			d
+		</div>
+		<div class="brick">
+			d
+		</div>
+	</section>
+
+	<!--#include virtual="_brick.shtml?data=something&image=cool"-->
+	<hr>
+	<!--#include virtual="_brick.shtml?data=something&image=col"-->
+	<hr>
+	<!--#include virtual="_brick.shtml?q"-->
+
+
+	<!--#include virtual="_brick.shtml?data=something&image=cool"-->
+	<hr>
+	<!--#include virtual="_brick.shtml?data=something&image=col"-->
+	<hr>
+	<!--#include virtual="_brick.shtml?q"-->
+
+
+	<!--#include virtual="_brick.shtml?data=something&image=cool"-->
+	<hr>
+	<!--#include virtual="_brick.shtml?data=something&image=col"-->
+	<hr>
+	<!--#include virtual="_brick.shtml?q"-->
+
+
+
+
+
+	<a href="#" class="banner__footer">
+		banner
+	</a>
 	<!--#include virtual="_footer.shtml"-->
 
 	<script src="_js/js.js" type="text/javascript"></script>

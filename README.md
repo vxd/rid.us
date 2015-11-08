@@ -15,7 +15,9 @@
 ```
 .menu__item { ... }
 ```
-1) Селектор класса почти самый быстрый, не надо писать `.blockName .elemName` 
+Почему:
+
+1) Селектор класса самый быстрый, не надо писать `.blockName .blockName__elemName` достаточно `.blockName__elemName`
 
 2) Независимость стилей, сравни: 
 ```
@@ -38,10 +40,10 @@
  
 Если все же нужно описать стили вложенного элемента, использовать _селектор дочернего элемента_:
 ```
-//.blockName .elemName { ... } 
-.blockName > .elemName { ... }
+//.blockName .blockName__elemName { ... } 
+.blockName > .blockName__elemName { ... }
 ```
-(в случае если в такой блок будет включен подобный, стили `.elemName` не будут перебиты).
+(в случае если в такой элемент будет включен еще один, стили второго `.blockName__elemName` не будут перебиты).
 
 В случае простых блочков это можно не делать.
 
@@ -66,5 +68,5 @@
 .menu__item { ... }
 .menu__item.state_open { ... }
 .menu__item.view_highlighted { ... }
-.menu__item.view_highlighted.state_open { ... }
+.menu__item.view_highlighted.state_open { ... } // если надо
 ```

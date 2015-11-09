@@ -4,6 +4,7 @@ html {
 	width: 100%;
 	min-width: 768px;
 
+
 }
 body {
 	line-height: 1.2;
@@ -11,6 +12,7 @@ body {
 	min-width: 768px;
 	width: 100%;
 	background: #eee;
+	/*overflow-x:hidden;*/
 }
 
 
@@ -48,13 +50,13 @@ body {
 	padding: 0 40px;
 	box-sizing: border-box;
 }
-@media screen and (min-width: 1041px) and (max-width: 1279px) {
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
 	.wrapper { 
 		width: 1024px;
 		padding: 0 40px;
 	}
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1297px) {
 	.wrapper { 
 		width: 1280px; /* дубликат max-width */
 		padding: 0 16px;
@@ -87,7 +89,7 @@ body {
 		margin-right: 0;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1279px) {
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
 	.brick {
 		width: 300px;
 		margin: 0 22px 22px 0;
@@ -96,7 +98,7 @@ body {
 		margin-right: 0;
 	}
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1297px) {
 	.brick {
 		width: 300px;
 		margin: 0 16px 16px 0;

@@ -18,7 +18,7 @@
 	</header>
 
 
-	<section class="wrapper contentBg clearfix">
+	<section class="wrapper contentBg view_paddings clearfix">
 		<div class="brick">
 			<!--#include virtual="bricks/brick.shtml?data=something&image=cool"-->
 		</div>

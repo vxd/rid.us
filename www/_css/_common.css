@@ -48,19 +48,26 @@ body {
 	max-width: 1280px;
 	margin: 0 auto;
 	width: 100%; /* для 768 и 1024 одинаково */
-	padding: 0 40px;
 	box-sizing: border-box;
+}
+.wrapper.view_paddings {
+	padding: 0 40px;	
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
 	.wrapper { 
 		width: 1024px;
-		padding: 0 40px;
+	}
+	.wrapper.view_paddings {
+		padding: 0 40px;	
 	}
 }
 @media screen and (min-width: 1297px) {
 	.wrapper { 
 		width: 1280px; /* дубликат max-width */
 		padding: 0 16px;
+	}
+	.wrapper.view_paddings {
+		padding: 0 16px;	
 	}
 }
 
@@ -69,8 +76,6 @@ body {
 	height: 200px;
 	background: #ccc;
 	float: left;
-
-
 }
 @media screen and (max-width: 1023px) {
 	.brick {

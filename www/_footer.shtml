@@ -1,7 +1,7 @@
 <footer itemscope itemtype="http://schema.org/WPFooter">
 
 	<section class="footer__tags">
-		<div class="wrapper">
+		<div class="wrapper view_paddings">
 			<ul>
 				<li><a href="#" title="">тэги и прочая хрень</a></li>
 				<li><a href="#" title="">тэги и прочая хрень</a></li>
@@ -11,7 +11,7 @@
 		</div>
 	</section>
 	<section class="footer__copyrights">
-		<div class="wrapper">
+		<div class="wrapper view_paddings">
 			копирайт на черном фоне
 		</div>
 	</section>

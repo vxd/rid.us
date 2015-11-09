@@ -1,4 +1,4 @@
-.banner__top {
+.banner_top {
 	display: block;
 	background: #fff;
 }
@@ -11,6 +11,6 @@
 
 
 
-.banner__footer {
+.banner_footer {
 	display: block;
 }

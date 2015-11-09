@@ -2,37 +2,68 @@
 
 	<div class="wrapper view_paddings">
 
-		<a href="http://www.ridus.ru/" class="mainLogo" title="На главную">
-			<img alt="Logo header" height="50" src="http://ridus.ru/assets/logo_header-1cf9ef9a77f55406a7ccef0cfa4bf4ce.png" width="140">
+		<a href="#" class="mobileMenuButton">
+			<i class="icon_hamburger"><!-- ||| --></i>	
+			<i class="icon_pointer"><!-- pointer --></i>	
+			МЕНЮ
 		</a>
 
-		<ul class="menu">
-			<li class="menuItem state_current">
-				<a class="menuItemLink" href="#">Картина дня</a>
-			</li>
-			<li class="menuItem">
-				<a class="menuItemLink" href="#">Гражданская журналистика</a>
-			</li>
-			<li class="menuItem">
-				<a class="menuItemLink" href="#">Интересное</a>
-			</li>
-			<li class="menuItem">
-				<a class="menuItemLink" href="#">Полезное</a>
-			</li>
-			<li class="menuItem">
-				<a class="menuItemLink" href="#">Развлечения</a>
-			</li>
-			<li class="menuItem">
-				<a class="menuItemLink" href="#">
-					Еще
-					<i class="pointer"><!-- pointer --></i>
-				</a>
-			</li>
-		</ul>
+		<a href="http://www.ridus.ru/" class="mainLogo" title="На главную">
+			<img src="_images/logo.png" alt="РИДУС">
+		</a>
+
+
+
+		<a class="header__loginButton" href="#">&nbsp;</a>
+
+		<div class="headerSearch">
+			<form>
+				<div style="display:none">
+					<input type="text">
+					<button type="submit"></button>
+				</div>
+				<a class="header__searchButton" href="#">&nbsp;</a>
+			</form>
+		</div>	
+
+		<menu class="menu">
+			<ul>
+				<li class="menu__item state_current">
+					<a class="menu__link" href="#">Картина дня</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">Гражданская журналистика</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">Интересное</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">Полезное</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">Развлечения</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link view_menuIcon" href="#">
+						Еще
+						<i class="icon"><!-- pointer --></i>
+					</a>
+				</li>
+			</ul>
+			<div class="subMenu">
+				<nav class="submenuBg wrapper view_paddings">
+				sdfsd<br>
+				sdfsd<br>
+				sdfsd<br>
+				sdfsd<br>
+				</nav>
+			</div>
+		</menu>
+
+
+
 
 	</div>
 
 </div>
 
-<nav class="subMenu">
-</nav>

@@ -11,26 +11,232 @@
 .mainLogo {
 	float: left;
 }
+.mainLogo img {
+	margin: 5px 0;
+	width: 120px;
+	height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .menu {
-	display: block;
 	float: right;
 }
-.menuItem {
+.menu__item {
 	float: left;
 }
-.menuItemLink {
+.menu__link {
 	font-weight: bold;
 	font-size: 14px;
-	display: inline-block;
-	text-transform: uppercase;
+	display: table-cell;
+    vertical-align: middle;
+    text-transform: uppercase;
 	color: #fff;
 	text-decoration: none;
 	height: 60px;
-	line-height: 58px;
+	line-height: 20px;
 	padding: 0 12px;
 }
-.menuItemLink:hover {
+.menu__link:hover {
 	/*background: #c64a1b;*/
 	background: #667787;
+}
+
+.menu__link.view_menuIcon {
+	position: relative;
+	padding-right: 30px
+}
+.menu__link.view_menuIcon .icon {
+	position: absolute;
+    right: 12px;
+    top: 46%;
+	display: inline-block;
+    border: 5px solid transparent;
+    border-top: 5px solid #fff;
+}
+.menu__link.view_menuIcon.state_open {
+	background: #667787;
+}
+.menu__link.view_menuIcon.state_open .icon {
+    top: 38%;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+}
+
+
+@media screen and (max-width: 1023px) {
+	.menu {
+		display: none;
+		position: fixed;
+		background: #000;
+		top: 60px;
+		left: 0;
+		height: 100%;
+		width: 220px;
+	}
+	.menu.state_open {
+		display: block;
+	}
+	.menu__item {
+		display: table;
+		width: 100%;
+		border-bottom: 1px solid #252525;
+	}
+	.menu__link {
+		width: 100%;
+		height: 40px;
+		padding: 5px 5px 5px 40px;
+	}
+	.menu__link.view_menuIcon .icon {
+		display: none;
+	}
+}
+
+
+
+
+.subMenu {
+	display: none;
+	width: 100%;
+	position: fixed;
+	top: 60px;
+	left: 0;
+}
+.subMenu.state_open {
+	display: block;
+}
+.submenuBg {
+	background: #667787;
+}
+@media screen and (max-width: 1023px) {
+	.subMenu {
+		left: 220px;
+		height: 100%;
+	}
+	.submenuBg {
+		height: 100%
+	}
+	.menu.state_open .subMenu {
+		display: none;
+	}
+	.menu.state_open .subMenu.state_open {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobileMenuButton {
+	display: none;
+	font-size: 11px;
+    text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	padding-top: 40px;
+	width: 56px;
+	margin-right: 8px;
+	position: relative;
+}
+.mobileMenuButton .icon_hamburger,
+.mobileMenuButton .icon_hamburger:before,
+.mobileMenuButton .icon_hamburger:after {
+	display: block;
+	font-size: 0;
+	content: "";
+	width: 33px;
+	height: 4px;
+	background: #fff;
+	position: absolute;
+	top: 14px;
+}
+.mobileMenuButton .icon_hamburger:before {
+	top: 9px;
+}
+.mobileMenuButton .icon_hamburger:after {
+	top: 18px;
+}
+.mobileMenuButton .icon_pointer {
+	position: absolute;
+    right: 7px;
+    top: 52%;
+	display: inline-block;
+    border: 4px solid transparent;
+    border-top: 4px solid #777;
+}
+
+
+@media screen and (max-width: 1023px) {
+	.mobileMenuButton {
+		display: block;
+		float: left;
+	}
+	.mobileMenuButton.state_open .icon_pointer {
+		top: 46%;
+	    border: 4px solid transparent;
+	    border-bottom: 4px solid #777;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header__loginButton,
+.header__searchButton {
+	text-decoration: none;
+	font-size: 0;
+	float: right;
+	width: 35px;
+	height: 35px;
+	margin: 12px 0;
+	background: url(../_images/icons_sprite.png);
+}
+.header__loginButton {
+	background-position: -35px 0;
+}
+.header__loginButton:hover {
+	background-position: -35px -35px;
+}
+.header__searchButton {
+	background-position: 0 0;
+}
+.header__searchButton:hover {
+	background-position: 0 -35px;
 }

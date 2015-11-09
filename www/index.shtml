@@ -11,7 +11,7 @@
 
 	<header itemscope itemtype="http://schema.org/WPHeader">
 		<!--#include virtual="_menu.shtml"-->
-		<a href="" class="banner__top wrapper">
+		<a href="" class="banner_top wrapper">
 			nissan
 		</a>
 		<!--#include virtual="_globalinfo.shtml"-->
@@ -52,7 +52,7 @@
 
 
 
-	<a href="#" class="banner__footer">
+	<a href="#" class="banner_footer">
 		banner
 	</a>
 	<!--#include virtual="_footer.shtml"-->

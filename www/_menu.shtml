@@ -1,5 +1,38 @@
-<menu>
+<div class="headerPanel">
+
 	<div class="wrapper view_paddings">
-		sdfsf
+
+		<a href="http://www.ridus.ru/" class="mainLogo" title="На главную">
+			<img alt="Logo header" height="50" src="http://ridus.ru/assets/logo_header-1cf9ef9a77f55406a7ccef0cfa4bf4ce.png" width="140">
+		</a>
+
+		<ul class="menu">
+			<li class="menuItem state_current">
+				<a class="menuItemLink" href="#">Картина дня</a>
+			</li>
+			<li class="menuItem">
+				<a class="menuItemLink" href="#">Гражданская журналистика</a>
+			</li>
+			<li class="menuItem">
+				<a class="menuItemLink" href="#">Интересное</a>
+			</li>
+			<li class="menuItem">
+				<a class="menuItemLink" href="#">Полезное</a>
+			</li>
+			<li class="menuItem">
+				<a class="menuItemLink" href="#">Развлечения</a>
+			</li>
+			<li class="menuItem">
+				<a class="menuItemLink" href="#">
+					Еще
+					<i class="pointer"><!-- pointer --></i>
+				</a>
+			</li>
+		</ul>
+
 	</div>
-</menu>
+
+</div>
+
+<nav class="subMenu">
+</nav>

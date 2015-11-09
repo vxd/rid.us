@@ -1,8 +1,36 @@
-menu {
+.headerPanel {
 	width: 100%;
 	min-width: 768px;
+	height: 60px;
 	background: #000000;
 	position: fixed;
+	z-index: 99;
 	color: #fff;
 	top: 0;
+}
+.mainLogo {
+	float: left;
+}
+
+.menu {
+	display: block;
+	float: right;
+}
+.menuItem {
+	float: left;
+}
+.menuItemLink {
+	font-weight: bold;
+	font-size: 14px;
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	height: 60px;
+	line-height: 58px;
+	padding: 0 12px;
+}
+.menuItemLink:hover {
+	/*background: #c64a1b;*/
+	background: #667787;
 }

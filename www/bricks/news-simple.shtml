@@ -1,0 +1,58 @@
+
+<!-- //// определяем переменные -->  
+
+<!--#set var="image" value="" -->
+<!--#set var="data" value="" -->
+<!--#set var="count1" value="" -->
+<!--#set var="count2" value="" -->
+<!--#set var="count3" value="" -->
+
+<!-- //// извлекаем из параметров урла --> 
+
+<!--#if expr="\"$QUERY_STRING\" = /image=([a-zA-Z0-9]+)/" -->
+<!--#set var="image" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /data=([a-zA-Z0-9]+)/" -->
+<!--#set var="data" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /count1=([a-zA-Z0-9]+)/" -->
+<!--#set var="count1" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /count2=([a-zA-Z0-9]+)/" -->
+<!--#set var="count2" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /count3=([a-zA-Z0-9]+)/" -->
+<!--#set var="count3" value="$1" -->
+<!--#endif -->
+
+<!-- //// дата --> 
+
+<!--#set var="time" value="$DATE_LOCAL"-->
+
+<!-- //// конец --> 
+
+
+<!--#if expr="$image = 1" -->
+<img alt="Единороссы призовут однопартийца Исаева к ответу" src="http://ridus.ru/images/2013/10/9/122365/preview_09ade907ef.jpg">
+<!--#endif -->
+
+<!--#echo var="time"-->
+
+<!--#if expr="$data = 1" -->
+<img alt="Единороссы призовут однопартийца Исаева к ответу" src="http://ridus.ru/images/2013/10/9/122365/preview_09ade907ef.jpg">
+<!--#endif -->
+
+<div class="counters">
+	<span class="count1">
+		<!--#echo var="count1" --> <i class="icon"><!-- icon --></i>
+	</span>
+	<span class="count2">
+		<!--#echo var="count2" --> <i class="icon"><!-- icon --></i>
+	</span>
+	<span class="count3">
+		<!--#echo var="count3" --> <i class="icon"><!-- icon --></i>
+	</span>
+</div>
+
+
+<br>

@@ -103,6 +103,11 @@
 
 
 
+
+
+
+
+
 .subMenu {
 	display: none;
 	width: 100%;
@@ -113,15 +118,19 @@
 .subMenu.state_open {
 	display: block;
 }
-.submenuBg {
+.submenuContent {
 	background: #667787;
 }
+
+
 @media screen and (max-width: 1023px) {
 	.subMenu {
 		left: 220px;
 		height: 100%;
+		width: calc(100% - 220px);
+		min-width: 548px;
 	}
-	.submenuBg {
+	.submenuContent {
 		height: 100%
 	}
 	.menu.state_open .subMenu {
@@ -130,10 +139,25 @@
 	.menu.state_open .subMenu.state_open {
 		display: block;
 	}
+	.submenuContent.view_paddings {
+		padding: 22px 20px;	
+	}
 }
-
-
-
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.submenuContent.view_paddings {
+		padding: 20px 40px 22px;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.submenuContent.view_paddings {
+		padding: 20px 40px 22px;
+	}
+}
+@media screen and (min-width: 1297px) {
+	.submenuContent.view_paddings {
+		padding: 16px 16px;	
+	}
+}
 
 
 

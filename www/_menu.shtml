@@ -51,11 +51,8 @@
 				</li>
 			</ul>
 			<div class="subMenu">
-				<nav class="submenuBg wrapper view_paddings">
-				sdfsd<br>
-				sdfsd<br>
-				sdfsd<br>
-				sdfsd<br>
+				<nav class="submenuContent wrapper view_paddings">
+					<!--#include virtual="_taglist.shtml"-->
 				</nav>
 			</div>
 		</menu>

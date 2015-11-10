@@ -1,0 +1,95 @@
+<ul class="tagList">
+	<li class="tagList__item">
+		<a class="tagList__link" href="#avto">Авто</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#art-ridus">Арт-ридус</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#video">Видео</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#gorod">Город</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#eda">Еда</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#zhivotnye">Животные</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#zdorovie">Здоровье</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#internet">Интернет</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#istoriya">История</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#kino">Кино</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#kompyuternye-igry">Компьютерные игры</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#kosmos">Космос</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#kultura-i-iskusstvo">Культура</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#literatura">Литература</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#muzridus">Музыка</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#nauka-i-tehnika">Наука и техника</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#nedvizhimost">Недвижимость</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#obrazovanie">Образование</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#obshestvo">Общество</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#pravo">Право</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#strany-i-puteshestviya">Путешествия</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#religiya">Религия</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#smi">СМИ</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#sovety">Советы</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#sport">Спорт</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#stil">Стиль</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#tehnologii">Технологии</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#foto">Фото</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#ekoridus">Экология</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#ekonomika">Экономика</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#jumor">Юмор</a>
+	</li>
+</ul>

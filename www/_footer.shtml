@@ -14,22 +14,29 @@
 				<div class="socialSharing__separator"></div>
 				<p>Ежедневная рассылка новостей от Ридуса</p>
 				<div class="footer__subscribeToNews">
-					<input type="text" placeholder="Введите e-mail" />
-					<button>подписаться</button>
+					<form>
+						<input type="text" placeholder="Введите e-mail" />
+						<button type="submit">подписаться</button>
+					</form>
 				</div>
 				<div class="socialSharing__separator"></div>
 				<ul>
-					<li class="footer__socialSharingFaqLinks">FAQ: технология размещения пользовательских материалов на "Ридусе"</li>
-					<li class="footer__socialSharingFaqLinks">FAQ: нтерфейс сайта "Ридуса"</li>
-					<li class="footer__socialSharingFaqLinks">Пользовательское соглашение</li>
-					<li class="footer__socialSharingFaqLinks">Выходные данные</li>
+					<li><a class="footer__socialSharingFaqLinks">FAQ: технология размещения пользовательских материалов на "Ридусе"</a></li>
+					<li><a class="footer__socialSharingFaqLinks">FAQ: нтерфейс сайта "Ридуса"</a></li>
+					<li><a class="footer__socialSharingFaqLinks">Пользовательское соглашение</a></li>
+					<li><a class="footer__socialSharingFaqLinks">Выходные данные</a></li>
 				</ul>
 			</div>
 		</div>
 	</section>
+
 	<section class="footer__copyrights">
 		<div class="wrapper view_paddings">
-			копирайт на черном фоне
+			<div class="footer__copyrightsText">
+				<h6 class="footer__copyrightsHeader">&copy; 2011-2015 Ридус. Агенство гражданской журналистики.</h6>
+			Использование материалов Ридус разрешено только с предварительного согласия правообладателей. Все права на картинки и тексты принадлежат их авторам. Сайт может содержать материалы, не предназначенные для лиц младше 18 лет.
+				<div class="footer__ageRestrictionSign"></div>
+			</div>
 		</div>
 	</section>
 

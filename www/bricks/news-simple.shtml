@@ -25,22 +25,34 @@
 <!--#set var="count3" value="$1" -->
 <!--#endif -->
 
-<!-- //// дата --> 
-
-<!--#set var="time" value="$DATE_LOCAL"-->
 
 <!-- //// конец --> 
 
-
+<div class="brick__image">
 <!--#if expr="$image = 1" -->
-<img alt="Единороссы призовут однопартийца Исаева к ответу" src="http://ridus.ru/images/2013/10/9/122365/preview_09ade907ef.jpg">
+	<img alt="Единороссы призовут однопартийца Исаева к ответу" src="http://ridus.ru/images/2013/10/9/122365/preview_09ade907ef.jpg">
 <!--#endif -->
+<!--#if expr="$image = 2" -->
+	<img alt="Песков опроверг публикацию Reuters «о дочери Путина»" src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg">
+<!--#endif -->
+<!--#if expr="$image = 3" -->
+	<img alt="Ученые доказали влияние грибов на погоду" src="http://ridus.ru/images/2015/11/10/336462/preview_40b9a0f86b.jpg">
+<!--#endif -->
+</div>
 
-<!--#echo var="time"-->
 
 <!--#if expr="$data = 1" -->
-<img alt="Единороссы призовут однопартийца Исаева к ответу" src="http://ridus.ru/images/2013/10/9/122365/preview_09ade907ef.jpg">
+	<h4>
+		<a href="#" title="">Общество</a>
+	</h4>
+	<h2>
+		<a href="#" title="">Исследование: где в Москве опаснее всего жить</a>
+	</h2>
+	<p>
+		Каждый старшеклассник знает, что сила тока измеряется в амперах. В чем измеряется напряжение криминогенной обстановки и как измерить уровень безопасности на улице, знают только в полиции.
+	</p>
 <!--#endif -->
+
 
 <div class="counters">
 	<span class="count1">

@@ -26,7 +26,7 @@
 			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
 		</div>
 		<div class="brick">
-			d
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
 		</div>
 		<div class="brick">
 			d

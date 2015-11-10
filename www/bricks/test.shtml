@@ -25,3 +25,8 @@
 		<!--#endif -->
 
 		<br>
+
+<!-- //// дата --> 
+<!--#config timefmt="%d/%m/%Y, %H:%M:%S" -->
+<!--#set var="time" value="$LAST_MODIFIED"-->
+<!--#echo var="time"-->

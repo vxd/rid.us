@@ -16,13 +16,13 @@ body {
 	/*overflow-x:hidden;*/
 }
 
-div, p, section, ul, li, article, nav, form, h1, h2, h3, h4, h5, h6, menu, header, footer, main, button {
+/*div, p, section, ul, li, article, nav, form, h1, h2, h3, h4, h5, h6, menu, header, footer, main, button {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
+*/
 
 /*
 768 - минимальная ширина, дальше не уменьшается
@@ -50,9 +50,12 @@ div, p, section, ul, li, article, nav, form, h1, h2, h3, h4, h5, h6, menu, heade
 
 /* класс определяет только ширину */
 .wrapper { 
-	max-width: 1280px;
 	margin: 0 auto;
 	width: 100%; /* для 768 и 1024 одинаково */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .wrapper.view_paddings {
 	padding: 0 40px;	
@@ -67,8 +70,7 @@ div, p, section, ul, li, article, nav, form, h1, h2, h3, h4, h5, h6, menu, heade
 }
 @media screen and (min-width: 1297px) {
 	.wrapper { 
-		width: 1280px; /* дубликат max-width */
-		padding: 0 16px;
+		width: 1280px;
 	}
 	.wrapper.view_paddings {
 		padding: 0 16px;	
@@ -81,6 +83,7 @@ div, p, section, ul, li, article, nav, form, h1, h2, h3, h4, h5, h6, menu, heade
 	background: #ccc;
 	float: left;
 }
+
 @media screen and (max-width: 1023px) {
 	.brick {
 		width: 48.5%;

@@ -90,7 +90,7 @@
 	padding-right: 30%;
 	padding-left: 80px;
 	padding-top: 10px;
-	background: url('/_images/footer-logo.png') left center no-repeat;
+	background: url(../_images/footer-logo.png) left center no-repeat;
 	color: #929292;
 }
 .footer__ageRestrictionSign {
@@ -99,5 +99,5 @@
 	top: 10px;
 	width: 38px;
 	height: 38px;
-	background: url('/_images/18plus.png') no-repeat;
+	background: url(../_images/18plus.png) no-repeat;
 }

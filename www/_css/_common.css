@@ -13,16 +13,7 @@ body {
 	min-width: 768px;
 	width: 100%;
 	background: #eee;
-	/*overflow-x:hidden;*/
 }
-
-/*div, p, section, ul, li, article, nav, form, h1, h2, h3, h4, h5, h6, menu, header, footer, main, button {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-}
-*/
 
 /*
 768 - минимальная ширина, дальше не уменьшается

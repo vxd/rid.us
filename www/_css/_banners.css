@@ -9,9 +9,9 @@
 	height: 300px;
 	background: #121212;
 	padding-left: 50%;
+	overflow: hidden;
 }
 .banner_footer img {
-    position: absolute;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);

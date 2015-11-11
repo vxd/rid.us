@@ -1,0 +1,36 @@
+<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
+
+<!-- реальный счетчик, СТАВИТЬ ЕГО - убрать display:none; но он с нулями-->
+<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="facebook,vkontakte,twitter,odnoklassniki" data-yashareTheme="counter" style="display:none;"></div>
+
+<!-- для примера инициализированный счетчик -->
+<div id="ya_share_counter" data-yasharelink="https://tech.yandex.ru/share/" class=" b-share_theme_counter">
+	<span class="b-share b-share_type_small">
+		<span class="b-share-btn__wrap">
+			<a rel="nofollow" target="_blank" title="Facebook" class="b-share__handle b-share__link b-share-btn__facebook b-share-btn__counter" href="https://share.yandex.net/go.xml?service=facebook&amp;url=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&amp;title=%D0%91%D0%BB%D0%BE%D0%BA%20%C2%AB%D0%9F%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C%D1%81%D1%8F%C2%BB%20%E2%80%94%20%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0" data-service="facebook">
+				<span class="b-share-icon b-share-icon_facebook"></span>
+				<span class="b-share-counter">26 тыс</span>
+			</a>
+		</span>
+		<span class="b-share-btn__wrap">
+			<a rel="nofollow" target="_blank" title="ВКонтакте" class="b-share__handle b-share__link b-share-btn__vkontakte b-share-btn__counter" href="https://share.yandex.net/go.xml?service=vkontakte&amp;url=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&amp;title=%D0%91%D0%BB%D0%BE%D0%BA%20%C2%AB%D0%9F%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C%D1%81%D1%8F%C2%BB%20%E2%80%94%20%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0" data-service="vkontakte">
+				<span class="b-share-icon b-share-icon_vkontakte"></span>
+				<span class="b-share-counter">62 тыс</span>
+			</a>
+		</span>
+
+		<span class="b-share-btn__wrap">
+			<a rel="nofollow" target="_blank" title="Twitter" class="b-share__handle b-share__link b-share-btn__twitter b-share-btn__counter" href="https://share.yandex.net/go.xml?service=twitter&amp;url=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&amp;title=%D0%91%D0%BB%D0%BE%D0%BA%20%C2%AB%D0%9F%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C%D1%81%D1%8F%C2%BB%20%E2%80%94%20%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0" data-service="twitter">
+				<span class="b-share-icon b-share-icon_twitter"></span>
+				<span class="b-share-counter">8 тыс</span>
+			</a>
+		</span>
+		<span class="b-share-btn__wrap">
+			<a rel="nofollow" target="_blank" title="Одноклассники" class="b-share__handle b-share__link b-share-btn__odnoklassniki b-share-btn__counter" href="https://share.yandex.net/go.xml?service=odnoklassniki&amp;url=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&amp;title=%D0%91%D0%BB%D0%BE%D0%BA%20%C2%AB%D0%9F%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C%D1%81%D1%8F%C2%BB%20%E2%80%94%20%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0" data-service="odnoklassniki">
+				<span class="b-share-icon b-share-icon_odnoklassniki"></span>
+				<span class="b-share-counter">23 тыс</span>
+			</a>
+		</span>
+		<iframe style="display: none" src="//yastatic.net/share/ya-share-cnt.html?url=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&amp;services=vkontakte,facebook,twitter,odnoklassniki"></iframe>
+	</span>
+</div>

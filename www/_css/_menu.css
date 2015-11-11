@@ -250,7 +250,7 @@
 	width: 35px;
 	height: 35px;
 	margin: 12px 0;
-	background: url(../_images/icons_sprite.png);
+	background-image: url(../_images/icons_sprite.png);
 }
 .header__loginButton {
 	background-position: -35px 0;

@@ -1,0 +1,79 @@
+.b-share_theme_counter {
+	float: right;
+}
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap {
+    margin-left: 10px !important;
+}
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link,
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:active {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: transparent;
+    height: 33px;
+    border: 0;
+}
+
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon {
+    width: 33px;
+    height: 33px;
+	background-image: url(../_images/icons_sprite.png);
+}
+
+
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon.b-share-icon_facebook {
+	background-position: 0 -70px;
+	background-color: #3c5a98;
+}
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:hover .b-share-icon.b-share-icon_facebook {
+	background-color: #30487a;
+}
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon.b-share-icon_vkontakte {
+	background-position: -33px -70px;
+	background-color: #48729e;
+}
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:hover .b-share-icon.b-share-icon_vkontakte {
+	background-color: #3d6186;
+}
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon.b-share-icon_twitter {
+	background-position: -66px -70px;
+	background-color: #00aced;
+}
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:hover .b-share-icon.b-share-icon_twitter {
+	background-color:  #0092ca;
+}
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon.b-share-icon_odnoklassniki {
+	background-position: -99px -70px;
+	background-color: #ff9f4d;
+}
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:hover .b-share-icon.b-share-icon_odnoklassniki {
+	background-color: #d98742;
+}
+
+
+
+
+
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-counter {
+	font-size: 14px;
+	color: #000;
+ 	font-family: 'PT Sans', sans-serif;
+ 	border: 1px solid #e4e4e4;
+ 	margin: 0 0 0 7px;
+	height: 21px;
+	padding: 10px 5px 0;
+	position: relative;
+	display: block;
+}
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-counter:before,
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-counter:after {
+    content: ''; 
+    position: absolute;
+    left: -13px;
+    top: 10px; 
+    border: 6px solid transparent;
+    border-right: 6px solid #e4e4e4;
+}
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-counter:after {
+    border-right: 6px solid #fff;
+    left: -12px;
+}

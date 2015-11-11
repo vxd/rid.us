@@ -49,6 +49,10 @@ header {
 .addNewsButton:hover {
 	background: #ffc336;
 }
+.addNewsButton:hover a {
+	color: #fff;
+}
+
 .addNewsButton .corner {
 	display: block;
 	position: absolute;
@@ -117,24 +121,17 @@ header {
 .dayInfo {
 	float: left;
 }
+.dayInfo a {
+	text-decoration: none;
+	color: #000;
+}
+.dayInfo a:hover {
+    color: #c64a1b;
+}
 .dayInfo li {
 	float: left;
 	font-size: 14px;
 	padding: 0 8px 0 16px;
-}
-.dayInfo li:last-child {
-	padding-right: 0;
-}
-.dayInfo .b-date {
-	border-right: 1px solid #e8e8e8;
-	padding: 0 15px 0 0;
-}
-.dayInfo .b-weather {
-	display: none;
-}
-
-.dayInfo .b-date span {
-	text-transform: uppercase;
 }
 .dayInfo sup {
 	color: #ea5429;
@@ -144,9 +141,47 @@ header {
 	color: #000;
 }
 
+
+/* первый пункт */
+.dayInfo .b-date {
+	border-right: 1px solid #e8e8e8;
+	padding: 0 15px 0 0;
+}
+.dayInfo .b-date span {
+	text-transform: uppercase;
+}
+
+
+/* последний пункт - погода */
+.dayInfo .b-weather b {
+	display: inline;
+	color: inherit;
+}
+
+
+
+/* для случая использования в панели */
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.globalInfo .dayInfo .b-weather {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
 /* для случая использования в меню */
 .headerPanel .dayInfo {
 	display: none;
+}
+.headerPanel .dayInfo .b-weather {
+	display: none;
+}
+.headerPanel .dayInfo a {
+	color: #fff;
 }
 @media screen and (max-width: 1023px) {
 	.headerPanel .dayInfo {
@@ -164,24 +199,13 @@ header {
 		padding: 0 0 0 12px;
 	}
 
-	.headerPanel .dayInfo li:last-child {
-		padding-right: 0;
-	}
-
 	.headerPanel .dayInfo .b-date {
 		border-right: 1px solid #fff;
 		padding: 0 12px 0 0;
 	}
 }
-<<<<<<< HEAD
-=======
-
-
-
-
-
->>>>>>> origin/master
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
+
 	.headerPanel .dayInfo {
 		display: block;
 		float: right;
@@ -191,24 +215,18 @@ header {
 		color: #fff;
 		font-weight: normal;
 	}
-}
 
+	.headerPanel .dayInfo li {
+	    padding: 0 0px 0 32px;
+   	}
 
-
-
-
-.cityInfo {
-	display: block;
-	float: left;
-	font-size: 14px;
-	padding-left: 32px;
-}
-
-
-
-
-@media screen and (max-width: 1023px) {
-	.cityInfo {
-		display: none;
+	.headerPanel .dayInfo .b-date {
+		border-right: 1px solid #fff;
+		padding: 0 30px 0 0;
 	}
 }
+
+
+
+
+

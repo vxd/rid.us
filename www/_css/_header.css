@@ -17,7 +17,11 @@ header {
 	padding-bottom: 13px;
 	padding-top: 10px;
 }
-
+@media screen and (max-width: 1040px) {
+	.globalInfo {
+		display: none;
+	}
+}
 
 
 
@@ -78,9 +82,29 @@ header {
 }
 
 /* для случая использования в меню */
-
-
-
+.headerPanel .addNewsButton {
+	display: none;
+}
+.headerPanel .addNewsButton .corner {
+    border-bottom-color: #000;
+}
+.headerPanel .addNewsButton .corner:before {
+    border-top-color: #fff;
+}
+@media screen and (max-width: 1023px) {
+	.headerPanel .addNewsButton {
+		display: block;
+		margin: 13px 0 13px 12px;
+		float: right;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.headerPanel .addNewsButton {
+		display: block;
+		margin: 13px 12px;
+		float: right;
+	}
+}
 
 
 
@@ -117,3 +141,42 @@ header {
 }
 
 /* для случая использования в меню */
+.headerPanel .dayInfo {
+	display: none;
+}
+@media screen and (max-width: 1023px) {
+	.headerPanel .dayInfo {
+		display: block;
+		float: right;
+		margin: 13px 0;
+	}
+	.headerPanel .dayInfo b {
+		color: #fff;
+		font-weight: normal;
+	}
+	.headerPanel .dayInfo li {
+		padding: 0 0 0 12px;
+	}
+	.headerPanel .dayInfo li:last-child {
+		padding-right: 0;
+	}
+	.headerPanel .dayInfo .b-date {
+		border-right: 1px solid #fff;
+		padding: 0 12px 0 0;
+	}
+
+
+
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.headerPanel .dayInfo {
+		display: block;
+		float: right;
+		margin: 13px 12px;
+	}
+	.headerPanel .dayInfo b {
+		color: #fff;
+		font-weight: normal;
+	}
+}

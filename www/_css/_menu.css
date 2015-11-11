@@ -10,6 +10,7 @@
 }
 .mainLogo {
 	float: left;
+	font-size: 0;
 }
 .mainLogo img {
 	margin: 5px 0;
@@ -73,7 +74,7 @@
 }
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1040px) {
 	.menu {
 		display: none;
 		position: fixed;
@@ -124,7 +125,7 @@
 }
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1040px) {
 	.subMenu {
 		left: 220px;
 		height: 100%;
@@ -216,7 +217,7 @@
 }
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1040px) {
 	.mobileMenuButton {
 		display: block;
 		float: left;
@@ -264,4 +265,10 @@
 }
 .header__searchButton:hover {
 	background-position: 0 -35px;
+}
+@media screen and (max-width: 1023px) {
+	.header__loginButton,
+	.header__searchButton {
+		display: none;
+	}
 }

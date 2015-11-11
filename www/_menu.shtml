@@ -26,6 +26,9 @@
 			</form>
 		</div>	
 
+		<!--#include virtual="_addnewsbutton.shtml"-->
+		<!--#include virtual="_dayinfo.shtml"-->
+
 		<menu class="menu">
 			<ul>
 				<li class="menu__item state_current">

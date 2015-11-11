@@ -3,7 +3,7 @@
 	<!--#include virtual="_menu.shtml"-->
 
 	<a href="" class="banner_top wrapper" title="">
-		nissan
+		<img src="../_images/header_banner.jpg" alt="" />
 	</a>
 
 	<section class="globalInfo wrapper view_paddings clearfix">

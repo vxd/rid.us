@@ -1,34 +1,34 @@
-		<ul class="dayInfo">
-			<li class="b-date">
-				<span>среда</span>
-				<b class="b-rate_value">11 ноября</b>
-			</li>
-			<li class="b-rate_eur" title="Курс ММВБ на 11/10 23:43">
-				<a href="#" title="">
-					EUR
-					<sup>-0.33</sup>
-					<b class="b-rate_value">69.14</b>
-				</a>
-			</li>
-			<li class="b-rate_usd" title="Курс ММВБ на 11/10 23:43">
-				<a href="#" title="">
-					USD
-					<sup>-0.01</sup>
-					<b class="b-rate_value">64.58</b>
-				</a>
-			</li>
-			<li class="b-rate_brent" title="Цена на 11/11 01:45">
-				<a href="#" title="">
-					Нефть
-					<sup>-0.31</sup>
-					<b class="b-rate_value">47.05</b>
-				</a>
-			</li>
-			<li class="b-weather" title="Погода на 11/11 01:45">
-				<a href="#" title="">
-					Москва
-					<b>+25&deg;C, ясно</b>
-					<div class="b-rate_value">732 мм. рт. ст., ЮЗ 5 м/с, вл. 50%</div>
-				</a>
-			</li>
-		</ul>
+<ul class="dayInfo">
+	<li class="b-date">
+		<span>среда</span>
+		<b class="b-rate_value">11 ноября</b>
+	</li>
+	<li class="b-rate_eur" title="Курс ММВБ на 11/10 23:43">
+		<a href="#" title="">
+			EUR
+			<sup>-0.33</sup>
+			<b class="b-rate_value">69.14</b>
+		</a>
+	</li>
+	<li class="b-rate_usd" title="Курс ММВБ на 11/10 23:43">
+		<a href="#" title="">
+			USD
+			<sup>-0.01</sup>
+			<b class="b-rate_value">64.58</b>
+		</a>
+	</li>
+	<li class="b-rate_brent" title="Цена на 11/11 01:45">
+		<a href="#" title="">
+			Нефть
+			<sup>-0.31</sup>
+			<b class="b-rate_value">47.05</b>
+		</a>
+	</li>
+	<li class="b-weather" title="Погода на 11/11 01:45">
+		<a href="#" title="">
+			Москва
+			<b>+25&deg;C, ясно</b>
+			<div class="b-rate_value">732 мм. рт. ст., ЮЗ 5 м/с, вл. 50%</div>
+		</a>
+	</li>
+</ul>

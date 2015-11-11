@@ -48,9 +48,7 @@ header {
 }
 .addNewsButton:hover {
 	background: #ffc336;
-}
-.addNewsButton:hover a {
-	color: #fff;
+	color: #000;
 }
 
 .addNewsButton .corner {

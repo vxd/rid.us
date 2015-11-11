@@ -1,9 +1,11 @@
 <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
 
-<!-- реальный счетчик, СТАВИТЬ ЕГО - убрать display:none; но он с нулями-->
+<!-- реальный счетчик, но он с нулями
+СТАВИТЬ ЕГО - убрать display:none; -->
 <div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="facebook,vkontakte,twitter,odnoklassniki" data-yashareTheme="counter" style="display:none;"></div>
 
-<!-- для примера инициализированный счетчик -->
+<!-- для примера инициализированный счетчик
+УДАЛИТЬ -->
 <div id="ya_share_counter" data-yasharelink="https://tech.yandex.ru/share/" class=" b-share_theme_counter">
 	<span class="b-share b-share_type_small">
 		<span class="b-share-btn__wrap">

@@ -1,3 +1,11 @@
+header {
+	position: relative;
+	padding-top: 60px;
+}
+
+
+
+
 .globalInfo {
 	background: #fff;
 	border-bottom: 3px solid #f7f7f7;

@@ -79,10 +79,6 @@ body {
 	background: #fff;
 }
 
-header {
-	position: relative;
-	padding-top: 60px;
-}
 
 
 
@@ -148,9 +144,6 @@ h2 {
 h1 {
 	font-size: 30px;
 }
-h3.equal-height {
-  	padding: 10px 0 12px 0;
-}
 
 
 
@@ -159,14 +152,14 @@ h3.equal-height {
 
 
 
-a {
+/*a {
 	text-decoration: underline;
 	color: #0e53b2;
 }
 a:hover {
 	text-decoration: none;
 }
-
+*/
 
 
 /* формы */
@@ -176,25 +169,25 @@ input[type="email"]::-webkit-input-placeholder,
 input[type="number"]::-webkit-input-placeholder, 
 input[type="password"]::-webkit-input-placeholder,
 input[type="tel"]::-webkit-input-placeholder,
-input[type="url"]::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-weight: bold; font-family: 'Open Sans', sans-serif;}
+input[type="url"]::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'PT Sans', sans-serif;}
 input[type="text"]::-moz-placeholder,
 input[type="email"]::-moz-placeholder, 
 input[type="number"]::-moz-placeholder, 
 input[type="password"]::-moz-placeholder, 
 input[type="tel"]::-moz-placeholder, 
-input[type="url"]::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-weight: bold; font-family: 'Open Sans', sans-serif;} /* Firefox 19+ */
+input[type="url"]::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'PT Sans', sans-serif;} /* Firefox 19+ */
 input[type="text"]:-moz-placeholder,
 input[type="email"]:-moz-placeholder, 
 input[type="number"]:-moz-placeholder, 
 input[type="password"]:-moz-placeholder, 
 input[type="tel"]:-moz-placeholder, 
-input[type="url"]:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-weight: bold; font-family: 'Open Sans', sans-serif;} /* Firefox 18- */
+input[type="url"]:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'PT Sans', sans-serif;} /* Firefox 18- */
 input[type="text"]:-ms-input-placeholder,
 input[type="email"]:-ms-input-placeholder, 
 input[type="number"]:-ms-input-placeholder, 
 input[type="password"]:-ms-input-placeholder, 
 input[type="tel"]:-ms-input-placeholder, 
-input[type="url"]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-weight: bold; font-family: 'Open Sans', sans-serif;}
+input[type="url"]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'PT Sans', sans-serif;}
 input[type="text"]:focus::-webkit-input-placeholder,
 input[type="email"]:focus::-webkit-input-placeholder, 
 input[type="number"]:focus::-webkit-input-placeholder, 
@@ -237,7 +230,6 @@ input[type="text"] {
 	box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-	margin-bottom: 14px;
 }
 input[type="submit"] {
 	width: 220px;
@@ -256,10 +248,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	opacity: .85;
 }
-input.center {
-	display: block;
-	margin: 0 auto;
-}
+
 
 
 
@@ -271,13 +260,13 @@ input.center {
 
 
 /* лэйблы, чекбоксы, радиобатоны */
-label {
+/*label {
 	color: #747474;
 	font-size: 13px;
 	margin-bottom: 7px;
 	display: inline-block;
 }
-/*label.checkboxWrap,
+label.checkboxWrap,
 label.radioWrap {
 	color: #000;
 	cursor: pointer;

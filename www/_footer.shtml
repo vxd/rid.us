@@ -4,14 +4,37 @@
 		<div class="wrapper view_paddings clearfix">
 			<!--#include virtual="_taglist.shtml"-->
 			<div class="footer__footerInfo">
+
 				<ul class="footer__socialSharing">
-					<li class="socialSharing__socialNetwork"><a class="footer__footerInfoFaqLinks footer_iconFacebook"><span class="footer__footerInfoFaqIcon"></span>Facebook</a></li>
-					<li class="socialSharing__socialNetwork"><a class="footer__footerInfoFaqLinks footer_iconvKontakte"><span class="footer__footerInfoFaqIcon"></span>vKontakte</a></li>
-					<li class="socialSharing__socialNetwork"><a class="footer__footerInfoFaqLinks footer_iconGoogle"><span class="footer__footerInfoFaqIcon"></span>Google+</a></li>
-					<li class="socialSharing__socialNetwork"><a class="footer__footerInfoFaqLinks footer_iconTwitter"><span class="footer__footerInfoFaqIcon"></span>Twitter</a></li>
-					<li class="socialSharing__socialNetwork"><a class="footer__footerInfoFaqLinks footer_iconRSS"><span class="footer__footerInfoFaqIcon"></span>RSS</a></li>
+					<li class="socialSharing__socialNetwork">
+						<a class="footer__footerInfoFaqLinks footer_iconFacebook" href="#" title="">
+							<span class="footer__footerInfoFaqIcon"></span>Facebook
+						</a>
+					</li>
+					<li class="socialSharing__socialNetwork">
+						<a class="footer__footerInfoFaqLinks footer_iconvKontakte" href="#" title="">
+							<span class="footer__footerInfoFaqIcon"></span>vKontakte
+						</a>
+					</li>
+					<li class="socialSharing__socialNetwork">
+						<a class="footer__footerInfoFaqLinks footer_iconGoogle" href="#" title="">
+							<span class="footer__footerInfoFaqIcon"></span>Google+
+						</a>
+					</li>
+					<li class="socialSharing__socialNetwork">
+						<a class="footer__footerInfoFaqLinks footer_iconTwitter" href="#" title="">
+							<span class="footer__footerInfoFaqIcon"></span>Twitter
+						</a>
+					</li>
+					<li class="socialSharing__socialNetwork">
+						<a class="footer__footerInfoFaqLinks footer_iconRSS" href="#" title="">
+							<span class="footer__footerInfoFaqIcon"></span>RSS
+						</a>
+					</li>
 				</ul>
-				<hr class="footerInfo__separator"></hr>
+
+				<hr class="footerInfo__separator" />
+
 				<p>Ежедневная рассылка новостей от Ридуса</p>
 				<div class="footer__subscribeToNews">
 					<form>
@@ -19,13 +42,16 @@
 						<button type="submit">подписаться</button>
 					</form>
 				</div>
-				<hr class="footerInfo__separator"></hr>
+
+				<hr class="footerInfo__separator" />
+
 				<ul class="footer__footerInfoFaq">
-					<li><a>FAQ: технология размещения пользовательских материалов на "Ридусе"</a></li>
-					<li><a>FAQ: нтерфейс сайта "Ридуса"</a></li>
-					<li><a>Пользовательское соглашение</a></li>
-					<li><a>Выходные данные</a></li>
+					<li><a href="#" title="">FAQ: технология размещения пользовательских материалов на "Ридусе"</a></li>
+					<li><a href="#" title="">FAQ: нтерфейс сайта "Ридуса"</a></li>
+					<li><a href="#" title="">Пользовательское соглашение</a></li>
+					<li><a href="#" title="">Выходные данные</a></li>
 				</ul>
+
 			</div>
 		</div>
 	</section>

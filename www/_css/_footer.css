@@ -29,6 +29,13 @@
 	position: relative;
 }
 
+
+
+
+
+
+
+
 .footer__subscribeToNews {
 	position: relative;
 	height: 30px;
@@ -72,6 +79,12 @@
 	cursor: pointer;
 }
 
+
+
+
+
+
+
 .footer__footerInfoFaq li {
 	margin-bottom: 10px;
 }
@@ -84,6 +97,12 @@
 .footer__footerInfoFaqLinks:hover {
 	text-decoration: underline;
 }
+
+
+
+
+
+
 
 
 
@@ -113,6 +132,9 @@
 	height: 38px;
 	background: url(../_images/18plus.png) no-repeat;
 }
+
+
+
 
 
 

@@ -1,95 +1,152 @@
 <ul class="tagList">
 	<li class="tagList__item">
-		<a class="tagList__link" href="#avto">Авто</a>
+		<a class="tagList__link" href="#">Авто</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#art-ridus">Арт-ридус</a>
+		<a class="tagList__link" href="#">Арт-ридус</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#video">Видео</a>
+		<a class="tagList__link" href="#">Архитектура и строительство</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#gorod">Город</a>
+		<a class="tagList__link" href="#">Бизнес</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#eda">Еда</a>
+		<a class="tagList__link" href="#">Взаимоотношения полов</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#zhivotnye">Животные</a>
+		<a class="tagList__link" href="#">Видео дня</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#zdorovie">Здоровье</a>
+		<a class="tagList__link" href="#">Военное дело</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#internet">Интернет</a>
+		<a class="tagList__link" href="#">Городская среда</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#istoriya">История</a>
+		<a class="tagList__link" href="#">Другое</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#kino">Кино</a>
+		<a class="tagList__link" href="#">Еда</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#kompyuternye-igry">Компьютерные игры</a>
+		<a class="tagList__link" href="#">Животные</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#kosmos">Космос</a>
+		<a class="tagList__link" href="#">Жизнь в картинках</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#kultura-i-iskusstvo">Культура</a>
+		<a class="tagList__link" href="#">Заброшенный мир</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#literatura">Литература</a>
+		<a class="tagList__link" href="#">Здоровье</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#muzridus">Музыка</a>
+		<a class="tagList__link" href="#">Знаменитости</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#nauka-i-tehnika">Наука и техника</a>
+		<a class="tagList__link" href="#">Игры</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#nedvizhimost">Недвижимость</a>
+		<a class="tagList__link" href="#">Интервью</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#obrazovanie">Образование</a>
+		<a class="tagList__link" href="#">Интернет</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#obshestvo">Общество</a>
+		<a class="tagList__link" href="#">Инфографика</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#pravo">Право</a>
+		<a class="tagList__link" href="#">История</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#strany-i-puteshestviya">Путешествия</a>
+		<a class="tagList__link" href="#">Катастрофы и катаклизмы</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#religiya">Религия</a>
+		<a class="tagList__link" href="#">Кино</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#smi">СМИ</a>
+		<a class="tagList__link" href="#">Космос</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#sovety">Советы</a>
+		<a class="tagList__link" href="#">Культура</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#sport">Спорт</a>
+		<a class="tagList__link" href="#">Литература</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#stil">Стиль</a>
+		<a class="tagList__link" href="#">Музыка</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#tehnologii">Технологии</a>
+		<a class="tagList__link" href="#">Наука</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#foto">Фото</a>
+		<a class="tagList__link" href="#">Образование</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#ekoridus">Экология</a>
+		<a class="tagList__link" href="#">Покойся с миром</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#ekonomika">Экономика</a>
+		<a class="tagList__link" href="#">Политика</a>
 	</li>
 	<li class="tagList__item">
-		<a class="tagList__link" href="#jumor">Юмор</a>
+		<a class="tagList__link" href="#">Похоть</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Право</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Праздники и фестивали</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Преступность</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Происшествия</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Путешествия</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Религия</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">СМИ</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Семья и дети</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Спорт</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Стиль</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Территория запрета</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Терроризм</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Технологии</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Транспорт</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Убеждения</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Уличные акции</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Фото дня</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Экология</a>
+	</li>
+	<li class="tagList__item">
+		<a class="tagList__link" href="#">Экономика</a>
 	</li>
 </ul>

@@ -2,6 +2,15 @@
 	display: block;
 	background: #ccc;
 }
+@media screen and (max-width: 1040px) {
+	.banner_top  {
+		display: none;
+	}
+}
+
+
+
+
 
 .banner_footer {
 	display: block;

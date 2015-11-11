@@ -24,4 +24,11 @@
 					<b class="b-rate_value">47.05</b>
 				</a>
 			</li>
+			<li class="b-weather" title="Погода на 11/11 01:45">
+				<a>
+					Москва
+					<sup>+25&deg;C, ясно</sup>
+					<b class="b-rate_value">732 мм. рт. ст., ЮЗ 5 м/с, вл. 50%</b>
+				</a>
+			</li>
 		</ul>

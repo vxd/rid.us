@@ -129,6 +129,10 @@ header {
 	border-right: 1px solid #e8e8e8;
 	padding: 0 15px 0 0;
 }
+.dayInfo .b-weather {
+	display: none;
+}
+
 .dayInfo .b-date span {
 	text-transform: uppercase;
 }
@@ -164,10 +168,6 @@ header {
 		border-right: 1px solid #fff;
 		padding: 0 12px 0 0;
 	}
-
-
-
-
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.headerPanel .dayInfo {

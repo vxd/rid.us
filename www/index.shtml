@@ -9,14 +9,7 @@
 <body class="page_home" itemscope itemtype="http://schema.org/WebPage">
 
 
-	<header itemscope itemtype="http://schema.org/WPHeader">
-		<!--#include virtual="_menu.shtml"-->
-		<a href="" class="banner_top wrapper">
-			nissan
-		</a>
-		<!--#include virtual="_globalinfo.shtml"-->
-	</header>
-
+	<!--#include virtual="_header.shtml"-->
 
 	<section class="wrapper contentBg view_paddings clearfix">
 		<div class="brick">

@@ -1,0 +1,61 @@
+.globalInfo {
+	background: #fff;
+	border-bottom: 3px solid #f7f7f7;
+	-webkit-box-shadow: inset 0px -3px 0px 0px #e8e8e8;
+	-moz-box-shadow: inset 0px -3px 0px 0px #e8e8e8;
+	box-shadow: inset 0px -3px 0px 0px #e8e8e8;
+}
+.globalInfo.view_paddings {
+	padding-bottom: 13px;
+	padding-top: 10px;
+}
+
+
+
+
+.addNewsButton {
+	float: right;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	background: #ffd051;
+    padding: 9px 18px;
+    margin-left: 13px;
+    position: relative;
+}
+.addNewsButton:hover {
+	background: #ffc336;
+}
+.addNewsButton .corner {
+	display: block;
+	position: absolute;
+    right: -7px;
+    top: -7px;
+    border: 7px solid transparent;
+    border-bottom-color: #fff;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.addNewsButton .corner:before {
+	display: block;
+	position: absolute;
+	content: "";
+    right: -7px;
+    top: 7px;
+    border: 7px solid transparent;
+    border-top-color: #000;
+}
+.addNewsButton .corner:after {
+	display: block;
+	position: absolute;
+	content: "";
+    right: -14px;
+    top: 0px;
+    border: 7px solid transparent;
+    border-bottom-color: rgba(0,0,0,.1);
+}

@@ -1,0 +1,18 @@
+<header itemscope itemtype="http://schema.org/WPHeader">
+
+	<!--#include virtual="_menu.shtml"-->
+
+	<a href="" class="banner_top wrapper" title="">
+		nissan
+	</a>
+
+	<section class="globalInfo wrapper view_paddings clearfix">
+		<div style="float:left">курсы</div>
+		<a class="addNewsButton" href="" title="">
+			предложить новость
+			<i class="corner"><!-- corner --></i>
+		</a>
+		<!--#include virtual="_socials-header.shtml"-->
+	</section>
+
+</header>

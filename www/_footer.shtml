@@ -5,11 +5,11 @@
 			<!--#include virtual="_taglist.shtml"-->
 			<div class="footer__footerInfo">
 				<ul class="footer__socialSharing">
-					<li class="socialSharing__socialNetwork"></li>
-					<li class="socialSharing__socialNetwork"></li>
-					<li class="socialSharing__socialNetwork"></li>
-					<li class="socialSharing__socialNetwork"></li>
-					<li class="socialSharing__socialNetwork"></li>
+					<li class="socialSharing__socialNetwork"><a class="footer__footerInfoFaqLinks footer_iconFacebook"><span class="footer__footerInfoFaqIcon"></span>Facebook</a></li>
+					<li class="socialSharing__socialNetwork"><a class="footer__footerInfoFaqLinks footer_iconvKontakte"><span class="footer__footerInfoFaqIcon"></span>vKontakte</a></li>
+					<li class="socialSharing__socialNetwork"><a class="footer__footerInfoFaqLinks footer_iconGoogle"><span class="footer__footerInfoFaqIcon"></span>Google+</a></li>
+					<li class="socialSharing__socialNetwork"><a class="footer__footerInfoFaqLinks footer_iconTwitter"><span class="footer__footerInfoFaqIcon"></span>Twitter</a></li>
+					<li class="socialSharing__socialNetwork"><a class="footer__footerInfoFaqLinks footer_iconRSS"><span class="footer__footerInfoFaqIcon"></span>RSS</a></li>
 				</ul>
 				<hr class="footerInfo__separator"></hr>
 				<p>Ежедневная рассылка новостей от Ридуса</p>

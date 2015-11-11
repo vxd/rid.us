@@ -29,7 +29,7 @@ header {
 
 
 
-
+/* для случая использования в globalinfo */
 .addNewsButton {
 	float: right;
 	font-size: 13px;
@@ -77,6 +77,7 @@ header {
     border-bottom-color: rgba(0,0,0,.1);
 }
 
+/* для случая использования в меню */
 
 
 
@@ -88,6 +89,7 @@ header {
 
 
 
+/* для случая использования в globalinfo */
 .dayInfo {
 	float: left;
 }
@@ -113,3 +115,5 @@ header {
 	display: block;
 	color: #000;
 }
+
+/* для случая использования в меню */

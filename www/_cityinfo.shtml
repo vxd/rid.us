@@ -1,0 +1,4 @@
+<div class="cityInfo">
+    Москва <b>+25&deg;C, ясно</b>
+    <div class="cityInfo__weatherDetails">732мм рт.ст., ЮЗ 5 м/с, вл. 50%</div>
+</div>

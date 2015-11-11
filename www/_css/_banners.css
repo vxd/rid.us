@@ -1,7 +1,12 @@
 .banner_top {
 	display: block;
 	background: #ccc;
+	height: 120px;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
 }
+
 @media screen and (max-width: 1040px) {
 	.banner_top  {
 		display: none;

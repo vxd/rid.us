@@ -150,25 +150,30 @@ header {
 		float: right;
 		margin: 13px 0;
 	}
+
 	.headerPanel .dayInfo b {
 		color: #fff;
 		font-weight: normal;
 	}
+
 	.headerPanel .dayInfo li {
 		padding: 0 0 0 12px;
 	}
+
 	.headerPanel .dayInfo li:last-child {
 		padding-right: 0;
 	}
+
 	.headerPanel .dayInfo .b-date {
 		border-right: 1px solid #fff;
 		padding: 0 12px 0 0;
 	}
-
-
-
-
 }
+
+
+
+
+
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.headerPanel .dayInfo {
 		display: block;
@@ -178,5 +183,25 @@ header {
 	.headerPanel .dayInfo b {
 		color: #fff;
 		font-weight: normal;
+	}
+}
+
+
+
+
+
+.cityInfo {
+	display: block;
+	float: left;
+	font-size: 14px;
+	padding-left: 32px;
+}
+
+
+
+
+@media screen and (max-width: 1023px) {
+	.cityInfo {
+		display: none;
 	}
 }

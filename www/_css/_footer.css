@@ -38,7 +38,6 @@
 	background: #2a3436;
 	color: #fff;
 }
-
 .footer__subscribeToNews input:-webkit-input-placeholder {
 	color: #a9a9a9;
 	font-style: italic;
@@ -77,6 +76,9 @@
 	text-decoration: underline;
 }
 
+
+
+
 .footer__copyrights {
 	background: #000;
 	height: 130px;
@@ -102,6 +104,10 @@
 	height: 38px;
 	background: url(../_images/18plus.png) no-repeat;
 }
+
+
+
+
 .footer__footerInfoFaqIcon {
 	background: url(../_images/icons.png) no-repeat;
 	height: 24px;

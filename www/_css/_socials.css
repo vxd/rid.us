@@ -7,6 +7,9 @@
 .b-share_theme_counter .b-share_type_small .b-share-btn__wrap {
     margin-left: 10px !important;
 }
+.b-share_theme_counter .b-share_type_small .b-share-btn__wrap:first-child {
+    margin-left: 0 !important;
+}
 .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link,
 .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:active {
     -webkit-border-radius: 0px;

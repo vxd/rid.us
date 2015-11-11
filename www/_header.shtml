@@ -7,7 +7,33 @@
 	</a>
 
 	<section class="globalInfo wrapper view_paddings clearfix">
-		<div style="float:left">курсы</div>
+		<ul class="dayInfo">
+			<li class="b-date">
+				<span>среда</span>
+				<b class="b-rate_value">11 ноября</b>
+			</li>
+			<li class="b-rate_eur" title="Курс ММВБ на 11/10 23:43">
+				<a>
+					EUR
+					<sup>-0.33</sup>
+					<b class="b-rate_value">69.14</b>
+				</a>
+			</li>
+			<li class="b-rate_usd" title="Курс ММВБ на 11/10 23:43">
+				<a>
+					USD
+					<sup>-0.01</sup>
+					<b class="b-rate_value">64.58</b>
+				</a>
+			</li>
+			<li class="b-rate_brent" title="Цена на 11/11 01:45">
+				<a>
+					Нефть
+					<sup>-0.31</sup>
+					<b class="b-rate_value">47.05</b>
+				</a>
+			</li>
+		</ul>
 		<a class="addNewsButton" href="" title="">
 			предложить новость
 			<i class="corner"><!-- corner --></i>

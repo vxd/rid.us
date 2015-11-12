@@ -14,7 +14,7 @@
 
 
 
-.headLinks {
+.tabsYellowSeparator {
 	display: block;
 	font-size: 28px;
 	font-weight: bold;
@@ -22,12 +22,12 @@
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
-.headLinks li {
+.tabsYellowSeparator li {
 	float: left;
 	position: relative;
 	margin-left: 50px;
 }
-.headLinks li:before {
+.tabsYellowSeparator li:before {
 	display: block;
 	content: "";
 	width: 7px;
@@ -38,17 +38,17 @@
 	position: absolute;
 	background: #ffd051;
 }
-.headLinks li:first-child {
+.tabsYellowSeparator li:first-child {
 	margin-left: 0;
 }
-.headLinks li:first-child:before {
+.tabsYellowSeparator li:first-child:before {
 	display: none;
 }
-.headLinks a {
+.tabsYellowSeparator a {
 	color: #a3a3a3;
 	text-decoration: none;
 }
-.headLinks a:hover {
+.tabsYellowSeparator a:hover {
 	color: #ffd051;
 }
 
@@ -171,6 +171,9 @@
 	padding: 10px 0 10px 15px;
 	text-transform: uppercase;
 	color: #a4a4a4;
+}
+.authorProfile__infoStatistics .tabsYellowSeparator {
+	font-size: 16px;
 }
 
 

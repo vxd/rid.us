@@ -13,7 +13,7 @@
 
 <section class="wrapper contentBg view_paddings clearfix">
 
-    <ul class="headLinks clearfix">
+    <ul class="tabsYellowSeparator headerTabs clearfix">
         <li>
             Авторские колонки
         </li>
@@ -58,13 +58,20 @@
                     </li>
                 </ul>
             </div>
+
             <p class="authorProfile__description">Эксперт в вопросах борьбы с терроризмом, профессор МГИМО. Доиндустриальный тип политической культуры доказывает христианско-демократический национализм.
                 Субъект власти верифицирует эмпирический тоталитарный тип политической культуры.
             </p>
 
             <div class="authorProfile__infoStatistics">
-                <span class="author-articles">статьи автора (<span>15</span>)</span>
-                <span class="author-comments">комментарии автора (<span>133</span>)</span>
+                <ul class="tabsYellowSeparator clearfix">
+                    <li class="author-articles">
+                        статьи автора (<span>15</span>)
+                    </li>
+                    <li class="author-comments">
+                        <a href="#" title="">комментарии автора (<span>133</span>)</a>
+                    </li>
+                </ul>
             </div>
         </div>
 

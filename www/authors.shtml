@@ -95,11 +95,12 @@
 		</div>
 	</section>
 
-	<section class="pageBottom contentBg wrapper">
-		<a href="" title="">Смотреть больше новостей</a>
+	<section class="pageBottom contentBg wrapper clearfix">
+		<a class="more" href="" title=""><span>Смотреть больше новостей</span></a>
 		<hr>
 		<div class="calentar">
-			calendar widget
+			<br>
+			calendar widget<br><br>
 		</div>
 	</section>
 

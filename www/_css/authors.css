@@ -109,7 +109,25 @@
 
 .pageBottom {
 	text-align: center;
+	padding-top: 20px;
 }
-.pageBottom calentar {
+.pageBottom .more {
+	display: inline-block;
+	background: #f7f7f7 url(../_images/arrow.png) no-repeat 28px 50%;
+	padding: 22px 37px 22px 71px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 13px;
+}
+.pageBottom .more span {
+	border-bottom: 1px dashed #949494;
+}
+.pageBottom .more:hover span {
+	border-bottom: none;
+}
+.pageBottom .calentar {
 	margin: 0 auto;
 }

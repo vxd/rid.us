@@ -1,0 +1,57 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+	<!--#include virtual="_head.shtml"-->
+	<link href="_css/authors.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="page_authors" itemscope itemtype="http://schema.org/WebPage">
+
+
+	<!--#include virtual="_header.shtml"-->
+
+	<section class="wrapper contentBg view_paddings clearfix">
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			d
+		</div>
+		<div class="brick">
+			d
+		</div>
+		<div class="brick">
+			d
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/test.shtml?data=something&image=cool"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/test.shtml?data=something&image=col"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/test.shtml?q"-->
+		</div>
+	</section>
+
+
+
+
+
+	<a href="#" class="banner_footer">
+		<img src="_images/footer_banner.jpg" alt="">
+	</a>
+
+	<!--#include virtual="_footer.shtml"-->
+
+	<script src="_js/js.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,2 +1,67 @@
 /* стили для страницы */
 
+.contentBg.view_paddings {
+	padding-top: 20px;
+}
+
+.bricksWrapper {
+	margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+.headLinks {
+	display: block;
+	font-size: 28px;
+	font-weight: bold;
+	color: #000;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.headLinks li {
+	float: left;
+	position: relative;
+	margin-left: 50px;
+}
+.headLinks li:before {
+	display: block;
+	content: "";
+	width: 7px;
+	height: 7px;
+	top: 50%;
+	margin-top: -3px;
+	left: -27px;
+	position: absolute;
+	background: #ffd051;
+}
+.headLinks li:first-child {
+	margin-left: 0;
+}
+.headLinks li:first-child:before {
+	display: none;
+}
+.headLinks a {
+	color: #a3a3a3;
+	text-decoration: none;
+}
+.headLinks a:hover {
+	color: #ffd051;
+}
+
+
+
+
+
+
+
+
+
+
+
+.readAlso {
+	background: #f7f7f7
+}

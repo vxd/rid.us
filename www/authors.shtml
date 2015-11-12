@@ -12,38 +12,66 @@
 	<!--#include virtual="_header.shtml"-->
 
 	<section class="wrapper contentBg view_paddings clearfix">
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+
+		<ul class="headLinks clearfix">
+			<li>
+				Авторские колонки
+			</li>
+			<li>
+				<a href="#" title="">Авторы</a>
+			</li>
+		</ul>
+
+		<div class="bricksWrapper">
+			<div class="brick">
+				<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+			</div>
+			<div class="brick">
+				<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+			</div>
+			<div class="brick view_banner">
+				<!--#include virtual="bricks/banner-mts.shtml"-->
+			</div>
+			<div class="brick">
+				<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+			</div>
+			<div class="brick">
+				<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+			</div>
+			<div class="brick">
+				<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+			</div>
+			<div class="brick">
+				<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+			</div>
+			<div class="brick view_banner">
+				<!--#include virtual="bricks/banner-mts.shtml"-->
+			</div>
+			<div class="brick">
+				<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+			</div>
+			<div class="brick">
+				<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+			</div>
+			<div class="brick">
+				<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+			</div>
+			<div class="brick">
+				<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+			</div>
 		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			d
-		</div>
-		<div class="brick">
-			d
-		</div>
-		<div class="brick">
-			d
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/test.shtml?data=something&image=cool"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/test.shtml?data=something&image=col"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/test.shtml?q"-->
-		</div>
+	
+
 	</section>
 
 
+	<section class="readAlso wrapper">
+		g
+	</section>
 
-
+	<section class="contentBg wrapper">
+		g
+	</section>
 
 	<a href="#" class="banner_footer">
 		<img src="_images/footer_banner.jpg" alt="">

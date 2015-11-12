@@ -159,6 +159,16 @@
     </div>
 </section>
 
+<section class="wrapper pagination">
+    <ul class="pagination__list clearfix">
+        <li class="active_state">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li class="pagination_morePages"></li>
+        <li>5</li>
+    </ul>
+</section>
+
 <a href="#" class="banner_footer">
     <img src="_images/footer_banner.jpg" alt="">
 </a>

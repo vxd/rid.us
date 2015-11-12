@@ -179,6 +179,47 @@
 
 
 
+.pagination {
+	text-align: center;
+	padding: 18px 0 15px;
+}
+.pagination__list {
+	margin: 0 auto;
+	display: inline-block;
+}
+.pagination__list li {
+	float: left;
+	font-size: 21px;
+	color: #a3a3a3;
+	padding: 2px 9px;
+	margin-right: 10px;
+}
+.pagination__list li.active_state {
+	color: #000;
+	background: #ffd103;
+	position: relative;
+}
+.pagination__list li.active_state:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	background: #fff;
+	top: -28px;
+	left: 5px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.pagination__list li.pagination_morePages:after {
+	content: '...';
+}
+
+
+
 
 
 

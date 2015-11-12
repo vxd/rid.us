@@ -1,0 +1,50 @@
+
+<!-- //// определяем переменные -->  
+
+<!--#set var="image" value="" -->
+<!--#set var="data" value="" -->
+
+<!-- //// извлекаем из параметров урла --> 
+
+<!--#if expr="\"$QUERY_STRING\" = /image=([a-zA-Z0-9]+)/" -->
+<!--#set var="image" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /data=([a-zA-Z0-9]+)/" -->
+<!--#set var="data" value="$1" -->
+<!--#endif -->
+
+
+
+<!-- //// конец --> 
+
+<a href="#" class="brick__image">
+<!--#if expr="$image = 1" -->
+	<img src="http://www.ridus.ru/images/2015/11/9/336087/preview_bf6ffdd776.jpg" alt="">
+<!--#endif -->
+<!--#if expr="$image = 2" -->
+	<img src="http://www.ridus.ru/images/2015/11/6/335790/preview_8d38e15379.jpg" alt="">
+<!--#endif -->
+<!--#if expr="$image = 3" -->
+	<img src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg" alt="">
+<!--#endif -->
+</a>
+
+<div class="brick__content">
+<!--#if expr="$data = 1" -->
+	<p>
+		Каждый старшеклассник знает, что сила тока измеряется в амперах. 
+	</p>
+<!--#endif -->
+<!--#if expr="$data = 2" -->
+	<p>
+		«Oткрытие» NASA было известно советским ученым еще в 1970-х годах.
+	</p>
+<!--#endif -->
+<!--#if expr="$data = 3" -->
+	<p>
+		Aэробус мог быть взорван с помощью жидкого взрывчатого вещества.
+	</p>
+<!--#endif -->
+</div>
+
+

@@ -56,13 +56,22 @@
 
 
 
-.brick__image {
+
+
+
+
+
+
+
+
+.brick .brick__image {
+	display: block;
 	height: 95px;
 	overflow: hidden;
 	padding-top: 95px;
 	margin-bottom: 15px;
 }
-.brick__image img {
+.brick .brick__image img {
 	width: 100%;
 	-webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -70,54 +79,54 @@
     transform: translateY(-50%);
 }
 
-.brick__content h6,
-.brick__content h6 a {
+.brick .brick__content h6,
+.brick .brick__content h6 a {
 	color: #a3a3a3;
 	text-transform: uppercase;
 	text-decoration: none;
 	margin-bottom: 5px;
 }
-.brick__content h4 a:hover {
+.brick .brick__content h4 a:hover {
 	color: #c64a1b;
 }
-.brick__content h2,
-.brick__content h2 a {
+.brick .brick__content h2,
+.brick .brick__content h2 a {
 	color: #000;
 	text-decoration: none;
 	margin-bottom: 10px;
 }
-.brick__content h2 a:hover {
+.brick .brick__content h2 a:hover {
 	color: #c64a1b;
 }
 
-.brick__content p {
+.brick .brick__content p {
 	color: #000;
 	font-size: 16px;
 	margin-bottom: 15px;
 }
 
-.brick__counters {
+.brick .brick__counters {
 	color: #c1c1c1;
     font-size: 11px;
     font-weight: bold;
 }
-.brick__counters .count1 {
+.brick .brick__counters .count1 {
     padding: 0 14px 0 0;
     position: relative;
 }
-.brick__counters .count2 {
+.brick .brick__counters .count2 {
     padding: 0 18px 0 17px;
     position: relative;
 }
-.brick__counters .count3 {
+.brick .brick__counters .count3 {
     padding: 0 15px 0 12px;
     position: relative;
 }
-.brick__counters .icon {
+.brick .brick__counters .icon {
 	background: url(../_images/icons.png) no-repeat;
     position: absolute;
 }
-.brick__counters .count1 .icon {
+.brick .brick__counters .count1 .icon {
 	width: 10px;
     height: 15px;
     background-position: -240px 0;
@@ -125,7 +134,7 @@
     top: 0;
     background-position: -240px -20px;
 }
-.brick__counters .count2 .icon {
+.brick .brick__counters .count2 .icon {
 	width: 13px;
     height: 13px;
     background-position: -260px 0;
@@ -134,11 +143,98 @@
     background-position: -260px -20px;
     top: 2px;
 }
-.brick__counters .count3 .icon {
+.brick .brick__counters .count3 .icon {
 	width: 11px;
     height: 9px;
     background-position: -280px 0;
     right: 0;
     top: 3px;
     background-position: -280px -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.miniBrick {
+	/*height: 440px;*/
+	float: left;
+	box-sizing: border-box;
+}
+@media screen and (max-width: 1023px) {
+	.miniBrick {
+		width: 22.75%;
+		margin: 0 3% 22px 0;
+	}
+	.miniBrick:nth-child(4n) {
+		margin-right: 0;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.miniBrick {
+		width: 15%;
+		margin: 0 2% 22px 0;
+	}
+	.miniBrick:nth-child(6n) {
+		margin-right: 0;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.miniBrick {
+		width: 139px;
+		margin: 0 22px 22px 0;
+	}
+	.miniBrick:nth-child(6n) {
+		margin-right: 0;
+	}
+}
+@media screen and (min-width: 1297px) {
+	.miniBrick {
+		width: 142px;
+		margin: 0 16px 16px 0;
+	}
+	.miniBrick:nth-child(8n) {
+		margin-right: 0;
+	}
+}
+
+
+.miniBrick .brick__image {
+	display: block;
+	height: 45px;
+	overflow: hidden;
+	padding-top: 45px;
+	margin-bottom: 13px;
+}
+.miniBrick .brick__image img {
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.miniBrick .brick__content p {
+	color: #000;
+	font-size: 14px;
+	margin-bottom: 15px;
 }

@@ -28,7 +28,7 @@
 
 <!-- //// конец --> 
 
-<div class="brick__image">
+<a href="" class="brick__image">
 <!--#if expr="$image = 1" -->
 	<img alt="Единороссы призовут однопартийца Исаева к ответу" src="http://ridus.ru/images/2013/10/9/122365/preview_09ade907ef.jpg">
 <!--#endif -->
@@ -38,7 +38,7 @@
 <!--#if expr="$image = 3" -->
 	<img alt="Ученые доказали влияние грибов на погоду" src="http://ridus.ru/images/2015/11/10/336462/preview_40b9a0f86b.jpg">
 <!--#endif -->
-</div>
+</a>
 
 <div class="brick__content">
 <!--#if expr="$data = 1" -->

@@ -22,7 +22,7 @@
 			</li>
 		</ul>
 
-		<div class="bricksWrapper">
+		<div>
 			<div class="brick">
 				<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
 			</div>
@@ -65,12 +65,42 @@
 	</section>
 
 
-	<section class="readAlso wrapper">
-		g
+	<section class="readAlso view_paddings wrapper clearfix">
+		<h2>Читайте также:</h2>
+		<div>
+			<div class="miniBrick">
+				<!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
+			</div>
+			<div class="miniBrick">
+				<!--#include virtual="bricks/mini.shtml?image=2&data=2"-->
+			</div>
+			<div class="miniBrick">
+				<!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
+			</div>
+			<div class="miniBrick">
+				<!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
+			</div>
+			<div class="miniBrick">
+				<!--#include virtual="bricks/mini.shtml?image=2&data=2"-->
+			</div>
+			<div class="miniBrick">
+				<!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
+			</div>
+			<div class="miniBrick">
+				<!--#include virtual="bricks/mini.shtml?image=2&data=2"-->
+			</div>
+			<div class="miniBrick">
+				<!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
+			</div>
+		</div>
 	</section>
 
-	<section class="contentBg wrapper">
-		g
+	<section class="pageBottom contentBg wrapper">
+		<a href="" title="">Смотреть больше новостей</a>
+		<hr>
+		<div class="calentar">
+			calendar widget
+		</div>
 	</section>
 
 	<a href="#" class="banner_footer">

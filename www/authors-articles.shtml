@@ -1,0 +1,164 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    <!--#include virtual="_head.shtml"-->
+    <link href="_css/authors.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="page_authors" itemscope itemtype="http://schema.org/WebPage">
+
+
+<!--#include virtual="_header.shtml"-->
+
+<section class="wrapper contentBg view_paddings clearfix">
+
+    <ul class="headLinks clearfix">
+        <li>
+            Авторские колонки
+        </li>
+        <li>
+            <a href="#" title="">Авторы</a>
+        </li>
+    </ul>
+
+    <div class="authorProfile clearfix">
+        <div class="authorProfile__photo">
+            <a href="#">
+                <img src="../_images/author_photo.jpg" alt="автор" />
+            </a>
+            <span class="authorProfile__photoImAuthor"></span>
+        </div>
+        <div class="authorProfile__info">
+            <div class="authorProfile__infoDetails clearfix">
+                <h2 class="authorProfile__authorName">Hard Ingush</h2>
+
+                <ul class="authorProfile__socialSharing">
+                    <li><a href="#" class="facebook"></a></li>
+                    <li><a href="#" class="vkontakte"></a></li>
+                    <li><a href="#" class="twitter"></a></li>
+                    <li><a href="#" class="google"></a></li>
+                    <li><a href="#" class="odnoklassniki"></a></li>
+                </ul>
+
+                <ul class="authorProfile__popularity">
+                    <li class="watchers">
+                        408 <span class="eye-icon"></span>
+                    </li>
+                    <li class="rating">
+                        <b>Рейтинг #
+                            <span>56</span>
+                        </b>
+                    </li>
+                    <li class="rate">
+                        <b>Оценки:
+                            <span class="positive">+234</span> /
+                            <span class="negative">-33</span>
+                        </b>
+                    </li>
+                </ul>
+            </div>
+            <p class="authorProfile__description">Эксперт в вопросах борьбы с терроризмом, профессор МГИМО. Доиндустриальный тип политической культуры доказывает христианско-демократический национализм.
+                Субъект власти верифицирует эмпирический тоталитарный тип политической культуры.
+            </p>
+
+            <div class="authorProfile__infoStatistics">
+                <span class="author-articles">статьи автора (<span>15</span>)</span>
+                <span class="author-comments">комментарии автора (<span>133</span>)</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick view_banner">
+            <!--#include virtual="bricks/banner-mts.shtml"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick view_banner">
+            <!--#include virtual="bricks/banner-mts.shtml"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+    </div>
+
+
+</section>
+
+
+<section class="readAlso view_paddings wrapper clearfix">
+    <h2>Читайте также:</h2>
+    <div>
+        <div class="miniBrick">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
+        </div>
+        <div class="miniBrick">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=2"-->
+        </div>
+        <div class="miniBrick">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
+        </div>
+        <div class="miniBrick">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
+        </div>
+        <div class="miniBrick">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=2"-->
+        </div>
+        <div class="miniBrick">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
+        </div>
+        <div class="miniBrick">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=2"-->
+        </div>
+        <div class="miniBrick">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
+        </div>
+    </div>
+</section>
+
+<section class="pageBottom contentBg wrapper clearfix">
+    <a class="more" href="" title=""><span>Смотреть больше новостей</span></a>
+    <hr>
+    <div class="calentar">
+        <br>
+        calendar widget<br><br>
+    </div>
+</section>
+
+<a href="#" class="banner_footer">
+    <img src="_images/footer_banner.jpg" alt="">
+</a>
+
+<!--#include virtual="_footer.shtml"-->
+
+<script src="_js/js.js" type="text/javascript"></script>
+
+</body>
+</html>

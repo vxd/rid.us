@@ -1,4 +1,4 @@
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1040px) {
 	footer {		
 	    display: none;
 	}
@@ -11,8 +11,7 @@
 	float: right;
 	background: #2a3436;
 	padding: 15px;
-	height: 415px;
-	width: 286px;
+	width: 270px;
 	color: #fff;
 	line-height: 17px;
 	font-size: 14px;
@@ -107,22 +106,25 @@
 
 
 
-.footer__copyrights {
+.footerCopy {
 	background: #000;
-	height: 130px;
-	padding: 24px 0 27px;
-	font-size: 14px;
+	padding: 27px 0;
 }
-.footer__copyrightsText {
+.footerCopy__container {
 	position: relative;
-	height: 67px;
+	min-height: 67px;
 	padding-right: 30%;
 	padding-left: 80px;
 	padding-top: 10px;
 	background: url(../_images/footer-logo.png) left center no-repeat;
 	color: #929292;
 }
-.footer__copyrightsText::after {
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.footerCopy__container {
+		padding-right: 7%;
+	}
+}
+.footerCopy__container.view_ageRestrictionSign:after {
 	content: " ";
 	display: block;
 	position: absolute;
@@ -131,6 +133,12 @@
 	width: 38px;
 	height: 38px;
 	background: url(../_images/18plus.png) no-repeat;
+}
+.footerCopy__header {
+	margin-bottom: 7px;
+}
+.footerCopy__text {
+	font-size: 12px;
 }
 
 

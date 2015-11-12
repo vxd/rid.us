@@ -31,7 +31,7 @@
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1040px) {
 	.banner_footer {		
 	    display: none;
 	}

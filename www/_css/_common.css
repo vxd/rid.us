@@ -222,29 +222,31 @@ input[type="password"],
 input[type="tel"], 
 input[type="url"], 
 input[type="text"] {
-	font-size: 12px;
-	border: 2px solid #e1e1e1;
-	font-weight: bold;
-	padding: 8px 8px 7px;
+	/*font-size: 12px;*/
+	/*border: 2px solid #e1e1e1;*/
+	/*font-weight: bold;*/
+	/*padding: 8px 8px 7px;*/
 	width: 100%;
 	box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+button[type="submit"],
 input[type="submit"] {
-	width: 220px;
+	/*width: 220px;*/
 	border: 0;
 	background: #0e53b2;
-	font-weight: bold;
-	font-size: 13px;
+	/*font-weight: bold;*/
+	/*font-size: 13px;*/
 	color: #fff;
-	padding: 9px 8px 8px;
+	/*padding: 9px 8px 8px;*/
 	cursor: pointer;
 	-moz-transition: all 0.2s;
 	-webkit-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
 }
+button[type="submit"]:hover,
 input[type="submit"]:hover {
 	opacity: .85;
 }

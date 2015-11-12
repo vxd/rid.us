@@ -1,58 +1,68 @@
 <footer itemscope itemtype="http://schema.org/WPFooter">
 
-	<section class="footer__tags">
+	<section class="footerLinks">
 		<div class="wrapper view_paddings clearfix">
 
 			<!--#include virtual="_taglist.shtml"-->
 
+			<div class="footerInfo">
 
-			<div class="footer__footerInfo">
-
-				<ul class="footer__socialSharing">
-					<li class="socialSharing__socialNetwork">
-						<a class="footer__footerInfoFaqLinks footer_iconFacebook" href="#" title="">
-							<span class="footer__footerInfoFaqIcon"></span>Facebook
+				<ul class="footerSocials">
+					<li class="socialSharing__item">
+						<a class="socialSharing__link view_iconFacebook" href="#" title="">
+							<i class="icon"><!-- icon --></i>
+							Facebook
 						</a>
 					</li>
-					<li class="socialSharing__socialNetwork">
-						<a class="footer__footerInfoFaqLinks footer_iconvKontakte" href="#" title="">
-							<span class="footer__footerInfoFaqIcon"></span>vKontakte
+					<li class="socialSharing__item">
+						<a class="socialSharing__link view_iconvKontakte" href="#" title="">
+							<i class="icon"><!-- icon --></i>vKontakte
 						</a>
 					</li>
-					<li class="socialSharing__socialNetwork">
-						<a class="footer__footerInfoFaqLinks footer_iconGoogle" href="#" title="">
-							<span class="footer__footerInfoFaqIcon"></span>Google+
+					<li class="socialSharing__item">
+						<a class="socialSharing__link view_iconGoogle" href="#" title="">
+							<i class="icon"><!-- icon --></i>Google+
 						</a>
 					</li>
-					<li class="socialSharing__socialNetwork">
-						<a class="footer__footerInfoFaqLinks footer_iconTwitter" href="#" title="">
-							<span class="footer__footerInfoFaqIcon"></span>Twitter
+					<li class="socialSharing__item">
+						<a class="socialSharing__link view_iconTwitter" href="#" title="">
+							<i class="icon"><!-- icon --></i>Twitter
 						</a>
 					</li>
-					<li class="socialSharing__socialNetwork">
-						<a class="footer__footerInfoFaqLinks footer_iconRSS" href="#" title="">
-							<span class="footer__footerInfoFaqIcon"></span>RSS
+					<li class="socialSharing__item">
+						<a class="socialSharing__link view_iconRSS" href="#" title="">
+							<i class="icon"><!-- icon --></i>RSS
 						</a>
 					</li>
 				</ul>
 
 				<hr class="footerInfo__separator" />
 
-				<div class="footer__subscribeToNews">
-					<p>Ежедневная рассылка новостей от Ридуса</p>
+				<div class="footerSubscribe">
+					<p>Ежедневная рассылка лучших новостей от Ридуса</p>
 					<form>
-						<input type="text" placeholder="Введите e-mail" />
-						<button type="submit">подписаться</button>
+						<div class="footerSubscribe__form">
+							<input class="input" type="text" placeholder="Введите e-mail" />
+							<button class="button" type="submit">подписаться</button>
+						</div>
 					</form>
 				</div>
 
 				<hr class="footerInfo__separator" />
 
-				<ul class="footer__footerInfoFaq">
-					<li><a href="#" title="">FAQ: технология размещения пользовательских материалов на "Ридусе"</a></li>
-					<li><a href="#" title="">FAQ: нтерфейс сайта "Ридуса"</a></li>
-					<li><a href="#" title="">Пользовательское соглашение</a></li>
-					<li><a href="#" title="">Выходные данные</a></li>
+				<ul class="footerFaq">
+					<li class="footerFaq__item">
+						<a href="#" class="footerFaq__link" title="">FAQ: технология размещения пользовательских материалов на "Ридусе"</a>
+					</li>
+					<li class="footerFaq__item">
+						<a href="#" class="footerFaq__link" title="">FAQ: итерфейс сайта "Ридуса"</a>
+					</li>
+					<li class="footerFaq__item">
+						<a href="#" class="footerFaq__link" title="">Пользовательское соглашение</a>
+					</li>
+					<li class="footerFaq__item">
+						<a href="#" class="footerFaq__link" title="">Выходные данные</a>
+					</li>
 				</ul>
 
 			</div>

@@ -22,33 +22,31 @@
 
     <div class="authorProfile clearfix">
 
-        <div class="authorProfile__photo">
+        <div class="authorPhoto">
             <a href="#" title="">
                 <img src="../_images/author_photo.jpg" alt="автор" />
             </a>
-            <span class="authorProfile__label">Я &mdash; Автор</span>
+            <span class="authorPhoto__label">Я &mdash; Автор</span>
         </div>
 
-        <div class="authorProfile__info">
+        <div class="authorInfo">
 
-            <div class="authorProfile__infoDetails">
+            <div class="authorInfoDetails">
 
-                <ul class="authorProfile__socialSharing">
-                    <li><a href="#" class="facebook"></a></li>
-                    <li><a href="#" class="vkontakte"></a></li>
-                    <li><a href="#" class="twitter"></a></li>
-                    <li><a href="#" class="google"></a></li>
-                    <li><a href="#" class="odnoklassniki"></a></li>
+                <ul class="authorSocials">
+                    <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconFacebook"></a></li>
+                    <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconVkontakte"></a></li>
+                    <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconTwitter"></a></li>
+                    <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconGoogle"></a></li>
+                    <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconOdnoklassniki"></a></li>
                 </ul>
 
-                <ul class="authorProfile__popularity">
+                <ul class="authorPopularity">
                     <li class="watchers">
-                        408 <span class="eye-icon"></span>
+                        <b>408 <span class="eye-icon"></span></b>
                     </li>
                     <li class="rating">
-                        <b>Рейтинг #
-                            <span>56</span>
-                        </b>
+                        <b>Рейтинг #<span>56</span></b>
                     </li>
                     <li class="rate">
                         <b>Оценки:
@@ -58,20 +56,18 @@
                     </li>
                 </ul>
 
-                <h2 class="authorProfile__authorName">
-                    Hard Ingush
-                </h2>
+                <h2>Hard Ingush</h2>
 
             </div>
 
-            <p class="authorProfile__description">
+            <p>
                 Эксперт в вопросах борьбы с терроризмом, профессор МГИМО. Доиндустриальный тип политической культуры доказывает христианско-демократический национализм.
                 Субъект власти верифицирует эмпирический тоталитарный тип политической культуры.
             </p>
 
         </div>
 
-        <h5 class="authorProfile__infoStatistics">
+        <h5 class="authorMaterials">
             <ul class="textTabs">
                 <li class="author-articles">
                     статьи автора (<span>15</span>)

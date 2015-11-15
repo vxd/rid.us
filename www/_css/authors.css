@@ -66,20 +66,20 @@
 
 
 
-.authorProfile__photo {
+.authorPhoto {
 	position: relative;
 	width: 190px;
 	padding-top: 24px;
 	float: left;
 	font-size: 0;
 }
-/*.authorProfile__photo a {
+/*.authorPhoto a {
 	display: block;
 	height: 95px;
 	padding-top: 95px;
 	overflow: hidden;
 }
-.authorProfile__photo a img {
+.authorPhoto a img {
 	transform: translateY(-50%);
 	width: 100%;
 }*/
@@ -104,33 +104,28 @@
 
 
 
-.authorProfile__info {
+.authorInfo {
     margin-left: 214px;
    	padding-top: 24px;
    	padding-bottom: 50px;
 }
 
-.authorProfile__infoDetails {
+.authorInfoDetails {
 	margin-bottom: 20px;
-	/*float: left;*/
-	/*width: 100%;*/
-}
-.authorProfile__authorName {
-	/*float: left;*/
 }
 
 
 
 
-.authorProfile__socialSharing {
+
+.authorSocials {
 	float: right;
-	/*padding-top: 3px;*/
 }
-.authorProfile__socialSharing li {
+.authorSocials__item {
 	display: inline-block;
 	margin-right: 7px;
 }
-.authorProfile__socialSharing li a {
+.authorSocials__link {
 	display: block;
 	width: 21px;
 	height: 21px;
@@ -138,52 +133,52 @@
 	text-decoration: none;
 	border: 0;
 }
-.authorProfile__socialSharing li a:hover {
+.authorSocials__link:hover {
 	opacity: .8;
 }
-.authorProfile__socialSharing .facebook {
+.authorSocials__link.view_iconFacebook {
 	background-position: 0 -178px;
 }
-.authorProfile__socialSharing .vkontakte {
+.authorSocials__link.view_iconVkontakte {
 	background-position: -21px -178px;
 }
-.authorProfile__socialSharing .twitter {
+.authorSocials__link.view_iconTwitter {
 	background-position: -42px -178px;
 }
-.authorProfile__socialSharing .google {
+.authorSocials__link.view_iconGoogle {
 	background-position: -63px -178px;
 }
-.authorProfile__socialSharing .odnoklassniki {
+.authorSocials__link.view_iconOdnoklassniki {
 	background-position: -84px -178px;
 }
 
 
 
 
-.authorProfile__popularity {
+.authorPopularity {
 	float: right;
 	margin: 0 10px;
 	padding-top: 5px;
 }
-.authorProfile__popularity li {
+.authorPopularity li {
 	display: inline-block;
 	font-size: 12px;
 	margin-right: 20px;
 }
-.authorProfile__popularity .watchers {
+.authorPopularity .watchers {
 	color: #494949;
 }
-.authorProfile__popularity .watchers .eye-icon {
+.authorPopularity .watchers .eye-icon {
 	width: 11px;
 	height: 9px;
 	display: inline-block;
 	margin-left: 4px;
 	background: url(../_images/icons.png) -280px -20px no-repeat;
 }
-.authorProfile__popularity .rate .positive {
+.authorPopularity .rate .positive {
 	color: #399800;
 }
-.authorProfile__popularity .rate .negative {
+.authorPopularity .rate .negative {
 	color: #e80f00;
 }
 
@@ -195,7 +190,7 @@
 
 
 
-.authorProfile__infoStatistics {
+.authorMaterials {
 	border-color: #d4d4d4;
 	border-width: 3px 0 1px;
 	border-style: solid;

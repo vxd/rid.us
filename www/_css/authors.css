@@ -58,13 +58,22 @@
 	margin-bottom: 38px;
 	position: relative;
 }
+
+
+
+
+
+
+
+
 .authorProfile__photo {
 	position: relative;
 	width: 190px;
 	padding-top: 24px;
 	float: left;
+	font-size: 0;
 }
-.authorProfile__photo a {
+/*.authorProfile__photo a {
 	display: block;
 	height: 95px;
 	padding-top: 95px;
@@ -73,15 +82,27 @@
 .authorProfile__photo a img {
 	transform: translateY(-50%);
 	width: 100%;
-}
-.authorProfile__photoImAuthor {
+}*/
+.authorProfile__label {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 118px;
-	height: 35px;
-	background: url(../_images/im_author.jpg) no-repeat;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	padding: 6px 13px;
+	background: #000;
 }
+
+
+
+
+
+
+
+
+
 
 .authorProfile__info {
     margin-left: 214px;

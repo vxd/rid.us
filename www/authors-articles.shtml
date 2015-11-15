@@ -23,10 +23,10 @@
     <div class="authorProfile clearfix">
 
         <div class="authorProfile__photo">
-            <a href="#">
+            <a href="#" title="">
                 <img src="../_images/author_photo.jpg" alt="автор" />
             </a>
-            <span class="authorProfile__photoImAuthor"></span>
+            <span class="authorProfile__label">Я &mdash; Автор</span>
         </div>
 
         <div class="authorProfile__info">

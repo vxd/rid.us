@@ -18,23 +18,31 @@
 
 		<div class="headerSearch">
 			<form>
-				<div style="display:none">
-					<input type="text">
-					<button type="submit"></button>
+				<div class="headerSearch__form">
+					<input class="headerSearch__input" type="text">
+					<button class="headerSearch__button" type="submit">&nbsp;</button>
 				</div>
 				<a class="header__searchButton" href="#">&nbsp;</a>
 			</form>
 		</div>	
+
+
 
 		<!--#include virtual="_addnewsbutton.shtml"-->
 		<!--#include virtual="_dayinfo.shtml"-->
 
 		<menu class="menu">
 			<ul>
-				<li class="menu__item state_current">
-					<a class="menu__link" href="#">Картина дня</a>
+				<li class="menu__item view_mobileOnly">
+					<a class="menu__link view_enter" href="#">Войти</a>
+				</li>
+				<li class="menu__item view_mobileOnly">
+					<a class="menu__link view_search" href="#">Поиск</a>
 				</li>
 				<li class="menu__item">
+					<a class="menu__link" href="#">Картина дня</a>
+				</li>
+				<li class="menu__item state_current">
 					<a class="menu__link" href="#">Гражданская журналистика</a>
 				</li>
 				<li class="menu__item">

@@ -96,7 +96,7 @@
 	</section>
 
 	<section class="pageBottom contentBg wrapper clearfix">
-		<a class="more" href="" title=""><span>Смотреть больше новостей</span></a>
+		<a class="moreButton" href="" title=""><span>Смотреть больше новостей</span></a>
 		<hr>
 		<div class="calentar">
 			<br>

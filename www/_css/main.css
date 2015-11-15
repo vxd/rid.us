@@ -14,16 +14,71 @@
 
 @import "_banners.css";
 
-
-
-
-
-
-
-
 /*
 @import "colorbox.css";
 
 @import "tipsy.css";
 
 @import "popup.css";*/
+
+
+.contentBg {
+	background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.pageBottom {
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+
+.moreButton {
+	display: inline-block;
+	background: #f7f7f7;
+	padding: 22px 37px 22px 71px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 13px;
+	position: relative;
+}
+.moreButton:after {
+	position: absolute;
+	content: "";
+	display: block;
+	top: 13px;
+	left: 28px;
+	background: url(../_images/icons_sprite.png) 0 -103px;
+	width: 32px;
+	height: 32px;
+}
+.moreButton span {
+	border-bottom: 1px dashed #949494;
+}
+.moreButton:hover span {
+	border-bottom: none;
+}
+
+
+
+
+.pageBottom .calentar {
+	margin: 0 auto;
+}
+
+
+
+
+

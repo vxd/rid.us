@@ -11,37 +11,6 @@
 
 	<!--#include virtual="_header.shtml"-->
 
-	<section class="wrapper contentBg paddings_side clearfix">
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			d
-		</div>
-		<div class="brick">
-			d
-		</div>
-		<div class="brick">
-			d
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/test.shtml?data=something&image=cool"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/test.shtml?data=something&image=col"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/test.shtml?q"-->
-		</div>
-	</section>
-
-
 
 
 

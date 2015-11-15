@@ -1,50 +1,45 @@
 /* стили для страницы */
 
-.bricksWrapper {
-	margin-bottom: 25px;
-}
 
 
 
 
 
 
-
-.tabsYellowSeparator {
+.textTabs {
 	display: block;
-	font-size: 28px;
-	font-weight: bold;
 	color: #000;
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
-.tabsYellowSeparator li {
+.textTabs li {
 	float: left;
 	position: relative;
-	margin-left: 50px;
+	margin-left: 1.8em;
 }
-.tabsYellowSeparator li:before {
+.textTabs li:before {
 	display: block;
 	content: "";
-	width: 7px;
-	height: 7px;
+	width: .25em;
+	height: .25em;
 	top: 50%;
-	margin-top: -3px;
-	left: -27px;
+	margin-top: -0.125em;
+	left: -.9em;
+	margin-left: -0.125em;
 	position: absolute;
 	background: #ffd051;
 }
-.tabsYellowSeparator li:first-child {
+.textTabs li:first-child {
 	margin-left: 0;
 }
-.tabsYellowSeparator li:first-child:before {
+.textTabs li:first-child:before {
 	display: none;
 }
-.tabsYellowSeparator a {
+.textTabs a {
 	color: #a3a3a3;
 	text-decoration: none;
 }
-.tabsYellowSeparator a:hover {
+.textTabs a:hover {
 	color: #ffd051;
 }
 
@@ -52,8 +47,16 @@
 
 
 
+
+
+
+
+
+
+
 .authorProfile {
 	margin-bottom: 38px;
+	position: relative;
 }
 .authorProfile__photo {
 	position: relative;
@@ -81,62 +84,70 @@
 }
 
 .authorProfile__info {
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-	padding-left: 214px;
+    margin-left: 214px;
+   	padding-top: 24px;
+   	padding-bottom: 50px;
 }
+
 .authorProfile__infoDetails {
-	padding: 24px 0 20px;
-	float: left;
-	width: 100%;
+	margin-bottom: 20px;
+	/*float: left;*/
+	/*width: 100%;*/
 }
-.authorProfile__authorName {float: left;}
+.authorProfile__authorName {
+	/*float: left;*/
+}
+
+
+
+
 .authorProfile__socialSharing {
 	float: right;
+	/*padding-top: 3px;*/
 }
 .authorProfile__socialSharing li {
 	display: inline-block;
 	margin-right: 7px;
-	padding-top: 7px;
 }
 .authorProfile__socialSharing li a {
 	display: block;
 	width: 21px;
 	height: 21px;
-	background-image: url(../_images/authorProfile_sharingIcons.png);
+	background-image: url(../_images/icons_sprite.png);
 	text-decoration: none;
 	border: 0;
 }
+.authorProfile__socialSharing li a:hover {
+	opacity: .8;
+}
 .authorProfile__socialSharing .facebook {
-	background-position: 0 0;
+	background-position: 0 -178px;
 }
 .authorProfile__socialSharing .vkontakte {
-	background-position: -28px 0;
+	background-position: -21px -178px;
 }
 .authorProfile__socialSharing .twitter {
-	background-position: -58px 0;
+	background-position: -42px -178px;
 }
 .authorProfile__socialSharing .google {
-	background-position: -87px 0;
+	background-position: -63px -178px;
 }
 .authorProfile__socialSharing .odnoklassniki {
-	background-position: -116px 0;
+	background-position: -84px -178px;
 }
+
+
+
+
 .authorProfile__popularity {
 	float: right;
+	margin: 0 10px;
+	padding-top: 5px;
 }
 .authorProfile__popularity li {
 	display: inline-block;
 	font-size: 12px;
-	padding-top: 15px;
-}
-.authorProfile__popularity .watchers,
-.authorProfile__popularity .rating,
-.authorProfile__popularity .rate {
-	margin-right: 30px;
+	margin-right: 20px;
 }
 .authorProfile__popularity .watchers {
 	color: #494949;
@@ -148,29 +159,51 @@
 	margin-left: 4px;
 	background: url(../_images/icons.png) -280px -20px no-repeat;
 }
-.authorProfile__popularity .rating span {
-	margin-left: 5px;
-}
 .authorProfile__popularity .rate .positive {
 	color: #399800;
 }
 .authorProfile__popularity .rate .negative {
 	color: #e80f00;
 }
+
+
+
 .authorProfile__description {
-	padding-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
+
+
+
 .authorProfile__infoStatistics {
 	border-color: #d4d4d4;
 	border-width: 3px 0 1px;
 	border-style: solid;
-	padding: 10px 0 10px 15px;
-	text-transform: uppercase;
-	color: #a4a4a4;
+	padding: 9px 0 8px 15px;
+	margin-left: 214px;
+	width: calc(100% - 229px);
+	position: absolute;
+	bottom: 0;
+
 }
-.authorProfile__infoStatistics .tabsYellowSeparator {
-	font-size: 16px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -213,6 +246,13 @@
 .pagination__list li.pagination_morePages:after {
 	content: '...';
 }
+
+
+
+
+
+
+
 
 
 

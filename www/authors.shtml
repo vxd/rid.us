@@ -13,14 +13,16 @@
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
-    <ul class="headLinks clearfix">
-        <li>
-            Авторские колонки
-		</li>
-		<li>
-			<a href="#" title="">Авторы</a>
-		</li>
-	</ul>
+    <h1>
+        <ul class="headLinks clearfix">
+            <li>
+                Авторские колонки
+    		</li>
+    		<li>
+    			<a href="#" title="">Авторы</a>
+    		</li>
+    	</ul>
+    </h1>
 
 	<div>
 		<div class="brick">

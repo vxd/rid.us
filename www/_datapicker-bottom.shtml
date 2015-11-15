@@ -1,0 +1,4 @@
+		<label>показать новости с</label>
+		<input type="text" class="datepicker">
+		<label>по</label>
+		<input type="text" class="datepicker">

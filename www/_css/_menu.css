@@ -151,6 +151,8 @@
 }
 .submenuContent {
 	background: #667787;
+	padding-top: 20px;
+	padding-bottom: 22px;	
 }
 
 
@@ -162,31 +164,19 @@
 		min-width: 548px;
 	}
 	.submenuContent {
-		height: 100%
+		height: 100%;
+		padding-top: 22px;
+		padding-bottom: 22px;
+	}
+	.submenuContent.paddings_side { /* перебиваем */
+		padding-left: 20px;
+		padding-right: 20px;	
 	}
 	.menu.state_open .subMenu {
 		display: none;
 	}
 	.menu.state_open .subMenu.state_open {
 		display: block;
-	}
-	.submenuContent.view_paddings {
-		padding: 22px 20px;	
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.submenuContent.view_paddings {
-		padding: 20px 40px 22px;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.submenuContent.view_paddings {
-		padding: 20px 40px 22px;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.submenuContent.view_paddings {
-		padding: 16px 16px;	
 	}
 }
 

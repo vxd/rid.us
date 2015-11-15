@@ -11,7 +11,7 @@
 
 <!--#include virtual="_header.shtml"-->
 
-<section class="wrapper contentBg view_paddings clearfix">
+<section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
     <ul class="tabsYellowSeparator headerTabs clearfix">
         <li>
@@ -116,11 +116,10 @@
         </div>
     </div>
 
-
 </section>
 
 
-<section class="readAlso view_paddings wrapper clearfix">
+<section class="readAlso contentBackground_grey paddings_side padding_top wrapper clearfix">
     <h2>Читайте также:</h2>
     <div>
         <div class="miniBrick">
@@ -150,13 +149,13 @@
     </div>
 </section>
 
-<section class="pageBottom contentBg wrapper clearfix">
-    <a class="more" href="" title=""><span>Смотреть больше новостей</span></a>
+<section class="pageBottom contentBackground_white padding_top wrapper clearfix">
+    <!--#include virtual="_more-button.shtml"-->
     <hr>
-    <div class="calentar">
-        <br>
-        calendar widget<br><br>
-    </div>
+</section>
+
+<section class="bottomDatapicker contentBackground_white padding_top padding_bottom wrapper clearfix">
+    <!--#include virtual="_datapicker-bottom.shtml"-->
 </section>
 
 <section class="wrapper pagination">

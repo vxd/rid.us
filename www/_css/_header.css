@@ -7,15 +7,13 @@ header {
 
 
 .globalInfo {
+	padding-bottom: 13px;
+	padding-top: 10px;
 	background: #fff;
 	border-bottom: 3px solid #f7f7f7;
 	-webkit-box-shadow: inset 0px -3px 0px 0px #e8e8e8;
 	-moz-box-shadow: inset 0px -3px 0px 0px #e8e8e8;
 	box-shadow: inset 0px -3px 0px 0px #e8e8e8;
-}
-.globalInfo.view_paddings {
-	padding-bottom: 13px;
-	padding-top: 10px;
 }
 @media screen and (max-width: 1040px) {
 	.globalInfo {

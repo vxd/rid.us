@@ -5,7 +5,7 @@
 	font-weight: bold;
 	text-decoration: none;
 	display: inline-block;
-	padding: 9px;
+	padding: 8px;
 }
 .submenuContent .tagList__link:hover {
 	background: #2a3436;

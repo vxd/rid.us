@@ -11,7 +11,7 @@
 
 	<!--#include virtual="_header.shtml"-->
 
-	<section class="wrapper contentBg view_paddings clearfix">
+	<section class="wrapper contentBg paddings_side clearfix">
 		<div class="brick">
 			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
 		</div>

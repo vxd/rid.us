@@ -44,17 +44,31 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-input[type="email"], input[type="number"], 
-input[type="password"], input[type="tel"], 
-input[type="url"], input[type="text"],
+input[type="email"], 
+input[type="number"], 
+input[type="password"], 
+input[type="tel"], 
+input[type="url"], 
+input[type="text"],
+button[type="submit"],
+input[type="submit"],
+button {
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+button[type="submit"],
+input[type="submit"],
 button {
 	padding: 0;
+	border: 0;
 }
+
 * {
 	outline: none;
 }
 
-/* fix for buttons height */
+/* fix for Firefox buttons height */
 input::-moz-focus-inner,
 button::-moz-focus-inner { 
 	margin-top: -1px; 

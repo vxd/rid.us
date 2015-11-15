@@ -1,9 +1,5 @@
 /* стили для страницы */
 
-.contentBg.view_paddings {
-	padding-top: 20px;
-}
-
 .bricksWrapper {
 	margin-bottom: 25px;
 }
@@ -223,10 +219,7 @@
 
 
 
-.readAlso.view_paddings {
-	background: #f7f7f7;
-	padding-top: 20px;
-}
+
 .readAlso h2 {
 	margin-bottom: 15px;
 }

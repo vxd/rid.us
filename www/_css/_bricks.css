@@ -1,7 +1,10 @@
 .brick {
 	height: 440px;
 	float: left;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 .brick.view_banner {
 	border: 1px dashed #e8e8e8;

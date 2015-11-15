@@ -1,6 +1,6 @@
 <div class="headerPanel">
 
-	<div class="wrapper view_paddings">
+	<div class="wrapper paddings_side">
 
 		<a href="#" class="mobileMenuButton">
 			<i class="icon_hamburger"><!-- ||| --></i>	
@@ -62,7 +62,7 @@
 				</li>
 			</ul>
 			<div class="subMenu">
-				<nav class="submenuContent wrapper view_paddings">
+				<nav class="submenuContent wrapper paddings_side">
 					<!--#include virtual="_taglist.shtml"-->
 				</nav>
 			</div>

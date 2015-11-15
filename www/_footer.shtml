@@ -42,8 +42,8 @@
 					<p>Ежедневная рассылка лучших новостей от Ридуса</p>
 					<form>
 						<div class="footerSubscribe__form">
-							<input class="input" type="text" placeholder="Введите e-mail" />
-							<button class="button" type="submit">подписаться</button>
+							<input class="footerSubscribe__input" type="text" placeholder="Введите e-mail" />
+							<button class="footerSubscribe__button" type="submit">подписаться</button>
 						</div>
 					</form>
 				</div>

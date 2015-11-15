@@ -83,7 +83,7 @@
 	position: relative;
 	margin-bottom: 15px
 }
-.footerSubscribe .input {
+.footerSubscribe__form .footerSubscribe__input {
 	border: 1px solid #fff;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -96,24 +96,24 @@
 	color: #fff;
 	font-size: 12px;
 }
-.footerSubscribe__form .input::-webkit-input-placeholder {
+.footerSubscribe__form .footerSubscribe__input::-webkit-input-placeholder {
 	color: #a9a9a9;
 	font-style: italic;
 }
-.footerSubscribe__form .input::-moz-placeholder {
+.footerSubscribe__form .footerSubscribe__input::-moz-placeholder {
 	color: #a9a9a9;
 	font-style: italic;
 }
-.footerSubscribe__form .input:-moz-placeholder {
+.footerSubscribe__form .footerSubscribe__input:-moz-placeholder {
 	color: #a9a9a9;
 	font-style: italic;
 }
-.footerSubscribe__form .input:-ms-input-placeholder {
+.footerSubscribe__form .footerSubscribe__input:-ms-input-placeholder {
 	color: #a9a9a9;
 	font-style: italic;
 }
 
-.footerSubscribe__form .button {
+.footerSubscribe__form .footerSubscribe__button {
 	position: absolute;
 	right: 0;
 	top: 0;

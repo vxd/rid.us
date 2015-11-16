@@ -1,0 +1,38 @@
+
+
+.textTabs {
+	display: block;
+	color: #000;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.textTabs li {
+	float: left;
+	position: relative;
+	margin-left: 1.8em;
+}
+.textTabs li:before {
+	display: block;
+	content: "";
+	width: .25em;
+	height: .25em;
+	top: 50%;
+	margin-top: -0.125em;
+	left: -.9em;
+	margin-left: -0.125em;
+	position: absolute;
+	background: #ffd051;
+}
+.textTabs li:first-child {
+	margin-left: 0;
+}
+.textTabs li:first-child:before {
+	display: none;
+}
+.textTabs a {
+	color: #a3a3a3;
+	text-decoration: none;
+}
+.textTabs a:hover {
+	color: #ffd051;
+}

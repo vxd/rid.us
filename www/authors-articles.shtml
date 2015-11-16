@@ -162,13 +162,7 @@
 </section>
 
 <section class="pagination wrapper contentBackground_grey">
-    <ul class="pagination__list clearfix">
-        <li class="active_state">1</li>
-        <li>2</li>
-        <li>3</li>
-        <li class="pagination_morePages"></li>
-        <li>5</li>
-    </ul>
+    <!--#include virtual="_pagination.shtml"-->
 </section>
 
 <a href="#" class="banner_footer">

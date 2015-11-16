@@ -162,7 +162,7 @@
 </section>
 
 <section class="pagination wrapper contentBackground_grey">
-    <!--#include virtual="_pagination.shtml"-->
+    <!--#include virtual="_pagination.shtml?page=1"-->
 </section>
 
 <a href="#" class="banner_footer">

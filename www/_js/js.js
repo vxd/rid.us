@@ -69,7 +69,7 @@ $(function() {
 	$("body, button:not(.headerSearch__button)").on('click', function(){
 		$(".headerSearch__form").fadeOut(150);
 		$(".headerSearch__input").blur();
-		return false;
+		return true;
 	});
 	$(".headerSearch__button").on('click', function(){
 		console.log( "search:" + $(".headerSearch__input").val() )

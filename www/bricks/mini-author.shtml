@@ -1,0 +1,53 @@
+
+<!-- //// определяем переменные -->  
+
+<!--#set var="image" value="" -->
+<!--#set var="data" value="" -->
+
+<!-- //// извлекаем из параметров урла --> 
+
+<!--#if expr="\"$QUERY_STRING\" = /image=([a-zA-Z0-9]+)/" -->
+<!--#set var="image" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /data=([a-zA-Z0-9]+)/" -->
+<!--#set var="data" value="$1" -->
+<!--#endif -->
+
+
+
+<!-- //// конец --> 
+
+<a href="#" class="brick__image">
+<!--#if expr="$image = 1" -->
+	<img src="http://www.ridus.ru/images/avatars/143296/large_4826eae277.jpg" alt="">
+<!--#endif -->
+<!--#if expr="$image = 2" -->
+	<img src="http://www.ridus.ru/images/avatars/151502/large_457d41f144.jpg" alt="">
+<!--#endif -->
+<!--#if expr="$image = 3" -->
+	<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="">
+<!--#endif -->
+<!--#if expr="$image = 4" -->
+	<img src="http://www.ridus.ru/images/avatars/90453/large_c1a8beb7f7.jpg" alt="">
+<!--#endif -->
+</a>
+
+<div class="brick__content">
+<!--#if expr="$data = 1" -->
+	<p>
+		Каждый старшеклассник знает, что сила тока измеряется в амперах. 
+	</p>
+<!--#endif -->
+<!--#if expr="$data = 2" -->
+	<p>
+		«Oткрытие» NASA было известно советским ученым еще в 1970-х годах.
+	</p>
+<!--#endif -->
+<!--#if expr="$data = 3" -->
+	<p>
+		Aэробус мог быть взорван с помощью жидкого взрывчатого вещества.
+	</p>
+<!--#endif -->
+</div>
+
+

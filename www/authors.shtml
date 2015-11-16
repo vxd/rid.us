@@ -14,14 +14,10 @@
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
     <h1>
-        <ul class="headLinks clearfix">
-            <li>
-                Авторские колонки
-    		</li>
-    		<li>
-    			<a href="#" title="">Авторы</a>
-    		</li>
-    	</ul>
+        <ul class="textTabs clearfix">
+            <li>Авторские колонки</li>
+            <li><a href="#" title="">Авторы</a></li>
+        </ul>
     </h1>
 
 	<div>

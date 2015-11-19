@@ -6,14 +6,6 @@
 	box-sizing: border-box;
 	overflow: hidden;
 }
-.brick.view_banner {
-	border: 1px dashed #e8e8e8;
-	border-top: 0;
-	border-bottom: 0;
-	text-align: center;
-	height: auto;
-	font-size: 0;
-}
 @media screen and (max-width: 1023px) {
 	.brick {
 		width: 48.5%;
@@ -66,8 +58,35 @@
 
 
 
+.brick.view_banner {
+	border: 1px dashed #e8e8e8;
+	border-top: 0;
+	border-bottom: 0;
+	text-align: center;
+	height: auto;
+	font-size: 0;
+}
 
-.brick .brick__image {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.brick__image {
 	display: block;
 	height: 95px;
 	overflow: hidden;
@@ -124,6 +143,11 @@
 	font-size: 16px;
 	margin-bottom: 15px;
 }
+
+
+
+
+
 
 .brick__counters {
 	color: #c1c1c1;
@@ -196,50 +220,48 @@
 
 
 
-.miniBrick {
+.brick.view_mini {
 	height: 188px;
-	float: left;
-	box-sizing: border-box;
 }
 @media screen and (max-width: 1023px) {
-	.miniBrick {
+	.brick.view_mini {
 		width: 22.75%;
 		margin: 0 3% 22px 0;
 	}
-	.miniBrick:nth-child(4n) {
+	.brick.view_mini:nth-child(4n) {
 		margin-right: 0;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.miniBrick {
+	.brick.view_mini {
 		width: 15%;
 		margin: 0 2% 22px 0;
 	}
-	.miniBrick:nth-child(6n) {
+	.brick.view_mini:nth-child(6n) {
 		margin-right: 0;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.miniBrick {
+	.brick.view_mini {
 		width: 139px;
 		margin: 0 22px 22px 0;
 	}
-	.miniBrick:nth-child(6n) {
+	.brick.view_mini:nth-child(6n) {
 		margin-right: 0;
 	}
 }
 @media screen and (min-width: 1297px) {
-	.miniBrick {
+	.brick.view_mini {
 		width: 142px;
 		margin: 0 16px 16px 0;
 	}
-	.miniBrick:nth-child(8n) {
+	.brick.view_mini:nth-child(8n) {
 		margin-right: 0;
 	}
 }
 
 
-.miniBrick .brick__image {
+.brick.view_mini .brick__image {
 	display: block;
 	height: 45px;
 	overflow: hidden;
@@ -248,7 +270,7 @@
 }
 
 
-.miniBrick .brick__content p {
+.brick.view_mini .brick__content p {
 	font-size: 14px;
 }
 
@@ -260,13 +282,42 @@
 
 
 
-.miniBrick.view_imageSquare {
+.brick.view_imageSquare {
 	height: 322px;
 }
-.miniBrick.view_imageSquare .brick__image {
+.brick.view_imageSquare .brick__image {
 	height: 70px;
 	padding-top: 70px;
 }
-.miniBrick.view_imageSquare .brick__content p {
+.brick.view_imageSquare .brick__content p {
 	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1023px) {
+	.readAlso .brick.view_mini:nth-child(5n),
+	.readAlso .brick.view_mini:nth-child(6n),
+	.readAlso .brick.view_mini:nth-child(7n),
+	.readAlso .brick.view_mini:nth-child(8n) {
+		display: none;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.readAlso .brick.view_mini:nth-child(7n),
+	.readAlso .brick.view_mini:nth-child(8n) {
+		display: none;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.readAlso .brick.view_mini:nth-child(7n),
+	.readAlso .brick.view_mini:nth-child(8n) {
+		display: none;
+	}
 }

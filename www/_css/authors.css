@@ -198,29 +198,8 @@
 
 
 
-.readAlso h2 {
-	margin-bottom: 15px;
-}
-@media screen and (max-width: 1023px) {
-	.readAlso .miniBrick:nth-child(5n),
-	.readAlso .miniBrick:nth-child(6n),
-	.readAlso .miniBrick:nth-child(7n),
-	.readAlso .miniBrick:nth-child(8n) {
-		display: none;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.readAlso .miniBrick:nth-child(7n),
-	.readAlso .miniBrick:nth-child(8n) {
-		display: none;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.readAlso .miniBrick:nth-child(7n),
-	.readAlso .miniBrick:nth-child(8n) {
-		display: none;
-	}
-}
+
+
 
 
 

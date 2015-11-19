@@ -1,91 +1,86 @@
 
-<!-- //// определяем переменные -->  
+<h4>
+	<a href="#" title="">Новости политики</a>
+</h4>
 
-<!--#set var="image" value="" -->
-<!--#set var="data" value="" -->
-<!--#set var="count1" value="" -->
-<!--#set var="count2" value="" -->
-<!--#set var="count3" value="" -->
+<ul class="brick__content">
+	<li>
+		<span class="date">вчера, 14:30</span>
+		<p>
+			<a href="#" title="">
+				Кадырова пытались убить взорвавшие «Домодедово»
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 14:22</span>
+		<p>
+			<a href="#" title="">
+				Украина сравнила французских депутатов в Крыму с варварами
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 10:16</span>
+		<p>
+			<a href="#" title="">
+				Зацепер парализовал движение электричек в Москве
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 9:45</span>
+		<p>
+			<a href="#" title="">
+				Россия заблокировала трибунал по «Боингу»
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 14:30</span>
+		<p>
+			<a href="#" title="">
+				Кадырова пытались убить взорвавшие «Домодедово»
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 14:22</span>
+		<p>
+			<a href="#" title="">
+				Украина сравнила французских депутатов в Крыму с варварами
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 10:16</span>
+		<p>
+			<a href="#" title="">
+				Зацепер парализовал движение электричек в Москве
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 9:45</span>
+		<p>
+			<a href="#" title="">
+				Россия заблокировала трибунал по «Боингу»
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 10:16</span>
+		<p>
+			<a href="#" title="">
+				Зацепер парализовал движение электричек в Москве
+			</a>
+		</p>
+	</li>
+</ul>
 
-<!-- //// извлекаем из параметров урла --> 
-
-<!--#if expr="\"$QUERY_STRING\" = /image=([a-zA-Z0-9]+)/" -->
-<!--#set var="image" value="$1" -->
-<!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /data=([a-zA-Z0-9]+)/" -->
-<!--#set var="data" value="$1" -->
-<!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /count1=([a-zA-Z0-9]+)/" -->
-<!--#set var="count1" value="$1" -->
-<!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /count2=([a-zA-Z0-9]+)/" -->
-<!--#set var="count2" value="$1" -->
-<!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /count3=([a-zA-Z0-9]+)/" -->
-<!--#set var="count3" value="$1" -->
-<!--#endif -->
 
 
-<!-- //// конец --> 
-
-<a href="" class="brick__image">
-<!--#if expr="$image = 1" -->
-	<img alt="Единороссы призовут однопартийца Исаева к ответу" src="http://ridus.ru/images/2013/10/9/122365/preview_09ade907ef.jpg">
-<!--#endif -->
-<!--#if expr="$image = 2" -->
-	<img alt="Песков опроверг публикацию Reuters «о дочери Путина»" src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg">
-<!--#endif -->
-<!--#if expr="$image = 3" -->
-	<img alt="Ученые доказали влияние грибов на погоду" src="http://ridus.ru/images/2015/11/10/336462/preview_40b9a0f86b.jpg">
-<!--#endif -->
+<a href="#" class="brick__footer" title="">
+	Все новости
 </a>
-
-<div class="brick__content">
-<!--#if expr="$data = 1" -->
-	<h6>
-		<a href="#" title="">Антон плисецкий</a>
-	</h6>
-	<h2>
-		<a href="#" title="">Исследование: где в Москве опаснее всего жить</a>
-	</h2>
-	<p>
-		Каждый старшеклассник знает, что сила тока измеряется в амперах. В чем измеряется напряжение криминогенной обстановки и как измерить уровень безопасности на улице, знают только в полиции.
-	</p>
-<!--#endif -->
-<!--#if expr="$data = 2" -->
-	<h6>
-		<a href="#" title="">Степан липсченко</a>
-	</h6>
-	<h2>
-		<a href="#" title="">Известная модель надела паранджу после операции</a>
-	</h2>
-	<p>
-		Главный научный сотрудник лаборатории солнечного ветра ИКИ РАН Олег Вайсберг рассказал, что «открытие» NASA было известно советским ученым еще в 1970-х годах.
-	</p>
-<!--#endif -->
-<!--#if expr="$data = 3" -->
-	<h6>
-		<a href="#" title="">Павел Горохов</a>
-	</h6>
-	<h2>
-		<a href="#" title="">На борту А321 могла взорваться жидкая бомба</a>
-	</h2>
-	<p>
-		Эксперт по борьбе с терроризмом Ронен Соломон заявил, что российский аэробус мог быть взорван с помощью жидкого взрывчатого вещества, которое кто-то из пассажиров пронес на борт в бутылке.
-	</p>
-<!--#endif -->
-</div>
-
-<div class="brick__counters">
-	<span class="count1">
-		<!--#echo var="count1" --> <i class="icon"><!-- icon --></i>
-	</span>
-	<span class="count2">
-		<!--#echo var="count2" --> <i class="icon"><!-- icon --></i>
-	</span>
-	<span class="count3">
-		<!--#echo var="count3" --> <i class="icon"><!-- icon --></i>
-	</span>
-</div>
-
 

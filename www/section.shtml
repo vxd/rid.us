@@ -19,7 +19,7 @@
 
     <div class="table view_doubleHeight">
         <div class="table__sideColumn">
-            <div class="brick">
+            <div class="brick view_newslist">
             <!--#include virtual="bricks/news-doubleheight.shtml"-->
             </div>
         </div>

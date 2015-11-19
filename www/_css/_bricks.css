@@ -521,10 +521,11 @@
 .brick.view_newslist h4 a:hover {
 	text-decoration: none;
 }
-.brick.view_newslist h4 a:after {
+
+.brick.view_newslist h4.view_arrowed a:after {
 	display: block;
 	position: absolute;
-	right: 0;
+	right: 5px;
 	top: 0;
 	width: 42px;
     height: 42px;
@@ -532,6 +533,7 @@
 	background: url(../_images/icons_sprite.png);
 	background-position: -5px -223px;
 }
+
 .brick.view_newslist .brick__content {
 	border: 3px solid #ffd051;
 	border-bottom: 0;

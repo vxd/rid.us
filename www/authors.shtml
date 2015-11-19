@@ -63,9 +63,9 @@
 </section>
 
 
-<section class="readAlso contentBackground_grey paddings_side padding_top wrapper clearfix">
+<section class="brickrows_1 contentBackground_grey paddings_side padding_top wrapper">
 	<h2>Читайте также:</h2>
-	<div>
+	<div class="clearfix">
 		<div class="brick view_mini">
 			<!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
 		</div>

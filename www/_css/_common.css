@@ -533,3 +533,55 @@ label.radioWrap {
 .borderedSection__separatedItem:first-child {
 	border-top: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table {
+	display: table;
+	width: 100%;
+}
+.table__sideColumn,
+.table__mainColumn {
+	display: table-cell;
+}
+@media screen and (max-width: 1023px) {
+	.table__sideColumn {
+		width: 51.5%;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.table__sideColumn {
+		width: 34%;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.table__sideColumn {
+		width: 322px;
+	}
+}
+@media screen and (min-width: 1297px) {
+	.table__sideColumn {
+		width: 316px;
+	}
+}

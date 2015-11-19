@@ -1,3 +1,9 @@
+@import "_brickrows.css";
+
+
+
+
+
 .brick {
 	height: 440px;
 	float: left;
@@ -308,26 +314,10 @@
 
 
 
-@media screen and (max-width: 1023px) {
-	.readAlso .brick.view_mini:nth-child(5n),
-	.readAlso .brick.view_mini:nth-child(6n),
-	.readAlso .brick.view_mini:nth-child(7n),
-	.readAlso .brick.view_mini:nth-child(8n) {
-		display: none;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.readAlso .brick.view_mini:nth-child(7n),
-	.readAlso .brick.view_mini:nth-child(8n) {
-		display: none;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.readAlso .brick.view_mini:nth-child(7n),
-	.readAlso .brick.view_mini:nth-child(8n) {
-		display: none;
-	}
-}
+
+
+
+
 
 
 
@@ -405,29 +395,6 @@
 
 
 
-/* скрываем лишнее */
-
-
-@media screen and (max-width: 1023px) {
-	.table.view_doubleHeight .table__mainColumn .brick:nth-child(3n),
-	.table.view_doubleHeight .table__mainColumn .brick:nth-child(4n),
-	.table.view_doubleHeight .table__mainColumn .brick:nth-child(5n),
-	.table.view_doubleHeight .table__mainColumn .brick:nth-child(6n) {
-		display: none;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table.view_doubleHeight .table__mainColumn .brick:nth-child(5n),
-	.table.view_doubleHeight .table__mainColumn .brick:nth-child(6n) {
-		display: none;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.table.view_doubleHeight .table__mainColumn .brick:nth-child(5n),
-	.table.view_doubleHeight .table__mainColumn .brick:nth-child(6n) {
-		display: none;
-	}
-}
 
 
 
@@ -457,34 +424,9 @@
 
 
 
-.table {
-	display: table;
-	width: 100%;
-}
-.table__sideColumn,
-.table__mainColumn {
-	display: table-cell;
-}
-@media screen and (max-width: 1023px) {
-	.table__sideColumn {
-		width: 51.5%;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table__sideColumn {
-		width: 34%;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.table__sideColumn {
-		width: 322px;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.table__sideColumn {
-		width: 316px;
-	}
-}
+
+
+
 
 
 

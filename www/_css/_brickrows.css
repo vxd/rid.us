@@ -1,0 +1,75 @@
+
+
+
+.brickrows_1 .brick {
+	display: block;
+}
+@media screen and (max-width: 1023px) {
+/*	.brickrows_1 .brick:nth-child(3n),
+	.brickrows_1 .brick:nth-child(4n) {
+		display: none;
+	}*/
+	/* показываем доп ряд т.к. опять кратно */
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.brickrows_1 .brick:nth-child(4n) {
+		display: none;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.brickrows_1 .brick:nth-child(4n) {
+		display: none;
+	}
+}
+
+
+
+.table__mainColumn.brickrows_2 .brick {
+	display: block;
+}
+@media screen and (max-width: 1023px) {
+	.table__mainColumn.brickrows_2 .brick:nth-child(3n),
+	.table__mainColumn.brickrows_2 .brick:nth-child(4n),
+	.table__mainColumn.brickrows_2 .brick:nth-child(5n),
+	.table__mainColumn.brickrows_2 .brick:nth-child(6n) {
+		display: none;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.table__mainColumn.brickrows_2 .brick:nth-child(5n),
+	.table__mainColumn.brickrows_2 .brick:nth-child(6n) {
+		display: none;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.table__mainColumn.brickrows_2 .brick:nth-child(5n),
+	.table__mainColumn.brickrows_2 .brick:nth-child(6n) {
+		display: none;
+	}
+}
+
+
+
+.brickrows_1 .brick.view_mini {
+	display: block;
+}
+@media screen and (max-width: 1023px) {
+	.brickrows_1 .brick.view_mini:nth-child(5n),
+	.brickrows_1 .brick.view_mini:nth-child(6n),
+	.brickrows_1 .brick.view_mini:nth-child(7n),
+	.brickrows_1 .brick.view_mini:nth-child(8n) {
+		display: none;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.brickrows_1 .brick.view_mini:nth-child(7n),
+	.brickrows_1 .brick.view_mini:nth-child(8n) {
+		display: none;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.brickrows_1 .brick.view_mini:nth-child(7n),
+	.brickrows_1 .brick.view_mini:nth-child(8n) {
+		display: none;
+	}
+}

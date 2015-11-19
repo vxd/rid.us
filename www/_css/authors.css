@@ -1,3 +1,14 @@
+
+
+@import "_alphabeth.css";
+
+
+
+
+
+
+
+
 /* стили для страницы */
 
 
@@ -48,7 +59,7 @@
 	transform: translateY(-50%);
 	width: 100%;
 }*/
-.authorProfile__label {
+.authorPhoto__label {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -150,17 +161,9 @@
 
 
 
-.authorMaterials {
-	border-color: #d4d4d4;
-	border-width: 3px 0 1px;
-	border-style: solid;
-	padding: 9px 0 8px 15px;
-	margin-left: 214px;
-	width: calc(100% - 229px);
-	position: absolute;
-	bottom: 0;
 
-}
+
+
 
 
 

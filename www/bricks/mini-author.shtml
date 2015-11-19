@@ -3,6 +3,8 @@
 
 <!--#set var="image" value="" -->
 <!--#set var="data" value="" -->
+<!--#set var="count1" value="" -->
+<!--#set var="count3" value="" -->
 
 <!-- //// извлекаем из параметров урла --> 
 
@@ -12,7 +14,12 @@
 <!--#if expr="\"$QUERY_STRING\" = /data=([a-zA-Z0-9]+)/" -->
 <!--#set var="data" value="$1" -->
 <!--#endif -->
-
+<!--#if expr="\"$QUERY_STRING\" = /count1=([a-zA-Z0-9]+)/" -->
+<!--#set var="count1" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /count3=([a-zA-Z0-9]+)/" -->
+<!--#set var="count3" value="$1" -->
+<!--#endif -->
 
 
 <!-- //// конец --> 
@@ -34,20 +41,36 @@
 
 <div class="brick__content">
 <!--#if expr="$data = 1" -->
+	<h2>
+		<a href="#" title="">Петр Петрович</a>
+	</h2>
 	<p>
-		Каждый старшеклассник знает, что сила тока измеряется в амперах. 
+		Корреспондент «Изборского клуба»
 	</p>
 <!--#endif -->
 <!--#if expr="$data = 2" -->
+	<h2>
+		<a href="#" title="">Василий Василич</a>
+	</h2>
 	<p>
-		«Oткрытие» NASA было известно советским ученым еще в 1970-х годах.
+		Эксперт в вопросах борьбы с терроризмом, профессор МГИМО
 	</p>
 <!--#endif -->
 <!--#if expr="$data = 3" -->
+	<h2>
+		<a href="#" title="">Иван Иванейко</a>
+	</h2>
 	<p>
-		Aэробус мог быть взорван с помощью жидкого взрывчатого вещества.
+		Эксперт в вопросах борьбы с терроризмом
 	</p>
 <!--#endif -->
 </div>
 
-
+<div class="brick__counters">
+	<span class="count1">
+		<!--#echo var="count1" --> <i class="icon"><!-- icon --></i>
+	</span>
+	<span class="count3">
+		<!--#echo var="count3" --> <i class="icon"><!-- icon --></i>
+	</span>
+</div>

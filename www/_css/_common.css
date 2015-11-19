@@ -52,6 +52,7 @@ h2 {
 }
 h1 {
 	font-size: 28px; /* in use */
+	margin-bottom: 20px;
 }
 
 
@@ -347,6 +348,11 @@ label.radioWrap {
 
 
 
+
+
+
+
+
 .pageBottom {
 	text-align: center;
 }
@@ -504,3 +510,24 @@ label.radioWrap {
 
 
 
+.borderedSection {
+	border-color: #d4d4d4;
+	border-width: 3px 0 1px;
+	border-style: solid;
+	margin-bottom: 20px;
+}
+
+.borderedSection.view_authorMaterials {
+	padding: 9px 15px 5px;
+	margin-left: 214px;
+	width: calc(100% - 229px);
+	position: absolute;
+	bottom: -20px;
+}
+
+.borderedSection__separatedItem {
+	border-top: 1px solid  #d4d4d4;
+}
+.borderedSection__separatedItem:first-child {
+	border-top: none;
+}

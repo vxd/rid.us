@@ -67,7 +67,7 @@
 
         </div>
 
-        <h5 class="authorMaterials">
+        <h5 class="borderedSection view_authorMaterials">
             <ul class="textTabs">
                 <li class="author-articles">
                     статьи автора (<span>15</span>)

@@ -13,86 +13,128 @@
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
-    <h1>
+    <h1 class="clearfix">
         <ul class="textTabs clearfix">
             <li><a href="#" title="">Авторские колонки</a></li>
             <li>Авторы</li>
         </ul>
+        <ul class="textTabs view_h5 clearfix">
+            <li><a href="#" title="">Новые авторы</a></li>
+            <li><a href="#" title="">Самые читаемые</a></li>
+        </ul>
     </h1>
 
-    <div>
+    <!--#include virtual="_alphabeth.shtml"-->
+
+    <div class="padding_top">
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=4&data=1"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=4&data=1&count1=12&count3=345"-->
         </div>
 
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=4&data=1&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=4&data=1&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=4&data=1&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=4&data=1&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3&count1=12&count3=345"-->
         </div>
         <div class="miniBrick view_imageSquare">
-            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3"-->
+            <!--#include virtual="bricks/mini-author.shtml?image=4&data=1&count1=12&count3=345"-->
+        </div>
+        <div class="miniBrick view_imageSquare">
+            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1&count1=12&count3=345"-->
+        </div>
+        <div class="miniBrick view_imageSquare">
+            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2&count1=12&count3=345"-->
+        </div>
+        <div class="miniBrick view_imageSquare">
+            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3&count1=12&count3=345"-->
+        </div>
+        <div class="miniBrick view_imageSquare">
+            <!--#include virtual="bricks/mini-author.shtml?image=4&data=1&count1=12&count3=345"-->
+        </div>
+        <div class="miniBrick view_imageSquare">
+            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1&count1=12&count3=345"-->
+        </div>
+        <div class="miniBrick view_imageSquare">
+            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2&count1=12&count3=345"-->
+        </div>
+        <div class="miniBrick view_imageSquare">
+            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3&count1=12&count3=345"-->
+        </div>
+        <div class="miniBrick view_imageSquare">
+            <!--#include virtual="bricks/mini-author.shtml?image=4&data=1&count1=12&count3=345"-->
+        </div>
+        <div class="miniBrick view_imageSquare">
+            <!--#include virtual="bricks/mini-author.shtml?image=1&data=1&count1=12&count3=345"-->
+        </div>
+        <div class="miniBrick view_imageSquare">
+            <!--#include virtual="bricks/mini-author.shtml?image=2&data=2&count1=12&count3=345"-->
+        </div>
+        <div class="miniBrick view_imageSquare">
+            <!--#include virtual="bricks/mini-author.shtml?image=3&data=3&count1=12&count3=345"-->
+        </div>
+        <div class="miniBrick view_imageSquare">
+            <!--#include virtual="bricks/mini-author.shtml?image=4&data=1&count1=12&count3=345"-->
         </div>
     </div>
 

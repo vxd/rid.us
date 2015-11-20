@@ -134,17 +134,16 @@
 .brick__content h4 a:hover {
 	color: #c64a1b;
 }
-.brick__content h2,
-.brick__content h2 a {
+
+.brick__headerLink {
 	color: #000;
 	text-decoration: none;
-	margin-bottom: 10px;
 }
-.brick__content h2 a:hover {
+.brick__headerLink:hover {
 	color: #c64a1b;
 }
 
-.brick__content p {
+.brick__text {
 	color: #000;
 	font-size: 16px;
 	margin-bottom: 15px;
@@ -210,7 +209,10 @@
 
 
 
-
+.brick__description {
+	margin-bottom: 15px;
+	opacity: .4;
+}
 
 
 
@@ -283,7 +285,7 @@
 }
 
 
-.brick.view_mini .brick__content p {
+.brick.view_mini .brick__text {
 	font-size: 14px;
 }
 
@@ -296,13 +298,16 @@
 
 
 .brick.view_imageSquare {
-	height: 322px;
+	height: 330px;
+}
+.brick.view_imageSquare h2 {
+	margin-bottom: 10px;
 }
 .brick.view_imageSquare .brick__image {
 	height: 70px;
 	padding-top: 70px;
 }
-.brick.view_imageSquare .brick__content p {
+.brick.view_imageSquare .brick__text {
 	font-size: 16px;
 }
 
@@ -333,21 +338,24 @@
 .table.view_doubleHeight .table__sideColumn .brick {
 	height: 902px; /* = x2 + margin */
 }
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 1297px) {
 	.table.view_doubleHeight .table__sideColumn .brick {
+		height: 896px;  /* = x2 + margin */
+	}
+}
+
+
+
+@media screen and (max-width: 1023px) {
+	.table__sideColumn .brick {
 		width: 94.325%;
 		margin-right: 5.675%;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table.view_doubleHeight .table__sideColumn .brick {
+	.table__sideColumn .brick {
 		width: 94.407%;
 		margin-right: 5.593%;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.table.view_doubleHeight .table__sideColumn .brick {
-		height: 896px;  /* = x2 + margin */
 	}
 }
 
@@ -360,35 +368,35 @@
 /* обновляем отступы */
 
 @media screen and (max-width: 1023px) {
-	.table.view_doubleHeight .table__mainColumn .brick {
+	.table__mainColumn .brick {
 		width: 100%;
 		margin: 0 0 22px 0;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table.view_doubleHeight .table__mainColumn .brick {
+	.table__mainColumn .brick {
 		width: 48.5%;
 		margin: 0 3% 22px 0;
 	}
-	.table.view_doubleHeight .table__mainColumn .brick:nth-child(2n) {
+	.table__mainColumn .brick:nth-child(2n) {
 		margin-right: 0;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.table.view_doubleHeight .table__mainColumn .brick {
+	.table__mainColumn .brick {
 		width: 300px;
 		margin: 0 22px 22px 0;
 	}
-	.table.view_doubleHeight .table__mainColumn .brick:nth-child(2n) {
+	.table__mainColumn .brick:nth-child(2n) {
 		margin-right: 0;
 	}
 }
 @media screen and (min-width: 1297px) {
-	.table.view_doubleHeight .table__mainColumn .brick {
+	.table__mainColumn .brick {
 		width: 300px;
 		margin: 0 16px 16px 0;
 	}
-	.table.view_doubleHeight .table__mainColumn .brick:nth-child(3n) {
+	.table__mainColumn .brick:nth-child(3n) {
 		margin-right: 0;
 	}
 }
@@ -436,14 +444,16 @@
 .brick.view_newslist {
 	position: relative;
 }
-.brick.view_newslist a {
+
+.brick.view_newslist .brick__text a {
 	color: #343434;
 	text-decoration: none;
 }
-.brick.view_newslist a:hover {
+.brick.view_newslist .brick__text a:hover {
 	color: #c64a1b;
 	text-decoration: underline;
 }
+
 .brick.view_newslist .date {
 	color: #7e7e7e;
 	display: inline-block;
@@ -451,20 +461,24 @@
 }
 
 
-.brick.view_newslist h4 {
+
+
+
+
+/* желтый заголовок со стрелкой */
+
+.brick__header.view_arrowed {
 	background: #ffd051;
 	text-transform: uppercase;
-}
-.brick.view_newslist h4 a {
-	display: block;
 	padding: 11px 18px 10px;
 	position: relative;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #000;
 }
-.brick.view_newslist h4 a:hover {
-	text-decoration: none;
-}
-
-.brick.view_newslist h4.view_arrowed a:after {
+.brick__header.view_arrowed:after {
 	display: block;
 	position: absolute;
 	right: 5px;
@@ -475,6 +489,16 @@
 	background: url(../_images/icons_sprite.png);
 	background-position: -5px -223px;
 }
+
+
+
+
+
+
+
+
+
+
 
 .brick.view_newslist .brick__content {
 	border: 3px solid #ffd051;
@@ -494,6 +518,7 @@
 
 .brick.view_newslist .brick__footer {
 	background: #ffd051;
+	color: #000;
 	width: 100%;
 	position: absolute;
 	bottom: 0;

@@ -1,12 +1,12 @@
 
-<h4 class="view_arrowed">
-	<a href="#" title="">Новости политики</a>
+<h4 class="brick__header view_arrowed">
+	<a href="#" class="brick__headerLink" title="">Новости политики</a>
 </h4>
 
 <ul class="brick__content">
 	<li>
 		<span class="date">вчера, 14:30</span>
-		<p>
+		<p class="brick__text">
 			<a href="#" title="">
 				Кадырова пытались убить взорвавшие «Домодедово»
 			</a>
@@ -14,7 +14,7 @@
 	</li>
 	<li>
 		<span class="date">вчера, 14:22</span>
-		<p>
+		<p class="brick__text">
 			<a href="#" title="">
 				Украина сравнила французских депутатов в Крыму с варварами
 			</a>
@@ -22,7 +22,7 @@
 	</li>
 	<li>
 		<span class="date">вчера, 10:16</span>
-		<p>
+		<p class="brick__text">
 			<a href="#" title="">
 				Зацепер парализовал движение электричек в Москве
 			</a>
@@ -30,7 +30,7 @@
 	</li>
 	<li>
 		<span class="date">вчера, 9:45</span>
-		<p>
+		<p class="brick__text">
 			<a href="#" title="">
 				Россия заблокировала трибунал по «Боингу»
 			</a>
@@ -38,7 +38,7 @@
 	</li>
 	<li>
 		<span class="date">вчера, 14:30</span>
-		<p>
+		<p class="brick__text">
 			<a href="#" title="">
 				Кадырова пытались убить взорвавшие «Домодедово»
 			</a>
@@ -46,7 +46,7 @@
 	</li>
 	<li>
 		<span class="date">вчера, 14:22</span>
-		<p>
+		<p class="brick__text">
 			<a href="#" title="">
 				Украина сравнила французских депутатов в Крыму с варварами
 			</a>
@@ -54,7 +54,7 @@
 	</li>
 	<li>
 		<span class="date">вчера, 10:16</span>
-		<p>
+		<p class="brick__text">
 			<a href="#" title="">
 				Зацепер парализовал движение электричек в Москве
 			</a>
@@ -62,7 +62,7 @@
 	</li>
 	<li>
 		<span class="date">вчера, 9:45</span>
-		<p>
+		<p class="brick__text">
 			<a href="#" title="">
 				Россия заблокировала трибунал по «Боингу»
 			</a>
@@ -70,7 +70,7 @@
 	</li>
 	<li>
 		<span class="date">вчера, 10:16</span>
-		<p>
+		<p class="brick__text">
 			<a href="#" title="">
 				Зацепер парализовал движение электричек в Москве
 			</a>

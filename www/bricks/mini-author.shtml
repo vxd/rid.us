@@ -42,25 +42,25 @@
 <div class="brick__content">
 <!--#if expr="$data = 1" -->
 	<h2>
-		<a href="#" title="">Петр Петрович</a>
+		<a href="#" class="brick__headerLink" title="">Петр Петрович</a>
 	</h2>
-	<p>
+	<p class="brick__text">
 		Корреспондент «Изборского клуба»
 	</p>
 <!--#endif -->
 <!--#if expr="$data = 2" -->
 	<h2>
-		<a href="#" title="">Василий Василич</a>
+		<a href="#" class="brick__headerLink" title="">Василий Василич</a>
 	</h2>
-	<p>
+	<p class="brick__text">
 		Эксперт в вопросах борьбы с терроризмом, профессор МГИМО
 	</p>
 <!--#endif -->
 <!--#if expr="$data = 3" -->
 	<h2>
-		<a href="#" title="">Иван Иванейко</a>
+		<a href="#" class="brick__headerLink" title="">Иван Иванейко</a>
 	</h2>
-	<p>
+	<p class="brick__text">
 		Эксперт в вопросах борьбы с терроризмом
 	</p>
 <!--#endif -->

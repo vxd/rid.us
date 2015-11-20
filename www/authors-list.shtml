@@ -26,7 +26,7 @@
 
     <!--#include virtual="_alphabeth.shtml"-->
 
-    <div class="padding_top">
+    <div class="padding_top clearfix">
         <div class="brick view_mini view_imageSquare">
             <!--#include virtual="bricks/mini-author.shtml?image=1&data=1&count1=12&count3=345"-->
         </div>

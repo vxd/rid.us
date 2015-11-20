@@ -3,10 +3,10 @@
 <head>
 
     <!--#include virtual="_head.shtml"-->
-    <link href="_css/authors.css" rel="stylesheet" type="text/css">
+    <link href="_css/section.css" rel="stylesheet" type="text/css">
 
 </head>
-<body class="page_authors" itemscope itemtype="http://schema.org/WebPage">
+<body class="page_section" itemscope itemtype="http://schema.org/WebPage">
 
 
 <!--#include virtual="_header.shtml"-->
@@ -60,8 +60,9 @@
         </div>
     </div>
 
+    <!--#include virtual="bricks/videosection.shtml"-->
 
-    <div>
+    <div class="clearfix">
 
 		<div class="brick">
 			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
@@ -75,11 +76,36 @@
 		<div class="brick">
 			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
 		</div>
-	</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
 
+	</div>
 
 </section>
 
+<!--#include virtual="bricks/photosection.shtml"-->
 
 <section class="brickrows_1 contentBackground_grey paddings_side padding_top wrapper">
 	<h2>Читайте также:</h2>

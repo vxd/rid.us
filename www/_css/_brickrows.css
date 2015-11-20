@@ -1,5 +1,16 @@
 
 
+/*
+
+НЕ ИСПОЛЬЗУЮТСЯ (и так ок)
+
+для полной ширины:
+.brickrows_3
+
+*/
+
+
+
 
 .brickrows_1 .brick {
 	display: block;
@@ -21,6 +32,8 @@
 		display: none;
 	}
 }
+
+
 
 
 
@@ -47,6 +60,8 @@
 		display: none;
 	}
 }
+
+
 
 
 

@@ -80,7 +80,7 @@
 
     </div>
 
-    <div>
+    <div class="clearfix">
         <div class="brick">
             <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
         </div>

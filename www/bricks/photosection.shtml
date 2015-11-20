@@ -1,0 +1,21 @@
+<section class="photoSection wrapper contentBackground_black paddings_side padding_bottom padding_top clearfix">
+	<h1>Фоторепортажи</h1>
+	<div class="photoWrapper clearfix">
+		<div class="ptotoBlock">
+			<a href="#" class="ptotoBlock__image">
+				<img src="http://www.ridus.ru/images/2015/8/17/317903/in_article_454f9c667c.jpg" alt="">
+				<span class="ptotoBlock__description">В медвежьем краю не хотят становиться японцами</span>
+			</a>
+			<h4 class="brick__header view_arrowed">
+				Спецрепортаж
+			</h4>
+		</div>
+		<div class="ptotoBlock">
+			<a href="#" class="ptotoBlock__image">
+				<img src="http://www.ridus.ru/images/2015/8/20/318592/in_article_cb0b775e49.jpg" alt="">
+				<span class="ptotoBlock__description">В медвежьем краю не хотят становиться японцами</span>
+			</a>
+		</div>
+		<a href="#" class="photoSection__nav view_prew"></a>
+	</div>
+</section>

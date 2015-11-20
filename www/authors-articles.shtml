@@ -24,7 +24,7 @@
 
         <div class="authorPhoto">
             <a href="#" title="">
-                <img src="../_images/author_photo.jpg" alt="автор" />
+                <img src="_images/author_photo.jpg" alt="автор" />
             </a>
             <span class="authorPhoto__label">Я &mdash; Автор</span>
         </div>

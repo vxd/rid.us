@@ -37,29 +37,67 @@
 
 
 
-.table__mainColumn.brickrows_2 .brick {
+
+.brickrows_2 .table__mainColumn .brick {
 	display: block;
 }
 @media screen and (max-width: 1023px) {
-	.table__mainColumn.brickrows_2 .brick:nth-child(3n),
-	.table__mainColumn.brickrows_2 .brick:nth-child(4n),
-	.table__mainColumn.brickrows_2 .brick:nth-child(5n),
-	.table__mainColumn.brickrows_2 .brick:nth-child(6n) {
+	.brickrows_2 .table__mainColumn .brick:nth-child(3n),
+	.brickrows_2 .table__mainColumn .brick:nth-child(4n),
+	.brickrows_2 .table__mainColumn .brick:nth-child(5n),
+	.brickrows_2 .table__mainColumn .brick:nth-child(6n) {
 		display: none;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table__mainColumn.brickrows_2 .brick:nth-child(5n),
-	.table__mainColumn.brickrows_2 .brick:nth-child(6n) {
+	.brickrows_2 .table__mainColumn .brick:nth-child(5n),
+	.brickrows_2 .table__mainColumn .brick:nth-child(6n) {
 		display: none;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.table__mainColumn.brickrows_2 .brick:nth-child(5n),
-	.table__mainColumn.brickrows_2 .brick:nth-child(6n) {
+	.brickrows_2 .table__mainColumn .brick:nth-child(5n),
+	.brickrows_2 .table__mainColumn .brick:nth-child(6n) {
 		display: none;
 	}
 }
+
+
+
+
+.brickrows_3 .table__mainColumn .brick {
+	display: block;
+}
+@media screen and (max-width: 1023px) {
+	.brickrows_3 .table__mainColumn .brick:nth-child(4n),
+	.brickrows_3 .table__mainColumn .brick:nth-child(5n),
+	.brickrows_3 .table__mainColumn .brick:nth-child(6n),
+	.brickrows_3 .table__mainColumn .brick:nth-child(7n),
+	.brickrows_3 .table__mainColumn .brick:nth-child(8n),
+	.brickrows_3 .table__mainColumn .brick:nth-child(9n) {
+		display: none;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.brickrows_3 .table__mainColumn .brick:nth-child(7n),
+	.brickrows_3 .table__mainColumn .brick:nth-child(8n),
+	.brickrows_3 .table__mainColumn .brick:nth-child(9n) {
+		display: none;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.brickrows_3 .table__mainColumn .brick:nth-child(7n),
+	.brickrows_3 .table__mainColumn .brick:nth-child(8n),
+	.brickrows_3 .table__mainColumn .brick:nth-child(9n) {
+		display: none;
+	}
+}
+
+
+
+
+
+
 
 
 

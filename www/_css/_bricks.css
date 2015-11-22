@@ -335,12 +335,21 @@
 
 
 
-.table.view_doubleHeight .table__sideColumn .brick {
+.brickrows_2 .table__sideColumn .brick {
 	height: 902px; /* = x2 + margin */
 }
 @media screen and (min-width: 1297px) {
-	.table.view_doubleHeight .table__sideColumn .brick {
+	.brickrows_2 .table__sideColumn .brick {
 		height: 896px;  /* = x2 + margin */
+	}
+}
+
+.brickrows_3 .table__sideColumn .brick {
+	height: 1364px; /* = x3 + 2*margin */
+}
+@media screen and (min-width: 1297px) {
+	.brickrows_3 .table__sideColumn .brick {
+		height: 1352px;  /* = x3 + 2*margin */
 	}
 }
 
@@ -502,10 +511,13 @@
 
 .brick.view_newslist .brick__content {
 	border: 3px solid #ffd051;
-	border-bottom: 0;
-	border-top: 0;
+	border-bottom: none;
+	border-top: none;
 	padding: 0 15px;
-	height: 95%;
+	height: 100%;
+}
+.brick.view_newslist .brick__content:first-child {
+	border-top: 3px solid #ffd051; /* для случая, когда нет заголовка, возвращаем границу */
 }
 .brick.view_newslist .brick__content li {
 	padding-top: 10px;

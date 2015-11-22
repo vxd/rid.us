@@ -1,0 +1,98 @@
+
+<ul class="brick__content">
+	<li>
+		<span class="date">вчера, 14:30</span>
+		<p class="brick__text">
+			<a href="#" title="">
+				Кадырова пытались убить взорвавшие «Домодедово»
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 14:22</span>
+		<p class="brick__text">
+			<a href="#" title="">
+				Украина сравнила французских депутатов в Крыму с варварами
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 10:16</span>
+		<p class="brick__text">
+			<a href="#" title="">
+				Зацепер парализовал движение электричек в Москве
+			</a>
+		</p>
+	</li>
+	<li>
+		<p class="brick__text" style="text-align: center;">
+			<a href="#" title="">
+				<br>
+				<img src="_images/banner_brick-mts.jpg" alt="">
+			</a>
+		</p>	
+	</li>
+	<li>
+		<span class="date">вчера, 9:45</span>
+		<p class="brick__text">
+			<a href="#" title="">
+				Россия заблокировала трибунал по «Боингу»
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 14:30</span>
+		<p class="brick__text">
+			<a href="#" title="">
+				Кадырова пытались убить взорвавшие «Домодедово»
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 14:30</span>
+		<p class="brick__text">
+			<a href="#" title="">
+				Кадырова пытались
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 14:22</span>
+		<p class="brick__text">
+			<a href="#" title="">
+				Украина сравнила французских депутатов в Крыму с варварами
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 10:16</span>
+		<p class="brick__text">
+			<a href="#" title="">
+				Зацепер парализовал движение электричек в Москве
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 9:45</span>
+		<p class="brick__text">
+			<a href="#" title="">
+				Россия заблокировала трибунал по «Боингу»
+			</a>
+		</p>
+	</li>
+	<li>
+		<span class="date">вчера, 10:16</span>
+		<p class="brick__text">
+			<a href="#" title="">
+				Зацепер парализовал движение электричек в Москве
+			</a>
+		</p>
+	</li>
+</ul>
+
+
+
+<a href="#" class="brick__footer" title="">
+	Все новости
+</a>
+

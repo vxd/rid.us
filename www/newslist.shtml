@@ -3,10 +3,10 @@
 <head>
 
     <!--#include virtual="_head.shtml"-->
-    <link href="_css/section.css" rel="stylesheet" type="text/css">
+    <link href="_css/news.css" rel="stylesheet" type="text/css">
 
 </head>
-<body class="page_section" itemscope itemtype="http://schema.org/WebPage">
+<body class="page_news" itemscope itemtype="http://schema.org/WebPage">
 
 
 <!--#include virtual="_header.shtml"-->
@@ -14,13 +14,14 @@
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
     <h1>
-    	Политика
+    	Бездна новостей 
+    	[xxx]
     </h1>
 
-    <div class="table brickrows_2">
+    <div class="table brickrows_3">
         <div class="table__sideColumn">
             <div class="brick view_newslist">
-            <!--#include virtual="bricks/newslist-yellow-2x.shtml"-->
+            <!--#include virtual="bricks/newslist-yellow-3x.shtml"-->
             </div>
         </div>
         <div class="table__mainColumn">
@@ -42,74 +43,25 @@
             <div class="brick">
                 <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
             </div>
+            <div class="brick">
+                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+            </div>
+            <div class="brick">
+                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+            </div>
+            <div class="brick">
+                <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+            </div>
         </div>
     </div>
 
-	<div class="brickrows_1 clearfix">
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick view_banner">
-			<!--#include virtual="bricks/banner-mts.shtml"-->
-		</div>
-        <div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
-        </div>
-        <div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
-        </div>
-    </div>
-
-    <!--#include virtual="bricks/videosection.shtml"-->
-
-    <div class="clearfix">
-
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
-		</div>
-
-	</div>
 
 </section>
 
-<!--#include virtual="bricks/photosection.shtml"-->
 
 <section class="brickrows_1 contentBackground_grey paddings_side padding_top wrapper">
 	<h2>Читайте также:</h2>
-    <div class="clearfix">
+	<div class="clearfix">
 		<div class="brick view_mini">
 			<!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
 		</div>

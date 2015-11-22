@@ -111,6 +111,7 @@
 
 
 /* для желтого столбца на всю высоту */
+
 .brickrows_2 .table__sideColumn .brick.view_newslist {
 	height: 902px; /* = x2 + margin */
 }
@@ -151,6 +152,7 @@
 
 
 /* БОКОВАЯ КОЛОНКА - если она справа, перемещаем отступ */
+
 @media screen and (max-width: 1023px) {
 	.table__sideColumn:last-child .brick {
 		margin-left: 5.675%;

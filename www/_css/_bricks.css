@@ -100,12 +100,21 @@
 	color: #c64a1b;
 }
 
+
+
 .brick__text {
 	color: #000;
 	font-size: 16px;
 	margin-bottom: 15px;
 }
-
+.brick__text a {
+	color: #343434;
+	text-decoration: none;
+}
+.brick__text a:hover {
+	color: #c64a1b;
+	text-decoration: underline;
+}
 
 
 
@@ -190,7 +199,7 @@
 
 
 
-
+/* мелкие с прямоугольной картинкой */
 
 
 
@@ -202,7 +211,6 @@
 	margin-bottom: 13px;
 }
 
-
 .brick.view_mini .brick__text {
 	font-size: 14px;
 }
@@ -211,6 +219,33 @@
 
 
 
+
+
+/* мелкие с прямоугольной картинкой сбоку */
+.brick.view_floatText {
+	height: 90px;
+}
+.brick.view_floatText .brick__image {
+	display: block;
+	height: 45px;
+	overflow: hidden;
+	padding-top: 45px;
+	margin-bottom: 13px;
+	width: 140px;
+	float: left;
+	margin-right: 10px;
+}
+.brick.view_floatText .brick__text {
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+/* мелкие с квадратной картинкой */
 
 
 
@@ -310,14 +345,7 @@
 	position: relative;
 }
 
-.brick.view_newslist .brick__text a {
-	color: #343434;
-	text-decoration: none;
-}
-.brick.view_newslist .brick__text a:hover {
-	color: #c64a1b;
-	text-decoration: underline;
-}
+
 
 .brick.view_newslist .date {
 	color: #7e7e7e;

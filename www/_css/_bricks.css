@@ -1,53 +1,10 @@
 @import "_brickrows.css";
+@import "_brickwidth.css";
 
 
 
 
 
-.brick {
-	height: 440px;
-	float: left;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	overflow: hidden;
-}
-@media screen and (max-width: 1023px) {
-	.brick {
-		width: 48.5%;
-		margin: 0 3% 22px 0;
-	}
-	.brick:nth-child(2n) {
-		margin-right: 0;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.brick {
-		width: 32%;
-		margin: 0 2% 22px 0;
-	}
-	.brick:nth-child(3n) {
-		margin-right: 0;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.brick {
-		width: 300px;
-		margin: 0 22px 22px 0;
-	}
-	.brick:nth-child(3n) {
-		margin-right: 0;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.brick {
-		width: 300px;
-		margin: 0 16px 16px 0;
-	}
-	.brick:nth-child(4n) {
-		margin-right: 0;
-	}
-}
 
 
 
@@ -228,45 +185,6 @@
 
 
 
-.brick.view_mini {
-	height: 188px;
-}
-@media screen and (max-width: 1023px) {
-	.brick.view_mini {
-		width: 22.75%;
-		margin: 0 3% 22px 0;
-	}
-	.brick.view_mini:nth-child(4n) {
-		margin-right: 0;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.brick.view_mini {
-		width: 15%;
-		margin: 0 2% 22px 0;
-	}
-	.brick.view_mini:nth-child(6n) {
-		margin-right: 0;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.brick.view_mini {
-		width: 139px;
-		margin: 0 22px 22px 0;
-	}
-	.brick.view_mini:nth-child(6n) {
-		margin-right: 0;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.brick.view_mini {
-		width: 142px;
-		margin: 0 16px 16px 0;
-	}
-	.brick.view_mini:nth-child(8n) {
-		margin-right: 0;
-	}
-}
 
 
 
@@ -335,38 +253,6 @@
 
 
 
-.brickrows_2 .table__sideColumn .brick {
-	height: 902px; /* = x2 + margin */
-}
-@media screen and (min-width: 1297px) {
-	.brickrows_2 .table__sideColumn .brick {
-		height: 896px;  /* = x2 + margin */
-	}
-}
-
-.brickrows_3 .table__sideColumn .brick {
-	height: 1364px; /* = x3 + 2*margin */
-}
-@media screen and (min-width: 1297px) {
-	.brickrows_3 .table__sideColumn .brick {
-		height: 1352px;  /* = x3 + 2*margin */
-	}
-}
-
-
-
-@media screen and (max-width: 1023px) {
-	.table__sideColumn .brick {
-		width: 94.325%;
-		margin-right: 5.675%;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table__sideColumn .brick {
-		width: 94.407%;
-		margin-right: 5.593%;
-	}
-}
 
 
 
@@ -374,41 +260,11 @@
 
 
 
-/* обновляем отступы */
 
-@media screen and (max-width: 1023px) {
-	.table__mainColumn .brick {
-		width: 100%;
-		margin: 0 0 22px 0;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table__mainColumn .brick {
-		width: 48.5%;
-		margin: 0 3% 22px 0;
-	}
-	.table__mainColumn .brick:nth-child(2n) {
-		margin-right: 0;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.table__mainColumn .brick {
-		width: 300px;
-		margin: 0 22px 22px 0;
-	}
-	.table__mainColumn .brick:nth-child(2n) {
-		margin-right: 0;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.table__mainColumn .brick {
-		width: 300px;
-		margin: 0 16px 16px 0;
-	}
-	.table__mainColumn .brick:nth-child(3n) {
-		margin-right: 0;
-	}
-}
+
+
+
+
 
 
 

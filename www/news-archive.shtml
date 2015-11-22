@@ -19,11 +19,6 @@
     </h1>
 
     <div class="table brickrows_3">
-        <div class="table__sideColumn">
-            <div class="brick view_newslist">
-            <!--#include virtual="bricks/newslist-yellow-3x.shtml"-->
-            </div>
-        </div>
         <div class="table__mainColumn">
             <div class="brick">
             <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
@@ -51,6 +46,11 @@
             </div>
             <div class="brick">
                 <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+            </div>
+        </div>
+        <div class="table__sideColumn">
+            <div class="brick view_newslist">
+            <!--#include virtual="bricks/newslist-yellow-3x.shtml"-->
             </div>
         </div>
     </div>

@@ -395,7 +395,6 @@
 
 .brick.view_newslist .brick__content {
 	border: 3px solid #ffd051;
-	border-bottom: none;
 	border-top: none;
 	padding: 0 15px;
 	height: 100%;

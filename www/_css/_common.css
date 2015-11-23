@@ -569,6 +569,10 @@ label.radioWrap {
 .table__mainColumn {
 	display: table-cell;
 	vertical-align: top;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 @media screen and (max-width: 1023px) {
 	.table__sideColumn {

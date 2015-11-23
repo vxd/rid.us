@@ -154,26 +154,34 @@
 /* БОКОВАЯ КОЛОНКА - если она справа, перемещаем отступ */
 
 @media screen and (max-width: 1023px) {
+	.table__sideColumn:last-child {
+		padding-left: 3%;
+	}
 	.table__sideColumn:last-child .brick {
-		margin-left: 5.675%;
 		margin-right: 0;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.table__sideColumn:last-child {
+		padding-left: 3%;
+	}
 	.table__sideColumn:last-child .brick {
-		margin-left: 5.593%;
 		margin-right: 0;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.table__sideColumn:last-child {
+		padding-left: 22px;
+	}
 	.table__sideColumn:last-child .brick {
-		margin-left: 22px;
 		margin-right: 0;
 	}
 }
 @media screen and (min-width: 1297px) {
+	.table__sideColumn:last-child {
+		padding-left: 16px;
+	}
 	.table__sideColumn:last-child .brick {
-		margin-left: 16px;
 		margin-right: 0;
 	}
 }

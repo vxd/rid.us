@@ -205,6 +205,8 @@
                 <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
             </div>
 
+            <h2>Читайте также:</h2>
+
             <div class="brick view_floatText">
                 <!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
             </div>

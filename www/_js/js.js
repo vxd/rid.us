@@ -1,13 +1,39 @@
 $(document).ready(function() {
 
-    var swiper = new Swiper('.slider', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        // spaceBetween: 30,
-        centeredSlides: true,
-        // autoplay: 2500,
-        autoplayDisableOnInteraction: false
+    $('.slider').each(function () {
+	    var pageSwiper = new Swiper($(this), {
+	        pagination: $(this).find('.swiper-pagination'),
+	        paginationClickable: true,
+	        autoplay: 3000,
+	        autoplayDisableOnInteraction: false
+	    });
+    })
+
+
+    $('.pageSwiper').each(function () {
+	    var pageSwiper = new Swiper($(this), {
+	        nextButton: $(this).parent().find('.swiper-button-next'),
+	        prevButton: $(this).parent().find('.swiper-button-prev'),
+	        hashnav: true,
+	        spaceBetween: 16,
+	        breakpoints: {
+	            1296: {
+	                spaceBetween: 22
+	            },
+	            1040: {
+	                spaceBetween: "2%",
+	                grabCursor: true
+	            },
+	            1023: {
+	                spaceBetween: "3%",
+	                grabCursor: true
+	            }
+	        }
+	    });
     });
+
+
+
 
 });
 

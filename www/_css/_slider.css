@@ -46,3 +46,37 @@
 
 
 
+.pageSwiper {
+    overflow: hidden;
+}
+.pageSwiper__container {
+    position: relative;
+}
+.pageSwiper__container .swiper-button-next,
+.pageSwiper__container .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background: #ffd051 url(../_images/icons_sprite.png);
+    z-index: 100;
+}
+@media screen and (max-width: 1040px) {
+    .pageSwiper__container .swiper-button-next,
+    .pageSwiper__container .swiper-button-prev {
+        display: none;
+    }
+}
+
+
+.pageSwiper__container .swiper-button-next.swiper-button-disabled,
+.pageSwiper__container .swiper-button-prev.swiper-button-disabled {
+    background-color: #fff;
+}
+.pageSwiper__container .swiper-button-prev {
+    background-position: -50px -220px;
+    left: 1%;
+}
+.pageSwiper__container .swiper-button-next {
+    float: right;
+    background-position: 0px -220px;
+    right: 1%;
+}

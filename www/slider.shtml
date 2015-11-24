@@ -24,12 +24,40 @@
             	<a href="#" class="slider__image" title="">
             		<img src="http://www.ridus.ru/images/2015/11/24/339241/main_slider_7c12940e3e.jpg" alt="">
             	</a>
+            	<div class="slider__text">
+            		<h1>Яценюк запустил &laquo;план Ы&raquo;</h1>
+            		<div class="brick__counters">
+						<span class="count1">
+							12 <i class="icon"><!-- icon --></i>
+						</span>
+						<span class="count2">
+							34 <i class="icon"><!-- icon --></i>
+						</span>
+						<span class="count3">
+							57 <i class="icon"><!-- icon --></i>
+						</span>
+					</div>
+            	</div>
             </div>
             <div class="swiper-slide">
             	<a href="#" class="slider__image" title="">
             		<img src="http://www.ridus.ru/images/2015/11/24/339241/main_slider_7c12940e3e.jpg" alt="">
             	</a>
-            </div>
+             	<div class="slider__text">
+            		<h1>Яценюк запустил &laquo;план Ы&raquo;</h1>
+            		<div class="brick__counters">
+						<span class="count1">
+							12 <i class="icon"><!-- icon --></i>
+						</span>
+						<span class="count2">
+							34 <i class="icon"><!-- icon --></i>
+						</span>
+						<span class="count3">
+							57 <i class="icon"><!-- icon --></i>
+						</span>
+					</div>
+            	</div>
+           </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>

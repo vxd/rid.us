@@ -1,0 +1,12 @@
+<a href="#" class="categoryFilter" title="">Фильтр по рубрикам</a>
+<div>
+	<ul class="filtersList">
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">sdfsf</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">sdfsf</a>
+		</li>
+	</ul>
+	<a href="#" class="categoryFilter__applyButton" title="">Применить</a>
+</div>

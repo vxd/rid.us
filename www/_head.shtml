@@ -24,7 +24,7 @@
 
 	<link href="_css/reset.css" rel="stylesheet" type="text/css">
 	<link href="_css/jquery-ui.min.css" rel="stylesheet" type="text/css">
-	<link href="_css/swiper.min.css" rel="stylesheet" type="text/css">
+	<link href="_css/swiper.css" rel="stylesheet" type="text/css">
 	<link href="_css/main.css" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|Open+Sans+Condensed:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		

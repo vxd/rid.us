@@ -1,4 +1,5 @@
 <a href="#" class="categoryFilter" title="">Фильтр по рубрикам</a>
+<span class="categoryFilter__info">asds</span>
 <div>
 	<ul class="filtersList">
 		<li class="filtersList__item">

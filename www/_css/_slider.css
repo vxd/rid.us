@@ -80,3 +80,14 @@
     background-position: 0px -220px;
     right: 1%;
 }
+
+.pageSwiper .swiper-slide {
+    opacity: .5;
+    -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+.pageSwiper .swiper-slide.swiper-slide-active {
+    opacity: 1;
+}

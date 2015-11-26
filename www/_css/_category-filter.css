@@ -3,7 +3,7 @@
 	top: -4px;
 	background: #ffd051;
 	color: #000;
-	padding: 5px 33px 5px 15px;
+	padding: 8px 33px 8px 15px;
 	display: inline-block;
 	font-size: 16px;
 	font-weight: bold;
@@ -38,28 +38,66 @@
 }
 
 .filtersList__wrapper {
-	width: 675px;
+	width: 750px;
 	background: #667686;
 	padding: 30px;
 	position: absolute;
-	top: 32px;
+	top: 35px;
 	right: 0;
 	z-index: 10;
 }
 .filtersList__wrapper .categoryFilter {
 	margin-left: 0;
 }
+.filtersList__item {
+	line-height: 16px;
+	margin-bottom: 1px;
+	position: relative;
+}
 .filtersList__link {
 	text-decoration: none;
 	color: #fff;
 	font-size: 16px;
+	display: block;
+	padding: 6px 28px 8px 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.filtersList__link:hover {
+	background: #ffd051;
+	color: #000;
+}
+.filtersList__item.state_selected {
+	background: #ffd051;
+}
+.filtersList__item.state_selected:after {
+	content: '\0274c';
+	display: inline-block;
+	position: absolute;
+	right: 18px;
+	top: 7px;
+	width: 7px;
+	height: 7px;
+	font-size: 16px;
+	font-weight: normal;
+}
+.filtersList__item.state_selected .filtersList__link {
+	color: #000;
 }
 .categoryFilter .filtersList__link {
 	color: #000;
 	margin-bottom: 20px;
+	display: inline;
 }
 .filtersList .categoryFilter {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+	padding: 8px 15px;
+	display: inline-block;
+}
+.filtersList .categoryFilter .filtersList__link {
+	padding-left: 0;
+	padding-right: 0;
 }
 .filtersList {
 	-webkit-column-count: 3;

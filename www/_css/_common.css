@@ -628,20 +628,20 @@ label.radioWrap {
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table__mainColumn:last-child,
-	.table__centralColumn {
+	.table__mainColumn:last-child {
 		padding-left: 2%;
 	}
-	.table__mainColumn:first-child {
+	.table__mainColumn:first-child,
+	.table__centralColumn {
 		padding-right: 2%;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.table__mainColumn:last-child,
-	.table__centralColumn {
+	.table__mainColumn:last-child {
 		padding-left: 22px;
 	}
-	.table__mainColumn:first-child {
+	.table__mainColumn:first-child,
+	.table__centralColumn {
 		padding-right: 22px;
 	}
 }

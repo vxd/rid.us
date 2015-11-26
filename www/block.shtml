@@ -24,12 +24,18 @@
             </div>
         </div>
         <div class="table__centralColumn">
-            <!--#include virtual="slider.shtml"-->
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
-            </div>
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        	<div class="clearfix">
+        		<!-- долен быть в этой обертке, чтоб правильно считалась ширина для мобильных разрешений -->
+	            <!--#include virtual="slider.shtml"-->
+	        </div>
+            <div class="clearfix">
+            	<!-- должны быть в этой обертке, чтоб правильно считалось обнуление отступа у каждого второго -->
+	            <div class="brick">
+	                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+	            </div>
+	            <div class="brick">
+	                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+	            </div>
             </div>
         </div>
         <div class="table__rightColumn">

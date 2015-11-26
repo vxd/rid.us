@@ -9,6 +9,27 @@ $(document).ready(function() {
 	    });
     })
 
+	$(window).resize(function(){  
+		setTimeout(function(){		
+			sliderWidth();
+		}, 40);
+	});
+
+	function sliderWidth() {
+		$('.slider').hide();
+		var windowWidth = $(document).width();
+		if (windowWidth <= 1023 ) {
+			var sliderWidth = $('.slider').parent().width();
+			$('.slider, .slider__image').width(sliderWidth);
+		}
+		$('.slider').show();
+	}; 
+	sliderWidth();
+
+
+
+
+
 
     $('.pageSwiper').each(function () {
 	    var pageSwiper = new Swiper($(this), {

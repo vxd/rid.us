@@ -1,6 +1,6 @@
 <a href="#" class="categoryFilter" title="">Фильтр по рубрикам</a>
 <span class="categoryFilter__info">asds</span>
-<div>
+<div class="filtersList__wrapper">
 	<ul class="filtersList">
 		<li class="filtersList__item">
 			<a href="#" class="filtersList__link" title="">sdfsf</a>

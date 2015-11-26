@@ -1,8 +1,31 @@
 .slider {
-    width: 616px !important;
     position: relative;
     margin-right: 0;
+    overflow: hidden;
 }
+.slider,
+.slider__image {
+    width: 100%;
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+    .slider,
+    .slider__image {
+        width: 622px !important;
+    }
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+    .slider,
+    .slider__image {
+        width: 622px !important;
+    }
+}
+@media screen and (min-width: 1297px) {
+    .slider,
+    .slider__image {
+        width: 616px !important;
+    }
+}
+
 
 .slider__text {
     position: absolute;
@@ -29,7 +52,6 @@
     opacity: .6;
 }
 .slider__image {
-    width: 616px;
     display: block;
     height: 220px;
     overflow: hidden;

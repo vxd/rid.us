@@ -1,13 +1,119 @@
-<a href="#" class="categoryFilter" title="">Фильтр по рубрикам</a>
-<span class="categoryFilter__info">asds</span>
+<a href="#" class="categoryFilter" title="">Фильтр по рубрикам <b class="icon"></b></a>
+<span class="categoryFilter__info">&#8212; выбрано <span id="categoryFilterCounter">3</span> рубрики</span>
 <div class="filtersList__wrapper">
 	<ul class="filtersList">
-		<li class="filtersList__item">
-			<a href="#" class="filtersList__link" title="">sdfsf</a>
+		<li class="filtersList__item categoryFilter">
+			<a href="#" class="filtersList__link" title="">все рубрики</a>
 		</li>
 		<li class="filtersList__item">
-			<a href="#" class="filtersList__link" title="">sdfsf</a>
+			<a href="#" class="filtersList__link" title="">авто</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">арт-ридус</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">видео</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">военное дело</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">город</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">еда</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">животные</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">здоровье</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">знаменитости</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">интернет</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">история</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">кино</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">компьютерные игры</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">космос</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">культура</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">литература</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">музыка</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">наука и техника</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">недвижимость</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">обраование</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">общество</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">политика</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">право</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">происшествия</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">путешествия</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">расследования</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">религия</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">сми</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">советы</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">спорт</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">стиль</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">технологии</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">фото</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">экология</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">экономика</a>
+		</li>
+		<li class="filtersList__item">
+			<a href="#" class="filtersList__link" title="">юмор</a>
 		</li>
 	</ul>
+
 	<a href="#" class="categoryFilter__applyButton" title="">Применить</a>
 </div>

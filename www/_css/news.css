@@ -21,3 +21,8 @@
     color: #c64a1b;
 	text-decoration: underline;
 }
+
+
+.newsHeaderAndFilter {
+	position: relative;
+}

@@ -147,13 +147,11 @@
 
 
 /* ОСНОВНАЯ КОЛОНКА - обновляем отступы */
-
 @media screen and (max-width: 1023px) {
 	.table__mainColumn .brick {
 		width: 100%;
 		margin: 0 0 22px 0;
 	}
-
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.table__mainColumn .brick,
@@ -166,11 +164,17 @@
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.table__mainColumn .brick {
+		margin-right: 22px;
+	}
 	.table__mainColumn .brick:nth-child(2n) {
 		margin-right: 0;
 	}
 }
 @media screen and (min-width: 1297px) {
+	.table__mainColumn .brick {
+		margin-right: 16px;
+	}
 	.table__mainColumn .brick:nth-child(3n) {
 		margin-right: 0;
 	}

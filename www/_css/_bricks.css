@@ -26,7 +26,6 @@
 	border-top: 0;
 	border-bottom: 0;
 	text-align: center;
-	height: auto; /* возможно, убрать - граница по высоте картинки */
 	font-size: 0;
 }
 

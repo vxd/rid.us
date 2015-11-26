@@ -1,3 +1,9 @@
+.categoryFilter__wrapper {
+	display: inline-block;
+	margin-left: 20px;
+	position: relative;
+}
+
 .categoryFilter {
 	position: relative;
 	top: -4px;
@@ -10,9 +16,6 @@
 	text-transform: uppercase;
 	text-decoration: none;
 }
-.newsHeaderAndFilter .categoryFilter {
-	margin-left: 20px;
- }
 .categoryFilter .icon {
 	position: absolute;
 	right: 15px;
@@ -47,10 +50,12 @@
 	padding: 30px;
 	position: absolute;
 	top: 35px;
-	right: 0;
+	left: 0;
 	z-index: 10;
 	display: none;
 }
+
+
 .filtersList__wrapper.state_open {
 	display: block;
 }

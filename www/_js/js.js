@@ -110,24 +110,53 @@ $(function() {
 		return false;
 	});
 
+
+
+
 	/* ФИЛЬТР СТАТЕЙ*/
 	var filtersListCounter = 0,
 		linkWrapper,
 		filtersListCounterElement = $("#categoryFilterCounter");
-	filtersListCounterElement.html('0');
-	$(".newsHeaderAndFilter .categoryFilter").on('click', function(){
+
+	// filtersListCounterElement.html('0');
+
+	$(".categoryFilter").on('click', function(){
 		$(this).toggleClass("state_open");
 		$(".filtersList__wrapper").toggleClass("state_open");
 		$(".categoryFilter__info").toggleClass("state_open");
+		// if ($(this).hasClass("state_open")) {
+		// 	categoryFilterWidth();
+		// }
 		return false;
 	});
-	$(".filtersList .filtersList__link").on('click', function(){
+
+	$(".filtersList__link").on('click', function(){
 		linkWrapper = $(this).parent();
 		linkWrapper.toggleClass("state_selected");
-		console.log(filtersListCounterElement.innerHTML);
+		// console.log(filtersListCounterElement.innerHTML);
 		filtersListCounterElement.html(linkWrapper.hasClass("state_selected") ? ++filtersListCounter : --filtersListCounter);
 		return false;
 	});
+
+	// $(window).resize(function(){  
+	// 	$(".categoryFilter").removeClass("state_open");
+	// 	$(".filtersList__wrapper").removeClass("state_open");
+	// 	$(".categoryFilter__info").removeClass("state_open");
+	// });
+
+	// function categoryFilterWidth() {
+	// 	var windowWidth = $(document).width();
+	// 	var buttonLeft = $(".categoryFilter").offset().left;
+	// 	var buttonTop = $(".categoryFilter").offset().top;
+	// 	var contentWidth = $(".wrapper").width();
+	// 	var calc = windowWidth - buttonLeft - (windowWidth - contentWidth)/2
+	// 	$(".filtersList__wrapper").width(calc-60).offset({top:buttonTop+35, left:buttonLeft});
+	// }
+
+
+
+
+
 
 	/* поле поиска */
 	$(".header__searchButton, .headerSearch__input").on('click', function(){

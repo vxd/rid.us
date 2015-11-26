@@ -13,7 +13,7 @@
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
-    <h1 class="newsHeaderAndFilter">
+    <h1>
     	Бездна новостей
     	<!--#include virtual="_category-filter.shtml"-->
     </h1>

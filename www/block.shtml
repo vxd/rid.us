@@ -17,28 +17,24 @@
     	Гражданская журналистика
     </h1>
 
-    <div class="table brickrows_2">
-        <div class="table__sideColumn">
+    <div class="table">
+        <div class="table__leftColumn">
             <div class="brick view_newslist">
             	<!--#include virtual="bricks/newslist-yellow-2x.shtml"-->
             </div>
         </div>
-        <div class="table__mainColumn">
-
+        <div class="table__centralColumn">
             <!--#include virtual="slider.shtml"-->
-            <!--#include virtual="slider.shtml"-->
-
             <div class="brick">
                 <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
             </div>
             <div class="brick">
                 <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
             </div>
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
-            </div>
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="table__rightColumn">
+            <div class="brick view_newslist">
+            	<!--#include virtual="bricks/newslist-yellow-2x.shtml"-->
             </div>
         </div>
     </div>

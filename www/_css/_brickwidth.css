@@ -136,55 +136,17 @@
 
 
 /* БОКОВАЯ КОЛОНКА - ширина плитки  */
-
-@media screen and (max-width: 1023px) {
+.table__sideColumn .brick,
+.table__leftColumn .brick,
+.table__rightColumn .brick {
+	margin-right: 0;
+}
+@media screen and (max-width: 1040px) {
 	.table__sideColumn .brick {
-		width: 94.325%;
-		margin-right: 5.675%;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table__sideColumn .brick {
-		width: 94.407%;
-		margin-right: 5.593%;
+		width: 100%;
 	}
 }
 
-
-/* БОКОВАЯ КОЛОНКА - если она справа, перемещаем отступ */
-
-@media screen and (max-width: 1023px) {
-	.table__sideColumn:last-child {
-		padding-left: 3%;
-	}
-	.table__sideColumn:last-child .brick {
-		margin-right: 0;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table__sideColumn:last-child {
-		padding-left: 3%;
-	}
-	.table__sideColumn:last-child .brick {
-		margin-right: 0;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.table__sideColumn:last-child {
-		padding-left: 22px;
-	}
-	.table__sideColumn:last-child .brick {
-		margin-right: 0;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.table__sideColumn:last-child {
-		padding-left: 16px;
-	}
-	.table__sideColumn:last-child .brick {
-		margin-right: 0;
-	}
-}
 
 
 
@@ -224,3 +186,6 @@
 	}
 }
 
+.table__centralColumn .brick:nth-child(3n) {
+	margin-right: 0
+}

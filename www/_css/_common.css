@@ -566,7 +566,10 @@ label.radioWrap {
 	width: 100%;
 }
 .table__sideColumn,
-.table__mainColumn {
+.table__mainColumn,
+.table__leftColumn,
+.table__centralColumn,
+.table__rightColumn {
 	display: table-cell;
 	vertical-align: top;
 	-webkit-box-sizing: border-box;
@@ -576,21 +579,81 @@ label.radioWrap {
 }
 @media screen and (max-width: 1023px) {
 	.table__sideColumn {
-		width: 51.5%;
+		width: 48.5%;
+	}
+	.table__rightColumn,
+	.table__leftColumn {
+		display: none;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table__sideColumn {
-		width: 34%;
+	.table__sideColumn,
+	.table__rightColumn {
+		width: 32%;
+	}
+	.table__leftColumn {
+		display: none;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.table__sideColumn {
-		width: 322px;
+	.table__sideColumn,
+	.table__rightColumn {
+		width: 300px;
+	}
+	.table__leftColumn {
+		display: none;
 	}
 }
 @media screen and (min-width: 1297px) {
-	.table__sideColumn {
-		width: 316px;
+	.table__sideColumn,
+	.table__leftColumn,
+	.table__rightColumn {
+		width: 300px;
+	}
+}
+
+
+
+/* БОКОВАЯ КОЛОНКА - если она справа, перемещаем отступ */
+
+@media screen and (max-width: 1023px) {
+	.table__mainColumn:last-child {
+		padding-left: 3%;
+	}
+	.table__mainColumn:first-child {
+		padding-right: 3%;
+	}
+	.table__centralColumn {
+		padding: 0;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.table__mainColumn:last-child,
+	.table__centralColumn {
+		padding-left: 2%;
+	}
+	.table__mainColumn:first-child {
+		padding-right: 2%;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.table__mainColumn:last-child,
+	.table__centralColumn {
+		padding-left: 22px;
+	}
+	.table__mainColumn:first-child {
+		padding-right: 22px;
+	}
+}
+@media screen and (min-width: 1297px) {
+	.table__mainColumn:last-child {
+		padding-left: 16px;
+	}
+	.table__mainColumn:first-child {
+		padding-right: 16px;
+	}
+	.table__centralColumn {
+		padding-right: 16px;
+		padding-left: 16px;
 	}
 }

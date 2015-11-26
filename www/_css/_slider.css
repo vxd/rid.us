@@ -1,6 +1,7 @@
 .slider {
-    width: 600px !important;
+    width: 616px !important;
     position: relative;
+    margin-right: 0;
 }
 
 .slider__text {
@@ -28,7 +29,7 @@
     opacity: .6;
 }
 .slider__image {
-    width: 600px;
+    width: 616px;
     display: block;
     height: 220px;
     overflow: hidden;

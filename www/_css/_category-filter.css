@@ -16,13 +16,13 @@
 .categoryFilter .icon {
 	position: absolute;
 	right: 15px;
-	top: 13px;
+	top: 16px;
 	display: inline-block;
 	border: 5px solid transparent;
 	border-top: 5px solid #000;
 }
 .categoryFilter.state_open .icon {
-	top: 8px;
+	top: 10px;
 	border: 5px solid transparent;
 	border-bottom: 5px solid #000;
 }
@@ -35,6 +35,10 @@
 	font-style: italic;
 	font-weight: normal;
 	text-transform: none;
+	display: none;
+}
+.categoryFilter__info.state_open {
+	display: inline;
 }
 
 .filtersList__wrapper {
@@ -45,6 +49,10 @@
 	top: 35px;
 	right: 0;
 	z-index: 10;
+	display: none;
+}
+.filtersList__wrapper.state_open {
+	display: block;
 }
 .filtersList__wrapper .categoryFilter {
 	margin-left: 0;

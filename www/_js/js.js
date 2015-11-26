@@ -110,6 +110,25 @@ $(function() {
 		return false;
 	});
 
+	/* ФИЛЬТР СТАТЕЙ*/
+	var filtersListCounter = 0,
+		linkWrapper,
+		filtersListCounterElement = $("#categoryFilterCounter");
+	filtersListCounterElement.html('0');
+	$(".newsHeaderAndFilter .categoryFilter").on('click', function(){
+		$(this).toggleClass("state_open");
+		$(".filtersList__wrapper").toggleClass("state_open");
+		$(".categoryFilter__info").toggleClass("state_open");
+		return false;
+	});
+	$(".filtersList .filtersList__link").on('click', function(){
+		linkWrapper = $(this).parent();
+		linkWrapper.toggleClass("state_selected");
+		console.log(filtersListCounterElement.innerHTML);
+		filtersListCounterElement.html(linkWrapper.hasClass("state_selected") ? ++filtersListCounter : --filtersListCounter);
+		return false;
+	});
+
 	/* поле поиска */
 	$(".header__searchButton, .headerSearch__input").on('click', function(){
 		$(".headerSearch__form").fadeIn(220);

@@ -1,5 +1,5 @@
 <a href="#" class="categoryFilter" title="">Фильтр по рубрикам <b class="icon"></b></a>
-<span class="categoryFilter__info">&#8212; выбрано <span id="categoryFilterCounter">3</span> рубрики</span>
+<span class="categoryFilter__info">&#8212; выбрано <span id="categoryFilterCounter"></span> рубрики</span>
 <div class="filtersList__wrapper">
 	<ul class="filtersList">
 		<li class="filtersList__item categoryFilter">

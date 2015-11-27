@@ -1,13 +1,15 @@
 <div class="categoryFilter__wrapper">
 
-	<a href="#" class="categoryFilter" title="">Фильтр по рубрикам <b class="icon"></b></a>
+	<a href="#" class="categoryFilter__filter" title="">Фильтр по рубрикам <b class="icon"></b></a>
 
-	<span class="categoryFilter__info">&#8212; выбрано <span id="categoryFilterCounter">0</span> рубрики</span>
+	<span class="categoryFilter__info">&#8212; выбрано <span class="categoryFilter__counter">0 рубрик</span></span>
 
 	<div class="filtersList__wrapper">
 
+		<a href="#" class="categoryFilter__closeFilter" title="">&times;</a>
+
 		<ul class="filtersList">
-			<li class="filtersList__item categoryFilter">
+			<li class="view_allFilters" data-selected-all="0">
 				<a href="#" class="filtersList__link" title="">все рубрики</a>
 			</li>
 			<li class="filtersList__item">

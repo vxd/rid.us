@@ -114,40 +114,68 @@ $(function() {
 
 
 	/* ФИЛЬТР СТАТЕЙ*/
-	var filtersListCounter = 0,
-		linkWrapper,
-		filtersListCounterElement = $("#categoryFilterCounter");
+	var filtersListCounterElement = $(".categoryFilter__counter"),
+		filterListWrapper = $(".filtersList__wrapper"),
+		filtersListItems = $(".filtersList__item"),
+		filtersListCounter = filtersListItems.filter('.state_selected').length,
+		articlesWords = [' рубрика', ' рубрики', ' рубрик'],
+		categoryFilterInfo = $(".categoryFilter__info");
 
-	// filtersListCounterElement.html('0');
-
-	$(".categoryFilter").on('click', function(){
+	$(".categoryFilter__filter").on('click', function(){
 		$(this).toggleClass("state_open");
-		$(".filtersList__wrapper").toggleClass("state_open");
-		$(".categoryFilter__info").toggleClass("state_open");
+		filterListWrapper.toggleClass("state_open");
+		categoryFilterInfo.toggleClass("state_open");
 		// if ($(this).hasClass("state_open")) {
 		// 	categoryFilterWidth();
 		// }
 		return false;
 	});
 
-	$(".filtersList__link").on('click', function(){
-		linkWrapper = $(this).parent();
-		linkWrapper.toggleClass("state_selected");
-		// console.log(filtersListCounterElement.innerHTML);
-		filtersListCounterElement.html(linkWrapper.hasClass("state_selected") ? ++filtersListCounter : --filtersListCounter);
+	$(".categoryFilter__closeFilter").on('click', function(){
+		filterListWrapper.toggleClass("state_open");
+		categoryFilterInfo.toggleClass("state_open");
 		return false;
 	});
 
+	filterListWrapper.on('click', '.filtersList__item', function(e){
+		var $this = $(e.currentTarget);
+		$this.toggleClass("state_selected");
+		filtersListCounterElement.text(($this.hasClass("state_selected") ? ++filtersListCounter : --filtersListCounter) + declOfNum(filtersListCounter, articlesWords));
+
+		e.preventDefault();
+	});
+
+	filterListWrapper.on('click', '.view_allFilters', function(e){
+
+		var $this = $(e.currentTarget),
+			selectedAll = $this.data('selectedAll'),
+			action = 'addClass',
+			totalSelected = filtersListItems.length,
+			state = 1;
+
+		if (selectedAll) {
+			action = 'removeClass';
+			state = 0;
+			totalSelected = 0;
+			filtersListCounter = 0;
+		}
+		filtersListItems[action]("state_selected");
+		$this.data('selectedAll', state);
+		filtersListCounterElement.text(totalSelected + declOfNum(totalSelected, articlesWords));
+
+		e.preventDefault();
+	});
+
 	// $(window).resize(function(){  
-	// 	$(".categoryFilter").removeClass("state_open");
+	// 	$(".categoryFilter__filter").removeClass("state_open");
 	// 	$(".filtersList__wrapper").removeClass("state_open");
 	// 	$(".categoryFilter__info").removeClass("state_open");
 	// });
 
 	// function categoryFilterWidth() {
 	// 	var windowWidth = $(document).width();
-	// 	var buttonLeft = $(".categoryFilter").offset().left;
-	// 	var buttonTop = $(".categoryFilter").offset().top;
+	// 	var buttonLeft = $(".categoryFilter__filter").offset().left;
+	// 	var buttonTop = $(".categoryFilter__filter").offset().top;
 	// 	var contentWidth = $(".wrapper").width();
 	// 	var calc = windowWidth - buttonLeft - (windowWidth - contentWidth)/2
 	// 	$(".filtersList__wrapper").width(calc-60).offset({top:buttonTop+35, left:buttonLeft});
@@ -189,7 +217,31 @@ $(function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	function declOfNum(number, titles) {
+		var cases = [2, 0, 1, 1, 1, 2];
+		return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
+	}
+
 });
+
 
 
 

@@ -4,7 +4,7 @@
 	position: relative;
 }
 
-.categoryFilter {
+.categoryFilter__filter {
 	position: relative;
 	top: -4px;
 	background: #ffd051;
@@ -16,7 +16,7 @@
 	text-transform: uppercase;
 	text-decoration: none;
 }
-.categoryFilter .icon {
+.categoryFilter__filter .icon {
 	position: absolute;
 	right: 15px;
 	top: 16px;
@@ -24,10 +24,22 @@
 	border: 5px solid transparent;
 	border-top: 5px solid #000;
 }
-.categoryFilter.state_open .icon {
+.categoryFilter__filter.state_open .icon {
 	top: 10px;
 	border: 5px solid transparent;
 	border-bottom: 5px solid #000;
+}
+.categoryFilter__closeFilter {
+	position: absolute;
+	top: -3px;
+	right: 12px;
+	color: #fff;
+	font-size: 38px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.categoryFilter__closeFilter:hover {
+	color: #fff;
 }
 .categoryFilter__info {
 	position: relative;
@@ -59,12 +71,11 @@
 .filtersList__wrapper.state_open {
 	display: block;
 }
-.filtersList__wrapper .categoryFilter {
+.filtersList__wrapper .categoryFilter__filter {
 	margin-left: 0;
 }
 .filtersList__item {
-	line-height: 16px;
-	margin-bottom: 1px;
+	border-bottom: 1px solid #667686;
 	position: relative;
 }
 .filtersList__link {
@@ -78,39 +89,46 @@
 	box-sizing: border-box;
 }
 .filtersList__link:hover {
-	background: #ffd051;
-	color: #000;
+	background: #2a3436;
+	color: #fff;
 }
 .filtersList__item.state_selected {
 	background: #ffd051;
 }
-.filtersList__item.state_selected:after {
+.filtersList__item.state_selected .filtersList__link:after {
 	content: '\0274c';
-	display: inline-block;
+	display: block;
 	position: absolute;
-	right: 18px;
+	right: 13px;
 	top: 7px;
-	width: 7px;
-	height: 7px;
 	font-size: 16px;
 	font-weight: normal;
 }
 .filtersList__item.state_selected .filtersList__link {
 	color: #000;
 }
-.categoryFilter .filtersList__link {
+.filtersList__item.state_selected:hover .filtersList__link {
+	background: #ffd051;
+}
+.categoryFilter__filter .filtersList__link {
 	color: #000;
-	margin-bottom: 20px;
+	margin-bottom: 28px;
 	display: inline;
 }
-.filtersList .categoryFilter {
-	margin-bottom: 30px;
-	padding: 8px 15px;
+.view_allFilters {
 	display: inline-block;
+	background: #ffd051;
+	margin-bottom: 25px;
+	padding: 0 15px;
 }
-.filtersList .categoryFilter .filtersList__link {
+.view_allFilters .filtersList__link {
 	padding-left: 0;
 	padding-right: 0;
+	color: #000;
+}
+.view_allFilters .filtersList__link:hover {
+	background: #ffd051;
+	color: #000;
 }
 .filtersList {
 	-webkit-column-count: 3;

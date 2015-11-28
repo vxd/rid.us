@@ -1,0 +1,37 @@
+.blockSelector {
+	border-top: 3px solid #d4d4d4;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.blockSelector tr {	
+	border-bottom: 1px solid #d4d4d4;
+}
+.blockSelector_cell {
+	text-align: center;
+	vertical-align: middle;
+	border-left: 1px solid #ffd051;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 9px 5px 8px;
+}
+.blockSelector_cell:first-child {
+	border-left: none;
+}
+.blockSelector_cell.state_selected {
+	background: #ffd051;
+}
+
+.blockSelector__link {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	color: #a3a3a3;
+}
+.blockSelector__link:hover {
+    color: #c64a1b;
+}
+.blockSelector_cell.state_selected .blockSelector__link {
+	color: #000;
+}

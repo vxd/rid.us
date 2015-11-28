@@ -1,0 +1,39 @@
+<table class="blockSelector">
+	<tr>
+		<td class="blockSelector_cell">
+			<a href="#" class="blockSelector__link" title="">Все рубрики</a>
+		</td>
+		<td class="blockSelector_cell state_selected">
+			<a href="#" class="blockSelector__link" title="">политика</a>
+		</td>
+		<td class="blockSelector_cell state_selected">
+			<a href="#" class="blockSelector__link" title="">экономика</a>
+		</td>
+		<td class="blockSelector_cell">
+			<a href="#" class="blockSelector__link" title="">общество</a>
+		</td>
+		<td class="blockSelector_cell state_selected">
+			<a href="#" class="blockSelector__link" title="">наука и техника</a>
+		</td>
+		<td class="blockSelector_cell">
+			<a href="#" class="blockSelector__link" title="">кино</a>
+		</td>
+		<td class="blockSelector_cell">
+			<a href="#" class="blockSelector__link" title="">экология</a>
+		</td>
+	</tr>
+	<tr>
+		<td class="blockSelector_cell state_selected">
+			<a href="#" class="blockSelector__link" title="">Искусство</a>
+		</td>
+		<td class="blockSelector_cell state_selected">
+			<a href="#" class="blockSelector__link" title="">Молодежь</a>
+		</td>
+		<td class="blockSelector_cell">
+			<a href="#" class="blockSelector__link" title="">биографии</a>
+		</td>
+		<td class="blockSelector_cell state_selected">
+			<a href="#" class="blockSelector__link" title="">религия</a>
+		</td>
+	</tr>
+</table>

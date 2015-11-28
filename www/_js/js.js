@@ -111,6 +111,13 @@ $(function() {
 	});
 
 
+	/* тэги на _block-selector */
+	$(".blockSelector__link").on('click', function(){
+		$(this).parent().toggleClass("state_selected");
+		return false;
+	});
+
+
 
 
 	/* ФИЛЬТР СТАТЕЙ*/

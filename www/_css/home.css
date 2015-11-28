@@ -1,3 +1,48 @@
 /* стили для главной страницы */
 
 @import "_slider.css";
+@import "_ridus-map.css";
+@import "_videosection.css";
+
+
+
+.lenta {
+	background: #00abaa;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 5px 25px;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+}
+.lenta:before,
+.lenta:after {
+	content: "";
+	position: absolute;
+    border: 13px solid transparent;
+    top: 0;
+
+}
+.lenta:before {
+    border-right: 6px solid #252525;
+    right: 0
+}
+.lenta:after {
+    border-left: 6px solid #252525;
+    left: 0
+}
+
+.contentBackground_dark .addNewsButton {
+	position: absolute;
+	top: 0px;
+	right: 16px;
+}
+.contentBackground_dark .addNewsButton .corner {
+    border-bottom-color: #252525;
+}
+
+.med__logo {
+	position: absolute;
+	top: -10px;
+	left: 16px;
+}

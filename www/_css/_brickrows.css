@@ -36,6 +36,31 @@
 
 
 
+.brickrows_2 .brick {
+	display: block;
+}
+@media screen and (max-width: 1023px) {
+	.brickrows_2 .brick:nth-child(5n),
+	.brickrows_2 .brick:nth-child(6n),
+	.brickrows_2 .brick:nth-child(7n),
+	.brickrows_2 .brick:nth-child(8n) {
+		display: none;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.brickrows_2 .brick:nth-child(7n),
+	.brickrows_2 .brick:nth-child(8n) {
+		display: none;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.brickrows_2 .brick:nth-child(7n),
+	.brickrows_2 .brick:nth-child(8n) {
+		display: none;
+	}
+}
+
+
 
 
 .brickrows_2 .table__mainColumn .brick {

@@ -43,10 +43,17 @@
     background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 );
 }
-.slider__text h1 {
+.slider__text h1 a {
+    text-decoration: none;
     font-size: 40px;
     color: #fff;
-    text-transform: none;
+}
+.slider__text h6 a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffd051;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .slider__text .brick__counters {
     opacity: .6;
@@ -82,6 +89,10 @@
     background: #ffd051 url(../_images/icons_sprite.png);
     z-index: 100;
 }
+/*.pageSwiper__container .contentBackground_blue+.swiper-button-next,
+.pageSwiper__container .contentBackground_blue+.swiper-button-prev {
+    background-color: #2a3436;
+}*/
 @media screen and (max-width: 1040px) {
     .pageSwiper__container .swiper-button-next,
     .pageSwiper__container .swiper-button-prev {
@@ -103,7 +114,12 @@
     background-position: 0px -220px;
     right: 1%;
 }
-
+/*.pageSwiper__container .contentBackground_blue+.swiper-button-prev {
+    background-position: -50px -319px;
+}
+.pageSwiper__container .contentBackground_blue+.swiper-button-next {
+    background-position: 0px -319px;
+}*/
 .pageSwiper .swiper-slide {
     opacity: .5;
     -webkit-transition: opacity .4s ease;

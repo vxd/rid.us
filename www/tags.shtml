@@ -19,8 +19,9 @@
             <!--#include virtual="_weather.shtml"-->
 
             <!--#include virtual="_article-short-with-navigation.shtml"-->
-
-
+            <!--#include virtual="_article-short-with-navigation.shtml"-->
+            <!--#include virtual="_article-short-with-navigation.shtml"-->
+            <!--#include virtual="_article-short-with-navigation.shtml"-->
 
 
 

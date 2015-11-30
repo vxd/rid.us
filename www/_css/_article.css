@@ -1,3 +1,7 @@
+.article {
+	margin-bottom: 30px;
+}
+
 .article__title {
 	font-size: 36px;
 	text-transform: none;
@@ -90,8 +94,42 @@
 
 
 
-.article__content { /* для оберток, а также можно вешать на сам абзац */
+
+
+
+.article__content { 
 	font-size: 18px;
 	line-height: 1.4;
 	color: #000;
+	margin-bottom: 20px;
 }
+
+
+
+
+
+
+.article__readmore {
+    font-size: 18px;
+    color: black;
+    display: inline-block;
+    position: relative;
+    padding: 5px 40px 5px 0;
+    margin-bottom: 30px;
+}
+.article__readmore:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 30px;
+    height: 22px;
+    display: block;
+    background: url(../_images/icons_sprite.png) -10px -234px no-repeat;
+}
+
+
+.article__separator {
+    border-top: 3px solid #d4d4d4;
+}
+

@@ -23,18 +23,8 @@
         <div class="table__mainColumn">
 
             <!--#include virtual="_article-short.shtml"-->
-
-
-
-
-
-
-
-
-
-
-
-
+            <!--#include virtual="_article-short.shtml"-->
+            <!--#include virtual="_article-short.shtml"-->
 
 
 

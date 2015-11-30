@@ -472,13 +472,17 @@ label.radioWrap {
 
 .bottomDatapicker label {
 	font-weight: bold;
+	display: inline-block;
 	text-transform: uppercase;
 	font-size: 16px;
 	color: #a3a3a3;
-
-	margin: 0 10px;
+	margin: 0 10px 5px;
 }
-
+@media screen and (max-width: 1023px) {
+	.weather .bottomDatapicker label {
+		display: block;
+	}
+}
 
 
 
@@ -494,6 +498,7 @@ label.radioWrap {
 	padding: 6px 35px 6px 13px;
 	width: 150px;
 	background: url(../_images/icons_sprite.png) 111px -139px;
+	margin-bottom: 10px;
 }
 
 

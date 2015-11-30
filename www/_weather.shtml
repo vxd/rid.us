@@ -1,5 +1,5 @@
 <div class="weather ">
-    <img class="weather__image" src="../_images/weather-block.jpg" alt="" />
+    <img class="weather__image" src="_images/weather-block.jpg" alt="" />
 
     <div class="weather__contentWrapper">
         <h1 class="weather__header">Прогноз</h1>

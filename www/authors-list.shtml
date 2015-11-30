@@ -14,11 +14,11 @@
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
     <h1 class="clearfix">
-        <ul class="textTabs clearfix">
+        <ul class="textTabs view_dotBetween clearfix">
             <li><a href="#" title="">Авторские колонки</a></li>
             <li>Авторы</li>
         </ul>
-        <ul class="textTabs view_h5 clearfix">
+        <ul class="textTabs view_dotBetween view_h5 clearfix">
             <li><a href="#" title="">Новые авторы</a></li>
             <li><a href="#" title="">Самые читаемые</a></li>
         </ul>

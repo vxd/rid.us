@@ -95,9 +95,9 @@
 	<section class="wrapper pageSwiper contentBackground_white paddings_side clearfix">
 
 		<h1 class="view_centred">
-			<i class="icon"></i>
+			<i class="threeDot"></i>
 			гражданская журналиСтика
-			<i class="icon"></i>
+			<i class="threeDot"></i>
 		</h1>
 
 		<div class="swiper-wrapper">
@@ -205,9 +205,9 @@
 	<section class="wrapper pageSwiper contentBackground_blue paddings_side padding_top clearfix">
 
 		<h1 class="view_centred">
-			<i class="icon"></i>
+			<i class="threeDot"></i>
 			интересное
-			<i class="icon"></i>
+			<i class="threeDot"></i>
 		</h1>
 
 		<div class="swiper-wrapper">
@@ -319,9 +319,9 @@
 	<section class="wrapper pageSwiper contentBackground_white paddings_side padding_top clearfix">
 
 		<h1 class="view_centred">
-			<i class="icon"></i>
+			<i class="threeDot"></i>
 			полезное
-			<i class="icon"></i>
+			<i class="threeDot"></i>
 		</h1>
 
 		<div class="swiper-wrapper">
@@ -479,9 +479,9 @@
         </p>
 
         <h1 class="view_centred">
-            <i class="icon"></i>
+            <i class="threeDot"></i>
             здоровье
-            <i class="icon"></i>
+            <i class="threeDot"></i>
         </h1>
 
 
@@ -601,9 +601,9 @@
     <section class="wrapper pageSwiper contentBackground_white paddings_side padding_top clearfix">
 
         <h1 class="view_centred">
-            <i class="icon"></i>
+            <i class="threeDot"></i>
             развлечения
-            <i class="icon"></i>
+            <i class="threeDot"></i>
         </h1>
 
         <div class="swiper-wrapper">

@@ -14,7 +14,7 @@
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
     <h1>
-        <ul class="textTabs clearfix">
+        <ul class="textTabs view_dotBetween clearfix">
             <li>Авторские колонки</li>
             <li><a href="#" title="">Авторы</a></li>
         </ul>

@@ -1,0 +1,97 @@
+.article__title {
+	font-size: 36px;
+	text-transform: none;
+	margin-bottom: 10px;
+}
+
+
+
+.article .brick__counters {
+	margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.articleInfo {
+	font-size: 14px;
+	color: #848484;
+	margin-bottom: 20px;
+}
+.articleInfo a {
+	text-decoration: underline;
+	color: inherit;
+	font-weight: bold;
+}
+.articleInfo a:hover {
+	text-decoration: none;
+}
+
+
+
+.articleInfo__avatarContainer .articleInfo {
+	float: left;
+	padding-left: 10px;
+	border-left: 2px solid #dbdbdb;
+	min-height: 44px;
+}
+
+
+.articleInfo__avatarContainer .articleInfo__avatar {
+	float: left;
+	width: 44px;
+	height: 44px;
+	margin-right: 15px;
+}
+.articleInfo__avatarContainer .articleInfo__avatar img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.articlePhoto {
+	margin-bottom: 30px;
+}
+.articlePhoto__link {
+	display: inline-block;
+	font-size: 0; /* чтою не было пустых пикселей внизу */
+	margin-bottom: 8px;
+	width: 100%;
+}
+.article__image {
+	width: 100%;
+}
+.articlePhoto__info {
+	font-size: 16px;
+	color: #525252;
+}
+.articlePhoto__author {
+	font-size: 16px;
+	color: #848484;
+}
+
+
+
+.article__content { /* для оберток, а также можно вешать на сам абзац */
+	font-size: 18px;
+	line-height: 1.4;
+	color: #000;
+}

@@ -59,20 +59,25 @@ h1 {
 h1.view_centred {
 	text-align: center;
 }
-h1.view_centred .icon {
+
+
+
+.threeDot {
 	position: relative;
     display: inline-block;
     width: .15em;
     height: .15em;	
     margin: 0 .6em;
     background: #ffd051;
+}
+h1 .threeDot {
 	-webkit-transform: translateY(-.3em);
     -moz-transform: translateY(-.3em);
     -ms-transform: translateY(-.3em);
-    transform: translateY(-.3em);
+    transform: translateY(-.3em);	
 }
-h1.view_centred .icon:before,
-h1.view_centred .icon:after {
+.threeDot:before,
+.threeDot:after {
 	content: "";
    	position: absolute;
     width: .15em;
@@ -80,15 +85,15 @@ h1.view_centred .icon:after {
     background: #ffd051;
     top: 0;
 }
-h1.view_centred .icon:before {
+.threeDot:before {
 	left: 10px;
 }
-h1.view_centred .icon:after {
+.threeDot:after {
 	right: 10px;
 }
-.contentBackground_blue h1.view_centred .icon,
-.contentBackground_blue h1.view_centred .icon:before,
-.contentBackground_blue h1.view_centred .icon:after {
+.contentBackground_blue .threeDot,
+.contentBackground_blue .threeDot:before,
+.contentBackground_blue .threeDot:after {
 	 background: #9caab3;
 }
 

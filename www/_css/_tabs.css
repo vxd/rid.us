@@ -6,29 +6,7 @@
 	text-transform: uppercase;
 	margin-right: 30px;
 }
-.textTabs li {
-	float: left;
-	position: relative;
-	margin-left: 1.8em;
-}
-.textTabs li:before {
-	display: block;
-	content: "";
-	width: .25em;
-	height: .25em;
-	top: 50%;
-	margin-top: -0.125em;
-	left: -.9em;
-	margin-left: -0.125em;
-	position: absolute;
-	background: #ffd051;
-}
-.textTabs li:first-child {
-	margin-left: 0;
-}
-.textTabs li:first-child:before {
-	display: none;
-}
+
 .textTabs a {
 	color: #a3a3a3;
 	text-decoration: none;
@@ -44,8 +22,60 @@
 
 
 
-
-
 .textTabs.view_h5 {
 	font-size: 16px;
+    font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.view_dotBetween li {
+	/*float: left;*/
+	display: inline;
+	/*position: relative;*/
+	margin-left: .8em;
+
+}
+.view_dotBetween li:before {
+	display: inline-block;
+	content: "";
+	width: .25em;
+	height: .25em;
+    margin-right: .8em;
+/*	top: 50%;
+	margin-top: -0.125em;
+	left: -.9em;
+	margin-left: -0.125em;
+	position: absolute;*/
+	margin-bottom: .24em;
+	background: #ffd051;
+}
+.view_dotBetween li:first-child {
+	margin-left: 0;
+}
+.view_dotBetween li:first-child:before {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

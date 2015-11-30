@@ -569,9 +569,9 @@ label.radioWrap {
 }
 
 .borderedSection.view_authorMaterials {
-	padding: 9px 15px 5px;
+	padding: 9px 15px 4px;
 	margin-left: 214px;
-	width: calc(100% - 229px);
+	width: calc(100% - 245px);
 	position: absolute;
 	bottom: -20px;
 }

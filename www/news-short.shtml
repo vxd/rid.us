@@ -12,16 +12,12 @@
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
-    <h1>
-        <ul class="textTabs view_dotBetween view_h5 clearfix">
-            <li><a href="#" title="">Новости кратко</a></li>
-            <li><a href="#" title="">Политика</a></li>
-        </ul>
-    </h1>
+
 
     <div class="table">
         <div class="table__mainColumn">
 
+        
             <!--#include virtual="_article-short.shtml"-->
             <!--#include virtual="_article-short.shtml"-->
             <!--#include virtual="_article-short.shtml"-->

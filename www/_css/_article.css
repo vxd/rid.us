@@ -133,3 +133,63 @@
     border-top: 3px solid #d4d4d4;
 }
 
+
+
+
+
+
+
+
+
+.readAlso {
+	font-size: 18px;
+	font-style: italic;
+	line-height: 1.8;
+	margin-bottom: 20px;
+}
+.readAlso__list {
+	font-size: 18px;
+	font-style: normal;
+}
+.readAlso__item {
+	color: #de0606;
+	list-style: square;
+	margin-left: 25px;
+}
+.readAlso__link {
+	text-decoration: none;
+	color: inherit;
+}
+.readAlso__link:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+.missSpell__hint {
+	color: #a6a5a5;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+.article__tags {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.article__tags a {
+	color: inherit;
+	text-decoration: underline;
+}
+.article__tags a:hover {
+	text-decoration: none;
+}

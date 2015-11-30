@@ -1,0 +1,41 @@
+<div class="comments">
+	<h2>
+		Комментарии (<span id="">9</span>)
+		<a class="comments__expandButton" href="" title=""></a>
+	</h2>
+
+	<div class="comments__login">
+		<b>Для комментирования новости <a href="#" title="">авторизуйтесь</a> или войдите через социальные сети:</b>
+		<ul class="commentsSocials">
+			<li class="socialNetwork__item">
+				<a class="socialNetwork__link view_iconFacebook" href="#" title="">
+					<i class="icon"><!-- icon --></i>
+					Facebook
+				</a>
+			</li>
+			<li class="socialNetwork__item">
+				<a class="socialNetwork__link view_iconvKontakte" href="#" title="">
+					<i class="icon"><!-- icon --></i>vKontakte
+				</a>
+			</li>
+			<li class="socialNetwork__item">
+				<a class="socialNetwork__link view_iconGoogle" href="#" title="">
+					<i class="icon"><!-- icon --></i>Google+
+				</a>
+			</li>
+			<li class="socialNetwork__item">
+				<a class="socialNetwork__link view_iconTwitter" href="#" title="">
+					<i class="icon"><!-- icon --></i>Twitter
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+	[комменты вставлять сюда]
+
+
+
+
+
+</div>

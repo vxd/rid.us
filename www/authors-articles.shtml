@@ -67,8 +67,8 @@
 
         </div>
 
-        <h5 class="borderedSection view_authorMaterials">
-            <ul class="textTabs view_dotBetween">
+        <div class="borderedSection view_authorMaterials">
+            <ul class="textTabs view_dotBetween view_h5">
                 <li class="author-articles">
                     статьи автора (<span>15</span>)
                 </li>
@@ -76,7 +76,7 @@
                     <a href="#" title="">комментарии автора (<span>133</span>)</a>
                 </li>
             </ul>
-        </h5>
+        </div>
 
     </div>
 

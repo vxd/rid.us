@@ -117,7 +117,13 @@ $(function() {
 		return false;
 	});
 
-
+	/* раскрывающиеся комменты */
+	$(".comments__expandButton").on('click', function(){
+		$(this).toggleClass("state_open");
+		// $("").toggleClass("state_open"); // здесь прописать класс раскрывающегося блока коммента
+		return false;
+	});
+	
 
 
 	/* ФИЛЬТР СТАТЕЙ*/

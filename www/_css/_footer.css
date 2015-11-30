@@ -30,20 +30,27 @@
 
 
 
-
-.socialSharing__item {
+.socialNetwork__item {
 	color: #fff;
 	padding: 0 0 12px 31px;
 	position: relative;
 }
-.socialSharing__link {
-	color: #fff;
+.socialNetwork__link {
+	color: #000;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 14px;
 }
 
-.footerSocials .icon {
+.footerSocials .socialNetwork__link {
+	color: #fff;
+}
+.commentsSocials .socialNetwork__item {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.socialNetwork__link .icon {
 	background: url(../_images/icons.png) no-repeat;
 	height: 24px;
 	left: 0;
@@ -51,19 +58,19 @@
 	top: -4px;
 	width: 24px;
 }
-.socialSharing__link.view_iconFacebook .icon {
+.socialNetwork__link.view_iconFacebook .icon {
 	background-position: -540px 0;
 }
-.socialSharing__link.view_iconvKontakte .icon {
+.socialNetwork__link.view_iconvKontakte .icon {
 	background-position: -580px 0;
 }
-.socialSharing__link.view_iconGoogle .icon {
+.socialNetwork__link.view_iconGoogle .icon {
 	background-position: -620px 0;
 }
-.socialSharing__link.view_iconTwitter .icon {
+.socialNetwork__link.view_iconTwitter .icon {
 	background-position: -660px 0;
 }
-.socialSharing__link.view_iconRSS .icon {
+.socialNetwork__link.view_iconRSS .icon {
 	background-position: -700px 0;
 }
 

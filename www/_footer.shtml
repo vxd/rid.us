@@ -8,29 +8,28 @@
 			<div class="footerInfo">
 
 				<ul class="footerSocials">
-					<li class="socialSharing__item">
-						<a class="socialSharing__link view_iconFacebook" href="#" title="">
-							<i class="icon"><!-- icon --></i>
-							Facebook
+					<li class="socialNetwork__item">
+						<a class="socialNetwork__link view_iconFacebook" href="#" title="">
+							<i class="icon"><!-- icon --></i>Facebook
 						</a>
 					</li>
-					<li class="socialSharing__item">
-						<a class="socialSharing__link view_iconvKontakte" href="#" title="">
+					<li class="socialNetwork__item">
+						<a class="socialNetwork__link view_iconvKontakte" href="#" title="">
 							<i class="icon"><!-- icon --></i>vKontakte
 						</a>
 					</li>
-					<li class="socialSharing__item">
-						<a class="socialSharing__link view_iconGoogle" href="#" title="">
+					<li class="socialNetwork__item">
+						<a class="socialNetwork__link view_iconGoogle" href="#" title="">
 							<i class="icon"><!-- icon --></i>Google+
 						</a>
 					</li>
-					<li class="socialSharing__item">
-						<a class="socialSharing__link view_iconTwitter" href="#" title="">
+					<li class="socialNetwork__item">
+						<a class="socialNetwork__link view_iconTwitter" href="#" title="">
 							<i class="icon"><!-- icon --></i>Twitter
 						</a>
 					</li>
-					<li class="socialSharing__item">
-						<a class="socialSharing__link view_iconRSS" href="#" title="">
+					<li class="socialNetwork__item">
+						<a class="socialNetwork__link view_iconRSS" href="#" title="">
 							<i class="icon"><!-- icon --></i>RSS
 						</a>
 					</li>

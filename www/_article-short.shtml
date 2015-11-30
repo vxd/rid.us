@@ -1,4 +1,9 @@
 <div class="article">
+    <ul class="textTabs view_dotBetween view_h5 clearfix">
+        <li><a href="#" title="">Новости кратко</a></li>
+        <li><a href="#" title="">Политика</a></li>
+    </ul>
+
 	<h1 class="article__title">Кличко возглавил партию Порошенко</h1>
 
 	<div class="brick__counters">
@@ -43,6 +48,37 @@
             Избрание на мэра Киева на пост лидера пропрезидентской партии состоялось по инициативе самого Юрия Луценко, передает «Интерфакс».
         </p>
     </div>
+
+    <div class="readAlso">
+		Читайте также:
+		<ul class="readAlso__list">
+			<li class="readAlso__item"><a class="readAlso__link" href="#" title="">Тысяча читинцев митинговала «за солнце»</a></li>
+			<li class="readAlso__item"><a class="readAlso__link" href="#" title="">К осени россиянам вернут зимнее время</a></li>
+			<li class="readAlso__item"><a class="readAlso__link" href="#" title="">Время России подвластно ее парламентариям</a></li>
+		</ul>
+	</div>
+    
+	<p class="missSpell__hint">
+		Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
+	</p>
+
+	<!--#include virtual="_socials-header.shtml"-->
+
+	<p class="article__tags">
+		Теги: 
+		<a href="#" title="">нефть</a>, 
+		<a href="#" title="">Казахстан</a>, 
+		<a href="#" title="">прогнозы</a>, 
+		<a href="#" title="">Назарбаев</a>
+	</p>
+
+	<!--#include virtual="_comments.shtml"-->
+
+	<div class="clearfix" style="border: 1px dashed #eee; border-left:none; border-right: none;">
+		[yandex direct вставлять сюда]
+	</div>
+
+
 
 </div>
 

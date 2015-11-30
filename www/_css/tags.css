@@ -19,3 +19,56 @@
 .article__separator {
     border-bottom: 3px solid #d4d4d4;
 }
+
+
+
+
+
+
+
+.weather {
+    border: 3px solid #ffd051;
+    margin-bottom: 35px;
+    position: relative;
+}
+.weather:after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    right: 30px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-left: 3px solid #ffd051;
+    border-bottom: 3px solid #ffd051;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=0.7071067811865476);
+    transform: rotate(-45deg);
+    background: #fff;
+}
+.weather__image {
+    width: 100%;
+}
+.weather__contentWrapper {
+    padding: 30px;
+}
+.weather__header {
+    color: #a3a3a3;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+.weather__contentText {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.weather__readmore {
+    font-size: 18px;
+    border-bottom: 1px dashed;
+    color: #000;
+    text-decoration: none;
+}
+.weather__contentWrapper .bottomDatapicker {
+    margin-top: 25px;
+}

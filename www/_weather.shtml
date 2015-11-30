@@ -1,1 +1,18 @@
-блок погоды
+<div class="weather ">
+    <img class="weather__image" src="../_images/weather-block.jpg" alt="" />
+
+    <div class="weather__contentWrapper">
+        <h1 class="weather__header">Прогноз</h1>
+
+        <p class="weather__contentText">Самонаблюдение мгновенно отталкивает депрессивный эскапизм. Код, в представлении Морено, семантически выбирает интеллект.</p>
+
+        <a href="#" class="weather__readmore" title="">Читать дальше</a>
+
+        <div class="bottomDatapicker">
+            <!--#include virtual="_datapicker-bottom.shtml"-->
+        </div>
+    </div>
+
+
+
+</div>

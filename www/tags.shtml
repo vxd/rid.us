@@ -13,22 +13,12 @@
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
-    <!--#include virtual="_weather.shtml"-->
-
     <div class="table">
         <div class="table__mainColumn">
 
+            <!--#include virtual="_weather.shtml"-->
+
             <!--#include virtual="_article-short-with-navigation.shtml"-->
-
-
-
-
-
-
-
-
-
-
 
 
 

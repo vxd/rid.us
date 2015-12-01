@@ -62,7 +62,9 @@
 		Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
 	</p>
 
-	<!--#include virtual="_socials-header.shtml"-->
+	<div class="articleSocials clearfix">
+		<!--#include virtual="_socials-header.shtml"-->
+	</div>
 
 	<p class="article__tags">
 		Теги: 
@@ -73,12 +75,6 @@
 	</p>
 
 	<!--#include virtual="_comments.shtml"-->
-
-	<div class="clearfix" style="border: 1px dashed #eee; border-left:none; border-right: none;">
-		[yandex direct вставлять сюда]
-	</div>
-
-
 
 </div>
 

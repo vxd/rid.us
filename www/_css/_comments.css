@@ -1,3 +1,12 @@
+.comments {
+	border: 1px dashed #e8e8e8;
+	border-left: none;
+	border-right: none;
+	padding: 20px 0;
+}
+
+
+
 .comments h2 {
 	text-transform: uppercase;
 	margin-bottom: 20px;
@@ -31,9 +40,7 @@
 }
 
 
-.comments__login {
-	margin-bottom: 20px;
-}
+
 .comments__login b {
 	display: inline-block;
 	margin-bottom: 15px;
@@ -45,11 +52,20 @@
 
 
 
+.commentsContent {
+	display: none;
+	margin-top: 15px;
+	background: #eee; /* убрать при вставке реальных комментов */
+}
+.commentsContent.state_open {
+	display: block;
+}
 
 
 
 
 
 
-
-
+.articleSocials {
+	margin-bottom: 10px;
+}

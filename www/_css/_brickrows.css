@@ -63,6 +63,34 @@
 
 
 
+
+.brickrows_1 .table__mainColumn .brick {
+	display: block;
+}
+@media screen and (max-width: 1023px) {
+/*	.brickrows_1 .table__mainColumn .brick:nth-child(2n),
+	.brickrows_1 .table__mainColumn .brick:nth-child(3n) {
+		display: none;
+	}*/
+	/* показываем доп ряд т.к. опять кратно */
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.brickrows_1 .table__mainColumn .brick:nth-child(3n) {
+		display: none;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.brickrows_1 .table__mainColumn .brick:nth-child(3n) {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
 .brickrows_2 .table__mainColumn .brick {
 	display: block;
 }

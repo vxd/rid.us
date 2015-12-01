@@ -1,5 +1,5 @@
 .brick {
-	height: 440px;
+	height: 450px;
 	float: left;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -113,20 +113,20 @@
 /* для желтого столбца на всю высоту */
 
 .brickrows_2 .table__sideColumn .brick.view_newslist {
-	height: 902px; /* = x2 + margin */
+	height: 922px; /* = x2 + margin */
 }
 @media screen and (min-width: 1297px) {
 	.brickrows_2 .table__sideColumn .brick.view_newslist {
-		height: 896px;  /* = x2 + margin */
+		height: 916px;  /* = x2 + margin */
 	}
 }
 
 .brickrows_3 .table__sideColumn .brick.view_newslist {
-	height: 1364px; /* = x3 + 2*margin */
+	height: 1394px; /* = x3 + 2*margin */
 }
 @media screen and (min-width: 1297px) {
 	.brickrows_3 .table__sideColumn .brick.view_newslist {
-		height: 1352px;  /* = x3 + 2*margin */
+		height: 1382px;  /* = x3 + 2*margin */
 	}
 }
 

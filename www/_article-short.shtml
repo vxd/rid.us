@@ -62,7 +62,7 @@
 		Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
 	</p>
 
-	<div class="articleSocials clearfix">
+	<div class="articleSocials">
 		<!--#include virtual="_socials-header.shtml"-->
 	</div>
 

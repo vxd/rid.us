@@ -112,10 +112,7 @@
 	padding: 0  !important;
 }
 .articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap {
-    margin: 0 0 5px 5px !important;
-}
-.articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap:first-child {
-    margin-left: 0 !important;
+    margin: 0 5px 5px 0 !important;
 }
 .articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link,
 .articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:active {

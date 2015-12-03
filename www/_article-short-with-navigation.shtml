@@ -1,17 +1,19 @@
 <div class="article">
-    <h1 class="article__title">Кличко возглавил партию Порошенко</h1>
+    <h1 class="article__title">
+        Кличко возглавил партию Порошенко
+        <div class="brick__counters">
+            <span class="count1">
+                123 <i class="icon"><!-- icon --></i>
+            </span>
+            <span class="count2">
+                557 <i class="icon"><!-- icon --></i>
+            </span>
+            <span class="count3">
+                99 <i class="icon"><!-- icon --></i>
+            </span>
+        </div>
+    </h1>
 
-    <div class="brick__counters">
-		<span class="count1">
-			123 <i class="icon"><!-- icon --></i>
-		</span>
-		<span class="count2">
-			557 <i class="icon"><!-- icon --></i>
-		</span>
-		<span class="count3">
-			99 <i class="icon"><!-- icon --></i>
-		</span>
-    </div>
 
 
     <div class="articleInfo__avatarContainer">

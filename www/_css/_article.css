@@ -5,13 +5,14 @@
 .article__title {
 	font-size: 36px;
 	text-transform: none;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 
 
-.article .brick__counters {
-	margin-bottom: 15px;
+.article__title .brick__counters {
+	display: inline;
+    vertical-align: middle;
 }
 
 

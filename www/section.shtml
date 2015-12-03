@@ -19,9 +19,17 @@
 
     <div class="table brickrows_2">
         <div class="table__sideColumn">
-            <div class="brick view_newslist">
-            	<!--#include virtual="bricks/newslist-yellow-2x.shtml"-->
+
+            <div class="brick view_newslist view_yellow">
+            	<h4 class="brick__header">
+					<a href="#" class="brick__headerLink view_arrowed" title="">Новости политики</a>
+				</h4>
+				<!--#include virtual="_newslist.shtml?banner=none"-->
+				<a href="#" class="brick__footer" title="">
+					Все новости
+				</a>
             </div>
+
         </div>
         <div class="table__mainColumn">
             <div class="brick">

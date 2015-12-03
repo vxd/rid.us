@@ -18,9 +18,17 @@
 
 		    <div class="swiper-slide table">
 		        <div class="table__leftColumn">
-		            <div class="brick view_newslist">
-		            	<!--#include virtual="bricks/newslist-yellow-2x.shtml"-->
+
+		            <div class="brick view_newslist view_yellow">
+		            	<h4 class="brick__header">
+							<a href="#" class="brick__headerLink view_arrowed" title="">Бездна новостей</a>
+						</h4>
+						<!--#include virtual="_newslist.shtml?banner=none"-->
+						<a href="#" class="brick__footer" title="">
+							Все новости
+						</a>
 		            </div>
+
 		            <div class="brick">
 		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
 		            </div>

@@ -2,30 +2,13 @@
 @import "_article.css";
 @import "_comments.css";
 @import "_slider.css";
+@import "_newslist.css";
 
 
 
-.newsList__item {
-	padding: 10px 0;
-	border-top: 1px dashed #eee;
-}
-.newsList__item:first-child {
-	border-top: none;
-}
-.newsList__item span {
-	font-size: 14px;
-	color: #7e7e7e;
-}
-.newsList__item a {
-	color: #343434;
-    text-decoration: none;
-}
-.newsList__item a:hover {
-    color: #c64a1b;
-	text-decoration: underline;
-}
 
 
-.newsHeaderAndFilter {
+
+/*.newsHeaderAndFilter {
 	position: relative;
-}
+}*/

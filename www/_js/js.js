@@ -196,10 +196,18 @@ $(function() {
 
 
 
+	function declOfNum(number, titles) {
+		var cases = [2, 0, 1, 1, 1, 2];
+		return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
+	}
 
 
 
-	/* поле поиска */
+
+
+	// ======================================
+	// search field 
+	// ======================================
 	$(".header__searchButton, .headerSearch__input").on('click', function(){
 		$(".headerSearch__form").fadeIn(220);
 		$(".headerSearch__input").focus();
@@ -232,6 +240,33 @@ $(function() {
 
 
 
+	// ======================================
+	// новости в желтой плитке по высоте 
+	// ======================================
+
+
+  	$( ".view_yellow" ).each(function(){
+    	if ( $(this).has(".newsList").length != 0 ) {
+
+    		var brickHeight = $(this).innerHeight();
+
+	    	var headerHeight = 0;
+	    	var footerHeight = 0;
+	    	headerHeight += $(this).find(".brick__header").outerHeight();
+	    	footerHeight += $(this).find(".brick__footer").outerHeight();
+
+	    	var newslistHeight = $(this).find(".newsList").height();
+
+	    	var sumHeight = headerHeight + footerHeight + newslistHeight;
+
+			while (sumHeight > brickHeight) {
+				$(this).find(".newsList li").last().detach();
+				newslistHeight = $(this).find(".newsList").height();
+				sumHeight = headerHeight + footerHeight + newslistHeight;
+			}
+
+   		}
+    });
 
 
 
@@ -239,19 +274,6 @@ $(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-	function declOfNum(number, titles) {
-		var cases = [2, 0, 1, 1, 1, 2];
-		return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
-	}
 
 });
 

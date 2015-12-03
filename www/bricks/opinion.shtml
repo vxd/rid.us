@@ -1,0 +1,31 @@
+<h4 class="brick__header">
+	<a href="#" class="brick__headerLink view_arrowed" title="">Бездна новостей</a>
+</h4>
+
+<a href="" class="brick__image">
+	<img alt="Ученые доказали влияние грибов на погоду" src="http://www.ridus.ru/images/2015/11/3/335051/preview_36ecad4108.jpg">
+</a>
+
+<div class="brick__content">
+	<h4>Евгения Селькова</h4>
+	<p class="brick__text">
+		Профессор медицины
+	</p>
+	<h6>
+		авторская колонка
+	</h6>
+	<h2>
+		<a href="#" class="brick__headerLink" title="">От вируса до вируса — чем отличается каждая новая вспышка</a>
+	</h2>
+	<div class="brick__counters">
+		<span class="count1">
+			34 <i class="icon"><!-- icon --></i>
+		</span>
+		<span class="count2">
+			6 <i class="icon"><!-- icon --></i>
+		</span>
+		<span class="count3">
+			67 <i class="icon"><!-- icon --></i>
+		</span>
+	</div>
+</div>

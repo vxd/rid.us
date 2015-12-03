@@ -376,8 +376,7 @@
 	position: relative;
 }
 
-
-.brick.view_yellow .brick__headerLink {
+.brick.view_yellow .brick__header .brick__headerLink {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -400,13 +399,6 @@
 	background: url(../_images/icons_sprite.png);
 	background-position: -5px -226px;
 }
-
-
-
-
-
-
-
 
 
 .brick.view_yellow .newsList__date {
@@ -434,4 +426,89 @@
 }
 .brick.view_yellow .brick__footer:hover {
 	text-decoration: none;
+}
+
+
+
+
+
+
+/* стили для мнение */
+.brick.view_opinion {
+	background: #f6f6f6;
+}
+.brick.view_opinion .brick__image {
+	height: 77px;
+	padding-top: 77px;
+	position: relative;
+}
+.brick.view_opinion .brick__image:after {
+	display: block;
+	position: absolute;
+	content: "";
+	left: 38px;
+	bottom: 0;
+	border: 7px solid transparent;
+    border-bottom: 7px solid #f6f6f6;
+}
+.brick.view_opinion .brick__content {
+	padding: 0 15px;
+}
+.brick.view_opinion .brick__text {
+	color: #6b6b6b;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+/* серый блок (главное за сегодня) */
+
+
+.brick.view_grey {
+	border: 3px solid #eee;
+}
+.brick.view_grey .brick__header {
+	text-transform: uppercase;
+	padding: 13px 15px;
+	border-bottom: 1px solid #eee;
+}
+.todayMainNewsList {
+	padding: 20px 15px;
+}
+.todayMainNewsList__item {
+	padding-left: 36px;
+	position: relative;
+	margin-bottom: 30px;
+}
+.todayMainNewsList__item:before {
+	display: block;
+	position: absolute;
+	content: "";
+	width: 14px;
+	height: 12px;
+	top: 8px;
+	left: 0;
+	background: #ffd051;
+}
+.todayMainNewsList__item:after {
+	display: block;
+	position: absolute;
+	content: "";
+	top: 8px;
+	left: 0;
+	border: 6px solid transparent;
+    border-left: 3px solid #fff;
+}
+.todayMainNewsList__link {
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 1.4;
+}
+.todayMainNewsList__link:hover {
+	text-decoration: underline;
 }

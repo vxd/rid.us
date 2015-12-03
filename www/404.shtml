@@ -1,0 +1,38 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    <!--#include virtual="_head.shtml"-->
+    <link href="_css/_page-errors.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="page_authors" itemscope itemtype="http://schema.org/WebPage">
+
+
+<!--#include virtual="_header.shtml"-->
+
+<section class="wrapper contentBackground_white paddings_side padding_top clearfix errorPages">
+
+  <div class="errorPages__pageStatus pageNotFound">
+      <p class="errorPages__pageStatusText">404</p>
+      <p class="errorPages__linkToIndexPage">
+        <a href="#" class="toIndexPage" title="">Перейти на главную</a>
+      </p>
+  </div>
+  <div class="errorPages__pageErrorTextWrapper">
+      <div class="errorPages__pageErrorText">Такой страницы <b class="errorPages__importantNote">не существует</b>. Попробуйте воспользоваться поиском.</div>
+      <form>
+          <div class="errorPages__search">
+              <input class="errorPages__searchInput" type="search" placeholder="Найти интересное" />
+              <button class="errorPages__searchButton" type="submit">Найти</button>
+          </div>
+      </form>
+  </div>
+
+</section>
+
+
+<!--#include virtual="_footer.shtml"-->
+
+</body>
+</html>

@@ -20,7 +20,7 @@
         </ul>
     </h1>
 
-	<div>
+	<div class="bricks__wrapper clearfix">
 		<div class="brick">
             <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
 		</div>
@@ -42,11 +42,11 @@
 		<div class="brick">
 			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
 		</div>
-		<div class="brick view_banner">
-			<!--#include virtual="bricks/banner-mts.shtml"-->
-		</div>
 		<div class="brick">
 			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick view_banner">
+			<!--#include virtual="bricks/banner-mts.shtml"-->
 		</div>
 		<div class="brick">
 			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
@@ -63,34 +63,34 @@
 </section>
 
 
-<section class="brickrows_1 contentBackground_grey paddings_side padding_top wrapper">
-	<h2>Читайте также:</h2>
-	<div class="clearfix">
-		<div class="brick view_mini">
-			<!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
-		</div>
-		<div class="brick view_mini">
-			<!--#include virtual="bricks/mini.shtml?image=2&data=2"-->
-		</div>
-		<div class="brick view_mini">
-			<!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
-		</div>
-		<div class="brick view_mini">
-			<!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
-		</div>
-		<div class="brick view_mini">
-			<!--#include virtual="bricks/mini.shtml?image=2&data=2"-->
-		</div>
-		<div class="brick view_mini">
-			<!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
-		</div>
+<section class="contentBackground_grey paddings_side padding_top wrapper">
+    <h2>Читайте также:</h2>
+    <div class="bricks__wrapper clearfix">
         <div class="brick view_mini">
-			<!--#include virtual="bricks/mini.shtml?image=2&data=2"-->
-		</div>
-		<div class="brick view_mini">
-			<!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
-		</div>
-	</div>
+            <!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
+        </div>
+        <div class="brick view_mini">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=2"-->
+        </div>
+        <div class="brick view_mini">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
+        </div>
+        <div class="brick view_mini">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
+        </div>
+        <div class="brick view_mini hideOn_768">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=2"-->
+        </div>
+        <div class="brick view_mini hideOn_768">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
+        </div>
+        <div class="brick view_mini hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=2"-->
+        </div>
+        <div class="brick view_mini hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
+        </div>
+    </div>
 </section>
 
 <section class="pageBottom contentBackground_white padding_top wrapper clearfix">

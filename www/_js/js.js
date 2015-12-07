@@ -35,7 +35,6 @@ $(document).ready(function() {
 	    var pageSwiper = new Swiper($(this), {
 	        nextButton: $(this).parent().find('.swiper-button-next'),
 	        prevButton: $(this).parent().find('.swiper-button-prev'),
-	        hashnav: true,
 	        spaceBetween: 16,
 	        breakpoints: {
 	            1296: {

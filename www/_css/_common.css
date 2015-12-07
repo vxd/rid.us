@@ -608,7 +608,7 @@ label.radioWrap {
 
 .table {
 	display: table;
-	width: 100%;
+	/*width: 100%;*/
 }
 .table__sideColumn,
 .table__mainColumn,
@@ -623,37 +623,52 @@ label.radioWrap {
 	box-sizing: border-box;
 }
 @media screen and (max-width: 1023px) {
-	.table__sideColumn {
+/*	.table__sideColumn {
 		width: 48.5%;
 	}
 	.table__rightColumn,
 	.table__leftColumn {
 		display: none;
+	}*/
+	.table__sideColumn,
+	.table__leftColumn,
+	.table__rightColumn {
+		width: 47%;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table__sideColumn,
+/*	.table__sideColumn,
 	.table__rightColumn {
 		width: 32%;
 	}
 	.table__leftColumn {
 		display: none;
+	}*/
+	.table__sideColumn,
+	.table__leftColumn,
+	.table__rightColumn {
+		width: 31.33333%;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.table__sideColumn,
+/*	.table__sideColumn,
 	.table__rightColumn {
 		width: 300px;
 	}
 	.table__leftColumn {
 		display: none;
+	}*/
+	.table__sideColumn,
+	.table__leftColumn,
+	.table__rightColumn {
+		width: 322px;
 	}
 }
 @media screen and (min-width: 1297px) {
 	.table__sideColumn,
 	.table__leftColumn,
 	.table__rightColumn {
-		width: 300px;
+		width: 316px;
 	}
 }
 
@@ -681,7 +696,7 @@ label.radioWrap {
 		padding-right: 2%;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+/*@media screen and (min-width: 1041px) and (max-width: 1296px) {
 	.table__mainColumn:last-child {
 		padding-left: 22px;
 	}
@@ -701,4 +716,6 @@ label.radioWrap {
 		padding-right: 16px;
 		padding-left: 16px;
 	}
-}
+}*/
+
+

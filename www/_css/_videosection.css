@@ -1,19 +1,21 @@
 .videoSection {
 	margin-bottom: 22px;
+	width: 100%;
 }
+
 @media screen and (max-width: 1023px) {
 	.videoSection .brick {
-		height: 380px;
+		height: 350px;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.videoSection .brick {
-		height: 380px;
+		height: 350px;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
 	.videoSection .brick {
-		height: 400px;
+		height: 380px;
 	}
 }
 @media screen and (min-width: 1297px) {
@@ -31,12 +33,19 @@
 	background: #ffd051;
 	position: relative;
 }
+@media screen and (max-width: 1040px) {
+	.videoSection .table__sideColumn {
+		width: 48.4%;
+	}
+}
 .videoSection .table__sideColumn .brick {
-	padding: 86px 0 0 20px;
+	padding: 86px 20px 0 20px;
 }
 .videoSection .table__mainColumn {
 	background: #000;
+	padding-left: 0;	
 }
+
 .videoSection .label {
 	position: absolute;
 	background: #000;

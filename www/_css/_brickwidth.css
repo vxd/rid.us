@@ -8,40 +8,81 @@
 }
 @media screen and (max-width: 1023px) {
 	.brick {
-		width: 48.5%;
+		width: 47%;
 		margin: 0 3% 22px 0;
 	}
-	.brick:nth-child(2n) {
+/*	.brick:nth-child(2n) {
 		margin-right: 0;
-	}
+	}*/
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.brick {
-		width: 32%;
+		width: 31.33333%;
 		margin: 0 2% 22px 0;
 	}
-	.brick:nth-child(3n) {
+/*	.brick:nth-child(3n) {
 		margin-right: 0;
-	}
+	}*/
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
 	.brick {
 		width: 300px;
 		margin: 0 22px 22px 0;
 	}
-	.brick:nth-child(3n) {
+/*	.brick:nth-child(3n) {
 		margin-right: 0;
-	}
+	}*/
 }
 @media screen and (min-width: 1297px) {
 	.brick {
 		width: 300px;
 		margin: 0 16px 16px 0;
 	}
-	.brick:nth-child(4n) {
+/*	.brick:nth-child(4n) {
 		margin-right: 0;
+	}*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* для желтого столбца на всю высоту */
+
+.brick.view_2x {
+	height: 822px; /* = x2 + margin */
+}
+@media screen and (min-width: 1297px) {
+	.brick.view_2x {
+		height: 816px;  /* = x2 + margin */
 	}
 }
+
+.brick.view_3x {
+	height: 1244px; /* = x3 + 2*margin */
+}
+@media screen and (min-width: 1297px) {
+	.brick.view_3x {
+		height: 1232px;  /* = x3 + 2*margin */
+	}
+}
+
+
+
+
+
 
 
 
@@ -57,39 +98,39 @@
 }
 @media screen and (max-width: 1023px) {
 	.brick.view_mini {
-		width: 22.75%;
+		width: 22%;
 		margin: 0 3% 22px 0;
 	}
-	.brick.view_mini:nth-child(4n) {
+/*	.brick.view_mini:nth-child(4n) {
 		margin-right: 0;
-	}
+	}*/
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.brick.view_mini {
-		width: 15%;
+	    width: 14.66667%;
 		margin: 0 2% 22px 0;
 	}
-	.brick.view_mini:nth-child(6n) {
+/*	.brick.view_mini:nth-child(6n) {
 		margin-right: 0;
-	}
+	}*/
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
 	.brick.view_mini {
 		width: 139px;
 		margin: 0 22px 22px 0;
 	}
-	.brick.view_mini:nth-child(6n) {
+/*	.brick.view_mini:nth-child(6n) {
 		margin-right: 0;
-	}
+	}*/
 }
 @media screen and (min-width: 1297px) {
 	.brick.view_mini {
 		width: 142px;
 		margin: 0 16px 16px 0;
 	}
-	.brick.view_mini:nth-child(8n) {
+/*	.brick.view_mini:nth-child(8n) {
 		margin-right: 0;
-	}
+	}*/
 }
 
 
@@ -117,14 +158,14 @@
 
 
 /* БОКОВАЯ КОЛОНКА - ширина плитки  */
-.table__sideColumn .brick,
-.table__leftColumn .brick,
-.table__rightColumn .brick {
-	margin-right: 0;
-	width: 100%;
+@media screen and (max-width: 1040px) {
+	.table__sideColumn .brick,
+	.table__leftColumn .brick,
+	.table__rightColumn .brick {
+		margin-right: 0;
+		width: 100%;
+	}
 }
-
-
 
 
 /* ОСНОВНАЯ КОЛОНКА - обновляем отступы */
@@ -137,30 +178,30 @@
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.table__mainColumn .brick,
 	.table__centralColumn .brick {
-		width: 48.5%;
+		width: 47%;
 		margin: 0 3% 22px 0;
 	}
-	.table__mainColumn .brick:nth-child(2n) {
+/*	.table__mainColumn .brick:nth-child(2n) {
 		margin-right: 0;
-	}
+	}*/
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+/*@media screen and (min-width: 1041px) and (max-width: 1296px) {
 	.table__mainColumn .brick {
 		margin-right: 22px;
-	}
-	.table__mainColumn .brick:nth-child(2n) {
+	}*/
+/*	.table__mainColumn .brick:nth-child(2n) {
 		margin-right: 0;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.table__mainColumn .brick {
+	}*/
+/*}*/
+/*@media screen and (min-width: 1297px) {*/
+/*	.table__mainColumn .brick {
 		margin-right: 16px;
-	}
-	.table__mainColumn .brick:nth-child(3n) {
+	}*/
+/*	.table__mainColumn .brick:nth-child(3n) {
 		margin-right: 0;
-	}
-}
+	}*/
+/*}*/
 
-.table__centralColumn .brick:nth-child(2n) {
+/*.table__centralColumn .brick:nth-child(2n) {
 	margin-right: 0
-}
+}*/

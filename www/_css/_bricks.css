@@ -1,10 +1,48 @@
-@import "_brickrows.css";
+/*@import "_brickrows.css";*/
 @import "_brickwidth.css";
 
 
 
 
 
+@media screen and (max-width: 1023px) {
+	.hideOn_768 {
+		display: none;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1296px) {
+	.hideOn_1024 {
+		display: none;
+	}
+}
+@media screen and (min-width: 1297px) {
+	.hideOn_1280 {
+		display: none;
+	}
+}
+
+
+
+@media screen and (max-width: 1023px) {
+	.bricks__wrapper {
+		margin-right: -3%;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.bricks__wrapper {
+		margin-right: -2%;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.bricks__wrapper {
+		margin-right: -22px;
+	}
+}
+@media screen and (min-width: 1297px) {
+	.bricks__wrapper {
+		margin-right: -16px;
+	}
+}
 
 
 
@@ -86,6 +124,7 @@
 
 .brick__content h6,
 .brick__content h6 a {
+	line-height: 1.1;
 	color: #a3a3a3;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -94,6 +133,7 @@
 
 .brick__content h5,
 .brick__content h5 a {
+	line-height: 1.1;
 	color: #000;
 	text-decoration: none;
 	margin-bottom: 10px;

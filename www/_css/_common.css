@@ -608,13 +608,14 @@ label.radioWrap {
 
 .table {
 	display: table;
-	/*width: 100%;*/
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .table__sideColumn,
-.table__mainColumn,
-.table__leftColumn,
-.table__centralColumn,
-.table__rightColumn {
+.table__mainColumn {
 	display: table-cell;
 	vertical-align: top;
 	-webkit-box-sizing: border-box;
@@ -623,85 +624,26 @@ label.radioWrap {
 	box-sizing: border-box;
 }
 @media screen and (max-width: 1023px) {
-/*	.table__sideColumn {
-		width: 48.5%;
-	}
-	.table__rightColumn,
-	.table__leftColumn {
-		display: none;
-	}*/
-	.table__sideColumn,
-	.table__leftColumn,
-	.table__rightColumn {
-		width: 47%;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-/*	.table__sideColumn,
-	.table__rightColumn {
-		width: 32%;
-	}
-	.table__leftColumn {
-		display: none;
-	}*/
-	.table__sideColumn,
-	.table__leftColumn,
-	.table__rightColumn {
-		width: 31.33333%;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-/*	.table__sideColumn,
-	.table__rightColumn {
-		width: 300px;
-	}
-	.table__leftColumn {
-		display: none;
-	}*/
-	.table__sideColumn,
-	.table__leftColumn,
-	.table__rightColumn {
-		width: 322px;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.table__sideColumn,
-	.table__leftColumn,
-	.table__rightColumn {
-		width: 316px;
-	}
-}
-
-
-
-/* БОКОВАЯ КОЛОНКА - если она справа, перемещаем отступ */
-
-@media screen and (max-width: 1023px) {
 	.table__mainColumn:last-child {
 		padding-left: 3%;
 	}
 	.table__mainColumn:first-child {
 		padding-right: 3%;
 	}
-	.table__centralColumn {
-		padding: 0;
-	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.table__mainColumn:last-child {
 		padding-left: 2%;
 	}
-	.table__mainColumn:first-child,
-	.table__centralColumn {
+	.table__mainColumn:first-child {
 		padding-right: 2%;
 	}
 }
-/*@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
 	.table__mainColumn:last-child {
 		padding-left: 22px;
 	}
-	.table__mainColumn:first-child,
-	.table__centralColumn {
+	.table__mainColumn:first-child {
 		padding-right: 22px;
 	}
 }
@@ -712,10 +654,38 @@ label.radioWrap {
 	.table__mainColumn:first-child {
 		padding-right: 16px;
 	}
-	.table__centralColumn {
-		padding-right: 16px;
-		padding-left: 16px;
+}
+
+
+.table__sideColumn {
+	width: 300px;
+	position: relative;
+}
+.table__sideColumn .brick {
+	margin-right: 0;
+	width: 300px;
+}
+
+
+
+
+
+
+/* ОСНОВНАЯ КОЛОНКА - обновляем отступы */
+/*@media screen and (max-width: 1023px) {
+	.table__mainColumn .brick {
+		width: 100%;
+		margin: 0 0 22px 0;
 	}
 }*/
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.table__mainColumn .brick {
+		width: 47%;
+		margin: 0 3% 22px 0;
+	}
+}
+
+
+
 
 

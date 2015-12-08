@@ -1,30 +1,35 @@
 $(document).ready(function() {
 
     $('.slider').each(function () {
-	    var pageSwiper = new Swiper($(this), {
+	    var imagesSlider = new Swiper($(this), {
 	        pagination: $(this).find('.swiper-pagination'),
 	        paginationClickable: true,
 	        autoplay: 3000,
-	        autoplayDisableOnInteraction: false
+	        autoplayDisableOnInteraction: false,
 	    });
     })
 
-	// $(window).resize(function(){  
-	// 	setTimeout(function(){		
-	// 		sliderWidth();
-	// 	}, 40);
-	// });
 
-	// function sliderWidth() {
-	// 	$('.slider').hide();
-	// 	var windowWidth = $(document).width();
-	// 	if (windowWidth <= 1023 ) {
-	// 		var sliderWidth = $('.slider').parent().width();
-	// 		$('.slider, .slider__image').width(sliderWidth);
-	// 	}
-	// 	$('.slider').show();
-	// }; 
-	// sliderWidth();
+    // фикс для бага с шириной слайдера внутри таблицы
+	$(window).resize(function(){  
+		setTimeout(function(){		
+			sliderWidth();
+		}, 40);
+	});
+
+	function sliderWidth() {
+		$('.table__mainColumn .slider').hide();
+		var windowWidth = $(document).width();
+		if (windowWidth <= 1040 ) {
+			var sliderWidth = $('.table__mainColumn .slider').parent().width();
+			$('.table__mainColumn .slider').width(sliderWidth);
+		}
+		if (windowWidth > 1040 ) {
+			$('.table__mainColumn .slider').width("");
+		}
+		$('.table__mainColumn .slider').show();
+	}; 
+	sliderWidth();
 
 
 

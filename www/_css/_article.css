@@ -79,7 +79,7 @@
 	display: inline-block;
 	font-size: 0; /* чтою не было пустых пикселей внизу */
 	margin-bottom: 8px;
-	width: 100%;
+	/*width: 100%;*/
 }
 .article__image {
 	width: 100%;

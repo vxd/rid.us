@@ -22,7 +22,9 @@
 }
 
 
-
+.bricks__wrapper {
+	overflow: hidden;
+}
 @media screen and (max-width: 1023px) {
 	.bricks__wrapper {
 		margin-right: -3%;

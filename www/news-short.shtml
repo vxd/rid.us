@@ -14,40 +14,95 @@
 
 
 
-    <div class="table brickrows_1">
+    <div class="table">
         <div class="table__mainColumn">
 
-        
             <!--#include virtual="_article-short.shtml"-->
+
             <div class="clearfix" style="margin-bottom: 20px; background: #eee">
                 [yandex direct вставлять сюда]
             </div>
 
             <!--#include virtual="_article-short.shtml"-->
+
             <h1 class="view_centred">
                 <i class="threeDot"></i>
                 гражданская журналистика
                 <i class="threeDot"></i>
             </h1>
-            <div class="padding_bottom clearfix">
-                <!-- долен быть в этой обертке, чтоб правильно считалась ширина для мобильных разрешений -->
+
+            <div class="bricks__wrapper padding_bottom clearfix">
                 <div class="brick">
                     <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
                 </div>
-                <div class="brick">
+                <div class="brick hideOn_768">
                     <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
                 </div>            
-                <div class="brick">
+                <div class="brick hideOn_1024">
                     <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&count1=120&count2=35&count3=3812"-->
                 </div>            
             </div>
 
             <!--#include virtual="_article-short.shtml"-->
+
             <h1 class="view_centred">
                 <i class="threeDot"></i>
                 картина дня
                 <i class="threeDot"></i>
             </h1>
+
+            <div class="bricks__wrapper clearfix">
+                <!--#include virtual="slider.shtml"-->
+                <div class="brick">
+                    <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+                </div>
+                <div class="brick">
+                    <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+                </div>
+            </div>
+
+            <!--#include virtual="_article-short.shtml"-->
+
+            <h1 class="view_centred">
+                <i class="threeDot"></i>
+                развлечения
+                <i class="threeDot"></i>
+            </h1>
+
+            <div class="bricks__wrapper padding_bottom clearfix">
+                <div class="brick">
+                    <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+                </div>
+                <div class="brick hideOn_768">
+                    <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+                </div>            
+                <div class="brick hideOn_1024">
+                    <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&count1=120&count2=35&count3=3812"-->
+                </div>            
+            </div>
+
+            <!--#include virtual="_article-short.shtml"-->
+
+            <h1 class="view_centred">
+                <i class="threeDot"></i>
+                интересное
+                <i class="threeDot"></i>
+            </h1>
+
+            <div class="padding_bottom clearfix">
+
+            <!-- картинка -->
+           
+            </div>
+
+            <!--#include virtual="_article-short.shtml"-->
+
+            <div class="clearfix" style="margin-bottom: 20px; background: #eee">
+                [yandex direct вставлять сюда]
+            </div>
+
+
+
 
         </div>
         <div class="table__sideColumn">
@@ -80,72 +135,6 @@
 
     </div>
 
-    <div class="table padding_bottom">
-        <div class="table__leftColumn">
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
-            </div>
-        </div>
-        <div class="table__centralColumn">
-            <div class="clearfix">
-                <!-- долен быть в этой обертке, чтоб правильно считалась ширина для мобильных разрешений -->
-                <!--#include virtual="slider.shtml"-->
-            </div>
-
-        </div>
-        <div class="table__rightColumn">
-
-        </div>
-    </div>
-
-    <div class="table brickrows_1">
-        <div class="table__mainColumn">
-
-        
-            <!--#include virtual="_article-short.shtml"-->
-            <h1 class="view_centred">
-                <i class="threeDot"></i>
-                развлечения
-                <i class="threeDot"></i>
-            </h1>
-            <div class="padding_bottom clearfix">
-                <!-- долен быть в этой обертке, чтоб правильно считалась ширина для мобильных разрешений -->
-                <div class="brick">
-                    <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
-                </div>
-                <div class="brick">
-                    <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
-                </div>            
-                <div class="brick">
-                    <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&count1=120&count2=35&count3=3812"-->
-                </div>            
-            </div>
-
-            <!--#include virtual="_article-short.shtml"-->
-            <h1 class="view_centred">
-                <i class="threeDot"></i>
-                интересное
-                <i class="threeDot"></i>
-            </h1>
-
-            <div class="padding_bottom clearfix">
-
-                        <!-- картинка -->
-           
-            </div>
-
-            <!--#include virtual="_article-short.shtml"-->
-            <div class="clearfix" style="margin-bottom: 20px; background: #eee">
-                [yandex direct вставлять сюда]
-            </div>
-
-        </div>
-        <div class="table__sideColumn">
-
-           
-        </div>
-
-    </div>
 
 
 </section>

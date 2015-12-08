@@ -1,30 +1,31 @@
 .slider {
     position: relative;
     overflow: hidden;
+    height: 400px;
+    float: left;
 }
 @media screen and (max-width: 1023px) {
     .slider {
-         width: 97%;
-    }
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-    .slider {
-         width: 98%;
+        width: 97%;
+        margin: 0 3% 22px 0;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
     .slider {
         width: 64.66666%;
+        margin: 0 2% 22px 0;
     }
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
     .slider {
-        width: 622px !important;
+        width: 622px;
+        margin: 0 22px 22px 0;
     }
 }
 @media screen and (min-width: 1297px) {
     .slider {
-        width: 616px !important;
+        width: 616px;
+        margin: 0 16px 16px 0;
     }
 }
 

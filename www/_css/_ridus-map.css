@@ -1,7 +1,9 @@
 .ridusMap {
 	height: 180px;
-	background: #908750 url(../_images/ridus-map.jpg) center;
-	background-size: cover;
+	background: url(../_images/ridus-map.png) no-repeat center, 
+				url(../_images/ridus-map.jpg) center;
+	/*background-size: cover;*/
+	background-repeat:;
 	margin-bottom: 20px;
 	position: relative;
 }

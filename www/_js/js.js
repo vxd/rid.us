@@ -243,8 +243,20 @@ $(function() {
 	// новости в желтой плитке по высоте 
 	// ======================================
 
-
   	$( ".view_yellow" ).each(function(){
+		var visibilityFlag = "";
+  		if ( $(this).hasClass("hideOn_1280")) {
+  			$(this).removeClass("hideOn_1280");
+  			visibilityFlag += "hideOn_1280 ";
+  		}
+  		if ( $(this).hasClass("hideOn_1024")) {
+  			$(this).removeClass("hideOn_1024");
+  			visibilityFlag += "hideOn_1024 ";
+  		}
+  		if ( $(this).hasClass("hideOn_768")) {
+  			$(this).removeClass("hideOn_768");
+  			visibilityFlag += "hideOn_768 ";
+  		}
     	if ( $(this).has(".newsList").length != 0 ) {
 
     		var brickHeight = $(this).innerHeight();
@@ -264,6 +276,9 @@ $(function() {
 				sumHeight = headerHeight + footerHeight + newslistHeight;
 			}
 
+   		}
+   		if (visibilityFlag != "") {
+   			$(this).addClass(visibilityFlag);
    		}
     });
 

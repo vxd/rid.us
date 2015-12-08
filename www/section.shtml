@@ -17,41 +17,36 @@
     	Политика
     </h1>
 
-    <div class="table bricks__wrapper">
-        <div class="table__sideColumn">
-
-            <div class="brick view_2x view_yellow">
-            	<h4 class="brick__header">
-					<a href="#" class="brick__headerLink view_arrowed" title="">Новости политики</a>
-				</h4>
-				<!--#include virtual="_newslist.shtml?banner=none"-->
-				<a href="#" class="brick__footer" title="">
-					Все новости
-				</a>
-            </div>
-
+    <div class="bricks__wrapper clearfix">
+        <div class="brick view_2x view_yellow">
+        	<h4 class="brick__header">
+				<a href="#" class="brick__headerLink view_arrowed" title="">Новости политики</a>
+			</h4>
+			<!--#include virtual="_newslist.shtml?banner=none"-->
+			<a href="#" class="brick__footer" title="">
+				Все новости
+			</a>
         </div>
-        <div class="table__mainColumn">
-            <div class="brick hideOn_768">
-            	<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
-            </div>
-            <div class="brick hideOn_1024 hideOn_768">
-            	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
-            </div>
-            <div class="brick view_banner">
-                <!--#include virtual="bricks/banner-mts.shtml"-->
-            </div>
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
-            </div>
-            <div class="brick hideOn_768">
-                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
-            </div>
-            <div class="brick hideOn_1024 hideOn_768">
-                <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
-            </div>
+        <div class="brick hideOn_768">
+        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_1024 hideOn_768">
+        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick view_banner">
+            <!--#include virtual="bricks/banner-mts.shtml"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
         </div>
     </div>
+
 
 	<div class="bricks__wrapper clearfix">
 		<div class="brick">

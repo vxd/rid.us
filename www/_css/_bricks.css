@@ -285,6 +285,7 @@
 .brick.view_floatText {
 	min-height: 90px;
 	height: auto;
+	width: 100%;
 }
 .brick.view_floatText .brick__image {
 	display: block;

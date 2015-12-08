@@ -20,10 +20,7 @@
 	<!--#include virtual="_block-selector.shtml"-->
 
     <div class="bricks__wrapper clearfix">
-    	<div>
-    		<!-- долен быть в этой обертке, чтоб правильно считалась ширина для мобильных разрешений -->
-            <!--#include virtual="slider.shtml"-->
-        </div>
+        <!--#include virtual="slider.shtml"-->
         <div class="brick">
             <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
         </div>

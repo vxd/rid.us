@@ -8,12 +8,28 @@
 }
 .agreement__listItem {
     margin-bottom: 25px;
+    counter-increment: step-counter;
+    list-style-type: none;
+    padding-left: 45px;
+    position: relative;
 }
 .agreement__subList {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 .agreement__subListItem {
     margin-bottom: 15px;
     padding-left: 15px;
     list-style-type: square;
+}
+.agreement__listItem:before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    padding: 3px 5px;
+    margin-right: 5px;
+    background-color: #000;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -2px;
 }

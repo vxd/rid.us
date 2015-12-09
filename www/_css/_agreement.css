@@ -25,7 +25,9 @@
     content: counter(step-counter);
     position: absolute;
     left: 0;
-    padding: 3px 5px;
+    min-width: 18px;
+    text-align: center;
+    padding: 3px 7px;
     margin-right: 5px;
     background-color: #000;
     color: white;

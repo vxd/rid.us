@@ -618,42 +618,10 @@ label.radioWrap {
 .table__mainColumn {
 	display: table-cell;
 	vertical-align: top;
-	-webkit-box-sizing: border-box;
+/*	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-}
-@media screen and (max-width: 1023px) {
-	.table__mainColumn:last-child {
-		padding-left: 3%;
-	}
-	.table__mainColumn:first-child {
-		padding-right: 3%;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table__mainColumn:last-child {
-		padding-left: 2%;
-	}
-	.table__mainColumn:first-child {
-		padding-right: 2%;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.table__mainColumn:last-child {
-		padding-left: 22px;
-	}
-	.table__mainColumn:first-child {
-		padding-right: 22px;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.table__mainColumn:last-child {
-		padding-left: 16px;
-	}
-	.table__mainColumn:first-child {
-		padding-right: 16px;
-	}
+	box-sizing: border-box;*/
 }
 
 
@@ -663,21 +631,68 @@ label.radioWrap {
 }
 .table__sideColumn .brick {
 	margin-right: 0;
-	width: 300px;
+	width: 100%;
+}
+
+
+.table__sideColumn:last-child {
+	padding-left: 20px;
+}
+.table__sideColumn:first-child {
+	padding-right: 20px;
+}
+@media screen and (max-width: 1023px) {
+	.table__sideColumn {
+		width: 270px;
+	}
+/*	.table__sideColumn:last-child {
+		padding-left: 3%;
+	}
+	.table__sideColumn:first-child {
+		padding-right: 3%;
+	}*/
+}
+/*
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.table__sideColumn:last-child {
+		padding-left: 2%;
+	}
+	.table__sideColumn:first-child {
+		padding-right: 2%;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.table__sideColumn:last-child {
+		padding-left: 22px;
+	}
+	.table__sideColumn:first-child {
+		padding-right: 22px;
+	}
+}*/
+@media screen and (min-width: 1297px) {
+	.table__sideColumn:last-child {
+		padding-left: 16px;
+	}
+	.table__sideColumn:first-child {
+		padding-right: 16px;
+	}
 }
 
 
 
 
 
-
 /* ОСНОВНАЯ КОЛОНКА - обновляем отступы */
-/*@media screen and (max-width: 1023px) {
-	.table__mainColumn .brick {
-		width: 100%;
-		margin: 0 0 22px 0;
+@media screen and (max-width: 1023px) {
+	.table__sideColumn .brick {
+		height: 440px;
 	}
-}*/
+	.table__mainColumn .brick {
+		width: 97%;
+		margin: 0 0 22px 0;
+		height: 360px;
+	}
+}
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.table__mainColumn .brick {
 		width: 47%;

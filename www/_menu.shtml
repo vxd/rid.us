@@ -28,7 +28,7 @@
 
 
 
-		<!--#include virtual="_addnewsbutton.shtml"-->
+		<!--#include virtual="_yellowbutton.shtml?text=1"-->
 		<!--#include virtual="_dayinfo.shtml"-->
 
 		<menu class="menu">

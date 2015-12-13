@@ -1,0 +1,27 @@
+
+<!-- //// определяем переменные -->  
+
+<!--#set var="text" value="" -->
+
+<!-- //// извлекаем из параметров урла --> 
+
+<!--#if expr="\"$QUERY_STRING\" = /text=([a-zA-Z0-9]+)/" -->
+<!--#set var="text" value="$1" -->
+<!--#endif -->
+
+<!-- //// конец --> 
+
+
+
+<a class="yellowButton" href="" title="">
+	<!--#if expr="$text = 1" -->
+	предложить новость
+	<!--#endif -->
+	<!--#if expr="$text = 2" -->
+	записаться на прием
+	<!--#endif -->
+	<!--#if expr="$text = 3" -->
+	распахнуть
+	<!--#endif -->
+	<i class="corner"><!-- corner --></i>
+</a>

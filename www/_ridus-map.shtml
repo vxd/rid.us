@@ -2,8 +2,5 @@
 	<a href="" class="ridusMap__icon"></a>
 
 
-	<a class="addNewsButton" href="" title="">
-		распахнуть
-		<i class="corner"><!-- corner --></i>
-	</a>
+	<!--#include virtual="_yellowbutton.shtml?text=3"-->
 </section>

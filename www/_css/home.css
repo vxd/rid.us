@@ -33,14 +33,17 @@
     left: 0
 }
 
-.contentBackground_dark .addNewsButton {
+
+
+.contentBackground_dark .yellowButton {
 	position: absolute;
 	top: 0px;
 	right: 16px;
 }
-.contentBackground_dark .addNewsButton .corner {
-    border-bottom-color: #252525;
-}
+
+
+
+
 
 .med__logo {
 	position: absolute;

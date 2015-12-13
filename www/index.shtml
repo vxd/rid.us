@@ -511,10 +511,7 @@
 
     <section class="wrapper pageSwiper contentBackground_dark paddings_side padding_top clearfix">
         <div style="position: relative">
-            <a class="addNewsButton" href="" title="">
-                записаться на прием
-                <i class="corner"><!-- corner --></i>
-            </a>
+        	<!--#include virtual="_yellowbutton.shtml?text=2"-->
             <img class="med__logo" src="_images/med.png" title="">
         </div>
 

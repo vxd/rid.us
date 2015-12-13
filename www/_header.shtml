@@ -8,7 +8,7 @@
 
 	<section class="globalInfo wrapper paddings_side clearfix">
 		<!--#include virtual="_dayinfo.shtml"-->
-		<!--#include virtual="_addnewsbutton.shtml"-->
+		<!--#include virtual="_yellowbutton.shtml?text=1"-->
 		<!--#include virtual="_socials-header.shtml"-->
 	</section>
 

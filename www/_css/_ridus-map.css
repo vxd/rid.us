@@ -7,7 +7,7 @@
 	margin-bottom: 20px;
 	position: relative;
 }
-.ridusMap .addNewsButton {
+.ridusMap .yellowButton {
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -17,7 +17,7 @@
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-.ridusMap .addNewsButton .corner {
+.ridusMap .yellowButton .corner {
     border-bottom-color: #886147;
 }
 

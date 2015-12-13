@@ -32,74 +32,77 @@ header {
 
 
 /* для случая использования в globalinfo */
-.addNewsButton {
+.yellowButton {
 	float: right;
-	font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #000;
 	background: #ffd051;
-    padding: 9px 18px;
+    padding: 10px 8px 9px 18px;
+    margin-right: 10px; /* обязательно ждя уголка */
     margin-left: 13px;
     position: relative;
 }
-.addNewsButton:hover {
+
+.yellowButton .corner {
+	display: block;
+	position: absolute;
+	width: 10px;
+	height: 22px;
+	background: #ffd051;
+    bottom: 0px;
+    right: -10px;
+}
+.yellowButton .corner:before {
+	display: block;
+	position: absolute;
+	content: "";
+    right: 0px;
+    top: -10px;
+    border: 5px solid transparent;
+    border-bottom-color: #000;
+    border-left-color: #000;
+}
+.yellowButton .corner:after {
+	display: block;
+	position: absolute;
+	content: "";
+    right: 0px;
+    top: 0px;
+    border: 5px solid transparent;
+    border-top-color: rgba(0,0,0,.1);
+    border-right-color: rgba(0,0,0,.1);
+}
+
+.yellowButton:hover,
+.yellowButton:hover .corner {
 	background: #ffc336;
 	color: #000;
 }
 
-.addNewsButton .corner {
-	display: block;
-	position: absolute;
-    right: -7px;
-    top: -7px;
-    border: 7px solid transparent;
-    border-bottom-color: #fff;
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.addNewsButton .corner:before {
-	display: block;
-	position: absolute;
-	content: "";
-    right: -7px;
-    top: 7px;
-    border: 7px solid transparent;
-    border-top-color: #000;
-}
-.addNewsButton .corner:after {
-	display: block;
-	position: absolute;
-	content: "";
-    right: -14px;
-    top: 0px;
-    border: 7px solid transparent;
-    border-bottom-color: rgba(0,0,0,.1);
-}
+
 
 /* для случая использования в меню */
-.headerPanel .addNewsButton {
+.headerPanel .yellowButton {
 	display: none;
 }
-.headerPanel .addNewsButton .corner {
-    border-bottom-color: #000;
-}
-.headerPanel .addNewsButton .corner:before {
-    border-top-color: #fff;
+
+.headerPanel .yellowButton .corner:before {
+    border-bottom-color: #fff;
+    border-left-color: #fff;
 }
 @media screen and (max-width: 1023px) {
-	.headerPanel .addNewsButton {
+	.headerPanel .yellowButton {
 		display: block;
 		margin: 13px 0 13px 12px;
 		float: right;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.headerPanel .addNewsButton {
+	.headerPanel .yellowButton {
 		display: block;
 		margin: 13px 12px;
 		float: right;

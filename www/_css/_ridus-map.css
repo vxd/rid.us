@@ -4,8 +4,8 @@
 				url(../_images/ridus-map.jpg) center;
 	/*background-size: cover;*/
 	background-repeat:;
-	margin-bottom: 20px;
-	position: relative;
+/*	margin-bottom: 20px;
+*/	position: relative;
 }
 .ridusMap .yellowButton {
 	position: absolute;

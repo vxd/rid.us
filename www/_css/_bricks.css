@@ -91,9 +91,9 @@
 
 .brick__image {
 	display: block;
-	height: 95px;
+	height: 90px;
 	overflow: hidden;
-	padding-top: 95px;
+	padding-top: 90px;
 	margin-bottom: 12px;
 }
 
@@ -120,8 +120,9 @@
 
 .brick__content h2,
 .brick__content h2 a {
-	margin-bottom: 10px;
+	margin-bottom: 9px;
 	line-height: 1;
+	color: #000;
 }
 
 
@@ -131,7 +132,7 @@
 	color: #a3a3a3;
 	text-transform: uppercase;
 	text-decoration: none;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
 }
 
 .brick__content h5,
@@ -139,13 +140,14 @@
 	line-height: 1.1;
 	color: #000;
 	text-decoration: none;
-	margin-bottom: 10px;
+	margin-bottom: 9px;
 }
 
 .brick__headerLink {
 	color: #000;
 	text-decoration: none;
 }
+
 .contentBackground_dark .brick__headerLink,
 .contentBackground_dark .brick__content h5 a {
 	color: #fff;
@@ -424,7 +426,9 @@
 	border: 3px solid #ffd051;
 	position: relative;
 }
-
+.brick.view_yellow .brick__header {
+	background: #ffd051;
+}
 .brick.view_yellow .brick__header .brick__headerLink {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -434,7 +438,6 @@
 	color: #000;
 	padding: 9px 18px 10px;
 	width: 100%;
-	background: #ffd051;
 	position: relative;
 }
 .brick__headerLink.view_arrowed:after {
@@ -551,9 +554,8 @@
     border-left: 3px solid #fff;
 }
 .todayMainNewsList__link {
-	font-size: 20px;
+	font-size: 16px;
 	color: #000;
-	font-weight: bold;
 	text-decoration: none;
 	line-height: 1.3;
 }

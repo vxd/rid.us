@@ -119,6 +119,7 @@ header {
 /* для случая использования в globalinfo */
 .dayInfo {
 	float: left;
+    font-family: 'Roboto Slab', serif;
 }
 .dayInfo a {
 	text-decoration: none;
@@ -130,7 +131,7 @@ header {
 .dayInfo li {
 	float: left;
 	font-size: 14px;
-	padding: 0 8px 0 16px;
+	padding: 0 3px 0 14px;
 }
 .dayInfo sup {
 	color: #ea5429;
@@ -144,10 +145,11 @@ header {
 /* первый пункт */
 .dayInfo .b-date {
 	border-right: 1px solid #e8e8e8;
-	padding: 0 15px 0 0;
+	padding: 0 14px 0 0;
 }
 .dayInfo .b-date span {
 	text-transform: uppercase;
+	font-size: 12px;
 }
 
 
@@ -157,7 +159,15 @@ header {
 	color: inherit;
 }
 
+@media screen and (min-width: 1297px) {
 
+	.dayInfo li {
+		padding: 0 8px 0 16px;
+	}
+	.dayInfo .b-date {
+		padding: 0 16px 0 0;
+	}
+}
 
 /* для случая использования в панели */
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
@@ -195,12 +205,13 @@ header {
 	}
 
 	.headerPanel .dayInfo li {
-		padding: 0 0 0 12px;
+		padding: 0 0 0 10px;
+		font-size: 13px;
 	}
 
 	.headerPanel .dayInfo .b-date {
 		border-right: 1px solid #fff;
-		padding: 0 12px 0 0;
+		padding: 0 10px 0 0;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {

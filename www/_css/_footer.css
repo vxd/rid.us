@@ -13,9 +13,7 @@
 	padding: 15px;
 	width: 270px;
 
-/*	color: #fff;
-	line-height: 17px;
-	font-size: 14px;*/
+
 }
 .footerInfo__separator {
 	border: 0;
@@ -126,10 +124,11 @@
 	top: 0;
 	background: #ffe298;
 	text-transform: uppercase;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 15px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+	font-size: 12px;
     color: #000;
-    padding: 5px 10px 5px 10px;
+    padding: 7px 10px 7px 10px;
 	border: 0;
 	-webkit-border-radius: 0 3px 3px 0;
 	-moz-border-radius: 0 3px 3px 0;

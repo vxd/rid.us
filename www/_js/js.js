@@ -113,7 +113,12 @@ $(function() {
 		$(".subMenu").toggleClass("state_open");
 		return false;
 	});
-
+	$(document).click(function(event) {
+		if ($(event.target).closest(".menu__link.view_menuIcon, .subMenu").length) return;
+		$(".menu__link.view_menuIcon").removeClass("state_open");
+		$(".subMenu").removeClass("state_open");
+		event.stopPropagation();
+	});
 
 	/* тэги на _block-selector */
 	$(".blockSelector__link").on('click', function(){
@@ -158,7 +163,6 @@ $(function() {
 		var $this = $(e.currentTarget);
 		$this.toggleClass("state_selected");
 		filtersListCounterElement.text(($this.hasClass("state_selected") ? ++filtersListCounter : --filtersListCounter) + declOfNum(filtersListCounter, articlesWords));
-
 		e.preventDefault();
 	});
 
@@ -217,11 +221,17 @@ $(function() {
 		$(".headerSearch__input").focus();
 		return false;
 	});
-	$("body, button:not(.headerSearch__button)").on('click', function(){
+	$(document).click(function(event) {
+		if ($(event.target).closest(".headerSearch__form").length) return;
 		$(".headerSearch__form").fadeOut(150);
 		$(".headerSearch__input").blur();
-		return true;
+		event.stopPropagation();
 	});
+	// $("body, button:not(.headerSearch__button)").on('click', function(){
+	// 	$(".headerSearch__form").fadeOut(150);
+	// 	$(".headerSearch__input").blur();
+	// 	return true;
+	// });
 	$(".headerSearch__button").on('click', function(){
 		console.log( "search:" + $(".headerSearch__input").val() )
 		return true;

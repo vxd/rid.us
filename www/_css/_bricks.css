@@ -238,18 +238,22 @@
 }
 
 /* в слайдере и на темном фоне - белые */
+.videoPlaylist__item .countersBlock__item .icon,
 .contentBackground_darker .countersBlock__item .icon,
 .slider .countersBlock__item .icon {
     opacity: .55;
 }
+.videoPlaylist__item .countersBlock__item.view_count1 .icon,
 .contentBackground_darker .countersBlock__item.view_count1 .icon,
 .slider .countersBlock__item.view_count1 .icon {
     background-position: -0px -514px;
 }
+.videoPlaylist__item .countersBlock__item.view_count2 .icon,
 .contentBackground_darker .countersBlock__item.view_count2 .icon,
 .slider .countersBlock__item.view_count2 .icon {
     background-position: -11px -514px;
 }
+.videoPlaylist__item .countersBlock__item.view_count3 .icon,
 .contentBackground_darker .countersBlock__item.view_count3 .icon,
 .slider .countersBlock__item.view_count3 .icon {
     background-position: -25px -514px;
@@ -262,16 +266,18 @@
 }
 
 
-
-
-
-
-
-
-.brick__description {
-	margin-bottom: 15px;
-	opacity: .4;
+/* на желтой видосекции */
+.videoSection .countersBlock__item .icon {
+	opacity: .76;
 }
+.videoSection .countersBlock__item {
+	color: #000;
+}
+
+
+
+
+
 
 
 

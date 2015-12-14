@@ -4,17 +4,17 @@
 }
 
 @media screen and (max-width: 1023px) {
-	.videoSection .brick {
-		height: 350px;
+	.videoSection .table__sideColumn:first-child .brick {
+		height: 370px;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.videoSection .brick {
+	.videoSection .table__sideColumn:first-child .brick {
 		height: 350px;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.videoSection .brick {
+	.videoSection .table__sideColumn:first-child .brick {
 		height: 380px;
 	}
 }
@@ -22,19 +22,26 @@
 	.videoSection {
 		margin-bottom: 16px;
 	}
-	.videoSection .brick {
-		height: 500px;
+	.videoSection .table__sideColumn:first-child .brick {
+		height: 390px;
 	}
 }
 
+
+
+.brick__description {
+	margin-bottom: 12px;
+	color: #a38430;
+	font-size: 14px;
+}
 
 
 .videoSection .table__sideColumn {
 	background: #ffd051;
 	position: relative;
 }
-.videoSection .table__sideColumn .brick {
-	padding: 86px 20px 0 20px;
+.videoSection .table__sideColumn:first-child .brick {
+	padding: 85px 0 0 20px;
 }
 .videoSection .table__mainColumn {
 	background: #000;
@@ -74,4 +81,67 @@
     border: 5px solid transparent;
     border-top: 5px solid #cb6f25;
     border-right: 5px solid #cb6f25;
+}
+
+
+
+
+.videoSection .table__sideColumn:last-child {
+	padding: 5px
+}
+
+.videoPlaylist__wrapper {
+	background: #000;
+	height: 100%;
+}
+.videoPlaylist__nav {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+}
+.videoPlaylist__nav:hover {
+	opacity: .8;
+}
+.videoPlaylist__nav:after {
+	display: inline-block;
+	content: "";
+    width: 50px;
+    height: 50px;
+    background: url(../_images/icons_sprite.png);
+}
+.videoPlaylist__nav.view_prev:after {    
+	background-position: -150px -319px;
+}
+.videoPlaylist__nav.view_next:after {    
+	background-position: -100px -319px;
+}
+
+.videoPlaylist {
+    height: 296px;
+    overflow: hidden;
+}
+.videoPlaylist__item {
+	border-bottom: 5px solid #ffd051;
+	height: 146px !important;
+	padding: 16px;
+	margin: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.videoPlaylist__item:last-child {
+	border-bottom: none;
+}
+.videoPlaylist__item .brick__content h5 a {
+	color: #fff;
+}
+.brick.view_floatText .countersBlock {
+	margin: 10px 0 0 0;
+}
+.videoPlaylist__item .image__wrapper {
+	float: left;
+}
+.videoPlaylist__item .brick__image {
+	float: none !important;
 }

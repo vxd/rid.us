@@ -12,14 +12,14 @@
 			<p class="brick__text">
 				Каждый старшеклассник знает, что сила тока измеряется в амперах. В чем измеряется напряжение криминогенной обстановки и как измерить уровень безопасности на улице, знают только в полиции.
 			</p>
-			<div class="brick__counters">
-				<span class="count1">
+			<div class="countersBlock">
+				<span class="countersBlock__item view_count1">
 					100 <i class="icon"><!-- icon --></i>
 				</span>
-				<span class="count2">
+				<span class="countersBlock__item view_count2">
 					200 <i class="icon"><!-- icon --></i>
 				</span>
-				<span class="count3">
+				<span class="countersBlock__item view_count3">
 					300 <i class="icon"><!-- icon --></i>
 				</span>
 			</div>

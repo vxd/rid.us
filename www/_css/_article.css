@@ -10,7 +10,7 @@
 
 
 
-.article__title .brick__counters {
+.article__title .countersBlock {
 	display: inline;
     vertical-align: middle;
 }

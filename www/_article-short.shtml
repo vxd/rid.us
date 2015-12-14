@@ -6,14 +6,14 @@
 
 	<h1 class="article__title">
 		Кличко возглавил партию Порошенко
-		<div class="brick__counters">
-			<span class="count1">
+		<div class="countersBlock">
+			<span class="countersBlock__item view_count1">
 				123 <i class="icon"><!-- icon --></i>
 			</span>
-			<span class="count2">
+			<span class="countersBlock__item view_count2">
 				557 <i class="icon"><!-- icon --></i>
 			</span>
-			<span class="count3">
+			<span class="countersBlock__item view_count3">
 				99 <i class="icon"><!-- icon --></i>
 			</span>
 		</div>

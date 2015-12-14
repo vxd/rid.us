@@ -281,14 +281,14 @@
 				            				Хокинг и Мильнер занялись поиском инопланетян
 				            			</a>
 				            		</h1>
-				            		<div class="brick__counters">
-										<span class="count1">
+				            		<div class="countersBlock">
+										<span class="countersBlock__item view_count1">
 											12 <i class="icon"><!-- icon --></i>
 										</span>
-										<span class="count2">
+										<span class="countersBlock__item view_count2">
 											34 <i class="icon"><!-- icon --></i>
 										</span>
-										<span class="count3">
+										<span class="countersBlock__item view_count3">
 											57 <i class="icon"><!-- icon --></i>
 										</span>
 									</div>
@@ -391,14 +391,14 @@
 				            				Хокинг и Мильнер занялись поиском инопланетян
 				            			</a>
 				            		</h1>
-				            		<div class="brick__counters">
-										<span class="count1">
+				            		<div class="countersBlock">
+										<span class="countersBlock__item view_count1">
 											12 <i class="icon"><!-- icon --></i>
 										</span>
-										<span class="count2">
+										<span class="countersBlock__item view_count2">
 											34 <i class="icon"><!-- icon --></i>
 										</span>
-										<span class="count3">
+										<span class="countersBlock__item view_count3">
 											57 <i class="icon"><!-- icon --></i>
 										</span>
 									</div>
@@ -547,14 +547,14 @@
 				            				Хокинг и Мильнер занялись поиском инопланетян
 				            			</a>
 				            		</h1>
-				            		<div class="brick__counters">
-										<span class="count1">
+				            		<div class="countersBlock">
+										<span class="countersBlock__item view_count1">
 											12 <i class="icon"><!-- icon --></i>
 										</span>
-										<span class="count2">
+										<span class="countersBlock__item view_count2">
 											34 <i class="icon"><!-- icon --></i>
 										</span>
-										<span class="count3">
+										<span class="countersBlock__item view_count3">
 											57 <i class="icon"><!-- icon --></i>
 										</span>
 									</div>

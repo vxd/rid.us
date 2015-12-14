@@ -66,11 +66,11 @@
 <!--#endif -->
 </div>
 
-<div class="brick__counters">
-	<span class="count1">
+<div class="countersBlock">
+	<span class="countersBlock__item view_count1">
 		<!--#echo var="count1" --> <i class="icon"><!-- icon --></i>
 	</span>
-	<span class="count3">
+	<span class="countersBlock__item view_count3">
 		<!--#echo var="count3" --> <i class="icon"><!-- icon --></i>
 	</span>
 </div>

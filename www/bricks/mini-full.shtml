@@ -57,14 +57,14 @@
 </div>
 
 
-<div class="brick__counters">
-	<span class="count1">
+<div class="countersBlock">
+	<span class="countersBlock__item view_count1">
 		234 <i class="icon"><!-- icon --></i>
 	</span>
-	<span class="count2">
+	<span class="countersBlock__item view_count2">
 		56 <i class="icon"><!-- icon --></i>
 	</span>
-	<span class="count3">
+	<span class="countersBlock__item view_count3">
 		88 <i class="icon"><!-- icon --></i>
 	</span>
 </div>

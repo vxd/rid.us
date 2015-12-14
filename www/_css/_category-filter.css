@@ -57,6 +57,7 @@
 }
 
 .filtersList__wrapper {
+	font-family: 'PT Sans', sans-serif;
 	width: 750px;
 	background: #667686;
 	padding: 30px;

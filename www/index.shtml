@@ -579,9 +579,9 @@
 		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
 		            </div>
 
-					<div class="brick view_banner">
-						<!--#include virtual="bricks/banner-mts.shtml"-->
-					</div>		            
+					<div class="brick">
+						<!--#include virtual="bricks/news-simple.shtml?image=1&data=3&count1=120&count2=35&count3=3812"-->
+					</div>
 		            <div class="brick hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
 		            </div>
@@ -668,9 +668,9 @@
 		            <div class="brick hideOn_1024 hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
 		            </div>
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
-		            </div>
+					<div class="brick view_banner">
+						<!--#include virtual="bricks/banner-mts.shtml"-->
+					</div>		            
 	            </div>
 		    </div>
 

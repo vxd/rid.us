@@ -94,7 +94,7 @@
 	height: 90px;
 	overflow: hidden;
 	padding-top: 90px;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 }
 
 
@@ -190,6 +190,7 @@
 
 
 .countersBlock {
+	font-family: 'PT Sans', sans-serif;
     font-size: 11px;
 }
 .countersBlock__item {

@@ -52,10 +52,10 @@
 		<div class="brick">
 			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
 		</div>
-        <div class="brick">
+        <div class="brick hideOn_768">
             <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
         </div>
-        <div class="brick hideOn_1024">
+        <div class="brick hideOn_1024 hideOn_768">
             <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
         </div>
         <div class="brick view_yellow view_opinion">
@@ -77,7 +77,7 @@
 			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
 		</div>
 		<div class="brick">
-			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+			<!--#include virtual="bricks/most.shtml"-->
 		</div>
 		<div class="brick">
 			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->

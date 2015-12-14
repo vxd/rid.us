@@ -539,6 +539,62 @@ label.radioWrap {
 
 
 
+/* табы */
+
+.ui-tabs{
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	font-family: "PT Sans", sans-serif;
+}
+.ui-tabs .ui-tabs-nav {
+	border-radius: 0;
+	border: none;
+	background: #fff;
+	padding: 0;
+	display: table;
+	width: 100%;
+}
+.ui-tabs .ui-tabs-nav li {
+	height: 51px;
+	white-space: normal;
+    display: table-cell;
+    width: 50%;
+    margin: 0;
+    background: #eeeeee;
+    border: none;
+	border-radius: 0;
+	font-weight: bold;
+	font-size: 18px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin: 0;
+    background: #fff;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	color: #8d8d8d;
+    padding: 6px 16px 0;
+    line-height: 1.05;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active  .ui-tabs-anchor {
+    color: #c64a1b;
+}
+.ui-tabs .ui-tabs-panel {
+    padding: 7px 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -20,3 +20,39 @@
 
 
 
+
+
+
+
+
+
+
+
+.brick.view_yellow .newsList__date {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.brick.view_yellow .newsList {
+	padding: 0 15px;
+}
+
+
+
+
+
+
+
+.tabs__wrapper .newsList__date {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+.tabs__wrapper .newsList__link {
+	font-size: 16px;
+	color: #000;
+}
+.tabs__wrapper .newsList__date .countersBlock {
+	float: right;
+	margin-top: 3px;
+}

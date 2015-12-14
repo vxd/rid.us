@@ -35,5 +35,11 @@
 		<td class="blockSelector_cell state_selected">
 			<a href="#" class="blockSelector__link" title="">религия</a>
 		</td>
+		<td class="blockSelector_cell">
+		</td>
+		<td class="blockSelector_cell">
+		</td>
+		<td class="blockSelector_cell">
+		</td>
 	</tr>
 </table>

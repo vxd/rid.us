@@ -32,14 +32,20 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border-bottom: 1px solid #d4d4d4;
-	border-right: 1px solid #ffd051;
-}
-.blockSelector_cell:last-child .blockSelector__link {
-	border-right: none;
+	border-right: 1px solid #d4d4d4;
 }
 .blockSelector__link:hover {
     color: #c64a1b;
 }
 .blockSelector_cell.state_selected .blockSelector__link {
 	color: #000;
+	border-bottom: 1px solid #ffd051;
+	border-right: 1px solid #ffd051;
+	box-shadow: -1px 0 0 #ffd051;
+}
+.blockSelector_cell.state_selected:first-child .blockSelector__link {
+	box-shadow: none;
+}
+.blockSelector_cell:last-child .blockSelector__link {
+	border-right: none;
 }

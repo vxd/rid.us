@@ -550,15 +550,20 @@ label.radioWrap {
 .ui-tabs .ui-tabs-nav {
 	border-radius: 0;
 	border: none;
-	background: #fff;
+	background: #eeeeee;
 	padding: 0;
 	display: table;
-	width: 100%;
+	width: 100.1%;
+}
+.tabs__wrapper .ui-tabs-nav:before, 
+.tabs__wrapper .ui-tabs-nav:after {
+	display: none;
 }
 .ui-tabs .ui-tabs-nav li {
 	height: 51px;
 	white-space: normal;
     display: table-cell;
+    vertical-align: middle;
     width: 50%;
     margin: 0;
     background: #eeeeee;
@@ -573,8 +578,11 @@ label.radioWrap {
 }
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
 	color: #8d8d8d;
-    padding: 6px 16px 0;
+    padding: 0 16px;
     line-height: 1.05;
+    display: flex;
+    height: 51px;
+    align-items: center;
 }
 
 .ui-tabs .ui-tabs-nav li.ui-tabs-active  .ui-tabs-anchor {

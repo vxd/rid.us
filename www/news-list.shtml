@@ -19,7 +19,7 @@
     <div class="table brickrows_3">
         <div class="table__mainColumn">
 
-        <!--#include virtual="_newslist.shtml"-->
+        <!--#include virtual="bricks/newslist.shtml"-->
 
         </div>
         <div class="table__sideColumn">

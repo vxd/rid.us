@@ -460,10 +460,11 @@
 	border: 3px solid #ffd051;
 	position: relative;
 }
-.brick.view_yellow .brick__header {
+.brick__header.view_yellow {
 	background: #ffd051;
+	width: 100%;
 }
-.brick.view_yellow .brick__header .brick__headerLink {
+.brick__header.view_yellow .brick__headerLink {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;

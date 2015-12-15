@@ -1,106 +1,99 @@
-<div class="brick view_grey">
+	<ul class="clearfix">
+		<li><a href="#mostbrick_tab-1">Самые читаемые</a></li>
+		<li><a href="#mostbrick_tab-2">Самые обсуждаемые</a></li>
+	</ul>
 
-	<div class="tabs__wrapper">
-		<ul>
-			<li><a href="#mostbrick_tab-1">Самые читаемые</a></li>
-			<li><a href="#mostbrick_tab-2">Самые обсуждаемые</a></li>
-		</ul>
+	<ul id="mostbrick_tab-1" class="newsList">
+	    <li class="newsList__item">
+	        <span class="newsList__date">
+	        	вчера, 18:34
+				<div class="countersBlock">
+					<span class="countersBlock__item view_count3">
+						348 <i class="icon"><!-- icon --></i>
+					</span>
+				</div>			        	
+	        </span>
+	        <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+	    </li>
+	    <li class="newsList__item">
+	        <span class="newsList__date">
+	        	28 августа, 17:42
+				<div class="countersBlock">
+					<span class="countersBlock__item view_count3">
+						7898 <i class="icon"><!-- icon --></i>
+					</span>
+				</div>			        	
+	        </span>
+	        <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
+	    </li>
+	    <li class="newsList__item">
+	        <span class="newsList__date">
+	        	28 августа, 17:42
+				<div class="countersBlock">
+					<span class="countersBlock__item view_count3">
+						59123 <i class="icon"><!-- icon --></i>
+					</span>
+				</div>			        	
+	        </span>
+	        <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
+	    </li>
+	    <li class="newsList__item">
+	        <span class="newsList__date">
+		        28 августа, 17:42
+				<div class="countersBlock">
+					<span class="countersBlock__item view_count3">
+						99251 <i class="icon"><!-- icon --></i>
+					</span>
+				</div>			        					        
+	        </span>
+	        <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
+	    </li>
+	</ul>
 
-		<ul id="mostbrick_tab-1" class="newsList">
-		    <li class="newsList__item">
-		        <span class="newsList__date">
-		        	вчера, 18:34
-					<div class="countersBlock">
-						<span class="countersBlock__item view_count3">
-							348 <i class="icon"><!-- icon --></i>
-						</span>
-					</div>			        	
-		        </span>
-		        <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
-		    </li>
-		    <li class="newsList__item">
-		        <span class="newsList__date">
-		        	28 августа, 17:42
-					<div class="countersBlock">
-						<span class="countersBlock__item view_count3">
-							7898 <i class="icon"><!-- icon --></i>
-						</span>
-					</div>			        	
-		        </span>
-		        <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-		    </li>
-		    <li class="newsList__item">
-		        <span class="newsList__date">
-		        	28 августа, 17:42
-					<div class="countersBlock">
-						<span class="countersBlock__item view_count3">
-							59123 <i class="icon"><!-- icon --></i>
-						</span>
-					</div>			        	
-		        </span>
-		        <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-		    </li>
-		    <li class="newsList__item">
-		        <span class="newsList__date">
-			        28 августа, 17:42
-					<div class="countersBlock">
-						<span class="countersBlock__item view_count3">
-							99251 <i class="icon"><!-- icon --></i>
-						</span>
-					</div>			        					        
-		        </span>
-		        <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-		    </li>
-		</ul>
+	<ul id="mostbrick_tab-2" class="newsList">
+	    <li class="newsList__item">
+	        <span class="newsList__date">
+	        	28 августа, 17:42
+				<div class="countersBlock">
+					<span class="countersBlock__item view_count3">
+						23526 <i class="icon"><!-- icon --></i>
+					</span>
+				</div>			        	
+	        </span>
+	        <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
+	    </li>
+	    <li class="newsList__item">
+	        <span class="newsList__date">
+	        	29 августа, 10:12
+				<div class="countersBlock">
+					<span class="countersBlock__item view_count3">
+						2346 <i class="icon"><!-- icon --></i>
+					</span>
+				</div>			        	
+	        </span>
+	        <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили</a>
+	    </li>
+	    <li class="newsList__item">
+	        <span class="newsList__date">
+	        	8 августа, 07:10
+				<div class="countersBlock">
+					<span class="countersBlock__item view_count3">
+						94523 <i class="icon"><!-- icon --></i>
+					</span>
+				</div>			        	
+	        </span>
+	        <a class="newsList__link" href="#" title="">В России введены санкции на сыр и молоко</a>
+	    </li>
+	    <li class="newsList__item">
+	        <span class="newsList__date">
+		        2 августа, 05:19
+				<div class="countersBlock">
+					<span class="countersBlock__item view_count3">
+						35723 <i class="icon"><!-- icon --></i>
+					</span>
+				</div>			        					        
+	        </span>
+	        <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+	    </li>
+	</ul>
 
-		<ul id="mostbrick_tab-2" class="newsList">
-		    <li class="newsList__item">
-		        <span class="newsList__date">
-		        	28 августа, 17:42
-					<div class="countersBlock">
-						<span class="countersBlock__item view_count3">
-							23526 <i class="icon"><!-- icon --></i>
-						</span>
-					</div>			        	
-		        </span>
-		        <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-		    </li>
-		    <li class="newsList__item">
-		        <span class="newsList__date">
-		        	29 августа, 10:12
-					<div class="countersBlock">
-						<span class="countersBlock__item view_count3">
-							2346 <i class="icon"><!-- icon --></i>
-						</span>
-					</div>			        	
-		        </span>
-		        <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили</a>
-		    </li>
-		    <li class="newsList__item">
-		        <span class="newsList__date">
-		        	8 августа, 07:10
-					<div class="countersBlock">
-						<span class="countersBlock__item view_count3">
-							94523 <i class="icon"><!-- icon --></i>
-						</span>
-					</div>			        	
-		        </span>
-		        <a class="newsList__link" href="#" title="">В России введены санкции на сыр и молоко</a>
-		    </li>
-		    <li class="newsList__item">
-		        <span class="newsList__date">
-			        2 августа, 05:19
-					<div class="countersBlock">
-						<span class="countersBlock__item view_count3">
-							35723 <i class="icon"><!-- icon --></i>
-						</span>
-					</div>			        					        
-		        </span>
-		        <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
-		    </li>
-		</ul>
-
-
-	</div>
-
-</div>

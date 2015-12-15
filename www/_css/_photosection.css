@@ -57,6 +57,7 @@
 
 
 .ptotoBlock__description {
+    font-family: 'Roboto Slab', serif;
 	font-size: 28px;
 	background: rgba(0,0,0,.7);
 	position: absolute;
@@ -70,7 +71,11 @@
 	box-sizing: border-box;
 	color: #fff;
 }
-
+@media screen and (max-width: 1023px) {
+	.ptotoBlock__description {
+		font-size: 22px;
+	}
+}
 
 
 

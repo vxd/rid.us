@@ -31,9 +31,6 @@
         <div class="brick hideOn_1024 hideOn_768">
         	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
         </div>
-        <div class="brick view_banner">
-            <!--#include virtual="bricks/banner-mts.shtml"-->
-        </div>
         <div class="brick hideOn_768">
             <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
         </div>
@@ -52,8 +49,120 @@
         <div class="brick hideOn_1024 hideOn_768">
             <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
         </div>
+        <div class="brick view_banner">
+            <!--#include virtual="bricks/banner-mts.shtml"-->
+        </div>
+
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick view_yellow view_opinion">
+            <!--#include virtual="bricks/opinion.shtml"-->          
+        </div>
+        
     </div>
+
+    <!--#include virtual="bricks/videosection.shtml"-->
+
+    <div class="bricks__wrapper clearfix">
+
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick view_grey tabs__wrapper">
+            <!--#include virtual="bricks/most.shtml"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick view_banner">
+            <!--#include virtual="bricks/banner-mts.shtml"-->
+        </div>
+        <div class="brick hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+
+    </div>
+
 </section>
+
+<!--#include virtual="bricks/photosection.shtml"-->
+
+<section class="contentBackground_white paddings_side padding_top wrapper">
+
+    <div class="bricks__wrapper clearfix">
+
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick view_banner">
+            <!--#include virtual="bricks/banner-mts.shtml"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
 
 
 <section class="contentBackground_grey paddings_side padding_top wrapper">

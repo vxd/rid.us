@@ -24,48 +24,51 @@
 
         <div class="authorPhoto">
             <a href="#" title="">
-                <img src="_images/author_photo.jpg" alt="автор" />
+                <img src="https://pp.vk.me/c405016/v405016400/3291/QZGuxhoNmxM.jpg" alt="автор" />
             </a>
             <span class="authorPhoto__label">Я &mdash; Автор</span>
         </div>
 
         <div class="authorInfo">
 
-            <div class="authorInfoDetails">
+            <h2>Hard Ingush</h2>
 
-                <ul class="authorSocials">
-                    <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconFacebook"></a></li>
-                    <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconVkontakte"></a></li>
-                    <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconTwitter"></a></li>
-                    <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconGoogle"></a></li>
-                    <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconOdnoklassniki"></a></li>
-                </ul>
-
-                <ul class="authorPopularity">
-                    <li class="watchers">
-                        <b>408 <span class="eye-icon"></span></b>
-                    </li>
-                    <li class="rating">
-                        <b>Рейтинг #<span>56</span></b>
-                    </li>
-                    <li class="rate">
-                        <b>Оценки:
-                            <span class="positive">+234</span> /
-                            <span class="negative">-33</span>
-                        </b>
-                    </li>
-                </ul>
-
-                <h2>Hard Ingush</h2>
-
-            </div>
 
             <p>
                 Эксперт в вопросах борьбы с терроризмом, профессор МГИМО. Доиндустриальный тип политической культуры доказывает христианско-демократический национализм.
                 Субъект власти верифицирует эмпирический тоталитарный тип политической культуры.
             </p>
 
+
         </div>
+
+        <div class="authorInfoDetails">
+
+            <ul class="authorSocials">
+                <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconFacebook"></a></li>
+                <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconVkontakte"></a></li>
+                <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconTwitter"></a></li>
+                <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconGoogle"></a></li>
+                <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconOdnoklassniki"></a></li>
+            </ul>
+
+            <ul class="authorPopularity">
+                <li class="watchers">
+                    <b>408 <span class="eye-icon"></span></b>
+                </li>
+                <li class="rating">
+                    <b>Рейтинг #<span>56</span></b>
+                </li>
+                <li class="rate">
+                    <b>Оценки:
+                        <span class="positive">+234</span> /
+                        <span class="negative">-33</span>
+                    </b>
+                </li>
+            </ul>
+            
+        </div>
+
 
         <div class="borderedSection view_authorMaterials">
             <ul class="textTabs view_dotBetween view_h5">
@@ -84,37 +87,39 @@
         <div class="brick">
             <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
         </div>
-        <div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        <div class="brick hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&count1=120&count2=35&count3=3812"-->
         </div>
         <div class="brick view_banner">
             <!--#include virtual="bricks/banner-mts.shtml"-->
         </div>
-        <div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
-        </div>
+
         <div class="brick">
             <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
         </div>
         <div class="brick">
             <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
         </div>
-        <div class="brick">
+        <div class="brick hideOn_768">
             <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
         </div>
-        <div class="brick view_banner">
-            <!--#include virtual="bricks/banner-mts.shtml"-->
+        <div class="brick hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
         </div>
+
         <div class="brick">
             <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
         </div>
         <div class="brick">
             <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
         </div>
-        <div class="brick">
+        <div class="brick hideOn_768">
             <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
         </div>
-        <div class="brick">
+        <div class="brick hideOn_1024 hideOn_768">
             <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
         </div>
     </div>
@@ -150,11 +155,6 @@
             <!--#include virtual="bricks/mini.shtml?image=3&data=3"-->
         </div>
     </div>
-</section>
-
-<section class="pageBottom contentBackground_white padding_top wrapper clearfix">
-    <!--#include virtual="_more-button.shtml"-->
-    <hr>
 </section>
 
 <section class="bottomDatapicker contentBackground_white padding_top padding_bottom wrapper clearfix">

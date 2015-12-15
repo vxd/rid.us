@@ -1,17 +1,5 @@
-
-
 @import "_alphabeth.css";
 @import "_newslist.css";
-
-
-
-
-
-
-
-
-/* стили для страницы */
-
 
 
 
@@ -45,21 +33,14 @@
 
 .authorPhoto {
 	position: relative;
-	width: 190px;
 	padding-top: 24px;
 	float: left;
 	font-size: 0;
 }
-/*.authorPhoto a {
-	display: block;
-	height: 95px;
-	padding-top: 95px;
-	overflow: hidden;
-}
 .authorPhoto a img {
-	transform: translateY(-50%);
-	width: 100%;
-}*/
+	width: 300px;
+	height: 280px;
+}
 .authorPhoto__label {
 	position: absolute;
 	top: 0;
@@ -71,7 +52,12 @@
 	padding: 6px 13px;
 	background: #000;
 }
-
+@media screen and (max-width: 1023px) {
+	.authorPhoto a img {
+		width: 240px;
+		height: 220px;
+	}
+}
 
 
 
@@ -82,13 +68,40 @@
 
 
 .authorInfo {
-    margin-left: 214px;
+    margin-left: 324px;
    	padding-top: 24px;
    	padding-bottom: 50px;
 }
+@media screen and (max-width: 1023px) {
+	.authorInfo {
+		margin-left: 260px;
+	}
+}
+
+
+
 
 .authorInfoDetails {
-	margin-bottom: 20px;
+	position: absolute;
+	bottom: 46px;
+}
+@media screen and (max-width: 1023px) {
+	.authorInfoDetails {
+	    margin-left: 260px;
+	    width: calc(100% - 253px);
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1296px) {
+	.authorInfoDetails {
+		margin-left: 324px;
+		width: calc(100% - 318px);
+	}
+}
+@media screen and (min-width: 1297px) {
+	.authorInfoDetails {
+		margin-left: 316px;
+		width: calc(100% - 309px);
+	}
 }
 
 
@@ -134,8 +147,8 @@
 
 .authorPopularity {
 	float: right;
-	margin: 0 10px;
-	padding-top: 5px;
+	/*margin: 0 0 3px;*/
+	/*padding-top: 5px;*/
 }
 .authorPopularity li {
 	display: inline-block;

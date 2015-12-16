@@ -123,11 +123,11 @@ header {
 }
 .dayInfo a {
 	text-decoration: none;
-	color: #000;
+	color: #333;
 }
-.dayInfo a:hover {
+/*.dayInfo a:hover {
     color: #c64a1b;
-}
+}*/
 .dayInfo li {
 	float: left;
 	font-size: 14px;
@@ -138,7 +138,7 @@ header {
 }
 .dayInfo b {
 	display: block;
-	color: #000;
+	color: #333;
 }
 
 

@@ -113,6 +113,11 @@
 
 
 
+.brick__content h4,
+.brick__content h4 a {
+	text-decoration: none;
+	color: #000;
+}
 
 
 
@@ -120,15 +125,18 @@
 
 .brick__content h2,
 .brick__content h2 a {
-	margin-bottom: 9px;
-	line-height: 1;
+	margin-bottom: 7px;
+	line-height: 1.1;
 	color: #000;
+	font-size: 22px;
 }
 
 
 .brick__content h6,
 .brick__content h6 a {
 	line-height: 1.1;
+	font-size: 12px;
+	font-weight: normal;
 	color: #a3a3a3;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -156,22 +164,24 @@
 }
 .contentBackground_blue .brick__content h6,
 .contentBackground_blue .brick__content h6 a {
-	color: #929fa9;
+	color: #828f99;
 }
 
-.brick__content a:hover,
+/*a:hover,
+.contentBackground_blue .brick__content h5 a:hover,
+.contentBackground_blue .brick__content h6 a:hover,
 .contentBackground_dark .brick__content h5 a:hover,
 .contentBackground_dark .brick__content h6 a:hover {
 	color: #c64a1b;
 }
-
+*/
 
 
 .brick__text {
-	color: #000;
+	color: #444;
 	font-size: 15px;
-	margin-bottom: 12px;
-	line-height: 1.15;
+	margin-bottom: 8px;
+	line-height: 1.2;
 }
 .contentBackground_dark .brick__text {
     color: #d3d3d3;
@@ -181,8 +191,8 @@
 	text-decoration: none;
 }
 .brick__text a:hover {
-	color: #c64a1b;
-	text-decoration: underline;
+	/*color: #c64a1b;*/
+	text-decoration: none;
 }
 
 
@@ -237,8 +247,27 @@
     background-position: -25px -562px;
 }
 
+
+/* на синем фоне */
+.contentBackground_blue .countersBlock__item {
+	color: #929fa9;
+}
+
+
+/* на желтой видосекции */
+.videoSection .countersBlock__item .icon {
+	opacity: .76;
+}
+.videoSection .countersBlock__item {
+	color: #000;
+}
+.videoPlaylist .countersBlock__item {
+	color: #a1a1a1;;
+}
+
+
 /* в слайдере и на темном фоне - белые */
-.videoPlaylist__item .countersBlock__item .icon,
+.videoPlaylist .countersBlock__item .icon,
 .contentBackground_darker .countersBlock__item .icon,
 .slider .countersBlock__item .icon {
     opacity: .55;
@@ -258,23 +287,6 @@
 .slider .countersBlock__item.view_count3 .icon {
     background-position: -25px -514px;
 }
-
-/* на синем фоне */
-
-.contentBackground_blue .countersBlock__item {
-	color: #929fa9;
-}
-
-
-/* на желтой видосекции */
-.videoSection .countersBlock__item .icon {
-	opacity: .76;
-}
-.videoSection .countersBlock__item {
-	color: #000;
-}
-
-
 
 
 
@@ -502,9 +514,9 @@
 	text-decoration: underline;
 	padding: 8px 0;
 }
-.brick.view_yellow .brick__footer:hover {
+/*.brick.view_yellow .brick__footer:hover {
 	text-decoration: none;
-}
+}*/
 
 
 
@@ -584,7 +596,4 @@
 	color: #000;
 	text-decoration: none;
 	line-height: 1.3;
-}
-.todayMainNewsList__link:hover {
-	text-decoration: underline;
 }

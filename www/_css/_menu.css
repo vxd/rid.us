@@ -49,7 +49,7 @@
 .menu__link:hover {
 	/*background: #c64a1b;*/
 	background: #667787;
-	color: #fff;
+	color: #fff !important;
 }
 
 .menu__link.view_menuIcon {

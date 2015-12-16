@@ -114,7 +114,7 @@ $(function() {
 		return false;
 	});
 	$(document).click(function(event) {
-		if ($(event.target).closest(".menu__link.view_menuIcon, .subMenu").length) return;
+		if ($(event.target).closest(".menu__link.view_menuIcon, .subMenu .tagList").length) return;
 		$(".menu__link.view_menuIcon").removeClass("state_open");
 		$(".subMenu").removeClass("state_open");
 		event.stopPropagation();

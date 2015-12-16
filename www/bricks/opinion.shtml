@@ -7,7 +7,9 @@
 </a>
 
 <div class="brick__content">
-	<h4>Евгения Селькова</h4>
+	<h4>
+		<a href="#" title="">Евгения Селькова</a>
+	</h4>
 	<p class="brick__text">
 		Профессор медицины
 	</p>

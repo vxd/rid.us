@@ -9,6 +9,7 @@
 }
 .submenuContent .tagList__link:hover {
 	background: #2a3436;
+	color: #fff !important;
 } 
 
 
@@ -88,7 +89,6 @@
 	font-size: 13px;
 	line-height: 15px;
 }
-.footerLinks .tagList__link:hover {
-	text-decoration: underline;
+/*.footerLinks .tagList__link:hover {
 	color: #c64a1b;
-}
+}*/

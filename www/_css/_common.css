@@ -106,13 +106,8 @@ h1 .threeDot {
 
 
 
-
-/*a {
-	text-decoration: underline;
-	color: #0e53b2;
-}*/
 a:hover {
-    color: #c64a1b;
+    color: #c64a1b !important;
 }
 
 

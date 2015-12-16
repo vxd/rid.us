@@ -47,7 +47,7 @@ h1 .textTabs.view_h5 {
 	/*float: left;*/
 	display: inline;
 	/*position: relative;*/
-	margin-left: .7em;
+	margin-left: .46em;
 
 }
 .view_dotBetween li:before {
@@ -55,7 +55,7 @@ h1 .textTabs.view_h5 {
 	content: "";
 	width: .286em;
 	height: .286em;
-    margin-right: .8em;
+    margin-right: .6em;
 /*	top: 50%;
 	margin-top: -0.125em;
 	left: -.9em;

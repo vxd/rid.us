@@ -361,7 +361,24 @@ label.radioWrap {
 	background: #252525;
 	color: #fff;
 }
-
+@media screen and (max-width: 1023px) {
+	.table__mainColumn .contentBackground_blue {
+		box-shadow: -40px 0 0 #cee0ed,
+					 40px 0 0 #cee0ed;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1296px) {
+	.table__mainColumn .contentBackground_blue {
+		box-shadow: -40px 0 0 #cee0ed,
+					 10px 0 0 #cee0ed;
+	}
+}
+@media screen and (min-width: 1297px) {
+	.table__mainColumn .contentBackground_blue {
+		box-shadow: -16px 0 0 #cee0ed,
+					  8px 0 0 #cee0ed;
+	}
+}
 
 
 
@@ -712,6 +729,7 @@ label.radioWrap {
 }
 .table__sideColumn .brick {
 	margin-right: 0;
+	margin-bottom: 20px;
 	width: 100%;
 }
 
@@ -726,30 +744,7 @@ label.radioWrap {
 	.table__sideColumn {
 		width: 270px;
 	}
-/*	.table__sideColumn:last-child {
-		padding-left: 3%;
-	}
-	.table__sideColumn:first-child {
-		padding-right: 3%;
-	}*/
 }
-/*
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table__sideColumn:last-child {
-		padding-left: 2%;
-	}
-	.table__sideColumn:first-child {
-		padding-right: 2%;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.table__sideColumn:last-child {
-		padding-left: 22px;
-	}
-	.table__sideColumn:first-child {
-		padding-right: 22px;
-	}
-}*/
 @media screen and (min-width: 1297px) {
 	.table__sideColumn:last-child {
 		padding-left: 16px;
@@ -769,9 +764,9 @@ label.radioWrap {
 		height: 440px;
 	}
 	.table__mainColumn .brick {
-		width: 97%;
+/*		width: 97%;
 		margin: 0 0 22px 0;
-		height: 360px;
+*/		height: 360px;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
@@ -782,6 +777,11 @@ label.radioWrap {
 }
 
 
-
+@media screen and (max-width: 1023px) {
+	.table__mainColumn,
+	.table {
+		display: block; /* обязательно, т.к. будет неправильно считаться ширина слайдера в таблице в % */
+	}
+}
 
 

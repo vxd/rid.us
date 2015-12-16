@@ -89,6 +89,7 @@
 	font-size: 13px;
 	line-height: 15px;
 }
-/*.footerLinks .tagList__link:hover {
-	color: #c64a1b;
-}*/
+.footerLinks .tagList__link:hover {
+	color: #fff !important;
+	text-decoration: underline;
+}

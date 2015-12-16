@@ -21,7 +21,7 @@
 
 
 
-	<div class="articleInfo__avatarContainer">
+	<div class="articleInfo__avatarContainer clearfix">
 		<a class="articleInfo__avatar" href="" title="">
 			<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt=""/>
 		</a>
@@ -32,16 +32,27 @@
 		
 	</div>
 
-	<div class="articlePhoto">
-		<a class="articlePhoto__link" href="#" title="">
-			<img class="article__image" src="http://www.ridus.ru/images/2015/11/16/337613/in_article_649899cbd1.jpg" alt="">
-		</a>
-		<p class="articlePhoto__info">
-			Виталий "не только лишь все" Кличко
-		</p>
-		<p class="articlePhoto__author">
-			&copy; facebook.com
-		</p>
+	<div class="bricks__wrapper clearfix">
+
+		<div class="brick view_articlePhoto">
+			<a class="articlePhoto__link" href="#" title="">
+				<img class="article__image" src="http://www.ridus.ru/images/2015/11/16/337613/in_article_649899cbd1.jpg" alt="">
+			</a>
+			<p class="articlePhoto__info">
+				Виталий "не только лишь все" Кличко
+			</p>
+			<p class="articlePhoto__author">
+				&copy; facebook.com
+			</p>
+		</div>
+
+        <div class="brick hideOn_1024 hideOn_768">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
+        </div>
+        <!--div class="brick view_banner">
+            <!--#include virtual="bricks/banner-mts.shtml"-->
+        </div-->
+
 	</div>
 
     <div class="article__content">

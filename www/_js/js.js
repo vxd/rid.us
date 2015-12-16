@@ -4,32 +4,37 @@ $(document).ready(function() {
 	    var imagesSlider = new Swiper($(this), {
 	        pagination: $(this).find('.swiper-pagination'),
 	        paginationClickable: true,
-	        autoplay: 3000,
-	        autoplayDisableOnInteraction: false,
+	        // width: 616,
+	        // autoplay: 3000,
+	        // observeParents: true,
+	        autoplayDisableOnInteraction: false
 	    });
+
+
+
     })
 
 
-    // фикс для бага с шириной слайдера внутри таблицы
-	$(window).resize(function(){  
-		setTimeout(function(){		
-			sliderWidth();
-		}, 40);
-	});
+ //    фикс для бага с шириной слайдера внутри таблицы
+	// $(window).resize(function(){  
+	// 	setTimeout(function(){		
+	// 		sliderWidth();
+	// 	}, 60);
+	// });
 
-	function sliderWidth() {
-		$('.table__mainColumn .slider').hide();
-		var windowWidth = $(document).width();
-		if (windowWidth <= 1040 ) {
-			var sliderWidth = $('.table__mainColumn .slider').parent().width();
-			$('.table__mainColumn .slider').width(sliderWidth);
-		}
-		if (windowWidth > 1040 ) {
-			$('.table__mainColumn .slider').width("");
-		}
-		$('.table__mainColumn .slider').show();
-	}; 
-	sliderWidth();
+	// function sliderWidth() {
+	// 	$('.table__mainColumn .slider').hide();
+	// 	var windowWidth = $(document).width();
+	// 	if (windowWidth <= 1040 && windowWidth >= 1024 ) {
+	// 		var sliderWidth = $('.table__mainColumn .slider').parent().width();
+	// 		$('.table__mainColumn .slider').width(sliderWidth);
+	// 	}
+	// 	if (windowWidth > 1040 ) {
+	// 		$('.table__mainColumn .slider').width("");
+	// 	}
+	// 	$('.table__mainColumn .slider').show();
+	// }; 
+	// sliderWidth();
 
 
 

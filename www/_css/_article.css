@@ -72,8 +72,19 @@
 
 
 
-.articlePhoto {
-	margin-bottom: 30px;
+.brick.view_articlePhoto {
+	width: 616px;
+	height: auto;
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.brick.view_articlePhoto {
+		width: calc(100% - 13px)
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.brick.view_articlePhoto {
+		width: calc(100% - 22px)
+	}
 }
 .articlePhoto__link {
 	display: inline-block;
@@ -83,13 +94,14 @@
 }
 .article__image {
 	width: 100%;
+	height: 400px;
 }
 .articlePhoto__info {
-	font-size: 16px;
+	font-size: 14px;
 	color: #525252;
 }
 .articlePhoto__author {
-	font-size: 16px;
+	font-size: 14px;
 	color: #848484;
 }
 

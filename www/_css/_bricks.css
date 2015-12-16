@@ -578,7 +578,7 @@
 	content: "";
 	width: 14px;
 	height: 12px;
-	top: 8px;
+	top: 5px;
 	left: 0;
 	background: #ffd051;
 }
@@ -586,7 +586,7 @@
 	display: block;
 	position: absolute;
 	content: "";
-	top: 8px;
+	top: 5px;
 	left: 0;
 	border: 6px solid transparent;
     border-left: 3px solid #fff;

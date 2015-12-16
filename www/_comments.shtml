@@ -1,41 +1,50 @@
 <div class="comments">
 	<h2>
 		Комментарии (<span id="">9</span>)
-		<a class="comments__expandButton" href="" title=""></a>
+		<a class="comments__expandButton state_open" href="" title=""></a>
 	</h2>
 
-	<div class="comments__login">
-		<b>Для комментирования новости <a href="#" title="">авторизуйтесь</a> или войдите через социальные сети:</b>
-		<ul class="commentsSocials">
-			<li class="socialNetwork__item">
-				<a class="socialNetwork__link view_iconFacebook" href="#" title="">
-					<i class="icon"><!-- icon --></i>
-					Facebook
-				</a>
-			</li>
-			<li class="socialNetwork__item">
-				<a class="socialNetwork__link view_iconvKontakte" href="#" title="">
-					<i class="icon"><!-- icon --></i>vKontakte
-				</a>
-			</li>
-			<li class="socialNetwork__item">
-				<a class="socialNetwork__link view_iconGoogle" href="#" title="">
-					<i class="icon"><!-- icon --></i>Google+
-				</a>
-			</li>
-			<li class="socialNetwork__item">
-				<a class="socialNetwork__link view_iconTwitter" href="#" title="">
-					<i class="icon"><!-- icon --></i>Twitter
-				</a>
-			</li>
-		</ul>
-	</div>
+	<div class="commentsContent state_open">
 
-	<div class="commentsContent">
-		[комменты вставлять сюда]<br>
-		[комменты вставлять сюда]<br>
-		[комменты вставлять сюда]<br>
-		[комменты вставлять сюда]
+		<div class="comments__login">
+			<b>Для комментирования новости <a href="#" title="">авторизуйтесь</a> или войдите через социальные сети:</b>
+			<ul class="commentsSocials">
+				<li class="socialNetwork__item">
+					<a class="socialNetwork__link view_iconFacebook" href="#" title="">
+						<i class="icon"><!-- icon --></i>
+						Facebook
+					</a>
+				</li>
+				<li class="socialNetwork__item">
+					<a class="socialNetwork__link view_iconvKontakte" href="#" title="">
+						<i class="icon"><!-- icon --></i>vKontakte
+					</a>
+				</li>
+				<li class="socialNetwork__item">
+					<a class="socialNetwork__link view_iconGoogle" href="#" title="">
+						<i class="icon"><!-- icon --></i>Google+
+					</a>
+				</li>
+				<li class="socialNetwork__item">
+					<a class="socialNetwork__link view_iconTwitter" href="#" title="">
+						<i class="icon"><!-- icon --></i>Twitter
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div style="background: #eee">
+			желтая кнопка свернуть-развернуть ^ работает<br><br>
+			[комменты такие же по стилю - вставлять сюда]<br><br>
+			[комменты такие же по стилю - вставлять сюда]<br><br>
+			[комменты такие же по стилю - вставлять сюда]<br><br>
+			[комменты такие же по стилю - вставлять сюда]<br><br>
+			[комменты такие же по стилю - вставлять сюда]<br><br>
+			[комменты такие же по стилю - вставлять сюда]<br><br>
+			[комменты такие же по стилю - вставлять сюда]<br><br>
+			[комменты такие же по стилю - вставлять сюда]<br><br>
+			[комменты такие же по стилю - вставлять сюда]
+		</div>
 	</div>
 
 

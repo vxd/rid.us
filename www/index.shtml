@@ -265,37 +265,7 @@
 		    <div class="swiper-slide">
 
 		        <div class="bricks__wrapper">
-
-				    <div class="brick slider">
-				        <div class="swiper-wrapper">
-				            <div class="swiper-slide">
-				            	<a href="#" class="slider__image" title="">
-				            		<img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt="">
-				            	</a>
-				            	<div href="#" class="slider__text">
-									<h6>
-										<a href="#" title="">Жизнь</a>
-									</h6>				            		
-				            		<h1>
-				            			<a href="" title="">
-				            				Хокинг и Мильнер занялись поиском инопланетян
-				            			</a>
-				            		</h1>
-				            		<div class="countersBlock">
-										<span class="countersBlock__item view_count1">
-											12 <i class="icon"><!-- icon --></i>
-										</span>
-										<span class="countersBlock__item view_count2">
-											34 <i class="icon"><!-- icon --></i>
-										</span>
-										<span class="countersBlock__item view_count3">
-											57 <i class="icon"><!-- icon --></i>
-										</span>
-									</div>
-				            	</div>
-				            </div>
-				        </div>
-				    </div>
+			        <!--#include virtual="bricks/alaslideimage.shtml?image=1"-->
 
 		            <div class="brick hideOn_1024 hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
@@ -376,36 +346,7 @@
 
 		        <div class="bricks__wrapper">
 
-				    <div class="brick slider">
-				        <div class="swiper-wrapper">
-				            <div class="swiper-slide">
-				            	<a href="#" class="slider__image" title="">
-				            		<img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt="">
-				            	</a>
-				            	<div href="#" class="slider__text">
-									<h6>
-										<a href="#" title="">Жизнь</a>
-									</h6>				            		
-				            		<h1>
-				            			<a href="" title="">
-				            				Хокинг и Мильнер занялись поиском инопланетян
-				            			</a>
-				            		</h1>
-				            		<div class="countersBlock">
-										<span class="countersBlock__item view_count1">
-											12 <i class="icon"><!-- icon --></i>
-										</span>
-										<span class="countersBlock__item view_count2">
-											34 <i class="icon"><!-- icon --></i>
-										</span>
-										<span class="countersBlock__item view_count3">
-											57 <i class="icon"><!-- icon --></i>
-										</span>
-									</div>
-				            	</div>
-				            </div>
-				        </div>
-				    </div>
+			        <!--#include virtual="bricks/alaslideimage.shtml?image=2"-->
 
 		            <div class="brick">
 		                <div class="brick view_floatText">
@@ -532,36 +473,7 @@
 
 		        <div class="bricks__wrapper">
 
-				    <div class="brick slider">
-				        <div class="swiper-wrapper">
-				            <div class="swiper-slide">
-				            	<a href="#" class="slider__image" title="">
-				            		<img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt="">
-				            	</a>
-				            	<div href="#" class="slider__text">
-									<h6>
-										<a href="#" title="">Жизнь</a>
-									</h6>				            		
-				            		<h1>
-				            			<a href="" title="">
-				            				Хокинг и Мильнер занялись поиском инопланетян
-				            			</a>
-				            		</h1>
-				            		<div class="countersBlock">
-										<span class="countersBlock__item view_count1">
-											12 <i class="icon"><!-- icon --></i>
-										</span>
-										<span class="countersBlock__item view_count2">
-											34 <i class="icon"><!-- icon --></i>
-										</span>
-										<span class="countersBlock__item view_count3">
-											57 <i class="icon"><!-- icon --></i>
-										</span>
-									</div>
-				            	</div>
-				            </div>
-				        </div>
-				    </div>
+			        <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
 
 		            <div class="brick">
 		                <div class="brick view_floatText">
@@ -635,7 +547,7 @@
 
 <div class="pageSwiper__container">
 
-    <section class="wrapper pageSwiper contentBackground_white paddings_side padding_top clearfix">
+    <section class="wrapper pageSwiper contentBackground_white paddings_side padding_top padding_bottom clearfix">
 
         <h1 class="view_centred">
             <i class="threeDot"></i>

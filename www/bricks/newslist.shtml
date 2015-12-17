@@ -18,7 +18,7 @@
         <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
     </li>
     <li class="newsList__item">
-        <span class="newsList__date">вчера, 18:34</span>
+        <span class="newsList__date">18:34</span>
         <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
     </li>
 
@@ -26,33 +26,46 @@
     <li>
         <p class="brick__text" style="text-align: center;">
             <br>
-                        <a href="#" title="">
+            <a href="#" title="">
                 <img src="../_images/banner_brick-mts.jpg" alt="">
             </a>
-
+            <br>
+            <br>
         </p>    
     </li>
     <!--#endif -->
 
     <li class="newsList__item">
-        <span class="newsList__date">вчера, 18:34</span>
+        <span class="newsList__date">18:34</span>
         <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили Минкульт</a>
     </li>
     <li class="newsList__item">
-        <span class="newsList__date">вчера, 18:34</span>
+        <span class="newsList__date">18:34</span>
         <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
     </li>
     <li class="newsList__item">
-        <span class="newsList__date">вчера, 18:34</span>
+        <span class="newsList__date">18:34</span>
         <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили Минкульт</a>
     </li>
     <li class="newsList__item">
-        <span class="newsList__date">вчера, 18:34</span>
+        <span class="newsList__date">18:34</span>
         <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили</a>
     </li>
     <li class="newsList__item">
-        <span class="newsList__date">вчера, 18:34</span>
+        <span class="newsList__date">18:34</span>
         <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили Минкульт</a>
+    </li>
+    <li class="newsList__item">
+        <span class="newsList__date">21:55</span>
+        <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты</a>
+    </li>
+    <li class="newsList__item">
+        <span class="newsList__date">21:55</span>
+        <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+    </li>
+    <li class="newsList__item">
+        <span class="newsList__date">21:55</span>
+        <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
     </li>
     <li class="newsList__item">
         <span class="newsList__date">вчера, 21:55</span>

@@ -27,16 +27,24 @@
 
 
 
-
+.brick.view_yellow .newsList {
+	padding: 0 15px 0;
+}
+.brick.view_yellow .newsList__item {
+	padding-top: 9px;
+}
+.brick.view_yellow .newsList__item:first-child {
+	padding-top: 20px;
+}
 .brick.view_yellow .newsList__date {
 	display: block;
-	font-size: 16px;
-	margin-bottom: 5px;
+	float: left;
+	padding-top: 2px;
 }
-.brick.view_yellow .newsList {
-	padding: 0 15px;
+.brick.view_yellow .newsList__link {
+	display: block;
+	margin-left: 45px;
 }
-
 
 
 

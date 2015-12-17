@@ -779,8 +779,11 @@ label.radioWrap {
 
 @media screen and (max-width: 1023px) {
 	.table__mainColumn,
-	.table {
+	.table:not(.videoSection) {
 		display: block; /* обязательно, т.к. будет неправильно считаться ширина слайдера в таблице в % */
+	}
+	.videoSection .table__mainColumn {
+		display: table-cell;
 	}
 }
 

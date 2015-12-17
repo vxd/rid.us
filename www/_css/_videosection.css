@@ -118,7 +118,8 @@
 }
 
 .videoPlaylist {
-    height: 296px;
+    height: 300px;
+    max-height: 300px;
     overflow: hidden;
 }
 .videoPlaylist__item {

@@ -1,10 +1,18 @@
-.categoryFilter__wrapper {
-	display: inline-block;
-	margin-left: 20px;
+.categoryFilter__positionContainer {
 	position: relative;
-	width: calc(100% - 100px)
 }
-
+.categoryFilter__wrapper {
+	float: left;
+}
+@media screen and (min-width: 1041px) {
+	.categoryFilter__wrapper {
+		position: relative;
+	}
+}
+.categoryFilter__widthAdjuster {
+	float: left;
+	padding-right: 20px;
+}
 .categoryFilter__filter {
 	position: relative;
 	top: -4px;
@@ -45,6 +53,7 @@
 
 
 .categoryFilter__info {
+	font-family: 'PT Sans', sans-serif;
 	position: relative;
 	top: -4px;
 	margin-left: 4px;
@@ -60,8 +69,11 @@
 }
 
 .filtersList__wrapper {
+/*	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;*/
 	font-family: 'PT Sans', sans-serif;
-	width: 750px;
 	background: #667686;
 	padding: 30px;
 	position: absolute;
@@ -70,7 +82,14 @@
 	z-index: 10;
 	display: none;
 }
-
+@media screen and (max-width: 1040px) {
+	.filtersList__wrapper {
+		width: 100% !important;
+		left: -40px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
 
 .filtersList__wrapper.state_open {
 	display: block;
@@ -81,13 +100,18 @@
 .filtersList__item {
 	border-bottom: 1px solid #667686;
 	position: relative;
+	display: block;
+	width: 100%;
+	/*margin-bottom: 0;*/
+	font-size: 0;
 }
 .filtersList__link {
 	text-decoration: none;
 	color: #fff;
-	font-size: 16px;
-	display: block;
-	padding: 6px 28px 8px 15px;
+	font-size: 14px;
+	width: 100%;
+	display: inline-block;
+	padding: 7px 28px 8px 15px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -119,21 +143,29 @@
 	margin-bottom: 28px;
 	display: inline;
 }
-.view_allFilters {
-	display: inline-block;
-	background: #ffd051;
-	margin-bottom: 29px;
-	padding: 0 15px;
+
+
+
+
+.filtersList__item.view_allFilters {
+	margin-bottom: 31px;
+	background: none;
 }
-.view_allFilters .filtersList__link {
-	padding-left: 0;
-	padding-right: 0;
+.filtersList__item.view_allFilters.state_selected .filtersList__link:after {
+	display: none;
+}
+.filtersList__item.view_allFilters .filtersList__link {
+	background: #ffd051;
+	color: #000;
+	width: auto;
+}
+.filtersList__item.view_allFilters .filtersList__link:hover {
+	background: #ffd051;
 	color: #000;
 }
-.view_allFilters .filtersList__link:hover {
-	background: #ffd051;
-	color: #000;
-}
+
+
+
 .filtersList {
 	-webkit-column-count: 3;
 	-moz-column-count: 3;

@@ -197,6 +197,7 @@ $(function() {
 	// ======================================
 	// ФИЛЬТР СТАТЕЙ 
 	// ======================================
+
 	var filtersListCounterElement = $(".categoryFilter__counter"),
 		filterListWrapper = $(".filtersList__wrapper"),
 		filtersListItems = $(".filtersList__item"),
@@ -205,6 +206,9 @@ $(function() {
 		categoryFilterInfo = $(".categoryFilter__info");
 
 	$(".categoryFilter__filter").on('click', function(){
+		var width = $(".categoryFilter__widthAdjuster").parent().width() -
+					$(".categoryFilter__widthAdjuster").innerWidth() - 60;
+		$(".filtersList__wrapper").width(width);
 		$(this).toggleClass("state_open");
 		filterListWrapper.toggleClass("state_open");
 		categoryFilterInfo.toggleClass("state_open");
@@ -214,11 +218,18 @@ $(function() {
 		return false;
 	});
 
-	$(".categoryFilter__closeFilter").on('click', function(){
+	$(".categoryFilter__wrapper .closeButtom").on('click', function(){
 		filterListWrapper.toggleClass("state_open");
 		categoryFilterInfo.toggleClass("state_open");
 		return false;
 	});
+
+	$(window).resize(function(){
+		$(".categoryFilter__filter").removeClass("state_open");
+		filterListWrapper.removeClass("state_open");
+		categoryFilterInfo.removeClass("state_open");
+	});
+
 
 	filterListWrapper.on('click', '.filtersList__item', function(e){
 		var $this = $(e.currentTarget);
@@ -241,6 +252,7 @@ $(function() {
 			totalSelected = 0;
 			filtersListCounter = 0;
 		}
+		
 		filtersListItems[action]("state_selected");
 		$this.data('selectedAll', state);
 		filtersListCounterElement.text(totalSelected + declOfNum(totalSelected, articlesWords));
@@ -277,9 +289,6 @@ $(function() {
 	// ======================================
 	// search field 
 	// ======================================
-	// $(".header__searchButton, .headerSearch__input").on('click', function(){
-	// 	$(".headerSearch__form").fadeIn(220);
-	// });
 
 
 	$(".header__searchButton").click(function(){

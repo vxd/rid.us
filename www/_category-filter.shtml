@@ -9,7 +9,7 @@
 		<a href="#" class="closeButtom" title="">&times;</a>
 
 		<ul class="filtersList">
-			<li class="view_allFilters" data-selected-all="0">
+			<li class="filtersList__item view_allFilters" data-selected-all="0">
 				<a href="#" class="filtersList__link" title="">все рубрики</a>
 			</li>
 			<li class="filtersList__item">

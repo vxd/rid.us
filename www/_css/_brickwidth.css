@@ -11,36 +11,24 @@
 		width: 47%;
 		margin: 0 3% 22px 0;
 	}
-/*	.brick:nth-child(2n) {
-		margin-right: 0;
-	}*/
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.brick {
 		width: 31.33333%;
 		margin: 0 2% 22px 0;
 	}
-/*	.brick:nth-child(3n) {
-		margin-right: 0;
-	}*/
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
 	.brick {
 		width: 300px;
 		margin: 0 22px 22px 0;
 	}
-/*	.brick:nth-child(3n) {
-		margin-right: 0;
-	}*/
 }
 @media screen and (min-width: 1297px) {
 	.brick {
 		width: 300px;
 		margin: 0 16px 16px 0;
 	}
-/*	.brick:nth-child(4n) {
-		margin-right: 0;
-	}*/
 }
 
 

@@ -13,8 +13,8 @@
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
-    <h1>
-    	Бездна новостей
+    <h1 class="categoryFilter__positionContainer clearfix">
+    	<span class="categoryFilter__widthAdjuster">Бездна новостей</span>
     	<!--#include virtual="_category-filter.shtml"-->
     </h1>
 

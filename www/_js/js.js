@@ -42,6 +42,8 @@ $(document).ready(function() {
 
 
 
+
+
     $('.pageSwiper').each(function () {
 	    var pageSwiper = new Swiper($(this), {
 	        nextButton: $(this).parent().find('.swiper-button-next'),
@@ -62,6 +64,15 @@ $(document).ready(function() {
 	        }
 	    });
     });
+
+
+
+
+
+
+
+
+
 
 
 
@@ -252,7 +263,7 @@ $(function() {
 			totalSelected = 0;
 			filtersListCounter = 0;
 		}
-		
+
 		filtersListItems[action]("state_selected");
 		$this.data('selectedAll', state);
 		filtersListCounterElement.text(totalSelected + declOfNum(totalSelected, articlesWords));
@@ -408,6 +419,50 @@ $(function() {
     $( ".tabs__wrapper" ).tabs();
 
 
+
+
+
+	// ======================================
+	// плавающий блок
+	// ======================================
+
+	// function stickyHeight() {
+	// 	// console.log(1)
+	// }
+	// setTimeout(function(){		
+	// 	stickyHeight();
+	// }, 1000);
+	$(window).load(function(){
+		var height = $(".hcSticky__scrollable").parent().height() -
+					$(".hcSticky__scrollable").height()
+		$(".hcSticky__sticky").height(height)	
+	})
+
+	$('.sticked').hcSticky({
+		stickTo: ".hcSticky__sticky",
+		// onStart: stickyHeight(),
+	    top: 20,
+	    // bottomEnd: 100,
+	    // wrapperClassName: 'sidebar-sticky'
+	});
+
+	/* показываем в зависимости от позиции */
+	var topShow1 = $("#show1").offset().top;
+	var slides = $(".stickedSlide");
+
+    $(window).scroll(function() {
+
+    	var position = $(window).scrollTop();
+    	if (position >= topShow1) {
+    		$(slides[0]).hide();
+    		$(slides[1]).fadeIn(300)
+    	} else {
+     		$(slides[0]).fadeIn(300)
+   			$(slides[1]).hide();
+
+    	}
+
+    });
 
 
 });

@@ -189,6 +189,35 @@ input[type="submit"]:hover {
 
 
 
+.closeButtom {
+	text-decoration: none;
+	font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* лэйблы, чекбоксы, радиобатоны */
 /*label {
 	color: #747474;
@@ -304,7 +333,26 @@ label.radioWrap {
 
 
 
-
+@media screen and (max-width: 1023px) {
+	.hideOn_768 {
+		display: none;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1296px) {
+	.hideOn_1024 {
+		display: none;
+	}
+}
+@media screen and (min-width: 1297px) {
+	.hideOn_1280 {
+		display: none;
+	}
+}
+@media screen and (min-width: 1041px) {
+	.hideOn_desktop {
+		display: none;
+	}
+}
 
 
 
@@ -716,10 +764,6 @@ label.radioWrap {
 .table__mainColumn {
 	display: table-cell;
 	vertical-align: top;
-/*	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;*/
 }
 
 

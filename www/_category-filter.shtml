@@ -6,7 +6,7 @@
 
 	<div class="filtersList__wrapper">
 
-		<a href="#" class="categoryFilter__closeFilter" title="">&times;</a>
+		<a href="#" class="closeButtom" title="">&times;</a>
 
 		<ul class="filtersList">
 			<li class="view_allFilters" data-selected-all="0">

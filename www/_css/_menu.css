@@ -3,7 +3,7 @@
 	min-width: 768px;
 	height: 60px;
 	background: #000000;
-	position: fixed;
+	position: absolute;
 	z-index: 9999;
 	color: #fff;
 	top: 0;
@@ -297,6 +297,11 @@
 		display: none;
 	}
 }
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.header__searchButton {
+		margin-left: 10px;
+	}
+}
 
 
 
@@ -306,63 +311,74 @@
 	float: right;
 	position: relative;
 	z-index: 1;
+	width: 100%;
 }
 .headerSearch__form {
+	overflow: hidden;
+	height: 60px;
+	width: 0;
+	opacity: 0;
 	right: 0;
 	top: 0;
 	position: absolute;
 	background: #000;
 	display: none;
-	width: 0px;
-	width: 311px;
-	padding: 15px 0 0 13px;
+	padding: 14px 0 10px 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
-/*.headerSearch__form.state_open {
+
+.headerSearch__input {
+	border: none;
+	padding: 8px 80px 8px 35px;
+	height: 33px;
+	background: #fff;
+	color: #000;
+	font-size: 15px;
+	float: left;
+	position: relative;
+	width: calc(100% - 45px)
+}
+.headerSearch__input::-webkit-input-placeholder {
+	color: #a9a9a9;
+}
+.headerSearch__input::-moz-placeholder {
+	color: #a9a9a9;
+}
+.headerSearch__input:-moz-placeholder {
+	color: #a9a9a9;
+}
+.headerSearch__input:-ms-input-placeholder {
+	color: #a9a9a9;
+}
+
+.headerSearch__form:after {
+	opacity: .4;
 	display: block;
-}*/
-
-.headerSearch__form .headerSearch__input {
-	border: 1px solid #fff;
-/*	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
-	-o-border-radius: 3px;
-	border-radius: 3px;*/
-	padding: 6px 100px 8px 10px;
-	background: transparent;
-	color: #fff;
-	font-size: 12px;
-}
-.headerSearch__form .headerSearch__input::-webkit-input-placeholder {
-	color: #a9a9a9;
-	font-style: italic;
-}
-.headerSearch__form .headerSearch__input::-moz-placeholder {
-	color: #a9a9a9;
-	font-style: italic;
-}
-.headerSearch__form .headerSearch__input:-moz-placeholder {
-	color: #a9a9a9;
-	font-style: italic;
-}
-.headerSearch__form .headerSearch__input:-ms-input-placeholder {
-	color: #a9a9a9;
-	font-style: italic;
-}
-
-.headerSearch__form .headerSearch__button {
+	content: "";
 	position: absolute;
-	right: 0;
-	top: 15px;
+	left: 0px;
+	top: 14px;
 	background: transparent;
 	border: 0;
 	background-image: url(../_images/icons_sprite.png);
-	background-position: 0 -3px;
+	background-position: 0 -71px;
 	width: 35px;
-	height: 30px;
-	transition: none;
+	height: 33px;
+}
+/*.headerSearch__form .headerSearch__button {
 }
 .headerSearch__form .headerSearch__button:hover {
 	background-position: 0 -38px;
+}*/
 
+
+
+.headerSearch__form .closeButtom {
+	color: #fff;
+	padding-left: 20px;
+	float: right;
+    margin-top: -2px;
 }

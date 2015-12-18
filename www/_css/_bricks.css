@@ -5,21 +5,7 @@
 
 
 
-@media screen and (max-width: 1023px) {
-	.hideOn_768 {
-		display: none;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1296px) {
-	.hideOn_1024 {
-		display: none;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.hideOn_1280 {
-		display: none;
-	}
-}
+
 
 
 .bricks__wrapper {
@@ -376,17 +362,15 @@
 
 
 
-.brick.view_imageSquare {
-	height: 330px;
-}
-.brick.view_imageSquare h2 {
+.brick.view_authors h2 {
 	margin-bottom: 10px;
 }
-.brick.view_imageSquare .brick__image {
-	height: 70px;
-	padding-top: 70px;
+.brick.view_authors .brick__image {
+	height: 50px;
+	padding-top: 50px;
+	width: 150px;
 }
-.brick.view_imageSquare .brick__text {
+.brick.view_authors .brick__text {
 	font-size: 16px;
 }
 

@@ -101,36 +101,24 @@
 		width: 22%;
 		margin: 0 3% 22px 0;
 	}
-/*	.brick.view_mini:nth-child(4n) {
-		margin-right: 0;
-	}*/
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.brick.view_mini {
 	    width: 14.66667%;
 		margin: 0 2% 22px 0;
 	}
-/*	.brick.view_mini:nth-child(6n) {
-		margin-right: 0;
-	}*/
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
 	.brick.view_mini {
 		width: 139px;
 		margin: 0 22px 22px 0;
 	}
-/*	.brick.view_mini:nth-child(6n) {
-		margin-right: 0;
-	}*/
 }
 @media screen and (min-width: 1297px) {
 	.brick.view_mini {
 		width: 142px;
 		margin: 0 16px 16px 0;
 	}
-/*	.brick.view_mini:nth-child(8n) {
-		margin-right: 0;
-	}*/
 }
 
 
@@ -154,6 +142,33 @@
 
 
 
-
-
+.brick.view_authors {
+	height: 220px;
+}
+@media screen and (max-width: 1023px) {
+	.brick.view_authors {
+		height: 270px;
+		width: 22%;
+		margin: 0 3% 22px 0;
+	}
+}
+/*@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.brick.view_authors {
+        width: 31.33333%;
+		margin: 0 2% 22px 0;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.brick.view_authors {
+		width: 300px;
+		margin: 0 22px 22px 0;
+	}
+}
+@media screen and (min-width: 1297px) {
+	.brick.view_authors {
+		width: 300px;
+		margin: 0 16px 16px 0;
+	}
+}
+*/
 

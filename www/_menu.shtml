@@ -1,6 +1,19 @@
 <div class="headerPanel">
 
-	<div class="wrapper paddings_side">
+	<div class="wrapper paddings_side clearfix">
+	
+		<div class="headerSearch">
+			<div class="headerSearch__form">
+				<form>
+					<input class="headerSearch__input" type="text" placeholder="Искать по Ридусу">
+					<a class="yellowButton headerSearch__button" href="" title="">
+						найти
+						<i class="corner"><!-- corner --></i>
+					</a>
+					<a href="#" class="closeButtom">&times;</a>
+				</form>
+			</div>
+		</div>	
 
 		<a href="#" class="mobileMenuButton">
 			<i class="icon_hamburger"><!-- ||| --></i>	
@@ -12,23 +25,10 @@
 			<img src="_images/logo.png" alt="РИДУС">
 		</a>
 
-
-
 		<a class="header__loginButton" href="#">&nbsp;</a>
+		<a class="header__searchButton" href="#">&nbsp;</a>
 
-		<div class="headerSearch">
-			<form>
-				<div class="headerSearch__form">
-					<input class="headerSearch__input" type="text">
-					<button class="headerSearch__button" type="submit">&nbsp;</button>
-				</div>
-				<a class="header__searchButton" href="#">&nbsp;</a>
-			</form>
-		</div>	
-
-
-
-		<!--#include virtual="_yellowbutton.shtml?text=1"-->
+		<!--#include virtual="_yellowbutton.shtml?text=1&hided=1"-->
 		<!--#include virtual="_dayinfo.shtml"-->
 
 		<menu class="menu">

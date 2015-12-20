@@ -480,46 +480,46 @@ $(function() {
 	// новости в желтой плитке по высоте 
 	// ======================================
 
-  	$( ".view_yellow" ).each(function(){
-		var visibilityFlag = "";
-  		if ( $(this).hasClass("hideOn_1280")) {
-  			$(this).removeClass("hideOn_1280");
-  			visibilityFlag += "hideOn_1280 ";
-  		}
-  		if ( $(this).hasClass("hideOn_1024")) {
-  			$(this).removeClass("hideOn_1024");
-  			visibilityFlag += "hideOn_1024 ";
-  		}
-  		if ( $(this).hasClass("hideOn_768")) {
-  			$(this).removeClass("hideOn_768");
-  			visibilityFlag += "hideOn_768 ";
-  		}
-    	if ( $(this).has(".newsList").length) {
+  // 	$( ".view_yellow" ).each(function(){
+		// var visibilityFlag = "";
+  // 		if ( $(this).hasClass("hideOn_1280")) {
+  // 			$(this).removeClass("hideOn_1280");
+  // 			visibilityFlag += "hideOn_1280 ";
+  // 		}
+  // 		if ( $(this).hasClass("hideOn_1024")) {
+  // 			$(this).removeClass("hideOn_1024");
+  // 			visibilityFlag += "hideOn_1024 ";
+  // 		}
+  // 		if ( $(this).hasClass("hideOn_768")) {
+  // 			$(this).removeClass("hideOn_768");
+  // 			visibilityFlag += "hideOn_768 ";
+  // 		}
+  //   	if ( $(this).has(".newsList").length) {
 
-    		var brickHeight = $(this).innerHeight();
+  //   		var brickHeight = $(this).innerHeight();
 
-	    	var headerHeight = 0;
-	    	var footerHeight = 0;
-	    	headerHeight += $(this).find(".brick__header").outerHeight();
-	    	footerHeight += $(this).find(".brick__footer").outerHeight();
+	 //    	var headerHeight = 0;
+	 //    	var footerHeight = 0;
+	 //    	headerHeight += $(this).find(".brick__header").outerHeight();
+	 //    	footerHeight += $(this).find(".brick__footer").outerHeight();
 
-	    	var newslistHeight = $(this).find(".newsList").height();
+	 //    	var newslistHeight = $(this).find(".newsList").height();
 
-	    	var sumHeight = headerHeight + footerHeight + newslistHeight;
+	 //    	var sumHeight = headerHeight + footerHeight + newslistHeight;
 
-	    	var lastDetached;
-			while (sumHeight > brickHeight) {
-				lastDetached = $(this).find(".newsList li").last().detach();
-				newslistHeight = $(this).find(".newsList").height();
-				sumHeight = headerHeight + footerHeight + newslistHeight;
-			}
-			lastDetached.appendTo( $(this).find(".newsList") ); // возвращаем последний удаленный
+	 //    	var lastDetached;
+		// 	while (sumHeight > brickHeight) {
+		// 		lastDetached = $(this).find(".newsList li").last().detach();
+		// 		newslistHeight = $(this).find(".newsList").height();
+		// 		sumHeight = headerHeight + footerHeight + newslistHeight;
+		// 	}
+		// 	lastDetached.appendTo( $(this).find(".newsList") ); // возвращаем последний удаленный
 
-   		}
-   		if (visibilityFlag != "") {
-   			$(this).addClass(visibilityFlag);
-   		}
-    });
+  //  		}
+  //  		if (visibilityFlag != "") {
+  //  			$(this).addClass(visibilityFlag);
+  //  		}
+  //   });
 
 
 

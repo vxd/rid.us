@@ -5,6 +5,11 @@
 	<!--#include virtual="_head.shtml"-->
 	<link href="_css/home.css" rel="stylesheet" type="text/css">
 
+	<!-- файлы видеоплеера -->
+	<script src="jwplayer/jwplayer.js" type="text/javascript"></script>
+	<script>jwplayer.key="00DvZV0BV0Wm4az/8jnnOlON+elKEaUrD1Cddg==";</script>
+	<link rel="stylesheet" type="text/css" href="jwplayer/skins/translation.css"></link>
+
 </head>
 <body class="page_home" itemscope itemtype="http://schema.org/WebPage">
 
@@ -20,41 +25,61 @@
 
 			    <div class="bricks__wrapper">
 
-		            <div class="brick view_yellow hideOn_1024 hideOn_768">
-		            	<h4 class="brick__header view_yellow">
-							<a href="#" class="brick__headerLink view_arrowed" title="">Бездна новостей</a>
-						</h4>
-						<!--#include virtual="bricks/newslist.shtml?banner=none"-->
-						<a href="#" class="brick__footer" title="">
-							Все новости
-						</a>
+		            <div class="brick view_2x view_withTranslation hideOn_768">
+
+		            	<div class="translation_wrapper">
+							<div id="translationPlayer"></div>
+							<a href="#" class="closeButtom">&times;</a>
+						</div>
+
+				        <div class="brick view_yellow">
+				        	<h4 class="brick__header view_yellow">
+								<a href="#" class="brick__headerLink view_arrowed" title="">Бездна новостей</a>
+							</h4>
+							<!--#include virtual="bricks/newslist.shtml?banner=none"-->
+				        </div>
+
+						<div class="brick view_grey hideOn_1280">
+							<!--#include virtual="bricks/main-for-today.shtml"-->
+						</div>
+
 		            </div>
 
 		            <!--#include virtual="slider.shtml"-->
 
-					<div class="brick view_grey">
+
+
+			        <div class="brick view_yellow hideOn_1024 hideOn_1280">
+			        	<h4 class="brick__header view_yellow">
+							<a href="#" class="brick__headerLink view_arrowed" title="">Бездна новостей</a>
+						</h4>
+						<!--#include virtual="bricks/newslist.shtml?banner=none"-->
+			        </div>
+
+
+		            <div class="brick view_withTranslation hideOn_1024 hideOn_1280">
+
+		            	<div class="translation_wrapper">
+							<div id="translationPlayerMobile"></div>
+							<a href="#" class="closeButtom">&times;</a>
+						</div>
+
+						<div class="brick view_grey hideOn_1280">
+							<!--#include virtual="bricks/main-for-today.shtml"-->
+						</div>
+
+		            </div>
+
+
+					<div class="brick view_grey hideOn_1024 hideOn_768">
 						<!--#include virtual="bricks/main-for-today.shtml"-->
 					</div>
 
-
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
-		            </div>
 		            <div class="brick hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
 		            </div>
 
-		            <div class="brick view_yellow hideOn_1280">
-		            	<h4 class="brick__header view_yellow">
-							<a href="#" class="brick__headerLink view_arrowed" title="">Бездна новостей</a>
-						</h4>
-						<!--#include virtual="bricks/newslist.shtml?banner=none"-->
-						<a href="#" class="brick__footer" title="">
-							Все новости
-						</a>
-		            </div>
-
-		            <div class="brick hideOn_1024 hideOn_768">
+		            <div class="brick hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
 		            </div>
 					<div class="brick hideOn_1024 hideOn_768">
@@ -630,6 +655,90 @@
 </a>
 
 <!--#include virtual="_footer.shtml"-->
+
+<script type="text/javascript">
+    var transl = jwplayer("translationPlayer").setup({
+        file: "jwplayer/video/sample.flv",
+        image: "http://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",
+		width: "100%",
+		height: 190,
+		// aspectratio: "16:9",
+        autostart: true,
+        primary: 'flash',
+        // mute: true,
+        skin: {
+        	name: "translation"
+        }
+    });
+
+    var translMobile = jwplayer("translationPlayerMobile").setup({
+        file: "jwplayer/video/sample.flv",
+		width: "100%",
+		height: 42,
+        autostart: false,
+        primary: 'flash',
+        skin: {
+        	name: "translation"
+        }
+    });
+
+
+
+    transl.onReady(function(){
+    	$(".jw-display-icon-container").hide();
+
+    	// var otherBrichHeight = $(".view_withTranslation").height() -
+    	// 					$(".translation_wrapper").outerHeight(true);
+    	// $(".translation_wrapper").next().height(otherBrichHeight)
+
+
+	    $(".translation_wrapper .closeButtom").on('click', function() {
+	    	$(".translation_wrapper").detach();
+	    	return false;
+	    });
+    });
+
+    transl.onBuffer(function(){
+    	$(".jw-display-icon-container").show();
+    });
+
+	var firstPlay = true;
+    transl.onPlay(function(){
+    	if (firstPlay) {
+		    transl.setVolume(0);
+		    transl.setMute(true);
+    		firstPlay = false;
+    	}
+    	$(".jw-display-icon-container").hide();
+    });
+
+    var doingResize = false;
+	$(window).resize(function(event){
+		translMobile.pause(true);
+		transl.pause(true);
+	    doingResize = true;
+	});
+
+	setInterval(function() {
+	    if (doingResize) {
+	        translMobile.pause();
+	        transl.pause();
+	        doingResize = false;
+	    }
+	}, 1000);
+
+
+
+
+    translMobile.onReady(function(){
+    	$(".jw-display-icon-container").hide();
+    });
+
+
+
+
+
+</script>
 
 </body>
 </html>

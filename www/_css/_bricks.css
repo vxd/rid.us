@@ -564,7 +564,7 @@
 	border-bottom: 1px solid #eee;
 }
 .todayMainNewsList {
-	padding: 20px 15px;
+	padding: 20px 18px;
 }
 .todayMainNewsList__item {
 	padding-left: 36px;
@@ -577,7 +577,7 @@
 	content: "";
 	width: 14px;
 	height: 12px;
-	top: 5px;
+	top: 6px;
 	left: 0;
 	background: #ffd051;
 }
@@ -585,16 +585,128 @@
 	display: block;
 	position: absolute;
 	content: "";
-	top: 5px;
+	top: 6px;
 	left: 0;
 	border: 6px solid transparent;
     border-left: 3px solid #fff;
 }
 .todayMainNewsList__link {
 	font-family: 'Roboto Slab', serif;
-	font-size: 17px;
+	font-size: 18px;
 	font-weight: bold;
 	color: #000;
 	text-decoration: none;
-	line-height: 1.3;
+	line-height: 1.4;
+}
+
+@media screen and (min-width: 1024px) {
+	.view_withTranslation .todayMainNewsList__link {
+		font-size: 16px;
+		font-weight: normal;
+		font-family: 'PT Sans', sans-serif;
+		line-height: 1.35;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.view_withTranslation .brick {
+	margin: 0;
+	width: 100%;
+}
+
+
+@media screen and (max-width: 1023px) {
+	.view_withTranslation .brick {
+		height: 335px;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.view_withTranslation {
+		float: right;
+		height: 822px; /* = x2 + margin */
+	}
+	.view_withTranslation .brick {
+		height: 294px;  
+	}
+	.view_withTranslation .brick.view_yellow {
+		margin-bottom: 22px;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.view_withTranslation {
+		float: right;
+		height: 822px; /* = x2 + margin */
+	}
+	.view_withTranslation .brick {
+		height: 294px;  
+	}
+	.view_withTranslation .brick.view_yellow {
+		margin-bottom: 22px;
+	}
+}
+@media screen and (min-width: 1297px) {
+	.view_withTranslation {
+		height: 816px;  /* = x2 + margin */
+	}
+	.view_withTranslation .brick {
+		height: 610px;  
+	}
+}
+
+
+
+
+
+.translation_wrapper {
+	position: relative;
+	height: 190px;
+	background: #333;
+}
+@media screen and (max-width: 1023px) {
+	.translation_wrapper {
+		margin-bottom: 22px;
+		height: 42px;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.translation_wrapper {
+		margin-bottom: 22px;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.translation_wrapper {
+		margin-bottom: 22px;
+	}
+}
+@media screen and (min-width: 1297px) {
+	.translation_wrapper {
+		margin-bottom: 16px;
+	}
+}
+.translation_wrapper .closeButtom {
+	position: absolute;
+	bottom: 4px;
+	right: 12px;
 }

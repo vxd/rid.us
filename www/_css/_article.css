@@ -23,13 +23,17 @@
 
 
 
-
+.articleInfo__avatarContainer {
+	margin-bottom: 20px;
+	position: relative;
+	display: flex;
+    align-items: center;
+}
 
 
 .articleInfo {
 	font-size: 14px;
 	color: #848484;
-	margin-bottom: 20px;
 }
 .articleInfo a {
 	text-decoration: underline;
@@ -43,10 +47,10 @@
 
 
 .articleInfo__avatarContainer .articleInfo {
-	float: left;
+/*	float: left;
 	padding-left: 10px;
 	border-left: 2px solid #dbdbdb;
-	min-height: 44px;
+	min-height: 44px;*/
 }
 
 

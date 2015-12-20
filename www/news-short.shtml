@@ -17,11 +17,21 @@
     <div class="table">
         <div class="table__mainColumn">
 
+            <ul class="textTabs view_dotBetween view_h5 clearfix">
+                <li><a href="#" title="">Новости кратко</a></li>
+                <li><a href="#" title="">Политика</a></li>
+            </ul>
+
             <!--#include virtual="_article-short.shtml"-->
 
             <div class="clearfix" style="margin-bottom: 30px; background: #eee">
                 [yandex direct вставлять сюда]
             </div>
+
+            <ul class="textTabs view_dotBetween view_h5 clearfix">
+                <li><a href="#" title="">Новости кратко</a></li>
+                <li><a href="#" title="">Политика</a></li>
+            </ul>
 
             <!--#include virtual="_article-short.shtml"-->
 
@@ -44,6 +54,12 @@
             </div>
 
             <a class="stickedSlideHere" data-stickedSlideHere="1"></a>
+
+            <ul class="textTabs view_dotBetween view_h5 clearfix">
+                <li><a href="#" title="">Новости кратко</a></li>
+                <li><a href="#" title="">Политика</a></li>
+            </ul>
+
             <!--#include virtual="_article-short.shtml"-->
 
             <h1 class="view_centred">
@@ -60,6 +76,12 @@
             </div>
 
             <a class="stickedSlideHere" data-stickedSlideHere="2"></a>
+            
+            <ul class="textTabs view_dotBetween view_h5 clearfix">
+                <li><a href="#" title="">Новости кратко</a></li>
+                <li><a href="#" title="">Политика</a></li>
+            </ul>
+
             <!--#include virtual="_article-short.shtml"-->
 
             <h1 class="view_centred">
@@ -80,6 +102,11 @@
                 </div>            
             </div>
 
+            <ul class="textTabs view_dotBetween view_h5 clearfix">
+                <li><a href="#" title="">Новости кратко</a></li>
+                <li><a href="#" title="">Политика</a></li>
+            </ul>
+
             <!--#include virtual="_article-short.shtml"-->
 
             <div class="contentBackground_blue clearfix padding_top">
@@ -98,6 +125,11 @@
                 </div>
             </div>
             <br><br>
+
+            <ul class="textTabs view_dotBetween view_h5 clearfix">
+                <li><a href="#" title="">Новости кратко</a></li>
+                <li><a href="#" title="">Политика</a></li>
+            </ul>
 
             <!--#include virtual="_article-short.shtml"-->
 

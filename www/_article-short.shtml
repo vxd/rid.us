@@ -1,9 +1,4 @@
 <div class="article">
-    <ul class="textTabs view_dotBetween view_h5 clearfix">
-        <li><a href="#" title="">Новости кратко</a></li>
-        <li><a href="#" title="">Политика</a></li>
-    </ul>
-
 	<h1 class="article__title">
 		Кличко возглавил партию Порошенко
 		<div class="countersBlock">
@@ -20,7 +15,6 @@
 	</h1>
 
 
-
 	<div class="articleInfo__avatarContainer clearfix">
 		<a class="articleInfo__avatar" href="" title="">
 			<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt=""/>
@@ -29,7 +23,6 @@
 			<li>21 августа, 12:29</li>
 			<li><a href="" title="">Екатерина Трофимова</a>, журналист-эксперт в международной сфере</li>
 		</ul>
-		
 	</div>
 
 	<div class="bricks__wrapper clearfix">

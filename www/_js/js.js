@@ -1,69 +1,8 @@
 $(document).ready(function() {
 
-    $('.slider').each(function () {
-	    var imagesSlider = new Swiper($(this), {
-	        pagination: $(this).find('.swiper-pagination'),
-	        paginationClickable: true,
-	        loop: true,
-	        // width: 616,
-	        // autoplay: 3000,
-	        // observeParents: true,
-	        autoplayDisableOnInteraction: false
-	    });
 
 
 
-    })
-
-
- //    фикс для бага с шириной слайдера внутри таблицы
-	// $(window).resize(function(){  
-	// 	setTimeout(function(){		
-	// 		sliderWidth();
-	// 	}, 60);
-	// });
-
-	// function sliderWidth() {
-	// 	$('.table__mainColumn .slider').hide();
-	// 	var windowWidth = $(document).width();
-	// 	if (windowWidth <= 1040 && windowWidth >= 1024 ) {
-	// 		var sliderWidth = $('.table__mainColumn .slider').parent().width();
-	// 		$('.table__mainColumn .slider').width(sliderWidth);
-	// 	}
-	// 	if (windowWidth > 1040 || windowWidth < 1024) {
-	// 		$('.table__mainColumn .slider').width("");
-	// 	}
-	// 	$('.table__mainColumn .slider').show();
-	// }; 
-	// sliderWidth();
-
-
-
-
-
-
-
-
-    $('.pageSwiper').each(function () {
-	    var pageSwiper = new Swiper($(this), {
-	        nextButton: $(this).parent().find('.swiper-button-next'),
-	        prevButton: $(this).parent().find('.swiper-button-prev'),
-	        spaceBetween: 16,
-	        breakpoints: {
-	            1296: {
-	                spaceBetween: 22
-	            },
-	            1040: {
-	                spaceBetween: "2%",
-	                grabCursor: true
-	            },
-	            1023: {
-	                spaceBetween: "3%",
-	                grabCursor: true
-	            }
-	        }
-	    });
-    });
 
 
 
@@ -219,46 +158,46 @@ $(function() {
 	// });
 
 
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('.headerPanel').outerHeight();
+	// Hide Header on on scroll down
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeight = $('.headerPanel').outerHeight();
 
-$(window).scroll(function(event){
-    didScroll = true;
-});
+	$(window).scroll(function(event){
+	    didScroll = true;
+	});
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
+	setInterval(function() {
+	    if (didScroll) {
+	        hasScrolled();
+	        didScroll = false;
+	    }
+	}, 400);
 
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('.headerPanel').removeClass('nav-down').addClass('nav-up');
-        $(".sticked").css( { paddingTop: 0} );
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('.headerPanel').removeClass('nav-up').addClass('nav-down');
-	        $(".sticky").css( { paddingTop: 60} );
-        }
-    }
-    
-    lastScrollTop = st;
-}
+	function hasScrolled() {
+	    var st = $(this).scrollTop();
+	    
+	    // Make sure they scroll more than delta
+	    if(Math.abs(lastScrollTop - st) <= delta)
+	        return;
+	    
+	    // If they scrolled down and are past the navbar, add class .nav-up.
+	    // This is necessary so you never see what is "behind" the navbar.
+	    if (st > lastScrollTop && st > navbarHeight){
+	        // Scroll Down
+	        $('.headerPanel').removeClass('nav-down').addClass('nav-up');
+	        $(".sticked").css( { paddingTop: 0} );
+	    } else {
+	        // Scroll Up
+	        if(st + $(window).height() < $(document).height()) {
+	            $('.headerPanel').removeClass('nav-up').addClass('nav-down');
+		        $(".sticky").css( { paddingTop: 60} );
+	        }
+	    }
+	    
+	    lastScrollTop = st;
+	}
 
 
 
@@ -285,6 +224,93 @@ function hasScrolled() {
 
 
 
+
+	// ======================================
+	// слайдер
+	// ======================================
+
+
+    $('.pageSwiper').each(function () {
+	    var pageSwiper = new Swiper($(this), {
+	        nextButton: $(this).parent().find('.swiper-button-next'),
+	        prevButton: $(this).parent().find('.swiper-button-prev'),
+	        spaceBetween: 16,
+	        breakpoints: {
+	            1296: {
+	                spaceBetween: 22
+	            },
+	            1040: {
+	                spaceBetween: "2%",
+	                grabCursor: true
+	            },
+	            1023: {
+	                spaceBetween: "3%",
+	                grabCursor: true
+	            }
+	        }
+	    });
+    });
+
+
+
+
+    $('.slider').each(function () {
+	    var imagesSlider = new Swiper($(this), {
+	        pagination: $(this).find('.swiper-pagination'),
+	        paginationClickable: true,
+	        loop: true,
+	        nested: true,
+	        // width: 616,
+	        // autoplay: 3000,
+	        // observeParents: true,
+	        observer: true,
+	        setWrapperSize: true,
+	        autoplayDisableOnInteraction: false
+	    });
+
+		var doingScroll = false;
+
+		$(window).scroll(function(event){
+		    doingScroll = true;
+		});
+
+		setInterval(function() {
+		    if (doingScroll) {
+		        imagesSlider.updateSlidesSize();
+		        doingScroll = false;
+		    }
+		}, 100);
+
+    })
+
+
+	// фикс для бага с шириной слайдера внутри таблицы
+	// var doingScroll = false;
+
+	// $(window).scroll(function(event){
+	//     doingScroll = true;
+	// });
+
+	// setInterval(function() {
+	//     if (doingScroll) {
+	//         sliderWidth();
+	//         doingScroll = false;
+	//     }
+	// }, 100);
+
+	// function sliderWidth() {
+	// 	$('.table__mainColumn .slider').hide();
+	// 	var windowWidth = $(document).width();
+	// 	if (windowWidth >= 1024  && windowWidth <= 1040) {
+	// 		var sliderWidth = $('.table__mainColumn .slider').parent().width();
+	// 		$('.table__mainColumn .slider').width(sliderWidth);
+	// 	}
+	// 	if (windowWidth < 1024 || windowWidth > 1040) {
+	// 		$('.table__mainColumn .slider').width("");
+	// 	}
+	// 	$('.table__mainColumn .slider').show();
+	// }; 
+	// sliderWidth();
 
 
 
@@ -481,11 +507,13 @@ function hasScrolled() {
 
 	    	var sumHeight = headerHeight + footerHeight + newslistHeight;
 
+	    	var lastDetached;
 			while (sumHeight > brickHeight) {
-				$(this).find(".newsList li").last().detach();
+				lastDetached = $(this).find(".newsList li").last().detach();
 				newslistHeight = $(this).find(".newsList").height();
 				sumHeight = headerHeight + footerHeight + newslistHeight;
 			}
+			lastDetached.appendTo( $(this).find(".newsList") ); // возвращаем последний удаленный
 
    		}
    		if (visibilityFlag != "") {

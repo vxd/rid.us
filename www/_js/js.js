@@ -138,52 +138,53 @@ $(function() {
 
 
 	/* скролл */
-    var $centerHeadBar = $('.headerPanel');
-    var headerHeight = $centerHeadBar.height();
-    var headerPosition = $centerHeadBar.offset().top;
-    var headerInitialPosition = headerPosition;
-    var lastPosition = 0;
-    var scrollUp = false;
-    var compensation;
+    // var $centerHeadBar = $('.headerPanel');
+    // var headerHeight = $centerHeadBar.height();
+    // var headerPosition = $centerHeadBar.offset().top;
+    // var headerInitialPosition = headerPosition;
+    // var lastPosition = 0;
+    // var scrollUp = false;
+    // var compensation;
 
 
+    // $(window).scroll(function() {
+    //     $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+    //     var position = $(window).scrollTop();
+    //     if (lastPosition > position) {
+    //     	// скролл вверх
+    //         // if (position <= headerInitialPosition) {
+    //             // $centerHeadBar.css( { position: 'static', top: '0px' } );
+    //         // } else {
+    //             if (!scrollUp) {
+    //                 headerPosition = position - headerHeight;
+    //                 // $centerHeadBar.css( { position: 'fixed', top: headerPosition + 'px' } );
+    //                 $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
+    //             } else {
+    //                 if (position <= headerPosition) {
+    //                     $centerHeadBar.css( { position: 'fixed', top: '0px' } );
+    //                     // $centerHeadBar.css( { position: 'absolute', top: position } );
+    //                 }
+    //             }
 
-    $(window).scroll(function() {
-        $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
-        var position = $(window).scrollTop();
-        if (lastPosition > position) {
-            // if (position <= headerInitialPosition) {
-                // $centerHeadBar.css( { position: 'static', top: '0px' } );
-            // } else {
-                if (!scrollUp) {
-                    headerPosition = position - headerHeight;
-                    // $centerHeadBar.css( { position: 'fixed', top: headerPosition + 'px' } );
-                    $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
-                } else {
-                    if (position <= headerPosition) {
-                        $centerHeadBar.css( { position: 'fixed', top: '0px' } );
-                        // $centerHeadBar.css( { position: 'absolute', top: position } );
-                    }
-                }
-
-		        compensation = headerHeight - position + headerPosition;
-		        compensation = compensation < 60 ? compensation : 60;
-		        $(".sticked ").css( { paddingTop: compensation} );
-            // }
-            scrollUp = true;
-        } else {
-            scrollUp = false;
-            headerPosition = $centerHeadBar.offset().top;
-            $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
+		  //       compensation = headerHeight - position + headerPosition;
+		  //       compensation = compensation < 60 ? compensation : 60;
+		  //       $(".sticked ").css( { paddingTop: compensation} );
+    //         // }
+    //         scrollUp = true;
+    //     } else {
+    //     	// скролл вниз
+    //         scrollUp = false;
+    //         headerPosition = $centerHeadBar.offset().top;
+    //         $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
 			       
-	        compensation = headerHeight - position + headerPosition;
-	        compensation = compensation < 0 ? 0 : compensation;
-	        $(".sticked ").css( { paddingTop: compensation} );
-        }
+	   //      compensation = headerHeight - position + headerPosition;
+	   //      compensation = compensation < 0 ? 0 : compensation;
+	   //      $(".sticked ").css( { paddingTop: compensation} );
+    //     }
 
 
-        lastPosition = position;
-    });
+    //     lastPosition = position;
+    // });
 
 	// var shown = true;
  //    $(window).scroll(function() {
@@ -218,7 +219,46 @@ $(function() {
 	// });
 
 
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('.headerPanel').outerHeight();
 
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('.headerPanel').removeClass('nav-down').addClass('nav-up');
+        $(".sticked").css( { paddingTop: 0} );
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('.headerPanel').removeClass('nav-up').addClass('nav-down');
+	        $(".sticky").css( { paddingTop: 60} );
+        }
+    }
+    
+    lastScrollTop = st;
+}
 
 
 

@@ -861,3 +861,7 @@ label.radioWrap {
 
 
 
+.sticked {
+    transition: padding-top 0.1s ease-in-out;
+
+}

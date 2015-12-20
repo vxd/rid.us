@@ -131,11 +131,11 @@
 
 
 .brick.view_authors {
-	height: 220px;
+	height: 235px;
 }
 @media screen and (max-width: 1023px) {
 	.brick.view_authors {
-		height: 270px;
+		height: 277px;
 		width: 22%;
 		margin: 0 3% 22px 0;
 	}

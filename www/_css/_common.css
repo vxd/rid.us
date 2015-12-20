@@ -333,26 +333,7 @@ label.radioWrap {
 
 
 
-@media screen and (max-width: 1023px) {
-	.hideOn_768 {
-		display: none;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1296px) {
-	.hideOn_1024 {
-		display: none;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.hideOn_1280 {
-		display: none;
-	}
-}
-@media screen and (min-width: 1041px) {
-	.hideOn_desktop {
-		display: none;
-	}
-}
+
 
 
 
@@ -845,9 +826,38 @@ label.radioWrap {
 
 
 
-.stickedSlide {
-	
+@media screen and (max-width: 1023px) {
+	.hideOn_768 {
+		display: none;
+	}
 }
-.stickedSlide.state_hidden {
-	display: none;
+@media screen and (min-width: 1024px) and (max-width: 1296px) {
+	.hideOn_1024 {
+		display: none;
+	}
 }
+@media screen and (min-width: 1297px) {
+	.hideOn_1280 {
+		display: none;
+	}
+}
+@media screen and (min-width: 1041px) {
+	.hideOn_desktop {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

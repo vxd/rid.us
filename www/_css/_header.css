@@ -50,11 +50,12 @@ header {
 .yellowButton .corner {
 	display: block;
 	position: absolute;
-	width: 10px;
+	width: 11px;
 	height: 23px;
 	background: #ffd051;
     bottom: 0px;
     right: -10px;
+
 }
 .yellowButton .corner:before {
 	display: block;
@@ -65,6 +66,9 @@ header {
     border: 5px solid transparent;
     border-bottom-color: #000;
     border-left-color: #000;
+	-webkit-box-shadow: -1px 0px 0px 0px #ffd051;
+	-moz-box-shadow: -1px 0px 0px 0px #ffd051;
+	box-shadow: -1px 0px 0px 0px #ffd051;
 }
 .yellowButton .corner:after {
 	display: block;

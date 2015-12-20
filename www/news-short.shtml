@@ -43,7 +43,7 @@
                 </div>            
             </div>
 
-            <a id="show1"></a>
+            <a class="stickedSlideHere" data-stickedSlideHere="1"></a>
             <!--#include virtual="_article-short.shtml"-->
 
             <h1 class="view_centred">
@@ -59,7 +59,7 @@
                 </div>
             </div>
 
-            <a id="show2"></a>
+            <a class="stickedSlideHere" data-stickedSlideHere="2"></a>
             <!--#include virtual="_article-short.shtml"-->
 
             <h1 class="view_centred">
@@ -149,13 +149,23 @@
                             </div>
                         </div>
 
-                        <div class="stickedSlide" style="display: none;" data-show-height="show1">
+                        <div class="stickedSlide" style="display: none;">
                             <div class="brick">
                                 <!--#include virtual="bricks/news-simple.shtml?image=3&data=4&count1=120&count2=35&count3=3812"-->
                             </div>
 
                             <div class="brick">
                                 <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
+                            </div>
+                        </div>
+
+                        <div class="stickedSlide" style="display: none;">
+                            <div class="brick">
+                                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+                            </div>
+
+                            <div class="brick">
+                                <!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812"-->
                             </div>
                         </div>
 

@@ -145,10 +145,11 @@ $(function() {
     var lastPosition = 0;
     var scrollUp = false;
     
-    // $centerHeadBar.width($centerHeadBar.width());
-    
+
+
+
     $(window).scroll(function() {
-		$(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+        $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
         var position = $(window).scrollTop();
         if (lastPosition > position) {
             // if (position <= headerInitialPosition) {
@@ -156,10 +157,12 @@ $(function() {
             // } else {
                 if (!scrollUp) {
                     headerPosition = position - headerHeight;
-                    $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
+                    $centerHeadBar.css( { position: 'fixed', top: headerPosition + 'px' } );
+                    // $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
                 } else {
                     if (position <= headerPosition) {
                         $centerHeadBar.css( { position: 'fixed', top: '0px' } );
+                        // $centerHeadBar.css( { position: 'absolute', top: position } );
                     }
                 }
             // }
@@ -171,6 +174,38 @@ $(function() {
         }
         lastPosition = position;
     });
+
+	// var shown = true;
+ //    $(window).scroll(function() {
+ //        $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+ //        var position = $(window).scrollTop();
+ //        if (lastPosition > position) {
+
+ //            headerPosition = position - headerHeight;
+ //            $centerHeadBar.css( { position: 'fixed', top: 0 } );
+ //            if (!shown) {
+	//             $centerHeadBar.stop().slideDown(100);
+	//             shown = true;
+ //            }
+ //            scrollUp = true;
+ //        } else {
+ //            scrollUp = false;
+ //            headerPosition = $centerHeadBar.offset().top;
+ //            // $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
+ //            if (shown) {
+	//             $centerHeadBar.stop().slideUp(100);
+	//             shown = false;
+ //            }
+ //        }
+ //        lastPosition = position;
+ //    });
+
+
+
+	// $('.headerPanel').hcSticky({
+	// 	stickTo: document,
+	// 	followScroll: false,
+	// });
 
 
 
@@ -383,7 +418,7 @@ $(function() {
   			$(this).removeClass("hideOn_768");
   			visibilityFlag += "hideOn_768 ";
   		}
-    	if ( $(this).has(".newsList").length != 0 ) {
+    	if ( $(this).has(".newsList").length) {
 
     		var brickHeight = $(this).innerHeight();
 
@@ -446,23 +481,50 @@ $(function() {
 	    // wrapperClassName: 'sidebar-sticky'
 	});
 
+
 	/* показываем в зависимости от позиции */
-	var topShow1 = $("#show1").offset().top;
 	var slides = $(".stickedSlide");
+	if (slides.length) {
 
-    $(window).scroll(function() {
 
-    	var position = $(window).scrollTop();
-    	if (position >= topShow1) {
-    		$(slides[0]).hide();
-    		$(slides[1]).fadeIn(300)
-    	} else {
-     		$(slides[0]).fadeIn(300)
-   			$(slides[1]).hide();
+		var anchors = $(".stickedSlideHere");
+		var showHeightsArray = [];
+		showHeightsArray[0] = 0; // просто, чтоб забить неиспользуемую ячейку
 
-    	}
+		anchors.each(function(){
+			var slideNum = $(this).attr("data-stickedSlideHere")
+			showHeightsArray[slideNum] = $(this).offset().top;
+		})
+		var heightsNum = showHeightsArray.length;
 
-    });
+	    $(window).scroll(function() {
+
+	    	var position = $(window).scrollTop();
+
+			var i;
+			for (i = 0; i < heightsNum; i++) {
+				if (position > showHeightsArray[i]) {
+					slides.hide()
+					$(slides[i]).show()
+					// break
+				}
+			}
+
+
+	    	// if (position >= showHeightsArray[1]) {
+	    	// 	$(slides[0]).hide();
+	    	// 	$(slides[1]).fadeIn(300)
+	    	// } 
+	    	// else {
+	     // 		$(slides[0]).fadeIn(300)
+	   		// 	$(slides[1]).hide();
+
+	    	// }
+
+	    });
+
+	}
+
 
 
 });

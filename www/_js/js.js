@@ -144,7 +144,7 @@ $(function() {
     var headerInitialPosition = headerPosition;
     var lastPosition = 0;
     var scrollUp = false;
-    
+    var compensation;
 
 
 
@@ -157,21 +157,31 @@ $(function() {
             // } else {
                 if (!scrollUp) {
                     headerPosition = position - headerHeight;
-                    $centerHeadBar.css( { position: 'fixed', top: headerPosition + 'px' } );
-                    // $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
+                    // $centerHeadBar.css( { position: 'fixed', top: headerPosition + 'px' } );
+                    $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
                 } else {
                     if (position <= headerPosition) {
                         $centerHeadBar.css( { position: 'fixed', top: '0px' } );
                         // $centerHeadBar.css( { position: 'absolute', top: position } );
                     }
                 }
+
+		        compensation = headerHeight - position + headerPosition;
+		        compensation = compensation < 60 ? compensation : 60;
+		        $(".sticked ").css( { paddingTop: compensation} );
             // }
             scrollUp = true;
         } else {
             scrollUp = false;
             headerPosition = $centerHeadBar.offset().top;
             $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
+			       
+	        compensation = headerHeight - position + headerPosition;
+	        compensation = compensation < 0 ? 0 : compensation;
+	        $(".sticked ").css( { paddingTop: compensation} );
         }
+
+
         lastPosition = position;
     });
 
@@ -484,6 +494,7 @@ $(function() {
 
 	/* показываем в зависимости от позиции */
 	var slides = $(".stickedSlide");
+
 	if (slides.length) {
 
 
@@ -503,23 +514,14 @@ $(function() {
 
 			var i;
 			for (i = 0; i < heightsNum; i++) {
-				if (position > showHeightsArray[i]) {
-					slides.hide()
-					$(slides[i]).show()
-					// break
-				}
+					if (position > showHeightsArray[i]) {
+						slides.hide();
+						$(slides[i]).show();
+					}					
 			}
 
 
-	    	// if (position >= showHeightsArray[1]) {
-	    	// 	$(slides[0]).hide();
-	    	// 	$(slides[1]).fadeIn(300)
-	    	// } 
-	    	// else {
-	     // 		$(slides[0]).fadeIn(300)
-	   		// 	$(slides[1]).hide();
 
-	    	// }
 
 	    });
 

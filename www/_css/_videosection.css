@@ -137,12 +137,8 @@
 .videoPlaylist__item .brick__content h5 a {
 	color: #fff;
 }
-/*.videoPlaylist__item .brick__content h5 a:hover {
-	color: #c64a1b;
-}*/
-.brick.view_floatText .countersBlock {
-	margin: 10px 0 0 0;
-}
+
+
 .videoPlaylist__item .image__wrapper {
 	float: left;
 }

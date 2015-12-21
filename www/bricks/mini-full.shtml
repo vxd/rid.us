@@ -16,18 +16,30 @@
 
 
 <!-- //// конец --> 
-
-<a href="#" class="brick__image">
-<!--#if expr="$image = 1" -->
-	<img src="http://www.ridus.ru/images/2015/11/9/336087/preview_bf6ffdd776.jpg" alt="">
-<!--#endif -->
-<!--#if expr="$image = 2" -->
-	<img src="http://www.ridus.ru/images/2015/11/6/335790/preview_8d38e15379.jpg" alt="">
-<!--#endif -->
-<!--#if expr="$image = 3" -->
-	<img src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg" alt="">
-<!--#endif -->
-</a>
+<div class="brick__side">
+	<a href="#" class="brick__image">
+	<!--#if expr="$image = 1" -->
+		<img src="http://www.ridus.ru/images/2015/11/9/336087/preview_bf6ffdd776.jpg" alt="">
+	<!--#endif -->
+	<!--#if expr="$image = 2" -->
+		<img src="http://www.ridus.ru/images/2015/11/6/335790/preview_8d38e15379.jpg" alt="">
+	<!--#endif -->
+	<!--#if expr="$image = 3" -->
+		<img src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg" alt="">
+	<!--#endif -->
+	</a>
+	<div class="countersBlock">
+		<span class="countersBlock__item view_count1">
+			234 <i class="icon"><!-- icon --></i>
+		</span>
+		<span class="countersBlock__item view_count2">
+			56 <i class="icon"><!-- icon --></i>
+		</span>
+		<span class="countersBlock__item view_count3">
+			88 <i class="icon"><!-- icon --></i>
+		</span>
+	</div>
+</div>
 
 <div class="brick__content">
 <!--#if expr="$data = 1" -->
@@ -57,14 +69,3 @@
 </div>
 
 
-<div class="countersBlock">
-	<span class="countersBlock__item view_count1">
-		234 <i class="icon"><!-- icon --></i>
-	</span>
-	<span class="countersBlock__item view_count2">
-		56 <i class="icon"><!-- icon --></i>
-	</span>
-	<span class="countersBlock__item view_count3">
-		88 <i class="icon"><!-- icon --></i>
-	</span>
-</div>

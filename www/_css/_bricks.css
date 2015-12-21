@@ -188,6 +188,7 @@
 .countersBlock {
 	font-family: 'PT Sans', sans-serif;
     font-size: 11px;
+	height: 15px;
 }
 .countersBlock__item {
     font-weight: bold;
@@ -198,7 +199,7 @@
     position: relative;
 }
 .countersBlock__item.view_count2 {
-    padding: 0 18px 0 17px;
+    padding: 0 18px 0 11px;
     position: relative;
 }
 .countersBlock__item.view_count3 {
@@ -206,7 +207,7 @@
     position: relative;
 }
 .countersBlock__item.view_count4 {
-    padding: 0 12px 0 12px;
+    padding: 0 16px 0 12px;
     position: relative;
 }
 
@@ -224,7 +225,7 @@
 }
 .countersBlock__item.view_count2 .icon {
 	width: 13px;
-    height: 13px;
+    height: 14px;
     right: 0;
     top: 2px;
     background-position: -11px -562px;
@@ -342,6 +343,9 @@
 	height: auto;
 	width: 100%;
 }
+.brick.view_floatText .brick__side{
+	float: left;
+}
 .brick.view_floatText .brick__image {
 	display: block;
 	height: 45px;
@@ -349,18 +353,18 @@
 	padding-top: 45px;
 	margin-bottom: 0;
 	width: 140px;
-	float: left;
 	margin-right: 10px;
 }
 .brick.view_floatText .brick__text {
 	font-size: 14px;
 }
 
-.brick.view_floatText .brick__content,
-.brick.view_floatText .countersBlock {
+.brick.view_floatText .brick__content {
 	margin-left: 150px;
 }
-
+.brick.view_floatText .countersBlock {
+	margin: 10px 0 0 0;
+}
 .brick.view_floatText.view_bottomBorder {
 	border-bottom: 1px dashed #e8e8e8;
 	padding-bottom: 20px;
@@ -694,6 +698,7 @@
 	position: relative;
 	height: 190px;
 	background: #333;
+	overflow: hidden;
 }
 @media screen and (max-width: 1023px) {
 	.translation_wrapper {

@@ -369,7 +369,7 @@
         </div>
 
 
-        
+
         <div class="table__sideColumn hideOn_768">
 
                 <div class="hcSticky__scrollable clearfix">
@@ -383,10 +383,10 @@
                     <div class="brick">
                         <!--#include virtual="bricks/news-simple.shtml?image=3&data=4&count1=120&count2=35&count3=3812"-->
                     </div>
-
                     <div class="brick">
                         <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
                     </div>
+
                 </div>
 
                 <div class="hcSticky__sticky">
@@ -396,7 +396,6 @@
                             <div class="brick view_banner">
                                 <!--#include virtual="bricks/banner-mts.shtml"-->
                             </div>
-
                             <div class="brick view_floatText">
                                 <!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
                             </div>
@@ -415,7 +414,6 @@
                             <div class="brick">
                                 <!--#include virtual="bricks/news-simple.shtml?image=3&data=4&count1=120&count2=35&count3=3812"-->
                             </div>
-
                             <div class="brick">
                                 <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
                             </div>
@@ -425,16 +423,10 @@
                             <div class="brick">
                                 <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
                             </div>
-
                             <div class="brick">
                                 <!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812"-->
                             </div>
                         </div>
-
-
-
-
-
 
                     </div>
                 </div>

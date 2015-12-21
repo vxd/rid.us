@@ -598,6 +598,24 @@ $(function() {
 
 
 
+
+
+
+	// ======================================
+	// разворачиваюзиеся блоки (tags page)
+	// ======================================
+
+
+	$(".hider").on('click', function () {
+
+		var what = $(this).attr("data-id");
+
+		$("#"+what).slideToggle(150).toggleClass("state_hidderHidden");
+		$(this).find("span").toggleClass("state_hidderHidden");
+
+		return false;
+	})
+
 });
 
 

@@ -522,11 +522,11 @@ label.radioWrap {
 	color: #a3a3a3;
 	margin: 0 10px 5px;
 }
-@media screen and (max-width: 1023px) {
+/*@media screen and (max-width: 1023px) {
 	.weather .bottomDatapicker label {
 		display: block;
 	}
-}
+}*/
 
 
 
@@ -864,4 +864,19 @@ label.radioWrap {
 .sticked {
     transition: padding-top 0.1s ease-in-out;
 
+}
+
+
+
+
+
+
+
+
+
+
+/* раскрывашки - стр тэгов */
+
+.state_hidderHidden {
+	display: none;
 }

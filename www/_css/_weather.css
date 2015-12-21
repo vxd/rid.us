@@ -23,7 +23,31 @@
 }
 .weather__image {
     width: 100%;
+    background: url(../_images/weather-block.jpg) center;
+    background-size: cover;
 }
+@media screen and (max-width: 1023px) {
+    .weather__image {
+        height: 350px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+    .weather__image {
+        height: 350px;
+    }
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+    .weather__image {
+        height: 350px;
+    }
+}
+@media screen and (min-width: 1297px) {
+    .weather__image {
+        height: 450px;
+    }
+}
+
+
 .weather__contentWrapper {
     padding: 18px 23px 25px;
 }
@@ -34,7 +58,7 @@
 }
 .weather__contentText {
     font-size: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .weather__readmore {
     font-size: 18px;

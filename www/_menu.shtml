@@ -5,8 +5,8 @@
 		<div class="headerSearch">
 			<div class="headerSearch__form">
 				<form>
-					<input class="headerSearch__input" type="text" placeholder="Искать по Ридусу">
-					<a class="yellowButton headerSearch__button" href="" title="">
+					<input class="search__input" type="text" placeholder="Искать по Ридусу">
+					<a class="yellowButton" href="" title="">
 						найти
 						<i class="corner"><!-- corner --></i>
 					</a>

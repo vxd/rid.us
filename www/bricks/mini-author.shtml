@@ -67,7 +67,7 @@
 </div>
 
 <div class="countersBlock">
-	<span class="countersBlock__item view_count1">
+	<span class="countersBlock__item view_count4">
 		<!--#echo var="count1" --> <i class="icon"><!-- icon --></i>
 	</span>
 	<span class="countersBlock__item view_count3">

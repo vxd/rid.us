@@ -10,28 +10,39 @@
     margin-bottom: 25px;
     counter-increment: step-counter;
     list-style-type: none;
-    padding-left: 45px;
+    padding-left: 55px;
     position: relative;
-}
-.agreement__subList {
-    margin-left: 40px;
-}
-.agreement__subListItem {
-    margin-bottom: 15px;
-    padding-left: 15px;
-    list-style-type: square;
 }
 .agreement__listItem:before {
     content: counter(step-counter);
     position: absolute;
     left: 0;
-    min-width: 18px;
+    min-width: 19px;
     text-align: center;
-    padding: 3px 7px;
-    margin-right: 5px;
+    padding: 3px 9px 3px 7px;
     background-color: #000;
-    color: white;
-    font-size: 24px;
+    color: #fff;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: -2px;
+}
+
+
+/*.agreement__subList {
+    margin-left: 40px;
+}*/
+.agreement__subListItem {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    list-style-type: none;
+    position: relative;
+}
+.agreement__subListItem:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 11px;
+    height: 11px;
+    background: #c64a1b;
+    top: 4px;
 }

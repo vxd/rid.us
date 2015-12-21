@@ -13,21 +13,38 @@
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix errorPages">
 
-  <div class="errorPages__pageStatus pageNotFound">
-      <p class="errorPages__pageStatusText">404</p>
-      <p class="errorPages__linkToIndexPage">
-        <a href="#" class="toIndexPage" title="">Перейти на главную</a>
+  <div class="errorPages__pageStatus">
+      <p class="error__code">404</p>
+      <p class="errorPages__linkWrapper">
+        <a href="#" title="">Перейти на главную</a>
       </p>
   </div>
-  <div class="errorPages__pageErrorTextWrapper">
-      <div class="errorPages__pageErrorText">Такой страницы <b class="errorPages__importantNote">не существует</b>. Попробуйте воспользоваться поиском.</div>
+
+  <div class="errorPages__textWrapper">
+      <h1 class="errorText">
+        Такой страницы <b>не существует</b>.<br>
+         Попробуйте воспользоваться поиском.
+      </h1>
+  </div>
+
+
+  <div class="errorPages__search">
       <form>
-          <div class="errorPages__search">
-              <input class="errorPages__searchInput" type="search" placeholder="Найти интересное" />
-              <button class="errorPages__searchButton" type="submit">Найти</button>
-          </div>
+          <input class="search__input" type="text" placeholder="Искать по Ридусу">
+          <a class="yellowButton" href="" title="">
+          найти
+          <i class="corner"><!-- corner --></i>
+          </a>
       </form>
   </div>
+
+
+
+
+
+
+
+
 
 </section>
 

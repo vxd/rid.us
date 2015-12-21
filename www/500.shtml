@@ -13,14 +13,17 @@
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix errorPages">
 
-    <div class="errorPages__pageStatus serverError">
-        <p class="errorPages__pageStatusText">500</p>
-        <p class="errorPages__linkToIndexPage">
-            <a href="#" class="toIndexPage" title="">Перейти на главную</a>
+    <div class="errorPages__pageStatus">
+        <p class="error__code">500</p>
+        <p class="errorPages__linkWrapper">
+            <a href="#" title="">Перейти на главную</a>
         </p>
     </div>
-    <div class="errorPages__pageErrorTextWrapper">
-        <div class="errorPages__pageErrorText">Произошла <b class="errorPages__importantNote">ошибка</b>. Попробуйте обновить страницу.</div>
+
+    <div class="errorPages__textWrapper">
+        <h1 class="errorText">
+            Произошла <b>ошибка</b>.<br> Попробуйте обновить страницу.
+        </h1>
     </div>
 
 </section>

@@ -7,21 +7,7 @@
     height: 450px;
     background: #f5f5f5;
 }
-.errorPages__pageErrorTextWrapper {
-    margin-left: 430px;
-}
-.errorPages__pageErrorText {
-    height: 250px;
-    padding-top: 50px;
-    margin-bottom: 35px;
-    border-bottom: 2px solid #d4d4d4;
-    font-size: 40px;
-    text-transform: uppercase;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.errorPages__pageStatusText {
+.error__code {
     height: 250px;
     padding-top: 40px;
     -webkit-box-sizing: border-box;
@@ -31,46 +17,74 @@
     font-size: 132px;
     border-bottom: 1px solid #d4d4d4;
 }
-.errorPages__importantNote {
-    font-weight: normal;
+
+
+
+.errorPages__textWrapper {
+    margin-left: 430px;
+    min-height: 250px;
+    margin-bottom: 48px;
+    border-bottom: 2px solid #d4d4d4;
+    padding-top: 59px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.errorText {
+    font-size: 34px;
+    line-height: 1.4;
+}
+
+.errorText b {
     color: #c64a1b;
 }
-.errorPages__importantNote:before {
-    content: '';
-    display: block;
-}
-.errorPages__linkToIndexPage {
+
+
+
+.errorPages__linkWrapper {
     padding-top: 55px;
     border-top: 1px solid #fcfcfc;
     text-align: center;
 }
-.toIndexPage {
+.errorPages__linkWrapper a {
     color: #c64a1b;
     font-weight: bold;
     text-decoration: none;
+    font-size: 18px;
 }
-.toIndexPage:hover {
+.errorPages__linkWrapper a:hover {
     text-decoration: underline;
 }
-.errorPages__search {
-    padding: 0 100px 0 13px;
-    border: 1px solid #dfdfdf;
-    border-radius: 3px;
-    text-align: center;
-    position: relative;
-}
-.errorPages__searchInput {
-    width: 100%;
-    padding: 10px 0;
-    border: 0;
-}
-.errorPages__search .errorPages__searchButton {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100px;
-    padding: 10px 10px 10px 20px;
-    background: #ffd500 url(../_images/icons.png) -408px -65px no-repeat;
-    text-transform: uppercase;
-    color: #000;
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1023px) {
+    .errorPages__pageStatus {
+        float: none;
+        width: auto;
+        height: auto;
+    }
+    .error__code {
+        font-size: 90px;
+        height: auto;
+        padding-top: 10px;
+    }
+    .errorPages__linkWrapper {
+        padding-top: 16px;
+        padding-bottom: 20px;
+    }
+    .errorPages__textWrapper {
+        margin-left: 0;
+        padding-top: 40px;
+        min-height: 0;
+        border-bottom: none;
+    }
+    .errorPages__search {
+        margin-left: 0;
+    }
 }

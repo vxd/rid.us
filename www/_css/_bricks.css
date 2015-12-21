@@ -205,6 +205,10 @@
     padding: 0 15px 0 12px;
     position: relative;
 }
+.countersBlock__item.view_count4 {
+    padding: 0 12px 0 12px;
+    position: relative;
+}
 
 .countersBlock__item .icon {
 	background: url(../_images/icons_sprite.png) no-repeat;
@@ -231,6 +235,13 @@
     right: 0;
     top: 3px;
     background-position: -25px -562px;
+}
+.countersBlock__item.view_count4 .icon {
+	width: 9px;
+    height: 11px;
+    right: 0;
+    top: 2px;
+    background-position: -37px -562px;
 }
 
 

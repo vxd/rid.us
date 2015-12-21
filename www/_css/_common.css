@@ -70,8 +70,14 @@ h1.view_centred {
     display: inline-block;
     width: .15em;
     height: .15em;	
-    margin: 0 .6em;
+    margin: 0 .5em;
     background: #ffd051;
+}
+.threeDot:first-child {
+    margin: 0 .6em 0 .5em;
+}
+.threeDot:last-child {
+    margin: 0 .5em 0 .6em;
 }
 h1 .threeDot {
 	-webkit-transform: translateY(-.3em);

@@ -1,86 +1,56 @@
-<div class="article">
-	<h1 class="article__title">
-		Кличко возглавил партию Порошенко
-		<div class="countersBlock">
-			<span class="countersBlock__item view_count1">
-				123 <i class="icon"><!-- icon --></i>
-			</span>
-			<span class="countersBlock__item view_count2">
-				557 <i class="icon"><!-- icon --></i>
-			</span>
-			<span class="countersBlock__item view_count3">
-				99 <i class="icon"><!-- icon --></i>
-			</span>
-		</div>
-	</h1>
+<h1 class="article__title">
+	Кличко возглавил партию Порошенко
+	<div class="countersBlock">
+		<span class="countersBlock__item view_count1">
+			123 <i class="icon"><!-- icon --></i>
+		</span>
+		<span class="countersBlock__item view_count2">
+			557 <i class="icon"><!-- icon --></i>
+		</span>
+		<span class="countersBlock__item view_count3">
+			99 <i class="icon"><!-- icon --></i>
+		</span>
+	</div>
+</h1>
 
+<div class="articleInfo__avatarContainer clearfix">
+	<a class="articleInfo__avatar" href="" title="">
+		<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt=""/>
+	</a>
+	<ul class="articleInfo view_dotBetween">
+		<li>21 августа, 12:29</li>
+		<li><a href="" title="">Екатерина Трофимова</a>, журналист-эксперт в международной сфере</li>
+	</ul>
+</div>
 
-	<div class="articleInfo__avatarContainer clearfix">
-		<a class="articleInfo__avatar" href="" title="">
-			<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt=""/>
+<div class="bricks__wrapper clearfix">
+
+	<div class="brick view_articlePhoto">
+		<a class="articlePhoto__link" href="#" title="">
+			<img class="article__image" src="http://www.ridus.ru/images/2015/11/16/337613/in_article_649899cbd1.jpg" alt="">
 		</a>
-		<ul class="articleInfo view_dotBetween">
-			<li>21 августа, 12:29</li>
-			<li><a href="" title="">Екатерина Трофимова</a>, журналист-эксперт в международной сфере</li>
-		</ul>
+		<p class="articlePhoto__info">
+			Виталий "не только лишь все" Кличко
+		</p>
+		<p class="articlePhoto__author">
+			&copy; facebook.com
+		</p>
 	</div>
 
-	<div class="bricks__wrapper clearfix">
-
-		<div class="brick view_articlePhoto">
-			<a class="articlePhoto__link" href="#" title="">
-				<img class="article__image" src="http://www.ridus.ru/images/2015/11/16/337613/in_article_649899cbd1.jpg" alt="">
-			</a>
-			<p class="articlePhoto__info">
-				Виталий "не только лишь все" Кличко
-			</p>
-			<p class="articlePhoto__author">
-				&copy; facebook.com
-			</p>
-		</div>
-
-        <div class="brick hideOn_1024 hideOn_768">
-            <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
-        </div>
-        <!--div class="brick view_banner">
-            <!--#include virtual="bricks/banner-mts.shtml"-->
-        </div-->
-
-	</div>
-
-    <div class="article__content">
-        <p>
-            Виталий Кличко избран лидером партии Петра Порошенко «Солидарность». На этом посту он сменил ранее возглавлявшего ее Юрия Луценко.
-            Избрание на мэра Киева на пост лидера пропрезидентской партии состоялось по инициативе самого Юрия Луценко, передает «Интерфакс».
-        </p>
+    <div class="brick hideOn_1024 hideOn_768">
+        <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
     </div>
 
-    <div class="readAlso">
-		Читайте также:
-		<ul class="readAlso__list">
-			<li class="readAlso__item"><a class="readAlso__link" href="#" title="">Тысяча читинцев митинговала «за солнце»</a></li>
-			<li class="readAlso__item"><a class="readAlso__link" href="#" title="">К осени россиянам вернут зимнее время</a></li>
-			<li class="readAlso__item"><a class="readAlso__link" href="#" title="">Время России подвластно ее парламентариям</a></li>
-		</ul>
-	</div>
-    
-	<p class="missSpell__hint">
-		Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
-	</p>
-
-	<div class="articleSocials">
-		<!--#include virtual="_socials-header.shtml"-->
-	</div>
-
-	<p class="article__tags">
-		Теги: 
-		<a href="#" title="">нефть</a>, 
-		<a href="#" title="">Казахстан</a>, 
-		<a href="#" title="">прогнозы</a>, 
-		<a href="#" title="">Назарбаев</a>
-	</p>
-
-	<!--#include virtual="_comments.shtml"-->
-
 </div>
+
+<div class="article__content">
+    <p>
+        Виталий Кличко избран лидером партии Петра Порошенко «Солидарность». На этом посту он сменил ранее возглавлявшего ее Юрия Луценко.
+        Избрание на мэра Киева на пост лидера пропрезидентской партии состоялось по инициативе самого Юрия Луценко, передает «Интерфакс».
+    </p>
+</div>
+
+
+
+
 

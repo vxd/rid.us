@@ -17,12 +17,47 @@
     <div class="table">
         <div class="table__mainColumn">
 
+
+
             <ul class="textTabs view_dotBetween view_h5 clearfix">
                 <li><a href="#" title="">Новости кратко</a></li>
                 <li><a href="#" title="">Политика</a></li>
             </ul>
 
-            <!--#include virtual="_article-short.shtml"-->
+            <div class="article">
+                <!--#include virtual="_article-short.shtml"-->
+
+                <div class="readAlso">
+                    Читайте также:
+                    <ul class="readAlso__list">
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Тысяча читинцев митинговала «за солнце»</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">К осени россиянам вернут зимнее время</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Время России подвластно ее парламентариям</a></li>
+                    </ul>
+                </div>
+                
+                <p class="missSpell__hint">
+                    Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
+                </p>
+
+                <div class="articleSocials">
+                    <!--#include virtual="_socials-header.shtml"-->
+                </div>
+
+                <p class="article__tags">
+                    Теги: 
+                    <a href="#" title="">нефть</a>, 
+                    <a href="#" title="">Казахстан</a>, 
+                    <a href="#" title="">прогнозы</a>, 
+                    <a href="#" title="">Назарбаев</a>
+                </p>
+
+                <!--#include virtual="_comments.shtml"-->
+            </div>
+
+
+
+
 
             <div class="clearfix" style="margin-bottom: 30px; background: #eee">
                 [yandex direct вставлять сюда]
@@ -32,8 +67,41 @@
                 <li><a href="#" title="">Новости кратко</a></li>
                 <li><a href="#" title="">Политика</a></li>
             </ul>
+            
+            <div class="article">
+                <!--#include virtual="_article-short.shtml"-->
 
-            <!--#include virtual="_article-short.shtml"-->
+                <div class="readAlso">
+                    Читайте также:
+                    <ul class="readAlso__list">
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Тысяча читинцев митинговала «за солнце»</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">К осени россиянам вернут зимнее время</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Время России подвластно ее парламентариям</a></li>
+                    </ul>
+                </div>
+                
+                <p class="missSpell__hint">
+                    Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
+                </p>
+
+                <div class="articleSocials">
+                    <!--#include virtual="_socials-header.shtml"-->
+                </div>
+
+                <p class="article__tags">
+                    Теги: 
+                    <a href="#" title="">нефть</a>, 
+                    <a href="#" title="">Казахстан</a>, 
+                    <a href="#" title="">прогнозы</a>, 
+                    <a href="#" title="">Назарбаев</a>
+                </p>
+
+                <!--#include virtual="_comments.shtml"-->
+            </div>
+
+
+
+
 
             <h1 class="view_centred">
                 <i class="threeDot"></i>
@@ -53,14 +121,52 @@
                 </div>            
             </div>
 
+
+
+
+
+
             <a class="stickedSlideHere" data-stickedSlideHere="1"></a>
 
             <ul class="textTabs view_dotBetween view_h5 clearfix">
                 <li><a href="#" title="">Новости кратко</a></li>
                 <li><a href="#" title="">Политика</a></li>
             </ul>
+            
+            <div class="article">
+                <!--#include virtual="_article-short.shtml"-->
 
-            <!--#include virtual="_article-short.shtml"-->
+                <div class="readAlso">
+                    Читайте также:
+                    <ul class="readAlso__list">
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Тысяча читинцев митинговала «за солнце»</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">К осени россиянам вернут зимнее время</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Время России подвластно ее парламентариям</a></li>
+                    </ul>
+                </div>
+                
+                <p class="missSpell__hint">
+                    Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
+                </p>
+
+                <div class="articleSocials">
+                    <!--#include virtual="_socials-header.shtml"-->
+                </div>
+
+                <p class="article__tags">
+                    Теги: 
+                    <a href="#" title="">нефть</a>, 
+                    <a href="#" title="">Казахстан</a>, 
+                    <a href="#" title="">прогнозы</a>, 
+                    <a href="#" title="">Назарбаев</a>
+                </p>
+
+                <!--#include virtual="_comments.shtml"-->
+            </div>
+
+
+
+
 
             <h1 class="view_centred">
                 <i class="threeDot"></i>
@@ -75,14 +181,53 @@
                 </div>
             </div>
 
+
+
+
+
+
             <a class="stickedSlideHere" data-stickedSlideHere="2"></a>
             
             <ul class="textTabs view_dotBetween view_h5 clearfix">
                 <li><a href="#" title="">Новости кратко</a></li>
                 <li><a href="#" title="">Политика</a></li>
             </ul>
+            
+            <div class="article">
+                <!--#include virtual="_article-short.shtml"-->
 
-            <!--#include virtual="_article-short.shtml"-->
+                <div class="readAlso">
+                    Читайте также:
+                    <ul class="readAlso__list">
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Тысяча читинцев митинговала «за солнце»</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">К осени россиянам вернут зимнее время</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Время России подвластно ее парламентариям</a></li>
+                    </ul>
+                </div>
+                
+                <p class="missSpell__hint">
+                    Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
+                </p>
+
+                <div class="articleSocials">
+                    <!--#include virtual="_socials-header.shtml"-->
+                </div>
+
+                <p class="article__tags">
+                    Теги: 
+                    <a href="#" title="">нефть</a>, 
+                    <a href="#" title="">Казахстан</a>, 
+                    <a href="#" title="">прогнозы</a>, 
+                    <a href="#" title="">Назарбаев</a>
+                </p>
+
+                <!--#include virtual="_comments.shtml"-->
+            </div>
+
+
+
+
+
 
             <h1 class="view_centred">
                 <i class="threeDot"></i>
@@ -102,12 +247,54 @@
                 </div>            
             </div>
 
+
+
+
+
+
+
             <ul class="textTabs view_dotBetween view_h5 clearfix">
                 <li><a href="#" title="">Новости кратко</a></li>
                 <li><a href="#" title="">Политика</a></li>
             </ul>
+            
+            <div class="article">
+                <!--#include virtual="_article-short.shtml"-->
 
-            <!--#include virtual="_article-short.shtml"-->
+                <div class="readAlso">
+                    Читайте также:
+                    <ul class="readAlso__list">
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Тысяча читинцев митинговала «за солнце»</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">К осени россиянам вернут зимнее время</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Время России подвластно ее парламентариям</a></li>
+                    </ul>
+                </div>
+                
+                <p class="missSpell__hint">
+                    Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
+                </p>
+
+                <div class="articleSocials">
+                    <!--#include virtual="_socials-header.shtml"-->
+                </div>
+
+                <p class="article__tags">
+                    Теги: 
+                    <a href="#" title="">нефть</a>, 
+                    <a href="#" title="">Казахстан</a>, 
+                    <a href="#" title="">прогнозы</a>, 
+                    <a href="#" title="">Назарбаев</a>
+                </p>
+
+                <!--#include virtual="_comments.shtml"-->
+            </div>
+
+
+
+
+
+
+
 
             <div class="contentBackground_blue clearfix padding_top">
                 <h1 class="view_centred">
@@ -126,12 +313,51 @@
             </div>
             <br><br>
 
+
+
+
+
+
+
             <ul class="textTabs view_dotBetween view_h5 clearfix">
                 <li><a href="#" title="">Новости кратко</a></li>
                 <li><a href="#" title="">Политика</a></li>
             </ul>
+            
+            <div class="article">
+                <!--#include virtual="_article-short.shtml"-->
 
-            <!--#include virtual="_article-short.shtml"-->
+                <div class="readAlso">
+                    Читайте также:
+                    <ul class="readAlso__list">
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Тысяча читинцев митинговала «за солнце»</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">К осени россиянам вернут зимнее время</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Время России подвластно ее парламентариям</a></li>
+                    </ul>
+                </div>
+                
+                <p class="missSpell__hint">
+                    Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
+                </p>
+
+                <div class="articleSocials">
+                    <!--#include virtual="_socials-header.shtml"-->
+                </div>
+
+                <p class="article__tags">
+                    Теги: 
+                    <a href="#" title="">нефть</a>, 
+                    <a href="#" title="">Казахстан</a>, 
+                    <a href="#" title="">прогнозы</a>, 
+                    <a href="#" title="">Назарбаев</a>
+                </p>
+
+                <!--#include virtual="_comments.shtml"-->
+            </div>
+
+
+
+
 
             <div class="clearfix" style="margin-bottom: 30px; background: #eee">
                 [yandex direct вставлять сюда]
@@ -139,7 +365,11 @@
 
 
 
+
         </div>
+
+
+        
         <div class="table__sideColumn hideOn_768">
 
                 <div class="hcSticky__scrollable clearfix">

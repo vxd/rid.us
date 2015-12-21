@@ -165,6 +165,7 @@ $(function() {
 	var navbarHeight = $('.headerPanel').outerHeight();
 
 	$(window).scroll(function(event){
+        $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
 	    didScroll = true;
 	});
 

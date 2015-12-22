@@ -319,16 +319,16 @@ $(function() {
 	        autoplayDisableOnInteraction: false
 	    });
 
-		var doingScroll = false;
+		var doingResize = false;
 
-		$(window).scroll(function(event){
-		    doingScroll = true;
+		$(window).resize(function(event){
+		    doingResize = true;
 		});
 
 		setInterval(function() {
-		    if (doingScroll) {
+		    if (doingResize) {
 		        imagesSlider.updateSlidesSize();
-		        doingScroll = false;
+		        doingResize = false;
 		    }
 		}, 100);
 

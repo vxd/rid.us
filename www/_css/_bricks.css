@@ -614,6 +614,13 @@
 	line-height: 1.4;
 }
 
+
+
+
+
+
+
+
 @media screen and (min-width: 1024px) {
 	.view_withTranslation .todayMainNewsList__link {
 		font-size: 16px;
@@ -623,33 +630,33 @@
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .view_withTranslation .brick {
 	margin: 0;
 	width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1023px) {

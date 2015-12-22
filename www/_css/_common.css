@@ -185,7 +185,15 @@ input[type="submit"]:hover {
 	opacity: .85;
 }
 
-
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="url"] {
+	padding: 4px 8px;
+	font-size: 15px;
+}
 
 
 
@@ -540,6 +548,16 @@ label.radioWrap {
 
 
 
+
+
+
+.ui-widget input, 
+.ui-widget select, 
+.ui-widget textarea, 
+.ui-widget button {
+	font-family: 'PT Sans', sans-serif;
+}
+
 /* input */
 .datepicker {
 	border: 1px solid #d4d4d4;
@@ -867,10 +885,7 @@ label.radioWrap {
 
 
 
-.sticked {
-    transition: padding-top 0.1s ease-in-out;
 
-}
 
 
 

@@ -1,0 +1,74 @@
+<div class="popoverLogin" style="display:none;">
+
+	<!-- <div class="wrapper"> -->
+		<h5>Войти через социальные сети:</h5>
+
+		<div class="comments__login">
+			<!-- <b>Войти через социальные сети:</b> -->
+			<ul class="commentsSocials">
+				<li class="socialNetwork__item">
+					<a class="socialNetwork__link view_iconFacebook" href="#" title="">
+						<i class="icon"><!-- icon --></i>
+						Facebook
+					</a>
+				</li>
+				<li class="socialNetwork__item">
+					<a class="socialNetwork__link view_iconvKontakte" href="#" title="">
+						<i class="icon"><!-- icon --></i>vKontakte
+					</a>
+				</li>
+				<li class="socialNetwork__item">
+					<a class="socialNetwork__link view_iconGoogle" href="#" title="">
+						<i class="icon"><!-- icon --></i>Google+
+					</a>
+				</li>
+				<li class="socialNetwork__item">
+					<a class="socialNetwork__link view_iconTwitter" href="#" title="">
+						<i class="icon"><!-- icon --></i>Twitter
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<hr>
+
+		<h5 class="padding_top">Войти как пользователь "РИДУС":</h5>
+
+
+		<p class="padding_bottom">
+			У вас еще нет логина? <a href="#" title="">Зарегистрируйтесь</a>!
+			<br>
+			Забыли пароль? <a href="#" title="">Восстановить</a>
+		</p>
+
+		<div class="loginForm">
+			<form>
+				<div class="clearfix">
+					<input type="text" placeholder="Ваш e-mail">
+					<input type="password" placeholder="Пароль">
+				</div>
+				
+				<div class="clearfix padding_top">
+					<label><input type="checkbox" checked>Запомнить меня</label>
+					<a class="yellowButton" href="" title="">
+						Войти в систему
+						<i class="corner"><!-- corner --></i>
+					</a>
+				</div>
+
+			</form>
+		</div>
+		 
+		
+
+
+	<!-- </div> -->
+
+
+</div>
+
+
+
+
+
+

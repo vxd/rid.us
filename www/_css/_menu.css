@@ -10,9 +10,10 @@
 
     position: fixed;
     top: 0;
-    transition: top 0.1s ease-in-out;
-
-
+    transition: top 0.05s ease-in-out;
+}
+.sticked {
+    transition: padding-top 0.05s ease-in-out;
 }
 .nav-up {
     top: -60px;
@@ -344,7 +345,7 @@
 	box-sizing: border-box;
 }
 
-.search__input {
+.search__input[type="text"] {
 	border: none;
 	padding: 8px 80px 8px 35px;
 	height: 33px;
@@ -392,7 +393,7 @@
 	position: relative;
     margin-left: 430px;
 }
-.errorPages__search .search__input {
+.errorPages__search .search__input[type="text"] {
 	width: calc(100% - 70px);
 	border: 1px solid #999;
 	padding: 8px 30px 8px 35px;

@@ -13,9 +13,6 @@ $(document).ready(function() {
 
 
 
-
-
-
 });
 
 
@@ -49,6 +46,57 @@ $(document).ready(function() {
 
 $(function() {
 
+	// ======================================
+	// toolip
+	// ======================================
+
+	var popoverContent = $('.popoverLogin').remove().html();
+
+    $(document).on('click', '.header__loginButton', function () {
+    	$(this).attr('title', popoverContent).addClass("state_on");
+        $(this).tooltip({
+            items: '.header__loginButton.state_on',
+            tooltipClass: 'popoverLogin',
+            show: null, // show immediately 
+            // hide: { effect: "" }, //fadeOut
+            hide: null,
+            position: {
+            	my: "right top",
+				at: "right bottom",
+				of: ".headerPanel .wrapper"
+            },
+            content: function () {
+	            return $(this).prop('title');
+	        }
+        });
+        $(this).trigger('mouseenter');
+		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+        return false;
+    });
+
+	$(window).scroll(function() {
+		$(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
+	});
+	$(window).resize(function(){
+		$(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
+	});
+
+    //hide
+    $(document).on('click', '.header__loginButton.state_on', function () {
+        $(this).tooltip('close').removeClass("state_on").attr('title', '');
+        return false;
+    });
+	$(document).click(function(event) {
+		if ($(event.target).closest(".popoverLogin").length) return;
+        $(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
+		event.stopPropagation();
+	});
+
+    //prevent mouseout and other related events from firing their handlers
+    $(".header__loginButton").on('mouseout', function (e) {
+        e.stopImmediatePropagation();
+    });
+
 
 
 	// ======================================
@@ -67,6 +115,8 @@ $(function() {
 	$(".menu__link.view_menuIcon").on('click', function(){
 		$(this).toggleClass("state_open");
 		$(".subMenu").toggleClass("state_open");
+
+		$(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
 		return false;
 	});
 	$(document).click(function(event) {
@@ -174,7 +224,7 @@ $(function() {
 	        hasScrolled();
 	        didScroll = false;
 	    }
-	}, 400);
+	}, 200);
 
 	function hasScrolled() {
 	    var st = $(this).scrollTop();
@@ -434,6 +484,9 @@ $(function() {
 			opacity: 1
 		}, 300 );
 		$(".headerSearch__form .search__input").focus();
+
+		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+		$(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
 		return false;
 	});
 
@@ -488,8 +541,7 @@ $(function() {
   // 			visibilityFlag += "hideOn_1280 ";
   // 		}
   // 		if ( $(this).hasClass("hideOn_1024")) {
-  // 			$(this).removeClass("hideOn_1024");
-  // 			visibilityFlag += "hideOn_1024 ";
+  // 			$(this).removeClass("hideOn_1024se  // 			visibilityFlag += "hideOn_1024 ";
   // 		}
   // 		if ( $(this).hasClass("hideOn_768")) {
   // 			$(this).removeClass("hideOn_768");
@@ -615,6 +667,13 @@ $(function() {
 
 		return false;
 	})
+
+
+
+
+
+
+
 
 });
 

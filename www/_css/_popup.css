@@ -1,0 +1,90 @@
+
+.popoverLogin {
+	width: 425px;
+	font-family: "PT Sans", sans-serif;
+
+	max-width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+
+	border: none;
+
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+
+	-moz-box-shadow: 0 3px 5px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.2);
+	box-shadow: 0 3px 5px rgba(0,0,0,.2);
+}
+
+.popoverLogin:after {
+	display: block;
+	content: "";
+    position: absolute;
+    top: -14px;
+    display: inline-block;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #fff;
+}
+/*@media screen and (max-width: 1023px) {
+	.popoverLogin {
+		padding: 3%;
+	}
+	.popoverLogin:after {
+	    right: 50px;
+	}
+}*/
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.popoverLogin {
+		padding: 2%;
+	}
+	.popoverLogin:after {
+	    right: 50px;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1296px) {
+	.popoverLogin {
+		padding: 22px;
+	}
+	.popoverLogin:after {
+	    right: 50px;
+	}
+}
+@media screen and (min-width: 1297px) {
+	.popoverLogin {
+		padding: 16px;
+	}
+	.popoverLogin:after {
+	    right: 26px;
+	}
+}
+
+
+
+
+
+
+.popoverLogin h5 {
+	margin-bottom: 20px;
+}
+.popoverLogin p {
+	font-size: 14px;
+}
+
+.loginForm input[type="text"],
+.loginForm input[type="password"] {
+	float: left;
+	width: 49%;
+}
+.loginForm input[type="text"] {
+	margin-right: 2%;
+}
+.loginForm label {
+	font-size: 14px;
+}

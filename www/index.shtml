@@ -27,7 +27,7 @@
 
 		            <div class="brick view_2x view_withTranslation hideOn_768">
 
-		            	<div class="translation_wrapper">
+		            	<div class="translation_wrapper swiper-no-swiping">
 							<div id="translationPlayer"></div>
 							<a href="#" class="closeButtom">&times;</a>
 						</div>
@@ -49,17 +49,9 @@
 
 
 
-			        <div class="brick view_yellow hideOn_1024 hideOn_1280">
-			        	<h4 class="brick__header view_yellow">
-							<a href="#" class="brick__headerLink view_arrowed" title="">Бездна новостей</a>
-						</h4>
-						<!--#include virtual="bricks/newslist.shtml?banner=none"-->
-			        </div>
-
-
 		            <div class="brick view_withTranslation hideOn_1024 hideOn_1280">
 
-		            	<div class="translation_wrapper">
+		            	<div class="translation_wrapper  swiper-no-swiping">
 							<div id="translationPlayerMobile"></div>
 							<a href="#" class="closeButtom">&times;</a>
 						</div>
@@ -69,6 +61,14 @@
 						</div>
 
 		            </div>
+
+			        <div class="brick view_yellow hideOn_1024 hideOn_1280">
+			        	<h4 class="brick__header view_yellow">
+							<a href="#" class="brick__headerLink view_arrowed" title="">Бездна новостей</a>
+						</h4>
+						<!--#include virtual="bricks/newslist.shtml?banner=none"-->
+			        </div>
+
 
 
 					<div class="brick view_grey hideOn_1024 hideOn_768">
@@ -658,25 +658,36 @@
 
 <script type="text/javascript">
     var transl = jwplayer("translationPlayer").setup({
-        file: "jwplayer/video/sample.flv",
+        file: "http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4",
         image: "http://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",
 		width: "100%",
 		height: 190,
 		// aspectratio: "16:9",
         autostart: true,
-        primary: 'flash',
+        // primary: 'flash',
         // mute: true,
+     //    playlist: [{
+	    //     image: "/assets/myPoster.jpg",
+	    //     sources: [{ 
+	    //         file: "/assets/myStream.m3u8"
+	    //     },{
+	    //         file: "/assets/myVideo.mp4"
+	    //     }]
+	    // }],
         skin: {
         	name: "translation"
         }
     });
 
     var translMobile = jwplayer("translationPlayerMobile").setup({
-        file: "jwplayer/video/sample.flv",
+        // file: "/jwplayer/video/klip_320_42.mp4",
+        file: "http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4",
+        // file: "/jwplayer/video/cadbury.mp4",
+       // file: "//www.youtube.com/watch?v=60ZVTNaqhfY",
 		width: "100%",
 		height: 42,
         autostart: false,
-        primary: 'flash',
+        // primary: 'flash',
         skin: {
         	name: "translation"
         }

@@ -7,15 +7,16 @@
 				<span class="ptotoBlock__description">В медвежьем краю не хотят становиться японцами</span>
 			</a>
 			<h4 class="brick__header view_yellow">
-				<a href="#" class="brick__headerLink view_arrowed" title="">Спецрепортаж</a>
+				<span class="brick__headerLink view_arrowed" title="">Спецрепортаж</span>
 			</h4>
 		</div>
 		<div class="ptotoBlock">
 			<a href="#" class="ptotoBlock__image">
-				<img src="http://www.ridus.ru/images/2015/8/20/318592/in_article_cb0b775e49.jpg" alt="">
-				<span class="ptotoBlock__description">В медвежьем краю не хотят становиться японцами</span>
+				<img src="https://www.ridus.ru/images/2015/12/22/344164/in_article_db00fd195d.jpg" alt="">
+				<span class="ptotoBlock__description">Описание в одну строчку</span>
 			</a>
 		</div>
 		<a href="#" class="photoSection__nav view_prew"></a>
+		<a href="#" class="photoSection__nav view_next"></a>
 	</div>
 </section>

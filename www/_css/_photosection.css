@@ -23,20 +23,20 @@
 }
 @media screen and (max-width: 1023px) {
 	.ptotoBlock__image  {
-		height: 100px;
-		padding-top: 100px;
+		height: 125px;
+		padding-top: 125px;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.ptotoBlock__image  {
-		height: 130px;
-		padding-top: 130px;
+		height: 160px;
+		padding-top: 160px;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {
 	.ptotoBlock__image  {
-		height: 130px;
-		padding-top: 130px;		
+		height: 160px;
+		padding-top: 160px;		
 	}
 }
 @media screen and (min-width: 1297px) {
@@ -58,7 +58,7 @@
 
 .ptotoBlock__description {
     font-family: 'Roboto Slab', serif;
-	font-size: 28px;
+	font-size: 26px;
 	background: rgba(0,0,0,.7);
 	position: absolute;
 	font-weight: bold;
@@ -73,7 +73,7 @@
 }
 @media screen and (max-width: 1023px) {
 	.ptotoBlock__description {
-		font-size: 22px;
+		font-size: 21px;
 	}
 }
 
@@ -105,4 +105,8 @@
 .photoSection__nav.view_prew {
 	background-position: -50px -320px;
 	left: 10px;
+}
+.photoSection__nav.view_next {
+	background-position: 0px -320px;
+	right: 10px;
 }

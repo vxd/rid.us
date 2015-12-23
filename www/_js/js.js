@@ -127,6 +127,7 @@ $(function() {
 
 
 	/* скролл */
+
     // var $centerHeadBar = $('.headerPanel');
     // var headerHeight = $centerHeadBar.height();
     // var headerPosition = $centerHeadBar.offset().top;
@@ -134,7 +135,6 @@ $(function() {
     // var lastPosition = 0;
     // var scrollUp = false;
     // var compensation;
-
 
     // $(window).scroll(function() {
     //     $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
@@ -175,6 +175,10 @@ $(function() {
     //     lastPosition = position;
     // });
 
+
+
+
+
 	// var shown = true;
  //    $(window).scroll(function() {
  //        $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
@@ -202,53 +206,105 @@ $(function() {
 
 
 
+
+
+
 	// $('.headerPanel').hcSticky({
 	// 	stickTo: document,
 	// 	followScroll: false,
 	// });
 
 
-	// Hide Header on on scroll down
-	var didScroll;
-	var lastScrollTop = 0;
-	var delta = 5;
+
+
+
+
+
+
+
+	// var didScroll;
+	// var lastScrollTop = 0;
+	// var delta = 5;
+	// var navbarHeight = $('.headerPanel').outerHeight();
+
+	// $(window).scroll(function(event){
+ //        $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+	//     didScroll = true;
+	// });
+
+	// setInterval(function() {
+	//     if (didScroll) {
+	//         hasScrolled();
+	//         didScroll = false;
+	//     }
+	// }, 200);
+
+	// function hasScrolled() {
+	//     var st = $(this).scrollTop();
+	    
+	//     // Make sure they scroll more than delta
+	//     if(Math.abs(lastScrollTop - st) <= delta)
+	//         return;
+	    
+	//     // If they scrolled down and are past the navbar, add class .nav-up.
+	//     // This is necessary so you never see what is "behind" the navbar.
+	//     if (st > lastScrollTop && st > navbarHeight){
+	//         // Scroll Down
+	//         $('.headerPanel').removeClass('nav-down').addClass('nav-up');
+	//         $(".sticked").css( { paddingTop: 0} );
+	//     } else {
+	//         // Scroll Up
+	//         if(st + $(window).height() < $(document).height()) {
+	//             $('.headerPanel').removeClass('nav-up').addClass('nav-down');
+	// 	        $(".sticky").css( { paddingTop: 60} );
+	//         }
+	//     }
+	    
+	//     lastScrollTop = st;
+	// }
+
+
+
+
+
+
+
+	document.addEventListener('touchstart', handleTouchStart, false);        
+	document.addEventListener('touchmove', handleTouchMove, false);
 	var navbarHeight = $('.headerPanel').outerHeight();
 
-	$(window).scroll(function(event){
-        $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
-	    didScroll = true;
-	});
+	var yDown = null;                                                        
 
-	setInterval(function() {
-	    if (didScroll) {
-	        hasScrolled();
-	        didScroll = false;
-	    }
-	}, 200);
+	function handleTouchStart(evt) {                                         
+	    yDown = evt.touches[0].clientY;                                      
+	};                                                
 
-	function hasScrolled() {
-	    var st = $(this).scrollTop();
-	    
-	    // Make sure they scroll more than delta
-	    if(Math.abs(lastScrollTop - st) <= delta)
+	function handleTouchMove(evt) {
+	    if ( !yDown ) {
 	        return;
-	    
-	    // If they scrolled down and are past the navbar, add class .nav-up.
-	    // This is necessary so you never see what is "behind" the navbar.
-	    if (st > lastScrollTop && st > navbarHeight){
-	        // Scroll Down
-	        $('.headerPanel').removeClass('nav-down').addClass('nav-up');
-	        $(".sticked").css( { paddingTop: 0} );
-	    } else {
-	        // Scroll Up
-	        if(st + $(window).height() < $(document).height()) {
-	            $('.headerPanel').removeClass('nav-up').addClass('nav-down');
-		        $(".sticky").css( { paddingTop: 60} );
-	        }
 	    }
-	    
-	    lastScrollTop = st;
-	}
+	    var yUp = evt.touches[0].clientY;
+	    var yDiff = yDown - yUp;
+
+	    var scrollTop = $(document).scrollTop();
+        if ( yDiff > 0 ) {
+	        $('.headerPanel').addClass('view_hidden');
+
+	    	if (scrollTop < navbarHeight) {
+		    	$('.headerPanel').removeClass('view_hidden');
+	    	}
+
+	    } else { 
+            $('.headerPanel').removeClass('view_hidden');
+        }                                                                 
+	    /* reset values */
+	    xDown = null;
+	    yDown = null;    
+
+		/* дополнительно по окончанию тачсвайпа */
+
+	};
+
 
 
 

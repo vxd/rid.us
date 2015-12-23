@@ -689,8 +689,6 @@
 	}
 	.view_withTranslation .brick {
 		height: 294px;  
-	}
-	.view_withTranslation .brick.view_yellow {
 		margin-bottom: 22px;
 	}
 }

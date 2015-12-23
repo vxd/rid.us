@@ -111,10 +111,10 @@
 
 .brick__content h2,
 .brick__content h2 a {
-	margin-bottom: 7px;
+	margin-bottom: 8px;
 	line-height: 1.1;
 	color: #000;
-	font-size: 22px;
+	font-size: 21px;
 }
 
 
@@ -126,7 +126,7 @@
 	color: #a3a3a3;
 	text-transform: uppercase;
 	text-decoration: none;
-	margin-bottom: 4px;
+	margin-bottom: 5px;
 }
 .brick__content h5,
 .brick__content h5 a {
@@ -166,7 +166,7 @@
 .brick__text {
 	color: #444;
 	font-size: 15px;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 	line-height: 1.2;
 }
 .contentBackground_dark .brick__text {
@@ -181,7 +181,12 @@
 	text-decoration: none;
 }
 
-
+.readAll {
+	color: #444;
+	font-size: 14px;
+	display: inline-block;
+    padding-top: 4px;
+}
 
 
 
@@ -189,6 +194,7 @@
 	font-family: 'PT Sans', sans-serif;
     font-size: 11px;
 	height: 15px;
+	margin-bottom: 4px;
 }
 .countersBlock__item {
     font-weight: bold;

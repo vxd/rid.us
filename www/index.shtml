@@ -658,7 +658,7 @@
 
 <script type="text/javascript">
     var transl = jwplayer("translationPlayer").setup({
-        file: " https://www.youtube.com/watch?v=KxZQG0C0J88",
+        file: "https://www.youtube.com/watch?v=KxZQG0C0J88",
         // image: "http://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",
 		width: "100%",
 		height: 190,
@@ -680,7 +680,7 @@
     });
 
     var translMobile = jwplayer("translationPlayerMobile").setup({
-        file: " https://www.youtube.com/watch?v=KxZQG0C0J88",
+        file: "https://www.youtube.com/watch?v=KxZQG0C0J88",
         // file: "/jwplayer/video/klip_320_42.mp4",
         // file: "http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4",
         // file: "/jwplayer/video/cadbury.mp4",

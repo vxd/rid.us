@@ -13,17 +13,18 @@
     -o-font-feature-settings: "liga";
     font-feature-settings: "liga";
     -moz-osx-font-smoothing: grayscale;
-    width: 34px;
+    width: 30px;
     min-width: auto;
 }
 .jw-skin-translation .jw-background-color {
 	background: transparent;
 }
 .jw-skin-translation .jw-controlbar {
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.7);
     height: 42px;
     display: table !important;
     padding: 0;
+    width: 100%;
 }
 .jw-skin-translation .jw-group {
     vertical-align: middle;
@@ -78,7 +79,7 @@
     color: #fff;
 }
 .jw-skin-translation .jw-controlbar .jw-icon:before {
-    padding: 0 .7em;
+    padding: 0 .6em;
 }
 .jw-skin-translation .jw-text-elapsed, 
 .jw-skin-translation .jw-text-duration {
@@ -248,14 +249,169 @@
 
 
 
-.jw-controlbar-center-group > * {
+
+
+
+.jw-controlbar-center-group {
     display: none;
 }
-.jw-controlbar-center-group:after {
-    display: inline;
+
+
+
+.jw-icon-playback {
+    margin-left: 4px;
+    margin-right: 4px;
+    width: auto;
+}
+.jw-icon-playback:before {
+    color: #000;
+    background: #ffd051;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    padding: 0px !important;
+}
+.jw-icon-playback:hover:before {
+    color: #c64a1b;
+}
+.jw-icon-playback:after {
+    display: inline-block;
+    height: 30px;
     content: "ОНЛАЙН ТРАНСЛЯЦИЯ";
     font-size: 14px;
     color: #fff;
     font-weight: bold;
     font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+    white-space: normal;
+    width: auto;
+    margin-left: 8px;
+}
+
+
+.jw-controlbar .jw-icon {
+    font-size: 16px;
+    height: 34px;
+}
+
+.jw-icon-hd {
+    display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1296px) {
+    .view_withTranslation .todayMainNewsList__link {
+        font-size: 16px;
+        font-weight: normal;
+        font-family: 'PT Sans', sans-serif;
+        line-height: 1.35;
+    }
+}
+
+.translation__wrapper {
+    position: relative;
+    height: 190px;
+    background: #333;
+    overflow: hidden;
+}
+.view_withTranslation.state_translationMinimized .translation__wrapper {
+    height: 42px;
+}
+.view_withTranslation .brick {
+    margin: 0;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .translation__wrapper {
+        margin-bottom: 22px;
+    }
+    .view_withTranslation .brick {
+        height: 188px;  
+    }
+    .view_withTranslation.state_translationMinimized .brick {
+        height: 335px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1296px) {
+    .translation__wrapper {
+        margin-bottom: 22px;
+    }
+    .view_withTranslation {
+        float: right;
+        height: 822px; /* = x2 + margin */
+    }
+    .view_withTranslation .brick {
+        height: 294px;  
+        margin-bottom: 22px;
+    }
+    .view_withTranslation.state_translationMinimized .brick.view_yellow {
+        height: 442px;  
+    }
+}
+@media screen and (min-width: 1297px) {
+    .translation__wrapper {
+        margin-bottom: 16px;
+    }
+    .view_withTranslation {
+        height: 816px;  /* = x2 + margin */
+    }
+    .view_withTranslation .brick {
+        height: 610px;  
+    }
+    .view_withTranslation.state_translationMinimized .brick {
+        height: 758px;  
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.translation__flip {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 34px;
+    height: 34px;
+}
+.translation__flip:before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-top: 2px solid #fff; 
+    border-left: 2px solid #fff; 
+    top: 14px;
+    left: 11px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.state_translationMinimized .translation__flip:before {
+    top: 8px;
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+
+}
+.state_translationMinimized .translation__wrapper,
+.state_translationMinimized .translationPlayer {
+    height: 42px;
+}
+
+.state_translationMinimized .jw-skin-translation .jw-controlbar {
+    background: #111;
 }

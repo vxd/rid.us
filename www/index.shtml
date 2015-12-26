@@ -27,9 +27,9 @@
 
 		            <div class="brick view_2x view_withTranslation hideOn_768">
 
-		            	<div class="translation_wrapper swiper-no-swiping">
-							<div id="translationPlayer"></div>
-							<a href="#" class="closeButtom">&times;</a>
+		            	<div class="translation__wrapper swiper-no-swiping">
+							<div id="translationPlayer" class="translationPlaceholder"></div>
+							<a href="#" class="translation__flip"></a>
 						</div>
 
 						<div class="brick view_grey hideOn_1280">
@@ -49,11 +49,11 @@
 
 
 
-		            <div class="brick view_withTranslation hideOn_1024 hideOn_1280">
+		            <div class="brick view_withTranslation state_translationMinimized hideOn_1024 hideOn_1280">
 
-		            	<div class="translation_wrapper  swiper-no-swiping">
-							<div id="translationPlayerMobile"></div>
-							<a href="#" class="closeButtom">&times;</a>
+		            	<div class="translation__wrapper  swiper-no-swiping">
+							<div id="translationPlayerMobile" class="translationPlaceholder"></div>
+							<a href="#" class="translation__flip"></a>
 						</div>
 
 						<div class="brick view_grey hideOn_1280">
@@ -657,95 +657,111 @@
 <!--#include virtual="_footer.shtml"-->
 
 <script type="text/javascript">
-    var transl = jwplayer("translationPlayer").setup({
-        file: "https://www.youtube.com/watch?v=KxZQG0C0J88",
-        // image: "http://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",
-		width: "100%",
-		height: 190,
-		// aspectratio: "16:9",
-        // autostart: true,
-        // primary: 'flash',
-        // mute: true,
-     //    playlist: [{
-	    //     image: "/assets/myPoster.jpg",
-	    //     sources: [{ 
-	    //         file: "/assets/myStream.m3u8"
-	    //     },{
-	    //         file: "/assets/myVideo.mp4"
-	    //     }]
-	    // }],
-        skin: {
-        	name: "translation"
-        }
-    });
 
-    var translMobile = jwplayer("translationPlayerMobile").setup({
-        file: "https://www.youtube.com/watch?v=KxZQG0C0J88",
-        // file: "/jwplayer/video/klip_320_42.mp4",
-        // file: "http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4",
-        // file: "/jwplayer/video/cadbury.mp4",
-       // file: "//www.youtube.com/watch?v=60ZVTNaqhfY",
-		width: "100%",
-		height: 42,
-        // autostart: false,
-        // primary: 'flash',
-        skin: {
-        	name: "translation"
-        }
-    });
+	var transl;
+	var state;
+	var position = 0;
+	var wrapper;
+	var firstPlay = true;
+    function placeTranslation(state, position) {
+    	var whereId = $(".translationPlaceholder:visible").attr("id");
+		transl = jwplayer(whereId).setup({
+			// file: "https://www.youtube.com/watch?v=KxZQG0C0J88", // попросили добавить
+			file: "//www.youtube.com/watch?v=KU7Kd_qGIzw",
+			// file: "http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4", // видео в нужном формате!
+			// file: "/jwplayer/video/cadbury.mp4",
+			// image: "http://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",
+			width: "100%",
+			height: 190,
+			autostart: true,
+			// mute: true,
+			// playlist: [{
+			//     image: "/assets/myPoster.jpg",
+			//     sources: [{ 
+			//         file: "/assets/myStream.m3u8"
+			//     },{
+			//         file: "/assets/myVideo.mp4"
+			//     }]
+			// }],
+			skin: {
+				name: "translation"
+			}
+		});
 
 
+	    wrapper = $("#"+whereId).parent().parent(".view_withTranslation:visible");
 
-    transl.onReady(function(){
-    	// $(".jw-display-icon-container").hide();
+	    function translSizeFlip() {
+	    	if (wrapper.hasClass("state_translationMinimized")) {
+		    	transl.resize("100%", 42);
+	    	} else {
+	    		transl.resize("100%", 190);
+	    	}   			
+	    }
+		translSizeFlip();    	
 
-    	// var otherBrichHeight = $(".view_withTranslation").height() -
-    	// 					$(".translation_wrapper").outerHeight(true);
-    	// $(".translation_wrapper").next().height(otherBrichHeight)
-
-
-	    $(".translation_wrapper .closeButtom").on('click', function() {
-	    	$(".translation_wrapper").detach();
+	    wrapper.find(".translation__flip").on('click', function() {
+	    	wrapper.toggleClass("state_translationMinimized");
+	    	translSizeFlip();
 	    	return false;
 	    });
-    });
 
-    transl.onBuffer(function(){
-    	// $(".jw-display-icon-container").show();
-    });
 
-	var firstPlay = true;
-    transl.onPlay(function(){
-    	// if (firstPlay) {
-		   //  transl.setVolume(0);
-		   //  transl.setMute(true);
-    	// 	firstPlay = false;
-    	// }
-    	// $(".jw-display-icon-container").hide();
-    });
 
-    var doingResize = false;
+	    transl.onReady(function(){
+			// console.log(state + " " + position)
+	    	$(".jw-display-icon-container").hide();
+			transl.setCurrentQuality(3);
+	  //   	if (state == "playing") {
+			// 	transl.seek(position)
+			// 	transl.play(true)
+			// }
+			// if (state == "paused") {
+			// 	transl.pause(true)
+			// }
+			$(".jw-icon-playback").on('click', function() {
+				if (transl.getState() != "playing" && wrapper.hasClass("state_translationMinimized")) {
+					wrapper.toggleClass("state_translationMinimized");
+			    	translSizeFlip();
+				}
+		    }); 
+	    });
+
+		transl.onBuffer(function(){
+			// $(".jw-display-icon-container").show();
+			$(".jw-display-icon-container").hide();
+		});	    
+
+		transl.onPlay(function(){
+			if (firstPlay || transl.getMute()) {
+			    transl.setVolume(0);
+			    transl.setMute(true);
+				firstPlay = false;
+			} 
+			$(".jw-display-icon-container").hide();
+		});
+
+
+
+
+
+    }
+    placeTranslation("idle", 0);
+
 	$(window).resize(function(event){
-		translMobile.pause(true);
-		transl.pause(true);
-	    doingResize = true;
+		if( ! $("#"+transl.id).is(":visible") ) {
+			state = transl.getState();
+			position = transl.getPosition();
+			transl.remove();
+			$(".translation__flip").unbind("click");
+			placeTranslation(state, position);
+		}
 	});
 
-	setInterval(function() {
-	    if (doingResize) {
-	        translMobile.pause();
-	        transl.pause();
-	        doingResize = false;
-	    }
-	}, 1000);
 
 
 
-
-    translMobile.onReady(function(){
-    	$(".jw-display-icon-container").hide();
-    });
-
+    
 
 
 

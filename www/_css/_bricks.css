@@ -273,24 +273,28 @@
 /* в слайдере и на темном фоне - белые */
 .videoPlaylist .countersBlock__item .icon,
 .contentBackground_darker .countersBlock__item .icon,
+.contentBackground_dark .countersBlock__item .icon,
 .aLaSlideImage .countersBlock__item .icon,
 .slider .countersBlock__item .icon {
     opacity: .55;
 }
 .videoPlaylist__item .countersBlock__item.view_count1 .icon,
 .contentBackground_darker .countersBlock__item.view_count1 .icon,
+.contentBackground_dark .countersBlock__item.view_count1 .icon,
 .aLaSlideImage .countersBlock__item.view_count1 .icon,
 .slider .countersBlock__item.view_count1 .icon {
     background-position: -0px -514px;
 }
 .videoPlaylist__item .countersBlock__item.view_count2 .icon,
 .contentBackground_darker .countersBlock__item.view_count2 .icon,
+.contentBackground_dark .countersBlock__item.view_count2 .icon,
 .aLaSlideImage .countersBlock__item.view_count2 .icon,
 .slider .countersBlock__item.view_count2 .icon {
     background-position: -11px -514px;
 }
 .videoPlaylist__item .countersBlock__item.view_count3 .icon,
 .contentBackground_darker .countersBlock__item.view_count3 .icon,
+.contentBackground_dark .countersBlock__item.view_count3 .icon,
 .aLaSlideImage .countersBlock__item.view_count3 .icon,
 .slider .countersBlock__item.view_count3 .icon {
     background-position: -25px -514px;
@@ -373,7 +377,8 @@
 }
 .brick.view_floatText.view_bottomBorder {
 	border-bottom: 1px dashed #e8e8e8;
-	padding-bottom: 20px;
+	padding-bottom: 12px;
+	margin-bottom: 15px;
 }
 
 
@@ -653,3 +658,16 @@
 
 
 
+.brick.view_inArticle {
+	float: right;
+    border: 1px dashed rgba(140,140,140,.35);
+    border-top: 0;
+    border-bottom: 0;
+    margin-left: 16px;
+    margin-right: 0;
+    padding: 0 16px;
+    height: auto;
+}
+.brick.view_inArticle .brick:last-child {
+	margin-bottom: 0;
+}

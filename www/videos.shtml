@@ -1,0 +1,143 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    <!--#include virtual="_head.shtml"-->
+    <link href="_css/home.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="page_authors" itemscope itemtype="http://schema.org/WebPage">
+
+
+<!--#include virtual="_header.shtml"-->
+
+<section class="wrapper contentBackground_white paddings_side padding_top clearfix">
+
+    <h1 class="view_centred">
+        <i class="threeDot"></i>
+        Видео
+        <i class="threeDot"></i>
+    </h1>
+
+    <h2>
+    	На прошлой неделе 
+    	<span class="view_unbold view_grey view_h5">(с 21 декабря по вчера)</span>
+    </h2>
+
+	<div class="bricks__wrapper padding_top padding_bottom clearfix">
+		<div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+		</div>
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812&video=true"-->
+        </div>
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        </div>		
+	</div>
+
+	<hr class="padding_bottom">
+
+    <h2>
+    	Ранее
+    	<span class="view_unbold view_grey view_h5">(с 14 декабря по 20 декабря)</span>
+    </h2>
+
+	<div class="bricks__wrapper padding_top padding_bottom clearfix">
+		<div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+		</div>
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812&video=true"-->
+        </div>
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        </div>		
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=3&count1=120&count2=35&count3=3812&video=true"-->
+        </div>
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        </div>		
+		<div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+		</div>
+	</div>
+
+	<hr class="padding_bottom">
+
+    <h2>
+    	Ранее
+    	<span class="view_unbold view_grey view_h5">(с 7 декабря по 13 декабря)</span>
+    </h2>
+
+	<div class="bricks__wrapper padding_top padding_bottom clearfix">
+		<div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+		</div>
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812&video=true"-->
+        </div>
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        </div>		
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        </div>		
+		<div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+		</div>
+	</div>
+
+
+	<hr class="padding_bottom">
+
+    <h2>
+    	Ранее
+    	<span class="view_unbold view_grey view_h5">(с 1 декабря по 6 декабря)</span>
+    </h2>
+
+	<div class="bricks__wrapper padding_top padding_bottom clearfix">
+		<div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+		</div>
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812&video=true"-->
+        </div>
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        </div>		
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        </div>		
+		<div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+		</div>
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        </div>		
+        <div class="brick">
+        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        </div>		
+		<div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+		</div>
+	</div>
+
+
+</section>
+
+
+<section class="pagination wrapper contentBackground_grey">
+    <!--#include virtual="_pagination.shtml?page=1"-->
+</section>
+
+
+<a href="#" class="banner_footer">
+	<img src="_images/footer_banner.jpg" alt="">
+</a>
+
+<!--#include virtual="_footer.shtml"-->
+
+</body>
+</html>

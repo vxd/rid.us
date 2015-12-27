@@ -3,6 +3,7 @@
 
 <!--#set var="image" value="" -->
 <!--#set var="data" value="" -->
+<!--#set var="video" value="" -->
 <!--#set var="count1" value="" -->
 <!--#set var="count2" value="" -->
 <!--#set var="count3" value="" -->
@@ -14,6 +15,9 @@
 <!--#endif -->
 <!--#if expr="\"$QUERY_STRING\" = /data=([a-zA-Z0-9]+)/" -->
 <!--#set var="data" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /video=([a-zA-Z0-9]+)/" -->
+<!--#set var="video" value="$1" -->
 <!--#endif -->
 <!--#if expr="\"$QUERY_STRING\" = /count1=([a-zA-Z0-9]+)/" -->
 <!--#set var="count1" value="$1" -->
@@ -27,6 +31,7 @@
 
 <!-- //// конец --> 
 
+
 <a href="" class="brick__image">
 <!--#if expr="$image = 1" -->
 	<img alt="Единороссы призовут однопартийца Исаева к ответу" src="http://ridus.ru/images/2013/10/9/122365/preview_09ade907ef.jpg">
@@ -37,6 +42,10 @@
 <!--#if expr="$image = 3" -->
 	<img alt="Ученые доказали влияние грибов на погоду" src="http://ridus.ru/images/2015/11/10/336462/preview_40b9a0f86b.jpg">
 <!--#endif -->
+<!--#if expr="$video = 'true'" -->
+	<i class="brick__videoIcon"></i>
+<!--#endif -->
+
 </a>
 
 <div class="brick__content">
@@ -149,3 +158,28 @@
 </div>
 
 
+
+
+
+<!--#if expr="$video = 'true'" -->
+	<span class="brick__label">
+		<script>
+		// генерим случайную дату
+		function randomInteger(min, max) {
+		    var rand = min - 0.5 + Math.random() * (max - min + 1)
+		    rand = Math.round(rand);
+		    if (rand < 10) {
+		    	rand += " ноября"
+		    }
+		    if (rand >= 10 && rand < 20) {
+		    	rand += " декабря"
+		    }
+		    if (rand >= 20) {
+		    	rand += " октября"
+		    }
+		    return rand;
+		}
+		document.write(randomInteger(1, 31))
+		</script>	
+	</span>
+<!--#endif -->

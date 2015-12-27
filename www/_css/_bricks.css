@@ -9,7 +9,7 @@
 
 
 .bricks__wrapper {
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 @media screen and (max-width: 1023px) {
 	.bricks__wrapper {
@@ -81,12 +81,8 @@
 	overflow: hidden;
 	padding-top: 90px;
 	margin-bottom: 10px;
+	position: relative;
 }
-
-
-
-
-
 .brick__image img {
 	width: 100%;
 	-webkit-transform: translateY(-50%);
@@ -94,6 +90,35 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+.brick__label {
+    position: absolute;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    top: -4px;
+    left: -4px;
+    padding: 1px 6px 2px;
+}
+.brick__videoIcon {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #ffd103 url(../_images/icons_sprite.png) -70px 0px;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -66,6 +66,17 @@ h1.view_centred {
 }
 
 
+.view_unbold {
+	font-weight: normal;
+}
+.view_grey {
+	color: #a3a3a3;
+}
+.view_h5 {
+	font-size: 16px;
+}
+
+
 
 .threeDot {
 	position: relative;

@@ -20,7 +20,14 @@
 
 
             <div class="article">
-                <!--#include virtual="_article-short.shtml"-->
+                <!--#include virtual="_article-short.shtml?sidebanner=1"-->
+                <div class="article__content">
+                    <p>
+                        Виталий Кличко избран лидером партии Петра Порошенко «Солидарность». На этом посту он сменил ранее возглавлявшего ее Юрия Луценко.
+                        Избрание на мэра Киева на пост лидера пропрезидентской партии состоялось по инициативе самого Юрия Луценко, передает «Интерфакс».
+                    </p>
+                </div>
+
                 <a href="#" class="article__readmore" title="">Читать дальше</a>
                 <hr class="article__separator" />
             </div>
@@ -28,7 +35,14 @@
             <a class="stickedSlideHere" data-stickedSlideHere="1"></a>
 
             <div class="article">
-                <!--#include virtual="_article-short.shtml"-->
+                <!--#include virtual="_article-short.shtml?sidebanner=1"-->
+                <div class="article__content">
+                    <p>
+                        Виталий Кличко избран лидером партии Петра Порошенко «Солидарность». На этом посту он сменил ранее возглавлявшего ее Юрия Луценко.
+                        Избрание на мэра Киева на пост лидера пропрезидентской партии состоялось по инициативе самого Юрия Луценко, передает «Интерфакс».
+                    </p>
+                </div>
+
                 <a href="#" class="article__readmore" title="">Читать дальше</a>
                 <hr class="article__separator" />
             </div>
@@ -36,13 +50,27 @@
             <a class="stickedSlideHere" data-stickedSlideHere="2"></a>
 
             <div class="article">
-                <!--#include virtual="_article-short.shtml"-->
+                <!--#include virtual="_article-short.shtml?sidebanner=1"-->
+                <div class="article__content">
+                    <p>
+                        Виталий Кличко избран лидером партии Петра Порошенко «Солидарность». На этом посту он сменил ранее возглавлявшего ее Юрия Луценко.
+                        Избрание на мэра Киева на пост лидера пропрезидентской партии состоялось по инициативе самого Юрия Луценко, передает «Интерфакс».
+                    </p>
+                </div>
+
                 <a href="#" class="article__readmore" title="">Читать дальше</a>
                 <hr class="article__separator" />
             </div>
 
             <div class="article">
-                <!--#include virtual="_article-short.shtml"-->
+                <!--#include virtual="_article-short.shtml?sidebanner=1"-->
+                <div class="article__content">
+                    <p>
+                        Виталий Кличко избран лидером партии Петра Порошенко «Солидарность». На этом посту он сменил ранее возглавлявшего ее Юрия Луценко.
+                        Избрание на мэра Киева на пост лидера пропрезидентской партии состоялось по инициативе самого Юрия Луценко, передает «Интерфакс».
+                    </p>
+                </div>
+
                 <a href="#" class="article__readmore" title="">Читать дальше</a>
                 <hr class="article__separator" />
             </div>
@@ -73,7 +101,7 @@
                         <div class="brick view_banner">
                             <!--#include virtual="bricks/banner-mts.shtml"-->
                         </div>
-                        <h2>Читайте также:</h2>
+                        <h3>Читайте также:</h3>
                         <div class="brick view_floatText">
                             <!--#include virtual="bricks/mini.shtml?image=1&data=1"-->
                         </div>

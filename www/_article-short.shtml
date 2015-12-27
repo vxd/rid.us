@@ -1,3 +1,17 @@
+<!-- //// определяем переменные -->  
+
+<!--#set var="sidebanner" value="" -->
+
+<!-- //// извлекаем из параметров урла --> 
+
+<!--#if expr="\"$QUERY_STRING\" = /sidebanner=([a-zA-Z0-9]+)/" -->
+<!--#set var="sidebanner" value="$1" -->
+<!--#endif -->
+
+<!-- //// конец --> 
+
+
+
 <h1 class="article__title">
 	Кличко возглавил партию Порошенко
 	<div class="countersBlock">
@@ -37,18 +51,20 @@
 		</p>
 	</div>
 
+	<!--#if expr="$sidebanner = 1" -->
     <div class="brick hideOn_1024 hideOn_768">
         <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
     </div>
+	<!--#endif -->
+	<!--#if expr="$sidebanner = 2" -->
+    <div class="brick view_banner hideOn_1024 hideOn_768">
+        <!--#include virtual="bricks/banner-mts.shtml"-->
+    </div>
+    <!--#endif -->
 
 </div>
 
-<div class="article__content">
-    <p>
-        Виталий Кличко избран лидером партии Петра Порошенко «Солидарность». На этом посту он сменил ранее возглавлявшего ее Юрия Луценко.
-        Избрание на мэра Киева на пост лидера пропрезидентской партии состоялось по инициативе самого Юрия Луценко, передает «Интерфакс».
-    </p>
-</div>
+
 
 
 

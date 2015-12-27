@@ -334,14 +334,20 @@
 	height: 45px;
 	overflow: hidden;
 	padding-top: 45px;
-	margin-bottom: 13px;
+	margin-bottom: 10px;
 }
 
 .brick.view_mini .brick__text {
 	font-size: 14px;
 }
 
-
+.brickLabel {
+	color: #fff;
+	background: #c6c6c6;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 5px;
+}
 
 
 

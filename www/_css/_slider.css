@@ -69,7 +69,9 @@
         margin: 0 16px 16px 0;
     }
 }
-
+.aLaSlideImage.view_fullwidth {
+    width: 100%;
+}
 
 
 .slider__text {

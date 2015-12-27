@@ -3,7 +3,6 @@
 <head>
 
     <!--#include virtual="_head.shtml"-->
-    <link href="_css/news.css" rel="stylesheet" type="text/css">
     <link href="_css/tags.css" rel="stylesheet" type="text/css">
 
 </head>

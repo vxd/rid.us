@@ -250,7 +250,10 @@
 
                 <!-- заменить на картинку -->
                 <div class="bricks__wrapper padding_bottom clearfix">
-                    <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
+                    <div class="brick aLaSlideImage">
+                        <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
+                    </div>
+
                     <div class="brick hideOn_1024 hideOn_768">
                         <!--#include virtual="bricks/news-simple.shtml?image=2&data=7&count1=120&count2=35&count3=3812"-->
                     </div>
@@ -317,7 +320,10 @@
                 </h1>
 
                 <div class="bricks__wrapper">
-                    <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
+
+                    <div class="brick aLaSlideImage">
+                        <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
+                    </div>
 
                     <div class="brick">
                         <div class="brick view_floatText">

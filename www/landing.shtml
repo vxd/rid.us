@@ -1,0 +1,222 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    <!--#include virtual="_head.shtml"-->
+    <link href="_css/landing.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="page_block" itemscope itemtype="http://schema.org/WebPage">
+
+
+<!--#include virtual="_header.shtml"-->
+
+<section class="wrapper contentBackground_white paddings_side padding_top clearfix">
+
+    <div class="bricks__wrapper">
+
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+        </div>
+
+        <div class="brick hideOn_768">
+            <div class="brick view_floatText view_bottomBorder">
+                <!--#include virtual="bricks/mini-full.shtml?image=1&data=1"-->
+            </div>
+            <div class="brick view_floatText view_bottomBorder">
+                <!--#include virtual="bricks/mini-full.shtml?image=2&data=3"-->
+            </div>
+            <div class="brick view_floatText">
+                <!--#include virtual="bricks/mini-full.shtml?image=2&data=3"-->
+            </div>
+        </div>
+
+        <div class="brick">
+            <div class="brick view_floatText view_bottomBorder">
+                <!--#include virtual="bricks/mini-full.shtml?image=1&data=1"-->
+            </div>
+            <div class="brick view_floatText view_bottomBorder">
+                <!--#include virtual="bricks/mini-full.shtml?image=2&data=3"-->
+            </div>
+            <div class="brick view_floatText">
+                <!--#include virtual="bricks/mini-full.shtml?image=2&data=3"-->
+            </div>
+        </div>
+
+        <div class="brick view_banner hideOn_768 hideOn_1024">
+            <!--#include virtual="bricks/banner-mts.shtml"-->
+        </div>
+
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=4"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=5"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=6"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=4"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=5"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=6"-->
+        </div>
+
+        <div class="brick view_yellow hideOn_768 hideOn_1024" style="float:right">
+        	<h4 class="brick__header view_yellow">
+				<a href="#" class="brick__headerLink view_arrowed" title="">Бездна новостей</a>
+			</h4>
+			<!--#include virtual="bricks/newslist.shtml?banner=none"-->
+			<a href="#" class="brick__footer" title="">
+				Все новости
+			</a>
+        </div>
+
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=4"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=5"-->
+        </div>
+        <div class="brick view_mini view_withTag hideOn_768">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=6"-->
+        </div>
+        <div class="brick view_mini view_withTag hideOn_768">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=4"-->
+        </div>
+        <div class="brick view_mini view_withTag hideOn_768">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=5"-->
+        </div>
+        <div class="brick view_mini view_withTag hideOn_768">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=6"-->
+        </div>
+
+    </div>
+
+
+    <div class="clearfix" style="margin-bottom: 30px; background: #eee">
+        [yandex direct вставлять сюда]
+    </div>
+
+
+    <div class="bricks__wrapper clearfix">
+
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=4"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=5"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=6"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=4"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=4"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=5"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=6"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=4"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=5"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=6"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=4"-->
+        </div>
+        <div class="brick view_mini view_withTag">
+            <!--#include virtual="bricks/mini.shtml?image=1&data=5"-->
+        </div>
+        <div class="brick view_mini view_withTag hideOn_768 hideOn_1024">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=6"-->
+        </div>
+        <div class="brick view_mini view_withTag hideOn_768 hideOn_1024">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=4"-->
+        </div>
+        <div class="brick view_mini view_withTag hideOn_768 hideOn_1024">
+            <!--#include virtual="bricks/mini.shtml?image=2&data=5"-->
+        </div>
+        <div class="brick view_mini view_withTag hideOn_768 hideOn_1024">
+            <!--#include virtual="bricks/mini.shtml?image=3&data=6"-->
+        </div>
+
+    </div>
+
+</section>
+
+<section class="wrapper contentBackground_white padding_bottom clearfix">
+	<!--#include virtual="_ridus-map.shtml"-->
+</section>
+
+<section class="contentBackground_white paddings_side padding_top wrapper clearfix">
+    <div class="bricks__wrapper clearfix">
+
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick hideOn_768">
+			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick hideOn_768 hideOn_1024">
+			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick view_banner">
+			<!--#include virtual="bricks/banner-mts.shtml"-->
+		</div>
+
+		<div class="brick hideOn_768">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick hideOn_1024 hideOn_768">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick hideOn_768">
+			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick hideOn_1024 hideOn_768">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+	</div>
+</section>
+
+<section class="pageBottom contentBackground_white padding_top wrapper clearfix">
+	<!--#include virtual="_more-button.shtml"-->
+	<hr>
+</section>
+
+<a href="#" class="banner_footer">
+	<img src="_images/footer_banner.jpg" alt="">
+</a>
+
+<!--#include virtual="_footer.shtml"-->
+
+</body>
+</html>

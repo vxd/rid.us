@@ -84,6 +84,9 @@
 .brick.view_mini {
 	height: 188px;
 }
+.brick.view_withTag {
+	height: 200px;
+}
 @media screen and (max-width: 1023px) {
 	.brick.view_mini {
 		width: 22%;
@@ -94,6 +97,9 @@
 	.brick.view_mini {
 	    width: 14.66667%;
 		margin: 0 2% 22px 0;
+	}
+	.table__mainColumn .brick.view_mini {
+	    width: 23%;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {

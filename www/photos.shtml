@@ -1,0 +1,74 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    <!--#include virtual="_head.shtml"-->
+    <link href="_css/photos.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="page_news" itemscope itemtype="http://schema.org/WebPage">
+
+<!--#include virtual="_header.shtml"-->
+
+<section class="wrapper contentBackground_white paddings_side padding_top clearfix">
+
+    <div class="table">
+        <div class="table__mainColumn">
+
+            <div class="brick aLaSlideImage view_fullwidth">
+                <!--#include virtual="bricks/alaslideimage.shtml?image=1"-->
+            </div>
+
+            <div class="brick aLaSlideImage view_fullwidth">
+                <!--#include virtual="bricks/alaslideimage.shtml?image=2"-->
+            </div>
+
+            <div class="brick aLaSlideImage view_fullwidth">
+                <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
+            </div>
+
+            <div class="brick aLaSlideImage view_fullwidth">
+                <!--#include virtual="bricks/alaslideimage.shtml?image=1"-->
+            </div>
+
+            <div class="brick aLaSlideImage view_fullwidth">
+                <!--#include virtual="bricks/alaslideimage.shtml?image=2"-->
+            </div>
+
+            <div class="brick aLaSlideImage view_fullwidth">
+                <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
+            </div>
+
+
+        </div>
+        <div class="table__sideColumn hideOn_768">
+
+            <div class="brick">
+                <!--#include virtual="bricks/news-simple.shtml?image=3&data=4&count1=120&count2=35&count3=3812"-->
+            </div>
+            <div class="brick">
+                <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+</section>
+
+
+
+
+<section class="pagination wrapper contentBackground_grey">
+    <!--#include virtual="_pagination.shtml?page=1"-->
+</section>
+
+<a href="#" class="banner_footer">
+    <img src="_images/footer_banner.jpg" alt="">
+</a>
+
+<!--#include virtual="_footer.shtml"-->
+
+</body>
+</html>

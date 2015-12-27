@@ -14,37 +14,35 @@
 
 
 
-<div class="brick aLaSlideImage">
-	<a href="#" class="slider__image" title="">
-		<!--#if expr="$image = 1" -->
-			<img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt="">
-		<!--#endif -->
-		<!--#if expr="$image = 2" -->
-			<img src="http://www.ridus.ru/images/2015/12/1/340559/in_article_e6d5d3c187.jpg" alt="">
-		<!--#endif -->
-		<!--#if expr="$image = 3" -->
-			<img src="http://www.ridus.ru/images/2015/11/20/338581/in_article_2851de7b7b.jpeg" alt="">
-		<!--#endif -->
-	</a>
-	<div href="#" class="slider__text">
-		<h6>
-			<a href="#" title="">Жизнь</a>
-		</h6>				            		
-		<h1>
-			<a href="" title="">
-				Хокинг и Мильнер занялись поиском инопланетян
-			</a>
-		</h1>
-		<div class="countersBlock">
-			<span class="countersBlock__item view_count1">
-				12 <i class="icon"><!-- icon --></i>
-			</span>
-			<span class="countersBlock__item view_count2">
-				34 <i class="icon"><!-- icon --></i>
-			</span>
-			<span class="countersBlock__item view_count3">
-				57 <i class="icon"><!-- icon --></i>
-			</span>
-		</div>
+<a href="#" class="slider__image" title="">
+	<!--#if expr="$image = 1" -->
+		<img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt="">
+	<!--#endif -->
+	<!--#if expr="$image = 2" -->
+		<img src="http://www.ridus.ru/images/2015/12/1/340559/in_article_e6d5d3c187.jpg" alt="">
+	<!--#endif -->
+	<!--#if expr="$image = 3" -->
+		<img src="http://www.ridus.ru/images/2015/11/20/338581/in_article_2851de7b7b.jpeg" alt="">
+	<!--#endif -->
+</a>
+<div href="#" class="slider__text">
+	<h6>
+		<a href="#" title="">Жизнь</a>
+	</h6>				            		
+	<h1>
+		<a href="" title="">
+			Хокинг и Мильнер занялись поиском инопланетян
+		</a>
+	</h1>
+	<div class="countersBlock">
+		<span class="countersBlock__item view_count1">
+			12 <i class="icon"><!-- icon --></i>
+		</span>
+		<span class="countersBlock__item view_count2">
+			34 <i class="icon"><!-- icon --></i>
+		</span>
+		<span class="countersBlock__item view_count3">
+			57 <i class="icon"><!-- icon --></i>
+		</span>
 	</div>
 </div>

@@ -48,10 +48,13 @@
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
-    .table__mainColumn .aLaSlideImage,
     .aLaSlideImage {
-        width: 98%;
+        width: 64.66666%;
         margin: 0 2% 22px 0;
+    }
+    .table__mainColumn .aLaSlideImage {
+        width: 97%;
+        margin: 0 3% 22px 0;
     }
 }
 @media screen and (min-width: 1041px) and (max-width: 1296px) {

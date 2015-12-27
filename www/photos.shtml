@@ -12,6 +12,13 @@
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
+    <h1 class="view_centred">
+        <i class="threeDot"></i>
+        фоторепортажи
+        <i class="threeDot"></i>
+    </h1>
+
+
     <div class="table">
         <div class="table__mainColumn">
 

@@ -3,7 +3,7 @@
 <head>
 
     <!--#include virtual="_head.shtml"-->
-    <link href="_css/_agreement.css" rel="stylesheet" type="text/css">
+    <link href="_css/agreement.css" rel="stylesheet" type="text/css">
 
 </head>
 <body class="page_authors" itemscope itemtype="http://schema.org/WebPage">

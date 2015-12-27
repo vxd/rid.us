@@ -385,20 +385,25 @@
 
 
 
-
+.search {
+	position: relative;
+}
 .errorPages__search {
 	position: relative;
     margin-left: 430px;
 }
+.search .search__input[type="text"],
 .errorPages__search .search__input[type="text"] {
 	width: calc(100% - 70px);
 	border: 1px solid #999;
 	padding: 8px 30px 8px 35px;
 }
+.search .yellowButton,
 .errorPages__search .yellowButton {
 	position: absolute;
 	right: 0;
 }
+.search:after,
 .errorPages__search:after {
     opacity: .4;
     display: block;

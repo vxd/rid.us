@@ -123,11 +123,141 @@ h1 .threeDot {
 
 
 
+.text { 
+	font-size: 17px;
+	line-height: 1.4;
+	color: #000;
+}
+p { 
+	margin-bottom: 20px;
+}
 
 
 a:hover {
     color: #c64a1b !important;
 }
+
+
+
+
+
+
+
+
+
+/* нумерованный список - большие цифры в черных квадратах */
+/* список в живой трансляции с временем */
+.numeredList,
+.liveList {
+    padding-bottom: 30px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+.numeredList__item,
+.liveList__item {
+    margin-bottom: 20px;
+    list-style-type: none;
+    position: relative;
+}
+.numeredList__item {
+    counter-increment: step-counter;
+    padding-left: 45px;
+}
+.liveList__item {
+    padding-left: 70px;
+}
+.numeredList__item:before,
+.liveList__item:before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: -3px;
+    text-align: center;
+    padding: 3px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.numeredList__item:before {
+    letter-spacing: -1px;
+    min-width: 27px;
+}
+.liveList__item:before {
+    content: attr(data-time);
+    width: 56px;
+}
+.liveList__item:after {
+    content: "";
+    position: absolute;
+    left: 56px;
+    top: 6px;
+    border: 5px solid transparent;
+    border-left: 5px solid #000;
+}
+
+/* ненумерованный список - красные квадраты */
+.squareList__item {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    list-style-type: none;
+    position: relative;
+}
+.squareList__item:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 11px;
+    height: 11px;
+    background: #c64a1b;
+    top: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+blockquote {
+	display: block;
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+    padding: 0 80px 0 60px;
+    text-align: justify;
+
+}
+blockquote:before,
+blockquote:after {
+	position: absolute;
+    width: 50px;
+    height: 0px;
+    text-align: center;
+    font-size: 120px;
+    font-style: normal;
+    color: #ddd;
+}
+blockquote:before {
+    content: "\201C";
+    left: 0;
+    top: -30px;
+}
+blockquote:after {
+    content: "\201D";
+    right: 20px;
+    top: -40px;
+}
+
+
+
+
 
 
 

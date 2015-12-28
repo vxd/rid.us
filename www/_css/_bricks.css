@@ -526,6 +526,7 @@
 .brick.view_yellow {
 	border: 3px solid #ffd051;
 	position: relative;
+	overflow: hidden;
 }
 .brick__header.view_yellow {
 	background: #ffd051;

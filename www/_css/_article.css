@@ -103,10 +103,12 @@
 .articlePhoto__info {
 	font-size: 14px;
 	color: #525252;
+	margin-bottom: 0;
 }
 .articlePhoto__author {
 	font-size: 14px;
 	color: #848484;
+	margin-bottom: 0;
 }
 
 
@@ -114,14 +116,6 @@
 
 
 
-.article__content { 
-	font-size: 18px;
-	line-height: 1.4;
-	color: #000;
-}
-.article__content p { 
-	margin-bottom: 20px;
-}
 
 
 

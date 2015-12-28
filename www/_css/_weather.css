@@ -56,10 +56,10 @@
     font-size: 36px;
     text-transform: capitalize;
 }
-.weather__contentText {
+/*.weather__contentText {
     font-size: 18px;
     margin-bottom: 20px;
-}
+}*/
 .weather__readmore {
     font-size: 18px;
     border-bottom: 1px dashed;

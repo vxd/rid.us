@@ -13,7 +13,7 @@
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
-    <div class="bricks__wrapper">
+    <div class="bricks__wrapper clearfix">
 
         <div class="brick">
             <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->

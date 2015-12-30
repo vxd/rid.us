@@ -1,0 +1,36 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    <!--#include virtual="_head.shtml"-->
+    <link href="_css/home.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="page_authors" itemscope itemtype="http://schema.org/WebPage">
+
+
+<!--#include virtual="_header.shtml"-->
+
+<section class="wrapper contentBackground_white paddings_side padding_top clearfix">
+
+    <h2>Регистрация нового пользователя</h2>
+
+
+
+     
+
+
+</section>
+
+
+
+
+
+<a href="#" class="banner_footer">
+	<img src="_images/footer_banner.jpg" alt="">
+</a>
+
+<!--#include virtual="_footer.shtml"-->
+
+</body>
+</html>

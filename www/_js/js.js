@@ -663,7 +663,7 @@ $(function() {
 	$('.sticked').hcSticky({
 		stickTo: ".hcSticky__sticky",
 		// onStart: stickyHeight(),
-	    top: 20,
+	    top: 80,
 	    // bottomEnd: 100,
 	    // wrapperClassName: 'sidebar-sticky'
 	});

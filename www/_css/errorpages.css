@@ -43,7 +43,7 @@
 
 .errorPages__linkWrapper {
     padding-top: 55px;
-    border-top: 1px solid #fcfcfc;
+    /*border-top: 1px solid #fcfcfc;*/
     text-align: center;
 }
 .errorPages__linkWrapper a {
@@ -56,6 +56,12 @@
     text-decoration: underline;
 }
 
+
+
+.errorPages__searchWrapper {
+    position: relative;
+    margin-left: 430px;
+}
 
 
 
@@ -84,7 +90,7 @@
         min-height: 0;
         border-bottom: none;
     }
-    .errorPages__search {
+    .errorPages__searchWrapper {
         margin-left: 0;
     }
 }

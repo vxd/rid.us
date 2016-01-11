@@ -1,0 +1,455 @@
+/* плавное изменение прозрачности  placeholder-а при фокусе */
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder, 
+input[type="password"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'PT Sans', sans-serif;}
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder, 
+input[type="number"]::-moz-placeholder, 
+input[type="password"]::-moz-placeholder, 
+input[type="tel"]::-moz-placeholder, 
+input[type="url"]::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'PT Sans', sans-serif;} /* Firefox 19+ */
+input[type="text"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder, 
+input[type="number"]:-moz-placeholder, 
+input[type="password"]:-moz-placeholder, 
+input[type="tel"]:-moz-placeholder, 
+input[type="url"]:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'PT Sans', sans-serif;} /* Firefox 18- */
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder, 
+input[type="number"]:-ms-input-placeholder, 
+input[type="password"]:-ms-input-placeholder, 
+input[type="tel"]:-ms-input-placeholder, 
+input[type="url"]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'PT Sans', sans-serif;}
+input[type="text"]:focus::-webkit-input-placeholder,
+input[type="email"]:focus::-webkit-input-placeholder, 
+input[type="number"]:focus::-webkit-input-placeholder, 
+input[type="password"]:focus::-webkit-input-placeholder, 
+input[type="tel"]:focus::-webkit-input-placeholder, 
+input[type="url"]:focus::-webkit-input-placeholder {opacity: 0;}
+input[type="text"]:focus::-moz-placeholder,
+input[type="email"]:focus::-moz-placeholder, 
+input[type="number"]:focus::-moz-placeholder, 
+input[type="password"]:focus::-moz-placeholder, 
+input[type="tel"]:focus::-moz-placeholder, 
+input[type="url"] :focus::-moz-placeholder         {opacity: 0;}
+input[type="text"]:focus:-moz-placeholder,
+input[type="email"]:focus:-moz-placeholder, 
+input[type="number"]:focus:-moz-placeholder, 
+input[type="password"]:focus:-moz-placeholder, 
+input[type="tel"]:focus:-moz-placeholder, 
+input[type="url"]:focus:-moz-placeholder           {opacity: 0;}
+input[type="text"]:focus:-ms-input-placeholder,
+input[type="email"]:focus:-ms-input-placeholder, 
+input[type="number"]:focus:-ms-input-placeholder, 
+input[type="password"]:focus:-ms-input-placeholder, 
+input[type="tel"]:focus:-ms-input-placeholder, 
+input[type="url"]:focus:-ms-input-placeholder      {opacity: 0;}
+
+
+/* дефолтные кнопки */
+button[type="submit"],
+input[type="submit"] {
+	background: #0e53b2;
+	color: #fff;
+	cursor: pointer;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+	opacity: .85;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="url"] {
+	font-family: 'PT Sans', sans-serif;
+	padding: 6px 13px;
+	font-size: 17px;
+	border: 1px solid #bbb; /* #d4d4d4; */
+}
+
+
+
+.search {
+	position: relative;
+}
+.search:after,
+.headerSearch__form:after {
+	/* лупа */
+    opacity: .4;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    background: transparent;
+    border: 0;
+    background-image: url(../_images/icons_sprite.png);
+    background-position: 0 -71px;
+    width: 35px;
+    height: 33px;
+}
+.headerSearch__form:after {
+	top: 14px;
+}
+
+.search__input[type="text"] {
+	padding-right: 80px;
+	padding-left: 35px;
+	background: #fff;
+	color: #000;
+	float: left;
+	position: relative;
+	width: calc(100% - 15px);
+}
+.headerSearch .search__input[type="text"] {
+	border: none;
+	font-size: 15px;
+	height: 33px;
+	width: calc(100% - 45px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* для случая использования в globalinfo */
+.yellowButton {
+	float: right;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	background: #ffd051;
+    padding: 10px 8px 9px 18px;
+    margin-right: 10px; /* обязательно ждя уголка */
+    margin-left: 13px;
+    position: relative;
+}
+.yellowButton .corner {
+	display: block;
+	position: absolute;
+	width: 11px;
+	height: 23px;
+	background: #ffd051;
+    bottom: 0px;
+    right: -10px;
+}
+.yellowButton .corner:before {
+	display: block;
+	position: absolute;
+	content: "";
+    right: 0px;
+    top: -10px;
+    border: 5px solid transparent;
+    border-bottom-color: #000;
+    border-left-color: #000;
+	-webkit-box-shadow: -1px 0px 0px 0px #ffd051;
+	-moz-box-shadow: -1px 0px 0px 0px #ffd051;
+	box-shadow: -1px 0px 0px 0px #ffd051;
+}
+.yellowButton .corner:after {
+	display: block;
+	position: absolute;
+	content: "";
+    right: 0px;
+    top: 0px;
+    border: 5px solid transparent;
+    border-top-color: rgba(0,0,0,.1);
+    border-right-color: rgba(0,0,0,.1);
+}
+.yellowButton:hover,
+.yellowButton:hover .corner {
+	background: #ffc336;
+	color: #000;
+	cursor: pointer;
+}
+
+
+
+/* для случая использования в меню */
+.headerPanel .yellowButton .corner:before {
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+}
+@media screen and (max-width: 1023px) {
+	.headerPanel .yellowButton {
+		margin: 13px 0 13px 12px;
+		float: right;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.headerPanel .yellowButton {
+		margin: 13px 12px;
+		float: right;
+	}
+}
+
+.headerSearch__form .yellowButton {
+	float: left;
+	margin-left: 0;
+	position: absolute;
+	top: 14px;
+	right: 40px;
+	margin: 0;
+}
+
+.search .yellowButton {
+	position: absolute;
+	right: 0;
+}
+
+
+
+
+
+
+
+/* на странице в форме */
+.yellowButton.view_big {
+	font-size: 13px;
+	padding: 11px 8px 10px 18px; 
+}
+.yellowButton.view_big .corner {
+    height: 26px;
+}
+
+
+
+
+
+/* лэйблы, чекбоксы, радиобатоны */
+/*label {
+	color: #747474;
+	font-size: 13px;
+	margin-bottom: 7px;
+	display: inline-block;
+}
+label.checkboxWrap,
+label.radioWrap {
+	color: #000;
+	cursor: pointer;
+	position: relative;
+	padding-left: 21px;
+}
+.checkboxWrap input[type="checkbox"],
+.radioWrap input[type="radio"]{
+	display: none;
+}
+.radioWrap:before,
+.checkboxWrap:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	cursor: pointer;
+	background: url("../images/sprite_forms.png");
+}
+.checkboxWrap:before {
+	background-position: 0 0;
+}
+.checkboxWrap.checked:before {
+	background-position: 0 -14px;
+}
+.radioWrap:before {
+	background-position: 14px 0;
+}
+.radioWrap.checked:before {
+	background-position: 14px -14px;
+}*/
+
+
+
+
+
+
+.bottomDatapicker {
+	text-align: center;
+}
+.bottomDatapicker label {
+	font-weight: bold;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #a3a3a3;
+	margin: 0 10px 5px;
+}
+/*@media screen and (max-width: 1023px) {
+	.weather .bottomDatapicker label {
+		display: block;
+	}
+}*/
+
+
+
+
+
+
+
+
+.closeButtom {
+	text-decoration: none;
+	font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	color: #fff;
+}
+.headerSearch__form .closeButtom {
+	color: #fff;
+	padding-left: 20px;
+	float: right;
+    margin-top: -2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ui-widget input, 
+.ui-widget select, 
+.ui-widget textarea, 
+.ui-widget button {
+	font-family: 'PT Sans', sans-serif;
+}
+
+/* input */
+input.datepicker {
+	padding-right: 35px;
+	width: 150px;
+	background: url(../_images/icons_sprite.png) 111px -139px;
+	margin-bottom: 10px;
+}
+
+
+
+
+/* стили самого календаря */
+.ui-datepicker {
+	font-family: 'PT Sans', sans-serif;
+	border: none;
+	border-radius: 0;
+	box-shadow: 0 8px 21px rgba(0,0,0,.5);
+}
+.ui-datepicker-header {
+	border: none;
+	border-radius: 0;
+}
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default {
+    border: 1px solid #e1e1e1;
+}
+.ui-datepicker-next,
+.ui-datepicker-prev {
+	border: 0 !important;
+	background: none !important;
+	top: 2px !important;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* табы */
+.ui-tabs{
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	font-family: "PT Sans", sans-serif;
+}
+.ui-tabs .ui-tabs-nav {
+	border-radius: 0;
+	border: none;
+	background: #eeeeee;
+	padding: 0;
+	display: table;
+	width: 100.1%;
+}
+.tabs__wrapper .ui-tabs-nav:before, 
+.tabs__wrapper .ui-tabs-nav:after {
+	display: none;
+}
+.ui-tabs .ui-tabs-nav li {
+	height: 51px;
+	white-space: normal;
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    margin: 0;
+    background: #eeeeee;
+    border: none;
+	border-radius: 0;
+	font-weight: bold;
+	font-size: 18px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin: 0;
+    background: #fff;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	color: #8d8d8d;
+    padding: 0 16px;
+    line-height: 1.05;
+    display: flex;
+    height: 51px;
+    align-items: center;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active  .ui-tabs-anchor {
+    color: #c64a1b;
+}
+.ui-tabs .ui-tabs-panel {
+    padding: 7px 16px;
+}
+

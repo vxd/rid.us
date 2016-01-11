@@ -15,16 +15,7 @@
 
     <h2>Результаты поиска</h2>
 
-
-    <div class="search">
-		<form>
-			<input class="search__input" type="text" placeholder="Искать по Ридусу">
-			<a class="yellowButton" href="" title="">
-			найти
-			<i class="corner"><!-- corner --></i>
-			</a>
-		</form>
-	</div>
+    <!--#include virtual="_search-form.shtml"-->
 
 	<div class="clearfix">
 	</div>

@@ -28,14 +28,8 @@
   </div>
 
 
-  <div class="errorPages__search">
-      <form>
-          <input class="search__input" type="text" placeholder="Искать по Ридусу">
-          <a class="yellowButton" href="" title="">
-          найти
-          <i class="corner"><!-- corner --></i>
-          </a>
-      </form>
+  <div class="errorPages__searchWrapper">
+      <!--#include virtual="_search-form.shtml"-->
   </div>
 
 

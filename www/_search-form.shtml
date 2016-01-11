@@ -1,0 +1,9 @@
+<div class="search">
+	<form>
+		<input class="search__input" type="text" placeholder="Искать по Ридусу">
+		<a class="yellowButton view_big" href="" title="">
+		найти
+		<i class="corner"><!-- corner --></i>
+		</a>
+	</form>
+</div>

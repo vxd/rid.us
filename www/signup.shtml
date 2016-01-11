@@ -11,14 +11,15 @@
 
 <!--#include virtual="_header.shtml"-->
 
-<section class="wrapper contentBackground_white paddings_side padding_top clearfix">
+<section class="wrapper contentBackground_white paddings_side padding_top padding_bottom clearfix">
 
     <h2>Регистрация нового пользователя</h2>
 
 
+    <input type="text">
 
+    <input class="yellowButton" type="submit">
      
-
 
 </section>
 

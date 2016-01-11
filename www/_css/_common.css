@@ -12,6 +12,7 @@ body {
 	min-width: 768px;
 	width: 100%;
 	background: #eee;
+	-webkit-overflow-scrolling: touch;
 }
 
 

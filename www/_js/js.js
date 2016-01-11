@@ -250,12 +250,12 @@ $(function() {
 	//     // This is necessary so you never see what is "behind" the navbar.
 	//     if (st > lastScrollTop && st > navbarHeight){
 	//         // Scroll Down
-	//         $('.headerPanel').removeClass('nav-down').addClass('nav-up');
+	//         $('.headerPanel').addClass('view_hidden');
 	//         $(".sticked").css( { paddingTop: 0} );
 	//     } else {
 	//         // Scroll Up
 	//         if(st + $(window).height() < $(document).height()) {
-	//             $('.headerPanel').removeClass('nav-up').addClass('nav-down');
+	//             $('.headerPanel').removeClass('view_hidden');
 	// 	        $(".sticky").css( { paddingTop: 60} );
 	//         }
 	//     }
@@ -270,40 +270,79 @@ $(function() {
 
 
 	document.addEventListener('touchstart', handleTouchStart, false);        
+	// document.addEventListener('touchend', handleTouchEnd, false);        
 	document.addEventListener('touchmove', handleTouchMove, false);
 	var navbarHeight = $('.headerPanel').outerHeight();
 
 	var yDown = null;                                                        
+	var lastScrollTop = 0;
+	var currentScrollTop;
+	var docHeight = $(document).height();
 
 	function handleTouchStart(evt) {                                         
-	    yDown = evt.touches[0].clientY;                                      
+	    yDown = evt.touches[0].clientY;
+
+    	lastScrollTop = $(this).scrollTop();
+
+		$(window).scroll(function(event){
+	    	currentScrollTop = $(this).scrollTop();
+	    	
+	    	if (currentScrollTop >= lastScrollTop) {
+	    		if (currentScrollTop > navbarHeight) {
+		    		$('.headerPanel').addClass('view_hidden');
+		    	}
+	    	} else {
+	    		$('.headerPanel').removeClass('view_hidden');
+	    	}
+		});
 	};                                                
 
 	function handleTouchMove(evt) {
+    	currentScrollTop = $(this).scrollTop();
+	    // var scrollEdge = docHeight - $(window).height();
+
 	    if ( !yDown ) {
 	        return;
 	    }
+
 	    var yUp = evt.touches[0].clientY;
 	    var yDiff = yDown - yUp;
 
-	    var scrollTop = $(document).scrollTop();
         if ( yDiff > 0 ) {
-	        $('.headerPanel').addClass('view_hidden');
-
-	    	if (scrollTop < navbarHeight) {
-		    	$('.headerPanel').removeClass('view_hidden');
+        	/* вниз */
+	    	if (currentScrollTop > navbarHeight) { /* не скрываем, пока проскроллили меньше высоты меню */
+		    	$('.headerPanel').addClass('view_hidden'); 
 	    	}
-
-	    } else { 
+	    } else {
+	    	/* вверх */
             $('.headerPanel').removeClass('view_hidden');
         }                                                                 
 	    /* reset values */
-	    xDown = null;
-	    yDown = null;    
+	    yDown = null;  
 
-		/* дополнительно по окончанию тачсвайпа */
+
+	    // if (currentScrollTop <= scrollEdge) {
+	    // 	if (currentScrollTop > lastScrollTop) {
+	    // 		$('.headerPanel').addClass('view_hidden');
+	    // 	} else {
+	    // 		$('.headerPanel').removeClass('view_hidden');
+	    // 	}
+	    // }
 
 	};
+
+
+
+	// function handleTouchEnd(evt) {
+ //    	currentScrollTop = $(this).scrollTop();
+ //    	if (currentScrollTop > lastScrollTop) {
+ //    		if (currentScrollTop > navbarHeight) {
+	//     		$('.headerPanel').addClass('view_hidden');
+	//     	}
+ //    	} else {
+ //    		$('.headerPanel').removeClass('view_hidden');
+ //    	}
+	// };
 
 
 
@@ -342,6 +381,7 @@ $(function() {
 	        nextButton: $(this).parent().find('.swiper-button-next'),
 	        prevButton: $(this).parent().find('.swiper-button-prev'),
 	        spaceBetween: 16,
+	        threshold: 50,
 	        breakpoints: {
 	            1296: {
 	                spaceBetween: 22

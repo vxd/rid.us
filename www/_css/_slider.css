@@ -188,10 +188,10 @@
 }*/
 .pageSwiper .swiper-slide {
     opacity: .5;
-    -webkit-transition: opacity .4s ease;
-    -moz-transition: opacity .4s ease;
-    -o-transition: opacity .4s ease;
-    transition: opacity .4s ease;
+    -webkit-transition: opacity .2s ease;
+    -moz-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+    transition: opacity .2s ease;
 }
 .pageSwiper .swiper-slide.swiper-slide-active {
     opacity: 1;

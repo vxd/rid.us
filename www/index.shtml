@@ -76,14 +76,14 @@
 					</div>
 
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 					<div class="brick hideOn_1024 hideOn_768">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=3&count1=120&count2=35&count3=3812"-->
+						<!--#include virtual="bricks/news-simple.shtml?image=1&data=6&count1=120&count2=35&count3=3812"-->
 					</div>
 
 				</div>
@@ -93,28 +93,28 @@
 		    <div class="swiper-slide">
 			    <div class="bricks__wrapper">
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 		        	<div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		        </div>
 		    </div>
@@ -122,28 +122,28 @@
 		    <div class="swiper-slide">
 			    <div class="bricks__wrapper">
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		        	<div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		        </div>
 		    </div>
@@ -176,25 +176,25 @@
 		    <div class="swiper-slide">
 				<div class="bricks__wrapper">
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=8&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 					<div class="brick view_banner">
 						<!--#include virtual="bricks/banner-mts.shtml"-->
 					</div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick view_yellow view_opinion">
 		                <!--#include virtual="bricks/opinion.shtml"-->          
@@ -205,25 +205,25 @@
 		    <div class="swiper-slide">
 				<div class="bricks__wrapper">
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 					<div class="brick view_banner">
 						<!--#include virtual="bricks/banner-mts.shtml"-->
 					</div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=8&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick view_yellow view_opinion">
 		                <!--#include virtual="bricks/opinion.shtml"-->          
@@ -295,7 +295,7 @@
 		            </div>
 
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 
 					<div class="brick view_banner">
@@ -303,16 +303,16 @@
 					</div>
 
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 					<div class="brick hideOn_1024 hideOn_768">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=3&count1=120&count2=35&count3=3812"-->
+						<!--#include virtual="bricks/news-simple.shtml?image=1&data=8&count1=120&count2=35&count3=3812"-->
 					</div>
 
 		        </div>
@@ -321,28 +321,28 @@
 		    <div class="swiper-slide">
 				<div class="bricks__wrapper">
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=8&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 					<div class="brick view_banner">
 						<!--#include virtual="bricks/banner-mts.shtml"-->
 					</div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=8&count1=120&count2=35&count3=3812"-->
 		            </div>
 	            </div>
 		    </div>
@@ -390,20 +390,20 @@
 		            </div>
 
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 
 					<div class="brick view_banner">
 						<!--#include virtual="bricks/banner-mts.shtml"-->
 					</div>		            
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		      		<div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 					<div class="brick hideOn_768">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=3&count1=120&count2=35&count3=3812"-->
+						<!--#include virtual="bricks/news-simple.shtml?image=1&data=6&count1=120&count2=35&count3=3812"-->
 					</div>
 
 		        </div>
@@ -412,28 +412,28 @@
 		    <div class="swiper-slide">
 				<div class="bricks__wrapper">
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 					<div class="brick view_banner">
 						<!--#include virtual="bricks/banner-mts.shtml"-->
 					</div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=8&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 	            </div>
 		    </div>
@@ -519,20 +519,20 @@
 		            </div>
 
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=8&count1=120&count2=35&count3=3812"-->
 		            </div>
 
 					<div class="brick">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=3&count1=120&count2=35&count3=3812"-->
+						<!--#include virtual="bricks/news-simple.shtml?image=1&data=6&count1=120&count2=35&count3=3812"-->
 					</div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		      		<div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 					<div class="brick hideOn_768">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=3&count1=120&count2=35&count3=3812"-->
+						<!--#include virtual="bricks/news-simple.shtml?image=1&data=6&count1=120&count2=35&count3=3812"-->
 					</div>
 
 		        </div>
@@ -541,28 +541,28 @@
 		    <div class="swiper-slide">
 				<div class="bricks__wrapper">
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=8&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 					<div class="brick view_banner">
 						<!--#include virtual="bricks/banner-mts.shtml"-->
 					</div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=8&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 	            </div>
 		    </div>
@@ -591,25 +591,25 @@
 		    <div class="swiper-slide">
 				<div class="bricks__wrapper">
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=8&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 					<div class="brick view_banner">
 						<!--#include virtual="bricks/banner-mts.shtml"-->
@@ -620,28 +620,28 @@
 		    <div class="swiper-slide">
 				<div class="bricks__wrapper">
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=8&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&count1=120&count2=35&count3=3812"-->
+		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=8&count1=120&count2=35&count3=3812"-->
 		            </div>
 	            </div>
 		    </div>

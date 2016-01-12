@@ -42,7 +42,11 @@
 					<form>
 						<div class="footerSubscribe__form">
 							<input class="footerSubscribe__input" type="text" placeholder="Введите e-mail" />
-							<button class="footerSubscribe__button" type="submit">подписаться</button>
+							<a class="yellowButton" href="" title="">
+								подписаться
+								<i class="corner"><!-- corner --></i>
+							</a> 
+							<!--button class="footerSubscribe__button" type="submit">подписаться</button-->
 						</div>
 					</form>
 				</div>

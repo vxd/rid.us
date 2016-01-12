@@ -90,13 +90,13 @@
 }
 .footerSubscribe__form .footerSubscribe__input {
 	border: 1px solid #fff;
-	-webkit-border-radius: 3px;
+/*	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
 	-o-border-radius: 3px;
-	border-radius: 3px;
-	width: 100%;
-	padding: 6px 100px 8px 10px;
+	border-radius: 3px;*/
+	width: 90%;
+    padding: 7px 100px 8px 10px;
 	background: transparent;
 	color: #fff;
 	font-size: 12px;
@@ -118,7 +118,7 @@
 	font-style: italic;
 }
 
-.footerSubscribe__form .footerSubscribe__button {
+/*.footerSubscribe__form .footerSubscribe__button {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -135,10 +135,16 @@
 	-ms-border-radius: 0 3px 3px 0;
 	-o-border-radius: 0 3px 3px 0;
 	border-radius: 0 3px 3px 0;
+}*/
+.footerSubscribe__form .yellowButton {
+	position: absolute;
+	right: 0;
+	top: 0;
+    font-size: 11px;
 }
-
-
-
+.footerSubscribe__form .yellowButton .corner {
+    height: 22px;
+}
 
 
 

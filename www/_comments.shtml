@@ -1,10 +1,10 @@
 <div class="comments">
 	<h2>
 		Комментарии (<span id="">9</span>)
-		<a class="comments__expandButton state_open" href="" title=""></a>
+		<a class="comments__expandButton" href="" title=""></a>
 	</h2>
 
-	<div class="commentsContent state_open">
+	<div class="commentsContent">
 
 		<div class="comments__login">
 			<b>Для комментирования новости <a href="#" title="">авторизуйтесь</a> или войдите через социальные сети:</b>

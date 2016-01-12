@@ -703,3 +703,34 @@
 .brick.view_inArticle .brick:last-child {
 	margin-bottom: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.brick.view_noHeight {
+	height: auto;
+}

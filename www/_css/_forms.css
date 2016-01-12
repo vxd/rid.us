@@ -49,21 +49,7 @@ input[type="tel"]:focus:-ms-input-placeholder,
 input[type="url"]:focus:-ms-input-placeholder      {opacity: 0;}
 
 
-/* дефолтные кнопки */
-button[type="submit"],
-input[type="submit"] {
-	background: #0e53b2;
-	color: #fff;
-	cursor: pointer;
-	-moz-transition: all 0.2s;
-	-webkit-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
-}
-button[type="submit"]:hover,
-input[type="submit"]:hover {
-	opacity: .85;
-}
+
 
 input[type="text"],
 input[type="email"],
@@ -75,6 +61,7 @@ input[type="url"] {
 	padding: 6px 13px;
 	font-size: 17px;
 	border: 1px solid #bbb; /* #d4d4d4; */
+	width: 100%;
 }
 
 
@@ -142,10 +129,21 @@ input[type="url"] {
 
 
 
-
+/* дефолтные кнопки */
+button[type="submit"],
+input[type="submit"] {
+	cursor: pointer;
+	-moz-transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;
+}
+/*button[type="submit"]:hover,
+input[type="submit"]:hover {
+	opacity: .85;
+}*/
 /* для случая использования в globalinfo */
 .yellowButton {
-	float: right;
     font-family: 'Roboto Slab', serif;
     font-size: 12px;
 	font-weight: bold;
@@ -155,7 +153,6 @@ input[type="url"] {
 	background: #ffd051;
     padding: 10px 8px 9px 18px;
     margin-right: 10px; /* обязательно ждя уголка */
-    margin-left: 13px;
     position: relative;
 }
 .yellowButton .corner {
@@ -166,6 +163,13 @@ input[type="url"] {
 	background: #ffd051;
     bottom: 0px;
     right: -10px;
+}
+.yellowButton,
+.yellowButton .corner {
+	-moz-transition: all 0.18s;
+	-webkit-transition: all 0.18s;
+	-o-transition: all 0.18s;
+	transition: all 0.18s;
 }
 .yellowButton .corner:before {
 	display: block;
@@ -193,20 +197,25 @@ input[type="url"] {
 .yellowButton:hover,
 .yellowButton:hover .corner {
 	background: #ffc336;
-	color: #000;
+	color: #c64a1b;
 	cursor: pointer;
 }
 
 
 
 /* для случая использования в меню */
+.globalInfo .yellowButton,
+.headerPanel .yellowButton {
+   	float: right;
+    margin-left: 13px;
+}
 .headerPanel .yellowButton .corner:before {
     border-bottom-color: #fff;
     border-left-color: #fff;
 }
 @media screen and (max-width: 1023px) {
 	.headerPanel .yellowButton {
-		margin: 13px 0 13px 12px;
+		margin: 13px 10px 13px 12px;
 		float: right;
 	}
 }
@@ -216,9 +225,8 @@ input[type="url"] {
 		float: right;
 	}
 }
-
+ 
 .headerSearch__form .yellowButton {
-	float: left;
 	margin-left: 0;
 	position: absolute;
 	top: 14px;
@@ -226,10 +234,6 @@ input[type="url"] {
 	margin: 0;
 }
 
-.search .yellowButton {
-	position: absolute;
-	right: 0;
-}
 
 
 
@@ -241,23 +245,30 @@ input[type="url"] {
 .yellowButton.view_big {
 	font-size: 13px;
 	padding: 11px 8px 10px 18px; 
+	display: inline-block;
+	transform: translateY(-1px);
 }
 .yellowButton.view_big .corner {
     height: 26px;
 }
 
 
+.search .yellowButton {
+	position: absolute;
+	right: 0;
+	transform: none;
+}
 
 
 
 /* лэйблы, чекбоксы, радиобатоны */
-/*label {
+label {
 	color: #747474;
-	font-size: 13px;
 	margin-bottom: 7px;
+	font-size: 17px;
 	display: inline-block;
 }
-label.checkboxWrap,
+/*label.checkboxWrap,
 label.radioWrap {
 	color: #000;
 	cursor: pointer;

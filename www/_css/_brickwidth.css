@@ -19,15 +19,15 @@
 		margin: 0 2% 22px 0;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.brick {
 		width: 300px;
 		margin: 0 22px 22px 0;
 	}
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 	.brick {
-		width: 300px;
+		width: 295px;
 		margin: 0 16px 16px 0;
 	}
 }
@@ -53,7 +53,7 @@
 .brick.view_2x {
 	height: 822px; /* = x2 + margin */
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 	.brick.view_2x {
 		height: 816px;  /* = x2 + margin */
 	}
@@ -62,7 +62,7 @@
 .brick.view_3x {
 	height: 1244px; /* = x3 + 2*margin */
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 	.brick.view_3x {
 		height: 1232px;  /* = x3 + 2*margin */
 	}
@@ -103,15 +103,15 @@
 	    width: 23%;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.brick.view_mini {
 		width: 139px;
 		margin: 0 22px 22px 0;
 	}
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 	.brick.view_mini {
-		width: 142px;
+	    width: 139.5px;
 		margin: 0 16px 16px 0;
 	}
 }
@@ -147,23 +147,5 @@
 		margin: 0 3% 22px 0;
 	}
 }
-/*@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.brick.view_authors {
-        width: 31.33333%;
-		margin: 0 2% 22px 0;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
-	.brick.view_authors {
-		width: 300px;
-		margin: 0 22px 22px 0;
-	}
-}
-@media screen and (min-width: 1297px) {
-	.brick.view_authors {
-		width: 300px;
-		margin: 0 16px 16px 0;
-	}
-}
-*/
+
 

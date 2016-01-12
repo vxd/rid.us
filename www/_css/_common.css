@@ -335,14 +335,14 @@ blockquote:after {
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.wrapper { 
 		width: 1024px;
 	}
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 	.wrapper { 
-		width: 1280px;
+		width: 1260px;
 	}
 }
 
@@ -375,7 +375,7 @@ blockquote:after {
 	padding-left: 40px;	
 	padding-right: 40px;	
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 	.paddings_side {
 		padding-left: 16px;	
 		padding-right: 16px;	
@@ -428,7 +428,7 @@ blockquote:after {
 					 40px 0 0 #252525;
 	}
 }
-@media screen and (min-width: 1024px) and (max-width: 1296px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
 	.table__mainColumn .contentBackground_grey {
 		box-shadow: -40px 0 0 #f7f7f7,
 					 10px 0 0 #f7f7f7;
@@ -442,7 +442,7 @@ blockquote:after {
 					 10px 0 0 #252525;
 	}
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 	.table__mainColumn .contentBackground_grey {
 		box-shadow: -16px 0 0 #f7f7f7,
 					  8px 0 0 #f7f7f7;
@@ -667,15 +667,15 @@ blockquote:after {
 	    width: calc(100% - 280px);
 	}
 }
-@media screen and (min-width: 1024px) and (max-width: 1296px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
 	.borderedSection.view_authorMaterials {
 		margin-left: 324px;
 		width: calc(100% - 344px);
 	}
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 	.borderedSection.view_authorMaterials {
-		margin-left: 316px;
+		margin-left: 311px;
 		width: calc(100% - 336px);
 	}
 }
@@ -750,7 +750,10 @@ blockquote:after {
 		width: 270px;
 	}
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
+	.table__sideColumn {
+		width: 295px;
+	}
 	.table__sideColumn:last-child {
 		padding-left: 16px;
 	}
@@ -811,12 +814,12 @@ blockquote:after {
 		display: none;
 	}
 }
-@media screen and (min-width: 1024px) and (max-width: 1296px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
 	.hideOn_1024 {
 		display: none;
 	}
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 	.hideOn_1280 {
 		display: none;
 	}

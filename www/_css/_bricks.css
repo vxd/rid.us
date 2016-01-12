@@ -21,12 +21,12 @@
 		margin-right: -2%;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.bricks__wrapper {
 		margin-right: -22px;
 	}
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 	.bricks__wrapper {
 		margin-right: -16px;
 	}

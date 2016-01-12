@@ -84,7 +84,7 @@ header {
 	color: inherit;
 }
 
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 
 	.dayInfo li {
 		padding: 0 8px 0 16px;
@@ -95,7 +95,7 @@ header {
 }
 
 /* для случая использования в панели */
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.globalInfo .dayInfo .b-weather {
 		display: none;
 	}

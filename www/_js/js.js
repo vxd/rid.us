@@ -286,7 +286,7 @@ $(function() {
 
 		$(window).scroll(function(event){
 	    	currentScrollTop = $(this).scrollTop();
-	    	
+
 	    	if (currentScrollTop >= lastScrollTop) {
 	    		if (currentScrollTop > navbarHeight) {
 		    		$('.headerPanel').addClass('view_hidden');
@@ -383,7 +383,7 @@ $(function() {
 	        spaceBetween: 16,
 	        threshold: 50,
 	        breakpoints: {
-	            1296: {
+	            1279: {
 	                spaceBetween: 22
 	            },
 	            1040: {

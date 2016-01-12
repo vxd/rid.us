@@ -48,7 +48,7 @@
 	    right: 50px;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.popoverLogin {
 		padding: 22px;
 	}
@@ -56,7 +56,7 @@
 	    right: 50px;
 	}
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 	.popoverLogin {
 		padding: 16px;
 	}

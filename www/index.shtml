@@ -673,7 +673,7 @@
     	var whereId = $(".translationPlaceholder:visible").attr("id");
 		transl = jwplayer(whereId).setup({
 			// file: "https://www.youtube.com/watch?v=KxZQG0C0J88", // попросили добавить
-			file: "//www.youtube.com/watch?v=KU7Kd_qGIzw",
+			file: "//www.youtube.com/watch?v=Cs1NswIGXYU",
 			// file: "http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4", // видео в нужном формате!
 			// file: "/jwplayer/video/cadbury.mp4",
 			// image: "http://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",

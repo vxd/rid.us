@@ -11,7 +11,7 @@
 	float: right;
 	background: #2a3436;
 	padding: 15px;
-	width: 270px;
+	width: 265px;
 
 
 }
@@ -145,7 +145,10 @@
 .footerSubscribe__form .yellowButton .corner {
     height: 22px;
 }
-
+/*.footerSubscribe__form .yellowButton .corner:before {
+    border-left-color: #fff;
+    border-bottom-color: #fff;
+}*/
 
 
 
@@ -158,10 +161,6 @@
 	text-decoration: none;
 	font-weight: bold;
 }
-/*.footerFaq__link:hover {
-	text-decoration: underline;
-}*/
-
 
 
 
@@ -184,7 +183,7 @@
 	background: url(../_images/footer-logo.png) left center no-repeat;
 	color: #929292;
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.footerCopy__container {
 		padding-right: 7%;
 	}

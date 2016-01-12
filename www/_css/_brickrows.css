@@ -27,7 +27,7 @@
 		display: none;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.brickrows_1 .brick:nth-child(4n) {
 		display: none;
 	}
@@ -53,7 +53,7 @@
 		display: none;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.brickrows_2 .brick:nth-child(7n),
 	.brickrows_2 .brick:nth-child(8n) {
 		display: none;
@@ -79,7 +79,7 @@
 		display: none;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.brickrows_1 .table__mainColumn .brick:nth-child(3n) {
 		display: none;
 	}
@@ -108,7 +108,7 @@
 		display: none;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.brickrows_2 .table__mainColumn .brick:nth-child(5n),
 	.brickrows_2 .table__mainColumn .brick:nth-child(6n) {
 		display: none;
@@ -138,7 +138,7 @@
 		display: none;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.brickrows_3 .table__mainColumn .brick:nth-child(7n),
 	.brickrows_3 .table__mainColumn .brick:nth-child(8n),
 	.brickrows_3 .table__mainColumn .brick:nth-child(9n) {
@@ -173,7 +173,7 @@
 		display: none;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.brickrows_1 .brick.view_mini:nth-child(7n),
 	.brickrows_1 .brick.view_mini:nth-child(8n) {
 		display: none;

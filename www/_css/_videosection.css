@@ -13,12 +13,12 @@
 		height: 350px;
 	}
 }
-@media screen and (min-width: 1041px) and (max-width: 1296px) {
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.videoSection .table__sideColumn:first-child .brick {
 		height: 380px;
 	}
 }
-@media screen and (min-width: 1297px) {
+@media screen and (min-width: 1280px) {
 	.videoSection {
 		margin-bottom: 16px;
 	}

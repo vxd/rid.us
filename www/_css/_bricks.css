@@ -568,17 +568,23 @@
 .brick.view_3x.view_yellow .iscroll {
     height: 1188px;
 }
-.brick.view_2x.view_withTranslation .iscroll {
-	height: 566px;
+
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+	.brick.view_withTranslation .iscroll {
+	    height: 250px;
+	}
+	.brick.view_withTranslation.state_translationMinimized .iscroll {
+	    height: 398px;
+	}
 }
-.brick.view_withTranslation.state_translationMinimized .iscroll {
-	height: 714px;
-}
-.brick.view_withTranslation.hideOn_768 .iscroll {
-    height: 250px;
-}
-.brick.view_withTranslation.hideOn_768.state_translationMinimized .iscroll {
-    height: 398px;
+@media screen and (min-width: 1280px) {
+	.brick.view_2x.view_withTranslation .iscroll {
+		height: 566px;
+	}
+	.brick.view_withTranslation.state_translationMinimized .iscroll {
+		height: 714px;
+	}
 }
 
 

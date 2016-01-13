@@ -6,8 +6,10 @@
 	z-index: 99999;
 	color: #fff;
     position: fixed;
+    -webkit-backface-visibility: hidden;
     top: 0;
     /*transition: top 0.05s ease-in-out;*/
+    will-change: top;
 }
 .sticked {
     /*transition: padding-top 0.05s ease-in-out;*/

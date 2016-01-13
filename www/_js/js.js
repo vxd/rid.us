@@ -376,27 +376,27 @@ $(function() {
 	// ======================================
 
 
-    // $('.pageSwiper').each(function () {
-	   //  var pageSwiper = new Swiper($(this), {
-	   //      nextButton: $(this).parent().find('.swiper-button-next'),
-	   //      prevButton: $(this).parent().find('.swiper-button-prev'),
-	   //      spaceBetween: 16,
-	   //      threshold: 50,
-	   //      breakpoints: {
-	   //          1279: {
-	   //              spaceBetween: 22
-	   //          },
-	   //          1040: {
-	   //              spaceBetween: "2%",
-	   //              grabCursor: true
-	   //          },
-	   //          1023: {
-	   //              spaceBetween: "3%",
-	   //              grabCursor: true
-	   //          }
-	   //      }
-	   //  });
-    // });
+    $('.pageSwiper').each(function () {
+	    var pageSwiper = new Swiper($(this), {
+	        nextButton: $(this).parent().find('.swiper-button-next'),
+	        prevButton: $(this).parent().find('.swiper-button-prev'),
+	        spaceBetween: 16,
+	        threshold: 50,
+	        breakpoints: {
+	            1279: {
+	                spaceBetween: 22
+	            },
+	            1040: {
+	                spaceBetween: "2%",
+	                grabCursor: true
+	            },
+	            1023: {
+	                spaceBetween: "3%",
+	                grabCursor: true
+	            }
+	        }
+	    });
+    });
 
 
 

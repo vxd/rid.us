@@ -188,6 +188,8 @@
 }*/
 .pageSwiper .swiper-slide {
     opacity: .5;
+    /*-webkit-transform: translate3d(0,0,0);*/
+    
     -webkit-transition: opacity .2s ease;
     -moz-transition: opacity .2s ease;
     -o-transition: opacity .2s ease;

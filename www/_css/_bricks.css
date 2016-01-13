@@ -719,9 +719,41 @@
 
 
 
+.brick.view_more {
+	border: 3px dashed rgba(0,0,0,.13);
+}
+.brick.view_more a {
+	text-decoration: none;
+    color: #000;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 230px 40px 112px;
+    background: url(../_images/ridus-map.gif) no-repeat center;
+}
+.brick.view_more a:after {
+    display: inline-block;
+    width: 26px;
+    height: 20px;
+    content: "";
+    background: url(../_images/icons_sprite.png);
+    background-position: -13px -234px;
+    transform: translateY(3px);
+}
 
-
-
+.contentBackground_darker .brick.view_more {
+	border: 3px dashed rgba(255,255,255,.13);
+}
+.contentBackground_darker .brick.view_more a {
+	color: #ddd;
+}
+.contentBackground_darker .brick.view_more a:after {
+    background-position: -13px -335px;
+    opacity: .7;
+}
 
 
 

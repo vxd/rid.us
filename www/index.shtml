@@ -130,7 +130,7 @@
 		            <div class="brick">
 		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
 		            </div>
-		        	<div class="brick">
+		        	<div class="brick hideOn_1024 hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
 		            <div class="brick hideOn_768">
@@ -142,8 +142,8 @@
 		            <div class="brick hideOn_1024 hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=6&count1=120&count2=35&count3=3812"-->
 		            </div>
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=4&count1=120&count2=35&count3=3812"-->
+		            <div class="brick view_more">
+		                <!--#include virtual="bricks/more.shtml"-->
 		            </div>
 		        </div>
 		    </div>
@@ -225,8 +225,8 @@
 		            <div class="brick hideOn_1024 hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
-		            <div class="brick view_yellow view_opinion">
-		                <!--#include virtual="bricks/opinion.shtml"-->          
+		            <div class="brick view_more">
+		                <!--#include virtual="bricks/more.shtml"-->
 		            </div>
 	            </div>
 		    </div>
@@ -341,8 +341,8 @@
 		            <div class="brick hideOn_1024 hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=8&count1=120&count2=35&count3=3812"-->
+		            <div class="brick view_more">
+		                <!--#include virtual="bricks/more.shtml"-->
 		            </div>
 	            </div>
 		    </div>
@@ -432,8 +432,8 @@
 		            <div class="brick hideOn_1024 hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=4&count1=120&count2=35&count3=3812"-->
 		            </div>
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=7&count1=120&count2=35&count3=3812"-->
+		            <div class="brick view_more">
+		                <!--#include virtual="bricks/more.shtml"-->
 		            </div>
 	            </div>
 		    </div>
@@ -561,8 +561,8 @@
 		            <div class="brick hideOn_1024 hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&count1=120&count2=35&count3=3812"-->
+		            <div class="brick view_more">
+		                <!--#include virtual="bricks/more.shtml"-->
 		            </div>
 	            </div>
 		    </div>
@@ -640,8 +640,8 @@
 		            <div class="brick hideOn_1024 hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=7&count1=120&count2=35&count3=3812"-->
 		            </div>
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=8&count1=120&count2=35&count3=3812"-->
+		            <div class="brick view_more">
+		                <!--#include virtual="bricks/more.shtml"-->
 		            </div>
 	            </div>
 		    </div>

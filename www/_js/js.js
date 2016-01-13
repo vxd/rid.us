@@ -376,27 +376,27 @@ $(function() {
 	// ======================================
 
 
-    $('.pageSwiper').each(function () {
-	    var pageSwiper = new Swiper($(this), {
-	        nextButton: $(this).parent().find('.swiper-button-next'),
-	        prevButton: $(this).parent().find('.swiper-button-prev'),
-	        spaceBetween: 16,
-	        threshold: 50,
-	        breakpoints: {
-	            1279: {
-	                spaceBetween: 22
-	            },
-	            1040: {
-	                spaceBetween: "2%",
-	                grabCursor: true
-	            },
-	            1023: {
-	                spaceBetween: "3%",
-	                grabCursor: true
-	            }
-	        }
-	    });
-    });
+    // $('.pageSwiper').each(function () {
+	   //  var pageSwiper = new Swiper($(this), {
+	   //      nextButton: $(this).parent().find('.swiper-button-next'),
+	   //      prevButton: $(this).parent().find('.swiper-button-prev'),
+	   //      spaceBetween: 16,
+	   //      threshold: 50,
+	   //      breakpoints: {
+	   //          1279: {
+	   //              spaceBetween: 22
+	   //          },
+	   //          1040: {
+	   //              spaceBetween: "2%",
+	   //              grabCursor: true
+	   //          },
+	   //          1023: {
+	   //              spaceBetween: "3%",
+	   //              grabCursor: true
+	   //          }
+	   //      }
+	   //  });
+    // });
 
 
 
@@ -671,6 +671,41 @@ $(function() {
   //   });
 
 
+	var iscrollWrapper = $('.iscroll');
+	// var iscroll = [];
+	var el;
+	for (var i = 0; i < iscrollWrapper.length; i++) {
+		el = iscrollWrapper[i];
+
+		/* подгоняем высоту */
+		var headerHeight = 0;
+    	var footerHeight = 0; 
+    	headerHeight += $(el).parent().find(".brick__header").outerHeight();
+    	footerHeight += $(el).parent().find(".brick__footer").outerHeight();
+		var height = $(el).parent().innerHeight() -
+					  headerHeight -
+					  footerHeight;
+		$(el).height(height);
+
+		var iscrollInstance = new IScroll(el, {
+		    scrollbars: true,
+		    // disableMouse: false,
+		    mouseWheel: true,
+		    // momentum: false,
+		    fadeScrollbars: true,
+		    interactiveScrollbars: true,
+		    bindToWrapper: true
+
+		});
+		// iscroll.push(iscrollInstance);
+	};
+	// console.log(iscroll)
+
+
+
+
+
+
 
 
 	// ======================================
@@ -736,9 +771,6 @@ $(function() {
 						$(slides[i]).show();
 					}					
 			}
-
-
-
 
 	    });
 

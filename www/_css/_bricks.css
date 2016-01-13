@@ -526,11 +526,12 @@
 .brick.view_yellow {
 	border: 3px solid #ffd051;
 	position: relative;
-	overflow: hidden;
 }
 .brick__header.view_yellow {
 	background: #ffd051;
-	width: 100%;
+	width: 100.1%;
+    z-index: 1;
+    position: relative;
 }
 .brick__header.view_yellow .brick__headerLink {
 	-moz-box-sizing: border-box;
@@ -562,7 +563,7 @@
     font-family: 'Roboto Slab', serif;
 	background: #ffd051;
 	color: #000;
-	width: 100%;
+	width: 100.1%;
 	position: absolute;
 	bottom: 0;
 	text-align: center;

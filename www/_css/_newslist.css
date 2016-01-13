@@ -40,6 +40,11 @@
 	display: block;
 	float: left;
 	padding-top: 2px;
+    width: 42px;
+}
+.brick.view_yellow .newsList__date b {
+	font-weight: normal;
+	font-size: 13px;
 }
 .brick.view_yellow .newsList__link {
 	display: block;

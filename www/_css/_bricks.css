@@ -559,15 +559,50 @@
 }
 
 
+.brick.view_yellow .iscroll {
+    height: 356px;
+} 
+.brick.view_2x.view_yellow .iscroll {
+    height: 772px;
+}
+.brick.view_3x.view_yellow .iscroll {
+    height: 1188px;
+}
+.brick.view_2x.view_withTranslation .iscroll {
+	height: 566px;
+}
+.brick.view_withTranslation.state_translationMinimized .iscroll {
+	height: 714px;
+}
+.brick.view_withTranslation.hideOn_768 .iscroll {
+    height: 250px;
+}
+.brick.view_withTranslation.hideOn_768.state_translationMinimized .iscroll {
+    height: 398px;
+}
+
+
+
+.iScrollIndicator {
+	border: none !important;
+	background: rgba(0, 0, 0, 0.3) !important;
+}
+.iScrollVerticalScrollbar {
+	width: 6px !important;
+    right: 2px !important;
+}
+
 
 
 .brick__footer {
     font-family: 'Roboto Slab', serif;
 	background: #ffd051;
 	color: #000;
-	width: 100.1%;
-	position: absolute;
-	bottom: 0;
+	width: 100%;
+	display: block;
+	/*width: 100.1%;*/
+	/*position: absolute;*/
+	/*bottom: 0;*/
 	text-align: center;
 	font-size: 17px;
 	font-weight: bold;

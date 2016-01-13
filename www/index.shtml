@@ -706,7 +706,22 @@
 
 	    wrapper.find(".translation__flip").on('click', function() {
 	    	wrapper.toggleClass("state_translationMinimized");
-	    	translSizeFlip();
+
+	    	var iscroll;
+			for (var i = 0; i < window.globalstorage.iscroll.length; i++) {
+				iscroll = window.globalstorage.iscroll[i];
+				iscroll.refresh()
+			}
+
+	    	// console.log(window.iscroll)//.refresh();
+			// var iscrollInstance = new IScroll('.iscroll', {
+			//     scrollbars: true,
+			//     mouseWheel: true,
+			//     fadeScrollbars: true,
+			//     interactiveScrollbars: true,
+			//     bindToWrapper: true
+			// });
+
 	    	return false;
 	    });
 

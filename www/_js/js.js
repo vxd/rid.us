@@ -712,20 +712,22 @@ $(function() {
 
 
 	var iscrollWrapper = $('.iscroll');
-	// var iscroll = [];
+	window.globalstorage = {
+		iscroll: []
+	}
 	var el;
 	for (var i = 0; i < iscrollWrapper.length; i++) {
 		el = iscrollWrapper[i];
 
 		/* подгоняем высоту */
-		var headerHeight = 0;
-    	var footerHeight = 0; 
-    	headerHeight += $(el).parent().find(".brick__header").outerHeight();
-    	footerHeight += $(el).parent().find(".brick__footer").outerHeight();
-		var height = $(el).parent().innerHeight() -
-					  headerHeight -
-					  footerHeight;
-		$(el).height(height);
+		// var headerHeight = 0;
+  //   	var footerHeight = 0; 
+  //   	headerHeight += $(el).parent().find(".brick__header").outerHeight();
+  //   	footerHeight += $(el).parent().find(".brick__footer").outerHeight();
+		// var height = $(el).parent().innerHeight() -
+		// 			  headerHeight -
+		// 			  footerHeight;
+		// $(el).height(height);
 
 		var iscrollInstance = new IScroll(el, {
 		    scrollbars: true,
@@ -737,9 +739,9 @@ $(function() {
 		    bindToWrapper: true
 
 		});
-		// iscroll.push(iscrollInstance);
+		window.globalstorage.iscroll.push(iscrollInstance);
 	};
-	// console.log(iscroll)
+	// console.log(window.globalstorage.iscroll)
 
 
 

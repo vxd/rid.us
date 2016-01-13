@@ -148,48 +148,79 @@
 .pageSwiper__container {
     position: relative;
 }
-.pageSwiper__container .swiper-button-next,
-.pageSwiper__container .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     width: 50px;
     height: 50px;
     background: #ffd051 url(../_images/icons_sprite.png);
     z-index: 100;
 }
-/*.pageSwiper__container .contentBackground_blue+.swiper-button-next,
-.pageSwiper__container .contentBackground_blue+.swiper-button-prev {
+/*.contentBackground_blue+.swiper-button-next,
+.contentBackground_blue+.swiper-button-prev {
     background-color: #2a3436;
 }*/
 @media screen and (max-width: 1040px) {
-    .pageSwiper__container .swiper-button-next,
-    .pageSwiper__container .swiper-button-prev {
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none;
     }
 }
-
-
-.pageSwiper__container .swiper-button-next.swiper-button-disabled,
-.pageSwiper__container .swiper-button-prev.swiper-button-disabled {
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
     background-color: #fff;
 }
-.pageSwiper__container .swiper-button-prev {
+.swiper-button-prev {
     background-position: -50px -220px;
     left: 1%;
 }
-.pageSwiper__container .swiper-button-next {
+.swiper-button-next {
     float: right;
     background-position: 0px -220px;
     right: 1%;
 }
-/*.pageSwiper__container .contentBackground_blue+.swiper-button-prev {
+/*.contentBackground_blue+.swiper-button-prev {
     background-position: -50px -319px;
 }
-.pageSwiper__container .contentBackground_blue+.swiper-button-next {
+.contentBackground_blue+.swiper-button-next {
     background-position: 0px -319px;
 }*/
+
+.opinion-button-next,
+.opinion-button-prev {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    cursor: pointer;
+    top: -2px;
+    background: transparent url(../_images/icons_sprite.png);
+    z-index: 100;
+}
+.opinion-button-prev {
+    background-position: -50px -224px;
+    left: 0;
+}
+.opinion-button-next {
+    float: right;
+    background-position: -3px -224px;
+    right: 0;
+}
+.opinion-button-next.swiper-button-disabled,
+.opinion-button-prev.swiper-button-disabled {
+    opacity: .3;
+}
+
+
+
+
+
+
+
+
+
 .pageSwiper .swiper-slide {
     opacity: .5;
     /*-webkit-transform: translate3d(0,0,0);*/
-    
+
     -webkit-transition: opacity .2s ease;
     -moz-transition: opacity .2s ease;
     -o-transition: opacity .2s ease;

@@ -26,6 +26,9 @@
     padding: 0;
     width: 100%;
 }
+/*.jw-skin-translation.jw-state-playing  .jw-controlbar {
+    display: table;
+}*/
 .jw-skin-translation .jw-group {
     vertical-align: middle;
     height: 42px;

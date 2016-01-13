@@ -37,9 +37,7 @@
 						</div>
 
 				        <div class="brick view_yellow">
-				        	<h4 class="brick__header view_yellow">
-								<a href="#" class="brick__headerLink view_arrowed" title="">Бездна новостей</a>
-							</h4>
+							<a href="#" class="brick__header view_arrowed" title="">Бездна новостей</a>
 							<!--#include virtual="bricks/newslist.shtml?banner=none"-->
 				        </div>
 
@@ -63,9 +61,7 @@
 		            </div>
 
 			        <div class="brick view_yellow hideOn_1024 hideOn_1280">
-			        	<h4 class="brick__header view_yellow">
-							<a href="#" class="brick__headerLink view_arrowed" title="">Бездна новостей</a>
-						</h4>
+						<a href="#" class="brick__header view_arrowed" title="">Бездна новостей</a>
 						<!--#include virtual="bricks/newslist.shtml?banner=none"-->
 			        </div>
 
@@ -669,7 +665,9 @@
 	var position = 0;
 	var wrapper;
 	var firstPlay = true;
+
     function placeTranslation(state, position) {
+
     	var whereId = $(".translationPlaceholder:visible").attr("id");
 		transl = jwplayer(whereId).setup({
 			// file: "https://www.youtube.com/watch?v=KxZQG0C0J88", // попросили добавить
@@ -679,7 +677,7 @@
 			// image: "http://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",
 			width: "100%",
 			height: 190,
-			autostart: true,
+			// autostart: true,
 			// mute: true,
 			// playlist: [{
 			//     image: "/assets/myPoster.jpg",
@@ -699,10 +697,10 @@
 
 	    function translSizeFlip() {
 	    	if (wrapper.hasClass("state_translationMinimized")) {
-		    	transl.resize("100%", 42);
+		    	transl.remove();
 	    	} else {
-	    		transl.resize("100%", 190);
-	    	}   			
+	    		transl
+	    	} 			
 	    }
 		translSizeFlip();    	
 
@@ -747,12 +745,9 @@
 			$(".jw-display-icon-container").hide();
 		});
 
-
-
-
-
     }
     placeTranslation("idle", 0);
+
 
 	$(window).resize(function(event){
 		if( ! $("#"+transl.id).is(":visible") ) {

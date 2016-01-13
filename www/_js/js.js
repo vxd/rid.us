@@ -406,9 +406,9 @@ $(function() {
 	        pagination: $(this).find('.swiper-pagination'),
 	        paginationClickable: true,
 	        loop: true,
+	        // resistanceRatio: 0,
 	        nested: true,
-	        // width: 616,
-	        // autoplay: 3000,
+	        autoplay: 3000,
 	        // observeParents: true,
 	        observer: true,
 	        setWrapperSize: true,
@@ -427,7 +427,47 @@ $(function() {
 		        doingResize = false;
 		    }
 		}, 100);
+    })
 
+
+    $('.view_opinion').each(function () {
+	    var opinionSlider = new Swiper($(this), {
+	        nextButton: $(this).find('.opinion-button-next'),
+	        prevButton: $(this).find('.opinion-button-prev'),
+	        nested: true,
+	        observer: true,
+	        resistanceRatio: 0,
+	        setWrapperSize: true,
+	        autoplayDisableOnInteraction: false,
+
+	    });
+
+	    /* текущиф слайд */
+	    var currentPlaceholder = $(this).find('#opinion__slideCurrent')
+		currentPlaceholder.html(opinionSlider.activeIndex + 1);
+
+		opinionSlider.on('SlideChangeEnd', function () {
+		    currentPlaceholder.html(opinionSlider.activeIndex + 1);
+		});
+
+		/* сколько всего */
+		var slides = opinionSlider.slides.size();
+		$(this).find('#opinion__slideTotal').html(slides);
+
+
+		/* ресайз */
+		var doingResize = false;
+
+		$(window).resize(function(event){
+		    doingResize = true;
+		});
+
+		setInterval(function() {
+		    if (doingResize) {
+		        opinionSlider.updateSlidesSize();
+		        doingResize = false;
+		    }
+		}, 100);
     })
 
 

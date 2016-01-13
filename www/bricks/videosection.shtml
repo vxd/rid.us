@@ -2,7 +2,7 @@
 	<div class="table__sideColumn">
 		<div class="brick">
 			<h2>
-				<a href="#" class="brick__headerLink" title="">
+				<a href="#" class="brick__mainLink" title="">
 					У пожарных на страшном пожаре не пошла вода, они не растерялись
 				</a>
 			</h2>

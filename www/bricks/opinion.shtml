@@ -1,36 +1,107 @@
-<h4 class="brick__header view_yellow">
-	<a href="#" class="brick__headerLink view_arrowed" title="">мнение</a>
+<h4 class="brick__header view_centred">
+	<div class="opinion-button-prev"></div>
+	мнение
+	<span class="opinion__sliderInfo">
+		&nbsp;(<span id="opinion__slideCurrent">0</span> из <span id="opinion__slideTotal">0</span>)
+	</span>
+	<div class="opinion-button-next"></div>
 </h4>
 
-<a href="" class="brick__image">
-	<img alt="Ученые доказали влияние грибов на погоду" src="http://www.ridus.ru/images/2015/11/3/335051/preview_36ecad4108.jpg">
-</a>
+<div class="swiper-wrapper">
 
-<div class="brick__content">
-	<h4>
-		<a href="#" title="">Евгения Селькова</a>
-	</h4>
-	<p class="brick__text">
-		Профессор медицины
-	</p>
-	<h6>
-		авторская колонка
-	</h6>
-	<h2>
-		<a href="#" class="brick__headerLink" title="">От вируса до вируса — чем отличается каждая новая вспышка</a>
-	</h2>
-	<div class="countersBlock">
-		<span class="countersBlock__item view_count1">
-			34 <i class="icon"><!-- icon --></i>
-		</span>
-		<span class="countersBlock__item view_count2">
-			6 <i class="icon"><!-- icon --></i>
-		</span>
-		<span class="countersBlock__item view_count3">
-			67 <i class="icon"><!-- icon --></i>
-		</span>
+	<div class="swiper-slide">
+		<a href="" class="brick__image">
+			<img alt="Ученые доказали влияние грибов на погоду" src="http://www.bugaga.ru/uploads/posts/2013-07/1372793337_samye-vliyatelnye.jpg">
+			<div class="brick__content opinion__info">
+				<h4>
+					Евгения Селькова
+				</h4>
+				<h6>
+					политолог, обозреватель Коммерсант FM
+				</h6>
+			</div>
+		</a>
+		<div class="brick__content">
+			<h2>
+				<a href="#" class="brick__mainLink" title="">От вируса до вируса — чем отличается каждая новая вспышка?</a>
+			</h2>
+			<div class="countersBlock">
+				<span class="countersBlock__item view_count1">
+					34 <i class="icon"><!-- icon --></i>
+				</span>
+				<span class="countersBlock__item view_count2">
+					6 <i class="icon"><!-- icon --></i>
+				</span>
+				<span class="countersBlock__item view_count3">
+					67 <i class="icon"><!-- icon --></i>
+				</span>
+			</div>	
+			<!-- <a class="readAll" href="authors.shtml" title="">Читать все авторские колонки</a> -->
+		</div>
 	</div>
 
-	<a class="readAll" href="authors.shtml" title="">Читать все авторские колонки</a>
+	<div class="swiper-slide">
+		<a href="" class="brick__image">
+			<img alt="Ученые доказали влияние грибов на погоду" src="http://doseng.org/uploads/posts/2010-02/1265837445_celebrity_portraits_by_raphael_mazzucco_15.jpg">
+			<div class="brick__content opinion__info">
+				<h4>
+					Евгения Селькова
+				</h4>
+				<h6>
+					политолог, обозреватель Коммерсант FM
+				</h6>
+			</div>
+		</a>
+		<div class="brick__content">
+			<h2>
+				<a href="#" class="brick__mainLink" title="">От вируса до вируса — чем отличается каждая новая вспышка?</a>
+			</h2>
+			<div class="countersBlock">
+				<span class="countersBlock__item view_count1">
+					34 <i class="icon"><!-- icon --></i>
+				</span>
+				<span class="countersBlock__item view_count2">
+					6 <i class="icon"><!-- icon --></i>
+				</span>
+				<span class="countersBlock__item view_count3">
+					67 <i class="icon"><!-- icon --></i>
+				</span>
+			</div>	
+			<!-- <a class="readAll" href="authors.shtml" title="">Читать все авторские колонки</a> -->
+		</div>
+	</div>
+
+	<div class="swiper-slide">
+		<a href="" class="brick__image">
+			<img alt="Ученые доказали влияние грибов на погоду" src="http://www.eclipse-sumerki.ru/wp-content/uploads/2011/05/3140c31f2342.jpg">
+			<div class="brick__content opinion__info">
+				<h4>
+					Евгения Селькова
+				</h4>
+				<h6>
+					политолог, обозреватель Коммерсант FM
+				</h6>
+			</div>
+		</a>
+		<div class="brick__content">
+			<h2>
+				<a href="#" class="brick__mainLink" title="">От вируса до вируса — чем отличается каждая новая вспышка?</a>
+			</h2>
+			<div class="countersBlock">
+				<span class="countersBlock__item view_count1">
+					34 <i class="icon"><!-- icon --></i>
+				</span>
+				<span class="countersBlock__item view_count2">
+					6 <i class="icon"><!-- icon --></i>
+				</span>
+				<span class="countersBlock__item view_count3">
+					67 <i class="icon"><!-- icon --></i>
+				</span>
+			</div>	
+			<!-- <a class="readAll" href="authors.shtml" title="">Читать все авторские колонки</a> -->
+		</div>
+	</div>
+
+
 
 </div>

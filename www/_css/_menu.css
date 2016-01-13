@@ -49,7 +49,7 @@
 	float: left;
 }
 .menu__link {
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 14px;
 	display: table-cell;
     vertical-align: middle;
@@ -58,7 +58,7 @@
 	text-decoration: none;
 	height: 60px;
 	line-height: 20px;
-	padding: 0 12px;
+	padding: 0 9px;
 }
 .menu__link:hover {
 	/*background: #c64a1b;*/
@@ -68,11 +68,11 @@
 
 .menu__link.view_menuIcon {
 	position: relative;
-	padding-right: 30px
+	padding-right: 26px
 }
 .menu__link.view_menuIcon .icon {
 	position: absolute;
-    right: 12px;
+    right: 9px;
     top: 46%;
 	display: inline-block;
     border: 5px solid transparent;
@@ -288,7 +288,7 @@
 	text-decoration: none;
 	font-size: 0;
 	float: right;
-	width: 35px;
+	width: 32px;
 	height: 35px;
 	margin: 12px 0;
 	background-image: url(../_images/icons_sprite.png);

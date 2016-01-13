@@ -216,7 +216,7 @@
 
 
 .countersBlock {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
     font-size: 11px;
 	height: 15px;
 	margin-bottom: 4px;
@@ -224,6 +224,7 @@
 .countersBlock__item {
     font-weight: bold;
 	color: #c1c1c1;
+	display: inline-block;
 }
 .countersBlock__item.view_count1 {
     padding: 0 14px 0 0;
@@ -265,7 +266,7 @@
 	width: 11px;
     height: 9px;
     right: 0;
-    top: 3px;
+    top: 2px;
     background-position: -25px -562px;
 }
 .countersBlock__item.view_count4 .icon {
@@ -620,14 +621,14 @@
 .opinion__sliderInfo {
 	font-weight: normal;
 	font-size: 13px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	display: inline-block;
 	transform: translateY(-1px);
 }
 
 .brick.view_opinion .opinion__info h4 {
 	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+	text-shadow: 1px 1px 0px rgba(0,0,0,.3);
 	padding-bottom: 4px;
 }
 .brick.view_opinion .opinion__info h6 {

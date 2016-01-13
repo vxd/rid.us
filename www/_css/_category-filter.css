@@ -53,7 +53,7 @@
 
 
 .categoryFilter__info {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	position: relative;
 	top: -4px;
 	margin-left: 4px;
@@ -73,7 +73,7 @@
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;*/
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	background: #667686;
 	padding: 30px;
 	position: absolute;

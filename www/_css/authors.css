@@ -157,7 +157,7 @@
 .authorPopularity li {
 	display: inline-block;
 	font-size: 12px;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 .authorPopularity .watchers {
 	color: #494949;

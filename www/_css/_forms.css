@@ -4,25 +4,25 @@ input[type="email"]::-webkit-input-placeholder,
 input[type="number"]::-webkit-input-placeholder, 
 input[type="password"]::-webkit-input-placeholder,
 input[type="tel"]::-webkit-input-placeholder,
-input[type="url"]::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'PT Sans', sans-serif;}
+input[type="url"]::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'Roboto', sans-serif; font-weight: 300}
 input[type="text"]::-moz-placeholder,
 input[type="email"]::-moz-placeholder, 
 input[type="number"]::-moz-placeholder, 
 input[type="password"]::-moz-placeholder, 
 input[type="tel"]::-moz-placeholder, 
-input[type="url"]::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'PT Sans', sans-serif;} /* Firefox 19+ */
+input[type="url"]::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'Roboto', sans-serif; font-weight: 300} /* Firefox 19+ */
 input[type="text"]:-moz-placeholder,
 input[type="email"]:-moz-placeholder, 
 input[type="number"]:-moz-placeholder, 
 input[type="password"]:-moz-placeholder, 
 input[type="tel"]:-moz-placeholder, 
-input[type="url"]:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'PT Sans', sans-serif;} /* Firefox 18- */
+input[type="url"]:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'Roboto', sans-serif; font-weight: 300} /* Firefox 18- */
 input[type="text"]:-ms-input-placeholder,
 input[type="email"]:-ms-input-placeholder, 
 input[type="number"]:-ms-input-placeholder, 
 input[type="password"]:-ms-input-placeholder, 
 input[type="tel"]:-ms-input-placeholder, 
-input[type="url"]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'PT Sans', sans-serif;}
+input[type="url"]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'Roboto', sans-serif; font-weight: 300}
 input[type="text"]:focus::-webkit-input-placeholder,
 input[type="email"]:focus::-webkit-input-placeholder, 
 input[type="number"]:focus::-webkit-input-placeholder, 
@@ -57,11 +57,13 @@ input[type="number"],
 input[type="password"],
 input[type="tel"],
 input[type="url"] {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	padding: 6px 13px;
 	font-size: 17px;
 	border: 1px solid #bbb; /* #d4d4d4; */
 	width: 100%;
+	-webkit-appearance: none;
+	border-radius: 0;
 }
 
 
@@ -137,6 +139,7 @@ input[type="submit"] {
 	-webkit-transition: all 0.1s;
 	-o-transition: all 0.1s;
 	transition: all 0.1s;
+	-webkit-appearance: none;
 }
 /*button[type="submit"]:hover,
 input[type="submit"]:hover {
@@ -244,12 +247,12 @@ input[type="submit"]:hover {
 /* на странице в форме */
 .yellowButton.view_big {
 	font-size: 13px;
-	padding: 11px 8px 10px 18px; 
+	/*padding: 11px 8px 10px 18px; */
 	display: inline-block;
 	transform: translateY(-1px);
 }
 .yellowButton.view_big .corner {
-    height: 26px;
+    height: 24px;
 }
 
 
@@ -366,7 +369,7 @@ label.radioWrap {
 .ui-widget select, 
 .ui-widget textarea, 
 .ui-widget button {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* input */
@@ -382,7 +385,7 @@ input.datepicker {
 
 /* стили самого календаря */
 .ui-datepicker {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	border: none;
 	border-radius: 0;
 	box-shadow: 0 8px 21px rgba(0,0,0,.5);
@@ -417,7 +420,7 @@ input.datepicker {
 	border: none;
 	border-radius: 0;
 	padding: 0;
-	font-family: "PT Sans", sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .ui-tabs .ui-tabs-nav {
 	border-radius: 0;
@@ -441,8 +444,8 @@ input.datepicker {
     background: #eeeeee;
     border: none;
 	border-radius: 0;
-	font-weight: bold;
-	font-size: 18px;
+    font-weight: 500;
+    font-size: 17px;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
     margin: 0;
@@ -461,6 +464,6 @@ input.datepicker {
     color: #c64a1b;
 }
 .ui-tabs .ui-tabs-panel {
-    padding: 7px 16px;
+    padding: 0px 16px;
 }
 

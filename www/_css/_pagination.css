@@ -22,7 +22,7 @@
 }
 .pages li a:hover {
 	background: #c64a1b;
-	color: #fff;
+	color: #fff !important;
 }
 .pages li.state_active {
 	padding: 2px 9px;

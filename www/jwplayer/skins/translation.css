@@ -22,13 +22,24 @@
 .jw-skin-translation .jw-controlbar {
 	background: rgba(0,0,0,0.7);
     height: 42px;
-    display: table !important;
+    display: table;
     padding: 0;
     width: 100%;
 }
-/*.jw-skin-translation.jw-state-playing  .jw-controlbar {
-    display: table;
-}*/
+.jw-skin-translation.jw-state-playing  .jw-controlbar {
+    display: table !important;
+}
+
+.fakeControls {
+    display: none;
+}
+.state_translationMinimized .fakeControls {
+    display: block;
+}
+.state_translationMinimized .fakeControls .jw-icon {
+    margin-top: 4px;
+}
+
 .jw-skin-translation .jw-group {
     vertical-align: middle;
     height: 42px;
@@ -190,6 +201,7 @@
 }
 .jw-controlbar-right-group {
     padding-right: 35px;
+    text-align: right;
 }
 
 
@@ -319,7 +331,7 @@
 .translation__wrapper {
     position: relative;
     height: 190px;
-    background: #333;
+    background: #111;
     overflow: hidden;
 }
 .view_withTranslation.state_translationMinimized .translation__wrapper {
@@ -404,7 +416,7 @@
     transform: rotate(45deg);
 }
 
-.state_translationMinimized .translation__flip:before {
+.fakeControls .translation__flip:before {
     top: 8px;
     -moz-transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);

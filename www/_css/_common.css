@@ -886,4 +886,5 @@ blockquote:after {
 .iscroll {
 	position: relative;
 	overflow: hidden;
+	width: 100.1%;
 }

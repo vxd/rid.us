@@ -218,7 +218,7 @@
 
 
 .pageSwiper .swiper-slide {
-    opacity: .5;
+    /*opacity: .5;*/
     /*-webkit-transform: translate3d(0,0,0);*/
 
     -webkit-transition: opacity .2s ease;

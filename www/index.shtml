@@ -29,7 +29,10 @@
 
 		            	<div class="translation__wrapper swiper-no-swiping">
 							<div id="translationPlayer" class="translationPlaceholder"></div>
-							<a href="#" class="translation__flip"></a>
+							<div class="fakeControls">
+								<div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-playback"></div>
+								<a href="#" class="translation__flip"></a>
+							</div>
 						</div>
 
 						<div class="brick view_grey hideOn_1280">
@@ -47,11 +50,14 @@
 
 
 
-		            <div class="brick view_withTranslation state_translationMinimized hideOn_1024 hideOn_1280">
+		            <div class="brick view_withTranslation hideOn_1024 hideOn_1280">
 
 		            	<div class="translation__wrapper  swiper-no-swiping">
 							<div id="translationPlayerMobile" class="translationPlaceholder"></div>
-							<a href="#" class="translation__flip"></a>
+							<div class="fakeControls">
+								<div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-playback"></div>
+								<a href="#" class="translation__flip"></a>
+							</div>
 						</div>
 
 						<div class="brick view_grey hideOn_1280">
@@ -675,15 +681,21 @@
 	var transl;
 	var state;
 	var position = 0;
-	var wrapper;
+	var whereId;
+	var wrapper = (".view_withTranslation");
 	var firstPlay = true;
 
-    function placeTranslation(state, position) {
+	var flipButton = document.createElement('a');
+	flipButton.className = 'translation__flip';
+	flipButton.setAttribute("href", "#");
+	flipButton.setAttribute("title", "");
 
-    	var whereId = $(".translationPlaceholder:visible").attr("id");
-		transl = jwplayer(whereId).setup({
+
+    function placeTranslation(toID) {
+
+		transl = jwplayer(toID).setup({
 			// file: "https://www.youtube.com/watch?v=KxZQG0C0J88", // попросили добавить
-			file: "//www.youtube.com/watch?v=Cs1NswIGXYU",
+			file: "//www.youtube.com/watch?v=Siy69o-rKU4",
 			// file: "http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4", // видео в нужном формате!
 			// file: "/jwplayer/video/cadbury.mp4",
 			// image: "http://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",
@@ -704,58 +716,24 @@
 			}
 		});
 
-
-	    wrapper = $("#"+whereId).parent().parent(".view_withTranslation:visible");
-
-	    function translSizeFlip() {
-	    	if (wrapper.hasClass("state_translationMinimized")) {
-		    	transl.remove();
-	    	} else {
-	    		transl
-	    	} 			
-	    }
-		translSizeFlip();    	
-
-	    wrapper.find(".translation__flip").on('click', function() {
-	    	wrapper.toggleClass("state_translationMinimized");
-
-	    	var iscroll;
-			for (var i = 0; i < window.globalstorage.iscroll.length; i++) {
-				iscroll = window.globalstorage.iscroll[i];
-				iscroll.refresh()
-			}
-
-	    	// console.log(window.iscroll)//.refresh();
-			// var iscrollInstance = new IScroll('.iscroll', {
-			//     scrollbars: true,
-			//     mouseWheel: true,
-			//     fadeScrollbars: true,
-			//     interactiveScrollbars: true,
-			//     bindToWrapper: true
-			// });
-
-	    	return false;
-	    });
-
-
+	    // wrapper = $("#"+toID).parent().parent(".view_withTranslation:visible");
 
 	    transl.onReady(function(){
-			// console.log(state + " " + position)
-	    	$(".jw-display-icon-container").hide();
+	    	// $(".jw-display-icon-container").hide();
+
+			// добавляем сворачивалку
+			$(".jw-controlbar-right-group").append(flipButton);
+			// и добавляем ей событие
+			$(".translation__flip").unbind("click"); // убираем отовсюду
+		    $(".translation__flip").on('click', function() {
+		    	$(wrapper).toggleClass("state_translationMinimized");
+		    	translSizeFlip();
+		    	return false;
+		    });
+
 			transl.setCurrentQuality(3);
-	  //   	if (state == "playing") {
-			// 	transl.seek(position)
-			// 	transl.play(true)
-			// }
-			// if (state == "paused") {
-			// 	transl.pause(true)
-			// }
-			$(".jw-icon-playback").on('click', function() {
-				if (transl.getState() != "playing" && wrapper.hasClass("state_translationMinimized")) {
-					wrapper.toggleClass("state_translationMinimized");
-			    	translSizeFlip();
-				}
-		    }); 
+
+			// transl.play(true);
 	    });
 
 		transl.onBuffer(function(){
@@ -769,20 +747,59 @@
 			    transl.setMute(true);
 				firstPlay = false;
 			} 
-			$(".jw-display-icon-container").hide();
+			// $(".jw-display-icon-container").hide();
 		});
 
     }
-    placeTranslation("idle", 0);
 
 
-	$(window).resize(function(event){
-		if( ! $("#"+transl.id).is(":visible") ) {
-			state = transl.getState();
-			position = transl.getPosition();
-			transl.remove();
-			$(".translation__flip").unbind("click");
-			placeTranslation(state, position);
+
+
+
+	$(".fakeControls").on('click', function() {
+		$(this).parent().parent().toggleClass("state_translationMinimized");
+		translSizeFlip();
+		return false;
+	});
+
+
+
+    function translSizeFlip() {
+    	if (transl) { // если идёт
+	    	if ($(wrapper).hasClass("state_translationMinimized")) { // и если свернули
+		    	transl.remove();
+		    	transl = false;
+	    	}    		
+    	} else { // если не идёт
+    		whereId = $(".translationPlaceholder:visible").attr("id"); // ищем видимый плейсхолдер
+    		if (!$(wrapper).hasClass("state_translationMinimized")) {
+		    	placeTranslation(whereId);		
+    		}
+    	} 	
+
+		// реинициализируем искролл чтобы пересчиталась высота
+		if (window.globalstorage) {
+	    	var iscroll;
+			for (var i = 0; i < window.globalstorage.iscroll.length; i++) {
+				iscroll = window.globalstorage.iscroll[i];
+				iscroll.refresh()
+			}
+		}
+    }
+
+	translSizeFlip();
+
+
+
+
+
+	$(window).resize(function(){
+		if (transl) { // если проигрывается
+			if ( !$("#"+transl.id).is(":visible") ) { // как только исчезает
+				transl.remove();
+				transl = false;
+	    		translSizeFlip();		
+			}
 		}
 	});
 

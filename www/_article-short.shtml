@@ -1,11 +1,15 @@
 <!-- //// определяем переменные -->  
 
 <!--#set var="sidebanner" value="" -->
+<!--#set var="display" value="" -->
 
 <!-- //// извлекаем из параметров урла --> 
 
 <!--#if expr="\"$QUERY_STRING\" = /sidebanner=([a-zA-Z0-9]+)/" -->
 <!--#set var="sidebanner" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /display=([a-zA-Z0-9]+)/" -->
+<!--#set var="display" value="$1" -->
 <!--#endif -->
 
 <!-- //// конец --> 
@@ -37,6 +41,7 @@
 	</ul>
 </div>
 
+<!--#if expr="$display != 0" -->
 <div class="bricks__wrapper clearfix">
 
 	<div class="brick view_articlePhoto">
@@ -53,7 +58,15 @@
 
 	<!--#if expr="$sidebanner = 1" -->
     <div class="brick hideOn_1024 hideOn_768">
-        <!--#include virtual="bricks/news-simple.shtml?image=2&data=5&count1=120&count2=35&count3=3812"-->
+        <div class="brick view_floatText">
+            <!--#include virtual="bricks/mini-full.shtml?image=1&data=1"-->
+        </div>
+        <div class="brick view_floatText">
+            <!--#include virtual="bricks/mini-full.shtml?image=2&data=3"-->
+        </div>
+        <div class="brick view_floatText">
+            <!--#include virtual="bricks/mini-full.shtml?image=3&data=2"-->
+        </div>
     </div>
 	<!--#endif -->
 	<!--#if expr="$sidebanner = 2" -->
@@ -63,7 +76,7 @@
     <!--#endif -->
 
 </div>
-
+<!--#endif -->
 
 
 

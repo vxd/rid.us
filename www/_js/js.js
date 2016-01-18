@@ -6,7 +6,27 @@ $(document).ready(function() {
 
 
 
+	var iscrollWrapper = $('.iscroll');
+	window.globalstorage = {
+		iscroll: []
+	}
+	var el;
+	for (var i = 0; i < iscrollWrapper.length; i++) {
+		el = iscrollWrapper[i];
 
+		var iscrollInstance = new IScroll(el, {
+		    scrollbars: true,
+		    // disableMouse: false,
+		    mouseWheel: true,
+		    // momentum: false,
+		    fadeScrollbars: true,
+		    interactiveScrollbars: true,
+		    bindToWrapper: true
+
+		});
+		window.globalstorage.iscroll.push(iscrollInstance);
+	};
+	// console.log(window.globalstorage.iscroll)
 
 
 
@@ -408,7 +428,7 @@ $(function() {
 	        loop: true,
 	        // resistanceRatio: 0,
 	        nested: true,
-	        autoplay: 3000,
+	        autoplay: 9000,
 	        // observeParents: true,
 	        observer: true,
 	        setWrapperSize: true,
@@ -711,37 +731,7 @@ $(function() {
   //   });
 
 
-	var iscrollWrapper = $('.iscroll');
-	window.globalstorage = {
-		iscroll: []
-	}
-	var el;
-	for (var i = 0; i < iscrollWrapper.length; i++) {
-		el = iscrollWrapper[i];
 
-		/* подгоняем высоту */
-		// var headerHeight = 0;
-  //   	var footerHeight = 0; 
-  //   	headerHeight += $(el).parent().find(".brick__header").outerHeight();
-  //   	footerHeight += $(el).parent().find(".brick__footer").outerHeight();
-		// var height = $(el).parent().innerHeight() -
-		// 			  headerHeight -
-		// 			  footerHeight;
-		// $(el).height(height);
-
-		var iscrollInstance = new IScroll(el, {
-		    scrollbars: true,
-		    // disableMouse: false,
-		    mouseWheel: true,
-		    // momentum: false,
-		    fadeScrollbars: true,
-		    interactiveScrollbars: true,
-		    bindToWrapper: true
-
-		});
-		window.globalstorage.iscroll.push(iscrollInstance);
-	};
-	// console.log(window.globalstorage.iscroll)
 
 
 

@@ -743,19 +743,21 @@
 .brick.view_opinion .opinion__info h6 {
 	color: #fff;
 	margin-bottom: 7px;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 11px;
 }
 .brick.view_opinion h2 {
 	margin-bottom: 10px;
 }
 .brick.view_opinion .brick__mainLink {
 	font-size: 18px;
-    line-height: 1.04;
+    /*line-height: 1.04;*/
 }
-/*.brick.view_opinion .countersBlock {
-	position: absolute;
-	bottom: 4px;
-	left: 16px;
-}*/
+.brick.view_opinion .brick__mainLinkWrapper {
+    margin-bottom: 11px;
+}
 
 
 

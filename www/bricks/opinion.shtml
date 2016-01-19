@@ -22,9 +22,9 @@
 			</div>
 		</a>
 		<div class="brick__content">
-			<h2>
+			<div class="brick__mainLinkWrapper">
 				<a href="#" class="brick__mainLink" title="">От вируса до вируса — чем отличается каждая новая вспышка?</a>
-			</h2>
+			</div>
 			<div class="countersBlock">
 				<span class="countersBlock__item view_count1">
 					34 <i class="icon"><!-- icon --></i>
@@ -53,9 +53,9 @@
 			</div>
 		</a>
 		<div class="brick__content">
-			<h2>
+			<div class="brick__mainLinkWrapper">
 				<a href="#" class="brick__mainLink" title="">От вируса до вируса — чем отличается каждая новая вспышка?</a>
-			</h2>
+			</div>
 			<div class="countersBlock">
 				<span class="countersBlock__item view_count1">
 					34 <i class="icon"><!-- icon --></i>
@@ -84,9 +84,9 @@
 			</div>
 		</a>
 		<div class="brick__content">
-			<h2>
+			<div class="brick__mainLinkWrapper">
 				<a href="#" class="brick__mainLink" title="">От вируса до вируса — чем отличается каждая новая вспышка?</a>
-			</h2>
+			</div>
 			<div class="countersBlock">
 				<span class="countersBlock__item view_count1">
 					34 <i class="icon"><!-- icon --></i>

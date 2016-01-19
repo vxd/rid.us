@@ -76,7 +76,7 @@
 
 
 .brick__image {
-	display: block;
+	/*display: block;*/
 	height: 90px;
 	overflow: hidden;
 	padding-top: 90px;
@@ -90,7 +90,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.brick__label {
+.brick__dateLabel {
     position: absolute;
     background: #000;
     color: #fff;
@@ -99,15 +99,25 @@
     left: -4px;
     padding: 1px 6px 2px;
 }
+
+
 .brick__videoIcon {
     position: absolute;
-    width: 35px;
-    height: 35px;
-    background: #ffd103 url(../_images/icons_sprite.png) -70px 0px;
-    left: 0;
+    width: 32px;
+    height: 32px;
+    background: #ffd103;
+    right: 0;
     bottom: 0;
 }
-
+.brick__videoIcon:after {
+	position: absolute;
+	content: "";
+	left: 10px;
+	left: 10px;
+    top: 8px;
+    border: 8px solid transparent;
+    border-left: 13px solid #000;
+}
 
 
 
@@ -142,42 +152,32 @@
 	font-size: 21px;
 }
 
+.brick__label-position {
+	position: absolute;
+	bottom: 7px;
+	left: 10px;
 
-.brick__content h6,
-.brick__content h6 a {
+}
+.brick__label {
+	background: rgba(102,119,135,.7);
+	padding: 3px 5px 1px;
+
+	font-family: 'Roboto', sans-serif;
 	line-height: 1.1;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: normal;
-	color: #a3a3a3;
+	color: #fff;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+.brick__label:hover {
+	color: #fff !important;
+	background: rgba(102,119,135,1);
+}
+.brick__label.view_marginBottom {
+	display: inline-block;
 	margin-bottom: 5px;
 }
-.brick__content h5,
-.brick__content h5 a {
-	line-height: 1.1;
-	color: #000;
-	text-decoration: none;
-	margin-bottom: 9px;
-}
-
-.brick__mainLink {
-	color: #000;
-	text-decoration: none;
-}
-
-.contentBackground_dark .brick__mainLink,
-.contentBackground_dark .brick__content h5 a {
-	color: #fff;
-}
-.contentBackground_dark .brick__content h6 a {
-	color: #21787c;
-}
-.contentBackground_blue .brick__content h6,
-.contentBackground_blue .brick__content h6 a {
-	color: #828f99;
-}
-
 /*a:hover,
 .contentBackground_blue .brick__content h5 a:hover,
 .contentBackground_blue .brick__content h6 a:hover,
@@ -186,6 +186,28 @@
 	color: #c64a1b;
 }
 */
+
+
+.brick__content h5,
+.brick__content h5 a {
+	line-height: 1.1;
+	color: #000;
+	text-decoration: none;
+	margin-bottom: 9px;
+}
+.contentBackground_dark .brick__mainLink,
+.contentBackground_dark .brick__content h5 a {
+	color: #fff;
+}
+
+
+.brick__mainLink {
+	color: #000;
+	text-decoration: none;
+}
+
+
+
 
 
 .brick__text {

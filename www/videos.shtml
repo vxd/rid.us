@@ -26,13 +26,13 @@
 
 	<div class="bricks__wrapper padding_top padding_bottom clearfix">
 		<div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812&video=true"-->
 		</div>
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=1&label=11&count1=120&count2=35&count3=3812&video=true"-->
         </div>
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812&video=true"-->
         </div>		
 	</div>
 
@@ -45,22 +45,22 @@
 
 	<div class="bricks__wrapper padding_top padding_bottom clearfix">
 		<div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812&video=true"-->
 		</div>
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=1&label=11&count1=120&count2=35&count3=3812&video=true"-->
         </div>
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=2&label=12&count1=120&count2=35&count3=3812&video=true"-->
         </div>		
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=3&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=13&count1=120&count2=35&count3=3812&video=true"-->
         </div>
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812&video=true"-->
         </div>		
 		<div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812&video=true"-->
 		</div>
 	</div>
 
@@ -73,19 +73,19 @@
 
 	<div class="bricks__wrapper padding_top padding_bottom clearfix">
 		<div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812&video=true"-->
 		</div>
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=1&label=11&count1=120&count2=35&count3=3812&video=true"-->
         </div>
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=2&label=12&count1=120&count2=35&count3=3812&video=true"-->
         </div>		
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812&video=true"-->
         </div>		
 		<div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812&video=true"-->
 		</div>
 	</div>
 
@@ -99,28 +99,28 @@
 
 	<div class="bricks__wrapper padding_top padding_bottom clearfix">
 		<div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812&video=true"-->
 		</div>
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=1&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=3&data=1&label=11&count1=120&count2=35&count3=3812&video=true"-->
         </div>
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=2&label=12&count1=120&count2=35&count3=3812&video=true"-->
         </div>		
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812&video=true"-->
         </div>		
 		<div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812&video=true"-->
 		</div>
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=1&data=2&label=12&count1=120&count2=35&count3=3812&video=true"-->
         </div>		
         <div class="brick">
-        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&count1=120&count2=35&count3=3812&video=true"-->
+        	<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812&video=true"-->
         </div>		
 		<div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&count1=120&count2=35&count3=3812&video=true"-->
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812&video=true"-->
 		</div>
 	</div>
 

@@ -100,6 +100,37 @@
     padding: 1px 6px 2px;
 }
 
+.brick__typeLabel {
+	position: absolute;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 16px;
+	background: #ffd051;
+	padding: 7px 10px 6px;
+	left: 0;
+	top: 11px;
+	/*height: 32px;*/
+}
+.brick__typeLabel:after,
+.brick__typeLabel:before {
+	position: absolute;
+	content: "";
+	right: -6px;
+    border-left: 3px solid #ffd051;
+	border-right: 3px solid transparent;
+}
+.brick__typeLabel:before {
+	top: 0;
+	border-bottom: 8px solid transparent;
+    border-top: 8px solid #ffd051;
+}
+.brick__typeLabel:after {
+	bottom: 0;
+	border-bottom: 8px solid #ffd051;
+    border-top: 8px solid transparent;
+}
+
 
 .brick__videoIcon {
     position: absolute;
@@ -144,13 +175,7 @@
 
 
 
-.brick__content h2,
-.brick__content h2 a {
-	margin-bottom: 8px;
-	line-height: 1.1;
-	color: #000;
-	font-size: 21px;
-}
+
 
 .brick__label-position {
 	position: absolute;
@@ -195,23 +220,44 @@
 	text-decoration: none;
 	margin-bottom: 9px;
 }
+
+
+
+
+
+.brick__mainLinkWrapper {
+	margin-bottom: 5px;
+}
+
+
+.brick__mainLink {
+    font-family: 'Roboto Slab', serif;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 1.1;
+	color: #000;
+	font-size: 21px;
+	text-decoration: none;
+}
 .contentBackground_dark .brick__mainLink,
 .contentBackground_dark .brick__content h5 a {
 	color: #fff;
 }
 
 
-.brick__mainLink {
-	color: #000;
-	text-decoration: none;
+
+.brick__mainLinkDate {
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	color: #909090;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 
 
 
-
-
 .brick__text {
-	color: #444;
+	color: #000;
 	font-size: 15px;
 	margin-bottom: 10px;
 	line-height: 1.2;

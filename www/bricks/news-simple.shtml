@@ -4,6 +4,7 @@
 <!--#set var="image" value="" -->
 <!--#set var="data" value="" -->
 <!--#set var="label" value="" -->
+<!--#set var="typelabel" value="" -->
 <!--#set var="video" value="" -->
 <!--#set var="count1" value="" -->
 <!--#set var="count2" value="" -->
@@ -19,6 +20,9 @@
 <!--#endif -->
 <!--#if expr="\"$QUERY_STRING\" = /label=([a-zA-Z0-9]+)/" -->
 <!--#set var="label" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /typelabel=([a-zA-Z0-9]+)/" -->
+<!--#set var="typelabel" value="$1" -->
 <!--#endif -->
 <!--#if expr="\"$QUERY_STRING\" = /video=([a-zA-Z0-9]+)/" -->
 <!--#set var="video" value="$1" -->
@@ -49,6 +53,13 @@
 
 <!--#if expr="$video = 'true'" -->
 	<i class="brick__videoIcon"></i>
+<!--#endif -->
+
+<!--#if expr="$typelabel = 1" -->
+	<span class="brick__typeLabel">спецрепортаж</span>
+<!--#endif -->
+<!--#if expr="$typelabel = 2" -->
+	<span class="brick__typeLabel">обзор прессы</span>
 <!--#endif -->
 
 <!--#if expr="$label = 11" -->
@@ -87,25 +98,25 @@
 
 <div class="brick__content">
 <!--#if expr="$data = 1" -->
-	<h2>
-		<a href="#" class="brick__mainLink" title="">Исследование: где в Москве опаснее безопаснее всего жить</a>
-	</h2>
+	<div class="brick__mainLinkWrapper">
+		<a href="#" class="brick__mainLink" title="">Исследование: где в Москве опаснее безопаснее всего жить</a> <span class="brick__mainLinkDate">сегодня</span>
+	</div>
 	<p class="brick__text">
 		Каждый старшеклассник знает, что сила тока измеряется в амперах. В чем измеряется напряжение обстановки и как измерить уровень безопасности на улице, знают только в полиции.
 	</p>
 <!--#endif -->
 <!--#if expr="$data = 2" -->
-	<h2>
-		<a href="#" class="brick__mainLink" title="">Известная модель надела паранджу после операции шмоперации</a>
-	</h2>
+	<div class="brick__mainLinkWrapper">
+		<a href="#" class="brick__mainLink" title="">Известная модель надела паранджу после операции шмоперации</a> <span class="brick__mainLinkDate">сегодня</span>
+	</div>
 	<p class="brick__text">
 		Главный научный сотрудник лаборатории солнечного ветра ИКИ РАН Олег Вайсберг рассказал, что «открытие» NASA было известно советским ученым еще в 1970-х годах.
 	</p>
 <!--#endif -->
 <!--#if expr="$data = 3" -->
-	<h2>
-		<a href="#" class="brick__mainLink" title="">На борту А321 могла взорваться жидкая бомба</a>
-	</h2>
+	<div class="brick__mainLinkWrapper">
+		<a href="#" class="brick__mainLink" title="">На борту А321 могла взорваться жидкая бомба</a> <span class="brick__mainLinkDate">вчера</span>
+	</div>
 	<p class="brick__text">
 		Эксперт по борьбе с терроризмом Ронен Соломон заявил, что российский аэробус мог быть взорван с помощью жидкого взрывчатого вещества, которое кто-то из пассажиров пронес на борт в бутылке.
 	</p>

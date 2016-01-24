@@ -70,52 +70,52 @@ $(function() {
 	// toolip
 	// ======================================
 
-	var popoverContent = $('.popoverLogin').remove().html();
+	// var popoverContent = $('.popoverLogin').remove().html();
 
-    $(document).on('click', '.header__loginButton', function () {
-    	$(this).attr('title', popoverContent).addClass("state_on");
-        $(this).tooltip({
-            items: '.header__loginButton.state_on',
-            tooltipClass: 'popoverLogin',
-            show: null, // show immediately 
-            // hide: { effect: "" }, //fadeOut
-            hide: null,
-            position: {
-            	my: "right top",
-				at: "right bottom",
-				of: ".headerPanel .wrapper"
-            },
-            content: function () {
-	            return $(this).prop('title');
-	        }
-        });
-        $(this).trigger('mouseenter');
-		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
-        return false;
-    });
+ //    $(document).on('click', '.header__loginButton', function () {
+ //    	$(this).attr('title', popoverContent).addClass("state_on");
+ //        $(this).tooltip({
+ //            items: '.header__loginButton.state_on',
+ //            tooltipClass: 'popoverLogin',
+ //            show: null, // show immediately 
+ //            // hide: { effect: "" }, //fadeOut
+ //            hide: null,
+ //            position: {
+ //            	my: "right top",
+	// 			at: "right bottom",
+	// 			of: ".headerPanel .wrapper"
+ //            },
+ //            content: function () {
+	//             return $(this).prop('title');
+	//         }
+ //        });
+ //        $(this).trigger('mouseenter');
+	// 	$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+ //        return false;
+ //    });
 
-	$(window).scroll(function() {
-		$(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
-	});
-	$(window).resize(function(){
-		$(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
-	});
+	// $(window).scroll(function() {
+	// 	$(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
+	// });
+	// $(window).resize(function(){
+	// 	$(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
+	// });
 
-    //hide
-    $(document).on('click', '.header__loginButton.state_on', function () {
-        $(this).tooltip('close').removeClass("state_on").attr('title', '');
-        return false;
-    });
-	$(document).click(function(event) {
-		if ($(event.target).closest(".popoverLogin").length) return;
-        $(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
-		event.stopPropagation();
-	});
+ //    //hide
+ //    $(document).on('click', '.header__loginButton.state_on', function () {
+ //        $(this).tooltip('close').removeClass("state_on").attr('title', '');
+ //        return false;
+ //    });
+	// $(document).click(function(event) {
+	// 	if ($(event.target).closest(".popoverLogin").length) return;
+ //        $(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
+	// 	event.stopPropagation();
+	// });
 
-    //prevent mouseout and other related events from firing their handlers
-    $(".header__loginButton").on('mouseout', function (e) {
-        e.stopImmediatePropagation();
-    });
+ //    //prevent mouseout and other related events from firing their handlers
+ //    $(".header__loginButton").on('mouseout', function (e) {
+ //        e.stopImmediatePropagation();
+ //    });
 
 
 
@@ -136,12 +136,27 @@ $(function() {
 		$(this).toggleClass("state_open");
 		$(".subMenu").toggleClass("state_open");
 
-		$(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
+		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
 		return false;
 	});
 	$(document).click(function(event) {
 		if ($(event.target).closest(".menu__link.view_menuIcon, .subMenu .tagList").length) return;
 		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+		event.stopPropagation();
+	});
+
+
+	/* логин */
+	$(".header__loginButton").on('click', function(){
+		$(this).toggleClass("state_open");
+		$(".popover__wrapper").toggleClass("state_open");
+		
+		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+		return false;
+	});
+	$(document).click(function(event) {
+		if ($(event.target).closest(".header__loginButton, .popoverLogin").length) return;
+		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
 		event.stopPropagation();
 	});
 
@@ -332,6 +347,7 @@ $(function() {
         	/* вниз */
 	    	if (currentScrollTop > navbarHeight) { /* не скрываем, пока проскроллили меньше высоты меню */
 		    	$('.headerPanel').addClass('view_hidden'); 
+				$(".popover__wrapper, .header__loginButton").removeClass("state_open");
 	    	}
 	    } else {
 	    	/* вверх */
@@ -642,7 +658,7 @@ $(function() {
 		$(".headerSearch__form .search__input").focus();
 
 		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
-		$(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
+		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
 		return false;
 	});
 

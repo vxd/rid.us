@@ -212,7 +212,7 @@ input[type="submit"]:hover {
    	float: right;
     margin-left: 13px;
 }
-.headerPanel .yellowButton .corner:before {
+.yellowButton.view_whiteCorner .corner:before {
     border-bottom-color: #fff;
     border-left-color: #fff;
 }

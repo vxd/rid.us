@@ -77,9 +77,9 @@
 
 .brick__image {
 	/*display: block;*/
-	height: 90px;
+	height: 112px;
 	overflow: hidden;
-	padding-top: 90px;
+	padding-top: 113px;
 	margin-bottom: 10px;
 	position: relative;
 }
@@ -888,8 +888,22 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 230px 40px 112px;
-    background: url(../_images/ridus-map.gif) no-repeat center;
+    padding: 70px 40px 112px;
+}
+.brick.view_more a:before {
+	display: block;
+	content: "";
+    background: url(../_images/arrow-block.png) no-repeat 50% 25%;
+    width: 170px;
+    height: 126px;
+    opacity: .17;
+    margin: 0 auto 33px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.brick.view_more a:before {
+		background-image: url(../_images/arrow-block_2x.png);
+		background-size: 170px 126px;
+	}
 }
 .brick.view_more a:after {
     display: inline-block;

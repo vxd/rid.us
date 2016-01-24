@@ -1,22 +1,28 @@
-
+.popover__wrapper {
+	display: none;
+	/*top: 60px;*/
+	width: 100%;
+}
+.popover__wrapper .wrapper {
+	position: relative;
+}
+.popover__wrapper.state_open {
+	display: block;
+}
 .popoverLogin {
-	width: 440px;
-	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	right: 0;
+	background: #fff;
+	color: #000;
+	font-size: 13px;
 
-	max-width: 100%;
+	width: 480px;
+
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box; 
 
-	-moz-border-radius: 0;
-	-webkit-border-radius: 0;
-	border-radius: 0;
 
-	border: none;
-
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
 
 	-moz-box-shadow: 0 3px 5px rgba(0,0,0,.2);
 	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.2);
@@ -28,63 +34,100 @@
 	content: "";
     position: absolute;
     top: -14px;
+    right: 47px;
     display: inline-block;
     border: 7px solid transparent;
     border-bottom: 7px solid #fff;
 }
 /*@media screen and (max-width: 1023px) {
 	.popoverLogin {
-		padding: 3%;
+		display: none;
 	}
-	.popoverLogin:after {
-	    right: 50px;
-	}
-}*/
+}
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.popoverLogin {
-		padding: 2%;
-	}
-	.popoverLogin:after {
-	    right: 50px;
+		padding: 2% 0;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1279px) {
 	.popoverLogin {
 		padding: 22px;
 	}
-	.popoverLogin:after {
-	    right: 50px;
-	}
-}
+}*/
 @media screen and (min-width: 1280px) {
-	.popoverLogin {
-		padding: 16px;
-	}
 	.popoverLogin:after {
-	    right: 26px;
+	    right: 23px;
 	}
 }
 
 
 
-
-
-
-.popoverLogin h5 {
-	margin-bottom: 20px;
+.popoverLogin__sectionBottom,
+.popoverLogin__sectionTop {
+    padding: 22px 25px 16px;
 }
-.popoverLogin p {
+.popoverLogin__sectionBottom {
+	background: #f6f6f6;
+	border-top: 1px solid #e5e5e5;
+}
+.popoverLogin__sectionTop {
+	padding-bottom: 10px;
+}
+
+
+
+.popoverLogin__welcome {
+	font-size: 30px;
+	padding-left: 65px;
+	height: 72px;
+	width: 220px;
+	margin-bottom: 26px;
+	background: url(../_images/logo_clear.png) no-repeat 0 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.popoverLogin__welcome {
+		background-image: url(../_images/logo_clear_2x.png);
+		background-size: 45px 72px;
+	}
+}
+
+
+
+.popoverLogin__sectionTop .popoverLogin__tip {
+	 position: absolute;
+	 right: 25px;
+}
+.popoverLogin__sectionBottom .popoverLogin__tip {
+	float: right;
+}
+.popoverLogin__tip a {
+	color: #000 !important;
+}
+.popoverLogin__tip a:hover {
+	color:  #c64a1b !important;
+}
+.popoverLogin h6 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+	margin-bottom: 15px;
+}
+/*.popoverLogin p {
 	font-size: 14px;
-}
+}*/
 
-.loginForm input[type="text"],
-.loginForm input[type="password"] {
+.popoverLogin__loginForm input[type="text"],
+.popoverLogin__loginForm input[type="password"] {
 	float: left;
 	width: 49%;
+	margin-bottom: 5px;
 }
-.loginForm input[type="text"] {
+.popoverLogin__loginForm input[type="text"] {
 	margin-right: 2%;
 }
-.loginForm label {
-	font-size: 14px;
+.popoverLogin__loginForm label {
+	font-size: 13px;
+}
+.popoverLogin__loginForm .yellowButton {
+	margin-right: 150px;
+	margin-top: 5px;
 }

@@ -296,7 +296,8 @@
 .header__loginButton {
 	background-position: -35px 0;
 }
-.header__loginButton:hover {
+.header__loginButton:hover,
+.header__loginButton.state_open {
 	background-position: -35px -35px;
 }
 .header__searchButton {

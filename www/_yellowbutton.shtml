@@ -17,7 +17,7 @@
 
 
 <!--#if expr="$hided = 1" -->
-<a class="yellowButton hideOn_desktop" href="" title="">
+<a class="yellowButton hideOn_desktop view_whiteCorner" href="" title="">
 <!--#endif -->
 <!--#if expr="$hided != 1" -->
 <a class="yellowButton" href="" title="">

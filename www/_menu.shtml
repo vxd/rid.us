@@ -28,7 +28,7 @@
 		<a class="header__loginButton" href="#" title="">&nbsp;</a>
 		<a class="header__searchButton" href="#">&nbsp;</a>
 
-		<!--#include virtual="_popover-login.shtml"-->
+		
 
 		<!--#include virtual="_yellowbutton.shtml?text=1&hided=1"-->
 		<!--#include virtual="_dayinfo.shtml"-->
@@ -73,6 +73,12 @@
 
 
 
+	</div>
+
+	<div class="popover__wrapper">
+		<div class="wrapper">
+			<!--#include virtual="_popover-login.shtml"-->
+		</div>
 	</div>
 
 </div>

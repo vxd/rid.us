@@ -1,10 +1,15 @@
-<div class="popoverLogin" style="display:none;">
+<div class="popoverLogin">
 
-	<!-- <div class="wrapper"> -->
-		<h5>Войти через социальные сети:</h5>
+	<div class="popoverLogin__sectionTop">
+
+		<div class="popoverLogin__tip">
+			Нет логина? <a href="#" title="">Зарегистрируйтесь</a>!
+		</div>
+
+		<h2 class="popoverLogin__welcome">Добро пожаловать!</h2>
 
 		<div class="comments__login">
-			<!-- <b>Войти через социальные сети:</b> -->
+			<h6>Войти через социальные сети:</h6>
 			<ul class="commentsSocials">
 				<li class="socialNetwork__item">
 					<a class="socialNetwork__link view_iconFacebook" href="#" title="">
@@ -30,39 +35,34 @@
 			</ul>
 		</div>
 
-		<hr>
-
-		<h5 class="padding_top">Войти как пользователь "РИДУС":</h5>
+	</div>
 
 
-		<p class="padding_bottom">
-			У вас еще нет логина? <a href="#" title="">Зарегистрируйтесь</a>!
-			<br>
-			Забыли пароль? <a href="#" title="">Восстановить</a>
-		</p>
+	<div class="popoverLogin__sectionBottom clearfix">
 
-		<div class="loginForm">
+		<h6>Войти как пользователь "РИДУС":</h6>
+
+
+		<div class="popoverLogin__loginForm">
 			<form>
 				<div class="clearfix">
 					<input type="text" placeholder="Ваш e-mail">
 					<input type="password" placeholder="Пароль">
 				</div>
 				
-				<div class="clearfix padding_top">
+				<div class="clearfix">
 					<label><input type="checkbox" checked>Запомнить меня</label>
-					<a class="yellowButton" href="" title="">
-						Войти в систему
-						<i class="corner"><!-- corner --></i>
-					</a>
+					<span class="popoverLogin__tip">Забыли пароль? <a href="#" title="">Восстановить</a></span>
 				</div>
-
+				<a class="yellowButton" href="" title="">
+					Войти в систему
+					<i class="corner"><!-- corner --></i>
+				</a>
 			</form>
 		</div>
 		 
 		
-
-
-	<!-- </div> -->
+	</div>
 
 
 </div>

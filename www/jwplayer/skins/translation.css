@@ -26,9 +26,9 @@
     padding: 0;
     width: 100%;
 }
-.jw-skin-translation.jw-state-playing  .jw-controlbar {
+/*.jw-skin-translation.jw-state-playing  .jw-controlbar {
     display: table !important;
-}
+}*/
 
 .fakeControls {
     display: none;

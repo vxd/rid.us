@@ -39,12 +39,12 @@
     border: 7px solid transparent;
     border-bottom: 7px solid #fff;
 }
-/*@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
 	.popoverLogin {
 		display: none;
 	}
 }
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
+/*@media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.popoverLogin {
 		padding: 2% 0;
 	}
@@ -127,7 +127,9 @@
 .popoverLogin__loginForm label {
 	font-size: 13px;
 }
-.popoverLogin__loginForm .yellowButton {
-	margin-right: 150px;
-	margin-top: 5px;
+.headerPanel .popoverLogin__loginForm .yellowButton {
+    float: none;
+    display: inline-block;
+    margin-left: 140px;
+    margin-top: 5px;
 }

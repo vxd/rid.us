@@ -345,9 +345,9 @@ $(function() {
 
         if ( yDiff > 0 ) {
         	/* вниз */
+			$(".popover__wrapper, .header__loginButton").removeClass("state_open");
 	    	if (currentScrollTop > navbarHeight) { /* не скрываем, пока проскроллили меньше высоты меню */
 		    	$('.headerPanel').addClass('view_hidden'); 
-				$(".popover__wrapper, .header__loginButton").removeClass("state_open");
 	    	}
 	    } else {
 	    	/* вверх */

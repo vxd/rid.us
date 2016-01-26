@@ -889,3 +889,29 @@ blockquote:after {
 	overflow: hidden;
 	width: 100.1%;
 }
+
+
+
+
+
+
+
+
+.hcSticky__sticky {
+	position: relative;
+}
+
+.sticked {
+	width: 300px;
+	position: absolute;
+	top: 0;
+	/*height: 820px;*/
+	/*transition: all 0.3s ease-in-out;*/
+}
+@media screen and (min-width: 1280px) {
+	.sticked {
+	    width: 295px;
+	}
+}
+.sticked.state_floating {
+}

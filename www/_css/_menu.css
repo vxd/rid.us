@@ -11,9 +11,6 @@
     /*transition: top 0.05s ease-in-out;*/
     will-change: top;
 }
-.sticked {
-    /*transition: padding-top 0.05s ease-in-out;*/
-}
 .headerPanel.view_hidden {
     top: -60px;
 }

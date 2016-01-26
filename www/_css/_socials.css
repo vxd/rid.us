@@ -1,5 +1,6 @@
 .globalInfo .b-share_theme_counter {
 	float: right;
+	height: 33px;
 }
 .globalInfo .b-share_theme_counter .b-share {
 	padding: 0  !important;
@@ -108,6 +109,9 @@
 
 
 
+.articleSocials .b-share_theme_counter {
+	height: 52px;
+}
 .articleSocials .b-share_theme_counter .b-share {
 	padding: 0  !important;
 }

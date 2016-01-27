@@ -471,6 +471,9 @@ $(function() {
 				  //   }
 		    // 	}
 
+
+
+
 		    	if (bottomScreen > ($(".hcSticky__sticky").offset().top + $(".hcSticky__sticky").height()) )  {
 			        sticked.css({top: "initial", bottom: 0});		    		
 		    	} else {
@@ -479,8 +482,12 @@ $(function() {
 
 		    } else {
 		        sticked.css({top: 0, bottom: "initial"}).removeClass("state_floating");
-
 		    }
+
+
+
+
+
 		    
 		    // lastScrollTop = st;
 		}
@@ -585,7 +592,6 @@ $(function() {
 	        }
 	    });
     });
-
 
 
 

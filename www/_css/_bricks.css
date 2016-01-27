@@ -492,6 +492,7 @@
 	margin-bottom: 10px;
 }
 .brick.view_authors .brick__image {
+	display: block;
 	height: 65px;
 	padding-top: 65px;
 	width: 200px;

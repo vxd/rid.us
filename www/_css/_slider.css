@@ -169,9 +169,13 @@
         display: none;
     }
 }
-.swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
     background-color: #fff;
+    background-position: -50px -220px;
+}
+.swiper-button-next.swiper-button-disabled {
+    background-color: #fff;
+    background-position: 0px -220px;
 }
 .swiper-button-prev {
     background-position: -50px -220px;

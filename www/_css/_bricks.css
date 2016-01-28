@@ -203,14 +203,37 @@
 	display: inline-block;
 	margin-bottom: 5px;
 }
-/*a:hover,
-.contentBackground_blue .brick__content h5 a:hover,
-.contentBackground_blue .brick__content h6 a:hover,
-.contentBackground_dark .brick__content h5 a:hover,
-.contentBackground_dark .brick__content h6 a:hover {
-	color: #c64a1b;
+
+/* здоровье */
+.contentBackground_dark .brick__label {
+	background: rgba(0,171,170,.7);
 }
-*/
+.contentBackground_dark .brick__label:hover {
+	background: rgba(0,171,170,1);
+}
+/* технологии */
+.contentBackground_deepblue .brick__label {
+	background: rgba(102,157,195,.7);
+}
+.contentBackground_deepblue .brick__label:hover {
+	background: rgba(102,157,195,1);
+}
+/* происшествия */
+.contentBackground_red .brick__label {
+	background: rgba(255,0,0,.7);
+}
+.contentBackground_red .brick__label:hover {
+	background: rgba(255,0,0,1);
+}
+/* происшествия темнее */
+.contentBackground_gunmetal .brick__label {
+	background: rgba(255,0,0,.7);
+}
+.contentBackground_gunmetal .brick__label:hover {
+	background: rgba(255,0,0,1);
+}
+
+
 
 
 .brick__content h5,
@@ -239,9 +262,17 @@
 	font-size: 21px;
 	text-decoration: none;
 }
+.contentBackground_red .brick__mainLink,
+.contentBackground_gunmetal .brick__mainLink,
+.contentBackground_gunmetal .brick__content h5 a,
+.contentBackground_deepblue .brick__mainLink,
+.contentBackground_deepblue .brick__content h5 a,
 .contentBackground_dark .brick__mainLink,
 .contentBackground_dark .brick__content h5 a {
 	color: #fff;
+}
+.contentBackground_red .brick__content h5 a {
+	color: #f8eeed;
 }
 
 
@@ -253,7 +284,11 @@
 	font-weight: 300;
 	text-transform: uppercase;
 }
-
+.contentBackground_gunmetal .brick__mainLinkDate,
+.contentBackground_red .brick__mainLinkDate,
+.contentBackground_deepblue .brick__mainLinkDate {
+	color: #fff;
+}
 
 
 .brick__text {
@@ -262,9 +297,16 @@
 	margin-bottom: 10px;
 	line-height: 1.2;
 }
+.contentBackground_gunmetal .brick__text,
+.contentBackground_deepblue .brick__text,
 .contentBackground_dark .brick__text {
     color: #d3d3d3;
 }
+.contentBackground_red .brick__text {
+	color: #e8dedd;
+}
+
+
 .brick__text a {
 	color: #343434;
 	text-decoration: none;
@@ -350,6 +392,9 @@
 .contentBackground_blue .countersBlock__item {
 	color: #929fa9;
 }
+.contentBackground_red .countersBlock__item {
+	color: #ECC4C0;
+}
 
 
 /* на желтой видосекции */
@@ -365,30 +410,38 @@
 
 
 /* в слайдере и на темном фоне - белые */
-.videoPlaylist .countersBlock__item .icon,
-.contentBackground_darker .countersBlock__item .icon,
+.contentBackground_deepblue .countersBlock__item .icon,
 .contentBackground_dark .countersBlock__item .icon,
+.contentBackground_gunmetal .countersBlock__item .icon,
+.contentBackground_red .countersBlock__item .icon,
+.videoPlaylist .countersBlock__item .icon,
 .aLaSlideImage .countersBlock__item .icon,
 .slider .countersBlock__item .icon {
     opacity: .55;
 }
-.videoPlaylist__item .countersBlock__item.view_count1 .icon,
-.contentBackground_darker .countersBlock__item.view_count1 .icon,
+.contentBackground_deepblue .countersBlock__item.view_count1 .icon,
 .contentBackground_dark .countersBlock__item.view_count1 .icon,
+.contentBackground_gunmetal .countersBlock__item.view_count1 .icon,
+.contentBackground_red .countersBlock__item.view_count1 .icon,
+.videoPlaylist__item .countersBlock__item.view_count1 .icon,
 .aLaSlideImage .countersBlock__item.view_count1 .icon,
 .slider .countersBlock__item.view_count1 .icon {
     background-position: -0px -514px;
 }
-.videoPlaylist__item .countersBlock__item.view_count2 .icon,
-.contentBackground_darker .countersBlock__item.view_count2 .icon,
+.contentBackground_deepblue .countersBlock__item.view_count2 .icon,
 .contentBackground_dark .countersBlock__item.view_count2 .icon,
+.contentBackground_gunmetal .countersBlock__item.view_count2 .icon,
+.contentBackground_red .countersBlock__item.view_count2 .icon,
+.videoPlaylist__item .countersBlock__item.view_count2 .icon,
 .aLaSlideImage .countersBlock__item.view_count2 .icon,
 .slider .countersBlock__item.view_count2 .icon {
     background-position: -11px -514px;
 }
-.videoPlaylist__item .countersBlock__item.view_count3 .icon,
-.contentBackground_darker .countersBlock__item.view_count3 .icon,
+.contentBackground_deepblue .countersBlock__item.view_count3 .icon,
 .contentBackground_dark .countersBlock__item.view_count3 .icon,
+.contentBackground_gunmetal .countersBlock__item.view_count3 .icon,
+.contentBackground_red .countersBlock__item.view_count3 .icon,
+.videoPlaylist__item .countersBlock__item.view_count3 .icon,
 .aLaSlideImage .countersBlock__item.view_count3 .icon,
 .slider .countersBlock__item.view_count3 .icon {
     background-position: -25px -514px;
@@ -900,12 +953,24 @@
     opacity: .17;
     margin: 0 auto 33px;
 }
+.contentBackground_dark .brick.view_more a:before,
+.contentBackground_red .brick.view_more a:before,
+.contentBackground_gunmetal .brick.view_more a:before {
+    background-image: url(../_images/arrow-block-w.png);
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
 	.brick.view_more a:before {
 		background-image: url(../_images/arrow-block_2x.png);
 		background-size: 170px 126px;
 	}
+	.contentBackground_dark .brick.view_more a:before,
+	.contentBackground_red .brick.view_more a:before,
+	.contentBackground_gunmetal .brick.view_more a:before {
+	    background-image: url(../_images/arrow-block-w_2x.png);
+	}
 }
+
+
 .brick.view_more a:after {
     display: inline-block;
     width: 26px;
@@ -915,14 +980,44 @@
     background-position: -13px -234px;
     transform: translateY(3px);
 }
-
-.contentBackground_darker .brick.view_more {
+/* здоровье */
+.contentBackground_dark .brick.view_more {
 	border: 3px dashed rgba(255,255,255,.13);
 }
-.contentBackground_darker .brick.view_more a {
+.contentBackground_dark .brick.view_more a {
 	color: #ddd;
 }
-.contentBackground_darker .brick.view_more a:after {
+.contentBackground_dark .brick.view_more a:after {
+    background-position: -13px -335px;
+    opacity: .7;
+}
+/* технилогии */ 
+.contentBackground_deepblue .brick.view_more a {
+	color: #fff;
+}
+.contentBackground_deepblue .brick.view_more a:after {
+    background-position: -13px -335px;
+    opacity: .7;
+}
+/* происшествия */
+.contentBackground_red .brick.view_more {
+	border: 3px dashed rgba(255,255,255,.15);
+}
+.contentBackground_red .brick.view_more a {
+	color: #f8eeed;
+}
+.contentBackground_red .brick.view_more a:after {
+    background-position: -13px -335px;
+    opacity: .7;
+}
+/* происшествия темнее */
+.contentBackground_gunmetal .brick.view_more {
+	border: 3px dashed rgba(255,255,255,.15);
+}
+.contentBackground_gunmetal .brick.view_more a {
+	color: #ddd;
+}
+.contentBackground_gunmetal .brick.view_more a:after {
     background-position: -13px -335px;
     opacity: .7;
 }

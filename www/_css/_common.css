@@ -120,10 +120,29 @@ h1 .threeDot {
 .threeDot:after {
 	right: 10px;
 }
+/* интересное */
 .contentBackground_blue .threeDot,
 .contentBackground_blue .threeDot:before,
 .contentBackground_blue .threeDot:after {
 	 background: #9caab3;
+}
+/* технологии */
+.contentBackground_deepblue .threeDot,
+.contentBackground_deepblue .threeDot:before,
+.contentBackground_deepblue .threeDot:after {
+	 background: #669dc3;
+}
+/* происшествия */
+.contentBackground_red .threeDot,
+.contentBackground_red .threeDot:before,
+.contentBackground_red .threeDot:after {
+	 background: #f00;
+}
+/* происшествия темнее */
+.contentBackground_gunmetal .threeDot,
+.contentBackground_gunmetal .threeDot:before,
+.contentBackground_gunmetal .threeDot:after {
+	 background: #f00;
 }
 
 
@@ -411,16 +430,99 @@ blockquote:after {
 	background: #000;
 	color: #fff;
 }
+/* интересное */
 .contentBackground_blue {
-	background: #cee0ed;
+	background: #cee0ed; 
 }
-.contentBackground_darker {
-	background: #232323;
-}
+/* здоровье */
+.pageSwiper__container.contentBackground_dark .pageSwiper,
 .contentBackground_dark {
 	background: #252525;
 	color: #fff;
 }
+.pageSwiper__container.contentBackground_dark {
+	background: #232323; /* фон */
+}
+.contentBackground_dark .swiper-button-prev {
+	background-color: #00abaa;
+    background-position: -50px -320px; /* белая стрелка */
+}
+.contentBackground_dark .swiper-button-next {
+	background-color: #00abaa;
+    background-position: 0px -320px; /* белая стрелка */
+}
+.contentBackground_dark .swiper-button-disabled {
+	opacity: .15;
+}
+
+/* технологии */
+.pageSwiper__container.contentBackground_deepblue .pageSwiper,
+.contentBackground_deepblue {
+	background: #677a87;
+	color: #fff;
+}
+.pageSwiper__container.contentBackground_deepblue {
+	background: #60727e; /* фон */
+}
+.contentBackground_deepblue .swiper-button-prev.swiper-button-disabled,
+.contentBackground_deepblue .swiper-button-prev {
+	background-color: #2b3336;
+    background-position: -50px -320px; /* белая стрелка */
+}
+.contentBackground_deepblue .swiper-button-next.swiper-button-disabled,
+.contentBackground_deepblue .swiper-button-next {
+	background-color: #2b3336;
+    background-position: 0px -320px; /* белая стрелка */
+}
+
+/* происшествия */
+.pageSwiper__container.contentBackground_red .pageSwiper,
+.contentBackground_red {
+	background: #7a1800;
+	color: #fff;
+}
+.pageSwiper__container.contentBackground_red {
+	background: #721600; /* фон */
+}
+.contentBackground_red .swiper-button-prev {
+	background-color: #f00;
+    background-position: -50px -320px; /* белая стрелка */
+}
+.contentBackground_red .swiper-button-next {
+	background-color: #f00;
+    background-position: 0px -320px; /* белая стрелка */
+}
+.contentBackground_red .swiper-button-prev.swiper-button-disabled,
+.contentBackground_red .swiper-button-next.swiper-button-disabled {
+	opacity: .5;
+	background-color: rgba(0,0,0,.3);
+}
+
+/* происшествия темнее */
+.pageSwiper__container.contentBackground_gunmetal .pageSwiper,
+.contentBackground_gunmetal {
+	background: #2b3336;
+	color: #fff;
+}
+.pageSwiper__container.contentBackground_gunmetal {
+	background: #283032; /* фон */
+}
+.contentBackground_gunmetal .swiper-button-prev {
+	background-color: #161718;
+    background-position: -50px -320px; /* белая стрелка */
+}
+.contentBackground_gunmetal .swiper-button-next {
+	background-color: #161718;
+    background-position: 0px -320px; /* белая стрелка */
+}
+.contentBackground_gunmetal .swiper-button-prev.swiper-button-disabled,
+.contentBackground_gunmetal .swiper-button-next.swiper-button-disabled {
+	opacity: .5;
+	background-color: rgba(0,0,0,.3);
+}
+
+
+/* внури страницы */
 @media screen and (max-width: 1023px) {
 	.table__mainColumn .contentBackground_grey {
 		box-shadow: -40px 0 0 #f7f7f7,
@@ -474,7 +576,7 @@ blockquote:after {
 
 
 
-
+/* здоровье */
 .lenta {
 	background: #00abaa;
 	text-transform: uppercase;
@@ -500,6 +602,38 @@ blockquote:after {
     border-left: 6px solid #252525;
     left: 0
 }
+/* технологии */
+.contentBackground_deepblue .lenta {
+	background: #669dc3;
+}
+.contentBackground_deepblue .lenta:before{
+	border-right-color: #677a87;
+}
+.contentBackground_deepblue .lenta:after {
+	border-left-color: #677a87;
+}
+/* происшествия */
+.contentBackground_red .lenta {
+	background: #ff0000;
+}
+.contentBackground_red .lenta:before{
+	border-right-color: #7a1800;
+}
+.contentBackground_red .lenta:after {
+	border-left-color: #7a1800;
+}
+/* происшествия темнее */
+.contentBackground_gunmetal .lenta {
+	background: #ff0000;
+}
+.contentBackground_gunmetal .lenta:before{
+	border-right-color: #2b3336;
+}
+.contentBackground_gunmetal .lenta:after {
+	border-left-color: #2b3336;
+}
+
+
 
 
 
@@ -914,4 +1048,5 @@ blockquote:after {
 	}
 }
 .sticked.state_floating {
+	/*position: fixed;*/
 }

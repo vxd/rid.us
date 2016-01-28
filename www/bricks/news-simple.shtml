@@ -5,6 +5,7 @@
 <!--#set var="data" value="" -->
 <!--#set var="label" value="" -->
 <!--#set var="typelabel" value="" -->
+<!--#set var="videolabel" value="" -->
 <!--#set var="video" value="" -->
 <!--#set var="count1" value="" -->
 <!--#set var="count2" value="" -->
@@ -17,6 +18,9 @@
 <!--#endif -->
 <!--#if expr="\"$QUERY_STRING\" = /data=([a-zA-Z0-9]+)/" -->
 <!--#set var="data" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /videolabel=([a-zA-Z0-9]+)/" -->
+<!--#set var="videolabel" value="$1" -->
 <!--#endif -->
 <!--#if expr="\"$QUERY_STRING\" = /label=([a-zA-Z0-9]+)/" -->
 <!--#set var="label" value="$1" -->
@@ -139,7 +143,7 @@
 
 
 
-<!--#if expr="$video = 'true'" -->
+<!--#if expr="$videolabel = 'true'" -->
 <span class="brick__dateLabel">
 	<script>
 	// генерим случайную дату

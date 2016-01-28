@@ -149,8 +149,22 @@
     border: 8px solid transparent;
     border-left: 13px solid #000;
 }
-
-
+/* технологии */ 
+.contentBackground_deepblue .brick__videoIcon {
+    background: #669dc3;
+}
+.contentBackground_deepblue .brick__videoIcon:after {
+	border-left-color: #fff;
+}
+/* происшествия */ 
+.contentBackground_red .brick__videoIcon,
+.contentBackground_gunmetal .brick__videoIcon {
+    background: #000;
+}
+.contentBackground_red .brick__videoIcon:after,
+.contentBackground_gunmetal .brick__videoIcon:after {
+	border-left-color: #fff;
+}
 
 
 

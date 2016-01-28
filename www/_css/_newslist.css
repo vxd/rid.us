@@ -69,3 +69,54 @@
 	float: right;
 	margin-top: 3px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chapterNewsList__item {
+	padding: 0 0 20px;
+}
+.chapterNewsList__date {
+	font-size: 14px;
+	color: #7e7e7e;
+    float: left;
+    padding-top: 3px;
+    width: 42px;
+}
+.chapterNewsList__link {
+	font-size: 16px;
+	color: #000;
+    text-decoration: none;
+    display: block;
+    margin-left: 50px;
+}
+.chapterNewsList__link:hover {
+    color: #c64a1b;
+	text-decoration: none;
+}
+.chapterNewsList__date b {
+	font-weight: normal;
+	color: #c7c7c7;
+	font-size: 12px;
+}
+
+.penIcon {
+	display: inline-block;
+    width: 13px;
+    height: 13px;
+    /*right: 0;*/
+    /*top: 0;*/
+    background: url(../_images/icons_sprite.png) no-repeat;
+    background-position: -0px -562px;
+    /*position: absolute;*/
+    /*opacity: .24;*/
+}

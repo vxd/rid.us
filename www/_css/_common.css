@@ -701,6 +701,7 @@ blockquote:after {
 
 
 .moreButton {
+	background: #f7f7f7;
 	display: inline-block;
 	padding: 22px 37px 22px 71px;
 	text-transform: uppercase;
@@ -927,11 +928,16 @@ blockquote:after {
 
 
 @media screen and (max-width: 1023px) {
-	.table__mainColumn,
-	.table:not(.videoSection) {
+	.table {
 		display: block; /* обязательно, т.к. будет неправильно считаться ширина слайдера в таблице в % */
 	}
 	.videoSection .table__mainColumn {
+		display: table-cell;
+	}
+	.table.view_alwaysTable {
+		display: table;
+	}
+	.table.view_alwaysTable .table__mainColumn {
 		display: table-cell;
 	}
 }

@@ -7,7 +7,10 @@
 }
 
 
-
+/*.table__sideColumn .brick.view_opinion {
+    width: 300px;
+}
+*/
 @media screen and (max-width: 1023px) {
     .slider {
         width: 97%;
@@ -23,7 +26,7 @@
     .table__mainColumn .slider {
         width: 607px;
     }
-    .table__mainColumn .view_opinion {
+    .table__mainColumn .brick.view_opinion {
         width: 291px;
     }
 }
@@ -38,7 +41,10 @@
         width: 606px;
         margin: 0 16px 16px 0;
     }
-}
+/*    .table__sideColumn .brick.view_opinion {
+        width: 295px;
+    }
+*/}
 
 
 

@@ -98,6 +98,12 @@
 <!--#if expr="$label = 33" -->
 	<a href="#" class="brick__label brick__label-position" title="">кино</a>
 <!--#endif -->
+<!--#if expr="$label = 'c1'" -->
+	<a href="#" class="brick__fullscreenLabel" title="">+145 &nbsp;</a>
+<!--#endif -->
+<!--#if expr="$label = 'c2'" -->
+	<a href="#" class="brick__fullscreenLabel" title="">+12 &nbsp;</a>
+<!--#endif -->
 </div>
 
 <div class="brick__content">
@@ -125,8 +131,21 @@
 		Эксперт по борьбе с терроризмом Ронен Соломон заявил, что российский аэробус мог быть взорван.
 	</p>
 <!--#endif -->
+<!--#if expr="$data = 'c1'" -->
+	<div class="brick__mainLinkWrapper">
+		<a href="#" class="brick__mainLink" title="">Фотоматериалы</a> <span class="rick__mainLinkCounter">145</span>
+	</div>
+	<span class="brick__mainLinkDate">06 августа 2013 — 15 декабря 2015</span>
+<!--#endif -->
+<!--#if expr="$data = 'c2'" -->
+	<div class="brick__mainLinkWrapper">
+		<a href="#" class="brick__mainLink" title="">Видеоматериалы</a> <span class="rick__mainLinkCounter">12</span>
+	</div>
+	<span class="brick__mainLinkDate">06 августа 2013 — 15 декабря 2015</span>
+<!--#endif -->
 </div>
 
+<!--#if expr="$count1 != 'false'" -->
 <div class="countersBlock">
 	<span class="countersBlock__item view_count1">
 		<!--#echo var="count1" --> <i class="icon"><!-- icon --></i>
@@ -138,6 +157,7 @@
 		<!--#echo var="count3" --> <i class="icon"><!-- icon --></i>
 	</span>
 </div>
+<!--#endif -->
 
 
 

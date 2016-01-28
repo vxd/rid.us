@@ -3,10 +3,10 @@
 <head>
 
     <!--#include virtual="_head.shtml"-->
-    <link href="_css/tags.css" rel="stylesheet" type="text/css">
+    <link href="_css/chapter.css" rel="stylesheet" type="text/css">
 
 </head>
-<body class="page_news" itemscope itemtype="http://schema.org/WebPage">
+<body class="page_chapter" itemscope itemtype="http://schema.org/WebPage">
 
 <!--#include virtual="_header.shtml"-->
 
@@ -71,19 +71,16 @@
                 </div>
 
                 <a href="#" class="article__readmore" title="">Читать дальше</a>
-                <hr class="article__separator" />
             </div>
-            &nbsp;
-
 
         </div>
         <div class="table__sideColumn hideOn_768">
 
-            <div class="hcSticky__scrollable clearfix">
 
                 <div class="brick view_banner">
                     <!--#include virtual="bricks/banner-mts.shtml"-->
                 </div>
+
                 <div class="brick view_floatText view_bottomBorder">
                     <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
                 </div>
@@ -91,62 +88,77 @@
                     <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
                 </div>
 
-            </div>
-
-            <div class="hcSticky__sticky">
-                <div class="sticked">
-
-                    <div class="stickedSlide">
-                        <div class="brick view_banner">
-                            <!--#include virtual="bricks/banner-mts.shtml"-->
-                        </div>
-                        <h3>Читайте также:</h3>
-                        <div class="brick view_floatText">
-                            <!--#include virtual="bricks/mini.shtml?image=1&data=1&label=11"-->
-                        </div>
-                        <div class="brick view_floatText">
-                            <!--#include virtual="bricks/mini.shtml?image=2&data=3&label=13"-->
-                        </div>
-                        <div class="brick view_floatText">
-                            <!--#include virtual="bricks/mini.shtml?image=1&data=2&label=12"-->
-                        </div>
-                        <div class="brick view_floatText">
-                            <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
-                        </div>
-                    </div>
-
-                    <div class="stickedSlide" style="display: none;">
-                        <div class="brick">
-                            <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=21&count1=120&count2=35&count3=3812"-->
-                        </div>
-                        <div class="brick">
-                            <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
-                        </div>
-                    </div>
-
-                    <div class="stickedSlide" style="display: none;">
-                        <div class="brick">
-                            <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&label=12&count1=120&count2=35&count3=3812"-->
-                        </div>
-                        <div class="brick">
-                            <!--#include virtual="bricks/news-simple.shtml?image=3&data=1&label=11&count1=120&count2=35&count3=3812"-->
-                        </div>
-                    </div>
-
+                <div class="brick">
+                    <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=21&count1=120&count2=35&count3=3812"-->
                 </div>
-            </div>
+                <div class="brick">
+                    <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
+                </div>
+
+                <div class="brick view_banner">
+                    <!--#include virtual="bricks/banner-mts.shtml"-->
+                </div>
+
+                <div class="brick">
+                    <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=22&count1=120&count2=35&count3=3812"-->
+                </div>
+
+                <h3>Читайте также:</h3>
+                <div class="brick view_floatText">
+                    <!--#include virtual="bricks/mini.shtml?image=1&data=1&label=11"-->
+                </div>
+                <div class="brick view_floatText">
+                    <!--#include virtual="bricks/mini.shtml?image=2&data=3&label=13"-->
+                </div>
+                <div class="brick view_floatText">
+                    <!--#include virtual="bricks/mini.shtml?image=1&data=2&label=12"-->
+                </div>
+                <div class="brick view_floatText">
+                    <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
+                </div>
+
+                <div class="brick">
+                    <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=22&count1=120&count2=35&count3=3812"-->
+                </div>
+
+
 
 
         </div>
     </div>
 
+    <h2>Все материалы сюжета:</h2>
+    <div class="table view_alwaysTable">
+        <div class="table__sideColumn">
+            <div class="brick view_chapter">
+                <!--#include virtual="bricks/news-simple.shtml?image=2&data=c1&label=c1&count1=false"-->
+            </div>
+            <div class="brick view_chapter">
+                <!--#include virtual="bricks/news-simple.shtml?image=3&data=c2&label=c2&count1=false&video=true"-->
+            </div>
+            <div class="brick view_yellow view_opinion">
+                <!--#include virtual="bricks/opinion.shtml"-->          
+            </div>
+        </div>
+        <div class="table__mainColumn">
+
+        <div class="clearfix">
+            <!--#include virtual="bricks/newslist-chapter.shtml"-->
+        </div>
+
+        <hr class="article__separator" />
+            <br>
+            <center><!--#include virtual="_more-button.shtml?text=1"--></center>
+        <hr class="article__separator" />
+
+    </div>
 
 </section>
 
 
 
 <section class="pageBottom contentBackground_white padding_bottom wrapper clearfix">
-    <!--#include virtual="_more-button.shtml"-->
+
 </section>
 
 <a href="#" class="banner_footer">

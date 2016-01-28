@@ -1,1 +1,23 @@
-		<a class="moreButton contentBackground_grey" href="" title=""><span>Смотреть больше новостей</span></a>
+
+<!-- //// определяем переменные -->  
+
+<!--#set var="text" value="" -->
+
+<!-- //// извлекаем из параметров урла --> 
+
+<!--#if expr="\"$QUERY_STRING\" = /text=([a-zA-Z0-9]+)/" -->
+<!--#set var="text" value="$1" -->
+<!--#endif -->
+
+<!-- //// конец --> 
+
+
+<a class="moreButton" href="" title="">
+	<span>
+		<!--#if expr="$text = 1" -->
+		Смотреть больше материалов
+		<!--#else -->
+		Смотреть больше новостей
+		<!--#endif -->
+	</span>
+</a>

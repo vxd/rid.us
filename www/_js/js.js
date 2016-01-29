@@ -161,7 +161,11 @@ $(function() {
 	});
 
 
-	/* скролл */
+
+
+	// ======================================
+	// скролл 
+	// ======================================
 
     // var $centerHeadBar = $('.headerPanel');
     // var headerHeight = $centerHeadBar.height();
@@ -403,120 +407,33 @@ $(function() {
 	// плавающий блок
 	// ======================================
 
-
+	/* устанавливаем высоту плавательного контейнера */
 	var height = $(".hcSticky__scrollable").parent().height() - $(".hcSticky__scrollable").height();
 	$(".hcSticky__sticky").height(height);
 
-
-	var sticked = $(".sticked");
-
-
-	if (sticked.length) {
-		var stickedInitialPosition = sticked.offset().top;
-
-		var didScroll;
-		// var lastScrollTop = 0;
-		// var delta = 2;
-
-		$(window).scroll(function(event){
-		    didScroll = true;
-		});
-
-		setInterval(function() {
-		    if (didScroll) {
-		        hasScrolled();
-		        didScroll = false;
-		    }
-		}, 400);
-
-		function hasScrolled() {
-		    var st = $(window).scrollTop();
-		    
-		    // Make sure they scroll more than delta
-		    // if (Math.abs(lastScrollTop - st) <= delta)
-		    //     return;
-
-	    	var bottomEdge = sticked.offset().top + sticked.height();
-	    	var bottomScreen = st + $(window).height();
-    		var topEdge = sticked.offset().top;
-
-
-		    // если достигли элемента
-		    if (st >= (stickedInitialPosition - floatingBlockSpace)) {
-
-		    	sticked.addClass("state_floating");
-
-		    	// высокий экран
-		    	// if (bottomScreen > bottomEdge) {
-			        // sticked.css({position: "fixed", top: floatingBlockSpace, bottom: ""} );
-		    // 	} else {
-			   //      // вниз
-				  //   if (st > lastScrollTop) {
-				  //   	// нижний край не вышел
-				  //   	if (bottomEdge > bottomScreen) {
-				  //   		sticked.css({position: "fixed", top: "", bottom: (bottomScreen - bottomEdge)}).animate({bottom: 0}, 200)
-				  //   	// вышел 
-				  //   	} else {
-					 //        sticked.css({position: "fixed", top: "", bottom: 0});
-				  //   	}
-				 	// // вверх
-				  //   } else {
-				  //   	// верхний край не вышел
-				  //   	if (topEdge < st) {
-				  //   		sticked.css({position: "fixed", bottom: "", top: (topEdge - st)}).animate({top: floatingBlockSpace}, 200)
-				  //   	} else {
-					 //        sticked.css({position: "fixed", top: floatingBlockSpace, bottom: ""});
-
-				  //   	}
-				  //   }
-		    // 	}
-
-
-
-
-		    	if (bottomScreen > ($(".hcSticky__sticky").offset().top + $(".hcSticky__sticky").height()) )  {
-			        sticked.css({top: "initial", bottom: 0});		    		
-		    	} else {
-			        sticked.css({bottom: "initial"} ).stop().animate({top: (st - stickedInitialPosition + floatingBlockSpace)}, 300, "linear");		    		
-		    	}
-
-		    } else {
-		        sticked.css({top: 0, bottom: "initial"}).removeClass("state_floating");
-		    }
+	$('.sticked').hcSticky({
+		stickTo: ".hcSticky__sticky",
+		// onStart: stickyHeight(),
+	    top: 80,
+	    // bottomEnd: 100,
+	    // wrapperClassName: 'sidebar-sticky'
+	});
 
 
 
 
 
-		    
-		    // lastScrollTop = st;
-		}
-
-	}
-
-	// $('.sticked').hcSticky({
-	// 	stickTo: ".hcSticky__sticky",
-	// 	// onStart: stickyHeight(),
-	//     top: 80,
-	//     // bottomEnd: 100,
-	//     // wrapperClassName: 'sidebar-sticky'
-	// });
-
-
-
-
-
-	// показываем в зависимости от позиции
+	// сменяем слайды в зависимости от позиции скролла
 	var slides = $(".stickedSlide");
 
 	if (slides.length) {
 
-		var anchors = $(".stickedSlideHere");
+		var anchors = $(".stickedSlideHere"); /* якоря расставить в контенте! */
 		var showHeightsArray = [];
 		showHeightsArray[0] = 0; // просто, чтоб забить неиспользуемую ячейку
 
 		anchors.each(function(){
-			var slideNum = $(this).attr("data-stickedSlideHere")
+			var slideNum = $(this).attr("data-stickedSlideHere"); /* присвоить номер слайда */
 			showHeightsArray[slideNum] = $(this).offset().top;
 		})
 		var heightsNum = showHeightsArray.length;

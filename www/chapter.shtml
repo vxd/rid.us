@@ -10,7 +10,7 @@
 
 <!--#include virtual="_header.shtml"-->
 
-<section class="wrapper contentBackground_white paddings_side padding_top clearfix">
+<section class="wrapper contentBackground_white paddings_side padding_top padding_bottom clearfix">
 
     <div class="table">
         <div class="table__mainColumn">
@@ -142,24 +142,22 @@
         </div>
         <div class="table__mainColumn">
 
-        <div class="clearfix">
-            <!--#include virtual="bricks/newslist-chapter.shtml"-->
+            <div class="clearfix">
+                <!--#include virtual="bricks/newslist-chapter.shtml"-->
+            </div>
+
+            <hr class="article__separator" />
+                <br>
+                <center><!--#include virtual="_more-button.shtml?text=1"--></center>
+            <hr class="article__separator" />
+
         </div>
-
-        <hr class="article__separator" />
-            <br>
-            <center><!--#include virtual="_more-button.shtml?text=1"--></center>
-        <hr class="article__separator" />
-
     </div>
 
 </section>
 
 
 
-<section class="pageBottom contentBackground_white padding_bottom wrapper clearfix">
-
-</section>
 
 <a href="#" class="banner_footer">
     <img src="_images/footer_banner.jpg" alt="">

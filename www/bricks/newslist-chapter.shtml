@@ -1,7 +1,21 @@
 
+<!-- //// определяем переменные -->  
 
+<!--#set var="small" value="" -->
 
+<!-- //// извлекаем из параметров урла --> 
+
+<!--#if expr="\"$QUERY_STRING\" = /small=([a-zA-Z0-9]+)/" -->
+<!--#set var="small" value="$1" -->
+<!--#endif -->
+
+<!-- //// конец --> 
+
+<!--#if expr="$small = 'true'" -->
+<ul class="chapterNewsList view_small">
+<!--#else -->
 <ul class="chapterNewsList">
+<!--#endif -->
     <li class="chapterNewsList__item">
         <span class="chapterNewsList__date">18:34</span>
         <a class="chapterNewsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили к санкциям Евросоюза против России</a>
@@ -10,6 +24,8 @@
         <span class="chapterNewsList__date">18:34</span>
         <a class="chapterNewsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
     </li>
+
+    <!--#if expr="$small != 'true'" -->
     <li class="chapterNewsList__item">
         <span class="chapterNewsList__date">18:34</span>
         <a class="chapterNewsList__link" href="#" title=""><i class="penIcon"></i> Грузия опровергла присоединение к санкциям Евросоюза против России к санкциям Евросоюза против России</a>
@@ -22,10 +38,14 @@
         <span class="chapterNewsList__date">18:34</span>
         <a class="chapterNewsList__link" href="#" title=""><i class="penIcon"></i> Грузия опровергла присоединение к санкциям Евросоюза против России  к санкциям Евросоюза против России  к санкциям Евросоюза против России</a>
     </li>
+    <!--#endif -->
+
     <li class="chapterNewsList__item">
         <span class="chapterNewsList__date">18:34</span>
         <a class="chapterNewsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили Минкульт</a>
     </li>
+    <!--#if expr="$small != 'true'" -->
+
     <li class="chapterNewsList__item">
         <span class="chapterNewsList__date">18:34</span>
         <a class="chapterNewsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили  к санкциям Евросоюза против России</a>
@@ -50,6 +70,8 @@
         <span class="chapterNewsList__date">вчера 21:55</span>
         <a class="chapterNewsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
     </li>
+    <!--#endif -->
+
     <li class="chapterNewsList__item">
         <span class="chapterNewsList__date">вчера 21:55</span>
         <a class="chapterNewsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
@@ -58,6 +80,8 @@
         <span class="chapterNewsList__date">28/08 15:42</span>
         <a class="chapterNewsList__link" href="#" title=""><i class="penIcon"></i> В КПРФ предложили отдавать санкционные продукты детдомам к санкциям Евросоюза против России  утвержден новый премьер-министр</a>
     </li>
+
+    <!--#if expr="$small != 'true'" -->
     <li class="chapterNewsList__item">
         <span class="chapterNewsList__date">28/08 15:42</span>
         <a class="chapterNewsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам  утвержден новый премьер-министр</a>
@@ -70,6 +94,8 @@
         <span class="chapterNewsList__date">28/08 15:42</span>
         <a class="chapterNewsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
     </li>
+    <!--#endif -->
+    
     <li class="chapterNewsList__item">
         <span class="chapterNewsList__date">28/12 <b>2015</b></span>
         <a class="chapterNewsList__link" href="#" title=""><i class="penIcon"></i> Грузия опровергла присоединение к санкциям Евросоюза против России утвержден новый премьер-министр</a>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    <!--#include virtual="_head.shtml"-->
+    <link href="_css/chapter.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="page_chapter" itemscope itemtype="http://schema.org/WebPage">
+
+<!--#include virtual="_header.shtml"-->
+
+<section class="wrapper contentBackground_white paddings_side padding_top clearfix">
+ 
+    <h1>
+        <ul class="textTabs view_dotBetween clearfix">
+            <li>Активные сюжеты</li>
+            <li><a href="#" title="">Архивные сюжеты</a></li>
+        </ul>
+    </h1>
+
+    <div class="table">
+        <div class="table__mainColumn">
+
+            <hr class="article__separator" />
+            <br>
+            <!--#include virtual="_chapter.shtml"-->
+
+            <hr class="article__separator" />
+            <br>
+            <!--#include virtual="_chapter.shtml"-->
+
+            <hr class="article__separator" />
+            <br>
+            <!--#include virtual="_chapter.shtml"-->
+
+            <hr class="article__separator" />
+            <br>
+            <!--#include virtual="_chapter.shtml"-->
+
+            <hr class="article__separator" />
+            <br>
+            <!--#include virtual="_chapter.shtml"-->
+
+
+        </div>
+        <div class="table__sideColumn hideOn_768">
+
+
+                <div class="brick view_banner">
+                    <!--#include virtual="bricks/banner-mts.shtml"-->
+                </div>
+
+                <div class="brick view_grey tabs__wrapper">
+                    <!--#include virtual="bricks/most.shtml"-->
+                </div>
+
+                <h3>Читайте также:</h3>
+                <div class="brick view_floatText">
+                    <!--#include virtual="bricks/mini.shtml?image=1&data=1&label=11"-->
+                </div>
+                <div class="brick view_floatText">
+                    <!--#include virtual="bricks/mini.shtml?image=2&data=3&label=13"-->
+                </div>
+                <div class="brick view_floatText">
+                    <!--#include virtual="bricks/mini.shtml?image=1&data=2&label=12"-->
+                </div>
+                <div class="brick view_floatText">
+                    <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
+                </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+</section>
+
+
+<section class="pageBottom contentBackground_white padding_top wrapper clearfix">
+    <!--#include virtual="_more-button.shtml"-->
+    <hr>
+</section>
+
+<section class="bottomDatapicker contentBackground_white padding_top padding_bottom wrapper clearfix">
+    <!--#include virtual="_datapicker-bottom.shtml"-->
+</section>
+
+<a href="#" class="banner_footer">
+    <img src="_images/footer_banner.jpg" alt="">
+</a>
+
+<!--#include virtual="_footer.shtml"-->
+
+</body>
+</html>

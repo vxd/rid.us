@@ -528,7 +528,7 @@
     line-height: 6.1;
 }
 .brick__fullscreenLabel:hover {
-	background: rgba(92,72,29,.1);
+	background: rgba(92,72,29,.2);
     color: #fff !important;
 }
 

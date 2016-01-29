@@ -118,24 +118,7 @@
 	font-style: italic;
 }
 
-/*.footerSubscribe__form .footerSubscribe__button {
-	position: absolute;
-	right: 0;
-	top: 0;
-	background: #ffe298;
-	text-transform: uppercase;
-	font-family: 'Roboto Slab', serif;
-	font-weight: bold;
-	font-size: 12px;
-    color: #000;
-    padding: 7px 10px 7px 10px;
-	border: 0;
-	-webkit-border-radius: 0 3px 3px 0;
-	-moz-border-radius: 0 3px 3px 0;
-	-ms-border-radius: 0 3px 3px 0;
-	-o-border-radius: 0 3px 3px 0;
-	border-radius: 0 3px 3px 0;
-}*/
+
 .footerSubscribe__form .yellowButton {
 	position: absolute;
 	right: 0;
@@ -145,10 +128,7 @@
 .footerSubscribe__form .yellowButton .corner {
     height: 22px;
 }
-/*.footerSubscribe__form .yellowButton .corner:before {
-    border-left-color: #fff;
-    border-bottom-color: #fff;
-}*/
+
 
 
 
@@ -198,6 +178,13 @@
 	height: 38px;
 	background: url(../_images/18plus.png) no-repeat;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.footerCopy__container.view_ageRestrictionSign:after {
+		background-image: url(../_images/18plus_2x.png);
+		background-size: 38px 38px;
+	}
+}
+
 .footerCopy__header {
 	margin-bottom: 7px;
 }

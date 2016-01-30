@@ -14,31 +14,33 @@
  
     <h1>
         <ul class="textTabs view_dotBetween clearfix">
-            <li>Активные сюжеты</li>
-            <li><a href="#" title="">Архивные сюжеты</a></li>
+            <li class="textTabs__item">Активные сюжеты</li>
+            <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Архивные сюжеты</a></li>
         </ul>
     </h1>
+
+
 
     <div class="table">
         <div class="table__mainColumn">
 
-            <hr class="article__separator" />
+            <hr class="view__bold" />
             <br>
             <!--#include virtual="_chapter.shtml"-->
 
-            <hr class="article__separator" />
+            <hr class="view__bold" />
             <br>
             <!--#include virtual="_chapter.shtml"-->
 
-            <hr class="article__separator" />
+            <hr class="view__bold" />
             <br>
             <!--#include virtual="_chapter.shtml"-->
 
-            <hr class="article__separator" />
+            <hr class="view__bold" />
             <br>
             <!--#include virtual="_chapter.shtml"-->
 
-            <hr class="article__separator" />
+            <hr class="view__bold" />
             <br>
             <!--#include virtual="_chapter.shtml"-->
 

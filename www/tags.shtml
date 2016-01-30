@@ -28,7 +28,7 @@
                 </div>
 
                 <a href="#" class="article__readmore" title="">Читать дальше</a>
-                <hr class="article__separator" />
+                <hr class="view__bold" />
             </div>
 
             <a class="stickedSlideHere" data-stickedSlideHere="1"></a>
@@ -43,7 +43,7 @@
                 </div>
 
                 <a href="#" class="article__readmore" title="">Читать дальше</a>
-                <hr class="article__separator" />
+                <hr class="view__bold" />
             </div>
 
             <a class="stickedSlideHere" data-stickedSlideHere="2"></a>
@@ -58,7 +58,7 @@
                 </div>
 
                 <a href="#" class="article__readmore" title="">Читать дальше</a>
-                <hr class="article__separator" />
+                <hr class="view__bold" />
             </div>
 
             <div class="article">
@@ -71,7 +71,7 @@
                 </div>
 
                 <a href="#" class="article__readmore" title="">Читать дальше</a>
-                <hr class="article__separator" />
+                <hr class="view__bold" />
             </div>
             &nbsp;
 

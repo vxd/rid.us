@@ -112,7 +112,6 @@ $(function() {
 			checkLabel();
 		});
 
-
 	}
 
 	if ($('.js-switch-gender').length) {

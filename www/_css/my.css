@@ -55,14 +55,17 @@
 .myLabel__wrapper {
 	display: inline-block;
 	padding-top: 10px;
+    padding-bottom: 10px;
 }
 .myLabel {
 	/*font-weight: bold;*/
 	text-transform: uppercase;
+	text-decoration: none;
 	font-size: 13px;
 	padding: 3px 5px;
 	border-radius: 3px;
 	color: #fff;
+    margin: 0 10px 0 0;
 
 }
 .myLabel.view_male {
@@ -70,6 +73,7 @@
 }
 .myLabel.view_female {
 	background-color: #fC73d0;
+	margin-left: 10px;
 }
 .myLabel.view_offline {
 	background-color: #ccc;
@@ -93,6 +97,29 @@
 	display: inline;
 }
 
+.myLabel.view_hdr {
+	font-family: 'Roboto Slab', serif;
+	background-color: #bbb;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 2px;
+}
+.myLabel.view_i {
+	font-style: italic;
+	background-color: #bbb;
+}
+.myLabel.view_b {
+	font-weight: bold;
+	background-color: #bbb;
+}
+.myLabel.view_a {
+	text-decoration: underline;
+	background-color: #bbb;
+}
+.myLabel.view_video {
+	background-color: #bbb;
+}
+
 
 
 
@@ -108,4 +135,22 @@
 .myprofileSocials__switchWrapper {
 	float: right;
 	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.editorCounter {
+	float: right;
+	color: #090;
+	font-size: 12px;
+	padding-top: 5px;
+}
+.editorCounter .view_red {
+	color: #900;
 }

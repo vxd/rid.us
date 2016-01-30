@@ -247,7 +247,7 @@
 	<div>
 		Ваш пол<br>
 		<label class="myLabel__wrapper padding_bottom">
-			<span class="myLabel view_male">МАЛЬЧИК</span> &nbsp; <input type="checkbox" class="js-switch-gender"> &nbsp; <span class="myLabel view_female">ДЕВОЧКА</span>
+			<span class="myLabel view_male">МАЛЬЧИК</span> <input type="checkbox" class="js-switch-gender"> <span class="myLabel view_female">ДЕВОЧКА</span>
 		</label>
 	</div>
 
@@ -284,7 +284,7 @@
 							<span class="offlineLabel__text">Подключить</span>
 							<span class="onllineLabel__text">Отключить</span>
 						</span>
-						&nbsp; <input type="checkbox" class="js-switch-socials">
+						<input type="checkbox" class="js-switch-socials">
 					</label>
 				</li>
 				<li class="socialNetwork__item">
@@ -296,7 +296,7 @@
 							<span class="offlineLabel__text">Подключить</span>
 							<span class="onllineLabel__text">Отключить</span>
 						</span>
-						&nbsp; <input type="checkbox" class="js-switch-socials" checked="checked">
+						<input type="checkbox" class="js-switch-socials" checked="checked">
 					</label>
 				</li>
 				<li class="socialNetwork__item">
@@ -308,7 +308,7 @@
 							<span class="offlineLabel__text">Подключить</span>
 							<span class="onllineLabel__text">Отключить</span>
 						</span>
-						&nbsp; <input type="checkbox" class="js-switch-socials">
+						<input type="checkbox" class="js-switch-socials">
 					</label>
 				</li>
 				<li class="socialNetwork__item">
@@ -320,7 +320,7 @@
 							<span class="offlineLabel__text">Подключить</span>
 							<span class="onllineLabel__text">Отключить</span>
 						</span>
-						&nbsp; <input type="checkbox" class="js-switch-socials">
+						<input type="checkbox" class="js-switch-socials">
 					</label>
 				</li>
 			</ul>

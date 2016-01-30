@@ -15,8 +15,8 @@
 
     <h1>
         <ul class="textTabs view_dotBetween clearfix">
-            <li>Авторские колонки</li>
-            <li><a href="#" title="">Авторы</a></li>
+            <li class="textTabs__item">Авторские колонки</li>
+            <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Авторы</a></li>
         </ul>
     </h1>
 
@@ -72,15 +72,15 @@
 
         <div class="borderedSection view_authorMaterials">
             <ul class="textTabs view_dotBetween view_h5">
-                <li class="author-articles">
+                <li class="textTabs__item">
                     статьи автора (<span>15</span>)
                 </li>
-                <li class="author-comments">
-                    <a href="#" title="">комментарии автора (<span>133</span>)</a>
+                <li class="textTabs__item">
+                    <a href="#" class="textTabs__link" title="">комментарии автора (<span>133</span>)</a>
                 </li>
             </ul>
         </div>
-
+        
     </div>
 
     <div class="bricks__wrapper clearfix">

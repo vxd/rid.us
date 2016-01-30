@@ -15,14 +15,16 @@
 
     <h1 class="clearfix">
         <ul class="textTabs view_dotBetween clearfix">
-            <li><a href="#" title="">Авторские колонки</a></li>
-            <li>Авторы</li>
+            <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Авторские колонки</a></li>
+            <li class="textTabs__item">Авторы</li>
         </ul>
         <ul class="textTabs view_dotBetween view_h5 clearfix">
-            <li><a href="#" title="">Новые авторы</a></li>
-            <li><a href="#" title="">Самые читаемые</a></li>
+            <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Новые авторы</a></li>
+            <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Самые читаемые</a></li>
         </ul>
     </h1>
+
+
 
     <!--#include virtual="_alphabeth.shtml"-->
 

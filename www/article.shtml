@@ -18,11 +18,11 @@
         <div class="table__mainColumn">
 
 
-
             <ul class="textTabs view_dotBetween view_h5 clearfix">
-                <li><a href="#" title="">Гражданская журналистика</a></li>
-                <li><a href="#" title="">Политика</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Гражданская журналистика</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Политика</a></li>
             </ul>
+
 
             <div class="article">
 

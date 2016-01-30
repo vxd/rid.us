@@ -20,8 +20,8 @@
 
 
             <ul class="textTabs view_dotBetween view_h5 clearfix">
-                <li><a href="#" title="">Новости кратко</a></li>
-                <li><a href="#" title="">Политика</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Новости кратко</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Политика</a></li>
             </ul>
 
             <div class="article">
@@ -75,8 +75,8 @@
 
 
             <ul class="textTabs view_dotBetween view_h5 clearfix">
-                <li><a href="#" title="">Новости кратко</a></li>
-                <li><a href="#" title="">Политика</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Новости кратко</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Политика</a></li>
             </ul>
             
             <div class="article">
@@ -151,8 +151,8 @@
             <a class="stickedSlideHere" data-stickedSlideHere="1"></a>
 
             <ul class="textTabs view_dotBetween view_h5 clearfix">
-                <li><a href="#" title="">Новости кратко</a></li>
-                <li><a href="#" title="">Политика</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Новости кратко</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Политика</a></li>
             </ul>
             
             <div class="article">
@@ -225,8 +225,8 @@
             <a class="stickedSlideHere" data-stickedSlideHere="2"></a>
             
             <ul class="textTabs view_dotBetween view_h5 clearfix">
-                <li><a href="#" title="">Новости кратко</a></li>
-                <li><a href="#" title="">Политика</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Новости кратко</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Политика</a></li>
             </ul>
             
             <div class="article">
@@ -296,8 +296,8 @@
 
 
             <ul class="textTabs view_dotBetween view_h5 clearfix">
-                <li><a href="#" title="">Новости кратко</a></li>
-                <li><a href="#" title="">Политика</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Новости кратко</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Политика</a></li>
             </ul>
             
             <div class="article">
@@ -379,8 +379,8 @@
 
 
             <ul class="textTabs view_dotBetween view_h5 clearfix">
-                <li><a href="#" title="">Новости кратко</a></li>
-                <li><a href="#" title="">Политика</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Новости кратко</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Политика</a></li>
             </ul>
             
             <div class="article">

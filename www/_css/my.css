@@ -1,0 +1,111 @@
+
+
+
+
+
+.myAvatar__wrapper {
+	float: left;
+	width: 150px;
+	height: 150px;
+	position: relative;
+}
+.myAvatar__link {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.myAvatar__link span {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.2);
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 5px 0 4px;
+}
+.myAvatar__link:hover span {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+.myInfo {
+	margin-left: 180px;
+}
+
+
+
+
+
+
+.myLabel__wrapper {
+	display: inline-block;
+	padding-top: 10px;
+}
+.myLabel {
+	/*font-weight: bold;*/
+	text-transform: uppercase;
+	font-size: 13px;
+	padding: 3px 5px;
+	border-radius: 3px;
+	color: #fff;
+
+}
+.myLabel.view_male {
+	background-color: #69A1E2;
+}
+.myLabel.view_female {
+	background-color: #fC73d0;
+}
+.myLabel.view_offline {
+	background-color: #ccc;
+	width: 105px;
+	display: inline-block;
+	text-align: center;
+}
+.myLabel.view_offline .offlineLabel__text {
+	display: inline;
+}
+.myLabel.view_offline .onllineLabel__text {
+	display: none;
+}
+.myLabel.view_online {
+	background-color: #64BD63;
+}
+.myLabel.view_online .offlineLabel__text {
+	display: none;
+}
+.myLabel.view_online .onllineLabel__text {
+	display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+.myprofileSocials .socialNetwork__item {
+	height: 35px;
+}
+.myprofileSocials__switchWrapper {
+	float: right;
+	cursor: pointer;
+}

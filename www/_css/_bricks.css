@@ -353,21 +353,22 @@
     font-weight: bold;
 	color: #c1c1c1;
 	display: inline-block;
+	margin-right: 11px;
 }
 .countersBlock__item.view_count1 {
     padding: 0 14px 0 0;
     position: relative;
 }
 .countersBlock__item.view_count2 {
-    padding: 0 18px 0 11px;
+    padding: 0 18px 0 0;
     position: relative;
 }
 .countersBlock__item.view_count3 {
-    padding: 0 15px 0 12px;
+    padding: 0 15px 0 0;
     position: relative;
 }
 .countersBlock__item.view_count4 {
-    padding: 0 16px 0 12px;
+    padding: 0 16px 0 0;
     position: relative;
 }
 

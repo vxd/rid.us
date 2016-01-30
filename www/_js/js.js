@@ -67,6 +67,69 @@ $(document).ready(function() {
 $(function() {
 
 	// ======================================
+	// ios switch - http://abpetkov.github.io/switchery/
+	// ======================================
+
+	if ($('.js-switch').length) {
+
+		var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+		elems.forEach(function(html) {
+		  var switchery = new Switchery(html);
+		});
+
+	}
+
+	if ($('.js-switch-socials').length) {
+
+		var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch-socials'));
+
+		elems.forEach(function(html) {
+		  var switchery = new Switchery(html, {
+		  	size: 'small'
+		  });
+		});
+	
+
+		/* изменяющиеся лэйблы по клику */ 
+		function checkLabel() {
+
+			var changeCheckboxWrapper = $(".myprofileSocials__switchWrapper");
+
+			changeCheckboxWrapper.each(function(){
+				var checkbox = $(this).find(".js-switch-socials");
+				var label = $(this).find(".myLabel");
+				if ($(checkbox).is(":checked")) {
+					label.addClass("view_online");
+				} else {
+					label.removeClass("view_online");
+				}
+			})
+		}
+		checkLabel()
+
+		$('.js-switch-socials').change(function() {
+			checkLabel();
+		});
+
+
+	}
+
+	if ($('.js-switch-gender').length) {
+		var genderSwitch = document.querySelector('.js-switch-gender');
+		var genderSwitchery = new Switchery(genderSwitch, {
+			color: '#fC73d0',
+			secondaryColor: '#69A1E2',
+			// jackColor: '#fff'
+		});
+	}
+
+
+
+
+
+
+	// ======================================
 	// toolip
 	// ======================================
 
@@ -435,7 +498,7 @@ $(function() {
 		anchors.each(function(){
 			var slideNum = $(this).attr("data-stickedSlideHere"); /* присвоить номер слайда */
 			showHeightsArray[slideNum] = $(this).offset().top;
-		})
+		});
 		var heightsNum = showHeightsArray.length;
 
 	    $(window).scroll(function() {

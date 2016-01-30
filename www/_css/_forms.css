@@ -58,9 +58,9 @@ input[type="password"],
 input[type="tel"],
 input[type="url"] {
 	font-family: 'Roboto', sans-serif;
-	padding: 6px 13px;
-	font-size: 17px;
-	border: 1px solid #bbb; /* #d4d4d4; */
+    padding: 7px 13px 6px;
+    font-size: 16px;
+    border: 1px solid #bbb; /* #d4d4d4; */
 	width: 100%;
 	-webkit-appearance: none;
 	border-radius: 0;
@@ -109,6 +109,72 @@ input[type="url"] {
 
 
 
+
+
+
+
+
+
+
+
+
+textarea {
+	font-family: 'Roboto', sans-serif;
+    padding: 7px 13px 6px;
+    font-size: 16px;
+    border: 1px solid #bbb; /* #d4d4d4; */
+	width: 100%;
+	-webkit-appearance: none;
+	border-radius: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	resize: vertical;
+	min-height: 80px;
+}
+
+
+
+
+
+
+.select {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #bbb;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    border-radius: 0
+}
+.select:after {
+	position: absolute;
+	content: "";
+	position: absolute;
+    right: 9px;
+    top: 46%;
+    border: 5px solid transparent;
+    border-top: 5px solid #bbb;
+}
+.select select {
+	font-family: 'Roboto', sans-serif;
+    padding: 7px 13px 6px;
+    font-size: 16px;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.select select:focus {
+    outline: none;
+}
 
 
 

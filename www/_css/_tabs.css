@@ -17,18 +17,21 @@
 
 
 
-
+.textTabs__item {
+    font-weight: bold;
+	/*font-family: 'Roboto Slab', serif;*/
+}
 
 
 
 
 .textTabs.view_h5 {
-    font-weight: bold;
     margin-bottom: 5px;
     font-weight: 500;
 }
 h1 .textTabs.view_h5 {
 	margin-bottom: 2px;
+	font-weight: bold;
 }
 
 
@@ -40,17 +43,13 @@ h1 .textTabs.view_h5 {
 
 
 
-
-
-
-.view_dotBetween li {
+.view_dotBetween .textTabs__item {
 	/*float: left;*/
 	display: inline;
-	/*position: relative;*/
 	margin-left: .46em;
 
 }
-.view_dotBetween li:before {
+.view_dotBetween .textTabs__item:before {
 	display: inline-block;
 	content: "";
 	width: .286em;
@@ -64,17 +63,36 @@ h1 .textTabs.view_h5 {
 	margin-bottom: .24em;
 	background: #ffd051;
 }
-.view_dotBetween li:first-child {
+.view_dotBetween .textTabs__item:first-child {
 	margin-left: 0;
 }
-.view_dotBetween li:first-child:before {
+.view_dotBetween .textTabs__item:first-child:before {
 	display: none;
 }
 
 
+.textTabs__link.state_current {
+	position: relative;
+	color: #000;
+}
 
+.textTabs__link.state_current:before,
+.textTabs__link.state_current:after {
+	position: absolute;
+    left: 50%;
+    margin-left: -6px;
+    content: "";
+    border: 6px solid transparent;
+}
+.textTabs__link.state_current:before {
+    bottom: -22px;
+    border-top: 6px solid #d4d4d4;
+}
 
-
+.textTabs__link.state_current:after {
+    bottom: -21px;
+    border-top: 6px solid #fff;
+}
 
 
 

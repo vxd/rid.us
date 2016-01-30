@@ -17,10 +17,10 @@
 
 
 <!--#if expr="$hided = 1" -->
-<a class="yellowButton hideOn_desktop view_whiteCorner" href="" title="">
+<a class="yellowButton hideOn_desktop view_whiteCorner" href="'<!--#if expr="$text = 1" -->editor.shtml<!--#endif -->'" title="">
 <!--#endif -->
 <!--#if expr="$hided != 1" -->
-<a class="yellowButton" href="" title="">
+<a class="yellowButton" href='<!--#if expr="$text = 1" -->editor.shtml<!--#endif -->' title="">
 <!--#endif -->
 	<!--#if expr="$text = 1" -->
 	предложить новость

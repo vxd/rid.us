@@ -26,18 +26,23 @@
 
 
 
-
+.footerSocials {
+	margin-bottom: 10px;
+}
 
 .socialNetwork__item {
 	color: #fff;
-	padding: 0 0 12px 31px;
-	position: relative;
+    margin-bottom: 5px;
+    position: relative;
 }
 .socialNetwork__link {
 	color: #000;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 14px;
+	display: inline-block;
+	height: 24px;
+	padding-bottom: 3px;
 }
 
 .footerSocials .socialNetwork__link {
@@ -48,27 +53,32 @@
 	margin-right: 10px;
 }
 
-.socialNetwork__link .icon {
+.socialNetwork__link:before {
 	background: url(../_images/icons.png) no-repeat;
 	height: 24px;
-	left: 0;
-	position: absolute;
-	top: -4px;
 	width: 24px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 3px;
+    margin-bottom: 3px;
+    /*	left: 0;
+	position: absolute;
+	top: -4px;*/
+	content: "";
 }
-.socialNetwork__link.view_iconFacebook .icon {
+.socialNetwork__link.view_iconFacebook:before {
 	background-position: -540px 0;
 }
-.socialNetwork__link.view_iconvKontakte .icon {
+.socialNetwork__link.view_iconvKontakte:before {
 	background-position: -580px 0;
 }
-.socialNetwork__link.view_iconGoogle .icon {
+.socialNetwork__link.view_iconGoogle:before {
 	background-position: -620px 0;
 }
-.socialNetwork__link.view_iconTwitter .icon {
+.socialNetwork__link.view_iconTwitter:before {
 	background-position: -660px 0;
 }
-.socialNetwork__link.view_iconRSS .icon {
+.socialNetwork__link.view_iconRSS:before {
 	background-position: -700px 0;
 }
 

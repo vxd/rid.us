@@ -1,3 +1,4 @@
+@import "_comments.css";
 
 
 
@@ -9,7 +10,7 @@
 	height: 150px;
 	position: relative;
 }
-.myAvatar__link {
+.myAvatar__links {
 	display: block;
 	position: absolute;
 	top: 0;
@@ -17,27 +18,51 @@
 	left: 0;
 	right: 0;
 }
-.myAvatar__link span {
-	opacity: 0;
+.myAvatar__change {
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
+	top: 36px;
+	text-decoration: none;
+}
+.myAvatar__change span {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+	opacity: 0;
 	background: rgba(0,0,0,.2);
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
 	transition: all 0.2s ease;
-	font-size: 12px;
+	font-size: 13px;
 	text-transform: uppercase;
-	padding: 5px 0 4px;
+	padding: 6px 0 6px;
 }
-.myAvatar__link:hover span {
+.myAvatar__change:hover span {
 	opacity: 1;
 }
+.myAvatar__wrapper .closeButton {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: rgba(0,0,0,.2);
+	transition: all 0.2s ease;
+	opacity: 0;
+	color: #fff;
+	padding: 0 10px 0 11px;
+}
 
-
-
+.myAvatar__wrapper:hover .closeButton {
+	opacity: 1;
+}
+@media screen and (max-width: 1041px) {
+	.myAvatar__wrapper .closeButton {
+		opacity: 1;
+	}
+}
 
 
 

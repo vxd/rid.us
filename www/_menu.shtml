@@ -10,7 +10,7 @@
 						найти
 						<i class="corner"><!-- corner --></i>
 					</a>
-					<a href="#" class="closeButtom">&times;</a>
+					<a href="#" class="closeButton">&times;</a>
 				</form>
 			</div>
 		</div>	

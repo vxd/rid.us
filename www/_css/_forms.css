@@ -27,6 +27,7 @@ input[type="number"]:-ms-input-placeholder,
 input[type="password"]:-ms-input-placeholder, 
 input[type="tel"]:-ms-input-placeholder, 
 input[type="url"]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.2s ease; color:#d2d2d2; font-family: 'Roboto', sans-serif; font-weight: 300}
+textarea:focus::-webkit-input-placeholder,
 input[type="text"]:focus::-webkit-input-placeholder,
 input[type="email"]:focus::-webkit-input-placeholder, 
 input[type="number"]:focus::-webkit-input-placeholder, 
@@ -409,14 +410,14 @@ label.radioWrap {
 
 
 
-.closeButtom {
+.closeButton {
 	text-decoration: none;
 	font-size: 30px;
     font-family: 'Roboto Slab', serif;
 	font-weight: 300;
 	color: #fff;
 }
-.headerSearch__form .closeButtom {
+.headerSearch__form .closeButton {
 	color: #fff;
 	padding-left: 20px;
 	float: right;

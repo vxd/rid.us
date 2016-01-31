@@ -70,3 +70,67 @@
 .articleSocials {
 	margin-bottom: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comment__item {
+	margin-bottom: 17px;
+    background: #f5f5f5;
+    padding: 13px 16px;
+}
+.comment__date {
+    color: #b1b1b1;
+    float: left;
+    width: auto;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.comment__date a {
+    color: #c64a1b;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+.comment__likes {
+    color: #667887;
+    float: right;
+    width: auto;
+    font-size: 13px;
+}
+.comment__likes.view_up {
+    color: #84c61b;
+}
+.comment__likes.view_down {
+    color: #c64a1b;
+}
+.comment__text {
+    clear: both;
+    padding: 2px 0 0;
+    font-size: 15px;
+}
+.comment__text p {
+	margin: 0;
+}

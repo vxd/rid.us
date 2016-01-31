@@ -19,13 +19,13 @@
     <div class="borderedSection">
         <ul class="textTabs view_dotBetween view_h5">
             <li class="textTabs__item">
-                <a href="#" class="textTabs__link state_current" title="">мой профиль</a>
+                <a href="my-profile.shtml" class="textTabs__link state_current" title="">мой профиль</a>
             </li>
             <li class="textTabs__item">
-                <a href="#" class="textTabs__link" title="">мои статьи (<span>15</span>)</a>
+                <a href="my-articles.shtml" class="textTabs__link" title="">мои статьи (<span>15</span>)</a>
             </li>
             <li class="textTabs__item">
-                <a href="#" class="textTabs__link" title="">мои комментарии (<span>133</span>)</a>
+                <a href="my-comments.shtml" class="textTabs__link" title="">мои комментарии (<span>133</span>)</a>
             </li>
         </ul>
     </div>
@@ -34,7 +34,8 @@
     <div class="padding_top clearfix">
     	<div class="myAvatar__wrapper">
     		<img src="http://placehold.it/150" alt="">
-    		<a href="#" class="myAvatar__link">
+			<a href="#" class="closeButton">×</a>
+    		<a href="#" class="myAvatar__change" title="">
     			<span>сменить аватар</span>
     		</a>
     	</div>
@@ -247,7 +248,9 @@
 	<div>
 		Ваш пол<br>
 		<label class="myLabel__wrapper padding_bottom">
-			<span class="myLabel view_male">МАЛЬЧИК</span> <input type="checkbox" class="js-switch-gender"> <span class="myLabel view_female">ДЕВОЧКА</span>
+			<span class="myLabel view_male">МАЛЬЧИК</span>
+			<input type="checkbox" class="js-switch-gender">
+			<span class="myLabel view_female">ДЕВОЧКА</span>
 		</label>
 	</div>
 

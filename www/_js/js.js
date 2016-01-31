@@ -700,7 +700,7 @@ $(function() {
 		return false;
 	});
 
-	$(".categoryFilter__wrapper .closeButtom").on('click', function(){
+	$(".categoryFilter__wrapper .closeButton").on('click', function(){
 		filterListWrapper.toggleClass("state_open");
 		categoryFilterInfo.toggleClass("state_open");
 		return false;
@@ -807,7 +807,7 @@ $(function() {
 		$(".headerSearch__form .search__input").blur();
 	}
 
-	$(".headerSearch .closeButtom").on('click', function(){
+	$(".headerSearch .closeButton").on('click', function(){
 		searchClose();
 		return false;
 	});	

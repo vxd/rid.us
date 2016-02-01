@@ -10,6 +10,9 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.bricks__wrapper {
+		margin-right: -2%;
+	}
+	.table__mainColumn .bricks__wrapper {
 		margin-right: -3%;
 	}
 }
@@ -205,9 +208,12 @@
 }
 @media screen and (max-width: 1023px) {
 	.brick.view_mini {
-		width: 22%;
+	    width: 22%;
 		margin: 0 3% 22px 0;
 	}
+/*	.table__mainColumn .brick.view_mini {
+	    width: 22.74%;
+	}*/
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.brick.view_mini {
@@ -215,7 +221,7 @@
 		margin: 0 2% 22px 0;
 	}
 	.table__mainColumn .brick.view_mini {
-	    width: 23%;
+	    width: 22.74%;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1279px) {

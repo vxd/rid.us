@@ -19,7 +19,7 @@
     </h1>
 
 
-    <div class="table">
+    <div class="table clearfix">
         <div class="table__mainColumn">
 
             <div class="brick aLaSlideImage view_fullwidth">

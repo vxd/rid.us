@@ -410,17 +410,41 @@ $(function() {
 	// плавающий блок
 	// ======================================
 
-	/* устанавливаем высоту плавательного контейнера */
-	var height = $(".hcSticky__scrollable").parent().height() - $(".hcSticky__scrollable").height();
-	$(".hcSticky__sticky").height(height);
+	$(window).load(function(){
 
-	$('.sticked').hcSticky({
-		stickTo: ".hcSticky__sticky",
-		// onStart: stickyHeight(),
-	    top: 80,
-	    // bottomEnd: 100,
-	    // wrapperClassName: 'sidebar-sticky'
+		/* устанавливаем высоту плавательного контейнера */
+		function updateStickySize() {
+			$(".hcSticky__sticky").height(0).hide();
+			var height = $(".hcSticky__scrollable").parent().parent().height() - $(".hcSticky__scrollable").height();
+			$(".hcSticky__sticky").height(height).show();
+		}
+		updateStickySize();
+
+		var doingStickyResize = false;
+
+		$(window).resize(function(event){
+		    doingStickyResize = true;
+		});
+
+		setInterval(function() {
+		    if (doingStickyResize) {
+		        updateStickySize();
+		        doingStickyResize = false;
+		    }
+		}, 200);	
+
+		$('.sticked').hcSticky({
+			stickTo: ".hcSticky__sticky",
+			// onStart: stickyHeight(),
+		    top: 80,
+		    // bottomEnd: 10,
+		    // wrapperClassName: 'sidebar-sticky'
+		});
+
 	});
+
+
+
 
 
 

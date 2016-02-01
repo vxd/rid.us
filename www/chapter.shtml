@@ -12,7 +12,7 @@
 
 <section class="wrapper contentBackground_white paddings_side padding_top padding_bottom clearfix">
 
-    <div class="table">
+    <div class="table clearfix">
         <div class="table__mainColumn">
 
             <!--#include virtual="_weather.shtml"-->
@@ -128,7 +128,7 @@
     </div>
 
     <h2>Все материалы сюжета:</h2>
-    <div class="table view_alwaysTable">
+    <div class="table view_dontHideColumn clearfix">
         <div class="table__sideColumn">
             <div class="brick view_chapter">
                 <!--#include virtual="bricks/news-simple.shtml?image=2&data=c1&label=c1&count1=false"-->

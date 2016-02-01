@@ -14,7 +14,7 @@
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix ">
 
 
-    <div class="table">
+    <div class="table clearfix">
         <div class="table__mainColumn text">
 
             <h1 class="view_centred">

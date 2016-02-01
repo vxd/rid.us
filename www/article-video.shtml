@@ -14,7 +14,7 @@
 
 
 
-    <div class="table">
+    <div class="table clearfix">
         <div class="table__mainColumn">
 
             <ul class="textTabs view_dotBetween view_h5 clearfix">

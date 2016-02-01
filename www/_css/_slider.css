@@ -19,8 +19,8 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
     .slider {
-        width: 97%;
-        margin: 0 3% 22px 0;
+        width: 64.6666%;
+        margin: 0 2% 22px 0;
     }
     /* фикс бага слайдера - почему-то внутри display:tavle-cell некорректно считает ширину ; */
 /*    .table__mainColumn .slider {
@@ -51,6 +51,9 @@
 .aLaSlideImage {
     position: relative;
 }
+.aLaSlideImage.view_fullwidth {
+    width: 100%;
+}
 @media screen and (max-width: 1023px) {
     .aLaSlideImage {
         width: 97%;
@@ -78,9 +81,13 @@
         width: 606px;
         margin: 0 16px 16px 0;
     }
-}
-.aLaSlideImage.view_fullwidth {
-    width: 100%;
+    .aLaSlideImage.view_fullwidth {
+        height: 500px;
+    }
+    .aLaSlideImage.view_fullwidth .slider__image {
+        height: 250px;
+        padding-top: 250px;
+    }
 }
 
 

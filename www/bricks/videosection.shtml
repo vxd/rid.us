@@ -1,5 +1,7 @@
 <section class="videoSection table clearfix">
+
 	<div class="table__sideColumn">
+
 		<div class="brick">
 			<h2>
 				<a href="#" class="brick__mainLink" title="">
@@ -25,73 +27,89 @@
 			</div>
 			<span class="label">Видео</span>
 		</div>
+
+
 	</div>
-	<div class="table__mainColumn ">
-		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/KxZQG0C0J88" frameborder="0" allowfullscreen></iframe>
-	</div>
-	<div class="table__sideColumn hideOn_1024 hideOn_768">
-		<div class="videoPlaylist__wrapper">
-			<a href="#" class="videoPlaylist__nav view_prev" title=""></a>
 
-			<div class="videoPlaylist">
+	<div class="table__mainColumn">
 
-				<div class="videoPlaylist__item brick view_floatText">
-					<div class="image__wrapper">
-						<a href="#" class="brick__image">
-							<img src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg" alt="">
-						</a>
-						<div class="countersBlock">
-							<span class="countersBlock__item view_count1">
-								234 <i class="icon"><!-- icon --></i>
-							</span>
-							<span class="countersBlock__item view_count2">
-								56 <i class="icon"><!-- icon --></i>
-							</span>
-							<span class="countersBlock__item view_count3">
-								88 <i class="icon"><!-- icon --></i>
-							</span>
+		<div class="table">
+			<div class="table__mainColumn">
+				<iframe width="100%" height="410" src="https://www.youtube.com/embed/KxZQG0C0J88" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="table__sideColumn hideOn_1024 hideOn_768">
+
+				<div class="videoPlaylist__wrapper">
+					<a href="#" class="videoPlaylist__nav view_prev" title=""></a>
+
+					<div class="videoPlaylist">
+
+						<div class="videoPlaylist__item brick view_floatText">
+							<div class="image__wrapper">
+								<a href="#" class="brick__image">
+									<img src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg" alt="">
+								</a>
+								<div class="countersBlock">
+									<span class="countersBlock__item view_count1">
+										234 <i class="icon"><!-- icon --></i>
+									</span>
+									<span class="countersBlock__item view_count2">
+										56 <i class="icon"><!-- icon --></i>
+									</span>
+									<span class="countersBlock__item view_count3">
+										88 <i class="icon"><!-- icon --></i>
+									</span>
+								</div>
+							</div>
+							<div class="brick__content">
+								<h5>
+									<a href="#" title="">
+										Британский журналист расследовал проблему угнетения татар в Крыму
+									</a> 
+								</h5>
+							</div>
 						</div>
-					</div>
-					<div class="brick__content">
-						<h5>
-							<a href="#" title="">
-								Британский журналист расследовал проблему угнетения татар в Крыму
-							</a> 
-						</h5>
-					</div>
-				</div>
 
-				<div class="videoPlaylist__item brick view_floatText">
-					<div class="image__wrapper">
-						<a href="#" class="brick__image">
-							<img src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg" alt="">
-						</a>
-						<div class="countersBlock">
-							<span class="countersBlock__item view_count1">
-								234 <i class="icon"><!-- icon --></i>
-							</span>
-							<span class="countersBlock__item view_count2">
-								56 <i class="icon"><!-- icon --></i>
-							</span>
-							<span class="countersBlock__item view_count3">
-								88 <i class="icon"><!-- icon --></i>
-							</span>
+						<div class="videoPlaylist__item brick view_floatText">
+							<div class="image__wrapper">
+								<a href="#" class="brick__image">
+									<img src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg" alt="">
+								</a>
+								<div class="countersBlock">
+									<span class="countersBlock__item view_count1">
+										234 <i class="icon"><!-- icon --></i>
+									</span>
+									<span class="countersBlock__item view_count2">
+										56 <i class="icon"><!-- icon --></i>
+									</span>
+									<span class="countersBlock__item view_count3">
+										88 <i class="icon"><!-- icon --></i>
+									</span>
+								</div>
+							</div>
+							<div class="brick__content">
+								<h5>
+									<a href="#" title="">
+										Британский журналист расследовал проблему угнетения татар в Крыму
+									</a> 
+								</h5>
+							</div>
 						</div>
+
+
+
 					</div>
-					<div class="brick__content">
-						<h5>
-							<a href="#" title="">
-								Британский журналист расследовал проблему угнетения татар в Крыму
-							</a> 
-						</h5>
-					</div>
+
+					<a href="#" class="videoPlaylist__nav view_next" title=""></a>
 				</div>
 
 
 
 			</div>
-
-			<a href="#" class="videoPlaylist__nav view_next" title=""></a>
 		</div>
+
 	</div>
+
+
+
 </section>

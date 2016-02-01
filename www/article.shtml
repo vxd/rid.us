@@ -14,7 +14,7 @@
 
 
 
-    <div class="table">
+    <div class="table clearfix">
         <div class="table__mainColumn">
 
 
@@ -395,7 +395,7 @@
 
         <div class="table__sideColumn hideOn_768">
 
-                <div class="hcSticky__scrollable clearfix">
+                <div class="hcSticky__scrollable">
 
                     <div class="brick view_floatText view_bottomBorder">
                         <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->

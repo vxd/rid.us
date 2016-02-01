@@ -1019,23 +1019,27 @@ blockquote:after {
 	}
 
 	/* левая - большая, правая - узкая */
-	.table .table .table__mainColumn:first-child {
-		width: 48.5%;
+	.table.view_dontHideColumn .table__mainColumn:first-child {
+		/*width: 48.5%;*/
+		width: calc(100% - 311px); /* 295 + 16 */
 	}
-	.table .table .table__sideColumn:last-child {
+	.table.view_dontHideColumn .table__sideColumn:last-child {
 		width: auto;
-		margin-left: 51.5%;
+		/*margin-left: 51.5%;*/
+		margin-left: calc(100% - 295px);
 		display: block;
 	}
 
 	/* левая - узкая, правая - большая */
-	.table .table .table__sideColumn:first-child {
-		width: 48.5%;
+	.table.view_dontHideColumn .table__sideColumn:first-child {
+		/*width: 48.5%;*/
+		width: 295px;
 		display: block;
 	}
-	.table .table .table__mainColumn:last-child {
+	.table.view_dontHideColumn .table__mainColumn:last-child {
 		width: auto;
-		margin-left: 51.5%;
+		/*margin-left: 51.5%;*/
+		margin-left: 311px;
 	}
 
 }

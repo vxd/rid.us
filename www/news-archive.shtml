@@ -124,7 +124,7 @@
 
         <div class="bricks__wrapper padding_top">
             <h2>Читайте также:</h2>
-            <div class="bricks__wrapper clearfix">
+            <div class="clearfix">
                 <div class="brick view_mini">
                     <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
                 </div>

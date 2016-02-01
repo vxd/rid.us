@@ -807,13 +807,13 @@
 .brick.view_opinion {
 	background: #f6f6f6;
 	overflow: hidden;
-	width: 300px;
+	/*width: 300px;*/
 }
-@media screen and (min-width: 1280px) {
+/*@media screen and (min-width: 1280px) {
     .brick.view_opinion {
         width: 295px;
     }
-}
+}*/
 .brick.view_opinion .brick__image {
 	height: 120px;
 	padding-top: 120px;

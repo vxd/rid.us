@@ -874,14 +874,14 @@ blockquote:after {
 
 
 .table {
-	display: table;
+/*	display: table;
 	width: 100%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
-	box-sizing: border-box;
+	box-sizing: border-box;*/
 }
-.table__sideColumn,
+/*.table__sideColumn,
 .table__mainColumn {
 	display: table-cell;
 	vertical-align: top;
@@ -896,21 +896,21 @@ blockquote:after {
 	margin-right: 0;
 	margin-bottom: 20px;
 	width: 100%;
-}
+}*/
 
 
-.table__sideColumn:last-child {
+/*.table__sideColumn:last-child {
 	padding-left: 20px;
 }
 .table__sideColumn:first-child {
 	padding-right: 20px;
-}
+}*/
 /*@media screen and (max-width: 1023px) {
 	.table__sideColumn {
 		width: 270px;
 	}
 }*/
-@media screen and (min-width: 1280px) {
+/*@media screen and (min-width: 1280px) {
 	.table__sideColumn {
 		width: 295px;
 	}
@@ -920,39 +920,19 @@ blockquote:after {
 	.table__sideColumn:first-child {
 		padding-right: 16px;
 	}
-}
+}*/
 
 
 
 
 
-/* ОСНОВНАЯ КОЛОНКА - обновляем отступы */
+
+
+
 @media screen and (max-width: 1023px) {
-/*	.table__sideColumn .brick {
-		height: 440px;
+	/*.table {
+		display: block;  обязательно, т.к. будет неправильно считаться ширина слайдера в таблице в % 
 	}*/
-	.table__mainColumn .brick {
-/*		width: 97%;
-		margin: 0 0 22px 0;*/
-		/*height: 360px;*/
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.table__mainColumn .brick {
-		width: 47%;
-		margin: 0 3% 22px 0;
-	}
-/*	.table__mainColumn .table__sideColumn .brick {
-		width: 100%;
-	}
-*/
-}
-
-
-@media screen and (max-width: 1023px) {
-	.table {
-		display: block; /* обязательно, т.к. будет неправильно считаться ширина слайдера в таблице в % */
-	}
 	.videoSection .table__mainColumn {
 		display: table-cell;
 	}
@@ -967,9 +947,98 @@ blockquote:after {
 
 
 
+/* левая - большая, правая - узкая */
+.table__mainColumn:first-child {
+    width: calc(100% - 322px); /* 300 + 22 */
+    float: left;
+}
+.table__sideColumn:last-child {
+	margin-left: calc(100% - 300px);
+}
+/* левая - узкая, правая - большая */
+.table__sideColumn:first-child {
+	width: 300px;
+	float: left;
+}
+.table__mainColumn:last-child {
+	margin-left: 322px; /* 300 + 22 */
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	/* левая - большая, правая - узкая */
+	.table__mainColumn:first-child {
+		width: 66%; /* 32%_2%_32%_2%_32% */
+	}
+	.table__sideColumn:last-child {
+		margin-left: 68%;
+	}
+	/* левая - узкая, правая - большая */
+	.table__sideColumn:first-child {
+		width: 32%;
+	}
+	.table__mainColumn:last-child {
+		margin-left: 34%;
+	}
+	/* таблица в таблице */
+	/* левая - узкая, правая - большая */
+	.table .table .table__sideColumn:first-child {
+		width: 48.4%
+	}
+	.table .table .table__mainColumn:last-child {
+		margin-left: 51.6%;
+	}
+
+}
+
+@media screen and (min-width: 1280px) {
+	/* левая - большая, правая - узкая */
+	.table__mainColumn:first-child {
+		width: calc(100% - 311px); /* 295 + 16 */
+	}
+	.table__sideColumn:last-child {
+		margin-left: calc(100% - 295px);
+	}
+	/* левая - узкая, правая - большая */
+	.table__sideColumn:first-child {
+		width: 295px;
+	}
+	.table__mainColumn:last-child {
+		margin-left: 311px; /* 295 + 16 */
+	}
+}
 
 
+@media screen and (max-width: 1023px) {
+	.table__mainColumn:first-child,
+	.table__mainColumn:last-child {
+		width: 100%;
+		margin: 0;
+	}
+	.table__sideColumn:first-child,
+	.table__sideColumn:last-child {
+		display: none;
+	}
 
+	/* левая - большая, правая - узкая */
+	.table .table .table__mainColumn:first-child {
+		width: 48.5%;
+	}
+	.table .table .table__sideColumn:last-child {
+		width: auto;
+		margin-left: 51.5%;
+		display: block;
+	}
+
+	/* левая - узкая, правая - большая */
+	.table .table .table__sideColumn:first-child {
+		width: 48.5%;
+		display: block;
+	}
+	.table .table .table__mainColumn:last-child {
+		width: auto;
+		margin-left: 51.5%;
+	}
+
+}
 
 
 

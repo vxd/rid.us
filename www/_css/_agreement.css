@@ -1,0 +1,48 @@
+.areeement__paragraph {
+    margin-bottom: 25px;
+}
+.agreement__list {
+    padding-bottom: 30px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+.agreement__listItem {
+    margin-bottom: 25px;
+    counter-increment: step-counter;
+    list-style-type: none;
+    padding-left: 55px;
+    position: relative;
+}
+.agreement__listItem:before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    min-width: 19px;
+    text-align: center;
+    padding: 3px 9px 3px 7px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+
+/*.agreement__subList {
+    margin-left: 40px;
+}*/
+.agreement__subListItem {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    list-style-type: none;
+    position: relative;
+}
+.agreement__subListItem:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 11px;
+    height: 11px;
+    background: #c64a1b;
+    top: 4px;
+}

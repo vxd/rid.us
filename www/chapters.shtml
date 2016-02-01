@@ -21,7 +21,7 @@
 
 
 
-    <div class="table">
+    <div class="table clearfix">
         <div class="table__mainColumn">
 
             <hr class="view__bold" />
@@ -78,6 +78,61 @@
         </div>
     </div>
 
+
+
+    <div class="table clearfix">
+        <div class="table__mainColumn" style="background: #eee">
+
+            <div class="bricks__wrapper clearfix">
+                <div class="brick view_noHeight">
+                    <!--#include virtual="bricks/news-simple.shtml?image=1&data=0&label=11&count1=false"-->
+                </div>
+                <div class="brick view_noHeight">
+                    <!--#include virtual="bricks/news-simple.shtml?image=1&data=0&label=11&count1=false"-->
+                </div>
+                <div class="brick view_noHeight">
+                    <!--#include virtual="bricks/news-simple.shtml?image=1&data=0&label=11&count1=false"-->
+                </div>
+                <div class="brick view_noHeight">
+                    <!--#include virtual="bricks/news-simple.shtml?image=1&data=0&label=11&count1=false"-->
+                </div>
+            </div>
+
+
+        </div>
+        <div class="table__sideColumn" style="background: #dee">
+                <div class="brick view_noHeight">
+                    <!--#include virtual="bricks/news-simple.shtml?image=1&data=0&label=11&count1=false"-->
+                </div>
+        </div>
+    </div>
+
+
+
+    <div class="table clearfix">
+        <div class="table__mainColumn" style="background: #eee">
+
+            <div class="bricks__wrapper padding_bottom clearfix">
+                <!--#include virtual="slider.shtml"-->
+                <div class="brick hideOn_1024 hideOn_768">
+                    <div class="brick view_floatText">
+                        <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
+                    </div>
+                    <div class="brick view_floatText">
+                        <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
+                    </div>
+                    <div class="brick view_floatText">
+                        <!--#include virtual="bricks/mini-full.shtml?image=3&data=2&label=12"-->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="table__sideColumn hideOn_768" style="background: #dee">
+                gsdgsdg
+        </div>
+    </div>
 
 
 </section>

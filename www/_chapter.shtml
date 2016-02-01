@@ -1,17 +1,16 @@
-    <div class="table view_alwaysTable">
-        <div class="table__sideColumn">
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&label=false&count1=120&count2=35&count3=3812"-->
-            </div>
-            <a href="#" class="article__readmore" title="">Читать сюжет</a>
+<div class="table clearfix">
+    <div class="table__sideColumn">
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&label=false&count1=120&count2=35&count3=3812"-->
         </div>
-        <div class="table__mainColumn">
-            <h4>Материалы сюжета:</h4>
-            <br>
-            <div class="padding_bottom">
-                <!--#include virtual="bricks/newslist-chapter.shtml?small=true"-->
-                <a href="#" class="moreChapters" title="">Еще 30 материалов</a>
-            </div>
-        </div>
-
+        <a href="#" class="article__readmore" title="">Читать сюжет</a>
     </div>
+    <div class="table__mainColumn">
+        <h4>Материалы сюжета:</h4>
+        <br>
+        <div class="padding_bottom">
+            <!--#include virtual="bricks/newslist-chapter.shtml?small=true"-->
+            <a href="#" class="moreChapters" title="">Еще 30 материалов</a>
+        </div>
+    </div>
+</div>

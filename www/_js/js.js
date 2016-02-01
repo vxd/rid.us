@@ -128,58 +128,6 @@ $(function() {
 
 
 
-	// ======================================
-	// toolip
-	// ======================================
-
-	// var popoverContent = $('.popoverLogin').remove().html();
-
- //    $(document).on('click', '.header__loginButton', function () {
- //    	$(this).attr('title', popoverContent).addClass("state_on");
- //        $(this).tooltip({
- //            items: '.header__loginButton.state_on',
- //            tooltipClass: 'popoverLogin',
- //            show: null, // show immediately 
- //            // hide: { effect: "" }, //fadeOut
- //            hide: null,
- //            position: {
- //            	my: "right top",
-	// 			at: "right bottom",
-	// 			of: ".headerPanel .wrapper"
- //            },
- //            content: function () {
-	//             return $(this).prop('title');
-	//         }
- //        });
- //        $(this).trigger('mouseenter');
-	// 	$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
- //        return false;
- //    });
-
-	// $(window).scroll(function() {
-	// 	$(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
-	// });
-	// $(window).resize(function(){
-	// 	$(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
-	// });
-
- //    //hide
- //    $(document).on('click', '.header__loginButton.state_on', function () {
- //        $(this).tooltip('close').removeClass("state_on").attr('title', '');
- //        return false;
- //    });
-	// $(document).click(function(event) {
-	// 	if ($(event.target).closest(".popoverLogin").length) return;
- //        $(".header__loginButton.state_on").tooltip('close').removeClass("state_on").attr('title', '');
-	// 	event.stopPropagation();
-	// });
-
- //    //prevent mouseout and other related events from firing their handlers
- //    $(".header__loginButton").on('mouseout', function (e) {
- //        e.stopImmediatePropagation();
- //    });
-
-
 
 	// ======================================
 	// меню 
@@ -307,13 +255,6 @@ $(function() {
 
 
 
-
-
-
-	// $('.headerPanel').hcSticky({
-	// 	stickTo: document,
-	// 	followScroll: false,
-	// });
 
 
 
@@ -588,18 +529,18 @@ $(function() {
 	        autoplayDisableOnInteraction: false
 	    });
 
-		var doingResize = false;
+		// var doingResize = false;
 
-		$(window).resize(function(event){
-		    doingResize = true;
-		});
+		// $(window).resize(function(event){
+		//     doingResize = true;
+		// });
 
-		setInterval(function() {
-		    if (doingResize) {
-		        imagesSlider.updateSlidesSize();
-		        doingResize = false;
-		    }
-		}, 100);
+		// setInterval(function() {
+		//     if (doingResize) {
+		//         imagesSlider.updateSlidesSize();
+		//         doingResize = false;
+		//     }
+		// }, 100);
     })
 
 
@@ -629,18 +570,18 @@ $(function() {
 
 
 		/* ресайз */
-		var doingResize = false;
+		// var doingResize = false;
 
-		$(window).resize(function(event){
-		    doingResize = true;
-		});
+		// $(window).resize(function(event){
+		//     doingResize = true;
+		// });
 
-		setInterval(function() {
-		    if (doingResize) {
-		        opinionSlider.updateSlidesSize();
-		        doingResize = false;
-		    }
-		}, 100);
+		// setInterval(function() {
+		//     if (doingResize) {
+		//         opinionSlider.updateSlidesSize();
+		//         doingResize = false;
+		//     }
+		// }, 100);
     })
 
 

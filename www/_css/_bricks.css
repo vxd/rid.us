@@ -8,33 +8,6 @@
 
 
 
-.bricks__wrapper {
-	/*overflow: hidden;*/
-}
-@media screen and (max-width: 1023px) {
-	.bricks__wrapper {
-		margin-right: -3%;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.bricks__wrapper {
-		margin-right: -2%;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1279px) {
-	.bricks__wrapper {
-		margin-right: -22px;
-	}
-}
-@media screen and (min-width: 1280px) {
-	.bricks__wrapper {
-		margin-right: -16px;
-	}
-}
-
-
-
-
 
 
 

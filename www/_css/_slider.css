@@ -19,16 +19,16 @@
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
     .slider {
-        width: 64.66666%;
-        margin: 0 2% 22px 0;
+        width: 97%;
+        margin: 0 3% 22px 0;
     }
     /* фикс бага слайдера - почему-то внутри display:tavle-cell некорректно считает ширину ; */
-    .table__mainColumn .slider {
+/*    .table__mainColumn .slider {
         width: 607px;
     }
     .table__mainColumn .brick.view_opinion {
         width: 291px;
-    }
+    }*/
 }
 @media screen and (min-width: 1041px) and (max-width: 1279px) {
     .slider {

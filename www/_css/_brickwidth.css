@@ -1,3 +1,35 @@
+
+
+.bricks__wrapper {
+	/*overflow: hidden;*/
+}
+@media screen and (max-width: 1023px) {
+	.bricks__wrapper {
+		margin-right: -3%;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.bricks__wrapper {
+		margin-right: -3%;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
+	.bricks__wrapper {
+		margin-right: -22px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.bricks__wrapper {
+		margin-right: -16px;
+	}
+}
+
+
+
+
+
+
+
 .brick {
 	height: 400px;
 	float: left;
@@ -31,6 +63,43 @@
 		margin: 0 16px 16px 0;
 	}
 }
+
+
+
+
+
+
+
+
+/* ОСНОВНАЯ КОЛОНКА - обновляем отступы */
+.table .table__sideColumn .brick {
+	margin: 0 0 20px 0;
+	width: 100%;
+	float: none;
+}
+
+@media screen and (max-width: 1023px) {
+	.brick {
+		width: 47%;
+		margin: 0 3% 22px 0;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.table__mainColumn .brick {
+		width: 47%;
+		margin: 0 3% 22px 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -193,5 +262,11 @@
 		margin: 0 3% 22px 0;
 	}
 }
+
+
+
+
+
+
 
 

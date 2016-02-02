@@ -22,6 +22,9 @@
         width: 64.6666%;
         margin: 0 2% 22px 0;
     }
+    .table__mainColumn .slider {
+        width: 97%;
+    }
     /* фикс бага слайдера - почему-то внутри display:tavle-cell некорректно считает ширину ; */
 /*    .table__mainColumn .slider {
         width: 607px;

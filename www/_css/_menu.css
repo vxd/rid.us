@@ -329,6 +329,27 @@
 	z-index: 1;
 	width: 100%;
 }
+@media screen and (max-width: 1023px) {
+	.headerSearch {
+		width: calc(100% - 198px);
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.headerSearch {
+		width: 700px;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
+	.headerSearch {
+		width: 809px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.headerSearch {
+		width: 809px;
+	}
+}
+
 .headerSearch__form {
 	overflow: hidden;
 	height: 60px;

@@ -33,27 +33,12 @@
 	display: block;
 	content: "";
     position: absolute;
-    top: -14px;
+    top: -16px;
     right: 47px;
     display: inline-block;
-    border: 7px solid transparent;
-    border-bottom: 7px solid #fff;
+    border: 8px solid transparent;
+    border-bottom: 8px solid #fff;
 }
-@media screen and (max-width: 1023px) {
-	.popoverLogin {
-		display: none;
-	}
-}
-/*@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.popoverLogin {
-		padding: 2% 0;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1279px) {
-	.popoverLogin {
-		padding: 22px;
-	}
-}*/
 @media screen and (min-width: 1280px) {
 	.popoverLogin:after {
 	    right: 23px;
@@ -130,6 +115,28 @@
 .headerPanel .popoverLogin__loginForm .yellowButton {
     float: none;
     display: inline-block;
-    margin-left: 140px;
+    margin-left: 50%;
+    -webkit-transform: translateX(-54%);
+    -moz-transform: translateX(-54%);
+    -ms-transform: translateX(-54%);
+    transform: translateX(-54%);  
     margin-top: 5px;
+}
+
+
+
+
+@media screen and (max-width: 1023px) {
+	.popoverLogin {
+		left: 220px;
+		width: auto;
+	}
+	.popoverLogin:after {
+	    top: 18px;
+	    left: -16px;
+	    right: auto;
+	    display: inline-block;
+	    border: 8px solid transparent;
+	    border-right: 8px solid #fff;
+	}
 }

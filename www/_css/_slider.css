@@ -101,22 +101,22 @@
     left: 16px;
     font-size: 24px;
     padding: 0 10px;    
-    background: rgba(26,20,19,.7);
+    background: rgba(20,20,19,.7);
     -webkit-transition: all .3s ease-in-out;
     -moz-transition:    all .3s ease-in-out;
     transition:         all .3s ease-in-out;
 }
 .aLaSlideImage .brick__fullscreenLabel {
-    background: rgba(92,72,29,0);
+    background: rgba(0,0,0,0);
     -webkit-transition: background .2s ease-in-out;
     -moz-transition:    background .2s ease-in-out;
     transition:         background .2s ease-in-out;
 }
 .aLaSlideImage:hover .brick__fullscreenLabel {
-    background: rgba(62,42,19,.4);
+    background: rgba(52,32,19,.4);
 }
 .aLaSlideImage:hover .aLaSlideImage__number {
-    background: rgba(52,32,19,0);
+    background: rgba(0,0,0,0);
     top: 86px;
     font-size: 100px;
     left: 50%;
@@ -162,8 +162,8 @@
 .slider__image:hover + .slider__text h1 a,
 .slider__text:hover h1 a,
 .slider__text h1 a:hover {
-    color: #eee;
-    opacity: .83;
+    color: #fff;
+    opacity: .7;
 }
 .slider__text h6 a {
     display: inline-block;

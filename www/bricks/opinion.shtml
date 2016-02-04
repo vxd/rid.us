@@ -11,7 +11,38 @@
 
 	<div class="swiper-slide">
 		<a href="" class="brick__image">
-			<img alt="Ученые доказали влияние грибов на погоду" src="http://www.bugaga.ru/uploads/posts/2013-07/1372793337_samye-vliyatelnye.jpg">
+			<img alt="" src="_images/Layer-86.jpg">
+			<div class="brick__content opinion__info">
+				<h4>
+					Александр Клюкин
+				</h4>
+				<h6>
+					политолог, обозреватель Коммерсант FM
+				</h6>
+			</div>
+		</a>
+		<div class="brick__content">
+			<div class="brick__mainLinkWrapper">
+				<a href="#" class="brick__mainLink" title="">От вируса до вируса — чем отличается каждая новая вспышка?</a>
+			</div>
+			<div class="countersBlock">
+				<span class="countersBlock__item view_count1">
+					34 <i class="icon"><!-- icon --></i>
+				</span>
+				<span class="countersBlock__item view_count2">
+					6 <i class="icon"><!-- icon --></i>
+				</span>
+				<span class="countersBlock__item view_count3">
+					67 <i class="icon"><!-- icon --></i>
+				</span>
+			</div>	
+			<!-- <a class="readAll" href="authors.shtml" title="">Читать все авторские колонки</a> -->
+		</div>
+	</div>
+
+	<div class="swiper-slide">
+		<a href="" class="brick__image">
+			<img alt="" src="http://doseng.org/uploads/posts/2010-02/1265837445_celebrity_portraits_by_raphael_mazzucco_15.jpg">
 			<div class="brick__content opinion__info">
 				<h4>
 					Евгения Селькова
@@ -42,38 +73,7 @@
 
 	<div class="swiper-slide">
 		<a href="" class="brick__image">
-			<img alt="Ученые доказали влияние грибов на погоду" src="http://doseng.org/uploads/posts/2010-02/1265837445_celebrity_portraits_by_raphael_mazzucco_15.jpg">
-			<div class="brick__content opinion__info">
-				<h4>
-					Евгения Селькова
-				</h4>
-				<h6>
-					политолог, обозреватель Коммерсант FM
-				</h6>
-			</div>
-		</a>
-		<div class="brick__content">
-			<div class="brick__mainLinkWrapper">
-				<a href="#" class="brick__mainLink" title="">От вируса до вируса — чем отличается каждая новая вспышка?</a>
-			</div>
-			<div class="countersBlock">
-				<span class="countersBlock__item view_count1">
-					34 <i class="icon"><!-- icon --></i>
-				</span>
-				<span class="countersBlock__item view_count2">
-					6 <i class="icon"><!-- icon --></i>
-				</span>
-				<span class="countersBlock__item view_count3">
-					67 <i class="icon"><!-- icon --></i>
-				</span>
-			</div>	
-			<!-- <a class="readAll" href="authors.shtml" title="">Читать все авторские колонки</a> -->
-		</div>
-	</div>
-
-	<div class="swiper-slide">
-		<a href="" class="brick__image">
-			<img alt="Ученые доказали влияние грибов на погоду" src="http://www.eclipse-sumerki.ru/wp-content/uploads/2011/05/3140c31f2342.jpg">
+			<img alt="" src="http://www.eclipse-sumerki.ru/wp-content/uploads/2011/05/3140c31f2342.jpg">
 			<div class="brick__content opinion__info">
 				<h4>
 					Евгения Селькова

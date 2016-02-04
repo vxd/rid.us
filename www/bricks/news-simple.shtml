@@ -67,42 +67,45 @@
 <!--#endif -->
 
 <!--#if expr="$label = 11" -->
-	<a href="#" class="brick__label brick__label-position" title="">Антон плисецкий</a>
+	<a href="#11" class="brick__label brick__label-position" title="">Антон плисецкий</a>
 <!--#endif -->
 <!--#if expr="$label = 12" -->
-	<a href="#" class="brick__label brick__label-position" title="">Степан липсченко</a>
+	<a href="#12" class="brick__label brick__label-position" title="">Степан липсченко</a>
 <!--#endif -->
 <!--#if expr="$label = 13" -->
-	<a href="#" class="brick__label brick__label-position" title="">Павел Горохов</a>
+	<a href="#13" class="brick__label brick__label-position" title="">Павел Горохов</a>
 <!--#endif -->
 <!--#if expr="$label = 21" -->
 	<span class="brick__label-position">
-        <a href="#" class="brick__label" title="">Гражданская журналистика</a>
+        <a href="#g" class="brick__label" title="">Гражданская журналистика</a>
         <br>
-        <a href="#" class="brick__label" title="">Политика</a>
+        <a href="#p" class="brick__label" title="">Политика</a>
     </span>
 <!--#endif -->
 <!--#if expr="$label = 22" -->
 	<span class="brick__label-position">
-        <a href="#" class="brick__label" title="">Интересное</a>
+        <a href="#i" class="brick__label" title="">Интересное</a>
         <br>
-        <a href="#" class="brick__label" title="">Жизнь</a>
+        <a href="#l" class="brick__label" title="">Жизнь</a>
     </span>
 <!--#endif -->
 <!--#if expr="$label = 31" -->
-	<a href="#" class="brick__label brick__label-position" title="">здоровье</a>
+	<a href="#31" class="brick__label brick__label-position" title="">здоровье</a>
 <!--#endif -->
 <!--#if expr="$label = 32" -->
-	<a href="#" class="brick__label brick__label-position" title="">знаменитости</a>
+	<a href="#32" class="brick__label brick__label-position" title="">знаменитости</a>
 <!--#endif -->
 <!--#if expr="$label = 33" -->
-	<a href="#" class="brick__label brick__label-position" title="">кино</a>
+	<a href="#33" class="brick__label brick__label-position" title="">кино</a>
 <!--#endif -->
 <!--#if expr="$label = 'c1'" -->
-	<a href="#" class="brick__fullscreenLabel" title="">+145 &nbsp;</a>
+	<a href="#c1" class="brick__fullscreenLabel" title="">+145 &nbsp;</a>
 <!--#endif -->
 <!--#if expr="$label = 'c2'" -->
-	<a href="#" class="brick__fullscreenLabel" title="">+12 &nbsp;</a>
+	<a href="#c2" class="brick__fullscreenLabel" title="">+12 &nbsp;</a>
+<!--#endif -->
+<!--#if expr="$label != 'c2' && $label != 'c1'" -->
+	<a href="#" class="clickable"></a>
 <!--#endif -->
 </div>
 
@@ -185,4 +188,6 @@
 	</script>	
 </span>
 <!--#endif -->
+
+<a href="#" class="clickable"></a>
 

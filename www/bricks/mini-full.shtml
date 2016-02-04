@@ -43,19 +43,19 @@
 
 <div class="brick__content">
 <!--#if expr="$data = 1" -->
-	<a href="#" class="brick__label view_marginBottom" title="">Путешествия</a>
+	<a href="#" class="brick__label" title="">Путешествия</a>
 	<h5>
 		<a href="#" title="">Каждый старшеклассник знает, что сила тока измеряется в амперах.</a> 
 	</h5>
 <!--#endif -->
 <!--#if expr="$data = 2" -->
-	<a href="#" class="brick__label view_marginBottom" title="">Здоровье</a>
+	<a href="#" class="brick__label" title="">Здоровье</a>
 	<h5>
 		<a href="#" title="">«Oткрытие» NASA было известно советским ученым еще в 1970-х годах.</a> 
 	</h5>
 <!--#endif -->
 <!--#if expr="$data = 3" -->
-	<a href="#" class="brick__label view_marginBottom" title="">Жизнь</a>
+	<a href="#" class="brick__label" title="">Жизнь</a>
 	<h5>
 		<a href="#" title="">Aэробус мог быть взорван с помощью жидкого взрывчатого вещества.</a> 
 	</h5>

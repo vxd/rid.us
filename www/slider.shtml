@@ -17,6 +17,7 @@
 							57 <i class="icon"><!-- icon --></i>
 						</span>
 					</div>
+                    <a href="#" class="clickable"></a>
             	</div>
             </div>
             <div class="swiper-slide">
@@ -36,6 +37,7 @@
 							57 <i class="icon"><!-- icon --></i>
 						</span>
 					</div>
+                    <a href="#" class="clickable"></a>
             	</div>
             </div>
             <div class="swiper-slide">
@@ -55,6 +57,7 @@
 							57 <i class="icon"><!-- icon --></i>
 						</span>
 					</div>
+                    <a href="#" class="clickable"></a>
             	</div>
            </div>
         </div>

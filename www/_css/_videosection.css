@@ -115,23 +115,29 @@
 
 .videoPlaylist__wrapper {
 	background: #000;
-	height: 100%;
+	height: 300px;
+    overflow: hidden;
 }
 .videoPlaylist__nav {
 	display: block;
 	width: 100%;
 	text-align: center;
 	font-size: 0;
+	background: #000;
 }
-.videoPlaylist__nav:hover {
-	opacity: .8;
+.videoPlaylist__nav:hover:after {
+	opacity: 1;
 }
 .videoPlaylist__nav:after {
+	opacity: .87;
 	display: inline-block;
 	content: "";
     width: 50px;
     height: 50px;
     background: url(../_images/icons_sprite.png);
+}
+.videoPlaylist__nav.swiper-button-disabled:after {
+	opacity: .3;
 }
 .videoPlaylist__nav.view_prev:after {    
 	background-position: -150px -319px;
@@ -140,25 +146,31 @@
 	background-position: -100px -319px;
 }
 
+
+
+
 .videoPlaylist {
-    height: 300px;
-    max-height: 300px;
-    overflow: hidden;
+    /*height: 300px;*/
 }
+.table .table__sideColumn .brick.videoPlaylist__item,
 .videoPlaylist__item {
-	border-bottom: 5px solid #ffd051;
-	height: 146px !important;
+	box-shadow: 0 5px 0 #ffd051;
+	/*height: 146px !important;*/
 	padding: 16px;
 	margin: 0;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+.table .table__sideColumn .brick.videoPlaylist__item:last-child,
 .videoPlaylist__item:last-child {
-	border-bottom: none;
+	box-shadow: none;
 }
 .videoPlaylist__item .brick__content h5 a {
 	color: #fff;
+}
+.videoPlaylist__item .brick__content h5 a:hover {
+	opacity: .8
 }
 
 

@@ -6,27 +6,6 @@ $(document).ready(function() {
 
 
 
-	var iscrollWrapper = $('.iscroll');
-	window.globalstorage = {
-		iscroll: []
-	}
-	var el;
-	for (var i = 0; i < iscrollWrapper.length; i++) {
-		el = iscrollWrapper[i];
-
-		var iscrollInstance = new IScroll(el, {
-		    scrollbars: true,
-		    // disableMouse: false,
-		    mouseWheel: true,
-		    // momentum: false,
-		    fadeScrollbars: true,
-		    interactiveScrollbars: true,
-		    bindToWrapper: true
-
-		});
-		window.globalstorage.iscroll.push(iscrollInstance);
-	};
-	// console.log(window.globalstorage.iscroll)
 
 
 
@@ -65,6 +44,36 @@ $(document).ready(function() {
 
 
 $(function() {
+
+	// ======================================
+	// IScroll
+	// ======================================
+
+	$(window).load(function(){
+	/* обертка - чтобы просчитал высоту только после полного рендеринга элементов */
+
+		var iscrollWrapper = $('.iscroll');
+		window.globalstorage = {
+			iscroll: []
+		}
+		var el;
+		for (var i = 0; i < iscrollWrapper.length; i++) {
+			el = iscrollWrapper[i];
+
+			var iscrollInstance = new IScroll(el, {
+			    scrollbars: true,
+			    // disableMouse: false,
+			    mouseWheel: true,
+			    // momentum: false,
+			    fadeScrollbars: true,
+			    interactiveScrollbars: true,
+			    bindToWrapper: true
+			});
+			window.globalstorage.iscroll.push(iscrollInstance);
+		};
+		// console.log(window.globalstorage.iscroll)
+
+	});
 
 	// ======================================
 	// ios switch - http://abpetkov.github.io/switchery/
@@ -567,6 +576,25 @@ $(function() {
 		// }, 100);
     })
 
+    $('.videoPlaylist__wrapper').each(function () {
+	    var videoSlider = new Swiper($(this), {
+	        // pagination: $(this).find('.swiper-pagination'),
+	        // paginationClickable: true,
+	        // loop: true,
+	        nested: true,
+	        // observeParents: true,
+	        observer: true,
+	        setWrapperSize: true,
+	        direction: 'vertical',
+	        slidesPerView: 2,
+	        mousewheelControl: true,
+	        nextButton: '.videoPlaylist__nav.view_next',
+	        prevButton: '.videoPlaylist__nav.view_prev',
+	        spaceBetween: 6
+	    });
+
+    })
+
 
     $('.view_opinion').each(function () {
 	    var opinionSlider = new Swiper($(this), {
@@ -580,7 +608,7 @@ $(function() {
 
 	    });
 
-	    /* текущиф слайд */
+	    /* текущий слайд */
 	    var currentPlaceholder = $(this).find('#opinion__slideCurrent')
 		currentPlaceholder.html(opinionSlider.activeIndex + 1);
 
@@ -592,20 +620,6 @@ $(function() {
 		var slides = opinionSlider.slides.size();
 		$(this).find('#opinion__slideTotal').html(slides);
 
-
-		/* ресайз */
-		// var doingResize = false;
-
-		// $(window).resize(function(event){
-		//     doingResize = true;
-		// });
-
-		// setInterval(function() {
-		//     if (doingResize) {
-		//         opinionSlider.updateSlidesSize();
-		//         doingResize = false;
-		//     }
-		// }, 100);
     })
 
 

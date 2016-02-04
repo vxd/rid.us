@@ -1,21 +1,42 @@
 .ridusMap {
 	height: 180px;
-	background: url(../_images/ridus-map.png) no-repeat center, 
-				url(../_images/ridus-map.jpg) center;
-	/*background-size: cover;*/
-	background-repeat:;
-/*	margin-bottom: 20px;
-*/	position: relative;
+	position: relative;
 }
+@media screen and (max-width: 1023px) {
+	.ridusMap {
+		background: url(../_images/ridus-map.png) no-repeat 54% 50%, 
+					url(../_images/ridus-map.jpg) center;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1040px) {
+	.ridusMap {
+		background: url(../_images/ridus-map.png) no-repeat 53% 50%, 
+					url(../_images/ridus-map.jpg) center;
+	}
+}
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
+	.ridusMap {
+		background: url(../_images/ridus-map.png) no-repeat 53% 50%, 
+					url(../_images/ridus-map.jpg) center;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.ridusMap {
+		background: url(../_images/ridus-map.png) no-repeat 52% 50%, 
+					url(../_images/ridus-map.jpg) center;
+	}
+}
+
 .ridusMap .yellowButton {
 	position: absolute;
 	bottom: 0;
 	left: 50%;
 	margin: 0;
-	-webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+	-webkit-transform: translateX(-60px);
+    -moz-transform: translateX(-60px);
+    -ms-transform: translateX(-60px);
+    transform: translateX(-60px);
+    z-index: 2;
 }
 .ridusMap .yellowButton .corner {
     border-bottom-color: #886147;
@@ -27,5 +48,35 @@
 	height: 50px;
 	right: 20px;
 	top: 20px;
-	background: #ffd051 url(../_images/ridus-map.gif) center;
+	background: #ffd051;
+}
+.ridusMap__icon i {
+	display: block;
+	background: #ffd051;
+	position: absolute;
+	top: 6px;
+	bottom: 6px;
+	left: 6px;
+	right: 6px;
+	border: 3px solid #000;
+}
+.ridusMap__icon i:before,
+.ridusMap__icon i:after {
+	position: absolute;
+	content: "";
+	background: #ffd051
+}
+.ridusMap__icon i:before {
+	width: 12px;
+	height: 126%;
+	top: -13%;
+	right: 50%;
+	margin-right: -6px
+}
+.ridusMap__icon i:after {
+	width:  126%;
+	height: 12px;
+	left: -13%;
+	top: 50%;
+	margin-top: -6px
 }

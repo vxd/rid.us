@@ -56,7 +56,7 @@ header {
 .dayInfo li {
 	float: left;
 	font-size: 14px;
-	padding: 0 3px 0 14px;
+	padding: 0 0 0 14px;
 }
 .dayInfo sup {
 	color: #ea5429;
@@ -70,7 +70,7 @@ header {
 /* первый пункт */
 .dayInfo .b-date {
 	border-right: 1px solid #e8e8e8;
-	padding: 0 14px 0 0;
+	padding: 0 12px 0 0;
 }
 .dayInfo .b-date span {
 	text-transform: uppercase;
@@ -87,7 +87,7 @@ header {
 @media screen and (min-width: 1280px) {
 
 	.dayInfo li {
-		padding: 0 8px 0 16px;
+		padding: 0 6px 0 16px;
 	}
 	.dayInfo .b-date {
 		padding: 0 16px 0 0;

@@ -48,22 +48,22 @@
 <!--#endif -->
 
 <!--#if expr="$data = 4" -->
-	<p class="brick__text">
-		<a href="#" title="">Aэробус мог быть взорван с помощью жидкого взрывчатого вещества.</a> 
-	</p>
-	<span class="brickLabel">СМИ2</span>
+	<h5>
+		<a href="#" title="">Каждый старшеклассник знает, что сила тока измеряется в амперах.</a>
+	</h5>
+	<a href="#" class="brick__label" title="">СМИ2</a>
 <!--#endif -->
 <!--#if expr="$data = 5" -->
-	<p class="brick__text">
-		<a href="#" title="">Aэробус мог быть взорван с помощью жидкого взрывчатого вещества.</a> 
-	</p>
-	<span class="brickLabel">Лентаинформ</span>
+	<h5>
+		<a href="#" title="">«Oткрытие» NASA было известно советским ученым еще в 1970-х годах.</a> 
+	</h5>
+	<a href="#" class="brick__label" title="">Лентаинформ</a>
 <!--#endif -->
 <!--#if expr="$data = 6" -->
-	<p class="brick__text">
+	<h5>
 		<a href="#" title="">Aэробус мог быть взорван с помощью жидкого взрывчатого вещества.</a> 
-	</p>
-	<span class="brickLabel">24СМИ</span>
+	</h5>
+	<a href="#" class="brick__label" title="">24СМИ</a>
 <!--#endif -->
 </div>
 

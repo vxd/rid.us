@@ -17,21 +17,33 @@
 <a href="#" class="slider__image" title="">
 	<!--#if expr="$image = 1" -->
 		<img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt="">
+		<span class="brick__fullscreenLabel"></span>
+		<span class="aLaSlideImage__number">+12</span>
 	<!--#endif -->
 	<!--#if expr="$image = 2" -->
 		<img src="http://www.ridus.ru/images/2015/12/1/340559/in_article_e6d5d3c187.jpg" alt="">
+		<span class="brick__fullscreenLabel"></span>
+		<span class="aLaSlideImage__number">+145</span>
 	<!--#endif -->
 	<!--#if expr="$image = 3" -->
 		<img src="http://www.ridus.ru/images/2015/11/20/338581/in_article_2851de7b7b.jpeg" alt="">
+		<span class="brick__fullscreenLabel"></span>
+		<span class="aLaSlideImage__number">+8</span>
 	<!--#endif -->
 </a>
-<div href="#" class="slider__text">
-	<h6>
-		<a href="#" title="">Жизнь</a>
-	</h6>				            		
+<div class="slider__text">
+	<a href="#life" class="brick__label" title="">жизнь</a>				            		
 	<h1>
 		<a href="" title="">
+	<!--#if expr="$image = 1" -->
+			Хокинг и Мильнер занялись 
+	<!--#endif -->
+	<!--#if expr="$image = 2" -->
+			Хокинг и Мильнер занялись поиском 
+	<!--#endif -->
+	<!--#if expr="$image = 3" -->
 			Хокинг и Мильнер занялись поиском инопланетян
+	<!--#endif -->
 		</a>
 	</h1>
 	<div class="countersBlock">
@@ -45,4 +57,5 @@
 			57 <i class="icon"><!-- icon --></i>
 		</span>
 	</div>
+	<a href="#" class="clickable"></a>
 </div>

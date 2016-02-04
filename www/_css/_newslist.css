@@ -39,7 +39,7 @@
 .brick.view_yellow .newsList__date {
 	display: block;
 	float: left;
-	padding-top: 2px;
+	padding-top: 1px;
     width: 42px;
 }
 .brick.view_yellow .newsList__date b {
@@ -49,6 +49,7 @@
 .brick.view_yellow .newsList__link {
 	display: block;
 	margin-left: 45px;
+	font-size: 15px;
 }
 
 

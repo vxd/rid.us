@@ -140,3 +140,63 @@
 	    border-right: 8px solid #fff;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popup {
+	display: none;
+	background: #fff;
+	width: 500px !important;
+	min-height: 200px !important;
+}
+.popup__header {
+	background: #3b5998 url(../_images/fb.svg) no-repeat 35px 27px;
+	background-size: 215px 42px;
+	height: 96px;
+	position: relative;
+}
+.popup__header .closeButton {
+	position: absolute;
+    right: 20px;
+    top: 6px;
+    font-size: 38px;
+}
+.popup_footer {
+	background: #dededd;
+	color: #000;
+	text-decoration: none;
+    padding: 16px 0 20px;
+   	text-align: center;
+	display: inline-block;
+	width: 100%;
+	font-size: 17px;
+}
+.popup_footer:hover {
+	color: #000;
+}
+.popup_footer span {
+	border-bottom: 1px dashed #000;
+}
+.popup_footer:hover span {
+	border-bottom: 0;
+	padding-bottom: 1px;
+}
+.fb-like {
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+    padding: 40px 80px 45px;
+}

@@ -1126,7 +1126,31 @@
 		}
 	});
 
+</script>
 
+
+
+
+<div id="element_to_pop_up" class="popup">
+	<!--#include virtual="_popup-fb.shtml"-->
+</div>
+<script>
+	$(function(){
+		function firePopup() {
+			$('#element_to_pop_up').bPopup({
+	            positionStyle: 'fixed',
+	            closeClass: "popup_closeButton",
+	            zIndex: 999999
+	        });
+		}
+		var fbCheck = setInterval(function() {
+			// обязательно сначала дождемся, когда ФБ загрузит виджет
+		    if ($(".fb-like").attr("fb-xfbml-state") == "rendered") {
+		    	setTimeout(firePopup, 10); // и подождем еще 2 сек
+		        clearInterval(fbCheck);
+		    }
+		}, 500);	
+    });
 </script>
 
 </body>

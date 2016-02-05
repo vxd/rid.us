@@ -1,3 +1,7 @@
+<div class="popup__header">
+    <a href="#" class="closeButton popup_closeButton">×</a>
+</div>
+
     <!-- Load Facebook SDK for JavaScript - AFTER BODY! -->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -16,3 +20,7 @@
         data-share="false"
         data-show-faces="true">
     </div>
+
+<a class="popup_footer popup_closeButton" href="#">
+  <span>Спасибо, я уже с вами!</span>
+</a>

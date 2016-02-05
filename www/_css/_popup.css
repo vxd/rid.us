@@ -158,7 +158,7 @@
 .popup {
 	display: none;
 	background: #fff;
-	width: 500px !important;
+	width: 570px !important;
 	min-height: 200px !important;
 }
 .popup__header {
@@ -172,6 +172,10 @@
     right: 20px;
     top: 6px;
     font-size: 38px;
+}
+.popup__header .closeButton:hover {
+	color: #fff;
+	opacity: .5;
 }
 .popup_footer {
 	background: #dededd;
@@ -198,5 +202,5 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-    padding: 40px 80px 45px;
+    padding: 40px 60px 45px;
 }

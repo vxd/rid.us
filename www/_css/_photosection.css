@@ -1,15 +1,19 @@
+.photoSection {
+	overflow: hidden;
+	position: relative;
+}
 .photoSection h1 {
 	text-align: center;
 }
 .ptotoBlock {
 	width: 49%;
-	margin-left: 2%;
+	/*margin-left: 2%;*/
 	float: left;
 	position: relative;
 }
-.ptotoBlock:first-child {
+/*.ptotoBlock:first-child {
 	margin-left: 0;
-}
+}*/
 .ptotoBlock__image {
 	overflow: hidden;
 	display: block;
@@ -19,7 +23,7 @@
 	transition: all .3s ease;
 }
 .ptotoBlock__image:hover {
-	opacity: .78;
+	opacity: .83;
 }
 @media screen and (max-width: 1023px) {
 	.ptotoBlock__image  {
@@ -85,28 +89,34 @@
 	top: 0;
 }
 
-.photoWrapper {
+/*.photoWrapper {
 	position: relative;
-}
+	width: 100%;
+}*/
 .photoSection__nav {
 	display: block;
 	position: absolute;
-	top: 43%;
+	top: 47%;
 	width: 50px;
     height: 50px;
     border-radius: 3px;
 	content: "";
-	background: #000 url(../_images/icons_sprite.png);
-	opacity: .7;
+	background: #111 url(../_images/icons_sprite.png);
+	opacity: .85;
+	z-index: 10;
 }
 .photoSection__nav:hover {
 	opacity: 1;
+	background-color: #000;
+}
+.photoSection__nav.swiper-button-disabled {
+	opacity: .25;
 }
 .photoSection__nav.view_prew {
 	background-position: -50px -320px;
-	left: 10px;
+	left: 25px;
 }
 .photoSection__nav.view_next {
 	background-position: 0px -320px;
-	right: 10px;
+	right: 25px;
 }

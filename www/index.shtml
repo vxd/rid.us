@@ -1140,13 +1140,13 @@
 			$('#element_to_pop_up').bPopup({
 	            positionStyle: 'fixed',
 	            closeClass: "popup_closeButton",
-	            zIndex: 999999
+	            zIndex: 99999
 	        });
 		}
 		var fbCheck = setInterval(function() {
 			// обязательно сначала дождемся, когда ФБ загрузит виджет
 		    if ($(".fb-like").attr("fb-xfbml-state") == "rendered") {
-		    	setTimeout(firePopup, 10); // и подождем еще 2 сек
+		    	setTimeout(firePopup, 2000); // и подождем еще 2 сек
 		        clearInterval(fbCheck);
 		    }
 		}, 500);	

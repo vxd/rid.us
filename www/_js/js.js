@@ -698,6 +698,23 @@ $(function() {
     })
 
 
+
+    $('.photoSection').each(function () {
+	    var opinionSlider = new Swiper($(this), {
+	        nextButton: $(this).find('.photoSection__nav.view_next'),
+	        prevButton: $(this).find('.photoSection__nav.view_prew'),
+	        nested: true,
+	        // observer: true,
+	        resistanceRatio: 0,
+	        slidesPerView: 2,
+	        spaceBetween: "2%",
+	        // setWrapperSize: true,
+	        autoplayDisableOnInteraction: false,
+
+	    });
+    })
+
+
 	// фикс для бага с шириной слайдера внутри таблицы
 	// var doingScroll = false;
 

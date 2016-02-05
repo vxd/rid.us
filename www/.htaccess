@@ -15,3 +15,11 @@ AddOutputFilter INCLUDES .shtml
 #AddHandler server-parsed  .shtml
 
 #SSILegacyExprParser on
+
+
+
+
+DirectoryIndex 999.999 
+IndexOptions FancyIndexing FoldersFirst
+IndexIgnore .~ _* jwplayer bricks
+IndexOrderDefault Ascending Name

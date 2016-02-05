@@ -118,7 +118,7 @@
 .aLaSlideImage:hover .aLaSlideImage__number {
     background: rgba(0,0,0,0);
     top: 86px;
-    font-size: 100px;
+    font-size: 60px;
     left: 50%;
     -webkit-transform: translateX(-53%);
     -moz-transform: translateX(-53%);
@@ -178,6 +178,7 @@
     height: 200px;
     overflow: hidden;
     padding-top: 200px;
+    transform: translateZ(0);
 }
 .slider__image img {
     width: 100%;
@@ -185,9 +186,6 @@
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-/*    -webkit-transition: opacity .15s ease-in-out;
-    -moz-transition:    opacity .15s ease-in-out;
-    transition:         opacity .15s ease-in-out;*/
 }
 .slider__text .brick__label {
     margin-bottom: 10px;

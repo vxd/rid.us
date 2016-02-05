@@ -49,7 +49,7 @@
 
 
 .brick__image {
-	/*display: block;*/
+    transform: translateZ(0);
 	height: 112px;
 	overflow: hidden;
 	padding-top: 113px;

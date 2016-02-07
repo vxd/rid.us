@@ -595,7 +595,7 @@ $(function() {
 
 
 	// ======================================
-	// слайдер
+	// слайдер - http://www.idangero.us/swiper/api/#.VqVEzPmLSHv
 	// ======================================
 
 
@@ -631,10 +631,10 @@ $(function() {
 	        // resistanceRatio: 0,
 	        nested: true,
 	        autoplay: 9000,
+	        autoplayDisableOnInteraction: false,
 	        // observeParents: true,
 	        observer: true,
 	        setWrapperSize: true,
-	        autoplayDisableOnInteraction: false
 	    });
 
 		// var doingResize = false;
@@ -675,6 +675,8 @@ $(function() {
 	    var opinionSlider = new Swiper($(this), {
 	        nextButton: $(this).find('.opinion-button-next'),
 	        prevButton: $(this).find('.opinion-button-prev'),
+	        autoplay: 4000,
+	        autoplayDisableOnInteraction: false,
 	        nested: true,
 	        observer: true,
 	        resistanceRatio: 0,

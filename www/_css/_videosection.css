@@ -95,8 +95,15 @@
     width: 50px;
     height: 50px;
     background: url(../_images/icons_sprite.png);
-    background-position: 0px -319px;
+    background-position: 0px -234px;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.videoSection .label:after {
+		background-image: url(../_images/icons_sprite_2x.png);
+		background-size: 282px 500px;
+	}
+}
+
 .videoSection .label:before {
     display: block;
 	content: "";
@@ -136,14 +143,21 @@
     height: 50px;
     background: url(../_images/icons_sprite.png);
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.videoPlaylist__nav:after {
+		background-image: url(../_images/icons_sprite_2x.png);
+		background-size: 282px 500px;
+	}
+}
+
 .videoPlaylist__nav.swiper-button-disabled:after {
 	opacity: .3;
 }
 .videoPlaylist__nav.view_prev:after {    
-	background-position: -150px -319px;
+	background-position: -150px -234px;
 }
 .videoPlaylist__nav.view_next:after {    
-	background-position: -100px -319px;
+	background-position: -100px -234px;
 }
 
 

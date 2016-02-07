@@ -1,7 +1,5 @@
 <section class="ridusMap">
-	<a href="" class="ridusMap__icon">
-		<i></i>
-	</a>
+	<a href="" class="ridusMap__icon"><i></i></a>
 	<!--#include virtual="_yellowbutton.shtml?text=3"-->
 	<a href="#" class="clickable"></a>
 </section>

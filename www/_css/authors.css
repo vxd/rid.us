@@ -126,24 +126,38 @@
 	background-image: url(../_images/icons_sprite.png);
 	text-decoration: none;
 	border: 0;
+	background-size: 188px 333px;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.authorSocials__link {
+		background-image: url(../_images/icons_sprite_2x.png);
+		/*background-size: 376px 666px;*/
+	}
+}
+
+
 .authorSocials__link:hover {
-	opacity: .8;
+	opacity: .85;
 }
 .authorSocials__link.view_iconFacebook {
-	background-position: 0 -178px;
+	background-color: #4b68b8;
+	background-position: -5px -97px;
 }
 .authorSocials__link.view_iconVkontakte {
-	background-position: -21px -178px;
+	background-color: #466e9f;
+	background-position: -36px -97px;
 }
 .authorSocials__link.view_iconTwitter {
-	background-position: -42px -178px;
+	background-color: #2dafdf;
+	background-position: -67px -97px;
 }
 .authorSocials__link.view_iconGoogle {
-	background-position: -63px -178px;
+	background-color: #d73d32;
+	background-position: -100px -97px;
 }
 .authorSocials__link.view_iconOdnoklassniki {
-	background-position: -84px -178px;
+	background-color: #f78b0c;
+	background-position: -131px -97px;
 }
 
 

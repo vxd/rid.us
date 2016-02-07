@@ -199,6 +199,8 @@
 }
 .fb-like {
 	width: 100%;
+	display: block !important;
+	min-height: 110px;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;

@@ -115,7 +115,7 @@
 						          				'autohide':1,
 						          				'wmode':'opaque' 
 						          },
-						          videoId: 'Siy69o-rKU4',
+						          videoId: 'Siy69o-rKU4-',
 						          width: "102%",
 						          height: 190,
 						          events: {
@@ -1136,20 +1136,47 @@
 </div>
 <script>
 	$(function(){
+	    
+		var everyReload = 5; // через сколько перезагрузок страницы показывать попап
+	    var popupCookie = $.cookie("popupCookie");
+	    var pageOpened = $.cookie("pageOpened");
+
+
 		function firePopup() {
 			$('#element_to_pop_up').bPopup({
 	            positionStyle: 'fixed',
 	            closeClass: "popup_closeButton",
 	            zIndex: 99999
 	        });
+			$.cookie("popupCookie", 1); // установим флаг, что показали
 		}
-		var fbCheck = setInterval(function() {
-			// обязательно сначала дождемся, когда ФБ загрузит виджет
-		    if ($(".fb-like").attr("fb-xfbml-state") == "rendered") {
-		    	setTimeout(firePopup, 2000); // и подождем еще 2 сек
-		        clearInterval(fbCheck);
-		    }
-		}, 500);	
+
+
+	    // если не показывали ранее
+	    if (popupCookie == null) {
+	    	// показываем
+			var fbCheck = setInterval(function() {
+				// обязательно сначала дождемся, когда ФБ загрузит виджет
+			    if ($(".fb-like").attr("fb-xfbml-state") == "rendered") {
+			    	setTimeout(firePopup, 2); // и подождем еще 2 сек
+			        clearInterval(fbCheck);
+			    }
+			}, 200);		      
+	    }
+
+	    
+	    // если открывали меньше заданного числа раз
+		if (pageOpened < (everyReload - 1)) {
+			pageOpened++;
+			$.cookie("pageOpened", pageOpened); // пишем в куки, сколько раз открыли
+		} else {
+			// если открыли нужное число раз - обнуляем
+			$.cookie("pageOpened", null);
+			$.cookie("popupCookie", null);
+		}
+		// console.log(pageOpened, popupCookie)
+
+
     });
 </script>
 

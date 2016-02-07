@@ -1,11 +1,15 @@
 <!-- //// определяем переменные -->  
 
 <!--#set var="image" value="" -->
+<!--#set var="label" value="" -->
 
 <!-- //// извлекаем из параметров урла --> 
 
 <!--#if expr="\"$QUERY_STRING\" = /image=([a-zA-Z0-9]+)/" -->
 <!--#set var="image" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /label=([a-zA-Z0-9]+)/" -->
+<!--#set var="label" value="$1" -->
 <!--#endif -->
 
 <!-- //// конец --> 
@@ -17,18 +21,24 @@
 <a href="#" class="slider__image" title="">
 	<!--#if expr="$image = 1" -->
 		<img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt="">
+		<!--#if expr="$label = 'true'" -->
 		<span class="brick__fullscreenLabel"></span>
 		<span class="aLaSlideImage__number">+12</span>
+		<!--#endif -->
 	<!--#endif -->
 	<!--#if expr="$image = 2" -->
 		<img src="http://www.ridus.ru/images/2015/12/1/340559/in_article_e6d5d3c187.jpg" alt="">
+		<!--#if expr="$label = 'true'" -->
 		<span class="brick__fullscreenLabel"></span>
 		<span class="aLaSlideImage__number">+145</span>
+		<!--#endif -->
 	<!--#endif -->
 	<!--#if expr="$image = 3" -->
 		<img src="http://www.ridus.ru/images/2015/11/20/338581/in_article_2851de7b7b.jpeg" alt="">
+		<!--#if expr="$label = 'true'" -->
 		<span class="brick__fullscreenLabel"></span>
 		<span class="aLaSlideImage__number">+8</span>
+		<!--#endif -->
 	<!--#endif -->
 </a>
 <div class="slider__text">

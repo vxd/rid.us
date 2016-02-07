@@ -47,7 +47,8 @@
 /*    .table__sideColumn .brick.view_opinion {
         width: 295px;
     }
-*/}
+*/
+}
 
 
 
@@ -226,6 +227,15 @@
     background: #ffd051 url(../_images/icons_sprite.png);
     z-index: 100;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
+
+
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
     opacity: .75;
@@ -238,21 +248,47 @@
 }
 .swiper-button-prev.swiper-button-disabled {
     background-color: #fff;
-    background-position: -50px -220px;
+    background-position: -50px -184px;
 }
 .swiper-button-next.swiper-button-disabled {
     background-color: #fff;
-    background-position: 0px -220px;
+    background-position: 0px -184px;
 }
+
+
 .swiper-button-prev {
-    background-position: -50px -220px;
+    background-position: -50px -184px;
     left: 1%;
 }
 .swiper-button-next {
     float: right;
-    background-position: 0px -220px;
+    background-position: 0px -184px;
     right: 1%;
 }
+@media screen and (min-width: 1430px) {
+    .swiper-button-prev {
+        left: calc(50% - 700px);
+    }
+    .swiper-button-next {
+        right: calc(50% - 700px);
+    }
+}
+/*@media screen and (min-width: 1500px) {
+    .swiper-button-prev {
+        left: 3.5%;
+    }
+    .swiper-button-next {
+        right: 3.5%;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .swiper-button-prev {
+        left: 3.5%;
+    }
+    .swiper-button-next {
+        right: 3.5%;
+    }
+}*/
 
 
 .opinion-button-next,
@@ -265,13 +301,21 @@
     background: transparent url(../_images/icons_sprite.png);
     z-index: 100;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+    .opinion-button-next,
+    .opinion-button-prev {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
+
 .opinion-button-prev {
-    background-position: -50px -224px;
+    background-position: -50px -189px;
     left: 0;
 }
 .opinion-button-next {
     float: right;
-    background-position: -3px -224px;
+    background-position: -3px -189px;
     right: 0;
 }
 .opinion-button-next.swiper-button-disabled,
@@ -288,9 +332,6 @@
 
 
 .pageSwiper .swiper-slide {
-    /*opacity: .5;*/
-    /*-webkit-transform: translate3d(0,0,0);*/
-
     -webkit-transition: opacity .2s ease;
     -moz-transition: opacity .2s ease;
     -o-transition: opacity .2s ease;

@@ -114,12 +114,14 @@
 	display: inline-block;
     width: 13px;
     height: 13px;
-    /*right: 0;*/
-    /*top: 0;*/
     background: url(../_images/icons_sprite.png) no-repeat;
-    background-position: -0px -562px;
-    /*position: absolute;*/
-    /*opacity: .24;*/
+    background-position: -48px -317px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.penIcon {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
 }
 
 

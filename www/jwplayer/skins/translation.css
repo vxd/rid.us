@@ -322,9 +322,9 @@
 @media screen and (max-width: 1279px) {
     .view_withTranslation .todayMainNewsList__link {
         font-size: 16px;
-        font-weight: normal;
-        font-family: 'Roboto', sans-serif;
-        line-height: 1.35;
+        /*font-weight: normal;*/
+        /*font-family: 'Roboto', sans-serif;*/
+        line-height: 1.2;
     }
 }
 

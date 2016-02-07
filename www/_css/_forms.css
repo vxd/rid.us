@@ -97,6 +97,14 @@ input[type="url"] {
     width: 35px;
     height: 33px;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.search:after,
+	.headerSearch__form:after {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
+
 .headerSearch__form:after {
 	top: 14px;
 }
@@ -452,10 +460,15 @@ label.radioWrap {
 input.datepicker {
 	padding-right: 35px;
 	width: 150px;
-	background: url(../_images/icons_sprite.png) 111px -139px;
+	background: url(../_images/icons_sprite.png) -71px -1px;
 	margin-bottom: 10px;
 }
-
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	input.datepicker {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
 
 
 

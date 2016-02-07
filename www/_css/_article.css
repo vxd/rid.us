@@ -138,7 +138,13 @@
     width: 30px;
     height: 22px;
     display: block;
-    background: url(../_images/icons_sprite.png) -10px -234px no-repeat;
+    background: url(../_images/icons_sprite.png) -10px -199px no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.article__readmore:after {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
 }
 
 

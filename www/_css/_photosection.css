@@ -105,6 +105,13 @@
 	opacity: .85;
 	z-index: 10;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.photoSection__nav {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
+
 .photoSection__nav:hover {
 	opacity: 1;
 	background-color: #000;
@@ -113,10 +120,10 @@
 	opacity: .25;
 }
 .photoSection__nav.view_prew {
-	background-position: -50px -320px;
+	background-position: -50px -233px;
 	left: 25px;
 }
 .photoSection__nav.view_next {
-	background-position: 0px -320px;
+	background-position: 0px -233px;
 	right: 25px;
 }

@@ -345,7 +345,7 @@
 .brick__text {
 	color: #000;
 	font-size: 15px;
-	font-weight: normal;
+	font-weight: 300;
 	margin-bottom: 8px;
 	line-height: 1.2;
 }
@@ -386,7 +386,7 @@
     font-weight: bold;
 	color: #c1c1c1;
 	display: inline-block;
-	margin-right: 11px;
+	margin-right: 10px;
 }
 .countersBlock__item.view_count1 {
     padding: 0 14px 0 0;
@@ -401,7 +401,7 @@
     position: relative;
 }
 .countersBlock__item.view_count4 {
-    padding: 0 16px 0 0;
+    padding: 0 13px 0 0;
     position: relative;
 }
 
@@ -410,33 +410,40 @@
     position: absolute;
     opacity: .24;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.countersBlock__item .icon {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
+
 .countersBlock__item.view_count1 .icon {
 	width: 10px;
     height: 15px;
     right: 0;
     top: 0;
-    background-position: -0px -562px;
+    background-position: -0px -285px;
 }
 .countersBlock__item.view_count2 .icon {
 	width: 13px;
     height: 14px;
     right: 0;
     top: 2px;
-    background-position: -11px -562px;
+    background-position: -11px -285px;
 }
 .countersBlock__item.view_count3 .icon {
-	width: 11px;
+	width: 12px;
     height: 9px;
     right: 0;
     top: 2px;
-    background-position: -25px -562px;
+    background-position: -25px -285px;
 }
 .countersBlock__item.view_count4 .icon {
 	width: 9px;
     height: 11px;
     right: 0;
     top: 2px;
-    background-position: -37px -562px;
+    background-position: -38px -285px;
 }
 
 
@@ -478,7 +485,7 @@
 .videoPlaylist__item .countersBlock__item.view_count1 .icon,
 .aLaSlideImage .countersBlock__item.view_count1 .icon,
 .slider .countersBlock__item.view_count1 .icon {
-    background-position: -0px -514px;
+    background-position: -0px -301px;
 }
 .contentBackground_deepblue .countersBlock__item.view_count2 .icon,
 .contentBackground_dark .countersBlock__item.view_count2 .icon,
@@ -487,7 +494,7 @@
 .videoPlaylist__item .countersBlock__item.view_count2 .icon,
 .aLaSlideImage .countersBlock__item.view_count2 .icon,
 .slider .countersBlock__item.view_count2 .icon {
-    background-position: -11px -514px;
+    background-position: -11px -301px;
 }
 .contentBackground_deepblue .countersBlock__item.view_count3 .icon,
 .contentBackground_dark .countersBlock__item.view_count3 .icon,
@@ -496,7 +503,7 @@
 .videoPlaylist__item .countersBlock__item.view_count3 .icon,
 .aLaSlideImage .countersBlock__item.view_count3 .icon,
 .slider .countersBlock__item.view_count3 .icon {
-    background-position: -25px -514px;
+    background-position: -25px -301px;
 }
 
 .slider__text .countersBlock {
@@ -603,6 +610,7 @@
 
 .brick.view_mini .brick__text {
 	font-size: 14px;
+	font-weight: 400;
 }
 
 /*.brickLabel {
@@ -807,7 +815,13 @@
     height: 37px;
 	content: "";
 	background: url(../_images/icons_sprite.png);
-	background-position: -5px -226px;
+	background-position: -5px -192px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.brick__header.view_arrowed:after {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
 }
 
 
@@ -917,10 +931,11 @@
 }
 .opinion__sliderInfo {
 	font-weight: normal;
-	font-size: 13px;
+	font-size: 14px;
 	font-family: 'Roboto', sans-serif;
 	display: inline-block;
 	transform: translateY(-1px);
+	text-transform: none;
 }
 
 .brick.view_opinion .opinion__info h4 {
@@ -996,7 +1011,7 @@
 }
 .todayMainNewsList__link {
 	font-family: 'Roboto Slab', serif;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: bold;
 	color: #000;
 	text-decoration: none;
@@ -1116,16 +1131,24 @@
 
 .brick.view_more a:after {
     display: inline-block;
+    margin-left: 3px;
     width: 26px;
     height: 20px;
     content: "";
     background: url(../_images/icons_sprite.png);
-    background-position: -13px -234px;
+    background-position: -13px -199px;
     transform: translateY(3px);
     -webkit-transition: opacity .15s ease-out;
     -moz-transition: opacity .15s ease-out;
     transition: opacity .15s ease-out;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.brick.view_more a:after {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
+
 /* здоровье */
 .contentBackground_dark .brick.view_more {
 	border: 3px dashed rgba(255,255,255,.13);
@@ -1134,7 +1157,7 @@
 	color: #ddd;
 }
 .contentBackground_dark .brick.view_more a:after {
-    background-position: -13px -335px;
+    background-position: -13px -249px;
     opacity: .7;
 }
 /* технилогии */ 
@@ -1142,7 +1165,7 @@
 	color: #fff;
 }
 .contentBackground_deepblue .brick.view_more a:after {
-    background-position: -13px -335px;
+    background-position: -13px -249px;
     opacity: .7;
 }
 /* происшествия */
@@ -1153,7 +1176,7 @@
 	color: #f8eeed;
 }
 .contentBackground_red .brick.view_more a:after {
-    background-position: -13px -335px;
+    background-position: -13px -249px;
     opacity: .7;
 }
 /* происшествия темнее */
@@ -1164,7 +1187,7 @@
 	color: #ddd;
 }
 .contentBackground_gunmetal .brick.view_more a:after {
-    background-position: -13px -335px;
+    background-position: -13px -249px;
     opacity: .7;
 }
 

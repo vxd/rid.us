@@ -1,7 +1,63 @@
-.globalInfo .b-share_theme_counter {
+.globalInfo .ya-share2__badge {
+	border-radius: 0;
+}
+.globalInfo .ya-share2{
 	float: right;
 	height: 33px;
 }
+.globalInfo .ya-share2__container_size_m {
+	height: 33px;
+}
+
+.globalInfo .ya-share2__container_size_m .ya-share2__icon {
+    height: 33px;
+    width: 33px;
+    background-size: 33px 33px;
+    position: relative;
+}
+.globalInfo .ya-share2__container_size_m .ya-share2__counter {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 8px 11px 0 16px;
+    font-weight: 300;
+    height: 33px;
+    background: #fff;
+    color: #000;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #e4e4e4;
+	position: relative;
+}
+.globalInfo .ya-share2__container_size_m .ya-share2__counter:before {
+    margin-left: 0;
+    background: #fff;
+    border-right: 1px solid #e4e4e4;
+    height: 33px;
+    top: -1px;
+    width: 7px;
+    left: -1px;
+}
+.globalInfo .ya-share2__icon:before,
+.globalInfo .ya-share2__icon:after {
+    content: ''; 
+    position: absolute;
+    right: -7px;
+    top: 10px; 
+    border: 6px solid transparent;
+    border-right: 6px solid #e4e4e4;
+    z-index: 8;
+}
+.globalInfo .ya-share2__icon:after {
+    border-right: 6px solid #fff;
+    right: -8px;
+}
+
+
+
+/*
+
+.globalInfo .b-share_theme_counter 
 .globalInfo .b-share_theme_counter .b-share {
 	padding: 0  !important;
 }
@@ -25,31 +81,36 @@
     height: 33px;
 	background-image: url(../_images/icons_sprite.png);
 }
-
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+    .globalInfo .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
 
 .globalInfo .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon.b-share-icon_facebook {
-	background-position: -7px -426px;
+	background-position: -7px -143px;
 	background-color: #3c5a98;
 }
 .globalInfo .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:hover .b-share-icon.b-share-icon_facebook {
 	background-color: #30487a;
 }
 .globalInfo .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon.b-share-icon_vkontakte {
-	background-position: -54px -426px;
+	background-position: -54px -143px;
 	background-color: #48729e;
 }
 .globalInfo .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:hover .b-share-icon.b-share-icon_vkontakte {
 	background-color: #3d6186;
 }
 .globalInfo .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon.b-share-icon_twitter {
-	background-position: -101px -426px;
+	background-position: -101px -143px;
 	background-color: #00aced;
 }
 .globalInfo .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:hover .b-share-icon.b-share-icon_twitter {
 	background-color:  #0092ca;
 }
 .globalInfo .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon.b-share-icon_odnoklassniki {
-	background-position: -148px -426px;
+	background-position: -195px -143px;
 	background-color: #ff9f4d;
 }
 .globalInfo .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:hover .b-share-icon.b-share-icon_odnoklassniki {
@@ -70,49 +131,55 @@
    	position: relative;
 	display: block;
 }
-.globalInfo .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-counter:before,
-.globalInfo .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-counter:after {
-    content: ''; 
-    position: absolute;
-    left: -13px;
-    top: 10px; 
-    border: 6px solid transparent;
-    border-right: 6px solid #e4e4e4;
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.articleSocials .ya-share2__badge {
+	border-radius: 0;
 }
-.globalInfo .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-counter:after {
-    border-right: 6px solid #fff;
-    left: -12px;
+
+
+.articleSocials .ya-share2__container_size_m {
+	height: 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.articleSocials .b-share_theme_counter {
-	height: 52px;
+.articleSocials .ya-share2__container_size_m .ya-share2__icon {
+    height: 40px;
+    width: 40px;
+    background-size: 40px 40px;
 }
-.articleSocials .b-share_theme_counter .b-share {
+.articleSocials .ya-share2__container_size_m .ya-share2__counter {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    padding: 10px 13px 0 8px;
+    font-weight: 300;
+}
+.articleSocials .ya-share2__container_size_m .ya-share2__counter:before {
+    margin-left: -12px;
+}
+
+/*articleSocials .b-share_theme_counter .b-share {
 	padding: 0  !important;
 }
 .articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap {
@@ -146,26 +213,33 @@
     height: 47px;
 	background-image: url(../_images/icons_sprite.png);
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
+
 .articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon.b-share-icon_facebook {
-	background-position: 0 -420px;
+	background-position: 0 -137px;
 }
 .articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:hover .b-share-icon.b-share-icon_facebook {
 	background-color: #30487a;
 }
 .articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon.b-share-icon_vkontakte {
-	background-position: -47px -420px;
+	background-position: -47px -137px;
 }
 .articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:hover .b-share-icon.b-share-icon_vkontakte {
 	background-color: #3d6186;
 }
 .articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon.b-share-icon_twitter {
-	background-position: -94px -420px;
+	background-position: -94px -137px;
 }
 .articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:hover .b-share-icon.b-share-icon_twitter {
 	background-color:  #0092ca;
 }
 .articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link .b-share-icon.b-share-icon_odnoklassniki {
-	background-position: -141px -420px;
+	background-position: -188px -137px;
 }
 .articleSocials .b-share_theme_counter .b-share_type_small .b-share-btn__wrap .b-share__link:hover .b-share-icon.b-share-icon_odnoklassniki {
 	background-color: #d98742;
@@ -199,4 +273,4 @@
     height: 70%;
     background: #fff;
     opacity: .6;
-}
+}*/

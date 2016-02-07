@@ -103,8 +103,15 @@
 	left: 40px;
 	top: 16px;
 	background-image: url(../_images/icons_sprite.png);
-
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.menu__link.view_enter:before,
+	.menu__link.view_search:before {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
+
 .menu__link.view_enter:before {
 	background-position: -44px -44px;
 }
@@ -293,6 +300,14 @@
 	margin: 12px 0;
 	background-image: url(../_images/icons_sprite.png);
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.header__loginButton,
+	.header__searchButton {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
+
 .header__loginButton {
 	background-position: -35px 0;
 }

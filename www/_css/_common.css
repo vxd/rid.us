@@ -71,6 +71,31 @@ hr.view__dashed {
 
 
 
+/* retina */
+/* пример
+<img src="_images/logo.png" class="x1" width="154" height="60" alt="РИДУС">
+<img src="_images/logo_2x.png" class="x2" width="154" height="60" alt="РИДУС">
+рекомендую все фото сделать так же
+так на НЕретине не будет съедаться лишний траффик, 
+а на ретине будет хорошая четкость */
+.x2 {
+    display: none;
+}
+.x1 {
+    display: inline-block;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.x2 {
+	    display: inline-block;
+	}
+	.x1 {
+	    display: none;
+	}
+}
+
+
+
+
 b {
 	font-weight: bold;
 }
@@ -478,11 +503,11 @@ blockquote:after {
 }
 .contentBackground_dark .swiper-button-prev {
 	background-color: #00abaa;
-    background-position: -50px -320px; /* белая стрелка */
+    background-position: -50px -234px; /* белая стрелка */
 }
 .contentBackground_dark .swiper-button-next {
 	background-color: #00abaa;
-    background-position: 0px -320px; /* белая стрелка */
+    background-position: 0px -234px; /* белая стрелка */
 }
 .contentBackground_dark .swiper-button-disabled {
 	opacity: .15;
@@ -500,12 +525,12 @@ blockquote:after {
 .contentBackground_deepblue .swiper-button-prev.swiper-button-disabled,
 .contentBackground_deepblue .swiper-button-prev {
 	background-color: #2b3336;
-    background-position: -50px -320px; /* белая стрелка */
+    background-position: -50px -234px; /* белая стрелка */
 }
 .contentBackground_deepblue .swiper-button-next.swiper-button-disabled,
 .contentBackground_deepblue .swiper-button-next {
 	background-color: #2b3336;
-    background-position: 0px -320px; /* белая стрелка */
+    background-position: 0px -234px; /* белая стрелка */
 }
 
 /* происшествия */
@@ -519,11 +544,11 @@ blockquote:after {
 }
 .contentBackground_red .swiper-button-prev {
 	background-color: #f00;
-    background-position: -50px -320px; /* белая стрелка */
+    background-position: -50px -234px; /* белая стрелка */
 }
 .contentBackground_red .swiper-button-next {
 	background-color: #f00;
-    background-position: 0px -320px; /* белая стрелка */
+    background-position: 0px -234px; /* белая стрелка */
 }
 .contentBackground_red .swiper-button-prev.swiper-button-disabled,
 .contentBackground_red .swiper-button-next.swiper-button-disabled {
@@ -542,11 +567,11 @@ blockquote:after {
 }
 .contentBackground_gunmetal .swiper-button-prev {
 	background-color: #161718;
-    background-position: -50px -320px; /* белая стрелка */
+    background-position: -50px -234px; /* белая стрелка */
 }
 .contentBackground_gunmetal .swiper-button-next {
 	background-color: #161718;
-    background-position: 0px -320px; /* белая стрелка */
+    background-position: 0px -234px; /* белая стрелка */
 }
 .contentBackground_gunmetal .swiper-button-prev.swiper-button-disabled,
 .contentBackground_gunmetal .swiper-button-next.swiper-button-disabled {
@@ -755,6 +780,13 @@ blockquote:after {
 	width: 32px;
 	height: 32px;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+	.moreButton:after {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
+
 .moreButton span {
 	border-bottom: 1px dashed #949494;
 }

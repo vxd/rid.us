@@ -14,7 +14,7 @@
 
     <!-- Your like button code -->
     <div class="fb-like" 
-        data-href="https://facebook.com/aic.ru/" 
+        data-href="https://facebook.com/ridusru" 
         data-layout="standard" 
         data-action="like" 
         data-share="false"

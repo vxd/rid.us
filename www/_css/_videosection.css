@@ -9,14 +9,21 @@
 	position: relative;
 }
 .videoSection .table__sideColumn:last-child {
-	padding: 5px
+	padding: 5px 5px 5px 0;
 }
 .videoSection .table__mainColumn .table__mainColumn {
-	background: #000;
+	background: #ffd051;
 	padding-left: 0;
 	overflow: hidden;
 	height: 410px;
 	width: calc(100% - 300px);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 

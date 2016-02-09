@@ -1,7 +1,7 @@
 <table class="blockSelector">
 	<tr>
 		<td class="blockSelector_cell">
-			<a href="#" class="blockSelector__link" title="">Все рубрики</a>
+			<a href="#" class="blockSelector__link" title="">общество</a>
 		</td>
 		<td class="blockSelector_cell state_selected">
 			<a href="#" class="blockSelector__link" title="">политика</a>
@@ -10,18 +10,18 @@
 			<a href="#" class="blockSelector__link" title="">экономика</a>
 		</td>
 		<td class="blockSelector_cell">
-			<a href="#" class="blockSelector__link" title="">кино</a>
+			<a href="#" class="blockSelector__link" title="">Искусство</a>
 		</td>
 		<td class="blockSelector_cell state_selected">
-			<a href="#" class="blockSelector__link" title="">наука и техника</a>
+			<a href="#" class="blockSelector__link" title="">религия</a>
 		</td>
 		<td class="blockSelector_cell">
-			<a href="#" class="blockSelector__link" title="">экология</a>
+			<a href="#" class="blockSelector__link" title="">кино</a>
 		</td>
 	</tr>
 	<tr>
 		<td class="blockSelector_cell state_selected">
-			<a href="#" class="blockSelector__link" title="">Искусство</a>
+			<a href="#" class="blockSelector__link" title="">экология</a>
 		</td>
 		<td class="blockSelector_cell state_selected">
 			<a href="#" class="blockSelector__link" title="">Молодежь</a>
@@ -30,10 +30,9 @@
 			<a href="#" class="blockSelector__link" title="">биографии</a>
 		</td>
 		<td class="blockSelector_cell state_selected">
-			<a href="#" class="blockSelector__link" title="">религия</a>
+			<a href="#" class="blockSelector__link" title="">наука и техника</a>
 		</td>
 		<td class="blockSelector_cell">
-			<a href="#" class="blockSelector__link" title="">общество</a>
 		</td>
 		<td class="blockSelector_cell">
 		</td>

@@ -148,7 +148,7 @@
                 </p>
 
                 <div class="articleSocials">
-                    <!--#include virtual="_socials-header.shtml"-->
+                    <!--#include virtual="_socials-article.shtml"-->
                 </div>
 
                 <p class="article__tags">

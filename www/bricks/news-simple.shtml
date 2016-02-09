@@ -134,6 +134,15 @@
 		Эксперт по борьбе с терроризмом Ронен Соломон заявил, что российский аэробус мог быть взорван.
 	</p>
 <!--#endif -->
+<!--#if expr="$data = 4" -->
+	<div class="brick__mainLinkWrapper">
+		<a href="#" class="brick__mainLink" title="">На борту А321 могла взорваться жидкая бомба</a> <span class="brick__mainLinkDate">вчера</span>
+	</div>
+	<p class="brick__text">
+		Эксперт по борьбе с терроризмом Ронен Соломон заявил, что российский аэробус мог быть взорван.<br>
+		<a href="#c" class="brick__moreLink" title="">Читать дальше</a>
+	</p>
+<!--#endif -->
 <!--#if expr="$data = 'c1'" -->
 	<div class="brick__mainLinkWrapper">
 		<a href="#" class="brick__mainLink" title="">Фотоматериалы</a> <span class="rick__mainLinkCounter">145</span>

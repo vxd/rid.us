@@ -161,18 +161,18 @@
 
 
 .articleSocials .ya-share2__container_size_m {
-	height: 40px;
+	height: 45px;
 }
 
 .articleSocials .ya-share2__container_size_m .ya-share2__icon {
-    height: 40px;
-    width: 40px;
-    background-size: 40px 40px;
+    height: 45px;
+    width: 45px;
+    background-size: 45px 45px;
 }
 .articleSocials .ya-share2__container_size_m .ya-share2__counter {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
-    padding: 10px 13px 0 8px;
+    padding: 13px 13px 0 8px;
     font-weight: 300;
 }
 .articleSocials .ya-share2__container_size_m .ya-share2__counter:before {

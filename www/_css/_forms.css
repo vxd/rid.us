@@ -460,7 +460,7 @@ label.radioWrap {
 input.datepicker {
 	padding-right: 35px;
 	width: 150px;
-	background: url(../_images/icons_sprite.png) -71px -1px;
+	background: url(../_images/icons_sprite.png) 43px -1px;
 	margin-bottom: 10px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 

@@ -13,8 +13,9 @@
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
-    <h1>
-    	Картина дня
+    <h1 class="categoryFilter__positionContainer clearfix">
+    	<span class="categoryFilter__widthAdjuster">Картина дня</span>
+    	<!--#include virtual="_category-filter.shtml"-->
     </h1>
 
 	<!--#include virtual="_block-selector.shtml"-->

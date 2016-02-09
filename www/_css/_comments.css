@@ -102,17 +102,20 @@
     padding: 13px 16px;
 }
 .comment__date {
-    color: #b1b1b1;
     float: left;
-    width: auto;
+    color: #c64a1b;
     font-size: 14px;
-    margin-bottom: 5px;
 }
 .comment__date a {
-    color: #c64a1b;
-    text-decoration: none;
     display: inline-block;
-    margin-right: 10px;
+    width: auto;
+    color: #b1b1b1;
+    margin-bottom: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.comment__date a:hover {
+    color: #c64a1b;
 }
 .comment__likes {
     color: #667887;

@@ -50,12 +50,19 @@
         </div>
         <div class="table__sideColumn hideOn_768">
 
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=21&count1=120&count2=35&count3=3812"-->
+            <div class="hcSticky__scrollable">
             </div>
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
+            <div class="hcSticky__sticky">
+                <div class="sticked clearfix">
+                    <div class="brick">
+                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=21&count1=120&count2=35&count3=3812"-->
+                    </div>
+                    <div class="brick hideOn_1024">
+                        <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
+                    </div>
+                </div>
             </div>
+                
 
         </div>
     </div>

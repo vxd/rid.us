@@ -66,9 +66,20 @@
 
 
         <div class="table__sideColumn hideOn_768">
-            <div class="brick view_banner">
-                <!--#include virtual="bricks/banner-mts.shtml"-->
+
+            <div class="hcSticky__scrollable">
             </div>
+            <div class="hcSticky__sticky">
+                <div class="sticked clearfix">
+                    <div class="brick view_banner">
+                        <!--#include virtual="bricks/banner-mts.shtml"-->
+                    </div>
+
+                </div>
+            </div>
+
+
+        
         </div>
         
     </div>

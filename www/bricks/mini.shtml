@@ -33,17 +33,17 @@
 <div class="brick__content">
 <!--#if expr="$data = 1" -->
 	<p class="brick__text">
-		<a href="#" title="">Каждый старшеклассник знает, что сила тока измеряется в амперах.</a> 
+		<a href="#1" title="">Каждый старшеклассник знает, что сила тока измеряется в амперах.</a> 
 	</p>
 <!--#endif -->
 <!--#if expr="$data = 2" -->
 	<p class="brick__text">
-		<a href="#" title="">«Oткрытие» NASA было известно советским ученым еще в 1970-х годах.</a> 
+		<a href="#2" title="">«Oткрытие» NASA было известно советским ученым еще в 1970-х годах.</a> 
 	</p>
 <!--#endif -->
 <!--#if expr="$data = 3" -->
 	<p class="brick__text">
-		<a href="#" title="">Aэробус мог быть взорван с помощью жидкого взрывчатого вещества.</a> 
+		<a href="#3" title="">Aэробус мог быть взорван с помощью жидкого взрывчатого вещества.</a> 
 	</p>
 <!--#endif -->
 
@@ -51,19 +51,19 @@
 	<h5>
 		<a href="#" title="">Каждый старшеклассник знает, что сила тока измеряется в амперах.</a>
 	</h5>
-	<a href="#" class="brick__label" title="">СМИ2</a>
+	<a href="#2" class="brick__label view_partner" title="">СМИ2</a>
 <!--#endif -->
 <!--#if expr="$data = 5" -->
 	<h5>
 		<a href="#" title="">«Oткрытие» NASA было известно советским ученым еще в 1970-х годах.</a> 
 	</h5>
-	<a href="#" class="brick__label" title="">Лентаинформ</a>
+	<a href="#3" class="brick__label view_partner" title="">Лентаинформ</a>
 <!--#endif -->
 <!--#if expr="$data = 6" -->
 	<h5>
 		<a href="#" title="">Aэробус мог быть взорван с помощью жидкого взрывчатого вещества.</a> 
 	</h5>
-	<a href="#" class="brick__label" title="">24СМИ</a>
+	<a href="#1" class="brick__label view_partner" title="">24СМИ</a>
 <!--#endif -->
 </div>
 

@@ -523,395 +523,6 @@
 	</div>
 </section>
 
-
-
-<div class="pageSwiper__container contentBackground_dark">
-
-    <section class="wrapper pageSwiper paddings_side padding_top clearfix">
-        <div style="position: relative">
-        	<!--#include virtual="_yellowbutton.shtml?text=2"-->
-            <img class="med__logo" src="_images/med.png" title="">
-        </div>
-
-        <p style="text-align:center">
-            <span class="lenta">здоровье</span>
-        </p>
-
-        <h1 class="view_centred">
-            <i class="threeDot"></i>
-            здоровье
-            <i class="threeDot"></i>
-        </h1>
-
-
-		<div class="swiper-wrapper">
-
-		    <div class="swiper-slide">
-
-		        <div class="bricks__wrapper">
-
-		            <div class="brick aLaSlideImage">
-				        <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
-		            </div>
-
-		            <div class="brick">
-		                <div class="brick view_floatText">
-			                <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
-			            </div>
-			            <div class="brick view_floatText">
-			                <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
-			            </div>
-			            <div class="brick view_floatText">
-			                <!--#include virtual="bricks/mini-full.shtml?image=3&data=2&label=12"-->
-			            </div>
-		            </div>
-
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=33&count1=120&count2=35&count3=3812"-->
-		            </div>
-
-					<div class="brick">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
-					</div>
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=22&count1=120&count2=35&count3=3812"-->
-		            </div>
-		      		<div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=21&count1=120&count2=35&count3=3812"-->
-		            </div>
-					<div class="brick hideOn_768">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
-					</div>
-
-		        </div>
-		    </div>
-
-		    <div class="swiper-slide">
-				<div class="bricks__wrapper">
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=33&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
-		            </div>
-					<div class="brick view_banner">
-						<!--#include virtual="bricks/banner-mts.shtml"-->
-					</div>
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=21&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=33&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick view_more">
-		                <!--#include virtual="bricks/more.shtml"-->
-		            </div>
-	            </div>
-		    </div>
-
-		</div>
-        
-    </section>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-</div>
-
-
-
-<div class="pageSwiper__container contentBackground_deepblue">
-
-    <section class="wrapper pageSwiper paddings_side padding_top clearfix">
-
-        <p style="text-align:center">
-            <span class="lenta">мир it</span>
-        </p>
-
-        <h1 class="view_centred">
-            <i class="threeDot"></i>
-            технологии
-            <i class="threeDot"></i>
-        </h1>
-
-
-		<div class="swiper-wrapper">
-
-		    <div class="swiper-slide">
-
-		        <div class="bricks__wrapper">
-
-		            <div class="brick aLaSlideImage">
-				        <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
-		            </div>
-
-		            <div class="brick">
-		                <div class="brick view_floatText">
-			                <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
-			            </div>
-			            <div class="brick view_floatText">
-			                <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
-			            </div>
-			            <div class="brick view_floatText">
-			                <!--#include virtual="bricks/mini-full.shtml?image=3&data=2&label=12"-->
-			            </div>
-		            </div>
-
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=33&count1=120&count2=35&count3=3812"-->
-		            </div>
-
-					<div class="brick">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812&video=true"-->
-					</div>
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=22&count1=120&count2=35&count3=3812&video=true"-->
-		            </div>
-		      		<div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=21&count1=120&count2=35&count3=3812&video=true"-->
-		            </div>
-					<div class="brick hideOn_768">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
-					</div>
-
-		        </div>
-		    </div>
-
-		    <div class="swiper-slide">
-				<div class="bricks__wrapper">
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=33&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
-		            </div>
-					<div class="brick view_banner">
-						<!--#include virtual="bricks/banner-mts.shtml"-->
-					</div>
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=21&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=33&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick view_more">
-		                <!--#include virtual="bricks/more.shtml"-->
-		            </div>
-	            </div>
-		    </div>
-
-		</div>
-        
-    </section>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-</div>
-
-
-
-<div class="pageSwiper__container contentBackground_red">
-
-    <section class="wrapper pageSwiper paddings_side padding_top clearfix">
-
-        <p style="text-align:center">
-            <span class="lenta">события</span>
-        </p>
-
-        <h1 class="view_centred">
-            <i class="threeDot"></i>
-            происшествия
-            <i class="threeDot"></i>
-        </h1>
-
-
-		<div class="swiper-wrapper">
-
-		    <div class="swiper-slide">
-
-		        <div class="bricks__wrapper">
-
-		            <div class="brick aLaSlideImage">
-				        <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
-		            </div>
-
-		            <div class="brick">
-		                <div class="brick view_floatText">
-			                <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
-			            </div>
-			            <div class="brick view_floatText">
-			                <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
-			            </div>
-			            <div class="brick view_floatText">
-			                <!--#include virtual="bricks/mini-full.shtml?image=3&data=2&label=12"-->
-			            </div>
-		            </div>
-
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=33&count1=120&count2=35&count3=3812"-->
-		            </div>
-
-					<div class="brick">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812&video=true"-->
-					</div>
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=22&count1=120&count2=35&count3=3812&video=true"-->
-		            </div>
-		      		<div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=21&count1=120&count2=35&count3=3812&video=true"-->
-		            </div>
-					<div class="brick hideOn_768">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
-					</div>
-
-		        </div>
-		    </div>
-
-		    <div class="swiper-slide">
-				<div class="bricks__wrapper">
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=33&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
-		            </div>
-					<div class="brick view_banner">
-						<!--#include virtual="bricks/banner-mts.shtml"-->
-					</div>
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=21&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=33&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick view_more">
-		                <!--#include virtual="bricks/more.shtml"-->
-		            </div>
-	            </div>
-		    </div>
-
-		</div>
-        
-    </section>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-</div>
-
-
-
-<div class="pageSwiper__container contentBackground_gunmetal">
-
-    <section class="wrapper pageSwiper paddings_side padding_top clearfix">
-
-        <p style="text-align:center">
-            <span class="lenta">события</span>
-        </p>
-
-        <h1 class="view_centred">
-            <i class="threeDot"></i>
-            происшествия
-            <i class="threeDot"></i>
-        </h1>
-
-
-		<div class="swiper-wrapper">
-
-		    <div class="swiper-slide">
-
-		        <div class="bricks__wrapper">
-
-		            <div class="brick aLaSlideImage">
-				        <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
-		            </div>
-
-		            <div class="brick">
-		                <div class="brick view_floatText">
-			                <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
-			            </div>
-			            <div class="brick view_floatText">
-			                <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
-			            </div>
-			            <div class="brick view_floatText">
-			                <!--#include virtual="bricks/mini-full.shtml?image=3&data=2&label=12"-->
-			            </div>
-		            </div>
-
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=33&count1=120&count2=35&count3=3812"-->
-		            </div>
-
-					<div class="brick">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812&video=true"-->
-					</div>
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=22&count1=120&count2=35&count3=3812&video=true"-->
-		            </div>
-		      		<div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=21&count1=120&count2=35&count3=3812&video=true"-->
-		            </div>
-					<div class="brick hideOn_768">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
-					</div>
-
-		        </div>
-		    </div>
-
-		    <div class="swiper-slide">
-				<div class="bricks__wrapper">
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=33&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
-		            </div>
-					<div class="brick view_banner">
-						<!--#include virtual="bricks/banner-mts.shtml"-->
-					</div>
-		            <div class="brick">
-		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=21&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=33&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick hideOn_1024 hideOn_768">
-		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
-		            </div>
-		            <div class="brick view_more">
-		                <!--#include virtual="bricks/more.shtml"-->
-		            </div>
-	            </div>
-		    </div>
-
-		</div>
-        
-    </section>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-</div>
-
-
 <div class="pageSwiper__container">
 
     <section class="wrapper pageSwiper contentBackground_white paddings_side padding_top padding_bottom clearfix">
@@ -1113,9 +724,6 @@
 	translSizeFlip();
 
 
-
-
-
 	$(window).resize(function(){
 		if (transl) { // если проигрывается
 			if ( !$("#"+transl.id).is(":visible") ) { // как только исчезает
@@ -1137,9 +745,15 @@
 <script>
 	$(function(){
 	    
-		var everyReload = 5; // через сколько перезагрузок страницы показывать попап
+		// var everyReload = 2; // через сколько перезагрузок страницы показывать попап
 	    var popupCookie = $.cookie("popupCookie");
-	    var pageOpened = $.cookie("pageOpened");
+	    // var pageOpened = $.cookie("pageOpened");
+
+		function getGet(name) {
+			var s = window.location.search;
+			s = s.match(new RegExp(name + '=([^&=]+)'));
+			return s ? s[1] : false;
+		}
 
 
 		function firePopup() {
@@ -1148,32 +762,34 @@
 	            closeClass: "popup_closeButton",
 	            zIndex: 99999
 	        });
-			$.cookie("popupCookie", 1); // установим флаг, что показали
+	        // РАСКОММЕНТИТЬ СТРОКУ НИЖЕ, ЕСЛИ ХОТИТЕ ПОКАЗЫВАТЬ ПОПАП ТОЛЬКО 1 РАЗ
+			//$.cookie("popupCookie", 1); // установим флаг, что показали
 		}
 
 
 	    // если не показывали ранее
-	    if (popupCookie == null) {
+	    // if (popupCookie == null) {
+	    if (getGet('popup')) {
 	    	// показываем
 			var fbCheck = setInterval(function() {
 				// обязательно сначала дождемся, когда ФБ загрузит виджет
 			    if ($(".fb-like").attr("fb-xfbml-state") == "rendered") {
-			    	setTimeout(firePopup, 2); // и подождем еще 2 сек
+			    	setTimeout(firePopup, 2); // и подождем еще 0,002 сек
 			        clearInterval(fbCheck);
 			    }
-			}, 200);		      
+			}, 1000);		      
 	    }
 
 	    
 	    // если открывали меньше заданного числа раз
-		if (pageOpened < (everyReload - 1)) {
-			pageOpened++;
-			$.cookie("pageOpened", pageOpened); // пишем в куки, сколько раз открыли
-		} else {
-			// если открыли нужное число раз - обнуляем
-			$.cookie("pageOpened", null);
-			$.cookie("popupCookie", null);
-		}
+		// if (pageOpened < (everyReload - 1)) {
+		// 	pageOpened++;
+		// 	$.cookie("pageOpened", pageOpened); // пишем в куки, сколько раз открыли
+		// } else {
+		// 	// если открыли нужное число раз - обнуляем
+		// 	$.cookie("pageOpened", null);
+		// 	$.cookie("popupCookie", null);
+		// }
 		// console.log(pageOpened, popupCookie)
 
 

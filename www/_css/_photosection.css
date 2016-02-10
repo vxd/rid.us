@@ -1,6 +1,8 @@
 .photoSection {
 	overflow: hidden;
 	position: relative;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 .photoSection h1 {
 	text-align: center;
@@ -10,6 +12,8 @@
 	/*margin-left: 2%;*/
 	float: left;
 	position: relative;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 /*.ptotoBlock:first-child {
 	margin-left: 0;
@@ -89,10 +93,6 @@
 	top: 0;
 }
 
-/*.photoWrapper {
-	position: relative;
-	width: 100%;
-}*/
 .photoSection__nav {
 	display: block;
 	position: absolute;

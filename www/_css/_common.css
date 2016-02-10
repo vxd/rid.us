@@ -21,7 +21,6 @@ body {
 }
 
 
-
 a {
 	color: #000;
     -webkit-transition: color 	.15s ease-out,
@@ -35,7 +34,11 @@ a {
 a:hover {
     color: #c64a1b;
 }
-
+/*body * {*/
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
+    /*-webkit-transform: translate3d(0, 0, 0);*/
+/*}*/
 .clickable {
 	position: absolute;
 	top: 0;
@@ -43,6 +46,12 @@ a:hover {
 	left: 0;
 	right: 0;
 	z-index: 1;
+	zoom: 1;
+    background: transparent;
+    /*display: none;*/
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+
 }
 
 i {
@@ -147,6 +156,8 @@ h1.view_centred {
 
 .threeDot {
 	position: relative;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
     display: inline-block;
     width: .15em;
     height: .15em;	
@@ -243,6 +254,8 @@ p {
     margin-bottom: 20px;
     list-style-type: none;
     position: relative;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 .numeredList__item {
     counter-increment: step-counter;
@@ -287,6 +300,8 @@ p {
     padding-left: 25px;
     list-style-type: none;
     position: relative;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 .squareList__item:before {
     position: absolute;
@@ -643,6 +658,8 @@ blockquote:after {
 	font-size: 14px;
 	font-weight: bold;
 	position: relative;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 .lenta:before,
 .lenta:after {
@@ -769,6 +786,8 @@ blockquote:after {
 	color: #000;
 	margin-bottom: 20px;
 	position: relative;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 .moreButton:after {
 	position: absolute;
@@ -1000,17 +1019,25 @@ blockquote:after {
 .table__mainColumn:first-child {
     width: calc(100% - 322px); /* 300 + 22 */
     float: left;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 .table__sideColumn:last-child {
 	margin-left: calc(100% - 300px);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 /* левая - узкая, правая - большая */
 .table__sideColumn:first-child {
 	width: 300px;
 	float: left;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 .table__mainColumn:last-child {
 	margin-left: 322px; /* 300 + 22 */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	/* левая - большая, правая - узкая */
@@ -1177,6 +1204,8 @@ blockquote:after {
 	position: relative;
 	overflow: hidden;
 	width: 100.1%;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 
@@ -1188,6 +1217,8 @@ blockquote:after {
 
 .hcSticky__sticky {
 	position: relative;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .sticked {

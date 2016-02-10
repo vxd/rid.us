@@ -4,6 +4,8 @@
     float: left;
     min-width: 0;
     overflow: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 
@@ -54,6 +56,8 @@
 
 .aLaSlideImage {
     position: relative;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 .aLaSlideImage.view_fullwidth {
     width: 100%;
@@ -194,6 +198,8 @@
     margin-bottom: 10px;
     z-index: 2;
     position: relative;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 
@@ -221,6 +227,8 @@
 }
 .pageSwiper__container {
     position: relative;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 .swiper-button-next,
 .swiper-button-prev {

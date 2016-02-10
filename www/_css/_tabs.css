@@ -74,6 +74,8 @@ h1 .textTabs.view_h5 {
 .textTabs__link.state_current {
 	position: relative;
 	color: #000;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .textTabs__link.state_current:before,

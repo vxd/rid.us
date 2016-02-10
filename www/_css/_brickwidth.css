@@ -204,7 +204,7 @@
 	height: 188px;
 }
 .brick.view_withTag {
-	height: 200px;
+	height: 192px;
 }
 @media screen and (max-width: 1023px) {
 	.brick.view_mini {

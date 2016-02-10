@@ -4,28 +4,28 @@
 			<li class="headerSocials__item view_facebook">
 				<a class="headerSocials__link" href="http://facebook.com" title="Facebook">
 					<!-- <span class="headerSocials__badge"> -->
-						<span class="headerSocials__icon"></span><span class="headerSocials__counter">346</span>
+						<span class="headerSocials__icon"></span><span class="headerSocials__counter">22.7K</span>
 					<!-- </span> -->
 				</a>
 			</li>
 			<li class="headerSocials__item view_vkontakte">
 				<a class="headerSocials__link" href="http://vk.com" title="ВКонтакте">
 					<!-- <span class="headerSocials__badge"> -->
-						<span class="headerSocials__icon"></span><span class="headerSocials__counter">754</span>
+						<span class="headerSocials__icon"></span><span class="headerSocials__counter">43.4K</span>
 					<!-- </span> -->
 				</a>
 			</li>
 			<li class="headerSocials__item view_odnoklassniki">
 				<a class="headerSocials__link" href="http://odnoklassniki.com" title="Одноклассники">
 					<!-- <span class="headerSocials__badge"> -->
-						<span class="headerSocials__icon"></span><span class="headerSocials__counter">289</span>
+						<span class="headerSocials__icon"></span><span class="headerSocials__counter">22.7K</span>
 					<!-- </span> -->
 				</a>
 			</li>
 			<li class="headerSocials__item view_twitter">
 				<a class="headerSocials__link" href="http://twitter.com" title="Twitter">
 					<!-- <span class="headerSocials__badge"> -->
-						<span class="headerSocials__icon"></span><span class="headerSocials__counter">289</span>
+						<span class="headerSocials__icon"></span><span class="headerSocials__counter">69.6K</span>
 					<!-- </span> -->
 				</a>
 			</li>

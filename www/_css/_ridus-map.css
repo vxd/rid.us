@@ -2,6 +2,10 @@
 	height: 180px;
 	position: relative;
 }
+/*.ridusMap.view_open {
+	height: 600px;
+}
+*/
 @media screen and (max-width: 1023px) {
 	.ridusMap {
 		background: url(../_images/ridus-map.png) no-repeat 54% 50%, 

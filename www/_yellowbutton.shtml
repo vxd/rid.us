@@ -28,8 +28,5 @@
 	<!--#if expr="$text = 2" -->
 	записаться на прием
 	<!--#endif -->
-	<!--#if expr="$text = 3" -->
-	распахнуть
-	<!--#endif -->
 	<i class="corner"><!-- corner --></i>
 </a>

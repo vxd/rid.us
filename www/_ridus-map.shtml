@@ -1,5 +1,45 @@
 <section class="ridusMap">
 	<a href="" class="ridusMap__icon"><i></i></a>
-	<!--#include virtual="_yellowbutton.shtml?text=3"-->
-	<a href="#" class="clickable"></a>
+	<a class="yellowButton" id="ridusMapButton" href='#' title="">
+    	<span>распахнуть</span>
+    	<span class="state_hidderHidden">cвернуть</span>
+		<i class="corner"><!-- corner --></i>
+	</a>
+	<a href="http://map.ridus.ru" class="clickable"></a>
+	<img src="_images/map-preloader.gif" style="position: absolute; width: 1px; height: 1px;">
 </section>
+
+<script>
+	$(function(){
+		var bg;
+
+		$("#ridusMapButton").on('click', function(){
+			var wrapper = $(".ridusMap");
+
+			if (!wrapper.hasClass("view_open")) {
+
+				bg = wrapper.css("background");
+				wrapper.css("background", 'url("_images/map-preloader.gif") no-repeat  52% 50%, url("_images/ridus-map.jpg") repeat 50% 50%'); // http://preloaders.net/ru/circular
+
+				wrapper.animate({height: 700}, 900, function(){
+					$(this).append('<iframe src="http://map.ridus.ru" width="100%" height="700"></iframe>').find(".clickable").addClass("state_hidderHidden").css("background", "none");
+					$(this).find(".ridusMap__icon").addClass("state_hidderHidden");
+				});
+				wrapper.addClass("view_open");
+
+			} else {
+				wrapper.css("background", bg).find("iframe").remove();
+				wrapper.animate({height: 180}, 900, function(){
+					$(this).find(".clickable").removeClass("state_hidderHidden");
+					$(this).find(".ridusMap__icon").removeClass("state_hidderHidden");
+				});
+				wrapper.removeClass("view_open");
+			}
+
+			// текст на кнопке
+			$(this).find("span").toggleClass("state_hidderHidden");
+			return false;
+		});
+
+	});
+</script>

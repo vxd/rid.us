@@ -45,6 +45,10 @@ $(document).ready(function() {
 
 $(function() {
 
+
+	// для десктопов - клик, для тачскринов - тачстарт
+	var clickHandler = ('ontouchstart' in document.documentElement ? "touchstart" : "click");
+
 	// ======================================
 	// Попапы http://dinbror.dk/blog/bPopup
 	// ======================================
@@ -155,7 +159,7 @@ $(function() {
 	// ======================================
 
 	/* мобильное МЕНЮ */
-	$(".mobileMenuButton").on('click', function(){
+	$(".mobileMenuButton").on(clickHandler, function(){
 		$(this).toggleClass("state_open");
 		$(".menu").toggleClass("state_open");
 		searchClose();
@@ -165,14 +169,14 @@ $(function() {
 	});
 
 	/* меню ЕЩЕ */
-	$(".menu__link.view_menuIcon").on('click', function(){
+	$(".menu__link.view_menuIcon").on(clickHandler, function(){
 		$(this).toggleClass("state_open");
 		$(".subMenu").toggleClass("state_open");
 
 		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
 		return false;
 	});
-	$(document).click(function(event) {
+	$(document).on(clickHandler, function(event) {
 		if ($(event.target).closest(".menu__link.view_menuIcon, .subMenu .tagList").length) return;
 		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
 		event.stopPropagation();
@@ -180,7 +184,7 @@ $(function() {
 
 
 	/* логин */
-	$(".header__loginButton, .menu__link.view_enter").on('click', function(){
+	$(".header__loginButton, .menu__link.view_enter").on(clickHandler, function(){
 		$(this).toggleClass("state_open");
 		$(".popover__wrapper").toggleClass("state_open");
 
@@ -189,7 +193,7 @@ $(function() {
 		return false;
 	});
 
-	$(document).click(function(event) {
+	$(document).on(clickHandler, function(event) {
 		if ($(event.target).closest(".header__loginButton, .popoverLogin").length) return;
 		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
 		event.stopPropagation();
@@ -207,26 +211,13 @@ $(function() {
 	// ======================================
 
 
-	$(".header__searchButton, .menu__link.view_search").click(function(event){
-		// var width;
-		// if ($(".menu:visible").length != 0) {
-		// 	width = $(".menu").outerWidth(true) +
-		// 				$(".header__loginButton").outerWidth(true) +
-		// 				$(".header__searchButton").outerWidth(true);
-		// } else {
-		// 	width = $(".headerPanel .wrapper").width() - 
-		// 		$(".mobileMenuButton").outerWidth(true) -
-		// 		$(".mainLogo").outerWidth(true) - 40;
-		// }
-		// $(".headerSearch").width(width);
+	$(".header__searchButton, .menu__link.view_search").on(clickHandler, function(event){
 		$(".headerSearch__form").show().animate({
 			width: "100%",
 			opacity: 1
 		}, 300, function(){
-			// if (!window.chrome) {
-				$(".headerSearch__form .search__input").focus();	
-			// }		
 		});
+			$(".headerSearch__form .search__input").focus();	
 
 		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
 		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
@@ -241,13 +232,12 @@ $(function() {
 		}, 200 );
 	}
 
-	$(".headerSearch .closeButton").on('click', function(){
+	$(".headerSearch .closeButton").on(clickHandler, function(){
 		searchClose();
 		return false;
 	});	
 
 
-	var clickHandler = ('ontouchstart' in document.documentElement ? "touchstart" : "click");
 
 	$(document).on(clickHandler, function(event) {
 		if ($(event.target).closest(".headerPanel").length ) {

@@ -3,10 +3,10 @@
 <head>
 
     <!--#include virtual="_head.shtml"-->
-    <link href="_css/home.css" rel="stylesheet" type="text/css">
+    <link href="_css/search.css" rel="stylesheet" type="text/css">
 
 </head>
-<body class="page_authors" itemscope itemtype="http://schema.org/WebPage">
+<body class="page_search" itemscope itemtype="http://schema.org/WebPage">
 
 
 <!--#include virtual="_header.shtml"-->
@@ -17,8 +17,37 @@
 
     <!--#include virtual="_search-form.shtml"-->
 
-	<div class="clearfix">
+	<div class="padding_top categoryFilter__positionContainer clearfix">
+		<span class="categoryFilter__widthAdjuster">
+			<label>искать: </label>
+			<label>
+				<input type="radio" name="in" checked>
+				в заголовке
+			</label>
+			<label>
+				<input type="radio" name="in">
+				в статье
+			</label>
+			<label>
+				<input type="radio" name="in">
+				автора
+			</label>
+			<label>
+				<input type="radio" name="in">			
+			</label>
+		</span>
+		<!--#include virtual="_category-filter.shtml?text=1"-->
 	</div>
+	<div class="padding_top clearfix">
+		<label>по датам: с</label>
+		<input type="text" class="datepicker">
+		<label>по</label>
+		<input type="text" class="datepicker">
+	</div>
+
+
+
+
 
 	<p class="padding_top padding_bottom" style="font-size:22px">
 		По запросу "<b>трансляция</b>" найдено 1345 совпадений

@@ -116,7 +116,6 @@ input[type="url"] {
 	padding-left: 35px;
 	background: #fff;
 	color: #000;
-	float: left;
 	position: relative;
 	width: calc(100% - 15px);
 }

@@ -15,7 +15,7 @@
 
     <h1 class="categoryFilter__positionContainer clearfix">
     	<span class="categoryFilter__widthAdjuster">Бездна новостей</span>
-    	<!--#include virtual="_category-filter.shtml"-->
+    	<!--#include virtual="_category-filter.shtml?text=2"-->
     </h1>
 
     <div class="bricks__wrapper clearfix">

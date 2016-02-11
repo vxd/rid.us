@@ -1,6 +1,28 @@
+<!-- //// определяем переменные -->  
+
+<!--#set var="text" value="" -->
+
+<!-- //// извлекаем из параметров урла --> 
+
+<!--#if expr="\"$QUERY_STRING\" = /text=([a-zA-Z0-9]+)/" -->
+<!--#set var="text" value="$1" -->
+<!--#endif -->
+
+<!-- //// конец --> 
+
+
+
 <div class="categoryFilter__wrapper">
 
-	<a href="#" class="categoryFilter__filter" title="">Фильтр по рубрикам <b class="icon"></b></a>
+	<a href="#" class="categoryFilter__filter" title="">
+		<!--#if expr="$text = 1" -->
+		в рубриках
+		<!--#endif -->
+		<!--#if expr="$text = 2" -->
+		Фильтр по рубрикам 
+		<!--#endif -->
+		<b class="icon"></b>
+	</a>
 
 	<span class="categoryFilter__info">&#8212; выбрано <span class="categoryFilter__counter">0 рубрик</span></span>
 

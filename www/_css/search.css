@@ -1,0 +1,30 @@
+
+@import "_slider.css";
+@import "_ridus-map.css";
+@import "_videosection.css";
+@import "_newslist.css";
+
+@import "_category-filter.css";
+
+
+
+.page_search label {
+	margin-bottom: 0;
+	margin-right: 10px;
+}
+.page_search .categoryFilter__wrapper {
+	/*float: right;*/
+	/*margin-left: 10px;*/
+}
+.page_search .categoryFilter__filter {
+	top: 0;
+}
+.page_search .categoryFilter__widthAdjuster {
+	height: 35px;
+	padding-right: 0;
+    line-height: 2;
+}
+.filtersList__wrapper {
+	top: auto;
+	/*bottom: 1px;*/
+}

@@ -1,0 +1,255 @@
+
+            <a class="stickedSlideHere" data-stickedSlideHere="1"></a>
+
+            <h2>Читайте также:</h2>
+            <div class="bricks__wrapper clearfix">
+                <div class="brick view_mini">
+                    <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
+                </div>
+                <div class="brick view_mini">
+                    <!--#include virtual="bricks/mini.shtml?image=1&data=1&label=11"-->
+                </div>
+                <div class="brick view_mini">
+                    <!--#include virtual="bricks/mini.shtml?image=2&data=2&label=12"-->
+                </div>
+                <div class="brick view_mini">
+                    <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
+                </div>
+                <div class="brick view_mini hideOn_1024 hideOn_768">
+                    <!--#include virtual="bricks/mini.shtml?image=2&data=2&label=12"-->
+                </div>
+                <div class="brick view_mini hideOn_1024 hideOn_768">
+                    <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
+                </div>
+            </div>
+
+
+            <div class="bricks__wrapper clearfix">
+                <h1 class="view_centred">
+                    <i class="threeDot"></i>
+                    Картина дня
+                    <i class="threeDot"></i>
+                </h1>
+
+                <!--#include virtual="slider.shtml"-->
+
+                <div class="brick view_grey">
+                    <!--#include virtual="bricks/main-for-today.shtml"-->
+                </div>
+
+
+                <div class="brick hideOn_768 hideOn_1024">
+                    <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812"-->
+                </div>
+                <div class="brick hideOn_768 hideOn_1024">
+                    <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&label=12&count1=120&count2=35&count3=3812"-->
+                </div>
+
+                <div class="brick view_yellow">
+                    <a href="#" class="brick__header view_arrowed" title="">Бездна новостей</a>
+                    <!--#include virtual="bricks/newslist.shtml?banner=none"-->
+                </div>
+
+            </div>
+
+
+            <div class="padding_bottom clearfix">
+                <!--#include virtual="_ridus-map.shtml"-->
+            </div>
+
+
+            <div class="bricks__wrapper clearfix">
+
+                <h1 class="view_centred">
+                    <i class="threeDot"></i>
+                    гражданская журналиcтика
+                    <i class="threeDot"></i>
+                </h1>
+
+                <div class="brick">
+                    <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
+                </div>
+                <div class="brick">
+                    <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=33&count1=120&count2=35&count3=3812"-->
+                </div>
+                <div class="brick hideOn_1024 hideOn_768">
+                    <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&label=31&count1=120&count2=35&count3=3812"-->
+                </div>
+                <div class="brick">
+                    <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
+                </div>
+                <div class="brick hideOn_1024 hideOn_768">
+                    <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=33&count1=120&count2=35&count3=3812"-->
+                </div>
+                <div class="brick view_yellow view_opinion">
+                    <!--#include virtual="bricks/opinion.shtml"-->          
+                </div>
+
+            </div>
+
+
+            <div class="contentBackground_blue clearfix padding_top">
+                <h1 class="view_centred">
+                    <i class="threeDot"></i>
+                    интересное
+                    <i class="threeDot"></i>
+                </h1>
+
+                <!-- заменить на картинку -->
+                <div class="bricks__wrapper padding_bottom clearfix">
+                    <div class="brick aLaSlideImage">
+                        <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
+                    </div>
+
+                    <div class="brick hideOn_1024 hideOn_768">
+                        <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
+                    </div>
+
+                    <div class="brick hideOn_1280">
+                        <div class="brick view_floatText">
+                            <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
+                        </div>
+                        <div class="brick view_floatText">
+                            <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
+                        </div>
+                        <div class="brick view_floatText">
+                            <!--#include virtual="bricks/mini-full.shtml?image=3&data=2&label=12"-->
+                        </div>
+                    </div>
+
+
+                    <div class="brick hideOn_1024 hideOn_768">
+                        <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
+                    </div>
+
+                    <div class="brick hideOn_1024 hideOn_768">
+                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
+                    </div>
+                    <div class="brick">
+                        <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=33&count1=120&count2=35&count3=3812"-->
+                    </div>
+                </div>
+            </div>
+
+            <a class="stickedSlideHere" data-stickedSlideHere="2"></a>
+
+            <div class="clearfix padding_top">
+                <h1 class="view_centred">
+                    <i class="threeDot"></i>
+                    полезное
+                    <i class="threeDot"></i>
+                </h1>
+
+                <!-- заменить на картинку -->
+                <div class="bricks__wrapper padding_bottom clearfix">
+
+                    <div class="brick aLaSlideImage">
+                        <!--#include virtual="bricks/alaslideimage.shtml?image=2"-->
+                    </div>
+
+                    <div class="brick">
+                        <div class="brick view_floatText">
+                            <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
+                        </div>
+                        <div class="brick view_floatText">
+                            <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
+                        </div>
+                        <div class="brick view_floatText">
+                            <!--#include virtual="bricks/mini-full.shtml?image=3&data=2&label=12"-->
+                        </div>
+                    </div>
+
+                    <div class="brick hideOn_1024 hideOn_768">
+                        <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&label=31&count1=120&count2=35&count3=3812"-->
+                    </div>
+                 
+                    <div class="brick">
+                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=22&count1=120&count2=35&count3=3812"-->
+                    </div>
+                    <div class="brick hideOn_1024 hideOn_768">
+                        <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=21&count1=120&count2=35&count3=3812"-->
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="contentBackground_dark clearfix padding_top">
+
+                <div style="position: relative">
+                    <!--#include virtual="_yellowbutton.shtml?text=2"-->
+                    <img class="med__logo" src="_images/med.png" title="">
+                </div>
+
+                <p style="text-align:center">
+                    <span class="lenta">здоровье</span>
+                </p>
+
+                <h1 class="view_centred">
+                    <i class="threeDot"></i>
+                    здоровье
+                    <i class="threeDot"></i>
+                </h1>
+
+                <div class="bricks__wrapper">
+
+                    <div class="brick aLaSlideImage">
+                        <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
+                    </div>
+
+                    <div class="brick">
+                        <div class="brick view_floatText">
+                            <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
+                        </div>
+                        <div class="brick view_floatText">
+                            <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
+                        </div>
+                        <div class="brick view_floatText">
+                            <!--#include virtual="bricks/mini-full.shtml?image=3&data=2&label=12"-->
+                        </div>
+                    </div>
+
+                    <div class="brick hideOn_1024 hideOn_768">
+                        <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&label=11&count1=120&count2=35&count3=3812"-->
+                    </div>
+
+                    <div class="brick">
+                        <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=13&count1=120&count2=35&count3=3812"-->
+                    </div>
+                    <div class="brick hideOn_1024 hideOn_768">
+                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="clearfix padding_top">
+                <h1 class="view_centred">
+                    <i class="threeDot"></i>
+                    развлечение
+                    <i class="threeDot"></i>
+                </h1>
+
+                <!-- заменить на картинку -->
+                <div class="bricks__wrapper padding_bottom clearfix">
+                    <div class="brick hideOn_1024 hideOn_768">
+                        <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
+                    </div>
+                    <div class="brick hideOn_1024 hideOn_768">
+                        <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
+                    </div>
+                    <div class="brick">
+                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
+                    </div>
+                    <div class="brick">
+                        <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=33&count1=120&count2=35&count3=3812"-->
+                    </div>
+                    <div class="brick">
+                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
+                    </div>
+                    <div class="brick">
+                        <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=33&count1=120&count2=35&count3=3812"-->
+                    </div>
+                </div>
+            </div>

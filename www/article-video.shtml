@@ -91,81 +91,13 @@
                 <!--#include virtual="_comments.shtml"-->
             </div>
 
-
-
-
-
-
-
-            <div class="clearfix padding_top">
-                <h2>Вам может быть интересно:</h2>
-
-                <!-- заменить на картинку -->
-                <div class="bricks__wrapper padding_bottom clearfix">
-                    <div class="brick hideOn_1024 hideOn_768">
-                        <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
-                    </div>
-                    <div class="brick hideOn_1024 hideOn_768">
-                        <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
-                    </div>
-                    <div class="brick">
-                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
-                    </div>
-                    <div class="brick">
-                        <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=33&count1=120&count2=35&count3=3812"-->
-                    </div>
-                    <div class="brick">
-                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
-                    </div>
-                    <div class="brick">
-                        <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=33&count1=120&count2=35&count3=3812"-->
-                    </div>
-                    <div class="brick hideOn_1024 hideOn_768">
-                        <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
-                    </div>
-                    <div class="brick hideOn_1024 hideOn_768">
-                        <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
-                    </div>
-                    <div class="brick">
-                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
-                    </div>
-                    <div class="brick">
-                        <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=33&count1=120&count2=35&count3=3812"-->
-                    </div>
-                    <div class="brick">
-                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
-                    </div>
-                    <div class="brick">
-                        <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=33&count1=120&count2=35&count3=3812"-->
-                    </div>
-                </div>
-            </div>
+            <!--#include virtual="_article-maincolumn.shtml"-->
 
         </div>
 
-
-
         <div class="table__sideColumn hideOn_768">
 
-            <div class="brick view_floatText view_bottomBorder">
-                <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
-            </div>
-            <div class="brick view_floatText view_bottomBorder">
-                <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
-            </div>
-            <div class="brick view_floatText view_bottomBorder">
-                <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
-            </div>
-            <div class="brick view_floatText">
-                <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
-            </div>
-
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=21&count1=120&count2=35&count3=3812"-->
-            </div>
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
-            </div>
+            <!--#include virtual="_article-sidecolumn.shtml"-->
 
         </div>
 

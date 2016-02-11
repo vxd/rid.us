@@ -1,0 +1,62 @@
+                <div class="hcSticky__scrollable">
+
+                    <div class="brick view_floatText view_bottomBorder">
+                        <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
+                    </div>
+                    <div class="brick view_floatText">
+                        <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
+                    </div>
+
+                    <div class="brick view_grey">
+                        <!--#include virtual="bricks/main-for-today.shtml"-->
+                    </div>
+                    <div class="brick">
+                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=21&count1=120&count2=35&count3=3812"-->
+                    </div>
+                    <div class="brick">
+                        <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
+                    </div>
+
+                </div>
+
+                <div class="hcSticky__sticky">
+                    <div class="sticked">
+
+                        <div class="stickedSlide">
+                            <div class="brick view_banner hideOn_1024">
+                                <!--#include virtual="bricks/banner-mts.shtml"-->
+                            </div>
+                            <div class="brick view_floatText">
+                                <!--#include virtual="bricks/mini.shtml?image=1&data=1&label=11"-->
+                            </div>
+                            <div class="brick view_floatText">
+                                <!--#include virtual="bricks/mini.shtml?image=2&data=3&label=13"-->
+                            </div>
+                            <div class="brick view_floatText">
+                                <!--#include virtual="bricks/mini.shtml?image=1&data=2&label=12"-->
+                            </div>
+                            <div class="brick view_floatText">
+                                <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
+                            </div>
+                        </div>
+
+                        <div class="stickedSlide" style="display: none;">
+                            <div class="brick ">
+                                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=21&count1=120&count2=35&count3=3812"-->
+                            </div>
+                            <div class="brick hideOn_1024">
+                                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
+                            </div>
+                        </div>
+
+                        <div class="stickedSlide" style="display: none;">
+                            <div class="brick">
+                                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&label=12&count1=120&count2=35&count3=3812"-->
+                            </div>
+                            <div class="brick hideOn_1024">
+                                <!--#include virtual="bricks/news-simple.shtml?image=3&data=1&label=11&count1=120&count2=35&count3=3812"-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>

@@ -5,7 +5,7 @@
     	<span class="state_hidderHidden">cвернуть</span>
 		<i class="corner"><!-- corner --></i>
 	</a>
-	<a href="http://map.ridus.ru" class="clickable"></a>
+	<a href="http://map.ridus.ru" class="clickable" target="_blank"></a>
 	<img src="_images/map-preloader.gif" style="position: absolute; width: 1px; height: 1px;">
 </section>
 

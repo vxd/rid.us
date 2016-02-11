@@ -405,6 +405,18 @@ $(function() {
 	var docHeight = $(document).height();
 	var floatingBlockSpace = 80;
 
+	// для десктопов
+	if (clickHandler == "click") {
+		$(window).scroll(function(event){
+	    	currentScrollTop = $(this).scrollTop();
+			if (currentScrollTop > navbarHeight) {
+	    		$('.headerPanel').addClass('view_scrolling');
+	    	} else {
+	    		$('.headerPanel').removeClass('view_scrolling');
+	    	}
+		});
+	}
+
 
 	function handleTouchStart(evt) {                                         
 	    yDown = evt.touches[0].clientY;

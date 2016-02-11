@@ -15,6 +15,25 @@
     top: -60px;
 }
 
+@media screen and (max-width: 1040px) {
+	.page_home .headerPanel { 
+		position: absolute;
+	}
+	.page_home .headerPanel.view_hidden {
+		top: 0;
+	}
+}
+
+
+.headerPanel.view_scrolling {
+	opacity: .6;
+    -webkit-transition: opacity .15s ease-out;
+    -moz-transition: 	opacity .15s ease-out;
+    transition: 		opacity .15s ease-out;
+}
+.headerPanel.view_scrolling:hover {
+	opacity: 1;
+}
 
 
 

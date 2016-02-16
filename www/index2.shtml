@@ -63,7 +63,41 @@
 		            </div>
 
 					<div class="brick">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812&video=true"-->
+		                <iframe width="100%" height="190" src="http://www.ustream.tv/embed/21870049?html5ui=1&autoplay=true&volume=0&wmode=direct&adfree=1" allowfullscreen webkitallowfullscreen scrolling="no" frameborder="0" style="border: 0 none transparent; margin-bottom: 15px;"></iframe>
+		                
+		                <!-- 1. The <div> tag will contain the <iframe> (and video player) -->
+					    <div style="width:100%; overflow: hidden"><div id="YTplayer"></div></div>
+						<script>      // 2. This code loads the IFrame Player API code asynchronously.
+						      var tag = document.createElement('script');
+						      tag.src = "http://www.youtube.com/player_api";
+						      var firstScriptTag = document.getElementsByTagName('script')[0];
+						      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+						      // 3. This function creates an <iframe> (and YouTube player)
+						      //    after the API code downloads.
+						      var player;
+						      function onYouTubePlayerAPIReady() {
+						        player = new YT.Player('YTplayer', {
+						          playerVars: { 'autoplay': 1, 
+						          				'controls': 1,
+						          				'autohide':1,
+						          				'wmode':'opaque' 
+						          },
+						          videoId: 'Siy69o-rKU4',
+						          width: "102%",
+						          height: 190,
+						          events: {
+						            'onReady': onPlayerReady}
+						        });
+						      }
+
+						      // 4. The API will call this function when the video player is ready.
+						      function onPlayerReady(event) {
+						        event.target.mute();
+						        $("#YTplayer").css({"margin-left": "-1%"}).attr({"allowfullscreen":"true", "webkitallowfullscreen":"true"})
+						      }
+						</script>
+		                <!--iframe width="100%" height="190" src="https://www.youtube.com/embed/Siy69o-rKU4?autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe-->
 					</div>
 		            <div class="brick hideOn_768">
 		                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=22&count1=120&count2=35&count3=3812&video=true"-->

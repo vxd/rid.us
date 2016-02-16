@@ -6,7 +6,7 @@
     <link href="_css/article.css" rel="stylesheet" type="text/css">
 
 </head>
-<body class="page_news" itemscope itemtype="http://schema.org/WebPage">
+<body class="page_article" itemscope itemtype="http://schema.org/WebPage">
 
 <!--#include virtual="_header.shtml"-->
 
@@ -143,12 +143,23 @@
 
                 </div>
                 
-                <p class="missSpell__hint">
-                    Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
-                </p>
-
-                <div class="articleSocials">
-                    <!--#include virtual="_socials-article.shtml"-->
+                <div class="articleSocials__wrapper clearfix">
+                    <div class="ridusLikes">
+                        <p class="hint">
+                            Нам важно ваше мнение!
+                        </p>
+                        <div class="ridusLikesButton">
+                            <a href="#" class="ridusLikesButton__link">+</a>
+                            <span>123</span>
+                            <a href="#" class="ridusLikesButton__link">−</a>
+                        </div>
+                    </div>
+                    <div class="articleSocials">
+                        <p class="hint">
+                            Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
+                        </p>
+                        <!--#include virtual="_socials-article.shtml"-->
+                    </div>
                 </div>
 
                 <p class="article__tags">

@@ -101,8 +101,60 @@
 
 
 /* статьи */
-
-
+.articleSocials__wrapper {
+}
+.ridusLikes {
+    float: left;
+    padding-right: 16px;
+    margin-right:  16px;
+    border-right: 1px solid #eee;
+    margin-bottom: 10px;
+}
+.articleSocials {
+    float: left;
+    margin-bottom: 10px;
+}
+.ridusLikesButton {
+    height: 43px;
+    border: 1px solid #eee;
+    display: inline-block;
+}
+.ridusLikesButton__link {
+    display: inline-block;
+    height: 43px;
+    width: 44px;
+    background: #eee;
+    color: #686b6f;
+    font-size: 29px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.45;
+    text-decoration: none;
+}
+.ridusLikesButton__link:hover {
+    opacity: .7;
+}
+.ridusLikesButton span {
+    color: #686b6f;
+    display: inline-block;
+    vertical-align: top;
+    height: 43px;
+    padding: 0 14px 0 35px;
+    display: inline-block;
+    vertical-align: top;
+    height: 43px;
+    padding: 0 10px 0 30px;
+    line-height: 2.45;
+    font-size: 18px;
+    background: url(../_images/icons_sprite.png);
+    background-position: 0 -333px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+    .ridusLikesButton span {
+        background-image: url(../_images/icons_sprite_2x.png);
+        background-size: 282px 500px;
+    }
+}
 
 
 

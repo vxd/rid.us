@@ -5,10 +5,7 @@
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
-/*.ridusMap.view_open {
-	height: 600px;
-}
-*/
+
 @media screen and (max-width: 1023px) {
 	.ridusMap.state_nativeBg {
 		background: url(../_images/ridus-map.png) no-repeat 54% 50%, 
@@ -47,8 +44,12 @@
     -moz-transform: translateX(-60px);
     -ms-transform: translateX(-60px);
     transform: translateX(-60px);
-    z-index: 2;
+    z-index: 3;
 }
+.page_article .ridusMap .yellowButton {
+	display: none; /* можно скрыть из блока _ridus-map.shtml средствами cms */
+}
+
 .ridusMap .yellowButton .corner {
     border-bottom-color: #886147;
 }

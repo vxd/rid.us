@@ -17,16 +17,16 @@
 
 <!-- //// конец --> 
 <div class="brick__side">
-	<a href="#" class="brick__image">
 	<!--#if expr="$image = 1" -->
-		<img src="http://www.ridus.ru/images/2015/11/9/336087/preview_bf6ffdd776.jpg" alt="">
+	<a href="#" class="brick__image" style="background-image: url(http://www.ridus.ru/images/2015/11/9/336087/preview_bf6ffdd776.jpg)">
 	<!--#endif -->
 	<!--#if expr="$image = 2" -->
-		<img src="http://www.ridus.ru/images/2015/11/6/335790/preview_8d38e15379.jpg" alt="">
+	<a href="#" class="brick__image" style="background-image: url(http://www.ridus.ru/images/2015/11/6/335790/preview_8d38e15379.jpg)">
 	<!--#endif -->
 	<!--#if expr="$image = 3" -->
-		<img src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg" alt="">
+	<a href="#" class="brick__image" style="background-image: url(http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg)">
 	<!--#endif -->
+		<span class="clickable"></span>
 	</a>
 </div>
 

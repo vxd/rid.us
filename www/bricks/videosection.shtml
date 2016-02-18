@@ -49,9 +49,7 @@
 
 							<div class="swiper-slide videoPlaylist__item brick view_floatText">
 								<div class="image__wrapper">
-									<a href="#" class="brick__image">
-										<img src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg" alt="">
-									</a>
+									<a href="#" class="brick__image" style="background-image: url(http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg)"></a>
 									<div class="countersBlock">
 										<span class="countersBlock__item view_count1">
 											234 <i class="icon"><!-- icon --></i>
@@ -75,9 +73,7 @@
 
 							<div class="swiper-slide videoPlaylist__item brick view_floatText">
 								<div class="image__wrapper">
-									<a href="#" class="brick__image">
-										<img src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg" alt="">
-									</a>
+									<a href="#" class="brick__image" style="background-image: url(http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg)"></a>
 									<div class="countersBlock">
 										<span class="countersBlock__item view_count1">
 											234 <i class="icon"><!-- icon --></i>
@@ -101,8 +97,7 @@
 
 							<div class="swiper-slide videoPlaylist__item brick view_floatText">
 								<div class="image__wrapper">
-									<a href="#" class="brick__image">
-										<img src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg" alt="">
+									<a href="#" class="brick__image" style="background-image: url(http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg)"></a>
 									</a>
 									<div class="countersBlock">
 										<span class="countersBlock__item view_count1">
@@ -127,9 +122,7 @@
 
 							<div class="swiper-slide videoPlaylist__item brick view_floatText">
 								<div class="image__wrapper">
-									<a href="#" class="brick__image">
-										<img src="http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg" alt="">
-									</a>
+									<a href="#" class="brick__image" style="background-image: url(http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg)"></a>
 									<div class="countersBlock">
 										<span class="countersBlock__item view_count1">
 											234 <i class="icon"><!-- icon --></i>

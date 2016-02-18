@@ -10,8 +10,7 @@
 <div class="swiper-wrapper">
 
 	<div class="swiper-slide">
-		<a href="" class="brick__image">
-			<img alt="" src="_images/Layer-86.jpg">
+		<a href="" class="brick__image" style="background-image: url(_images/Layer-86.jpg)">
 			<div class="brick__content opinion__info">
 				<h4>
 					Александр Клюкин
@@ -41,8 +40,7 @@
 	</div>
 
 	<div class="swiper-slide">
-		<a href="" class="brick__image">
-			<img alt="" src="http://doseng.org/uploads/posts/2010-02/1265837445_celebrity_portraits_by_raphael_mazzucco_15.jpg">
+		<a href="" class="brick__image" style="background-image: url(_images/Untitled-1.jpg)">
 			<div class="brick__content opinion__info">
 				<h4>
 					Евгения Селькова
@@ -72,8 +70,7 @@
 	</div>
 
 	<div class="swiper-slide">
-		<a href="" class="brick__image">
-			<img alt="" src="http://www.eclipse-sumerki.ru/wp-content/uploads/2011/05/3140c31f2342.jpg">
+		<a href="" class="brick__image" style="background-image: url(_images/Untitled-2.jpg)">
 			<div class="brick__content opinion__info">
 				<h4>
 					Евгения Селькова

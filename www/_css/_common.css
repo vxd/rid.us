@@ -1,10 +1,14 @@
 html {
 	font-size: 62.5%; /* =10px */
 	width: 100%;
-	/*height: 100%;*/
 	min-width: 768px;
-	-webkit-overflow-scrolling: touch;
-
+	/*height: 100%;*/
+    /*min-height: 100%;*/
+    height: 99.9%;
+	/*will-change: height;*/
+	/*-webkit-overflow-scrolling: touch;*/
+    /*-webkit-tap-highlight-color: transparent;*/
+    position: relative;
 
 }
 body {
@@ -14,12 +18,18 @@ body {
 	min-width: 768px;
 	width: 100%;
 	/*height: 100%;*/
+    height: 99.9%;
 	background: #eee;
-	-webkit-overflow-scrolling: touch;
-	will-change: height;
-	/*-webkit-transform: translate3d(0,0,0);*/
+	/*will-change: height;*/
+	zoom: 1;
+	overflow: auto;
+    overflow-x: hidden;
 }
-
+/*body * {
+	-webkit-overflow-scrolling: touch;
+	zoom: 1;
+	-webkit-transform: translate3d(0,0,0);
+}*/
 
 a {
 	color: #000;
@@ -34,25 +44,25 @@ a {
 a:hover {
     color: #c64a1b;
 }
-/*body * {*/
-    /*transform: translateZ(0);*/
-    /*-webkit-transform: translateZ(0);*/
-    /*-webkit-transform: translate3d(0, 0, 0);*/
-/*}*/
+
 .clickable {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	z-index: 1;
-	zoom: 1;
-    background: transparent;
+	z-index: 2;
+	/*zoom: 1;*/
+    /*background: transparent;*/
     /*display: none;*/
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
+    -webkit-backface-visibility: hidden;
+    /*background: (0,0,0,0);*/
 }
+
+
+
 
 i {
 	font-style: italic;
@@ -156,8 +166,8 @@ h1.view_centred {
 
 .threeDot {
 	position: relative;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
     display: inline-block;
     width: .15em;
     height: .15em;	
@@ -254,8 +264,8 @@ p {
     margin-bottom: 20px;
     list-style-type: none;
     position: relative;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
 }
 .numeredList__item {
     counter-increment: step-counter;
@@ -300,8 +310,8 @@ p {
     padding-left: 25px;
     list-style-type: none;
     position: relative;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
 }
 .squareList__item:before {
     position: absolute;
@@ -658,8 +668,8 @@ blockquote:after {
 	font-size: 14px;
 	font-weight: bold;
 	position: relative;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
 }
 .lenta:before,
 .lenta:after {
@@ -786,8 +796,8 @@ blockquote:after {
 	color: #000;
 	margin-bottom: 20px;
 	position: relative;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
 }
 .moreButton:after {
 	position: absolute;
@@ -1019,25 +1029,17 @@ blockquote:after {
 .table__mainColumn:first-child {
     width: calc(100% - 322px); /* 300 + 22 */
     float: left;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
 }
 .table__sideColumn:last-child {
 	margin-left: calc(100% - 300px);
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
 }
 /* левая - узкая, правая - большая */
 .table__sideColumn:first-child {
 	width: 300px;
 	float: left;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
 }
 .table__mainColumn:last-child {
 	margin-left: 322px; /* 300 + 22 */
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	/* левая - большая, правая - узкая */
@@ -1204,8 +1206,8 @@ blockquote:after {
 	position: relative;
 	overflow: hidden;
 	width: 100.1%;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
 }
 
 
@@ -1217,16 +1219,12 @@ blockquote:after {
 
 .hcSticky__sticky {
 	position: relative;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
 }
 
 .sticked {
 	width: 300px;
 	position: absolute;
 	top: 0;
-	/*height: 820px;*/
-	/*transition: all 0.3s ease-in-out;*/
 }
 @media screen and (min-width: 1280px) {
 	.sticked {

@@ -24,20 +24,19 @@
 
 <!-- //// конец --> 
 
-<a href="#" class="brick__image">
 <!--#if expr="$image = 1" -->
-	<img src="http://www.ridus.ru/images/avatars/143296/large_4826eae277.jpg" alt="">
+<a href="#" class="brick__image" style="background-image: url(http://www.ridus.ru/images/avatars/143296/large_4826eae277.jpg)"></a>
 <!--#endif -->
 <!--#if expr="$image = 2" -->
-	<img src="http://www.ridus.ru/images/avatars/151502/large_457d41f144.jpg" alt="">
+<a href="#" class="brick__image" style="background-image: url(http://www.ridus.ru/images/avatars/151502/large_457d41f144.jpg)"></a>
 <!--#endif -->
 <!--#if expr="$image = 3" -->
-	<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="">
+<a href="#" class="brick__image" style="background-image: url(http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg)"></a>
 <!--#endif -->
 <!--#if expr="$image = 4" -->
-	<img src="http://www.ridus.ru/images/avatars/90453/large_c1a8beb7f7.jpg" alt="">
+<a href="#" class="brick__image" style="background-image: url(http://www.ridus.ru/images/avatars/90453/large_c1a8beb7f7.jpg)"></a>
 <!--#endif -->
-</a>
+
 
 <div class="brick__content">
 <!--#if expr="$data = 1" -->

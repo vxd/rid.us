@@ -1,8 +1,7 @@
 
-
-.bricks__wrapper {
-	/*overflow: hidden;*/
-}
+/*.bricks__wrapper {
+	font-size: 0
+}*/
 @media screen and (max-width: 1023px) {
 	.bricks__wrapper {
 		margin-right: -3%;
@@ -34,16 +33,19 @@
 
 
 .brick {
+	overflow: visible;
 	height: 400px;
 	float: left;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	/*overflow: hidden;*/
-	position: relative;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-
+	-webkit-overflow-scrolling: touch;
+	/*position: relative;*/
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
+    -webkit-backface-visibility: hidden;
+    zoom: 1;
+    z-index: 1;
 }
 @media screen and (max-width: 1023px) {
 	.brick {
@@ -149,7 +151,7 @@
 }
 @media screen and (min-width: 1280px) {
 	.brick.view_oneThird {
-		width: 191.2px;;
+		width: 191.2px;
 	}
 }
 

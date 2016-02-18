@@ -44,15 +44,14 @@
 <!-- //// конец --> 
 
 
-<div class="brick__image">
 <!--#if expr="$image = 1" -->
-	<img alt="Единороссы призовут однопартийца Исаева к ответу" src="http://molbiol.ru/forums/uploads/a003/b047/post-24502-1338479907.jpg">
+<div class="brick__image" style="background-image: url(http://molbiol.ru/forums/uploads/a003/b047/post-24502-1338479907.jpg)">
 <!--#endif -->
 <!--#if expr="$image = 2" -->
-	<img alt="Песков опроверг публикацию Reuters «о дочери Путина»" src="http://f1.s.qip.ru/jAMAwieF.jpg">
+<div class="brick__image" style="background-image: url(http://f1.s.qip.ru/jAMAwieF.jpg)">
 <!--#endif -->
 <!--#if expr="$image = 3" -->
-	<img alt="Ученые доказали влияние грибов на погоду" src="http://joinfo.ua/images/news/2013/03/130320_01.jpg&prefix=slider310&a=310&b=250">
+<div class="brick__image" style="background-image: url(http://joinfo.ua/images/news/2013/03/130320_01.jpg&prefix=slider310&a=310&b=250)">
 <!--#endif -->
 
 <!--#if expr="$video = 'true'" -->
@@ -136,7 +135,7 @@
 <!--#endif -->
 <!--#if expr="$data = 4" -->
 	<div class="brick__mainLinkWrapper">
-		<a href="#" class="brick__mainLink" title="">На борту А321 могла взорваться жидкая бомба</a> <span class="brick__mainLinkDate">вчера</span>
+		<a href="#" class="brick__mainLink" title="">На борту А321 могла взорваться жидкая бомба</a>
 	</div>
 	<p class="brick__text">
 		Эксперт по борьбе с терроризмом Ронен Соломон заявил, что российский аэробус мог быть взорван.<br>
@@ -198,5 +197,5 @@
 </span>
 <!--#endif -->
 
-<a href="#" class="clickable"></a>
+<a href="#" class="clickable hideOn_1024 hideOn_768"></a>
 

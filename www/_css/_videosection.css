@@ -7,8 +7,8 @@
 .videoSection .table__sideColumn {
 	background: #ffd051;
 	position: relative;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
 }
 .videoSection .table__sideColumn:last-child {
 	padding: 5px 5px 5px 0;

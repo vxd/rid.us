@@ -2,8 +2,8 @@
 	height: 180px;
 	position: relative;
 	overflow: hidden;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
 }
 
 @media screen and (max-width: 1023px) {

@@ -64,8 +64,8 @@
 	color: #fff;
     margin-bottom: 5px;
     position: relative;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
 }
 .socialNetwork__link {
 	color: #000;
@@ -142,8 +142,8 @@
 .footerSubscribe__form {
 	position: relative;
 	margin-bottom: 15px;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
 }
 .footerSubscribe__form .footerSubscribe__input {
 	border: 1px solid #fff;
@@ -209,8 +209,8 @@
 	padding: 27px 0;
 }
 .footerCopy__container {
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+    /*transform: translateZ(0);*/
+    /*-webkit-transform: translateZ(0);*/
 	position: relative;
 	min-height: 67px;
 	padding-right: 30%;

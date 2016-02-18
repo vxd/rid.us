@@ -505,7 +505,7 @@ $(function() {
 	// плавающий блок
 	// ======================================
 
-	$(window).load(function(){
+	$(window).load(function(){ // надо, чтобы окно полность загрузилось
 
 		/* устанавливаем высоту плавательного контейнера */
 		function updateStickySize() {
@@ -526,7 +526,15 @@ $(function() {
 		        updateStickySize();
 		        doingStickyResize = false;
 		    }
-		}, 200);	
+		}, 500);	
+
+		// var fbCheck = setInterval(function() {
+		// 	// обязательно сначала дождемся, когда ФБ загрузит виджет
+		//     if ($(".fb-like").attr("fb-xfbml-state") == "rendered") {
+		//     	setTimeout(firePopup, 2); // и подождем еще 0,002 сек
+		//         clearInterval(fbCheck);
+		//     }
+		// }, 1000);
 
 		$('.sticked').hcSticky({
 			stickTo: ".hcSticky__sticky",

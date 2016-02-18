@@ -561,6 +561,8 @@ $(function() {
 		var anchors = $(".stickedSlideHere"); /* якоря расставить в контенте! */
 		var showHeightsArray = [];
 		showHeightsArray[0] = 0; // просто, чтоб забить неиспользуемую ячейку
+		var position = 0;
+		var slideToShow = 0;
 
 		anchors.each(function(){
 			var slideNum = $(this).attr("data-stickedSlideHere"); /* присвоить номер слайда */
@@ -570,15 +572,20 @@ $(function() {
 
 	    $(window).scroll(function() {
 
-	    	var position = $(window).scrollTop();
+	    	position = $(window).scrollTop();
 
-			var i;
-			for (i = 0; i < heightsNum; i++) {
+			for (var i = 0; i < heightsNum; i++) {
 				if (position > showHeightsArray[i]) {
-					slides.hide();
-					$(slides[i]).show();
+					slideToShow = i
+
 				}					
 			}
+			
+			slides.hide();
+			// на случай глюков - более тяжелый селектор, но более точный
+			// $(".stickedSlide:gt(" +slideToShow+ ")").hide();
+			// $(".stickedSlide:lt(" +slideToShow+ ")").hide();
+			$(slides[slideToShow]).show();
 
 	    });
 

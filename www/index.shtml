@@ -159,7 +159,7 @@
 
 </div>
 
-<section class="wrapper contentBackground_white padding_bottom clearfix">
+<section class="wrapper hideOn_mobile contentBackground_white padding_bottom clearfix">
 	<!--#include virtual="_ridus-map.shtml"-->
 </section>
 

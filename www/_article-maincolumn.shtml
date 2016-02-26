@@ -53,7 +53,7 @@
             </div>
 
 
-            <div class="padding_bottom clearfix">
+            <div class="padding_bottom hideOn_mobile clearfix">
                 <!--#include virtual="_ridus-map.shtml"-->
             </div>
 

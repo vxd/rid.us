@@ -6,7 +6,7 @@
 	z-index: 99999;
 	color: #fff;
     position: fixed;
-    -webkit-backface-visibility: hidden;
+    /*-webkit-backface-visibility: hidden;*/
     top: 0;
     /*transition: top 0.05s ease-in-out;*/
     will-change: top;
@@ -360,7 +360,7 @@
 .headerSearch {
 	float: right;
 	position: relative;
-	z-index: 1;
+	z-index: 10;
 	width: 100%;
 }
 @media screen and (max-width: 1023px) {

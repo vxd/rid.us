@@ -68,15 +68,16 @@
 }*/
 
 .brick__image {
-	-webkit-overflow-scrolling: touch;
+	/*-webkit-overflow-scrolling: touch;*/
     /*transform: translateZ(0);*/
     /*-webkit-transform: translateZ(0);*/
-    -webkit-backface-visibility: hidden;
+	/*-webkit-backface-visibility: hidden;*/
 	height: 225px;
 	margin-bottom: 10px;
 	position: relative;
-	z-index: 3;
+	/*z-index: 11;*/
 	background-size: cover;
+    background-position: center;
 }
 
 .brick__dateLabel {
@@ -87,7 +88,7 @@
     top: -4px;
     left: -4px;
     padding: 1px 6px 2px;
-    z-index: 5;
+    z-index: 20;
 }
 
 .brick__typeLabel {
@@ -128,7 +129,7 @@
     background: #ffd103;
     right: 0;
     bottom: 0;
-    z-index: 99;
+    z-index: 20;
 }
 .brick__videoIcon:after {
 	position: absolute;
@@ -202,7 +203,7 @@
 	bottom: 10px;
 	left: 10px;
 	line-height: 0;
-	z-index: 3;
+	z-index: 20;
 }
 .brick__label {
 	background: rgba(102,119,135,.7);
@@ -232,7 +233,7 @@
 .brick.view_floatText .brick__label {
 	display: inline-block;
 	margin-bottom: 5px;
-	z-index: 2;
+	z-index: 20;
 }
 .brick__label.view_partner {
 	background: rgba(170,170,175,.7);
@@ -823,7 +824,7 @@
 .brick__header {
 	background: #ffd051;
 	width: 100.1%;
-    z-index: 1;
+    z-index: 11;
     position: relative;
     /*transform: translateZ(0);*/
     /*-webkit-transform: translateZ(0);*/

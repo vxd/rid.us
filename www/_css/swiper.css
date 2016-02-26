@@ -17,7 +17,9 @@
   position: relative;
   overflow: hidden;
   /* Fix of Webkit flickering */
-  z-index: 1;
+  /*z-index: 1;*/
+  /*-webkit-backface-visibility: hidden;*/
+  /*-webkit-transform-style: preserve-3d;*/
 }
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
@@ -350,10 +352,10 @@ button.swiper-pagination-bullet {
   -moz-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
-  -webkit-backface-visibility: hidden;
+/*  -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
+  backface-visibility: hidden;*/
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -376,10 +378,10 @@ button.swiper-pagination-bullet {
 .swiper-container-cube .swiper-slide-shadow-left,
 .swiper-container-cube .swiper-slide-shadow-right {
   z-index: 0;
-  -webkit-backface-visibility: hidden;
+/*  -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
+  backface-visibility: hidden;*/
 }
 .swiper-container-cube .swiper-cube-shadow {
   position: absolute;

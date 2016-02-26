@@ -136,7 +136,7 @@
 
 .slider__text {
     /*transform: translateZ(0);*/
-    -webkit-backface-visibility: hidden;
+    /*-webkit-backface-visibility: hidden;*/
     position: absolute;
     bottom: 0;
     left: 0;
@@ -196,7 +196,7 @@
 }
 .slider__text .brick__label {
     margin-bottom: 10px;
-    z-index: 2;
+    z-index: 20;
     position: relative;
     /*transform: translateZ(0);*/
     /*-webkit-transform: translateZ(0);*/
@@ -229,7 +229,7 @@
     position: relative;
     /*transform: translateZ(0);*/
     /*-webkit-transform: translateZ(0);*/
-    -webkit-backface-visibility: hidden;
+    /*-webkit-backface-visibility: hidden;*/
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -349,7 +349,7 @@
     transition: opacity .2s ease;
     /*transform: translateZ(0);*/
     /*-webkit-transform: translateZ(0);*/
-    -webkit-backface-visibility: hidden;
+    /*-webkit-backface-visibility: hidden;*/
 }
 .pageSwiper .swiper-slide.swiper-slide-active {
     opacity: 1;

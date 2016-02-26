@@ -659,8 +659,8 @@ $(function() {
 	        autoplay: 9000,
 	        autoplayDisableOnInteraction: false,
 	        // observeParents: true,
-	        observer: true,
-	        setWrapperSize: true,
+	        // observer: true,
+	        // setWrapperSize: true,
 	    });
 
 		// var doingResize = false;
@@ -684,8 +684,8 @@ $(function() {
 	        // loop: true,
 	        nested: true,
 	        // observeParents: true,
-	        observer: true,
-	        setWrapperSize: true,
+	        // observer: true,
+	        // setWrapperSize: true,
 	        direction: 'vertical',
 	        slidesPerView: 2,
 	        mousewheelControl: true,
@@ -704,9 +704,9 @@ $(function() {
 	        autoplay: 4000,
 	        autoplayDisableOnInteraction: false,
 	        nested: true,
-	        observer: true,
+	        // observer: true,
 	        resistanceRatio: 0,
-	        setWrapperSize: true,
+	        // setWrapperSize: true,
 	        autoplayDisableOnInteraction: false,
 
 	    });

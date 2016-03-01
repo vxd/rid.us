@@ -33,16 +33,16 @@
 				автора
 			</label>
 			<label>
-				<input type="radio" name="in">			
+				<input type="checkbox" name="inr">			
 			</label>
 		</span>
 		<!--#include virtual="_category-filter.shtml?text=1"-->
 	</div>
 	<div class="padding_top clearfix">
 		<label>по датам: с</label>
-		<input type="text" class="datepicker">
+		<input type="text" class="datepicker" placeholder="чч/мм/гггг">
 		<label>по</label>
-		<input type="text" class="datepicker">
+		<input type="text" class="datepicker" placeholder="чч/мм/гггг">
 	</div>
 
 

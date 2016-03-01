@@ -122,13 +122,13 @@
 }
 .aLaSlideImage:hover .aLaSlideImage__number {
     background: rgba(0,0,0,0);
-    top: 86px;
-    font-size: 60px;
-    left: 50%;
+    /*top: 86px;*/
+    font-size: 40px;
+/*    left: 50%;
     -webkit-transform: translateX(-53%);
     -moz-transform: translateX(-53%);
     -ms-transform: translateX(-53%);
-    transform: translateX(-53%);   
+    transform: translateX(-53%);  */ 
 }
 
 
@@ -164,13 +164,15 @@
 .slider__text h1 a {
     color: #fff;
     text-decoration: none;
-    /*opacity: .9*/
+    opacity: .95;
 }
+.aLaSlideImage:hover .slider__text h1 a,
 .slider__image:hover + .slider__text h1 a,
 .slider__text:hover h1 a,
 .slider__text h1 a:hover {
     color: #fff;
-    /*opacity: 1;*/
+    opacity: 1;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
 }
 .slider__text h6 a {
     display: inline-block;

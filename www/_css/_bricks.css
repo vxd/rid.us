@@ -719,15 +719,28 @@
 }
 .brick.view_authors .brick__image {
 	display: block;
-	height: 130px;
-	width: 200px;
+	/*width: 200px;*/
 }
 @media screen and (max-width: 1023px) {
 	.brick.view_authors .brick__image {
-		height: 110px;
-		width: auto;
+		height: 120px;
+		/*width: auto;*/
 	}
 }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+	.brick.view_authors .brick__image {
+		height: 140px;
+		/*width: auto;*/
+	}
+
+}
+@media screen and (min-width: 1280px) {
+	.brick.view_authors .brick__image {
+		height: 150px;
+		/*width: 220px;*/
+	}
+}
+
 .brick.view_authors .brick__text {
 	font-size: 16px;
 }

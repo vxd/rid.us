@@ -268,12 +268,22 @@
 }
 @media screen and (max-width: 1023px) {
 	.brick.view_authors {
-		height: 277px;
+		height: 285px;
 		width: 22%;
-		margin: 0 3% 22px 0;
 	}
 }
-
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+	.brick.view_authors {
+		padding: 0 40px;
+		height: 260px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.brick.view_authors {
+		padding: 0 30px;
+		height: 275px;
+	}
+}
 
 
 

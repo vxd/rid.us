@@ -191,9 +191,13 @@
 }
 .videoPlaylist__item .brick__content h5 a {
 	color: #fff;
+	opacity: .8;
+}
+.videoPlaylist__item:hover a {
+	color: #fff !important;
 }
 .videoPlaylist__item .brick__content h5 a:hover {
-	opacity: .8
+	opacity: 1;
 }
 
 

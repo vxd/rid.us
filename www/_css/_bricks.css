@@ -326,7 +326,7 @@
 .contentBackground_dark .brick__mainLink,
 .contentBackground_dark .brick__content h5 a {
 	color: #fff;
-	opacity: 1;
+	opacity: .8;
 }
 /*.contentBackground_red .brick__mainLink:hover,
 .contentBackground_gunmetal .brick__mainLink:hover,
@@ -352,7 +352,7 @@
 .contentBackground_dark .brick:hover .brick__mainLink,
 .contentBackground_dark .brick:hover .brick__content h5 a {
 	color: #fff;
-	opacity: .7;
+	opacity: 1;
 }
 /*.contentBackground_red .brick__content h5 a {
 	color: #f8eeed;

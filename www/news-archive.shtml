@@ -378,10 +378,10 @@
                 <!--#include virtual="bricks/banner-mts.shtml"-->
             </div>
             <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812"-->
+                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2x&label=12&count1=120&count2=35&count3=3812"-->
             </div>
             <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2x&label=12&count1=120&count2=35&count3=3812"-->
             </div>
 
             <h2>Читайте также:</h2>
@@ -403,10 +403,10 @@
                 <!--#include virtual="bricks/banner-mts.shtml"-->
             </div>
             <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812"-->
+                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2x&label=12&count1=120&count2=35&count3=3812"-->
             </div>
             <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2x&label=12&count1=120&count2=35&count3=3812"-->
             </div>
 
             <h2>Читайте также:</h2>

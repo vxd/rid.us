@@ -7,10 +7,10 @@
                         <!--#include virtual="bricks/main-for-today.shtml"-->
                     </div>
                     <div class="brick">
-                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=21&count1=120&count2=35&count3=3812"-->
+                        <!--#include virtual="bricks/news-simple.shtml?image=3&data=3x&label=21&count1=120&count2=35&count3=3812"-->
                     </div>
                     <div class="brick">
-                        <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
+                        <!--#include virtual="bricks/news-simple.shtml?image=2&data=3x&label=22&count1=120&count2=35&count3=3812"-->
                     </div>
 
                 </div>
@@ -38,19 +38,19 @@
 
                         <div class="stickedSlide" style="display: none;">
                             <div class="brick">
-                                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=21&count1=120&count2=35&count3=3812"-->
+                                <!--#include virtual="bricks/news-simple.shtml?image=3&data=3x&label=21&count1=120&count2=35&count3=3812"-->
                             </div>
                             <div class="brick hideOn_1024">
-                                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
+                                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3x&label=22&count1=120&count2=35&count3=3812"-->
                             </div>
                         </div>
 
                         <div class="stickedSlide" style="display: none;">
                             <div class="brick">
-                                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2&label=12&count1=120&count2=35&count3=3812"-->
+                                <!--#include virtual="bricks/news-simple.shtml?image=1&data=2x&label=12&count1=120&count2=35&count3=3812"-->
                             </div>
                             <div class="brick hideOn_1024">
-                                <!--#include virtual="bricks/news-simple.shtml?image=3&data=1&label=11&count1=120&count2=35&count3=3812"-->
+                                <!--#include virtual="bricks/news-simple.shtml?image=3&data=1x&label=11&count1=120&count2=35&count3=3812"-->
                             </div>
                         </div>
 

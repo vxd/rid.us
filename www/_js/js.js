@@ -872,14 +872,14 @@ $(function() {
 
 
 	// ======================================
-	// датапикер 
+	// датапикер - http://digitalbush.com/projects/masked-input-plugin/
 	// ======================================
 
-  	$( ".datepicker" ).datepicker({
-      dateFormat: "dd.mm.yy",
-    });
 
 
+	$(function($){
+		$(".datepicker").mask("99/99/9999",{placeholder:"__/__/____"});
+	});
 
 
 

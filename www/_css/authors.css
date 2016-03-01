@@ -37,10 +37,6 @@
 	float: left;
 	font-size: 0;
 }
-.authorPhoto a img {
-	width: 295px;
-	height: 280px;
-}
 .authorPhoto__label {
 	position: absolute;
 	top: 0;
@@ -52,14 +48,18 @@
 	padding: 6px 13px;
 	background: #000;
 }
+.authorPhoto__image {
+	width: 295px;
+	height: 280px;
+}
 @media screen and (max-width: 1023px) {
-	.authorPhoto a img {
+	.authorPhoto__image {
 		width: 240px;
 		height: 220px;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-	.authorPhoto a img {
+	.authorPhoto__image {
 		width: 300px;
 	}
 }

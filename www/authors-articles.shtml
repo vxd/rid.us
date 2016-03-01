@@ -24,7 +24,7 @@
 
         <div class="authorPhoto">
             <a href="#" title="">
-                <img src="https://pp.vk.me/c405016/v405016400/3291/QZGuxhoNmxM.jpg" alt="автор" />
+                <img class="authorPhoto__image" src="https://pp.vk.me/c405016/v405016400/3291/QZGuxhoNmxM.jpg" alt="автор" />
             </a>
             <span class="authorPhoto__label">Я &mdash; Автор</span>
         </div>

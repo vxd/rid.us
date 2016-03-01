@@ -33,9 +33,9 @@
 
     <div class="padding_top clearfix">
     	<div class="myAvatar__wrapper">
-    		<img src="http://placehold.it/150" alt="">
-			<a href="#" class="closeButton">×</a>
-    		<a href="#" class="myAvatar__change" title="">
+    		<img src="https://pp.vk.me/c405016/v405016400/3291/QZGuxhoNmxM.jpg" alt="автор">
+			<a href="#" class="closeButton" title="удалить">×</a>
+    		<a href="#" class="myAvatar__change" title="сменить аватар">
     			<span>сменить аватар</span>
     		</a>
     	</div>

@@ -2,8 +2,7 @@
 	height: 180px;
 	position: relative;
 	overflow: hidden;
-    /*transform: translateZ(0);*/
-    /*-webkit-transform: translateZ(0);*/
+    background: url(../_images/ridus-map.jpg) center;
 }
 
 @media screen and (max-width: 1023px) {
@@ -30,9 +29,19 @@
 					url(../_images/ridus-map.jpg) center;
 	}
 }
+.ridusMap .md-preloader {
+	display: none;
+}
+.ridusMap .md-preloader svg circle {
+	opacity: 1;
+	stroke: #fff;
+	/*stroke: #ffd051;*/
+}
+.ridusMap.state_loadingBg .md-preloader {
+	display: block;
+}
 .ridusMap.state_loadingBg {
-	background: url(../_images/map-preloader.gif) no-repeat  52% 50%, 
-				url(../_images/ridus-map.jpg) repeat 50% 50%;
+	background: url(../_images/ridus-map.jpg) repeat 50% 50%;
 }
 
 .ridusMap .yellowButton {
@@ -44,7 +53,7 @@
     -moz-transform: translateX(-60px);
     -ms-transform: translateX(-60px);
     transform: translateX(-60px);
-    z-index: 3;
+    z-index: 20;
 }
 .page_article .ridusMap .yellowButton {
 	display: none; /* можно скрыть из блока _ridus-map.shtml средствами cms */

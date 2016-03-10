@@ -34,7 +34,7 @@
 		<!--#endif -->
 	<!--#endif -->
 	<!--#if expr="$image = 3" -->
-		<img src="http://www.ridus.ru/images/2015/11/20/338581/in_article_2851de7b7b.jpeg" alt="">
+		<img src="https://www.ridus.ru/images/2016/3/9/374241/in_article_6e0fbfdc98.jpg" alt="">
 		<!--#if expr="$label = 'true'" -->
 		<span class="brick__fullscreenLabel"></span>
 		<span class="aLaSlideImage__number">+8</span>

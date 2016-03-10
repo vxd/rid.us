@@ -917,10 +917,67 @@ $(function() {
 		$(this).find("span").toggleClass("state_hidderHidden");
 
 		return false;
-	})
+	});
 
 
 
+
+
+
+
+
+	// ======================================
+	// цветные табы-секции на всю страницу
+	// ======================================
+
+
+	$(".pageTabs__item").on('click', function () {
+
+		var page = $(this).attr("data-url");
+		var target = $(this).attr("data-target");
+		var wrapper =  $(this).attr("data-wrapper");
+
+		var bgClass = $.grep(this.className.split(" "), function(v, i){
+		   return v.indexOf('contentBackground') === 0;
+		}).join(); // узнаем класс фона таба, по которому кликнули
+
+		var currentClass = $.grep(document.getElementById(wrapper).className.split(" "), function(v, i){
+		   return v.indexOf('contentBackground') === 0;
+		}).join(); // узнаем текущий класс фона
+
+		var container = $("#" + target);
+		var heightStill = container.height();
+		container.height(heightStill); // установим высоту, чтоб при удалении не схлопнулась
+
+		$.ajax({
+			url: "_md-preloader.shtml",
+			// cache: false
+		})
+		.done(function( html ) {
+			container.html( html );
+			$("#" + wrapper).removeClass(currentClass).addClass(bgClass);
+		});
+
+
+		// имитируем загрузку контента - при вставке реального кода УДАЛИТЬ обертку в таймаут!!!
+		setTimeout(function(){
+			$.ajax({
+				url: page,
+				cache: false
+			})
+			.done(function( html ) {
+				container.html( html );
+			})
+			.fail(function() {
+				// console.log( "error" );
+			})
+			.always(function() {
+				// console.log( "complete" );
+			});
+		}, 600);
+
+		return false;
+	});
 
 
 

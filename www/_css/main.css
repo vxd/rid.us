@@ -22,18 +22,6 @@
 
 @import "_forms.css";
 
-
-/*
-@import "colorbox.css";
-
-@import "tipsy.css";
-*/
-
-
-
-
-
-
-
+@import "md-preloader.min.css";
 
 /* СЮДА НЕ ПИСАТЬ СТИЛИ! ЭТОТ ФАЙЛ ДЛЯ СБОРКИ! */

@@ -166,8 +166,6 @@ h1.view_centred {
 
 .threeDot {
 	position: relative;
-    /*transform: translateZ(0);*/
-    /*-webkit-transform: translateZ(0);*/
     display: inline-block;
     width: .15em;
     height: .15em;	
@@ -202,24 +200,60 @@ h1 .threeDot {
 	right: 10px;
 }
 /* интересное */
+.contentBackground_gunmetal .contentBackground_blue .threeDot,
+.contentBackground_gunmetal .contentBackground_blue .threeDot:before,
+.contentBackground_gunmetal .contentBackground_blue .threeDot:after,
+.contentBackground_red .contentBackground_blue .threeDot,
+.contentBackground_red .contentBackground_blue .threeDot:before,
+.contentBackground_red .contentBackground_blue .threeDot:after,
+.contentBackground_deepblue .contentBackground_blue .threeDot,
+.contentBackground_deepblue .contentBackground_blue .threeDot:before,
+.contentBackground_deepblue .contentBackground_blue .threeDot:after,
 .contentBackground_blue .threeDot,
 .contentBackground_blue .threeDot:before,
 .contentBackground_blue .threeDot:after {
 	 background: #9caab3;
 }
 /* технологии */
+.contentBackground_gunmetal .contentBackground_deepblue .threeDot,
+.contentBackground_gunmetal .contentBackground_deepblue .threeDot:before,
+.contentBackground_gunmetal .contentBackground_deepblue .threeDot:after,
+.contentBackground_blue .contentBackground_deepblue .threeDot,
+.contentBackground_blue .contentBackground_deepblue .threeDot:before,
+.contentBackground_blue .contentBackground_deepblue .threeDot:after,
+.contentBackground_red .contentBackground_deepblue .threeDot,
+.contentBackground_red .contentBackground_deepblue .threeDot:before,
+.contentBackground_red .contentBackground_deepblue .threeDot:after,
 .contentBackground_deepblue .threeDot,
 .contentBackground_deepblue .threeDot:before,
 .contentBackground_deepblue .threeDot:after {
 	 background: #669dc3;
 }
 /* происшествия */
+.contentBackground_gunmetal .contentBackground_red .threeDot,
+.contentBackground_gunmetal .contentBackground_red .threeDot:before,
+.contentBackground_gunmetal .contentBackground_red .threeDot:after,
+.contentBackground_blue .contentBackground_red .threeDot,
+.contentBackground_blue .contentBackground_red .threeDot:before,
+.contentBackground_blue .contentBackground_red .threeDot:after,
+.contentBackground_deepblue .contentBackground_red .threeDot,
+.contentBackground_deepblue .contentBackground_red .threeDot:before,
+.contentBackground_deepblue .contentBackground_red .threeDot:after,
 .contentBackground_red .threeDot,
 .contentBackground_red .threeDot:before,
 .contentBackground_red .threeDot:after {
 	 background: #f00;
 }
 /* происшествия темнее */
+.contentBackground_blue .contentBackground_gunmetal .threeDot,
+.contentBackground_blue .contentBackground_gunmetal .threeDot:before,
+.contentBackground_blue .contentBackground_gunmetal .threeDot:after,
+.contentBackground_deepblue .contentBackground_gunmetal .threeDot,
+.contentBackground_deepblue .contentBackground_gunmetal .threeDot:before,
+.contentBackground_deepblue .contentBackground_gunmetal .threeDot:after,
+.contentBackground_red .contentBackground_gunmetal .threeDot,
+.contentBackground_red .contentBackground_gunmetal .threeDot:before,
+.contentBackground_red .contentBackground_gunmetal .threeDot:after,
 .contentBackground_gunmetal .threeDot,
 .contentBackground_gunmetal .threeDot:before,
 .contentBackground_gunmetal .threeDot:after {
@@ -667,15 +701,12 @@ blockquote b {
 
 /* здоровье */
 .lenta {
-	background: #00abaa;
 	text-transform: uppercase;
 	display: inline-block;
 	padding: 5px 25px;
 	font-size: 14px;
 	font-weight: bold;
 	position: relative;
-    /*transform: translateZ(0);*/
-    /*-webkit-transform: translateZ(0);*/
 }
 .lenta:before,
 .lenta:after {
@@ -686,42 +717,88 @@ blockquote b {
 
 }
 .lenta:before {
-    border-right: 6px solid #252525;
-    right: 0
+    right: 0;
 }
 .lenta:after {
+    left: 0;
+}
+
+
+/* здоровье */
+.contentBackground_gunmetal .contentBackground_dark .lenta,
+.contentBackground_red .contentBackground_dark .lenta,
+.contentBackground_deepblue .contentBackground_dark .lenta,
+.contentBackground_dark .lenta {
+	background: #00abaa;
+}
+.contentBackground_gunmetal .contentBackground_dark .lenta:before,
+.contentBackground_red .contentBackground_dark .lenta:before,
+.contentBackground_deepblue .contentBackground_dark .lenta:before,
+.contentBackground_dark .lenta:before {
+    border-right: 6px solid #252525;
+}
+.contentBackground_gunmetal .contentBackground_dark .lenta:after,
+.contentBackground_red .contentBackground_dark .lenta:after,
+.contentBackground_deepblue .contentBackground_dark .lenta:after,
+.contentBackground_dark .lenta:after} {
     border-left: 6px solid #252525;
-    left: 0
 }
 /* технологии */
+.contentBackground_gunmetal .contentBackground_deepblue .lenta,
+.contentBackground_red .contentBackground_deepblue .lenta,
+.contentBackground_dark .contentBackground_deepblue .lenta,
 .contentBackground_deepblue .lenta {
 	background: #669dc3;
 }
+.contentBackground_gunmetal .contentBackground_deepblue .lenta:before,
+.contentBackground_red .contentBackground_deepblue .lenta:before,
+.contentBackground_dark .contentBackground_deepblue .lenta:before,
 .contentBackground_deepblue .lenta:before{
-	border-right-color: #677a87;
+	border-right: 6px solid #677a87;
 }
+.contentBackground_gunmetal .contentBackground_deepblue .lenta:after,
+.contentBackground_red .contentBackground_deepblue .lenta:after,
+.contentBackground_dark .contentBackground_deepblue .lenta:after,
 .contentBackground_deepblue .lenta:after {
-	border-left-color: #677a87;
+	border-left: 6px solid #677a87;
 }
 /* происшествия */
+.contentBackground_gunmetal .contentBackground_red .lenta,
+.contentBackground_deepblue .contentBackground_red .lenta,
+.contentBackground_dark .contentBackground_red .lenta,
 .contentBackground_red .lenta {
 	background: #ff0000;
 }
+.contentBackground_gunmetal .contentBackground_red .lenta:before,
+.contentBackground_deepblue .contentBackground_red .lenta:before,
+.contentBackground_dark .contentBackground_red .lenta:before,
 .contentBackground_red .lenta:before{
-	border-right-color: #7a1800;
+	border-right: 6px solid #7a1800;
 }
+.contentBackground_gunmetal .contentBackground_red .lenta:after,
+.contentBackground_deepblue .contentBackground_red .lenta:after,
+.contentBackground_dark .contentBackground_red .lenta:after,
 .contentBackground_red .lenta:after {
-	border-left-color: #7a1800;
+	border-left: 6px solid #7a1800;
 }
 /* происшествия темнее */
+.contentBackground_red .contentBackground_gunmetal .lenta,
+.contentBackground_deepblue .contentBackground_gunmetal .lenta,
+.contentBackground_dark .contentBackground_gunmetal .lenta,
 .contentBackground_gunmetal .lenta {
 	background: #ff0000;
 }
+.contentBackground_red .contentBackground_gunmetal .lenta:before,
+.contentBackground_deepblue .contentBackground_gunmetal .lenta:before,
+.contentBackground_dark .contentBackground_gunmetal .lenta:before,
 .contentBackground_gunmetal .lenta:before{
-	border-right-color: #2b3336;
+	border-right: 6px solid #2b3336;
 }
+.contentBackground_red .contentBackground_gunmetal .lenta:after,
+.contentBackground_deepblue .contentBackground_gunmetal .lenta:after,
+.contentBackground_dark .contentBackground_gunmetal .lenta:after,
 .contentBackground_gunmetal .lenta:after {
-	border-left-color: #2b3336;
+	border-left: 6px solid #2b3336;
 }
 
 
@@ -1240,3 +1317,27 @@ blockquote b {
 .sticked.state_floating {
 	/*position: fixed;*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pageTabs__item {
+	-webkit-transition: opacity .2s ease;
+    -moz-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+}
+
+.pageTabs__item:hover {
+	cursor: pointer;
+	opacity: .9;
+}
+

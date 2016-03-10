@@ -623,7 +623,9 @@ $(function() {
 	// ======================================
 	// слайдер - http://www.idangero.us/swiper/api/#.VqVEzPmLSHv
 	// ======================================
-
+	window.globalstorage = {
+		pageSwiperArray: []
+	}
 
     $('.pageSwiper').each(function () {
 	    var pageSwiper = new Swiper($(this), {
@@ -631,6 +633,7 @@ $(function() {
 	        prevButton: $(this).parent().find('.swiper-button-prev'),
 	        spaceBetween: 16,
 	        threshold: 50,
+	        observer: true,
 	        breakpoints: {
 	            1279: {
 	                spaceBetween: 22
@@ -645,6 +648,7 @@ $(function() {
 	            }
 	        }
 	    });
+		window.globalstorage.pageSwiperArray.push(pageSwiper);
     });
 
 
@@ -887,7 +891,7 @@ $(function() {
 
 
 	// ======================================
-	// подключаем табы
+	// подключаем табы - jqueryui
 	// ======================================
 
 
@@ -930,6 +934,7 @@ $(function() {
 	// цветные табы-секции на всю страницу
 	// ======================================
 
+	var pageSwiperArray = window.globalstorage.pageSwiperArray; // все слайдеры
 
 	$(".pageTabs__item").on('click', function () {
 
@@ -954,8 +959,11 @@ $(function() {
 			// cache: false
 		})
 		.done(function( html ) {
-			container.html( html );
+			container.html(html);
 			$("#" + wrapper).removeClass(currentClass).addClass(bgClass);
+		})
+		.always(function() {
+			// console.log( "complete" );
 		});
 
 
@@ -972,9 +980,11 @@ $(function() {
 				// console.log( "error" );
 			})
 			.always(function() {
-				// console.log( "complete" );
+				container.height(""); // обнулим высоту
+				pageSwiperArray[1].slideTo(0); // сдайлим на 0й слайд
+
 			});
-		}, 600);
+		}, 1000);
 
 		return false;
 	});

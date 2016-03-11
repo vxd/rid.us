@@ -975,6 +975,11 @@ $(function() {
 			})
 			.done(function( html ) {
 				container.html( html );
+
+				container.find(".readLater").on('click', function(){
+					$(this).toggleClass("view_read");
+					return false;
+				});
 			})
 			.fail(function() {
 				// console.log( "error" );
@@ -982,11 +987,6 @@ $(function() {
 			.always(function() {
 				container.height(""); // обнулим высоту
 				pageSwiperArray[1].slideTo(0); // сдайлим на 0й слайд
-
-				$(".readLater").on('click', function(){
-					$(this).toggleClass("view_read");
-					return false;
-				});
 
 			});
 		}, 1000);

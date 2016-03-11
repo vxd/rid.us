@@ -204,38 +204,14 @@
 
     <table class="wrapper">
     	<tr>
-    		<td class="pageTabs__item contentBackground_deepblue padding_top" data-url="_page-1.shtml" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
-		        <p style="text-align:center">
-		            <span class="lenta">мир it</span>
-		        </p>
-
-		        <h1 class="view_centred">
-		            <i class="threeDot"></i>
+    		<td class="pageTabs__item contentBackground_deepblue" data-url="_page-1.shtml" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
 		            технологии
-		            <i class="threeDot"></i>
-		        </h1>
     		</td>
-    		<td class="pageTabs__item contentBackground_red padding_top" data-url="_page-2.shtml" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
-		        <p style="text-align:center">
-		            <span class="lenta">события</span>
-		        </p>
-
-		        <h1 class="view_centred">
-		            <i class="threeDot"></i>
-		            происшествия
-		            <i class="threeDot"></i>
-		        </h1>
+    		<td class="pageTabs__item contentBackground_red" data-url="_page-2.shtml" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
+		            Украинский кризис
     		</td>
-    		<td class="pageTabs__item contentBackground_gunmetal padding_top"  data-url="_page-3.shtml" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
-		        <p style="text-align:center">
-		            <span class="lenta">события</span>
-		        </p>
-
-		        <h1 class="view_centred">
-		            <i class="threeDot"></i>
-		            происшествия
-		            <i class="threeDot"></i>
-		        </h1>
+    		<td class="pageTabs__item contentBackground_gunmetal"  data-url="_page-3.shtml" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
+		            Операция в Сирии
     		</td>
     	</tr>
     </table>

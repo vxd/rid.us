@@ -24,7 +24,7 @@
 	<a href="#" class="brick__image" style="background-image: url(https://static1.smi2.net/img/135x90/2877639.jpeg)">
 	<!--#endif -->
 	<!--#if expr="$image = 3" -->
-	<a href="#" class="brick__image" style="background-image: url(http://ridus.ru/images/2015/11/10/336493/preview_c692bef35f.jpg)">
+	<a href="#" class="brick__image" style="background-image: url(https://static2.smi2.net/img/135x90/2631075.jpeg)">
 	<!--#endif -->
 		<span class="clickable"></span>
 	</a>

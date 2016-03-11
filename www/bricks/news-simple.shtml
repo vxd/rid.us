@@ -191,6 +191,7 @@
 	<span class="countersBlock__item view_count3">
 		<!--#echo var="count3" --> <i class="icon"><!-- icon --></i>
 	</span>
+	<a href="#" class="countersBlock__item readLater">читать позже <i class="icon"><!-- icon --></i></a>
 </div>
 <!--#endif -->
 

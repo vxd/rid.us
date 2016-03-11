@@ -428,8 +428,6 @@
 	display: inline-block;
 	margin-right: 10px;
     position: relative;
-    /*transform: translateZ(0);*/
-    /*-webkit-transform: translateZ(0);*/
 }
 .countersBlock__item.view_count1 {
     padding: 0 14px 0 0;
@@ -555,12 +553,69 @@
 
 
 
+.countersBlock__item.readLater {
+	opacity: 0;
+	text-decoration: none;
+	color: #000;
+	border-radius: 10px;
+	padding: 2px 25px 1px 5px;
+	font-weight: normal;
+	font-size: 10px;
+    z-index: 25;
+    text-transform: uppercase;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition:    all .1s ease-in-out;
+    transition:         all .1s ease-in-out;
+}
+.brick:hover .countersBlock__item.readLater {
+	opacity: .5;
+}
+.countersBlock__item.readLater:hover {
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	opacity: 1;
+}
+.countersBlock__item.readLater .icon {
+	width: 16px;
+    height: 8px;
+    right: 4px;
+    top: 3px;
+    background-position: -48px -285px;
+	opacity: .6;
+}
+.countersBlock__item.readLater:hover .icon {
+    background-position: -48px -301px;
+    opacity: 1;
+}
+.contentBackground_deepblue .countersBlock__item.readLater .icon,
+.contentBackground_dark .countersBlock__item.readLater .icon,
+.contentBackground_gunmetal .countersBlock__item.readLater .icon,
+.contentBackground_red .countersBlock__item.readLater .icon {
+    background-position: -48px -301px;
+}
+.contentBackground_deepblue .countersBlock__item.readLater,
+.contentBackground_dark .countersBlock__item.readLater,
+.contentBackground_gunmetal .countersBlock__item.readLater,
+.contentBackground_red .countersBlock__item.readLater {
+    color: #fff;
+}
+.contentBackground_deepblue .countersBlock__item.readLater:hover,
+.contentBackground_dark .countersBlock__item.readLater:hover,
+.contentBackground_gunmetal .countersBlock__item.readLater:hover,
+.contentBackground_red .countersBlock__item.readLater:hover {
+    background: rgba(0,0,0,.7);
+}
 
-
-
-
-
-
+.countersBlock__item.readLater.view_read:hover,
+.countersBlock__item.readLater.view_read {
+	opacity: 1 !important;
+	background: #c64a1b;
+	color: #fff;
+}
+.countersBlock__item.readLater.view_read .icon {
+    background-position: -48px -301px;
+	opacity: 1 !important;
+}
 
 
 
@@ -1257,3 +1312,16 @@
 .view_centred {
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

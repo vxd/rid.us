@@ -352,6 +352,39 @@ input[type="submit"]:hover {
 }
 
 
+/* большая плавающая закрывашка */
+.yellowButton.view_backButton {
+	height: 80px;
+    display: block;
+    float: right;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    width: 70px;
+    font-size: 63px;
+    font-weight: 100;
+    padding: 0px 8px 9px 27px;
+    margin-right: -30px;
+}
+@media screen and (min-width: 1280px) {
+	.yellowButton.view_backButton {
+	    margin-right: -6px;
+	}
+}
+.yellowButton.view_backButton .corner {
+	height: 70px;
+}
+.yellowButton.view_backButton .corner:before {
+    border-top-color: #eee;
+    border-right-color: #eee;
+}
+
+
+
+
+
+
 
 /* лэйблы, чекбоксы, радиобатоны */
 label {

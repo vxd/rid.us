@@ -22,15 +22,60 @@ header {
 }
 
 
+.floatingInfo {
+	background: #fff;
+	height: 80px;
+	min-width: 768px;
+}
 
+.floatingInfo__wrapper {
+	background: #fff;
+	height: 80px
+}
 
+.floatingInfo.view_scrolling {
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+}
+.floatingInfo.view_opacity {
+	opacity: .6;
+    -webkit-transition: opacity .15s ease-out;
+    -moz-transition: 	opacity .15s ease-out;
+    transition: 		opacity .15s ease-out;
+}
+.floatingInfo.view_opacity:hover {
+	opacity: 1;
+}
 
+.floatingInfo.view_hidden {
+    top: -80px;
+}
+.floatingInfo .articleSocials {
+	margin-top: 16px;
+}
+@media screen and (max-width: 1040px) {
+	.floatingInfo .hint {
+		display: none;
+	}
+}
 
-
-
-
-
-
+@media screen and (min-width: 1041px) and (max-width: 1279px) {
+	.floatingInfo .hint {
+		float: left;
+		margin-top: 31px;
+	    width: 200px;
+	    margin-top: 17px;
+		margin-left: 30px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.floatingInfo .hint {
+		float: left;
+		margin-top: 31px;
+		margin-left: 30px;
+	}
+}
 
 
 

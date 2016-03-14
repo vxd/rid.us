@@ -1,0 +1,63 @@
+<div class="articleSocials">
+
+	<!-- реальный счетчик, но он с нулями
+	СТАВИТЬ ЕГО - убрать display:none; -->
+	<div class="ya-share2 hideOn_desktop" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter" data-counter="" style="display:none;"></div>
+	<div class="ya-share2 hideOn_mobile" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter" data-counter="" style="display:none;"></div>
+
+
+	<!-- для примера инициализированный счетчик
+	УДАЛИТЬ -->
+	<div class="ya-share2 ya-share2_inited" id="ya_share_counter">
+		<div class="ya-share2__container ya-share2__container_size_m">
+			<ul class="ya-share2__list ya-share2__list_direction_horizontal">
+				<li class="ya-share2__item ya-share2__item_service_vkontakte">
+					<a class="ya-share2__link" href="http://vk.com/share.php?url=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&amp;title=%D0%91%D0%BB%D0%BE%D0%BA%20%C2%AB%D0%9F%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C%D1%81%D1%8F%C2%BB%20%E2%80%94%20%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0&amp;description=&amp;image=&amp;utm_source=share2" rel="nofollow" target="_blank" title="ВКонтакте">
+						<span class="ya-share2__badge">
+							<span class="ya-share2__icon"></span>
+							<span class="ya-share2__counter ya-share2__counter_visible">754</span>
+						</span>
+						<span class="ya-share2__title">ВКонтакте</span>
+					</a>
+				</li>
+				<li class="ya-share2__item ya-share2__item_service_facebook">
+					<a class="ya-share2__link" href="https://www.facebook.com/sharer.php?src=sp&amp;u=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&amp;utm_source=share2" rel="nofollow" target="_blank" title="Facebook">
+						<span class="ya-share2__badge">
+							<span class="ya-share2__icon"></span>
+							<span class="ya-share2__counter ya-share2__counter_visible">346</span>
+						</span>
+						<span class="ya-share2__title">Facebook</span>
+					</a>
+				</li>
+				<li class="ya-share2__item ya-share2__item_service_odnoklassniki">
+					<a class="ya-share2__link" href="https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&amp;st.shareUrl=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&amp;utm_source=share2" rel="nofollow" target="_blank" title="Одноклассники">
+						<span class="ya-share2__badge">
+							<span class="ya-share2__icon"></span>
+							<span class="ya-share2__counter ya-share2__counter_visible">289</span>
+						</span>
+						<span class="ya-share2__title">Одноклассники</span>
+					</a>
+				</li>
+				<li class="ya-share2__item ya-share2__item_service_gplus">
+					<a class="ya-share2__link" href="https://plus.google.com/share?url=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&amp;utm_source=share2" rel="nofollow" target="_blank" title="Google+">
+						<span class="ya-share2__badge">
+							<span class="ya-share2__icon"></span>
+							<span class="ya-share2__counter ya-share2__counter_visible">266</span>
+						</span>
+						<span class="ya-share2__title">Google+</span>
+					</a>
+				</li>
+				<li class="ya-share2__item ya-share2__item_service_twitter">
+					<a class="ya-share2__link" href="https://twitter.com/intent/tweet?text=%D0%91%D0%BB%D0%BE%D0%BA%20%C2%AB%D0%9F%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C%D1%81%D1%8F%C2%BB%20%E2%80%94%20%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0&amp;url=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&amp;utm_source=share2" rel="nofollow" target="_blank" title="Twitter">
+						<span class="ya-share2__badge">
+							<span class="ya-share2__icon"></span>
+						</span>
+						<span class="ya-share2__title">Twitter</span>
+					</a>
+				</li>
+			</ul>
+			<iframe class="ya-share2__iframe" src="https://yastatic.net/share2/v-1.6.0/frame.html?url=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&amp;services=vkontakte%2Cfacebook%2Codnoklassniki%2Cgplus%2Ctwitter%2Cviber%2Cwhatsapp" style="border: 0; display: none;position: absolute; left: -9999px;"></iframe>
+		</div>
+	</div>
+
+</div>

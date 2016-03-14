@@ -8,7 +8,33 @@
 </head>
 <body class="page_news" itemscope itemtype="http://schema.org/WebPage">
 
-<!--#include virtual="_header.shtml"-->
+<header itemscope itemtype="http://schema.org/WPHeader">
+    <!--#include virtual="_menu.shtml?float=false"-->
+    <a href="" class="banner_top margin_bottom wrapper" title="">
+        <img src="_images/header_banner.jpg" alt="" />
+    </a>
+    <section class="floatingInfo__wrapper wrapper clearfix">
+        <div class="floatingInfo paddings_side wrapper">
+            <div class="articleSocials">
+                <div class="ridusLikes">
+                    <div class="ridusLikesButton">
+                        <a href="#" class="ridusLikesButton__link">+</a>
+                        <span>123</span>
+                        <a href="#" class="ridusLikesButton__link">−</a>
+                    </div>
+                </div>
+            </div>
+            <!--#include virtual="_floating-info.shtml"-->
+            <p class="hint">
+                Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
+            </p>
+            <a href="#" class="yellowButton view_backButton" title="назад">
+                &times;
+                <i class="corner"><!-- corner --></i>
+            </a>
+        </div>
+    </section>
+</header>
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 

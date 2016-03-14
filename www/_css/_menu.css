@@ -5,7 +5,7 @@
 	background: #000000;
 	z-index: 99999;
 	color: #fff;
-    position: fixed;
+    position: absolute;
     /*-webkit-backface-visibility: hidden;*/
     top: 0;
     /*transition: top 0.05s ease-in-out;*/
@@ -14,6 +14,11 @@
 .headerPanel.view_hidden {
     top: -60px;
 }
+
+.floatingPanel {
+    position: fixed;
+}
+
 
 @media screen and (max-width: 1040px) {
 	.page_home .headerPanel { 

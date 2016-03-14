@@ -34,6 +34,7 @@
 				<span class="countersBlock__item view_count3">
 					67 <i class="icon"><!-- icon --></i>
 				</span>
+				<a href="#" class="countersBlock__item readLater">читать позже <i class="icon"><!-- icon --></i></a>
 			</div>	
 			<!-- <a class="readAll" href="authors.shtml" title="">Читать все авторские колонки</a> -->
 		</div>
@@ -64,6 +65,7 @@
 				<span class="countersBlock__item view_count3">
 					67 <i class="icon"><!-- icon --></i>
 				</span>
+				<a href="#" class="countersBlock__item readLater">читать позже <i class="icon"><!-- icon --></i></a>
 			</div>	
 			<!-- <a class="readAll" href="authors.shtml" title="">Читать все авторские колонки</a> -->
 		</div>
@@ -94,6 +96,7 @@
 				<span class="countersBlock__item view_count3">
 					67 <i class="icon"><!-- icon --></i>
 				</span>
+				<a href="#" class="countersBlock__item readLater">читать позже <i class="icon"><!-- icon --></i></a>
 			</div>	
 			<!-- <a class="readAll" href="authors.shtml" title="">Читать все авторские колонки</a> -->
 		</div>

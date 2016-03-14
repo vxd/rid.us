@@ -133,7 +133,8 @@
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-  opacity: 0.4;
+  /*opacity: 0.4;*/
+  display: none;
   cursor: auto;
   pointer-events: none;
 }

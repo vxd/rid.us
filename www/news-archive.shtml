@@ -8,7 +8,17 @@
 </head>
 <body class="page_news" itemscope itemtype="http://schema.org/WebPage">
 
-<!--#include virtual="_header.shtml"-->
+<header itemscope itemtype="http://schema.org/WPHeader">
+    <!--#include virtual="_menu.shtml?float=true"-->
+    <a href="" class="banner_top wrapper" title="">
+        <img src="_images/header_banner.jpg" alt="" />
+    </a>
+    <section class="globalInfo wrapper paddings_side clearfix">
+        <!--#include virtual="_dayinfo.shtml"-->
+        <!--#include virtual="_yellowbutton.shtml?text=1"-->
+        <!--#include virtual="_socials-header.shtml"-->
+    </section>
+</header>
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix">
 
@@ -16,413 +26,124 @@
     	Новости 
     </h1>
 
-    <div class="table brickrows_3">
+    <div class="table brickrows_3 clearfix">
         <div class="table__mainColumn">
 
-        <ul class="newsList">
-            <li class="newsList__item">
-                <span class="newsList__date">18:34</span>
-                <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">18:34</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">18:34</span>
-                <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">18:34</span>
-                <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили Минкульт</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">18:34</span>
-                <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">18:34</span>
-                <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили Минкульт</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">18:34</span>
-                <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">18:34</span>
-                <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили Минкульт</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">21:55</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">21:55</span>
-                <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">21:55</span>
-                <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">вчера, 21:55</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">вчера, 21:55</span>
-                <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">вчера, 21:55</span>
-                <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">вчера, 21:55</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">вчера, 21:55</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">вчера, 21:55</span>
-                <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">вчера, 21:55</span>
-                <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-        </ul>
+            <ul class="newsList">
+                <li class="newsList__item">
+                    <span class="newsList__date">18:34</span>
+                    <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">18:34</span>
+                    <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">18:34</span>
+                    <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">18:34</span>
+                    <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили Минкульт</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">18:34</span>
+                    <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">18:34</span>
+                    <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили Минкульт</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">18:34</span>
+                    <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">18:34</span>
+                    <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили Минкульт</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">21:55</span>
+                    <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">21:55</span>
+                    <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">21:55</span>
+                    <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">вчера, 21:55</span>
+                    <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">вчера, 21:55</span>
+                    <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">вчера, 21:55</span>
+                    <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">вчера, 21:55</span>
+                    <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">вчера, 21:55</span>
+                    <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">вчера, 21:55</span>
+                    <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">вчера, 21:55</span>
+                    <a class="newsList__link" href="#" title="">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">28 августа, 17:42</span>
+                    <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">28 августа, 17:42</span>
+                    <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">28 августа, 17:42</span>
+                    <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">28 августа, 17:42</span>
+                    <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">28 августа, 17:42</span>
+                    <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">28 августа, 17:42</span>
+                    <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
+                </li>
+                <li class="newsList__item">
+                    <span class="newsList__date">28 августа, 17:42</span>
+                    <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
+                </li>
+            </ul>
 
-        <div class="bricks__wrapper padding_top">
-            <h2>Читайте также:</h2>
-            <div class="clearfix">
-                <div class="brick view_mini">
-                    <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
-                </div>
-                <div class="brick view_mini">
-                    <!--#include virtual="bricks/mini.shtml?image=1&data=1&label=11"-->
-                </div>
-                <div class="brick view_mini">
-                    <!--#include virtual="bricks/mini.shtml?image=2&data=2&label=12"-->
-                </div>
-                <div class="brick view_mini">
-                    <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
-                </div>
-                <div class="brick view_mini hideOn_1024 hideOn_768">
-                    <!--#include virtual="bricks/mini.shtml?image=2&data=2&label=12"-->
-                </div>
-                <div class="brick view_mini hideOn_1024 hideOn_768">
-                    <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
-                </div>
-            </div>
-        </div>
+            <a class="stickedSlideHere" data-stickedSlideHere="1"></a>
 
-        <ul class="newsList">
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-        </ul>
+            <!--#include virtual="_news-maincolumn.shtml"-->
 
-        <div class="bricks__wrapper padding_top">
-            <h2>Читайте также:</h2>
-            <div class="bricks__wrapper clearfix">
-                <div class="brick view_mini">
-                    <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
-                </div>
-                <div class="brick view_mini">
-                    <!--#include virtual="bricks/mini.shtml?image=1&data=1&label=11"-->
-                </div>
-                <div class="brick view_mini">
-                    <!--#include virtual="bricks/mini.shtml?image=2&data=2&label=12"-->
-                </div>
-                <div class="brick view_mini">
-                    <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
-                </div>
-                <div class="brick view_mini hideOn_1024 hideOn_768">
-                    <!--#include virtual="bricks/mini.shtml?image=2&data=2&label=12"-->
-                </div>
-                <div class="brick view_mini hideOn_1024 hideOn_768">
-                    <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
-                </div>
-            </div>
-        </div>
+            <a class="stickedSlideHere" data-stickedSlideHere="2"></a>
 
-        <ul class="newsList">
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-            <li class="newsList__item">
-                <span class="newsList__date">28 августа, 17:42</span>
-                <a class="newsList__link" href="#" title="">В Молдавии утвержден новый премьер-министр</a>
-            </li>
-        </ul>
+            <!--#include virtual="_news-maincolumn.shtml"-->
 
         </div>
         <div class="table__sideColumn hideOn_768">
-            <div class="brick view_banner">
-                <!--#include virtual="bricks/banner-mts.shtml"-->
-            </div>
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2x&label=12&count1=120&count2=35&count3=3812"-->
-            </div>
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2x&label=12&count1=120&count2=35&count3=3812"-->
-            </div>
 
-            <h2>Читайте также:</h2>
-
-            <div class="brick view_floatText">
-                <!--#include virtual="bricks/mini.shtml?image=1&data=1&label=11"-->
-            </div>
-            <div class="brick view_floatText">
-                <!--#include virtual="bricks/mini.shtml?image=2&data=3&label=13"-->
-            </div>
-            <div class="brick view_floatText">
-                <!--#include virtual="bricks/mini.shtml?image=1&data=2&label=12"-->
-            </div>
-            <div class="brick view_floatText">
-                <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
-            </div>
- 
-             <div class="brick view_banner">
-                <!--#include virtual="bricks/banner-mts.shtml"-->
-            </div>
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2x&label=12&count1=120&count2=35&count3=3812"-->
-            </div>
-            <div class="brick">
-                <!--#include virtual="bricks/news-simple.shtml?image=3&data=2x&label=12&count1=120&count2=35&count3=3812"-->
-            </div>
-
-            <h2>Читайте также:</h2>
-
-            <div class="brick view_floatText">
-                <!--#include virtual="bricks/mini.shtml?image=1&data=1&label=11"-->
-            </div>
-            <div class="brick view_floatText">
-                <!--#include virtual="bricks/mini.shtml?image=2&data=3&label=13"-->
-            </div>
-            <div class="brick view_floatText">
-                <!--#include virtual="bricks/mini.shtml?image=1&data=2&label=12"-->
-            </div>
-            <div class="brick view_floatText">
-                <!--#include virtual="bricks/mini.shtml?image=3&data=3&label=13"-->
-            </div>
+            <!--#include virtual="_news-sidecolumn.shtml"-->
           
         </div>
       </div>
@@ -438,7 +159,11 @@
 
 
 <section class="pageBottom contentBackground_white padding_top wrapper clearfix">
-	<!--#include virtual="_more-button.shtml"-->
+    <a class="moreButton" href="#" title="" data-url="_news-maincolumn.shtml" data-target="table__mainColumn" >
+        <span>
+            Смотреть больше новостей
+        </span>
+    </a>
 	<hr>
 </section>
 

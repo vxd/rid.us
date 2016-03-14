@@ -1,4 +1,23 @@
+
+<!-- //// определяем переменные -->  
+
+<!--#set var="float" value="" -->
+
+<!-- //// извлекаем из параметров урла --> 
+
+<!--#if expr="\"$QUERY_STRING\" = /float=([a-zA-Z0-9]+)/" -->
+<!--#set var="float" value="$1" -->
+<!--#endif -->
+
+<!-- //// конец --> 
+
+
+<!--#if expr="$float = false" -->
 <div class="headerPanel">
+<!--#endif -->
+<!--#if expr="$float = true" -->
+<div class="headerPanel floatingPanel">
+<!--#endif -->
 
 	<div class="wrapper paddings_side clearfix">
 	

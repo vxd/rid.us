@@ -8,8 +8,17 @@
 </head>
 <body class="page_authors" itemscope itemtype="http://schema.org/WebPage">
 
-
-<!--#include virtual="_header.shtml"-->
+<header itemscope itemtype="http://schema.org/WPHeader">
+    <!--#include virtual="_menu.shtml?float=true"-->
+    <a href="" class="banner_top wrapper" title="">
+        <img src="_images/header_banner.jpg" alt="" />
+    </a>
+    <section class="globalInfo wrapper paddings_side clearfix">
+        <!--#include virtual="_dayinfo.shtml"-->
+        <!--#include virtual="_yellowbutton.shtml?text=1"-->
+        <!--#include virtual="_socials-header.shtml"-->
+    </section>
+</header>
 
 <section class="wrapper contentBackground_white paddings_side padding_top clearfix errorPages">
 

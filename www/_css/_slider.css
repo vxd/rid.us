@@ -142,6 +142,7 @@
     left: 0;
     right: 0;
     padding: 0 16px 30px;
+    z-index: 15;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;

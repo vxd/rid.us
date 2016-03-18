@@ -1026,66 +1026,10 @@ blockquote b {
 
 
 
-.table {
-/*	display: table;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;*/
-}
-/*.table__sideColumn,
-.table__mainColumn {
-	display: table-cell;
-	vertical-align: top;
-}
-
-
-.table__sideColumn {
-	width: 300px;
-	position: relative;
-}
-.table__sideColumn .brick {
-	margin-right: 0;
-	margin-bottom: 20px;
-	width: 100%;
-}*/
-
-
-/*.table__sideColumn:last-child {
-	padding-left: 20px;
-}
-.table__sideColumn:first-child {
-	padding-right: 20px;
-}*/
-/*@media screen and (max-width: 1023px) {
-	.table__sideColumn {
-		width: 270px;
-	}
-}*/
-/*@media screen and (min-width: 1280px) {
-	.table__sideColumn {
-		width: 295px;
-	}
-	.table__sideColumn:last-child {
-		padding-left: 16px;
-	}
-	.table__sideColumn:first-child {
-		padding-right: 16px;
-	}
-}*/
-
-
-
-
-
 
 
 
 @media screen and (max-width: 1023px) {
-	/*.table {
-		display: block;  обязательно, т.к. будет неправильно считаться ширина слайдера в таблице в % 
-	}*/
 	.videoSection .table__mainColumn {
 		display: table-cell;
 	}

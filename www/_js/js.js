@@ -770,13 +770,15 @@ $(function() {
 	        loop: true,
 	        // resistanceRatio: 0,
 	        nested: true,
-	        autoplay: 9000,
-	        autoplayDisableOnInteraction: false,
+	        autoplay: 1000,
+	        autoplayDisableOnInteraction: true,
 	        // observeParents: true,
 	        // observer: true,
 	        // setWrapperSize: true,
 	    });
-
+	    $(this).hover(function(){
+	    	imagesSlider.stopAutoplay();
+	    })
 		// var doingResize = false;
 
 		// $(window).resize(function(event){
@@ -1087,7 +1089,7 @@ $(function() {
 				container.html( html );
 
 				container.find(".readLater").on('click', function(){
-					$(this).toggleClass("view_read");
+					$(this).toggleClass("view_saved");
 					return false;
 				});
 			})
@@ -1157,7 +1159,7 @@ $(function() {
 				container.html( html );
 
 				container.find(".readLater").on('click', function(){
-					$(this).toggleClass("view_read");
+					$(this).toggleClass("view_saved");
 					return false;
 				});
 			})
@@ -1238,8 +1240,9 @@ $(function() {
 	// читать позже
 	// ======================================
 
-	$(".readLater").on('click', function(){
-		$(this).toggleClass("view_read");
+	$(".readLater, .saveButton").on('click', function(){
+		$(this).toggleClass("view_saved");
+		$(this).find("span").toggleClass("state_hidderHidden");
 		return false;
 	});
 

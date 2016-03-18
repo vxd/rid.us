@@ -171,12 +171,14 @@
 	color: #c64a1b;
 	border-bottom-color: #c64a1b;
 }
+.slider .swiper-slide > .clickable,
 .brick.aLaSlideImage > .clickable,
 .brick__image .clickable {
     -webkit-transition: background .15s ease-out;
     -moz-transition: 	background .15s ease-out;
     transition: 		background .15s ease-out;
 }
+.slider .swiper-slide:hover > .clickable,
 .brick.aLaSlideImage:hover > .clickable,
 .brick.view_floatText:hover .brick__image .clickable,
 .brick:hover > .brick__image .clickable {
@@ -569,6 +571,7 @@
     -moz-transition:    all .1s ease-in-out;
     transition:         all .1s ease-in-out;
 }
+.slider .swiper-slide:hover .countersBlock__item.readLater,
 .brick:hover .countersBlock__item.readLater {
 	opacity: .5;
 }
@@ -589,6 +592,7 @@
     background-position: -48px -301px;
     opacity: 1;
 }
+.slider .countersBlock__item.readLater .icon,
 .aLaSlideImage .countersBlock__item.readLater .icon,
 .contentBackground_deepblue .countersBlock__item.readLater .icon,
 .contentBackground_dark .countersBlock__item.readLater .icon,
@@ -609,20 +613,22 @@
     background: rgba(0,0,0,.7);
 }
 
-.countersBlock__item.readLater.view_read:hover,
-.countersBlock__item.readLater.view_read {
+.countersBlock__item.readLater.view_saved:hover,
+.countersBlock__item.readLater.view_saved {
 	opacity: 1 !important;
 	background: #c64a1b;
 	color: #fff;
 }
-.countersBlock__item.readLater.view_read .icon {
+.countersBlock__item.readLater.view_saved .icon {
     background-position: -48px -301px;
 	opacity: 1 !important;
 }
 
+.slider .countersBlock__item.readLater,
 .aLaSlideImage .countersBlock__item.readLater {
 	color: #fff;
 }
+.slider .countersBlock__item.readLater:hover,
 .aLaSlideImage .countersBlock__item.readLater:hover {
 	opacity: 1;
     background: rgba(50,50,50,.7);

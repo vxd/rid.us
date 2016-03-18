@@ -16,7 +16,7 @@
     <section class="floatingInfo__wrapper wrapper clearfix">
         <div class="floatingInfo paddings_side wrapper">
             <div class="articleSocials">
-                <div class="ridusLikes">
+                <div class="ridusLikes view_sideBorder">
                     <div class="ridusLikesButton">
                         <a href="#" class="ridusLikesButton__link">+</a>
                         <span>123</span>
@@ -25,9 +25,10 @@
                 </div>
             </div>
             <!--#include virtual="_floating-info.shtml"-->
-            <p class="hint">
-                Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
-            </p>
+            <a href="#" class="saveButton">
+                <span>Сохранить</span>
+                <span class="state_hidderHidden">Сохранено</span>
+            </a>
             <a href="#" class="yellowButton view_backButton" title="назад">
                 &times;
                 <i class="corner"><!-- corner --></i>
@@ -150,7 +151,7 @@
                 </div>
                 
                 <div class="articleSocials__wrapper clearfix">
-                    <div class="ridusLikes">
+                    <div class="ridusLikes view_sideBorder">
                         <p class="hint">
                             Нам важно ваше мнение!
                         </p>

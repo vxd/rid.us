@@ -54,7 +54,7 @@
                 </div>
                 
                 <div class="articleSocials__wrapper clearfix">
-                    <div class="ridusLikes">
+                    <div class="ridusLikes view_sideBorder">
                         <p class="hint">
                             Нам важно ваше мнение!
                         </p>

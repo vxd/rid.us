@@ -1053,6 +1053,7 @@ $(function() {
 		var page = $(this).attr("data-url");
 		var target = $(this).attr("data-target");
 		var wrapper =  $(this).attr("data-wrapper");
+		var _this = $(this);
 
 		var bgClass = $.grep(this.className.split(" "), function(v, i){
 		   return v.indexOf('contentBackground') === 0;
@@ -1073,6 +1074,9 @@ $(function() {
 		.done(function( html ) {
 			container.html(html);
 			$("#" + wrapper).removeClass(currentClass).addClass(bgClass);
+
+			$(".pageTabs__item.state_current").removeClass("state_current");
+			_this.addClass("state_current");
 		})
 		.always(function() {
 			// console.log( "complete" );

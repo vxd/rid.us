@@ -1274,6 +1274,8 @@ blockquote b {
 	font-weight: bold;
 	padding: 20px 8px;
 	vertical-align: middle;
+	box-shadow: 0 2px 0 rgba(255,255,255,.45);
+	position: relative;
 
 	-webkit-transition: opacity .2s ease;
     -moz-transition: opacity .2s ease;
@@ -1288,4 +1290,29 @@ blockquote b {
 	cursor: pointer;
 	opacity: .9;
 }
-
+.pageTabs__item.state_current {
+	box-shadow: 0 -5px 0 #ffd051;
+}
+.pageTabs__item.state_current:before,
+.pageTabs__item.state_current:after {
+	display: block;
+	position: absolute;
+	content: "";
+	width: 2px;
+	background: #fff;
+	opacity: .45;
+	top: 0;
+	bottom: -2px;
+}
+.pageTabs__item.state_current:before {
+	left: 0;
+}
+.pageTabs__item.state_current:first-child:before {
+	display: none;
+}
+.pageTabs__item.state_current:after {
+	right: 0;
+}
+.pageTabs__item.state_current:last-child:after {
+	display: none;
+}

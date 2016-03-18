@@ -214,7 +214,7 @@
 
     <table class="wrapper">
     	<tr>
-    		<td class="pageTabs__item contentBackground_deepblue" data-url="_page-1.shtml" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
+    		<td class="pageTabs__item contentBackground_deepblue state_current" data-url="_page-1.shtml" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
 		            технологии
     		</td>
     		<td class="pageTabs__item contentBackground_red" data-url="_page-2.shtml" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">

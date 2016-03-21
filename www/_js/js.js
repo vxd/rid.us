@@ -770,15 +770,23 @@ $(function() {
 	        loop: true,
 	        // resistanceRatio: 0,
 	        nested: true,
-	        autoplay: 1000,
+	        autoplay: 9000, // скорость
 	        autoplayDisableOnInteraction: true,
 	        // observeParents: true,
 	        // observer: true,
 	        // setWrapperSize: true,
 	    });
-	    $(this).hover(function(){
+
+	    // по наведению - остановим
+	    $(this).mouseover(function(){
 	    	imagesSlider.stopAutoplay();
-	    })
+	    });
+	    $(this).mouseout(function(){
+	    	imagesSlider.startAutoplay();
+	    });
+
+
+
 		// var doingResize = false;
 
 		// $(window).resize(function(event){

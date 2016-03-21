@@ -1,320 +1,25 @@
-.jw-icon {
-    font-family: 'jw-icons';
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none;
-    background-color: transparent;
-    font-variant: normal;
-    -webkit-font-feature-settings: "liga";
-    -moz-font-feature-settings: "liga=1";
-    -moz-font-feature-settings: "liga";
-    -ms-font-feature-settings: "liga" 1;
-    -o-font-feature-settings: "liga";
-    font-feature-settings: "liga";
-    -moz-osx-font-smoothing: grayscale;
-    width: 30px;
-    min-width: auto;
-}
-.jw-skin-translation .jw-background-color {
-	background: transparent;
-}
-.jw-skin-translation .jw-controlbar {
-	background: rgba(0,0,0,0.7);
-    height: 42px;
-    display: table;
-    padding: 0;
-    width: 100%;
-}
-/*.jw-skin-translation.jw-state-playing  .jw-controlbar {
-    display: table !important;
-}*/
 
-.fakeControls {
-    display: none;
+
+.translationControls {
+    height: 42px;
+    cursor: pointer;
 }
-.state_translationMinimized .fakeControls {
+.state_translationMinimized .translationControls {
     display: block;
 }
-.state_translationMinimized .fakeControls .jw-icon {
-    margin-top: 4px;
-}
-
-.jw-skin-translation .jw-group {
-    vertical-align: middle;
-    height: 42px;
-}
-
-
-.jw-skin-translation .jw-playlist {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.jw-skin-translation .jw-playlist-container {
-    left: -43%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.jw-skin-translation .jw-playlist-container .jw-option {
-    border-bottom: 1px solid #444;
-}
-.jw-skin-translation .jw-playlist-container .jw-option:hover, .jw-skin-translation .jw-playlist-container .jw-option.jw-active-option {
-    background-color: black;
-}
-.jw-skin-translation .jw-playlist-container .jw-option:hover .jw-label {
-    color: #c64a1b;
-}
-.jw-skin-translation .jw-playlist-container .jw-icon-playlist {
-    margin-left: 0;
-}
-.jw-skin-translation .jw-playlist-container .jw-label .jw-icon-play {
-    color: #c64a1b;
-}
-.jw-skin-translation .jw-playlist-container .jw-label .jw-icon-play:before {
-    padding-left: 0;
-}
-
-
-.jw-skin-translation .jw-tooltip-title {
-    background-color: #000;
-    color: #fff;
-}
-.jw-skin-translation .jw-text {
-    color: #fff;
-}
-.jw-skin-translation .jw-button-color {
-    color: #fff;
-}
-.jw-skin-translation .jw-button-color:hover {
-    color: #c64a1b;
-}
-.jw-skin-translation .jw-toggle {
-    color: #c64a1b;
-}
-.jw-skin-translation .jw-toggle.jw-off {
-    color: #fff;
-}
-.jw-skin-translation .jw-controlbar .jw-icon:before {
-    padding: 0 .6em;
-}
-.jw-skin-translation .jw-text-elapsed, 
-.jw-skin-translation .jw-text-duration {
-    padding: 0 .7em;
-    display: none;
-}
-.jw-skin-translation .jw-controlbar .jw-icon-prev:before {
-    padding-right: .25em;
-}
-.jw-skin-translation .jw-controlbar .jw-icon-playlist:before {
-    padding: 0 .45em;
-}
-.jw-skin-translation .jw-controlbar .jw-icon-next:before {
-    padding-left: .25em;
-}
-.jw-skin-translation .jw-icon-prev, .jw-skin-translation .jw-icon-next {
-    font-size: .7em;
-}
-.jw-skin-translation .jw-icon-prev:before {
-    border-left: 1px solid #666;
-}
-.jw-skin-translation .jw-icon-next:before {
-    border-right: 1px solid #666;
-}
-.jw-skin-translation .jw-icon-display {
-    color: #fff;
-}
-.jw-skin-translation .jw-icon-display:before {
-    padding-left: 0;
-}
-
-
-.jw-skin-translation .jw-display-icon-container {
-    border-radius: 50%;
-    border: 2px solid #fff;
-    background: transparent !important;
-}
-.jw-skin-translation .jw-display-icon-container:hover {
-    border: 2px solid #c64a1b;
-    background: transparent;
-}
-
-.jw-skin-translation .jw-rail {
-    background-color: #fff;
-    box-shadow: none;
-}
-.jw-skin-translation .jw-buffer {
-    background-color: #fff;
-}
-.jw-skin-translation .jw-progress {
-    background: #c64a1b;
-}
-.jw-skin-translation .jw-knob {
-    width: 9px;
-    height: 9px;
-    background-color: #c64a1b;
-    border-radius: 50%;
-}
 
 
 
 
-/*.jw-skin-translation .jw-slider-horizontal .jw-slider-container {
-    height: .95em;
-}
-.jw-skin-translation .jw-slider-horizontal .jw-rail, 
-.jw-skin-translation .jw-slider-horizontal .jw-buffer, 
-.jw-skin-translation .jw-slider-horizontal .jw-progress {
-    height: .2em;
-    border-radius: 0;
-}
-.jw-skin-translation .jw-slider-horizontal .jw-knob {
-    top: -0.19999999999999998em;
-}
-.jw-skin-translation .jw-slider-horizontal .jw-cue {
-    top: -0.04999999999999999em;
-    width: .3em;
-    height: .3em;
-    background-color: #fff;
-    border-radius: 50%;
-}
-*/
-
-.jw-skin-translation .jw-slider-vertical .jw-rail, 
-.jw-skin-translation .jw-slider-vertical .jw-buffer, 
-.jw-skin-translation .jw-slider-vertical .jw-progress {
-    width: .2em;
-}
-.jw-skin-translation .jw-volume-tip {
-    width: 100%;
-    left: -45%;
-    padding-bottom: 0;
-}
-
-
-.jw-skin-translation .jw-text-duration {
-    color: #fff;
-}
-/*.jw-skin-translation .jw-controlbar-right-group .jw-icon-tooltip:before, 
-.jw-skin-translation .jw-controlbar-right-group .jw-icon-inline:before {
-    border-left: 1px solid #666;
-}*/
-.jw-skin-translation .jw-controlbar-right-group .jw-icon-inline:first-child:before {
-    border: 0;
-}
-.jw-controlbar-right-group {
-    padding-right: 35px;
-    text-align: right;
-}
-
-
-.jw-skin-translation .jw-dock .jw-dock-button {
-    border-radius: 50%;
-    border: 1px solid #333;
-}
-.jw-skin-translation .jw-dock .jw-overlay {
-    border-radius: 2.5em;
-}
-.jw-skin-translation .jw-icon-tooltip .jw-active-option {
-    background-color: #c64a1b;
-    color: #fff;
-}
-/*.jw-skin-translation .jw-icon-volume {
-    min-width: 2.6em;
-}*/
-.jw-skin-translation .jw-time-tip, 
-.jw-skin-translation .jw-menu, 
-.jw-skin-translation .jw-volume-tip, 
-.jw-skin-translation .jw-skip {
-    border: none;
-}
-.jw-skin-translation .jw-time-tip {
-    padding: .2em;
-    bottom: .2em;
-}
-.jw-skin-translation .jw-menu, 
-.jw-skin-translation .jw-volume-tip {
-    bottom: .5em;
-}
-.jw-skin-translation .jw-skip {
-    padding: .4em;
-    border-radius: 1.75em;
-}
-.jw-skin-translation .jw-skip .jw-text, 
-.jw-skin-translation .jw-skip .jw-icon-inline {
-    color: #fff;
-    line-height: 1.75em;
-}
-.jw-skin-translation .jw-skip.jw-skippable:hover .jw-text, 
-.jw-skin-translation .jw-skip.jw-skippable:hover .jw-icon-inline {
-    color: #c64a1b;
-}
-.jw-skin-translation.jw-flag-touch .jw-controlbar .jw-icon:before, 
-.jw-skin-translation.jw-flag-touch .jw-text-elapsed, 
-.jw-skin-translation.jw-flag-touch .jw-text-duration {
-    padding: 0 .35em;
-}
-.jw-skin-translation.jw-flag-touch .jw-controlbar .jw-icon-prev:before {
-    padding: 0 .125em 0 .7em;
-}
-.jw-skin-translation.jw-flag-touch .jw-controlbar .jw-icon-next:before {
-    padding: 0 .7em 0 .125em;
-}
-.jw-skin-translation.jw-flag-touch .jw-controlbar .jw-icon-playlist:before {
-    padding: 0 .225em;
-}
-
-
-
-
-
-
-
-.jw-controlbar-center-group {
-    display: none;
-}
-
-
-
-.jw-icon-playback {
-    margin-left: 4px;
-    margin-right: 4px;
-    width: auto;
-}
-.jw-icon-playback:before {
-    color: #000;
-    background: #ffd051;
+.translation__type {
     display: inline-block;
-    width: 34px;
-    height: 34px;
-    padding: 0px !important;
-}
-.jw-icon-playback:hover:before {
-    color: #c64a1b;
-}
-.jw-icon-playback:after {
-    display: inline-block;
-    height: 30px;
-    content: "ОНЛАЙН ТРАНСЛЯЦИЯ";
     font-size: 14px;
     color: #fff;
+    text-transform: uppercase;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    white-space: normal;
-    width: auto;
-    margin-left: 8px;
+    margin: 14px 0 0 15px;
 }
-
-
-.jw-controlbar .jw-icon {
-    font-size: 16px;
-    height: 34px;
-}
-
-.jw-icon-hd {
-    display: none;
-}
-
-
-
 
 
 
@@ -322,20 +27,18 @@
 @media screen and (max-width: 1279px) {
     .view_withTranslation .todayMainNewsList__link {
         font-size: 16px;
-        /*font-weight: normal;*/
-        /*font-family: 'Roboto', sans-serif;*/
         line-height: 1.2;
+    }
+    .todayMainNewsList {
+        height: calc(95% - 48px);
+        margin-top: 2%;
     }
 }
 
 .translation__wrapper {
     position: relative;
-    height: 190px;
-    background: #111;
+    background: #131313;
     overflow: hidden;
-}
-.view_withTranslation.state_translationMinimized .translation__wrapper {
-    height: 42px;
 }
 .view_withTranslation .brick {
     margin: 0;
@@ -349,10 +52,16 @@
         margin-bottom: 22px;
     }
     .view_withTranslation .brick {
-        height: 188px;  
+        height: 167px;  
     }
     .view_withTranslation.state_translationMinimized .brick {
         height: 335px;
+    }
+    .view_withTranslation .todayMainNewsList__item:last-child {
+        display: none;
+    }
+    .view_withTranslation.state_translationMinimized .todayMainNewsList__item:last-child {
+        display: list-item;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -364,11 +73,11 @@
         height: 822px; /* = x2 + margin */
     }
     .view_withTranslation .brick {
-        height: 294px;  
+        height: 283px;  
         margin-bottom: 22px;
     }
     .view_withTranslation.state_translationMinimized .brick.view_yellow {
-        height: 442px;  
+        height: 453px;  
     }
 }
 @media screen and (min-width: 1280px) {
@@ -379,7 +88,7 @@
         height: 816px;  /* = x2 + margin */
     }
     .view_withTranslation .brick {
-        height: 610px;  
+        height: 589px;  
     }
     .view_withTranslation.state_translationMinimized .brick {
         height: 758px;  
@@ -396,11 +105,10 @@
 
 
 .translation__flip {
-    position: absolute;
-    bottom: 4px;
-    right: 4px;
-    width: 34px;
-    height: 34px;
+    float: right; 
+    width: 42px;
+    height: 42px;
+    position: relative;
 }
 .translation__flip:before {
     position: absolute;
@@ -409,23 +117,20 @@
     height: 11px;
     border-top: 2px solid #fff; 
     border-left: 2px solid #fff; 
-    top: 14px;
-    left: 11px;
+    left: 9px;
+    top: 18px;
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
-.fakeControls .translation__flip:before {
-    top: 8px;
+.state_translationMinimized .translation__flip:before {
+    top: 12px;
     -moz-transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
-
 }
-.state_translationMinimized .translation__wrapper,
 .state_translationMinimized .translationPlayer {
-    height: 42px;
+    height: 0px;
 }
 
 .state_translationMinimized .jw-skin-translation .jw-controlbar {

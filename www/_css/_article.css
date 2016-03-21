@@ -97,8 +97,8 @@
 	/*width: 100%;*/
 }
 .article__image {
-	width: 100%;
-	height: 400px;
+	width: 100%; /* позаботьтесь, чтобы изображение было подходящих пропорций */
+	/*height: 400px;*/
 }
 .articlePhoto__info {
 	font-size: 14px;

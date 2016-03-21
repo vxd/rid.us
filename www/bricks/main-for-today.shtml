@@ -3,13 +3,13 @@
 </h4>
 <ul class="todayMainNewsList">
 	<li class="todayMainNewsList__item">
-		<a class="todayMainNewsList__link" href="#" title="">Кадырова пытались убить взорвавшие «Домодедово» террористы</a>
-	</li>
-	<li class="todayMainNewsList__item">
-		<a class="todayMainNewsList__link" href="#" title="">Украина сравнила французских депутатов в Крыму с варварами</a>
+		<a class="todayMainNewsList__link" href="#" title="">Кадырова пытались убить взорвавшие «Домодедово»</a>
 	</li>
 	<li class="todayMainNewsList__item">
 		<a class="todayMainNewsList__link" href="#" title="">Зацепер парализовал движение электричек в Москве
 		</a>
+	</li>
+	<li class="todayMainNewsList__item">
+		<a class="todayMainNewsList__link" href="#" title="">Украина сравнила депутатов в Крыму с варварами</a>
 	</li>
 </ul>

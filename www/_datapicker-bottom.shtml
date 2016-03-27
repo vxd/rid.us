@@ -1,4 +1,8 @@
-		<label>показать новости с</label>
-		<input type="text" class="datepicker" placeholder="чч/мм/гггг">
-		<label>по</label>
-		<input type="text" class="datepicker" placeholder="чч/мм/гггг">
+<label>показать новости с</label>
+<input type="text" class="datepicker" placeholder="чч/мм/гггг">
+<label>по</label>
+<input type="text" class="datepicker" placeholder="чч/мм/гггг">
+<a href="#" class="yellowButton">
+	Показать
+	<i class="corner"></i>
+</a>

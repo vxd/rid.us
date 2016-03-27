@@ -130,7 +130,7 @@
                 <!-- заменить на картинку -->
                 <div class="bricks__wrapper padding_bottom clearfix">
                     <div class="brick aLaSlideImage">
-                        <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
+                        <!--#include virtual="bricks/alaslideimage.shtml?label=true&image=3"-->
                     </div>
 
                     <div class="brick hideOn_1024 hideOn_768">

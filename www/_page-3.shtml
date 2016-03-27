@@ -3,7 +3,7 @@
 		        <div class="bricks__wrapper">
 
 		            <div class="brick aLaSlideImage">
-				        <!--#include virtual="bricks/alaslideimage.shtml?image=1"-->
+				        <!--#include virtual="bricks/alaslideimage.shtml?label=true&image=1"-->
 		            </div>
 
 		            <div class="brick">

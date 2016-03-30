@@ -322,6 +322,7 @@ $(function() {
 	//     lastScrollTop = st;
 	// }
 
+	var floatingBlockSpace;
 
 
 	if ($('.floatingPanel').length) {
@@ -342,7 +343,7 @@ $(function() {
 		var lastScrollTop = 0;
 		var currentScrollTop;
 		// var docHeight = $(document).height();
-		var floatingBlockSpace = 80;
+		floatingBlockSpace = 80;
 
 		// для десктопов
 		if (clickHandler == "click") {
@@ -452,7 +453,7 @@ $(function() {
 		var yDown = null;
 		var lastScrollTop = 0;
 		var currentScrollTop;
-		var floatingBlockSpace = 100;
+		floatingBlockSpace = 100;
 
 		// для десктопов
 		if (clickHandler == "click") {

@@ -23,21 +23,21 @@
 		<img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt="">
 		<!--#if expr="$label = 'true'" -->
 		<span class="brick__fullscreenLabel"></span>
-		<span class="aLaSlideImage__number">+12</span>
+		<span class="photoNumber">+12</span>
 		<!--#endif -->
 	<!--#endif -->
 	<!--#if expr="$image = 2" -->
 		<img src="http://www.ridus.ru/images/2015/12/1/340559/in_article_e6d5d3c187.jpg" alt="">
 		<!--#if expr="$label = 'true'" -->
 		<span class="brick__fullscreenLabel"></span>
-		<span class="aLaSlideImage__number">+145</span>
+		<span class="photoNumber">+145</span>
 		<!--#endif -->
 	<!--#endif -->
 	<!--#if expr="$image = 3" -->
 		<img src="https://www.ridus.ru/images/2016/3/9/374241/in_article_6e0fbfdc98.jpg" alt="">
 		<!--#if expr="$label = 'true'" -->
 		<span class="brick__fullscreenLabel"></span>
-		<span class="aLaSlideImage__number">+8</span>
+		<span class="photoNumber">+8</span>
 		<!--#endif -->
 	<!--#endif -->
 </a>

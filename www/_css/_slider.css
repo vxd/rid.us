@@ -98,7 +98,7 @@
     }
 }
 
-.aLaSlideImage__number {
+.photoNumber {
     position: absolute;
     color: #fff;
     font-weight: 100;
@@ -120,7 +120,7 @@
 .aLaSlideImage:hover .brick__fullscreenLabel {
     background: rgba(0,0,0,.4);
 }
-.aLaSlideImage:hover .aLaSlideImage__number {
+.aLaSlideImage:hover .photoNumber {
     background: rgba(0,0,0,0);
     /*top: 86px;*/
     font-size: 40px;
@@ -265,7 +265,7 @@
 }
 .swiper-button-next.swiper-button-disabled {
     background-color: #fff;
-    background-position: 0px -184px;
+    background-position: 0 -184px;
 }
 
 
@@ -275,7 +275,7 @@
 }
 .swiper-button-next {
     float: right;
-    background-position: 0px -184px;
+    background-position: 0 -184px;
     right: 1%;
 }
 @media screen and (min-width: 1430px) {

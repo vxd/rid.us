@@ -7,14 +7,15 @@
 				<a href="#" class="ptotoBlock__image">
 					<img src="http://www.ridus.ru/images/2015/8/17/317903/in_article_454f9c667c.jpg" alt="">
 					<span class="ptotoBlock__description">В медвежьем краю не хотят становиться японцами</span>
+					<span class="photoNumber">+12</span>
 				</a>
-				<h4 class="brick__header view_arrowed" title="">Спецрепортаж</h4>
 			</div>
 
 			<div class="ptotoBlock swiper-slide">
 				<a href="#" class="ptotoBlock__image">
 					<img src="https://www.ridus.ru/images/2015/12/22/344164/in_article_db00fd195d.jpg" alt="">
 					<span class="ptotoBlock__description">Описание в одну строчку</span>
+					<span class="photoNumber">+145</span>
 				</a>
 			</div>
 
@@ -22,14 +23,7 @@
 				<a href="#" class="ptotoBlock__image">
 					<img src="http://www.ridus.ru/images/2015/8/17/317903/in_article_454f9c667c.jpg" alt="">
 					<span class="ptotoBlock__description">В медвежьем краю не хотят становиться японцами</span>
-				</a>
-				<h4 class="brick__header view_arrowed" title="">Спецрепортаж</h4>
-			</div>
-
-			<div class="ptotoBlock swiper-slide">
-				<a href="#" class="ptotoBlock__image">
-					<img src="https://www.ridus.ru/images/2015/12/22/344164/in_article_db00fd195d.jpg" alt="">
-					<span class="ptotoBlock__description">Описание в одну строчку</span>
+					<span class="photoNumber">+10</span>
 				</a>
 			</div>
 
@@ -37,6 +31,15 @@
 				<a href="#" class="ptotoBlock__image">
 					<img src="https://www.ridus.ru/images/2015/12/22/344164/in_article_db00fd195d.jpg" alt="">
 					<span class="ptotoBlock__description">Описание в одну строчку</span>
+					<span class="photoNumber">+8</span>
+				</a>
+			</div>
+
+			<div class="ptotoBlock swiper-slide">
+				<a href="#" class="ptotoBlock__image">
+					<img src="https://www.ridus.ru/images/2015/12/22/344164/in_article_db00fd195d.jpg" alt="">
+					<span class="ptotoBlock__description">Описание в одну строчку</span>
+					<span class="photoNumber">+103</span>
 				</a>
 			</div>
 

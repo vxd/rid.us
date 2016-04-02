@@ -29,6 +29,10 @@
 .ptotoBlock__image:hover {
 	opacity: .83;
 }
+.ptotoBlock__image:hover .photoNumber {
+	background: rgba(0,0,0,0);
+	font-size: 40px;
+}
 @media screen and (max-width: 1023px) {
 	.ptotoBlock__image  {
 		height: 125px;

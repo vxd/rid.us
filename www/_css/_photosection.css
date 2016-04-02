@@ -7,7 +7,7 @@
 .photoSection h1 {
 	text-align: center;
 }
-.ptotoBlock {
+.photoBlock {
 	width: 49%;
 	/*margin-left: 2%;*/
 	float: left;
@@ -15,10 +15,10 @@
     /*transform: translateZ(0);*/
     /*-webkit-transform: translateZ(0);*/
 }
-/*.ptotoBlock:first-child {
+/*.photoBlock:first-child {
 	margin-left: 0;
 }*/
-.ptotoBlock__image {
+.photoBlock__image {
 	overflow: hidden;
 	display: block;
 	-webkit-transition: all .3s ease;
@@ -26,40 +26,37 @@
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
-.ptotoBlock__image:hover {
+.photoBlock__image:hover {
 	opacity: .83;
 }
-.ptotoBlock__image:hover .photoNumber {
-	background: rgba(0,0,0,0);
-	font-size: 40px;
-}
+
 @media screen and (max-width: 1023px) {
-	.ptotoBlock__image  {
+	.photoBlock__image  {
 		height: 125px;
 		padding-top: 125px;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.ptotoBlock__image  {
+	.photoBlock__image  {
 		height: 160px;
 		padding-top: 160px;
 	}
 }
 @media screen and (min-width: 1041px) and (max-width: 1279px) {
-	.ptotoBlock__image  {
+	.photoBlock__image  {
 		height: 160px;
 		padding-top: 160px;		
 	}
 }
 @media screen and (min-width: 1280px) {
-	.ptotoBlock__image  {
+	.photoBlock__image  {
 		height: 190px;
 		padding-top: 190px;
 	}
 }
 
 
-.ptotoBlock img {
+.photoBlock img {
 	width: 100%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -68,7 +65,7 @@
 }
 
 
-.ptotoBlock__description {
+.photoBlock__description {
     font-family: 'Roboto Slab', serif;
 	font-size: 26px;
 	background: rgba(0,0,0,.7);
@@ -84,7 +81,7 @@
 	color: #fff;
 }
 @media screen and (max-width: 1023px) {
-	.ptotoBlock__description {
+	.photoBlock__description {
 		font-size: 21px;
 	}
 }
@@ -92,7 +89,7 @@
 
 
 
-.ptotoBlock .brick__header {
+.photoBlock .brick__header {
 	position: absolute;
 	top: 0;
 }

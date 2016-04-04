@@ -7,7 +7,7 @@
                         <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
                     </div>
 
-                    <div class="brick view_grey">
+                    <div class="brick view_grey not_for_hover">
                         <!--#include virtual="bricks/main-for-today.shtml"-->
                     </div>
                     <div class="brick">

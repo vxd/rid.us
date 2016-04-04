@@ -3,9 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/www/404.shtml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/500.shtml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/www/_article-short-with-navigation.shtml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/_weather.shtml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/authors-articles.shtml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/terms-of-agreement.shtml" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

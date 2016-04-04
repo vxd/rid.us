@@ -35,7 +35,7 @@
 
         	<iframe width="100%" height="190" src="http://www.ustream.tv/embed/10203453?html5ui=1&autoplay=true&volume=0&wmode=direct&adfree=1" allowfullscreen webkitallowfullscreen scrolling="no" frameborder="0" style="border: 0 none transparent; margin-bottom: 14px;"></iframe>
 
-			<div class="brick view_grey hideOn_1280">
+			<div class="brick view_grey not_for_hover hideOn_1280">
 				<!--#include virtual="bricks/main-for-today.shtml"-->
 			</div>
 
@@ -54,7 +54,7 @@
 
         	<iframe width="100%" height="190" src="http://www.ustream.tv/embed/10203453?html5ui=1&autoplay=true&volume=0&wmode=direct&adfree=1" allowfullscreen webkitallowfullscreen scrolling="no" frameborder="0" style="border: 0 none transparent; margin-bottom: 22px;"></iframe>
 
-			<div class="brick view_grey hideOn_1280">
+			<div class="brick view_grey not_for_hover hideOn_1280">
 				<!--#include virtual="bricks/main-for-today.shtml"-->
 			</div>
 
@@ -67,7 +67,7 @@
 
 
 
-		<div class="brick view_grey hideOn_1024 hideOn_768">
+		<div class="brick view_grey not_for_hover hideOn_1024 hideOn_768">
 			<!--#include virtual="bricks/main-for-today.shtml"-->
 		</div>
 

@@ -3,7 +3,7 @@
                     <div class="brick view_banner">
                         <!--#include virtual="bricks/banner-mts.shtml"-->
                     </div>
-                    <div class="brick view_grey">
+                    <div class="brick view_grey not_for_hover">
                         <!--#include virtual="bricks/main-for-today.shtml"-->
                     </div>
                     <div class="brick">

@@ -4,12 +4,20 @@
 <ul class="todayMainNewsList">
 	<li class="todayMainNewsList__item">
 		<a class="todayMainNewsList__link" href="#" title="">Кадырова пытались убить взорвавшие «Домодедово»</a>
+		<a href="#" class="countersBlock__item readLater">
+			<i class="icon"><!-- icon --></i>
+		</a>
 	</li>
 	<li class="todayMainNewsList__item">
-		<a class="todayMainNewsList__link" href="#" title="">Зацепер парализовал движение электричек в Москве
+		<a class="todayMainNewsList__link" href="#" title="">Зацепер парализовал движение электричек в Москве</a>
+		<a href="#" class="countersBlock__item readLater">
+			<i class="icon"><!-- icon --></i>
 		</a>
 	</li>
 	<li class="todayMainNewsList__item">
 		<a class="todayMainNewsList__link" href="#" title="">Украина сравнила депутатов в Крыму с варварами</a>
+		<a href="#" class="countersBlock__item readLater">
+			<i class="icon"><!-- icon --></i>
+		</a>
 	</li>
 </ul>

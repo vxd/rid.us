@@ -33,7 +33,7 @@
 
                 <!--#include virtual="slider.shtml"-->
 
-                <div class="brick view_grey">
+                <div class="brick view_grey not_for_hover">
                     <!--#include virtual="bricks/main-for-today.shtml"-->
                 </div>
 

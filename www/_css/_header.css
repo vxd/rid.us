@@ -49,11 +49,34 @@ header {
 	opacity: 1;
 }
 
+.floatingInfo {
+	height: 56px;
+}
+.floatingInfo .yellowButton.view_backButton {
+	height: 56px;
+	width: 46px;
+	font-size: 45px;
+	padding: 0 8px 9px 18px;
+}
+.floatingInfo .yellowButton.view_backButton .corner {
+	height: 50px;
+}
+.floatingInfo .articleSocials,
+.floatingInfo .saveButton {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+/*@media screen and (max-width: 1040px) {*/
+.floatingInfo.view_opacity {
+	opacity: 1;
+}
+/*}*/
+
 .floatingInfo.view_hidden {
     top: -80px;
 }
 .floatingInfo .articleSocials {
-	margin-top: 16px;
+	margin-top: 5px;
 }
 @media screen and (max-width: 1040px) {
 	.floatingInfo .hint {

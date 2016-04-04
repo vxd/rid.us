@@ -14,7 +14,7 @@ AddType text/html .shtml
 AddOutputFilter INCLUDES .shtml
 #AddHandler server-parsed  .shtml
 
-#SSILegacyExprParser on
+SSILegacyExprParser on
 
 
 

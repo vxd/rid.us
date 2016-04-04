@@ -572,7 +572,7 @@
     transition:         all .1s ease-in-out;
 }
 .slider .swiper-slide:hover .countersBlock__item.readLater,
-.brick:hover .countersBlock__item.readLater {
+.brick:not(.not_for_hover):hover .countersBlock__item.readLater {
 	opacity: .5;
 }
 .countersBlock__item.readLater:hover {
@@ -1136,6 +1136,13 @@
 	left: 18px;
 	border: 6px solid transparent;
     border-left: 3px solid #fff;
+}
+.todayMainNewsList__item .readLater {
+	height: 12px;
+	padding-right: 20px;
+}
+.todayMainNewsList__item:hover .readLater {
+	opacity: 1;
 }
 .todayMainNewsList__link {
 	font-family: 'Roboto Slab', serif;

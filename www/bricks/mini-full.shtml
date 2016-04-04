@@ -28,17 +28,6 @@
 	<!--#endif -->
 		<span class="clickable"></span>
 	</a>
-	<div class="countersBlock">
-		<span class="countersBlock__item view_count1">
-			234 <i class="icon"><!-- icon --></i>
-		</span>
-		<span class="countersBlock__item view_count2">
-			56 <i class="icon"><!-- icon --></i>
-		</span>
-		<span class="countersBlock__item view_count3">
-			88 <i class="icon"><!-- icon --></i>
-		</span>
-	</div>
 </div>
 
 <div class="brick__content">
@@ -60,6 +49,22 @@
 		<a href="#" title="">Aэробус мог быть взорван с помощью жидкого взрывчатого вещества.</a> 
 	</h5>
 <!--#endif -->
+</div>
+<div class="countersBlock">
+	<span class="countersBlock__item view_count1">
+		234 <i class="icon"><!-- icon --></i>
+	</span>
+	<span class="countersBlock__item view_count2">
+		56 <i class="icon"><!-- icon --></i>
+	</span>
+	<span class="countersBlock__item view_count3">
+		88 <i class="icon"><!-- icon --></i>
+	</span>
+	<a href="#" class="countersBlock__item readLater">
+		<span>читать позже</span>
+		<span class="state_hidderHidden">читаю позже</span>
+		<i class="icon"><!-- icon --></i>
+	</a>
 </div>
 
 

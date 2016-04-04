@@ -20,16 +20,6 @@
 }
 
 
-@media screen and (max-width: 1040px) {
-	.page_home .headerPanel { 
-		position: absolute;
-	}
-	.page_home .headerPanel.view_hidden {
-		top: 0;
-	}
-}
-
-
 .headerPanel.view_scrolling {
 	opacity: .6;
     -webkit-transition: opacity .15s ease-out;
@@ -40,6 +30,28 @@
 	opacity: 1;
 }
 
+
+@media screen and (max-width: 1040px) {
+	.headerPanel.view_scrolling {
+		opacity: 1;
+		min-width: 80px;
+		width: 80px;
+	}
+	.headerPanel.view_scrolling .paddings_side {
+		padding: 0 16px;
+	}
+	.headerPanel.view_hidden {
+		top: 0;
+	}
+	.headerPanel.view_scrolling .mainLogo,
+	.headerPanel.view_scrolling .header__loginButton,
+	.headerPanel.view_scrolling .header__searchButton,
+	.headerPanel.view_scrolling .yellowButton,
+	.headerPanel.view_scrolling .dayInfo,
+	.headerPanel.view_scrolling .mainLogo {
+		display: none;
+	}
+}
 
 
 

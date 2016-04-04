@@ -334,9 +334,9 @@ $(function() {
 	function handleFloatingPanel(){
 		var floatingTarget = $(".floatingPanel");
 
-		document.addEventListener('touchstart', handleTouchStart, false);
-		document.addEventListener('touchend', handleTouchEnd, false);
-		document.addEventListener('touchmove', handleTouchMove, false);
+		//document.addEventListener('touchstart', handleTouchStart, false);
+		//document.addEventListener('touchend', handleTouchEnd, false);
+		//document.addEventListener('touchmove', handleTouchMove, false);
 		var floatingHeight = floatingTarget.outerHeight();
 
 		var yDown = null;
@@ -443,8 +443,8 @@ $(function() {
 	}
 
 	function handleFloatingInfo(){
-		document.addEventListener('touchstart', handleTouchStart, false);
-		document.addEventListener('touchmove', handleTouchMove, false);
+		//document.addEventListener('touchstart', handleTouchStart, false);
+		//document.addEventListener('touchmove', handleTouchMove, false);
 		var floatingHeight = $('.headerPanel').outerHeight() + $('.banner_top:visible').outerHeight(true);
 		$(window).resize(function(){
 			floatingHeight = $('.headerPanel').outerHeight() + $('.banner_top:visible').outerHeight(true);

@@ -57,7 +57,7 @@
 	</div>
 
 	<!--#if expr="$sidebanner = 1" -->
-    <div class="brick hideOn_1024 hideOn_768">
+    <div class="brick hideOn_1024 hideOn_768 not_for_hover">
         <div class="brick view_floatText">
             <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
         </div>

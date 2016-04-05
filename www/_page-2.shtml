@@ -6,7 +6,7 @@
 				        <!--#include virtual="bricks/alaslideimage.shtml?image=2"-->
 		            </div>
 
-		            <div class="brick">
+		            <div class="brick not_for_hover">
 		                <div class="brick view_floatText">
 			                <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=12"-->
 			            </div>

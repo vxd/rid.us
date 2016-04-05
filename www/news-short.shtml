@@ -264,7 +264,7 @@
 
             <div class="bricks__wrapper padding_bottom clearfix">
                 <!--#include virtual="slider.shtml"-->
-                <div class="brick hideOn_1024 hideOn_768">
+                <div class="brick not_for_hover hideOn_1024 hideOn_768">
                     <div class="brick view_floatText">
                         <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
                     </div>
@@ -439,7 +439,7 @@
                         <!--#include virtual="bricks/alaslideimage.shtml?image=3"-->
                     </div>
 
-                    <div class="brick hideOn_1024 hideOn_768">
+                    <div class="brick not_for_hover hideOn_1024 hideOn_768">
                         <div class="brick view_floatText">
                             <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
                         </div>

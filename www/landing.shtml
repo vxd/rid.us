@@ -28,7 +28,7 @@
             <!--#include virtual="bricks/news-simple.shtml?image=2&data=4&label=0&count1=120&count2=35&count3=3812"-->
         </div>
 
-        <div class="brick hideOn_768">
+        <div class="brick hideOn_768 not_for_hover">
             <div class="brick view_floatText view_bottomBorder">
                 <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
             </div>
@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div class="brick">
+        <div class="brick not_for_hover">
             <div class="brick view_floatText view_bottomBorder">
                 <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
             </div>

@@ -126,7 +126,7 @@
 						<!--#include virtual="bricks/banner-mts.shtml"-->
 					</div>
 
-		            <div class="brick  hideOn_1280">
+		            <div class="brick not_for_hover hideOn_1280">
 		                <div class="brick view_floatText">
 			                <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
 			            </div>
@@ -175,7 +175,7 @@
 		            <div class="brick view_more">
 		                <!--#include virtual="bricks/more.shtml"-->
 		            </div>
-		            <div class="brick">
+		            <div class="brick not_for_hover">
 		                <div class="brick view_floatText">
 			                <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
 			            </div>
@@ -227,7 +227,7 @@
 		            <div class="brick view_more">
 		                <!--#include virtual="bricks/more.shtml"-->
 		            </div>
-		            <div class="brick">
+		            <div class="brick not_for_hover">
 		                <div class="brick view_floatText">
 			                <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
 			            </div>

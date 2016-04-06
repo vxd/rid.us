@@ -366,12 +366,28 @@ $(function() {
 			$(window).scroll(function(event){
 				currentScrollTop = $(this).scrollTop();
 
+				//if (currentScrollTop >= lastScrollTop) {
+				//	if (currentScrollTop > floatingHeight) {
+				//		floatingTarget.addClass('view_hidden');
+				//	}
+				//} else {
+				//	floatingTarget.removeClass('view_hidden');
+				//}
+
 				if (currentScrollTop >= lastScrollTop) {
+					// вниз
 					if (currentScrollTop > floatingHeight) {
-						floatingTarget.addClass('view_hidden');
+						floatingTarget.addClass('view_hidden').addClass('view_scrolling');
+					} else {
+						floatingTarget.removeClass('view_hidden').removeClass('view_scrolling');
 					}
 				} else {
-					floatingTarget.removeClass('view_hidden');
+					// вверх
+					if (currentScrollTop > floatingHeight) {
+						floatingTarget.removeClass('view_hidden').addClass('view_scrolling');
+					} else {
+						floatingTarget.addClass('view_hidden').removeClass('view_scrolling');
+					}
 				}
 			});
 		}
@@ -394,11 +410,14 @@ $(function() {
 				$(".popover__wrapper, .header__loginButton").removeClass("state_open");
 				if (currentScrollTop > floatingHeight) {
 					// скрываем, только если проскроллили больше высоты меню
-					floatingTarget.addClass('view_hidden');
+					floatingTarget.addClass('view_hidden').addClass('view_scrolling');;
 					floatingBlockSpace = 20;
 					// $(".sticked.state_floating").css({top: 20})
 				}
 			} else {
+				if (currentScrollTop < floatingHeight) {
+					floatingTarget.removeClass('view_scrolling');
+				}
 				// вверх
 				floatingTarget.removeClass('view_hidden');
 				floatingBlockSpace = 80;

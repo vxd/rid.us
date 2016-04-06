@@ -11,9 +11,9 @@
     /*transition: top 0.05s ease-in-out;*/
     will-change: top;
 }
-.headerPanel.view_hidden {
-    top: -60px;
-}
+/*.headerPanel.view_hidden {*/
+    /*top: -60px;*/
+/*}*/
 
 .floatingPanel {
     position: fixed;
@@ -40,9 +40,9 @@
 	.headerPanel.view_scrolling .paddings_side {
 		padding: 0 16px;
 	}
-	.headerPanel.view_hidden {
-		top: 0;
-	}
+	/*.headerPanel.view_hidden {*/
+		/*top: 0;*/
+	/*}*/
 	.headerPanel.view_scrolling .mainLogo,
 	.headerPanel.view_scrolling .header__loginButton,
 	.headerPanel.view_scrolling .header__searchButton,

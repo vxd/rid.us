@@ -72,9 +72,9 @@ header {
 }
 /*}*/
 
-.floatingInfo.view_hidden {
-    top: -80px;
-}
+/*.floatingInfo.view_hidden {*/
+    /*top: -80px;*/
+/*}*/
 .floatingInfo .articleSocials {
 	margin-top: 5px;
 }

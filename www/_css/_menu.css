@@ -35,14 +35,31 @@
 	.headerPanel.view_scrolling {
 		opacity: 1;
 		min-width: 80px;
+		min-height: 80px;
 		width: 80px;
+		top: 5px;
+		left: 5px;
+		background-color: hsla(0,0%,49%,.5);
 	}
 	.headerPanel.view_scrolling .paddings_side {
-		padding: 0 16px;
+		padding: 0;
 	}
-	/*.headerPanel.view_hidden {*/
-		/*top: 0;*/
-	/*}*/
+	.headerPanel.view_scrolling .mobileMenuButton {
+		width: 80px;
+		height: 36px;
+		padding: 22px 0;
+	}
+	.headerPanel.view_scrolling .mobileMenuButton.state_open {
+		width: 220px;
+		background: #000;
+		margin: -5px 0 0 -5px;
+	}
+	.headerPanel.view_scrolling .mobileMenuButton .icon_hamburger {
+		margin: 0 auto;
+	}
+	.headerPanel.view_scrolling .mobileMenuButton.state_open .icon_hamburger {
+		margin-left: 160px;
+	}
 	.headerPanel.view_scrolling .mainLogo,
 	.headerPanel.view_scrolling .header__loginButton,
 	.headerPanel.view_scrolling .header__searchButton,
@@ -156,16 +173,18 @@
 }
 @media screen and (max-width: 1040px) {
 	.menu {
-		display: none;
 		position: fixed;
-		background: #000;
 		top: 60px;
 		left: 0;
+		float: none;
 		height: 100%;
 		width: 220px;
+		margin-left: -100%;
+		background: #000;
+		transition: margin 0.15s ease;
 	}
 	.menu.state_open {
-		display: block;
+		margin-left: 0;
 	}
 	.menu__link {
 		width: 100%;
@@ -261,7 +280,7 @@
     text-transform: uppercase;
 	color: #fff;
 	text-decoration: none;
-	padding-top: 40px;
+	padding-top: 12px;
 	width: 56px;
 	margin-right: 8px;
 	position: relative;
@@ -270,24 +289,45 @@
 	color: #fff;
 }
 
-
-.mobileMenuButton .icon_hamburger,
+.mobileMenuButton .icon_hamburger {
+	position: relative;
+	display: block;
+	width: 40px;
+}
+.mobileMenuButton .icon_hamburger i,
 .mobileMenuButton .icon_hamburger:before,
 .mobileMenuButton .icon_hamburger:after {
+	position: absolute;
+	top: 17px;
 	display: block;
 	font-size: 0;
 	content: "";
-	width: 33px;
+	width: 40px;
 	height: 4px;
 	background: #fff;
-	position: absolute;
-	top: 14px;
+	transform: rotate(0deg);
+	transition: .15s ease-in-out;
 }
 .mobileMenuButton .icon_hamburger:before {
-	top: 9px;
+	top: 7px;
 }
 .mobileMenuButton .icon_hamburger:after {
-	top: 18px;
+	top: 27px;
+}
+.mobileMenuButton.state_open .icon_hamburger:before,
+.mobileMenuButton.state_open .icon_hamburger:after {
+	width: 0;
+	top: 17px;
+	transition: .15s ease-in-out .10s;
+}
+.mobileMenuButton .icon_hamburger i {
+	transition: .25s ease-in-out;
+}
+.mobileMenuButton.state_open .icon_hamburger i:nth-child(1) {
+	transform: rotate(45deg);
+}
+.mobileMenuButton.state_open .icon_hamburger i:nth-child(2) {
+	transform: rotate(-45deg);
 }
 .mobileMenuButton .icon_pointer {
 	position: absolute;

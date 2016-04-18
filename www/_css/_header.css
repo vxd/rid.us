@@ -66,11 +66,11 @@ header {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-/*@media screen and (max-width: 1040px) {*/
-.floatingInfo.view_opacity {
-	opacity: 1;
+@media screen and (max-width: 1040px) {
+	.floatingInfo.view_opacity {
+		opacity: 1;
+	}
 }
-/*}*/
 
 /*.floatingInfo.view_hidden {*/
     /*top: -80px;*/

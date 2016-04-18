@@ -46,7 +46,6 @@
 	}
 	.headerPanel.view_scrolling .mobileMenuButton {
 		width: 80px;
-		height: 36px;
 		padding: 22px 0;
 	}
 	.headerPanel.view_scrolling .mobileMenuButton.state_open {
@@ -280,8 +279,9 @@
     text-transform: uppercase;
 	color: #fff;
 	text-decoration: none;
-	padding-top: 12px;
+	padding: 12px 0;
 	width: 56px;
+	height: 36px;
 	margin-right: 8px;
 	position: relative;
 }

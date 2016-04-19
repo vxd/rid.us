@@ -20,6 +20,14 @@
 <!--#endif -->
 
 	<div class="wrapper paddings_side clearfix">
+
+		<a href="#" class="mobileMenuButton">
+			<i class="icon_hamburger">
+				<i></i>
+				<i></i>
+			</i>
+			<!--<i class="icon_pointer">&lt;!&ndash; pointer &ndash;&gt;</i>-->
+		</a>
 	
 		<div class="headerSearch">
 			<div class="headerSearch__form">
@@ -32,15 +40,7 @@
 					<a href="#" class="closeButton">&times;</a>
 				</form>
 			</div>
-		</div>	
-
-		<a href="#" class="mobileMenuButton">
-			<i class="icon_hamburger">
-				<i></i>
-				<i></i>
-			</i>
-			<!--<i class="icon_pointer">&lt;!&ndash; pointer &ndash;&gt;</i>-->
-		</a>
+		</div>
 
 		<a href="#" class="mainLogo" title="На главную">
 			<img src="_images/logo.png" class="x1" width="154" height="60" alt="РИДУС">
@@ -105,3 +105,4 @@
 
 </div>
 
+</div>

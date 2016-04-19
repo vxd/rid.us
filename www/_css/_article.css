@@ -16,6 +16,12 @@
 }
 
 
+.article__date {
+    font-size: 14px;
+    color: #848484;
+    margin-bottom: 18px;
+}
+
 
 
 
@@ -208,4 +214,37 @@
 }
 .article__tags a:hover {
 	text-decoration: none;
+}
+
+.author {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 15px 0 20px;
+    background: #eeeeee;
+}
+
+.author__info {
+    padding: 30px;
+    font-size: 14px;
+}
+
+
+.author__photo {
+    width: 350px;
+    height: 290px;
+    float: right;
+}
+
+@media screen and (max-width: 1040px) and (min-width: 1024px){
+    .author__photo {
+        width: 260px;
+        height: 200px;
+    }
 }

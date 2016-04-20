@@ -11,6 +11,8 @@
 <!--#set var="count2" value="" -->
 <!--#set var="count3" value="" -->
 <!--#set var="issaved" value="" -->
+<!--#set var="isliked" value="" -->
+<!--#set var="action" value="read" -->
 
 <!-- //// извлекаем из параметров урла --> 
 
@@ -44,9 +46,19 @@
 <!--#if expr="\"$QUERY_STRING\" = /issaved=([a-zA-Z0-9]+)/" -->
 <!--#set var="issaved" value="$1" -->
 <!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /isliked=([a-zA-Z0-9]+)/" -->
+<!--#set var="isliked" value="$1" -->
+<!--#endif -->
 
-<!-- //// конец --> 
+<!-- //// конец -->
 
+<!--#if expr="$issaved = true" -->
+<!--#set var="action" value="delete" -->
+<!--#endif -->
+
+<!--#if expr="$isliked = true" -->
+<!--#set var="action" value="save" -->
+<!--#endif -->
 
 <!--#if expr="$image = 1" -->
 <div class="brick__image" style="background-image: url(http://molbiol.ru/forums/uploads/a003/b047/post-24502-1338479907.jpg)">
@@ -185,7 +197,7 @@
 </div>
 
 <!--#if expr="$count1 != 'false'" -->
-<div class="countersBlock">
+<div class="countersBlock countersBlock-inline">
 	<span class="countersBlock__item view_count1">
 		<!--#echo var="count1" --> <i class="icon"><!-- icon --></i>
 	</span>
@@ -195,15 +207,29 @@
 	<span class="countersBlock__item view_count3">
 		<!--#echo var="count3" --> <i class="icon"><!-- icon --></i>
 	</span>
-	<a href="#" class="countersBlock__item readLater">
-        <span>читать позже</span>
-        <span class="state_hidderHidden">читаю позже</span>
-		<i class="icon"><!-- icon --></i>
-	</a>
 </div>
 <!--#endif -->
-
-
+<!--#if expr="$action = 'read'" -->
+<a href="#" class="countersBlock__item readLater">
+    <span>читать позже</span>
+    <span class="state_hidderHidden">читаю позже</span>
+    <i class="icon"><!-- icon --></i>
+</a>
+<!--#endif -->
+<!--#if expr="$action = 'delete'" -->
+<a href="#" class="countersBlock__item delete">
+    <span>Удалить</span>
+    <i class="icon"></i>
+</a>
+<!--#endif -->
+<!--#if expr="$action = 'save'" -->
+<a href="#" class="countersBlock__item readLater view_saved only_icon">
+    <i class="icon"><!-- icon --></i>
+</a>
+<a href="#" class="countersBlock__item save">
+    <span>Сохранить</span>
+</a>
+<!--#endif -->
 
 
 

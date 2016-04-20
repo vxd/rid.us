@@ -419,7 +419,9 @@
 }
 
 
-
+.countersBlock.countersBlock-inline {
+    display: inline-block;
+}
 .countersBlock {
 	font-family: 'Roboto', sans-serif;
     font-size: 11px;
@@ -451,7 +453,7 @@
     position: absolute;
     opacity: .24;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
 	.countersBlock__item .icon {
         background-image: url(../_images/icons_sprite_2x.png);
         background-size: 282px 500px;
@@ -552,9 +554,61 @@
 }
 
 
+.countersBlock__item.save {
+    z-index: 25;
+    padding: 2px 8px 1px 8px;
+    background: #eeeeee;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    color: #565656;
+    text-transform: uppercase;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition:    all .1s ease-in-out;
+    transition:         all .1s ease-in-out;
+}
+.countersBlock__item.save:hover {
+    background: #e2e2e2;
+}
+
+.countersBlock__item.readLater.only_icon {
+    opacity: 0.5;
+    height: 12px;
+    padding-right: 20px;
+    vertical-align: text-bottom;
+}
 
 
+.countersBlock__item.delete {
+    z-index: 25;
+    padding: 2px 20px 1px 8px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    color: #565656;
+    text-transform: uppercase;
+    background: #eeeeee;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition:    all .1s ease-in-out;
+    transition:         all .1s ease-in-out;
+}
 
+.countersBlock__item.delete:hover {
+    background: #e2e2e2;
+}
+
+.countersBlock__item.delete .icon {
+    opacity: 1;
+    right: 4px;
+    top: 3px;
+    width: 9px;
+    height: 9px;
+    background-position: 0 -380px;
+}
 
 
 .countersBlock__item.readLater {

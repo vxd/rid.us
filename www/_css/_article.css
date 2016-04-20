@@ -117,6 +117,25 @@
 	margin-bottom: 0;
 }
 
+.article__picture {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #eeeeee;
+}
+
+.article__picture__name {
+    margin: 5px 0 0 10px;
+    font-family: 'PT Sans';
+    font-weight: normal;
+}
+
+.article__picture__author {
+    margin: 0 0 15px 10px;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    color: #848484;
+}
+
 
 
 

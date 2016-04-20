@@ -10,6 +10,7 @@
 <!--#set var="count1" value="" -->
 <!--#set var="count2" value="" -->
 <!--#set var="count3" value="" -->
+<!--#set var="issaved" value="" -->
 
 <!-- //// извлекаем из параметров урла --> 
 
@@ -39,6 +40,9 @@
 <!--#endif -->
 <!--#if expr="\"$QUERY_STRING\" = /count3=([a-zA-Z0-9]+)/" -->
 <!--#set var="count3" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /issaved=([a-zA-Z0-9]+)/" -->
+<!--#set var="issaved" value="$1" -->
 <!--#endif -->
 
 <!-- //// конец --> 
@@ -227,4 +231,3 @@
 <!--#endif -->
 
 <a href="#" class="clickable hideOn_1024 hideOn_768"></a>
-

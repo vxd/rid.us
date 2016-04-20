@@ -1,0 +1,68 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    <!--#include virtual="_head.shtml"-->
+    <link href="_css/my.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="page_authors" itemscope itemtype="http://schema.org/WebPage">
+
+<header itemscope itemtype="http://schema.org/WPHeader">
+    <!--#include virtual="_menu.shtml?float=true"-->
+    <a href="" class="banner_top wrapper" title="">
+        <img src="_images/header_banner.jpg" alt="" />
+    </a>
+    <section class="globalInfo wrapper paddings_side clearfix">
+        <!--#include virtual="_dayinfo.shtml"-->
+        <!--#include virtual="_yellowbutton.shtml?text=1"-->
+        <!--#include virtual="_socials-header.shtml"-->
+    </section>
+</header>
+
+<section class="wrapper contentBackground_white paddings_side padding_top clearfix">
+
+    <h1>
+        <ul class="textTabs view_dotBetween clearfix">
+            <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Отложенные</a></li>
+            <li class="textTabs__item">Сохраненные</li>
+        </ul>
+    </h1>
+
+    <div class="bricks__wrapper clearfix">
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
+        </div>
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
+        </div>
+    </div>
+
+</section>
+
+<a href="#" class="banner_footer">
+    <img src="_images/footer_banner.jpg" alt="">
+</a>
+
+<!--#include virtual="_footer.shtml"-->
+
+</body>
+</html>

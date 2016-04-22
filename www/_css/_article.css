@@ -165,7 +165,7 @@
     display: block;
     background: url(../_images/icons_sprite.png) -10px -199px no-repeat;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
 	.article__readmore:after {
         background-image: url(../_images/icons_sprite_2x.png);
         background-size: 282px 500px;
@@ -261,7 +261,7 @@
     float: right;
 }
 
-@media screen and (max-width: 1040px) and (min-width: 1024px){
+@media screen and (max-width: 1279px) {
     .author__photo {
         width: 260px;
         height: 200px;

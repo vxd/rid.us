@@ -1,0 +1,25 @@
+<div class="iscroll">
+    <div class="livelist__news">
+        <h3>На борту А321 могла взорваться жидка</h3>
+        <ul class="liveList">
+            <li class="liveList__item" data-time="16:22">
+                <a class="liveList__link" href="#">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+            </li>
+            <li class="liveList__item" data-time="16:18">
+                <a class="liveList__link" href="#">Украинские списки «белых» и «черных» артистов удивили</a>
+            </li>
+            <li class="liveList__item" data-time="16:05">
+                <a class="liveList__link" href="#">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+            </li>
+            <li class="liveList__item" data-time="15:57">
+                <a class="liveList__link" href="#">Украинские списки «белых» и «черных» артистов удивили</a>
+            </li>
+            <li class="liveList__item" data-time="14:44">
+                <a class="liveList__link" href="#">Грузия опровергла присоединение к санкциям Евросоюза против России</a>
+            </li>
+            <li class="liveList__item" data-time="14:20">
+                <a class="liveList__link" href="#">Украинские списки «белых» и «черных» артистов удивили</a>
+            </li>
+        </ul>
+    </div>
+</div>

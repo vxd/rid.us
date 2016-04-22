@@ -287,6 +287,33 @@ p {
 
 /* нумерованный список - большие цифры в черных квадратах */
 /* список в живой трансляции с временем */
+.brick.view_yellow .livelist__news {
+    padding: 20px 15px 0 15px;
+    font-size: 15px;
+}
+.brick.view_yellow .liveList__item {
+    padding-left: 60px;
+}
+.brick.view_yellow .liveList__item:before {
+    top: 2px;
+    width: 48px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.brick.view_yellow .liveList__item:after {
+    left: 48px;
+    top: 8px;
+}
+.brick.view_yellow .liveList__item .liveList__link {
+    color: #343434;
+    text-decoration: none;
+}
+
+.brick.view_yellow .liveList__item .liveList__link:hover {
+    color: #c64a1b;
+    text-decoration: none;
+}
+
 .numeredList,
 .liveList {
     padding-bottom: 30px;

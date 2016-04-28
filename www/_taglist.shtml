@@ -107,6 +107,9 @@
 	<li class="tagList__item">
 		<a class="tagList__link" href="#">Путешествия</a>
 	</li>
+	<li class="tagList__item showOn_1024">
+		<a class="tagList__link" href="#">Развлечения</a>
+	</li>
 	<li class="tagList__item">
 		<a class="tagList__link" href="#">Религия</a>
 	</li>

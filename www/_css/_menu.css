@@ -380,9 +380,77 @@
 	margin: 12px 0;
 	background-image: url(../_images/icons_sprite.png);
 }
+.header__userButton {
+	overflow: hidden;
+	text-decoration: none;
+	float: right;
+	padding: 18px 9px 17px;
+	font: normal 16px/24px 'PT Sans', sans-serif;
+	color: #ffd051;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.header__userButton .user-name {
+	margin-left: 5px;
+}
+.header__userButton:before {
+	content: '';
+	display: inline-block;
+	height: 24px;
+	width: 12px;
+	vertical-align: middle;
+	background-image: url(../_images/icons_sprite.png);
+}
+@media screen and (max-width: 1279px) {
+	.header__userButton .user-name {
+		display: none;
+	}
+}
+.header__readLater {
+	float: right;
+	margin: 0 0 0 5px;
+	padding: 0 9px 0 0;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 0px;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+	color: #fff;
+	text-align: center;
+}
+.header__readLater:hover {
+	background-color: #c64a1b;
+	color: #fff;
+}
+.header__readLater .icon {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 15px 5px 15px 0;
+	background-color: #c64a1b;
+	border-radius: 50%;
+}
+.header__readLater .icon:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: inline-block;
+	width: 16px;
+	height: 8px;
+	margin: -4px 0 0 -8px;
+	background: url(../_images/icons_sprite.png) -48px -301px no-repeat;
+}
+.header__readLater .number {
+	font-size: 10px;
+	vertical-align: 26px;
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
 	.header__loginButton,
-	.header__searchButton {
+	.header__searchButton,
+	.header__userButton:before {
         background-image: url(../_images/icons_sprite_2x.png);
         background-size: 282px 500px;
     }
@@ -401,9 +469,19 @@
 .header__searchButton:hover {
 	background-position: 0 -35px;
 }
+.header__userButton:before {
+	background-position: 0 -400px;
+}
+.header__userButton:hover,
+.header__userButton.state_open {
+	background: #c64a1b;
+	color: #ffd051;
+}
 @media screen and (max-width: 1023px) {
 	.header__loginButton,
-	.header__searchButton {
+	.header__searchButton,
+	.header__userButton,
+	.header__readLater {
 		display: none;
 	}
 }

@@ -73,8 +73,62 @@
 
 
 
-
-
+.popoverReadLater .newsList {
+	margin: 0 0 20px 0;
+	font-size: 18px;
+}
+.popoverReadLater .newsList__item {
+	position: relative;
+	display: flex;
+	padding: 5px 0;
+	align-items: center;
+	border: none;
+}
+.popoverReadLater .newsList__item:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 620px;
+	border: 1px solid #e1e1e1;
+}
+.popoverReadLater .newsList__date {
+	display: inline-block;
+	width: 100px;
+	text-transform: uppercase;
+}
+.popoverReadLater .newsList__link {
+	overflow: hidden;
+	display: inline-block;
+	width: 520px;
+	margin: 0 15px 0 0;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.newsList__button {
+	margin: 0 15px 0 0;
+	padding: 3px 10px 4px;
+	cursor: pointer;
+	font: bold 16px 'Roboto Slab', serif;
+	color: #686b6f;
+	background: #eee;
+	-webkit-transition: color .15s ease-out;
+	-moz-transition: 	color .15s ease-out;
+	transition: 		color .15s ease-out;
+}
+.newsList__button:hover {
+	color: #c64a1b;
+}
+.popoverReadLater .newsList__item i {
+	cursor: pointer;
+	color: #7e7e7e;
+	-webkit-transition: color .15s ease-out;
+	-moz-transition: 	color .15s ease-out;
+	transition: 		color .15s ease-out;
+}
+.popoverReadLater .newsList__item i:hover {
+	color: #c64a1b;
+}
 
 
 

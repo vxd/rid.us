@@ -1147,6 +1147,10 @@ blockquote b {
 
 
 
+.showOn_1024,
+.showOn_1280 {
+	display: none;
+}
 
 @media screen and (max-width: 1023px) {
 	.hideOn_768 {
@@ -1157,10 +1161,16 @@ blockquote b {
 	.hideOn_1024 {
 		display: none;
 	}
+	.showOn_1024 {
+		display: initial;
+	}
 }
 @media screen and (min-width: 1280px) {
 	.hideOn_1280 {
 		display: none;
+	}
+	.showOn_1280 {
+		display: initial;
 	}
 }
 @media screen and (min-width: 1041px) {

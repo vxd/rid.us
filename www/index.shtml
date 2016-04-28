@@ -14,7 +14,7 @@
 <body class="page_home" itemscope itemtype="http://schema.org/WebPage">
 
 <header itemscope itemtype="http://schema.org/WPHeader">
-    <!--#include virtual="_menu.shtml?float=true"-->
+    <!--#include virtual="_menu.shtml?float=true&user=true"-->
     <a href="" class="banner_top wrapper" title="">
         <img src="_images/header_banner.jpg" alt="" />
     </a>

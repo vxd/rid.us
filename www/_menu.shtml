@@ -2,11 +2,15 @@
 <!-- //// определяем переменные -->  
 
 <!--#set var="float" value="" -->
+<!--#set var="user" value="" -->
 
 <!-- //// извлекаем из параметров урла --> 
 
 <!--#if expr="\"$QUERY_STRING\" = /float=([a-zA-Z0-9]+)/" -->
 <!--#set var="float" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /float=([a-zA-Z0-9]+)/" -->
+<!--#set var="user" value="$1" -->
 <!--#endif -->
 
 <!-- //// конец --> 
@@ -47,7 +51,22 @@
 			<img src="_images/logo_2x.png" class="x2" width="154" height="60" alt="РИДУС">
 		</a>
 
-		<a class="header__loginButton" href="#" title="">&nbsp;</a>
+		<!--#if expr="$user != true" -->
+			<a class="header__loginButton" href="#" title="">&nbsp;</a>
+		<!--#endif -->
+		<!--#if expr="$user = true" -->
+			<a class="header__userButton" href="#" title="">
+				<span class="user-name">Марина</span>
+			</a>
+			<a href="#" class="header__readLater">
+				<i class="icon"><!-- icon --></i>
+				<span class="number">7</span>
+				<div class="readLater__popover">
+
+				</div>
+			</a>
+		<!--#endif -->
+
 		<a class="header__searchButton" href="#">&nbsp;</a>
 
 		
@@ -75,7 +94,7 @@
 				<li class="menu__item">
 					<a class="menu__link" href="#">Полезное</a>
 				</li>
-				<li class="menu__item">
+				<li class="menu__item hideOn_1024">
 					<a class="menu__link" href="#">Развлечения</a>
 				</li>
 				<li class="menu__item">
@@ -97,9 +116,14 @@
 
 	</div>
 
-	<div class="popover__wrapper">
+	<div class="popover__wrapper popover-login">
 		<div class="wrapper">
-			<!--#include virtual="_popover-login.shtml"-->
+			<!--#if expr="$user != true" -->
+				<!--#include virtual="_popover-login.shtml"-->
+			<!--#endif -->
+			<!--#if expr="$user = true" -->
+				<!--#include virtual="_popover-read-later.shtml"-->
+			<!--#endif -->
 		</div>
 	</div>
 

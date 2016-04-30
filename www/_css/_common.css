@@ -1380,7 +1380,7 @@ blockquote b {
     content: "";
     position: absolute;
     top: 0;
-    left: 110px;
+    left: 100%;
     width: 0;
     height: 0;
     border-style: solid;
@@ -1391,8 +1391,8 @@ blockquote b {
 .important:after {
     content: "";
     position: absolute;
-    top: 17px;
-    left: 110px;
+    bottom: 0;
+    left: 100%;
     width: 0;
     height: 0;
     border-style: solid;
@@ -1414,12 +1414,9 @@ blockquote b {
 }
 
 .important.in-text:before {
-    left: 66px;
     border-width: 0 0 11px 6px;
 }
 
 .important.in-text:after {
-    top: 11px;
-    left: 66px;
     border-width: 11px 0 0 6px;
 }

@@ -18,6 +18,11 @@
 	text-decoration: none;
 }
 
+.newsList__link-important {
+    color: #c6271b;
+    font-weight: 700;
+}
+
 
 
 

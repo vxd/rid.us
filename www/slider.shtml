@@ -3,6 +3,7 @@
             <div class="swiper-slide">
             	<a href="#" class="slider__image" title="">
             		<img src="https://www.ridus.ru/images/2016/3/9/374241/in_article_6e0fbfdc98.jpg" alt="">
+                    <i class="important">важное</i>
             	</a>
             	<div class="slider__text">
             		<h1><a href="" title="">Яценюк запустил &laquo;план Ы&raquo;</a></h1>

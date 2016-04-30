@@ -287,6 +287,33 @@ p {
 
 /* нумерованный список - большие цифры в черных квадратах */
 /* список в живой трансляции с временем */
+.brick.view_yellow .livelist__news {
+    padding: 20px 15px 0 15px;
+    font-size: 15px;
+}
+.brick.view_yellow .liveList__item {
+    padding-left: 60px;
+}
+.brick.view_yellow .liveList__item:before {
+    top: 2px;
+    width: 48px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.brick.view_yellow .liveList__item:after {
+    left: 48px;
+    top: 8px;
+}
+.brick.view_yellow .liveList__item .liveList__link {
+    color: #343434;
+    text-decoration: none;
+}
+
+.brick.view_yellow .liveList__item .liveList__link:hover {
+    color: #c64a1b;
+    text-decoration: none;
+}
+
 .numeredList,
 .liveList {
     padding-bottom: 30px;
@@ -1344,4 +1371,62 @@ blockquote b {
 .photoBlock__image:hover .photoNumber {
 	background: rgba(0,0,0,0);
 	font-size: 40px;
+}
+
+.important {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    padding: 7px 13px 7px 36px;
+    background: #c6271b url(../_images/icons_sprite.png) 12px -397px no-repeat;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.important:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 17px 7px;
+    border-color: transparent transparent transparent #c6271b;
+}
+
+.important:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 0 0 7px;
+    border-color: transparent transparent transparent #c6271b;
+}
+
+.brick__image .important {
+    top: 12px;
+}
+
+ .important.in-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 5px 6px 5px 21px;
+    background-position: -106px -399px;
+    font-size: 10px;
+}
+
+.important.in-text:before {
+    border-width: 0 0 11px 6px;
+}
+
+.important.in-text:after {
+    border-width: 11px 0 0 6px;
 }

@@ -1378,7 +1378,7 @@ blockquote b {
     top: 45px;
     left: 0;
     padding: 7px 13px 7px 36px;
-    background: #c6271b url(../_images/icons_sprite.png) 12px -397px no-repeat;
+    background: #c6271b url(../_images/icons_sprite.png) 12px -435px no-repeat;
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -1419,7 +1419,7 @@ blockquote b {
     top: 0;
     left: 0;
     padding: 5px 6px 5px 21px;
-    background-position: -106px -399px;
+    background-position: -106px -436px;
     font-size: 10px;
 }
 

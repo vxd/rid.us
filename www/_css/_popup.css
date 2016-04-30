@@ -209,6 +209,7 @@
 
 
 .popoverReadLater {
+	display: none;
 	position: absolute;
 	right: 0;
 	width: 860px;
@@ -223,4 +224,14 @@
 	box-sizing: border-box;
 
 	border: 3px solid #c64a1b;
+}
+.popoverReadLater .ui-tabs-active,
+.popoverReadLater .ui-state-active,
+.popoverReadLater .ui-state-hover {
+	background: none;
+	border: none;
+}
+.popoverReadLater .ui-tabs-active a,
+.popoverReadLater .ui-state-active a {
+	color: #c64a1b;
 }

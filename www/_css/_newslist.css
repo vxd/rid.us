@@ -83,6 +83,7 @@
 	padding: 5px 0;
 	align-items: center;
 	border: none;
+	line-height: 23px;
 }
 .popoverReadLater .newsList__item:after {
 	position: absolute;

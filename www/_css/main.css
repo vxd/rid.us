@@ -18,9 +18,9 @@
 
 @import "_pagination.css";
 
-@import "_popup.css";
-
 @import "_forms.css";
+
+@import "_popup.css";
 
 @import "md-preloader.min.css";
 

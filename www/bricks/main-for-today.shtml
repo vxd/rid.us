@@ -2,9 +2,8 @@
 	главное за сегодня
 </h4>
 <ul class="todayMainNewsList">
-	<li class="todayMainNewsList__item">
+	<li class="todayMainNewsList__item todayMainNewsList__item-important">
 		<a class="todayMainNewsList__link" href="#" title="">Кадырова пытались убить взорвавшие «Домодедово»
-            <i class="important in-text">Важное</i>
         </a>
 		<a href="#" class="countersBlock__item readLater">
 			<i class="icon"><!-- icon --></i>

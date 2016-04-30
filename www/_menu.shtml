@@ -76,12 +76,24 @@
 
 		<menu class="menu">
 			<ul>
-				<li class="menu__item view_mobileOnly">
-					<a class="menu__link view_enter" href="#">Войти</a>
-				</li>
+				<!--#if expr="$user != true" -->
+					<li class="menu__item view_mobileOnly">
+						<a class="menu__link view_enter" href="#">Войти</a>
+					</li>
+				<!--#endif -->
+				<!--#if expr="$user = true" -->
+					<li class="menu__item view_mobileOnly">
+						<a class="menu__link view_user" href="#">Марина</a>
+					</li>
+				<!--#endif -->
 				<li class="menu__item view_mobileOnly">
 					<a class="menu__link view_search" href="#">Поиск</a>
 				</li>
+				<!--#if expr="$user = true" -->
+				<li class="menu__item view_mobileOnly">
+					<a class="menu__link view_readLater" href="#">Читать (7)</a>
+				</li>
+				<!--#endif -->
 				<li class="menu__item">
 					<a class="menu__link" href="#">Картина дня</a>
 				</li>

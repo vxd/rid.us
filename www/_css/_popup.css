@@ -1,5 +1,5 @@
 .popover__wrapper {
-	display: block;
+	display: none;
 	/*top: 60px;*/
 	width: 100%;
 }
@@ -209,7 +209,6 @@
 
 
 .popoverReadLater {
-	display: none;
 	position: absolute;
 	right: 0;
 	width: 860px;
@@ -234,4 +233,15 @@
 .popoverReadLater .ui-tabs-active a,
 .popoverReadLater .ui-state-active a {
 	color: #c64a1b;
+}
+
+@media screen and (max-width: 1040px){
+	.popoverReadLater {
+		position: fixed;
+		top: 60px;
+		left: 220px;
+		height: calc(100% - 60px);
+		width: calc(100% - 220px);
+		min-width: 548px;
+	}
 }

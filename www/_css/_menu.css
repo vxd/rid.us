@@ -145,12 +145,16 @@
 
 
 .menu__link.view_enter,
-.menu__link.view_search {
+.menu__link.view_search,
+.menu__link.view_user,
+.menu__link.view_readLater {
 	padding-left: 70px;
 	color: #ffd500;
 }
 .menu__link.view_enter:before,
-.menu__link.view_search:before {
+.menu__link.view_search:before,
+.menu__link.view_user:before,
+.menu__link.view_readLater:before {
 	display: block;
 	position: absolute;
 	content: "";
@@ -160,9 +164,28 @@
 	top: 16px;
 	background-image: url(../_images/icons_sprite.png);
 }
+.menu__link.view_user:before {
+	height: 23px;
+	top: 13px;
+}
+.menu__link.view_readLater:before {
+	width: 24px;
+	height: 13px;
+	left: 36px;
+	top: 18px;
+}
+.menu__link.view_readLater {
+	color: #c64a1b;
+}
+.menu__link.view_readLater.state_open {
+	background: #c64a1b;
+	color: #fff;
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
 	.menu__link.view_enter:before,
-	.menu__link.view_search:before {
+	.menu__link.view_search:before,
+	.menu__link.view_user:before,
+	.menu__link.view_readLater:before {
         background-image: url(../_images/icons_sprite_2x.png);
         background-size: 282px 500px;
     }
@@ -173,6 +196,16 @@
 }
 .menu__link.view_search:before {
 	background-position: -10px -44px;
+}
+.menu__link.view_readLater:before {
+	background-position: -80px -44px;
+}
+.menu__link.view_readLater.state_open:before,
+.menu__link.view_readLater:hover:before {
+	background-position: -64px -301px;
+}
+.menu__link.view_user:before {
+	background-position: 0 -400px;
 }
 @media screen and (max-width: 1040px) {
 	.menu {
@@ -419,7 +452,8 @@
 	color: #fff;
 	text-align: center;
 }
-.header__readLater:hover {
+.header__readLater:hover,
+.header__readLater.state_open {
 	background-color: #c64a1b;
 	color: #fff;
 }

@@ -83,30 +83,36 @@
 	font-size: 18px;
 }
 .popoverReadLater .newsList__item {
+	overflow: hidden;
 	position: relative;
 	display: flex;
 	padding: 5px 0;
 	align-items: center;
 	border: none;
-	line-height: 23px;
+	line-height: 28px;
+	justify-content: space-between;
 }
 .popoverReadLater .newsList__item:after {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	content: '';
-	width: 620px;
+	width: calc(100% - 155px);
 	border: 1px solid #e1e1e1;
+}
+.readLater_tab-2 .newsList__item:after {
+	width: calc(100% - 30px);
 }
 .popoverReadLater .newsList__date {
 	display: inline-block;
 	width: 100px;
+	margin-bottom: 0;
 	text-transform: uppercase;
 }
 .popoverReadLater .newsList__link {
 	overflow: hidden;
+	flex: 1;
 	display: inline-block;
-	width: 520px;
 	margin: 0 15px 0 0;
 	white-space: nowrap;
 	text-overflow: ellipsis;

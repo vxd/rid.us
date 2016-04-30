@@ -114,6 +114,7 @@ $(function() {
 		$(".menu").toggleClass("state_open");
 		searchClose();
 		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
+		$(".popover__wrapper, .header__readLater").removeClass("state_open");
 		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
 		return false;
 	});
@@ -123,7 +124,7 @@ $(function() {
 		$(this).toggleClass("state_open");
 		$(".subMenu").toggleClass("state_open");
 
-		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
+		$(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
 		return false;
 	});
 	$(document).on(clickHandler, function(event) {
@@ -134,7 +135,7 @@ $(function() {
 
 
 	/* логин */
-	$(".header__loginButton, .menu__link.view_enter").on(clickHandler, function(){
+	$(".header__loginButton, .menu__link.view_enter, .header__readLater, .menu__link.view_readLater").on(clickHandler, function(){
 		$(this).toggleClass("state_open");
 		$(".popover__wrapper").toggleClass("state_open");
 
@@ -144,13 +145,24 @@ $(function() {
 	});
 
 	$(document).on(clickHandler, function(event) {
-		if ($(event.target).closest(".header__loginButton, .popoverLogin").length) return;
-		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
+		var headerLoginButton = $('.header__loginButton');
+		var headerReadLater = $('.header__readLater');
+
+		if ($(event.target).closest(".header__loginButton, .popoverLogin").length && headerLoginButton) return;
+		if ($(event.target).closest(".header__readLater, .popoverReadLater").length && headerReadLater) return;
+
+		if(headerLoginButton){
+			$(".popover__wrapper, .header__loginButton").removeClass("state_open");
+		}
+		if(headerReadLater){
+			$(".popover__wrapper, .header__readLater").removeClass("state_open");
+		}
+
 		event.stopPropagation();
 	});
 
 	$(window).resize(function(){
-		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
+		$(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
 	});
 
 
@@ -168,7 +180,7 @@ $(function() {
 			$(".headerSearch__form .search__input").focus();	
 
 		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
-		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
+		$(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
 		return false;
 	});
 
@@ -407,7 +419,7 @@ $(function() {
 
 			if ( yDiff > 0 ) {
 				// вниз
-				$(".popover__wrapper, .header__loginButton").removeClass("state_open");
+				$(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
 				if (currentScrollTop > floatingHeight) {
 					// скрываем, только если проскроллили больше высоты меню
 					floatingTarget.addClass('view_hidden').addClass('view_scrolling');;
@@ -525,7 +537,7 @@ $(function() {
 
 			if ( yDiff > 0 ) {
 				// вниз
-				$(".popover__wrapper, .header__loginButton").removeClass("state_open");
+				$(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
 
 				if (currentScrollTop > floatingHeight) {
 					// скрываем, только если проскроллили больше высоты меню

@@ -95,7 +95,7 @@
 		                <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
 		            </div>
 					<div class="brick hideOn_1024 hideOn_768">
-						<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
+						<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812&important=true"-->
 					</div>
 
 				</div>

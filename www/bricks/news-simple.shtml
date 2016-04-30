@@ -13,6 +13,7 @@
 <!--#set var="issaved" value="" -->
 <!--#set var="isliked" value="" -->
 <!--#set var="action" value="read" -->
+<!--#set var="important" value="" -->
 
 <!-- //// извлекаем из параметров урла --> 
 
@@ -49,7 +50,9 @@
 <!--#if expr="\"$QUERY_STRING\" = /isliked=([a-zA-Z0-9]+)/" -->
 <!--#set var="isliked" value="$1" -->
 <!--#endif -->
-
+<!--#if expr="\"$QUERY_STRING\" = /important=([a-zA-Z0-9]+)/" -->
+<!--#set var="important" value="$1" -->
+<!--#endif -->
 <!-- //// конец -->
 
 <!--#if expr="$issaved = true" -->
@@ -68,6 +71,10 @@
 <!--#endif -->
 <!--#if expr="$image = 3" -->
 <div class="brick__image" style="background-image: url(http://joinfo.ua/images/news/2013/03/130320_01.jpg&prefix=slider310&a=310&b=250)">
+<!--#endif -->
+
+<!--#if expr="$important = 'true'" -->
+    <i class="important">важное</i>
 <!--#endif -->
 
 <!--#if expr="$video = 'true'" -->

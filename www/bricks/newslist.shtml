@@ -14,11 +14,16 @@
         <ul class="newsList">
             <li class="newsList__item">
                 <span class="newsList__date">18:34</span>
-                <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили</a>
+                <a class="newsList__link" href="#" title="">Украинские списки «белых» и «черных» артистов удивили
+                    <i class="important in-text">Важное</i>
+                </a>
+
             </li>
             <li class="newsList__item">
                 <span class="newsList__date">18:34</span>
-                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам</a>
+                <a class="newsList__link" href="#" title="">В КПРФ предложили отдавать санкционные продукты детдомам
+                    <i class="important in-text">Важное</i>
+                </a>
             </li>
             <li class="newsList__item">
                 <span class="newsList__date">18:34</span>

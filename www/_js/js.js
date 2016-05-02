@@ -840,7 +840,7 @@ $(function() {
 			//	width: slides.eq(0).width() * 2 + 'px !important'
 			//});
 
-			//prevWindowWidth = windowWidth;
+			prevWindowWidth = windowWidth;
 			//
 			//$flexSliders.each(function(i, flexSlider){
 			//	if(windowWidth > 1279) {

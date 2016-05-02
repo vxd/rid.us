@@ -782,7 +782,11 @@ $(function() {
 	//}
 
     function initFlexSlider() {
-        $('.flexSlider-onresize').each(function () {
+	    var flexSliders = $('.flexSlider-onresize');
+
+	    if(!flexSliders.length) return;
+
+	    flexSliders.each(function () {
 
             var flexSlider = new Swiper($(this), {
                 nextButton: $(this).parent().find('.swiper-button-next'),
@@ -818,22 +822,22 @@ $(function() {
             }
         });
 
-
-
-
-        var slides = $('.flexSlider-onresize').find('.width_twice');
+        var slides = flexSliders.find('.width_twice');
         slides.attr('style', slides.attr('style') +  'width: ' + (slides[0].getBoundingClientRect().width * 2 + 16) + 'px !important');
 
     }
 
     initFlexSlider();
 	$(window).on("debouncedresize", function(event) {
+		var slides = $('.flexSlider-onresize').find('.width_twice');
+
+		if(!slides.length) return;
+
 		var $flexSliders = $(flexSliders);
 		var windowWidth = $(window).width();
 		var windowHeight = $(window).height();
 
 		if ($flexSliders && (windowWidth !== prevWindowWidth || windowHeight !== prevWindowHeight)) {
-			var slides = $('.flexSlider-onresize').find('.width_twice');
 			slides.attr('style', slides.attr('style') +  'width: ' + (slides[0].getBoundingClientRect().width * 2 + 16) + 'px !important');
 
 			//slides.style.setProperty('width', slides.eq(0).width() * 2 + 'px', 'important');

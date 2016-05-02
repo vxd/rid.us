@@ -112,6 +112,7 @@ $(function() {
 	$(".mobileMenuButton").on(clickHandler, function(){
 		$(this).toggleClass("state_open");
 		$(".menu").toggleClass("state_open");
+		$(this).closest('.headerPanel').toggleClass("state_open");
 		searchClose();
 		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
 		$(".popover__wrapper, .header__readLater").removeClass("state_open");

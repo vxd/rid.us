@@ -49,6 +49,10 @@
     zoom: 1;
     z-index: 10;
 }
+.brick .brick__content {
+	max-height: 145px;
+	overflow: hidden;
+}
 @media screen and (max-width: 1023px) {
 	.brick {
 		width: 47%;

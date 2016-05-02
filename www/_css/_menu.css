@@ -14,7 +14,10 @@
 /*.headerPanel.view_hidden {*/
     /*top: -60px;*/
 /*}*/
-
+.headerPanel.state_open {
+	position: fixed;
+	z-index: 100000;
+}
 .floatingPanel {
     position: fixed;
 }

@@ -788,7 +788,7 @@ $(function() {
                 prevButton: $(this).parent().find('.swiper-button-prev'),
                 spaceBetween: 16,
                 threshold: 50,
-                observer: true,
+                //observer: true,
                 breakpoints: {
                     1280: {
                         spaceBetween: 22,
@@ -821,7 +821,7 @@ $(function() {
 
 
         var slides = $('.flexSlider-onresize').find('.width_twice');
-        slides.attr('style', slides.attr('style') +  'width: ' + (slides.eq(0).width() * 2 + 16) + 'px !important');
+        slides.attr('style', slides.attr('style') +  'width: ' + (slides[0].getBoundingClientRect().width * 2 + 16) + 'px !important');
 
     }
 
@@ -833,7 +833,7 @@ $(function() {
 
 		if ($flexSliders && (windowWidth !== prevWindowWidth || windowHeight !== prevWindowHeight)) {
 			var slides = $('.flexSlider-onresize').find('.width_twice');
-			slides.attr('style', slides.attr('style') +  'width: ' + (slides.eq(0).width() * 2 + 16) + 'px !important');
+			slides.attr('style', slides.attr('style') +  'width: ' + (slides[0].getBoundingClientRect().width * 2 + 16) + 'px !important');
 
 			//slides.style.setProperty('width', slides.eq(0).width() * 2 + 'px', 'important');
 			//slides.css({

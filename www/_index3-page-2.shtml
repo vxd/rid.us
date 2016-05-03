@@ -8,6 +8,12 @@
         <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=22&count1=120&count2=35&count3=3812&video=true"-->
     </div>
 
+    <div class="brick swiper-slide null"></div>
+
+    <div class="brick swiper-slide">
+        <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=21&count1=120&count2=35&count3=3812&video=true"-->
+    </div>
+
     <div class="brick swiper-slide not_for_hover">
         <div class="brick view_floatText">
             <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=12"-->
@@ -18,10 +24,6 @@
         <div class="brick view_floatText">
             <!--#include virtual="bricks/mini-full.shtml?image=3&data=2&label=11"-->
         </div>
-    </div>
-
-    <div class="brick swiper-slide">
-        <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=21&count1=120&count2=35&count3=3812&video=true"-->
     </div>
 
     <div class="brick swiper-slide">
@@ -49,13 +51,13 @@
     <div class="brick swiper-slide">
         <!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=32&count1=120&count2=35&count3=3812"-->
     </div>
-    <div class="brick swiper-slide view_banner">
+    <div class="brick swiper-slide">
+        <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812&video=true"-->
+    </div>
+    <div class="brick swiper-slide view_banner view_banner-2">
         <!--#include virtual="bricks/banner-mts.shtml"-->
     </div>
     <div class="brick swiper-slide view_more">
         <!--#include virtual="bricks/more.shtml"-->
-    </div>
-    <div class="brick swiper-slide">
-        <!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812&video=true"-->
     </div>
 </div>

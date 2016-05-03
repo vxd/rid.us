@@ -693,45 +693,6 @@ $(function() {
 		window.globalstorage.pageSwiperArray.push(pageSwiper);
     });
 
-
-    $('.slider').each(function () {
-	    var imagesSlider = new Swiper($(this), {
-	        pagination: $(this).find('.swiper-pagination'),
-	        paginationClickable: true,
-	        loop: true,
-	        // resistanceRatio: 0,
-	        nested: true,
-	        autoplay: 9000, // скорость
-	        autoplayDisableOnInteraction: true
-	        // observeParents: true,
-	        // observer: true,
-	        // setWrapperSize: true,
-	    });
-
-	    // по наведению - остановим
-	    $(this).mouseover(function(){
-	    	imagesSlider.stopAutoplay();
-	    });
-	    $(this).mouseout(function(){
-	    	imagesSlider.startAutoplay();
-	    });
-
-
-
-		// var doingResize = false;
-
-		// $(window).resize(function(event){
-		//     doingResize = true;
-		// });
-
-		// setInterval(function() {
-		//     if (doingResize) {
-		//         imagesSlider.updateSlidesSize();
-		//         doingResize = false;
-		//     }
-		// }, 100);
-    });
-
 	$('.flexSlider-noresize').each(function () {
 		var pageSwiper = new Swiper($(this), {
 			nextButton: $(this).parent().find('.swiper-button-next'),
@@ -769,6 +730,7 @@ $(function() {
 	});
 
 	var flexSliders = [];
+	var sliders = [];
 	var prevWindowWidth = $(window).width();
 	var prevWindowHeight = $(window).height();
 	//var slidesPerGroup = 2, slidesPerView = 2;
@@ -823,29 +785,52 @@ $(function() {
         });
 
         var slides = flexSliders.find('.width_twice');
-        slides.attr('style', slides.attr('style') +  'width: ' + (slides[0].getBoundingClientRect().width * 2 + 16) + 'px !important');
+	    var margin = slides.eq(0).outerWidth(true) - slides.eq(0).outerWidth();
+	    var width = slides[0].getBoundingClientRect().width * 2 + margin;
+
+        slides.attr('style', slides.attr('style') +  'width: ' + width + 'px !important');
 
     }
 
     initFlexSlider();
+
 	$(window).on("debouncedresize", function(event) {
-		var slides = $('.flexSlider-onresize').find('.width_twice');
+		var flexSlidersOnResize = $('.flexSlider-onresize');
+		var slides = flexSlidersOnResize.find('.width_twice');
 
 		if(!slides.length) return;
 
 		var $flexSliders = $(flexSliders);
+		var $sliders = $(sliders);
 		var windowWidth = $(window).width();
 		var windowHeight = $(window).height();
 
 		if ($flexSliders && (windowWidth !== prevWindowWidth || windowHeight !== prevWindowHeight)) {
-			slides.attr('style', slides.attr('style') +  'width: ' + (slides[0].getBoundingClientRect().width * 2 + 16) + 'px !important');
+			flexSlider.update(true);
 
+			var margin = slides.eq(0).outerWidth(true) - slides.eq(0).outerWidth();
+			var width = slides[0].getBoundingClientRect().width * 2 + margin;
+
+			slides.attr('style', slides.attr('style') +  'width: ' + width + 'px !important');
+
+			//if(windowWidth < 1040) {
+			//	var hhh = flexSlidersOnResize.find('.height-twice-container');
+			//	hhh.attr('style', slides.attr('style') +  'width: ' + width + 'px !important');
+			//
+			//}
+			//slides.attr('style', slides.attr('style') +  'width: ' + (slides[0].getBoundingClientRect().width * 2 + 16) + 'px !important');
+
+
+			//$sliders.each(function(i, slider){
+			//	slider.update(true);
+			//});
 			//slides.style.setProperty('width', slides.eq(0).width() * 2 + 'px', 'important');
 			//slides.css({
 			//	width: slides.eq(0).width() * 2 + 'px !important'
 			//});
 
 			prevWindowWidth = windowWidth;
+			prevWindowHeight = windowHeight;
 			//
 			//$flexSliders.each(function(i, flexSlider){
 			//	if(windowWidth > 1279) {
@@ -868,6 +853,44 @@ $(function() {
 			//	}
 			//});
 		}
+	});
+
+	$('.slider').each(function () {
+		var imagesSlider = new Swiper($(this), {
+			pagination: $(this).find('.swiper-pagination'),
+			paginationClickable: true,
+			loop: true,
+			// resistanceRatio: 0,
+			nested: true,
+			autoplay: 9000, // скорость
+			autoplayDisableOnInteraction: true,
+			 observeParents: true,
+			 observer: true
+			 //setWrapperSize: true
+		});
+
+		// по наведению - остановим
+		$(this).mouseover(function(){
+			imagesSlider.stopAutoplay();
+		});
+		$(this).mouseout(function(){
+			imagesSlider.startAutoplay();
+		});
+
+
+
+		// var doingResize = false;
+
+		// $(window).resize(function(event){
+		//     doingResize = true;
+		// });
+
+		// setInterval(function() {
+		//     if (doingResize) {
+		//         imagesSlider.updateSlidesSize();
+		//         doingResize = false;
+		//     }
+		// }, 100);
 	});
 
     $('.videoPlaylist__wrapper').each(function () {

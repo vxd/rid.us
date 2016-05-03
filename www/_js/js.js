@@ -4,217 +4,217 @@ $(document).ready(function() {
 
 
 $(function() {
-	// для десктопов - клик, для тачскринов - тачстарт
-	var clickHandler = ('ontouchstart' in document.documentElement ? "touchstart" : "click");
+    // для десктопов - клик, для тачскринов - тачстарт
+    var clickHandler = ('ontouchstart' in document.documentElement ? "touchstart" : "click");
 
 
 
-	// ======================================
-	// Попапы http://dinbror.dk/blog/bPopup
-	// ======================================
+    // ======================================
+    // Попапы http://dinbror.dk/blog/bPopup
+    // ======================================
 
 
 
-	// ======================================
-	// IScroll
-	// ======================================
+    // ======================================
+    // IScroll
+    // ======================================
 
-	$(window).load(function(){
-	/* обертка - чтобы просчитал высоту только после полного рендеринга элементов */
+    $(window).load(function(){
+        /* обертка - чтобы просчитал высоту только после полного рендеринга элементов */
 
-		var iscrollWrapper = $('.iscroll');
-		window.globalstorage = {
-			iscroll: []
-		};
-		var el;
-		for (var i = 0; i < iscrollWrapper.length; i++) {
-			el = iscrollWrapper[i];
+        var iscrollWrapper = $('.iscroll');
+        window.globalstorage = {
+            iscroll: []
+        };
+        var el;
+        for (var i = 0; i < iscrollWrapper.length; i++) {
+            el = iscrollWrapper[i];
 
-			var iscrollInstance = new IScroll(el, {
-			    scrollbars: true,
-			    // disableMouse: false,
-			    mouseWheel: true,
-			    // momentum: false,
-			    fadeScrollbars: true,
-			    interactiveScrollbars: true,
-			    bindToWrapper: true
-			});
-			window.globalstorage.iscroll.push(iscrollInstance);
-		}
-		// console.log(window.globalstorage.iscroll)
+            var iscrollInstance = new IScroll(el, {
+                scrollbars: true,
+                // disableMouse: false,
+                mouseWheel: true,
+                // momentum: false,
+                fadeScrollbars: true,
+                interactiveScrollbars: true,
+                bindToWrapper: true
+            });
+            window.globalstorage.iscroll.push(iscrollInstance);
+        }
+        // console.log(window.globalstorage.iscroll)
 
-	});
-
-
-
-	// ======================================
-	// ios switch - http://abpetkov.github.io/switchery/
-	// ======================================
-
-	if ($('.js-switch').length) {
-
-		var jsSwitchElems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
-
-		jsSwitchElems.forEach(function(html) {
-		  var switchery = new Switchery(html);
-		});
-
-	}
-
-	if ($('.js-switch-socials').length) {
-		var jsSwitchSocialsElems = Array.prototype.slice.call(document.querySelectorAll('.js-switch-socials'));
-
-		jsSwitchSocialsElems.forEach(function(html) {
-		  var switchery = new Switchery(html, {
-		  	size: 'small'
-		  });
-		});
-
-		/* изменяющиеся лэйблы по клику */ 
-		function checkLabel() {
-
-			var changeCheckboxWrapper = $(".myprofileSocials__switchWrapper");
-
-			changeCheckboxWrapper.each(function(){
-				var checkbox = $(this).find(".js-switch-socials");
-				var label = $(this).find(".myLabel");
-				if ($(checkbox).is(":checked")) {
-					label.addClass("view_online");
-				} else {
-					label.removeClass("view_online");
-				}
-			})
-		}
-
-		checkLabel();
-
-		$('.js-switch-socials').change(function() {
-			checkLabel();
-		});
-	}
-
-	if ($('.js-switch-gender').length) {
-		var genderSwitch = document.querySelector('.js-switch-gender');
-		var genderSwitchery = new Switchery(genderSwitch, {
-			color: '#fC73d0',
-			secondaryColor: '#69A1E2'
-			// jackColor: '#fff'
-		});
-	}
+    });
 
 
 
-	// ======================================
-	// меню 
-	// ======================================
+    // ======================================
+    // ios switch - http://abpetkov.github.io/switchery/
+    // ======================================
 
-	/* мобильное МЕНЮ */
-	$(".mobileMenuButton").on(clickHandler, function(){
-		$(this).toggleClass("state_open");
-		$(".menu").toggleClass("state_open");
-		$(this).closest('.headerPanel').toggleClass("state_open");
-		searchClose();
-		$(".popover__wrapper, .header__loginButton").removeClass("state_open");
-		$(".popover__wrapper, .header__readLater").removeClass("state_open");
-		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
-		return false;
-	});
+    if ($('.js-switch').length) {
 
-	/* меню ЕЩЕ */
-	$(".menu__link.view_menuIcon").on(clickHandler, function(){
-		$(this).toggleClass("state_open");
-		$(".subMenu").toggleClass("state_open");
+        var jsSwitchElems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
 
-		$(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
-		return false;
-	});
-	$(document).on(clickHandler, function(event) {
-		if ($(event.target).closest(".menu__link.view_menuIcon, .subMenu .tagList").length) return;
-		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
-		event.stopPropagation();
-	});
+        jsSwitchElems.forEach(function(html) {
+            var switchery = new Switchery(html);
+        });
 
+    }
 
-	/* логин */
-	$(".header__loginButton, .menu__link.view_enter, .header__readLater, .menu__link.view_readLater").on(clickHandler, function(){
-		$(this).toggleClass("state_open");
-		$(".popover__wrapper").toggleClass("state_open");
+    if ($('.js-switch-socials').length) {
+        var jsSwitchSocialsElems = Array.prototype.slice.call(document.querySelectorAll('.js-switch-socials'));
 
-		searchClose();
-		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
-		return false;
-	});
+        jsSwitchSocialsElems.forEach(function(html) {
+            var switchery = new Switchery(html, {
+                size: 'small'
+            });
+        });
 
-	$(document).on(clickHandler, function(event) {
-		var headerLoginButton = $('.header__loginButton');
-		var headerReadLater = $('.header__readLater');
+        /* изменяющиеся лэйблы по клику */
+        function checkLabel() {
 
-		if ($(event.target).closest(".header__loginButton, .popoverLogin").length && headerLoginButton) return;
-		if ($(event.target).closest(".header__readLater, .popoverReadLater").length && headerReadLater) return;
+            var changeCheckboxWrapper = $(".myprofileSocials__switchWrapper");
 
-		if(headerLoginButton){
-			$(".popover__wrapper, .header__loginButton").removeClass("state_open");
-		}
-		if(headerReadLater){
-			$(".popover__wrapper, .header__readLater").removeClass("state_open");
-		}
+            changeCheckboxWrapper.each(function(){
+                var checkbox = $(this).find(".js-switch-socials");
+                var label = $(this).find(".myLabel");
+                if ($(checkbox).is(":checked")) {
+                    label.addClass("view_online");
+                } else {
+                    label.removeClass("view_online");
+                }
+            })
+        }
 
-		event.stopPropagation();
-	});
+        checkLabel();
 
-	$(window).resize(function(){
-		$(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
-	});
+        $('.js-switch-socials').change(function() {
+            checkLabel();
+        });
+    }
+
+    if ($('.js-switch-gender').length) {
+        var genderSwitch = document.querySelector('.js-switch-gender');
+        var genderSwitchery = new Switchery(genderSwitch, {
+            color: '#fC73d0',
+            secondaryColor: '#69A1E2'
+            // jackColor: '#fff'
+        });
+    }
 
 
 
-	// ======================================
-	// search field 
-	// ======================================
+    // ======================================
+    // меню
+    // ======================================
 
-	$(".header__searchButton, .menu__link.view_search").on(clickHandler, function(event){
-		$(".headerSearch__form").show().animate({
-			width: "100%",
-			opacity: 1
-		}, 300, function(){
-		});
-			$(".headerSearch__form .search__input").focus();	
+    /* мобильное МЕНЮ */
+    $(".mobileMenuButton").on(clickHandler, function(){
+        $(this).toggleClass("state_open");
+        $(".menu").toggleClass("state_open");
+        $(this).closest('.headerPanel').toggleClass("state_open");
+        searchClose();
+        $(".popover__wrapper, .header__loginButton").removeClass("state_open");
+        $(".popover__wrapper, .header__readLater").removeClass("state_open");
+        $(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+        return false;
+    });
 
-		$(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
-		$(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
-		return false;
-	});
+    /* меню ЕЩЕ */
+    $(".menu__link.view_menuIcon").on(clickHandler, function(){
+        $(this).toggleClass("state_open");
+        $(".subMenu").toggleClass("state_open");
 
-	function searchClose () {
-		$(".headerSearch__form .search__input").blur();
-		$(".headerSearch__form").stop().animate({
-			width: "0%",
-			opacity: 0
-		}, 200 );
-	}
-
-	$(".headerSearch .closeButton").on(clickHandler, function(){
-		searchClose();
-		return false;
-	});	
-
-	$(document).on(clickHandler, function(event) {
-		if ($(event.target).closest(".headerPanel").length ) {
-			return;
-		} else {
-			if (!window.chrome) {
-				searchClose();
-
-			}
-		}
-		event.stopPropagation();
-	});
+        $(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
+        return false;
+    });
+    $(document).on(clickHandler, function(event) {
+        if ($(event.target).closest(".menu__link.view_menuIcon, .subMenu .tagList").length) return;
+        $(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+        event.stopPropagation();
+    });
 
 
+    /* логин */
+    $(".header__loginButton, .menu__link.view_enter, .header__readLater, .menu__link.view_readLater").on(clickHandler, function(){
+        $(this).toggleClass("state_open");
+        $(".popover__wrapper").toggleClass("state_open");
 
-	// ======================================
-	// скролл 
-	// ======================================
+        searchClose();
+        $(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+        return false;
+    });
+
+    $(document).on(clickHandler, function(event) {
+        var headerLoginButton = $('.header__loginButton');
+        var headerReadLater = $('.header__readLater');
+
+        if ($(event.target).closest(".header__loginButton, .popoverLogin").length && headerLoginButton) return;
+        if ($(event.target).closest(".header__readLater, .popoverReadLater").length && headerReadLater) return;
+
+        if(headerLoginButton){
+            $(".popover__wrapper, .header__loginButton").removeClass("state_open");
+        }
+        if(headerReadLater){
+            $(".popover__wrapper, .header__readLater").removeClass("state_open");
+        }
+
+        event.stopPropagation();
+    });
+
+    $(window).resize(function(){
+        $(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
+    });
+
+
+
+    // ======================================
+    // search field
+    // ======================================
+
+    $(".header__searchButton, .menu__link.view_search").on(clickHandler, function(event){
+        $(".headerSearch__form").show().animate({
+            width: "100%",
+            opacity: 1
+        }, 300, function(){
+        });
+        $(".headerSearch__form .search__input").focus();
+
+        $(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+        $(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
+        return false;
+    });
+
+    function searchClose () {
+        $(".headerSearch__form .search__input").blur();
+        $(".headerSearch__form").stop().animate({
+            width: "0%",
+            opacity: 0
+        }, 200 );
+    }
+
+    $(".headerSearch .closeButton").on(clickHandler, function(){
+        searchClose();
+        return false;
+    });
+
+    $(document).on(clickHandler, function(event) {
+        if ($(event.target).closest(".headerPanel").length ) {
+            return;
+        } else {
+            if (!window.chrome) {
+                searchClose();
+
+            }
+        }
+        event.stopPropagation();
+    });
+
+
+
+    // ======================================
+    // скролл
+    // ======================================
 
     // var $centerHeadBar = $('.headerPanel');
     // var headerHeight = $centerHeadBar.height();
@@ -243,9 +243,9 @@ $(function() {
     //                 }
     //             }
 
-		  //       compensation = headerHeight - position + headerPosition;
-		  //       compensation = compensation < 60 ? compensation : 60;
-		  //       $(".sticked ").css( { paddingTop: compensation} );
+    //       compensation = headerHeight - position + headerPosition;
+    //       compensation = compensation < 60 ? compensation : 60;
+    //       $(".sticked ").css( { paddingTop: compensation} );
     //         // }
     //         scrollUp = true;
     //     } else {
@@ -253,10 +253,10 @@ $(function() {
     //         scrollUp = false;
     //         headerPosition = $centerHeadBar.offset().top;
     //         $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
-			       
-	   //      compensation = headerHeight - position + headerPosition;
-	   //      compensation = compensation < 0 ? 0 : compensation;
-	   //      $(".sticked ").css( { paddingTop: compensation} );
+
+    //      compensation = headerHeight - position + headerPosition;
+    //      compensation = compensation < 0 ? 0 : compensation;
+    //      $(".sticked ").css( { paddingTop: compensation} );
     //     }
 
 
@@ -267,526 +267,526 @@ $(function() {
 
 
 
-	// var shown = true;
- //    $(window).scroll(function() {
- //        $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
- //        var position = $(window).scrollTop();
- //        if (lastPosition > position) {
-
- //            headerPosition = position - headerHeight;
- //            $centerHeadBar.css( { position: 'fixed', top: 0 } );
- //            if (!shown) {
-	//             $centerHeadBar.stop().slideDown(100);
-	//             shown = true;
- //            }
- //            scrollUp = true;
- //        } else {
- //            scrollUp = false;
- //            headerPosition = $centerHeadBar.offset().top;
- //            // $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
- //            if (shown) {
-	//             $centerHeadBar.stop().slideUp(100);
-	//             shown = false;
- //            }
- //        }
- //        lastPosition = position;
- //    });
-
-
-
-	// var didScroll;
-	// var lastScrollTop = 0;
-	// var delta = 5;
-	// var floatingHeight = $('.headerPanel').outerHeight();
-
-	// $(window).scroll(function(event){
- //        $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
-	//     didScroll = true;
-	// });
-
-	// setInterval(function() {
-	//     if (didScroll) {
-	//         hasScrolled();
-	//         didScroll = false;
-	//     }
-	// }, 200);
-
-	// function hasScrolled() {
-	//     var st = $(this).scrollTop();
-	    
-	//     // Make sure they scroll more than delta
-	//     if(Math.abs(lastScrollTop - st) <= delta)
-	//         return;
-	    
-	//     // If they scrolled down and are past the navbar, add class .nav-up.
-	//     // This is necessary so you never see what is "behind" the navbar.
-	//     if (st > lastScrollTop && st > floatingHeight){
-	//         // Scroll Down
-	//         $('.headerPanel').addClass('view_hidden');
-	//         $(".sticked").css( { paddingTop: 0} );
-	//     } else {
-	//         // Scroll Up
-	//         if(st + $(window).height() < $(document).height()) {
-	//             $('.headerPanel').removeClass('view_hidden');
-	// 	        $(".sticky").css( { paddingTop: 60} );
-	//         }
-	//     }
-	    
-	//     lastScrollTop = st;
-	// }
-
-	var floatingBlockSpace;
-
-
-	if ($('.floatingPanel').length) {
-
-		handleFloatingPanel();
-
-	}
-
-	function handleFloatingPanel(){
-		var floatingTarget = $(".floatingPanel");
-
-		document.addEventListener('touchstart', handleTouchStart, false);
-		document.addEventListener('touchend', handleTouchEnd, false);
-		document.addEventListener('touchmove', handleTouchMove, false);
-		var floatingHeight = floatingTarget.outerHeight();
-
-		var yDown = null;
-		var lastScrollTop = 0;
-		var currentScrollTop;
-		// var docHeight = $(document).height();
-		floatingBlockSpace = 80;
-
-		// для десктопов
-		if (clickHandler == "click") {
-			$(window).scroll(function(event){
-				currentScrollTop = $(this).scrollTop();
-				if (currentScrollTop > floatingHeight) {
-					floatingTarget.addClass('view_scrolling');
-				} else {
-					floatingTarget.removeClass('view_scrolling');
-				}
-			});
-		}
-
-		function handleTouchStart(evt) {
-			yDown = evt.touches[0].clientY;
-
-			lastScrollTop = $(this).scrollTop();
-
-			// дублируем детектом скролла - он посчитается после завершения скролла
-			$(window).scroll(function(event){
-				currentScrollTop = $(this).scrollTop();
-
-				//if (currentScrollTop >= lastScrollTop) {
-				//	if (currentScrollTop > floatingHeight) {
-				//		floatingTarget.addClass('view_hidden');
-				//	}
-				//} else {
-				//	floatingTarget.removeClass('view_hidden');
-				//}
-
-				if (currentScrollTop >= lastScrollTop) {
-					// вниз
-					if (currentScrollTop > floatingHeight) {
-						floatingTarget.addClass('view_hidden').addClass('view_scrolling');
-					} else {
-						floatingTarget.removeClass('view_hidden').removeClass('view_scrolling');
-					}
-				} else {
-					// вверх
-					if (currentScrollTop > floatingHeight) {
-						floatingTarget.removeClass('view_hidden').addClass('view_scrolling');
-					} else {
-						floatingTarget.addClass('view_hidden').removeClass('view_scrolling');
-					}
-				}
-			});
-		}
-
-		function handleTouchMove(evt) {
-			currentScrollTop = $(this).scrollTop();
-			// var scrollEdge = docHeight - $(window).height();
-
-			// floatingTarget.html(currentScrollTop)
-
-			if ( !yDown ) {
-				return;
-			}
-
-			var yUp = evt.touches[0].clientY;
-			var yDiff = yDown - yUp;
-
-			if ( yDiff > 0 ) {
-				// вниз
-				$(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
-				if (currentScrollTop > floatingHeight) {
-					// скрываем, только если проскроллили больше высоты меню
-					floatingTarget.addClass('view_hidden').addClass('view_scrolling');;
-					floatingBlockSpace = 20;
-					// $(".sticked.state_floating").css({top: 20})
-				}
-			} else {
-				if (currentScrollTop < floatingHeight) {
-					floatingTarget.removeClass('view_scrolling');
-				}
-				// вверх
-				floatingTarget.removeClass('view_hidden');
-				floatingBlockSpace = 80;
-			}
-			// reset
-			yDown = null;
-
-
-			// if (currentScrollTop <= scrollEdge) {
-			// 	if (currentScrollTop > lastScrollTop) {
-			// 		floatingTarget.addClass('view_hidden');
-			// 	} else {
-			// 		floatingTarget.removeClass('view_hidden');
-			// 	}
-			// }
-
-		}
-
-		function handleTouchEnd(evt) {
-			//    	currentScrollTop = $(this).scrollTop();
-			//    	if (currentScrollTop > lastScrollTop) {
-			//    		if (currentScrollTop > floatingHeight) {
-			//     		floatingTarget.addClass('view_hidden');
-			//     	}
-			//    	} else {
-			//    		floatingTarget.removeClass('view_hidden');
-			//    	}
-		}
-	}
-
-
-
-	// ======================================
-	// плавающие социалки
-	// ======================================
-
-
-	if ($('.floatingInfo').length) {
-
-		handleFloatingInfo();
-
-	}
-
-	function handleFloatingInfo(){
-		document.addEventListener('touchstart', handleTouchStart, false);
-		document.addEventListener('touchmove', handleTouchMove, false);
-		var floatingHeight = $('.headerPanel').outerHeight() + $('.banner_top:visible').outerHeight(true);
-		$(window).resize(function(){
-			floatingHeight = $('.headerPanel').outerHeight() + $('.banner_top:visible').outerHeight(true);
-		});
-
-		var yDown = null;
-		var lastScrollTop = 0;
-		var currentScrollTop;
-		floatingBlockSpace = 100;
-
-		// для десктопов
-		if (clickHandler == "click") {
-			$(window).scroll(function(event){
-				currentScrollTop = $(this).scrollTop();
-				if (currentScrollTop > floatingHeight) {
-					$('.floatingInfo').addClass('view_scrolling').addClass('view_opacity');
-				} else {
-					$('.floatingInfo').removeClass('view_scrolling').removeClass('view_opacity');
-				}
-			});
-		}
-
-		function handleTouchStart(evt) {
-			yDown = evt.touches[0].clientY;
-
-			lastScrollTop = $(this).scrollTop();
-
-			// дублируем детектом скролла - он посчитается после завершения скролла
-			$(window).scroll(function(event){
-				currentScrollTop = $(this).scrollTop();
-
-				if (currentScrollTop >= lastScrollTop) {
-					// вниз
-					if (currentScrollTop > floatingHeight) {
-						$('.floatingInfo').addClass('view_hidden').addClass('view_scrolling');
-					} else {
-						$('.floatingInfo').removeClass('view_hidden').removeClass('view_scrolling');
-					}
-				} else {
-					// вверх
-					if (currentScrollTop > floatingHeight) {
-						$('.floatingInfo').removeClass('view_hidden').addClass('view_scrolling');
-					} else {
-						$('.floatingInfo').addClass('view_hidden').removeClass('view_scrolling');
-					}
-				}
-			});
-		};
-
-		function handleTouchMove(evt) {
-			currentScrollTop = $(this).scrollTop();
-
-			if ( !yDown ) {
-				return;
-			}
-
-			var yUp = evt.touches[0].clientY;
-			var yDiff = yDown - yUp;
-
-			if ( yDiff > 0 ) {
-				// вниз
-				$(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
-
-				if (currentScrollTop > floatingHeight) {
-					// скрываем, только если проскроллили больше высоты меню
-					$('.floatingInfo').addClass('view_hidden').addClass('view_scrolling');
-					floatingBlockSpace = 20;
-				}
-			} else {
-				if (currentScrollTop < floatingHeight) {
-					$('.floatingInfo').removeClass('view_scrolling');
-				}
-				$('.floatingInfo').removeClass('view_hidden');
-				floatingBlockSpace = 100;
-			}
-			// reset
-			yDown = null;
-
-
-		};
-	}
-
-
-
-	// ======================================
-	// плавающий блок
-	// ======================================
-
-	/* устанавливаем высоту плавательного контейнера */
-	function updateStickySize() {
-		$(".hcSticky__sticky").height(0).hide();
-		var height = $(".hcSticky__scrollable").parent().parent().height() - $(".hcSticky__scrollable").height();
-		$(".hcSticky__sticky").height(height).show();
-	}
-
-	$(window).load(function(){ // надо, чтобы окно полность загрузилось
-		updateStickySize();
-
-		window.globalstorage.updateStickySize = updateStickySize();
-
-		var doingStickyResize = false;
-
-		$(window).resize(function(event){
-		    doingStickyResize = true;
-		});
-
-		setInterval(function() {
-		    if (doingStickyResize) {
-		        updateStickySize();
-		        doingStickyResize = false;
-		    }
-		}, 500);	
-
-		$('.sticked').hcSticky({
-			stickTo: ".hcSticky__sticky",
-			// onStart: stickyHeight(),
-		    top: floatingBlockSpace
-		    // bottomEnd: 10,
-		    // wrapperClassName: 'sidebar-sticky'
-		});
-
-	});
-
-
-	// сменяем слайды в зависимости от позиции скролла
-	var slides = $(".stickedSlide");
-
-	if (slides.length) {
-
-		var anchors = $(".stickedSlideHere"); /* якоря расставить в контенте! */
-		var showHeightsArray = [];
-		showHeightsArray[0] = 0; // просто, чтоб забить неиспользуемую ячейку
-		var position = 0;
-		var slideToShow = 0;
-
-		anchors.each(function(){
-			var slideNum = $(this).attr("data-stickedSlideHere"); /* присвоить номер слайда */
-			showHeightsArray[slideNum] = $(this).offset().top;
-		});
-		var heightsNum = showHeightsArray.length;
-
-	    $(window).scroll(function() {
-
-	    	position = $(window).scrollTop();
-
-			for (var i = 0; i < heightsNum; i++) {
-				if (position > showHeightsArray[i]) {
-					slideToShow = i
-
-				}					
-			}
-			
-			slides.hide();
-			// на случай глюков - более тяжелый селектор, но более точный
-			// $(".stickedSlide:gt(" +slideToShow+ ")").hide();
-			// $(".stickedSlide:lt(" +slideToShow+ ")").hide();
-			$(slides[slideToShow]).show();
-
-	    });
-
-	}
-
-
-
-	// ======================================
-	// тэги на _block-selector
-	// ======================================
-	$(".blockSelector__link").on('click', function(){
-		$(this).parent().toggleClass("state_selected");
-		return false;
-	});
-
-
-
-	// ======================================
-	// раскрывающиеся комменты
-	// ======================================
-	$(".comments__expandButton").on('click', function(){
-		$(this).toggleClass("state_open");
-		$(this).parentsUntil(".article").find(".commentsContent").toggleClass("state_open"); // здесь прописать класс раскрывающегося блока коммента
-		return false;
-	});
-
-
-
-	// ======================================
-	// слайдер - http://www.idangero.us/swiper/api/#.VqVEzPmLSHv
-	// ======================================
-	window.globalstorage = {
-		pageSwiperArray: []
-	};
+    // var shown = true;
+    //    $(window).scroll(function() {
+    //        $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+    //        var position = $(window).scrollTop();
+    //        if (lastPosition > position) {
+
+    //            headerPosition = position - headerHeight;
+    //            $centerHeadBar.css( { position: 'fixed', top: 0 } );
+    //            if (!shown) {
+    //             $centerHeadBar.stop().slideDown(100);
+    //             shown = true;
+    //            }
+    //            scrollUp = true;
+    //        } else {
+    //            scrollUp = false;
+    //            headerPosition = $centerHeadBar.offset().top;
+    //            // $centerHeadBar.css( { position: 'absolute', top: headerPosition + 'px' } );
+    //            if (shown) {
+    //             $centerHeadBar.stop().slideUp(100);
+    //             shown = false;
+    //            }
+    //        }
+    //        lastPosition = position;
+    //    });
+
+
+
+    // var didScroll;
+    // var lastScrollTop = 0;
+    // var delta = 5;
+    // var floatingHeight = $('.headerPanel').outerHeight();
+
+    // $(window).scroll(function(event){
+    //        $(".menu, .mobileMenuButton, .subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+    //     didScroll = true;
+    // });
+
+    // setInterval(function() {
+    //     if (didScroll) {
+    //         hasScrolled();
+    //         didScroll = false;
+    //     }
+    // }, 200);
+
+    // function hasScrolled() {
+    //     var st = $(this).scrollTop();
+
+    //     // Make sure they scroll more than delta
+    //     if(Math.abs(lastScrollTop - st) <= delta)
+    //         return;
+
+    //     // If they scrolled down and are past the navbar, add class .nav-up.
+    //     // This is necessary so you never see what is "behind" the navbar.
+    //     if (st > lastScrollTop && st > floatingHeight){
+    //         // Scroll Down
+    //         $('.headerPanel').addClass('view_hidden');
+    //         $(".sticked").css( { paddingTop: 0} );
+    //     } else {
+    //         // Scroll Up
+    //         if(st + $(window).height() < $(document).height()) {
+    //             $('.headerPanel').removeClass('view_hidden');
+    // 	        $(".sticky").css( { paddingTop: 60} );
+    //         }
+    //     }
+
+    //     lastScrollTop = st;
+    // }
+
+    var floatingBlockSpace;
+
+
+    if ($('.floatingPanel').length) {
+
+        handleFloatingPanel();
+
+    }
+
+    function handleFloatingPanel(){
+        var floatingTarget = $(".floatingPanel");
+
+        document.addEventListener('touchstart', handleTouchStart, false);
+        document.addEventListener('touchend', handleTouchEnd, false);
+        document.addEventListener('touchmove', handleTouchMove, false);
+        var floatingHeight = floatingTarget.outerHeight();
+
+        var yDown = null;
+        var lastScrollTop = 0;
+        var currentScrollTop;
+        // var docHeight = $(document).height();
+        floatingBlockSpace = 80;
+
+        // для десктопов
+        if (clickHandler == "click") {
+            $(window).scroll(function(event){
+                currentScrollTop = $(this).scrollTop();
+                if (currentScrollTop > floatingHeight) {
+                    floatingTarget.addClass('view_scrolling');
+                } else {
+                    floatingTarget.removeClass('view_scrolling');
+                }
+            });
+        }
+
+        function handleTouchStart(evt) {
+            yDown = evt.touches[0].clientY;
+
+            lastScrollTop = $(this).scrollTop();
+
+            // дублируем детектом скролла - он посчитается после завершения скролла
+            $(window).scroll(function(event){
+                currentScrollTop = $(this).scrollTop();
+
+                //if (currentScrollTop >= lastScrollTop) {
+                //	if (currentScrollTop > floatingHeight) {
+                //		floatingTarget.addClass('view_hidden');
+                //	}
+                //} else {
+                //	floatingTarget.removeClass('view_hidden');
+                //}
+
+                if (currentScrollTop >= lastScrollTop) {
+                    // вниз
+                    if (currentScrollTop > floatingHeight) {
+                        floatingTarget.addClass('view_hidden').addClass('view_scrolling');
+                    } else {
+                        floatingTarget.removeClass('view_hidden').removeClass('view_scrolling');
+                    }
+                } else {
+                    // вверх
+                    if (currentScrollTop > floatingHeight) {
+                        floatingTarget.removeClass('view_hidden').addClass('view_scrolling');
+                    } else {
+                        floatingTarget.addClass('view_hidden').removeClass('view_scrolling');
+                    }
+                }
+            });
+        }
+
+        function handleTouchMove(evt) {
+            currentScrollTop = $(this).scrollTop();
+            // var scrollEdge = docHeight - $(window).height();
+
+            // floatingTarget.html(currentScrollTop)
+
+            if ( !yDown ) {
+                return;
+            }
+
+            var yUp = evt.touches[0].clientY;
+            var yDiff = yDown - yUp;
+
+            if ( yDiff > 0 ) {
+                // вниз
+                $(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
+                if (currentScrollTop > floatingHeight) {
+                    // скрываем, только если проскроллили больше высоты меню
+                    floatingTarget.addClass('view_hidden').addClass('view_scrolling');;
+                    floatingBlockSpace = 20;
+                    // $(".sticked.state_floating").css({top: 20})
+                }
+            } else {
+                if (currentScrollTop < floatingHeight) {
+                    floatingTarget.removeClass('view_scrolling');
+                }
+                // вверх
+                floatingTarget.removeClass('view_hidden');
+                floatingBlockSpace = 80;
+            }
+            // reset
+            yDown = null;
+
+
+            // if (currentScrollTop <= scrollEdge) {
+            // 	if (currentScrollTop > lastScrollTop) {
+            // 		floatingTarget.addClass('view_hidden');
+            // 	} else {
+            // 		floatingTarget.removeClass('view_hidden');
+            // 	}
+            // }
+
+        }
+
+        function handleTouchEnd(evt) {
+            //    	currentScrollTop = $(this).scrollTop();
+            //    	if (currentScrollTop > lastScrollTop) {
+            //    		if (currentScrollTop > floatingHeight) {
+            //     		floatingTarget.addClass('view_hidden');
+            //     	}
+            //    	} else {
+            //    		floatingTarget.removeClass('view_hidden');
+            //    	}
+        }
+    }
+
+
+
+    // ======================================
+    // плавающие социалки
+    // ======================================
+
+
+    if ($('.floatingInfo').length) {
+
+        handleFloatingInfo();
+
+    }
+
+    function handleFloatingInfo(){
+        document.addEventListener('touchstart', handleTouchStart, false);
+        document.addEventListener('touchmove', handleTouchMove, false);
+        var floatingHeight = $('.headerPanel').outerHeight() + $('.banner_top:visible').outerHeight(true);
+        $(window).resize(function(){
+            floatingHeight = $('.headerPanel').outerHeight() + $('.banner_top:visible').outerHeight(true);
+        });
+
+        var yDown = null;
+        var lastScrollTop = 0;
+        var currentScrollTop;
+        floatingBlockSpace = 100;
+
+        // для десктопов
+        if (clickHandler == "click") {
+            $(window).scroll(function(event){
+                currentScrollTop = $(this).scrollTop();
+                if (currentScrollTop > floatingHeight) {
+                    $('.floatingInfo').addClass('view_scrolling').addClass('view_opacity');
+                } else {
+                    $('.floatingInfo').removeClass('view_scrolling').removeClass('view_opacity');
+                }
+            });
+        }
+
+        function handleTouchStart(evt) {
+            yDown = evt.touches[0].clientY;
+
+            lastScrollTop = $(this).scrollTop();
+
+            // дублируем детектом скролла - он посчитается после завершения скролла
+            $(window).scroll(function(event){
+                currentScrollTop = $(this).scrollTop();
+
+                if (currentScrollTop >= lastScrollTop) {
+                    // вниз
+                    if (currentScrollTop > floatingHeight) {
+                        $('.floatingInfo').addClass('view_hidden').addClass('view_scrolling');
+                    } else {
+                        $('.floatingInfo').removeClass('view_hidden').removeClass('view_scrolling');
+                    }
+                } else {
+                    // вверх
+                    if (currentScrollTop > floatingHeight) {
+                        $('.floatingInfo').removeClass('view_hidden').addClass('view_scrolling');
+                    } else {
+                        $('.floatingInfo').addClass('view_hidden').removeClass('view_scrolling');
+                    }
+                }
+            });
+        };
+
+        function handleTouchMove(evt) {
+            currentScrollTop = $(this).scrollTop();
+
+            if ( !yDown ) {
+                return;
+            }
+
+            var yUp = evt.touches[0].clientY;
+            var yDiff = yDown - yUp;
+
+            if ( yDiff > 0 ) {
+                // вниз
+                $(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
+
+                if (currentScrollTop > floatingHeight) {
+                    // скрываем, только если проскроллили больше высоты меню
+                    $('.floatingInfo').addClass('view_hidden').addClass('view_scrolling');
+                    floatingBlockSpace = 20;
+                }
+            } else {
+                if (currentScrollTop < floatingHeight) {
+                    $('.floatingInfo').removeClass('view_scrolling');
+                }
+                $('.floatingInfo').removeClass('view_hidden');
+                floatingBlockSpace = 100;
+            }
+            // reset
+            yDown = null;
+
+
+        };
+    }
+
+
+
+    // ======================================
+    // плавающий блок
+    // ======================================
+
+    /* устанавливаем высоту плавательного контейнера */
+    function updateStickySize() {
+        $(".hcSticky__sticky").height(0).hide();
+        var height = $(".hcSticky__scrollable").parent().parent().height() - $(".hcSticky__scrollable").height();
+        $(".hcSticky__sticky").height(height).show();
+    }
+
+    $(window).load(function(){ // надо, чтобы окно полность загрузилось
+        updateStickySize();
+
+        window.globalstorage.updateStickySize = updateStickySize();
+
+        var doingStickyResize = false;
+
+        $(window).resize(function(event){
+            doingStickyResize = true;
+        });
+
+        setInterval(function() {
+            if (doingStickyResize) {
+                updateStickySize();
+                doingStickyResize = false;
+            }
+        }, 500);
+
+        $('.sticked').hcSticky({
+            stickTo: ".hcSticky__sticky",
+            // onStart: stickyHeight(),
+            top: floatingBlockSpace
+            // bottomEnd: 10,
+            // wrapperClassName: 'sidebar-sticky'
+        });
+
+    });
+
+
+    // сменяем слайды в зависимости от позиции скролла
+    var slides = $(".stickedSlide");
+
+    if (slides.length) {
+
+        var anchors = $(".stickedSlideHere"); /* якоря расставить в контенте! */
+        var showHeightsArray = [];
+        showHeightsArray[0] = 0; // просто, чтоб забить неиспользуемую ячейку
+        var position = 0;
+        var slideToShow = 0;
+
+        anchors.each(function(){
+            var slideNum = $(this).attr("data-stickedSlideHere"); /* присвоить номер слайда */
+            showHeightsArray[slideNum] = $(this).offset().top;
+        });
+        var heightsNum = showHeightsArray.length;
+
+        $(window).scroll(function() {
+
+            position = $(window).scrollTop();
+
+            for (var i = 0; i < heightsNum; i++) {
+                if (position > showHeightsArray[i]) {
+                    slideToShow = i
+
+                }
+            }
+
+            slides.hide();
+            // на случай глюков - более тяжелый селектор, но более точный
+            // $(".stickedSlide:gt(" +slideToShow+ ")").hide();
+            // $(".stickedSlide:lt(" +slideToShow+ ")").hide();
+            $(slides[slideToShow]).show();
+
+        });
+
+    }
+
+
+
+    // ======================================
+    // тэги на _block-selector
+    // ======================================
+    $(".blockSelector__link").on('click', function(){
+        $(this).parent().toggleClass("state_selected");
+        return false;
+    });
+
+
+
+    // ======================================
+    // раскрывающиеся комменты
+    // ======================================
+    $(".comments__expandButton").on('click', function(){
+        $(this).toggleClass("state_open");
+        $(this).parentsUntil(".article").find(".commentsContent").toggleClass("state_open"); // здесь прописать класс раскрывающегося блока коммента
+        return false;
+    });
+
+
+
+    // ======================================
+    // слайдер - http://www.idangero.us/swiper/api/#.VqVEzPmLSHv
+    // ======================================
+    window.globalstorage = {
+        pageSwiperArray: []
+    };
 
     $('.pageSwiper').each(function () {
-	    var pageSwiper = new Swiper($(this), {
-	        nextButton: $(this).parent().find('.swiper-button-next'),
-	        prevButton: $(this).parent().find('.swiper-button-prev'),
-	        spaceBetween: 16,
-	        threshold: 50,
-	        observer: true,
-	        breakpoints: {
-	            1279: {
-	                spaceBetween: 22
-	            },
-	            1040: {
-	                spaceBetween: "2%",
-	                grabCursor: true
-	            },
-	            1023: {
-	                spaceBetween: "3%",
-	                grabCursor: true
-	            }
-	        }
-	    });
-		window.globalstorage.pageSwiperArray.push(pageSwiper);
+        var pageSwiper = new Swiper($(this), {
+            nextButton: $(this).parent().find('.swiper-button-next'),
+            prevButton: $(this).parent().find('.swiper-button-prev'),
+            spaceBetween: 16,
+            threshold: 50,
+            observer: true,
+            breakpoints: {
+                1279: {
+                    spaceBetween: 22
+                },
+                1040: {
+                    spaceBetween: "2%",
+                    grabCursor: true
+                },
+                1023: {
+                    spaceBetween: "3%",
+                    grabCursor: true
+                }
+            }
+        });
+        window.globalstorage.pageSwiperArray.push(pageSwiper);
     });
 
 
     $('.slider').each(function () {
-	    var imagesSlider = new Swiper($(this), {
-	        pagination: $(this).find('.swiper-pagination'),
-	        paginationClickable: true,
-	        loop: true,
-	        // resistanceRatio: 0,
-	        nested: true,
-	        autoplay: 9000, // скорость
-	        autoplayDisableOnInteraction: true
-	        // observeParents: true,
-	        // observer: true,
-	        // setWrapperSize: true,
-	    });
+        var imagesSlider = new Swiper($(this), {
+            pagination: $(this).find('.swiper-pagination'),
+            paginationClickable: true,
+            loop: true,
+            // resistanceRatio: 0,
+            nested: true,
+            autoplay: 9000, // скорость
+            autoplayDisableOnInteraction: true
+            // observeParents: true,
+            // observer: true,
+            // setWrapperSize: true,
+        });
 
-	    // по наведению - остановим
-	    $(this).mouseover(function(){
-	    	imagesSlider.stopAutoplay();
-	    });
-	    $(this).mouseout(function(){
-	    	imagesSlider.startAutoplay();
-	    });
+        // по наведению - остановим
+        $(this).mouseover(function(){
+            imagesSlider.stopAutoplay();
+        });
+        $(this).mouseout(function(){
+            imagesSlider.startAutoplay();
+        });
 
 
 
-		// var doingResize = false;
+        // var doingResize = false;
 
-		// $(window).resize(function(event){
-		//     doingResize = true;
-		// });
+        // $(window).resize(function(event){
+        //     doingResize = true;
+        // });
 
-		// setInterval(function() {
-		//     if (doingResize) {
-		//         imagesSlider.updateSlidesSize();
-		//         doingResize = false;
-		//     }
-		// }, 100);
+        // setInterval(function() {
+        //     if (doingResize) {
+        //         imagesSlider.updateSlidesSize();
+        //         doingResize = false;
+        //     }
+        // }, 100);
     });
 
-	$('.flexSlider-noresize').each(function () {
-		var pageSwiper = new Swiper($(this), {
-			nextButton: $(this).parent().find('.swiper-button-next'),
-			prevButton: $(this).parent().find('.swiper-button-prev'),
-			spaceBetween: 16,
-			threshold: 50,
-			observer: true,
-			breakpoints: {
-				1279: {
-					spaceBetween: 22,
-					slidesPerView: 3,
-					slidesPerColumn: 2
-					//slidesPerGroup: 6
-				},
-				1040: {
-					//spaceBetween: "2%",
-					grabCursor: true,
-					slidesPerView: 2,
-					slidesPerColumn: 2
-					//slidesPerGroup: 4
-				}
-				//1023: {
-				//	spaceBetween: "3%",
-				//	grabCursor: true,
-				//	slidesPerView: 2,
-				//	slidesPerColumn: 2
-				//	//slidesPerGroup: 4
-				//}
-			},
-			slidesPerView: 4,
-			slidesPerColumn: 2,
-			slidesPerGroup: 2
-			//slidesPerColumnFill: 'row'
-		});
-	});
+    $('.flexSlider-noresize').each(function () {
+        var pageSwiper = new Swiper($(this), {
+            nextButton: $(this).parent().find('.swiper-button-next'),
+            prevButton: $(this).parent().find('.swiper-button-prev'),
+            spaceBetween: 16,
+            threshold: 50,
+            observer: true,
+            breakpoints: {
+                1279: {
+                    spaceBetween: 22,
+                    slidesPerView: 3,
+                    slidesPerColumn: 2
+                    //slidesPerGroup: 6
+                },
+                1040: {
+                    //spaceBetween: "2%",
+                    grabCursor: true,
+                    slidesPerView: 2,
+                    slidesPerColumn: 2
+                    //slidesPerGroup: 4
+                }
+                //1023: {
+                //	spaceBetween: "3%",
+                //	grabCursor: true,
+                //	slidesPerView: 2,
+                //	slidesPerColumn: 2
+                //	//slidesPerGroup: 4
+                //}
+            },
+            slidesPerView: 4,
+            slidesPerColumn: 2,
+            slidesPerGroup: 2
+            //slidesPerColumnFill: 'row'
+        });
+    });
 
-	var flexSliders = [];
-	var prevWindowWidth = $(window).width();
-	var prevWindowHeight = $(window).height();
-	//var slidesPerGroup = 2, slidesPerView = 2;
+    var flexSliders = [];
+    var prevWindowWidth = $(window).width();
+    var prevWindowHeight = $(window).height();
+    //var slidesPerGroup = 2, slidesPerView = 2;
 
-	//if(prevWindowWidth > 1279) {
-	//	slidesPerGroup = 4;
-	//	slidesPerView = 4;
-	//} else if (prevWindowWidth > 1040) {
-	//	slidesPerGroup = 3;
-	//	slidesPerView = 3;
-	//}
+    //if(prevWindowWidth > 1279) {
+    //	slidesPerGroup = 4;
+    //	slidesPerView = 4;
+    //} else if (prevWindowWidth > 1040) {
+    //	slidesPerGroup = 3;
+    //	slidesPerView = 3;
+    //}
 
     function initFlexSlider() {
-	    var flexSliders = $('.flexSlider-onresize');
+        var flexSliders = $('.flexSlider-onresize');
 
-	    if(!flexSliders.length) return;
+        if(!flexSliders.length) return;
 
-	    flexSliders.each(function () {
+        flexSliders.each(function () {
 
             var flexSlider = new Swiper($(this), {
                 nextButton: $(this).parent().find('.swiper-button-next'),
@@ -828,473 +828,473 @@ $(function() {
     }
 
     initFlexSlider();
-	$(window).on("debouncedresize", function(event) {
-		var slides = $('.flexSlider-onresize').find('.width_twice');
+    $(window).on("debouncedresize", function(event) {
+        var slides = $('.flexSlider-onresize').find('.width_twice');
 
-		if(!slides.length) return;
+        if(!slides.length) return;
 
-		var $flexSliders = $(flexSliders);
-		var windowWidth = $(window).width();
-		var windowHeight = $(window).height();
+        var $flexSliders = $(flexSliders);
+        var windowWidth = $(window).width();
+        var windowHeight = $(window).height();
+        var twiceWidth = $('.flexSlider-onresize').find('.swiper-slide').not(".width_twice")[0].getBoundingClientRect().width * 2 + 16;
 
-		if ($flexSliders && (windowWidth !== prevWindowWidth || windowHeight !== prevWindowHeight)) {
-			slides.attr('style', slides.attr('style') +  'width: ' + (slides[0].getBoundingClientRect().width * 2 + 16) + 'px !important');
+        if ($flexSliders && (windowWidth !== prevWindowWidth || windowHeight !== prevWindowHeight)) {
+            slides.attr('style', slides.attr('style') +  'width: ' + twiceWidth + 'px !important');
 
-			//slides.style.setProperty('width', slides.eq(0).width() * 2 + 'px', 'important');
-			//slides.css({
-			//	width: slides.eq(0).width() * 2 + 'px !important'
-			//});
+            //slides.style.setProperty('width', slides.eq(0).width() * 2 + 'px', 'important');
+            //slides.css({
+            //	width: slides.eq(0).width() * 2 + 'px !important'
+            //});
 
-			prevWindowWidth = windowWidth;
-			//
-			//$flexSliders.each(function(i, flexSlider){
-			//	if(windowWidth > 1279) {
-			//		flexSlider.params.slidesPerGroup = 4;
-			//		flexSlider.params.slidesPerView = 4;
-			//
-			//		flexSlider.update(true);
-			//
-			//
-			//	} else if (windowWidth > 1040) {
-			//		flexSlider.params.slidesPerGroup = 3;
-			//		flexSlider.params.slidesPerView = 3;
-			//
-			//		flexSlider.update(true);
-			//	} else {
-			//		flexSlider.params.slidesPerGroup = 2;
-			//		flexSlider.params.slidesPerView = 2;
-			//
-			//		flexSlider.update(true);
-			//	}
-			//});
-		}
-	});
+            prevWindowWidth = windowWidth;
+            //
+            //$flexSliders.each(function(i, flexSlider){
+            //	if(windowWidth > 1279) {
+            //		flexSlider.params.slidesPerGroup = 4;
+            //		flexSlider.params.slidesPerView = 4;
+            //
+            //		flexSlider.update(true);
+            //
+            //
+            //	} else if (windowWidth > 1040) {
+            //		flexSlider.params.slidesPerGroup = 3;
+            //		flexSlider.params.slidesPerView = 3;
+            //
+            //		flexSlider.update(true);
+            //	} else {
+            //		flexSlider.params.slidesPerGroup = 2;
+            //		flexSlider.params.slidesPerView = 2;
+            //
+            //		flexSlider.update(true);
+            //	}
+            //});
+        }
+    });
 
     $('.videoPlaylist__wrapper').each(function () {
-	    var videoSlider = new Swiper($(this), {
-	        // pagination: $(this).find('.swiper-pagination'),
-	        // paginationClickable: true,
-	        // loop: true,
-	        nested: true,
-	        // observeParents: true,
-	        // observer: true,
-	        // setWrapperSize: true,
-	        direction: 'vertical',
-	        slidesPerView: 2,
-	        mousewheelControl: true,
-	        nextButton: '.videoPlaylist__nav.view_next',
-	        prevButton: '.videoPlaylist__nav.view_prev',
-	        spaceBetween: 6
-	    });
+        var videoSlider = new Swiper($(this), {
+            // pagination: $(this).find('.swiper-pagination'),
+            // paginationClickable: true,
+            // loop: true,
+            nested: true,
+            // observeParents: true,
+            // observer: true,
+            // setWrapperSize: true,
+            direction: 'vertical',
+            slidesPerView: 2,
+            mousewheelControl: true,
+            nextButton: '.videoPlaylist__nav.view_next',
+            prevButton: '.videoPlaylist__nav.view_prev',
+            spaceBetween: 6
+        });
 
     });
 
 
     $('.view_opinion').each(function () {
-	    var opinionSlider = new Swiper($(this), {
-	        nextButton: $(this).find('.opinion-button-next'),
-	        prevButton: $(this).find('.opinion-button-prev'),
-	        autoplay: 4000,
-	        nested: true,
-	        // observer: true,
-	        resistanceRatio: 0,
-	        // setWrapperSize: true,
-	        autoplayDisableOnInteraction: false
+        var opinionSlider = new Swiper($(this), {
+            nextButton: $(this).find('.opinion-button-next'),
+            prevButton: $(this).find('.opinion-button-prev'),
+            autoplay: 4000,
+            nested: true,
+            // observer: true,
+            resistanceRatio: 0,
+            // setWrapperSize: true,
+            autoplayDisableOnInteraction: false
 
-	    });
+        });
 
-	    /* текущий слайд */
-	    var currentPlaceholder = $(this).find('#opinion__slideCurrent');
-		currentPlaceholder.html(opinionSlider.activeIndex + 1);
+        /* текущий слайд */
+        var currentPlaceholder = $(this).find('#opinion__slideCurrent');
+        currentPlaceholder.html(opinionSlider.activeIndex + 1);
 
-		opinionSlider.on('SlideChangeEnd', function () {
-		    currentPlaceholder.html(opinionSlider.activeIndex + 1);
-		});
+        opinionSlider.on('SlideChangeEnd', function () {
+            currentPlaceholder.html(opinionSlider.activeIndex + 1);
+        });
 
-		/* сколько всего */
-		var slides = opinionSlider.slides.size();
-		$(this).find('#opinion__slideTotal').html(slides);
+        /* сколько всего */
+        var slides = opinionSlider.slides.size();
+        $(this).find('#opinion__slideTotal').html(slides);
 
     });
 
 
     $('.photoSection').each(function () {
-	    var opinionSlider = new Swiper($(this), {
-	        nextButton: $(this).find('.photoSection__nav.view_next'),
-	        prevButton: $(this).find('.photoSection__nav.view_prew'),
-	        nested: true,
-	        // observer: true,
-	        resistanceRatio: 0,
-	        slidesPerView: 2,
-	        spaceBetween: "2%",
-	        // setWrapperSize: true,
-	        autoplayDisableOnInteraction: false
+        var opinionSlider = new Swiper($(this), {
+            nextButton: $(this).find('.photoSection__nav.view_next'),
+            prevButton: $(this).find('.photoSection__nav.view_prew'),
+            nested: true,
+            // observer: true,
+            resistanceRatio: 0,
+            slidesPerView: 2,
+            spaceBetween: "2%",
+            // setWrapperSize: true,
+            autoplayDisableOnInteraction: false
 
-	    });
+        });
     });
 
 
-	// фикс для бага с шириной слайдера внутри таблицы
-	// var doingScroll = false;
+    // фикс для бага с шириной слайдера внутри таблицы
+    // var doingScroll = false;
 
-	// $(window).scroll(function(event){
-	//     doingScroll = true;
-	// });
+    // $(window).scroll(function(event){
+    //     doingScroll = true;
+    // });
 
-	// setInterval(function() {
-	//     if (doingScroll) {
-	//         sliderWidth();
-	//         doingScroll = false;
-	//     }
-	// }, 100);
+    // setInterval(function() {
+    //     if (doingScroll) {
+    //         sliderWidth();
+    //         doingScroll = false;
+    //     }
+    // }, 100);
 
-	// function sliderWidth() {
-	// 	$('.table__mainColumn .slider').hide();
-	// 	var windowWidth = $(document).width();
-	// 	if (windowWidth >= 1024  && windowWidth <= 1040) {
-	// 		var sliderWidth = $('.table__mainColumn .slider').parent().width();
-	// 		$('.table__mainColumn .slider').width(sliderWidth);
-	// 	}
-	// 	if (windowWidth < 1024 || windowWidth > 1040) {
-	// 		$('.table__mainColumn .slider').width("");
-	// 	}
-	// 	$('.table__mainColumn .slider').show();
-	// }; 
-	// sliderWidth();
-
-
-
-	// ======================================
-	// ФИЛЬТР СТАТЕЙ 
-	// ======================================
-
-	var filtersListCounterElement = $(".categoryFilter__counter"),
-		filterListWrapper = $(".filtersList__wrapper"),
-		filtersListItems = $(".filtersList__item"),
-		filtersListCounter = filtersListItems.filter('.state_selected').length,
-		articlesWords = [' рубрика', ' рубрики', ' рубрик'],
-		categoryFilterInfo = $(".categoryFilter__info");
-
-	$(".categoryFilter__filter").on('click', function(){
-		var categoryFilterWidthAdjuster = $(".categoryFilter__widthAdjuster");
-		var width = categoryFilterWidthAdjuster.parent().width() -
-					categoryFilterWidthAdjuster.innerWidth() - 60;
-		$(".filtersList__wrapper").width(width);
-		$(this).toggleClass("state_open");
-		filterListWrapper.toggleClass("state_open");
-		categoryFilterInfo.toggleClass("state_open");
-		// if ($(this).hasClass("state_open")) {
-		// 	categoryFilterWidth();
-		// }
-		return false;
-	});
-
-	$(".categoryFilter__wrapper .closeButton").on('click', function(){
-		filterListWrapper.toggleClass("state_open");
-		categoryFilterInfo.toggleClass("state_open");
-		return false;
-	});
-
-	$(window).resize(function(){
-		$(".categoryFilter__filter").removeClass("state_open");
-		filterListWrapper.removeClass("state_open");
-		categoryFilterInfo.removeClass("state_open");
-	});
-
-
-	filterListWrapper.on('click', '.filtersList__item', function(e){
-		var $this = $(e.currentTarget);
-		$this.toggleClass("state_selected");
-		filtersListCounterElement.text(($this.hasClass("state_selected") ? ++filtersListCounter : --filtersListCounter) + declOfNum(filtersListCounter, articlesWords));
-		e.preventDefault();
-	});
-
-	filterListWrapper.on('click', '.view_allFilters', function(e){
-
-		var $this = $(e.currentTarget),
-			selectedAll = $this.data('selectedAll'),
-			action = 'addClass',
-			totalSelected = filtersListItems.length,
-			state = 1;
-
-		if (selectedAll) {
-			action = 'removeClass';
-			state = 0;
-			totalSelected = 0;
-			filtersListCounter = 0;
-		}
-
-		filtersListItems[action]("state_selected");
-		$this.data('selectedAll', state);
-		filtersListCounterElement.text(totalSelected + declOfNum(totalSelected, articlesWords));
-
-		e.preventDefault();
-	});
-
-	// $(window).resize(function(){  
-	// 	$(".categoryFilter__filter").removeClass("state_open");
-	// 	$(".filtersList__wrapper").removeClass("state_open");
-	// 	$(".categoryFilter__info").removeClass("state_open");
-	// });
-
-	// function categoryFilterWidth() {
-	// 	var windowWidth = $(document).width();
-	// 	var buttonLeft = $(".categoryFilter__filter").offset().left;
-	// 	var buttonTop = $(".categoryFilter__filter").offset().top;
-	// 	var contentWidth = $(".wrapper").width();
-	// 	var calc = windowWidth - buttonLeft - (windowWidth - contentWidth)/2
-	// 	$(".filtersList__wrapper").width(calc-60).offset({top:buttonTop+35, left:buttonLeft});
-	// }
+    // function sliderWidth() {
+    // 	$('.table__mainColumn .slider').hide();
+    // 	var windowWidth = $(document).width();
+    // 	if (windowWidth >= 1024  && windowWidth <= 1040) {
+    // 		var sliderWidth = $('.table__mainColumn .slider').parent().width();
+    // 		$('.table__mainColumn .slider').width(sliderWidth);
+    // 	}
+    // 	if (windowWidth < 1024 || windowWidth > 1040) {
+    // 		$('.table__mainColumn .slider').width("");
+    // 	}
+    // 	$('.table__mainColumn .slider').show();
+    // };
+    // sliderWidth();
 
 
 
-	function declOfNum(number, titles) {
-		var cases = [2, 0, 1, 1, 1, 2];
-		return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
-	}
+    // ======================================
+    // ФИЛЬТР СТАТЕЙ
+    // ======================================
+
+    var filtersListCounterElement = $(".categoryFilter__counter"),
+        filterListWrapper = $(".filtersList__wrapper"),
+        filtersListItems = $(".filtersList__item"),
+        filtersListCounter = filtersListItems.filter('.state_selected').length,
+        articlesWords = [' рубрика', ' рубрики', ' рубрик'],
+        categoryFilterInfo = $(".categoryFilter__info");
+
+    $(".categoryFilter__filter").on('click', function(){
+        var categoryFilterWidthAdjuster = $(".categoryFilter__widthAdjuster");
+        var width = categoryFilterWidthAdjuster.parent().width() -
+            categoryFilterWidthAdjuster.innerWidth() - 60;
+        $(".filtersList__wrapper").width(width);
+        $(this).toggleClass("state_open");
+        filterListWrapper.toggleClass("state_open");
+        categoryFilterInfo.toggleClass("state_open");
+        // if ($(this).hasClass("state_open")) {
+        // 	categoryFilterWidth();
+        // }
+        return false;
+    });
+
+    $(".categoryFilter__wrapper .closeButton").on('click', function(){
+        filterListWrapper.toggleClass("state_open");
+        categoryFilterInfo.toggleClass("state_open");
+        return false;
+    });
+
+    $(window).resize(function(){
+        $(".categoryFilter__filter").removeClass("state_open");
+        filterListWrapper.removeClass("state_open");
+        categoryFilterInfo.removeClass("state_open");
+    });
+
+
+    filterListWrapper.on('click', '.filtersList__item', function(e){
+        var $this = $(e.currentTarget);
+        $this.toggleClass("state_selected");
+        filtersListCounterElement.text(($this.hasClass("state_selected") ? ++filtersListCounter : --filtersListCounter) + declOfNum(filtersListCounter, articlesWords));
+        e.preventDefault();
+    });
+
+    filterListWrapper.on('click', '.view_allFilters', function(e){
+
+        var $this = $(e.currentTarget),
+            selectedAll = $this.data('selectedAll'),
+            action = 'addClass',
+            totalSelected = filtersListItems.length,
+            state = 1;
+
+        if (selectedAll) {
+            action = 'removeClass';
+            state = 0;
+            totalSelected = 0;
+            filtersListCounter = 0;
+        }
+
+        filtersListItems[action]("state_selected");
+        $this.data('selectedAll', state);
+        filtersListCounterElement.text(totalSelected + declOfNum(totalSelected, articlesWords));
+
+        e.preventDefault();
+    });
+
+    // $(window).resize(function(){
+    // 	$(".categoryFilter__filter").removeClass("state_open");
+    // 	$(".filtersList__wrapper").removeClass("state_open");
+    // 	$(".categoryFilter__info").removeClass("state_open");
+    // });
+
+    // function categoryFilterWidth() {
+    // 	var windowWidth = $(document).width();
+    // 	var buttonLeft = $(".categoryFilter__filter").offset().left;
+    // 	var buttonTop = $(".categoryFilter__filter").offset().top;
+    // 	var contentWidth = $(".wrapper").width();
+    // 	var calc = windowWidth - buttonLeft - (windowWidth - contentWidth)/2
+    // 	$(".filtersList__wrapper").width(calc-60).offset({top:buttonTop+35, left:buttonLeft});
+    // }
 
 
 
-	// ======================================
-	// датапикер - http://digitalbush.com/projects/masked-input-plugin/
-	// ======================================
-
-	$(function($){
-		$(".datepicker").mask("99/99/9999",{placeholder:"__/__/____"});
-	});
+    function declOfNum(number, titles) {
+        var cases = [2, 0, 1, 1, 1, 2];
+        return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
+    }
 
 
 
-	// ======================================
-	// подключаем табы - jqueryui
-	// ======================================
+    // ======================================
+    // датапикер - http://digitalbush.com/projects/masked-input-plugin/
+    // ======================================
 
-	var tabs = $( ".tabs__wrapper"),
-		jquery_ui_classes = [".ui-tabs", ".ui-tabs-nav", ".ui-tabs-panel", ".ui-widget", ".ui-widget-header", ".ui-widget-content", ".ui-corner-all", ".ui-corner-top", ".ui-corner-bottom", ".ui-helper-clearfix", ".ui-helper-reset", ".ui-state-default"];
-
-	tabs.tabs();
-	var tabsNoStyles = tabs.filter('.tabs__wrapper-noStyles').find(jquery_ui_classes.join(", ")).andSelf();
-	tabsNoStyles.removeClass( jquery_ui_classes.join(" ").replace(/\./g, "") );
+    $(function($){
+        $(".datepicker").mask("99/99/9999",{placeholder:"__/__/____"});
+    });
 
 
 
-	// ======================================
-	// разворачиваюзиеся блоки (tags page)
-	// ======================================
+    // ======================================
+    // подключаем табы - jqueryui
+    // ======================================
 
+    var tabs = $( ".tabs__wrapper"),
+        jquery_ui_classes = [".ui-tabs", ".ui-tabs-nav", ".ui-tabs-panel", ".ui-widget", ".ui-widget-header", ".ui-widget-content", ".ui-corner-all", ".ui-corner-top", ".ui-corner-bottom", ".ui-helper-clearfix", ".ui-helper-reset", ".ui-state-default"];
 
-	$(".hider").on('click', function () {
-
-		var what = $(this).attr("data-id");
-
-		$("#"+what).slideToggle(150).toggleClass("state_hidderHidden");
-		$(this).find("span").toggleClass("state_hidderHidden");
-
-		return false;
-	});
+    tabs.tabs();
+    var tabsNoStyles = tabs.filter('.tabs__wrapper-noStyles').find(jquery_ui_classes.join(", ")).andSelf();
+    tabsNoStyles.removeClass( jquery_ui_classes.join(" ").replace(/\./g, "") );
 
 
 
-	// ======================================
-	// цветные табы-секции на всю страницу
-	// ======================================
-
-	var pageSwiperArray = window.globalstorage.pageSwiperArray; // все слайдеры
-
-	$(".pageTabs__item").on('click', function () {
-
-		var page = $(this).attr("data-url");
-		var target = $(this).attr("data-target");
-		var wrapper =  $(this).attr("data-wrapper");
-		var _this = $(this);
-
-		var bgClass = $.grep(this.className.split(" "), function(v, i){
-		   return v.indexOf('contentBackground') === 0;
-		}).join(); // узнаем класс фона таба, по которому кликнули
-
-		var currentClass = $.grep(document.getElementById(wrapper).className.split(" "), function(v, i){
-		   return v.indexOf('contentBackground') === 0;
-		}).join(); // узнаем текущий класс фона
-
-		var container = $("#" + target);
-		var heightStill = container.height();
-		container.height(heightStill); // установим высоту, чтоб при удалении не схлопнулась
-
-		$.ajax({
-			url: "_md-preloader.shtml"
-			// cache: false
-		})
-		.done(function( html ) {
-			container.html(html);
-			$("#" + wrapper).removeClass(currentClass).addClass(bgClass);
-
-			$(".pageTabs__item.state_current").removeClass("state_current");
-			_this.addClass("state_current");
-		})
-		.always(function() {
-			// console.log( "complete" );
-		});
+    // ======================================
+    // разворачиваюзиеся блоки (tags page)
+    // ======================================
 
 
-		// имитируем загрузку контента - при вставке реального кода УДАЛИТЬ обертку в таймаут!!!
-		setTimeout(function(){
-			$.ajax({
-				url: page,
-				cache: false
-			})
-			.done(function( html ) {
-				container.html( html );
+    $(".hider").on('click', function () {
 
-				container.find(".readLater").on('click', function(){
-					$(this).toggleClass("view_saved");
-					return false;
-				});
-			})
-			.fail(function() {
-				// console.log( "error" );
-			})
-			.always(function() {
-                container.height(""); // обнулим высоту
-                pageSwiperArray[1].slideTo(0);
-                initFlexSlider();
+        var what = $(this).attr("data-id");
+
+        $("#"+what).slideToggle(150).toggleClass("state_hidderHidden");
+        $(this).find("span").toggleClass("state_hidderHidden");
+
+        return false;
+    });
+
+
+
+    // ======================================
+    // цветные табы-секции на всю страницу
+    // ======================================
+
+    var pageSwiperArray = window.globalstorage.pageSwiperArray; // все слайдеры
+
+    $(".pageTabs__item").on('click', function () {
+
+        var page = $(this).attr("data-url");
+        var target = $(this).attr("data-target");
+        var wrapper =  $(this).attr("data-wrapper");
+        var _this = $(this);
+
+        var bgClass = $.grep(this.className.split(" "), function(v, i){
+            return v.indexOf('contentBackground') === 0;
+        }).join(); // узнаем класс фона таба, по которому кликнули
+
+        var currentClass = $.grep(document.getElementById(wrapper).className.split(" "), function(v, i){
+            return v.indexOf('contentBackground') === 0;
+        }).join(); // узнаем текущий класс фона
+
+        var container = $("#" + target);
+        var heightStill = container.height();
+        container.height(heightStill); // установим высоту, чтоб при удалении не схлопнулась
+
+        $.ajax({
+            url: "_md-preloader.shtml"
+            // cache: false
+        })
+            .done(function( html ) {
+                container.html(html);
+                $("#" + wrapper).removeClass(currentClass).addClass(bgClass);
+
+                $(".pageTabs__item.state_current").removeClass("state_current");
+                _this.addClass("state_current");
+            })
+            .always(function() {
+                // console.log( "complete" );
             });
-		}, 1000);
-
-		return false;
-	});
 
 
+        // имитируем загрузку контента - при вставке реального кода УДАЛИТЬ обертку в таймаут!!!
+        setTimeout(function(){
+            $.ajax({
+                url: page,
+                cache: false
+            })
+                .done(function( html ) {
+                    container.html( html );
 
-	// DUPLICATED CODE
+                    container.find(".readLater").on('click', function(){
+                        $(this).toggleClass("view_saved");
+                        return false;
+                    });
+                })
+                .fail(function() {
+                    // console.log( "error" );
+                })
+                .always(function() {
+                    container.height(""); // обнулим высоту
+                    initFlexSlider();
+                });
+        }, 1000);
 
-	// ======================================
-	// цветные табы-секции на всю страницу
-	// ======================================
+        return false;
+    });
+
+
+
+    // DUPLICATED CODE
+
+    // ======================================
+    // цветные табы-секции на всю страницу
+    // ======================================
     //
-	//pageSwiperArray = window.globalstorage.pageSwiperArray; // все слайдеры
+    //pageSwiperArray = window.globalstorage.pageSwiperArray; // все слайдеры
     //
-	//$(".pageTabs__item").on('click', function () {
+    //$(".pageTabs__item").on('click', function () {
     //
-	//	var page = $(this).attr("data-url");
-	//	var target = $(this).attr("data-target");
-	//	var wrapper =  $(this).attr("data-wrapper");
+    //	var page = $(this).attr("data-url");
+    //	var target = $(this).attr("data-target");
+    //	var wrapper =  $(this).attr("data-wrapper");
     //
-	//	var bgClass = $.grep(this.className.split(" "), function(v, i){
-	//	   return v.indexOf('contentBackground') === 0;
-	//	}).join(); // узнаем класс фона таба, по которому кликнули
+    //	var bgClass = $.grep(this.className.split(" "), function(v, i){
+    //	   return v.indexOf('contentBackground') === 0;
+    //	}).join(); // узнаем класс фона таба, по которому кликнули
     //
-	//	var currentClass = $.grep(document.getElementById(wrapper).className.split(" "), function(v, i){
-	//	   return v.indexOf('contentBackground') === 0;
-	//	}).join(); // узнаем текущий класс фона
+    //	var currentClass = $.grep(document.getElementById(wrapper).className.split(" "), function(v, i){
+    //	   return v.indexOf('contentBackground') === 0;
+    //	}).join(); // узнаем текущий класс фона
     //
-	//	var container = $("#" + target);
-	//	var heightStill = container.height();
-	//	container.height(heightStill); // установим высоту, чтоб при удалении не схлопнулась
+    //	var container = $("#" + target);
+    //	var heightStill = container.height();
+    //	container.height(heightStill); // установим высоту, чтоб при удалении не схлопнулась
     //
-	//	$.ajax({
-	//		url: "_md-preloader.shtml",
-	//		// cache: false
-	//	})
-	//	.done(function( html ) {
-	//		container.html(html);
-	//		$("#" + wrapper).removeClass(currentClass).addClass(bgClass);
-	//	})
-	//	.always(function() {
-	//		// console.log( "complete" );
-	//	});
+    //	$.ajax({
+    //		url: "_md-preloader.shtml",
+    //		// cache: false
+    //	})
+    //	.done(function( html ) {
+    //		container.html(html);
+    //		$("#" + wrapper).removeClass(currentClass).addClass(bgClass);
+    //	})
+    //	.always(function() {
+    //		// console.log( "complete" );
+    //	});
     //
     //
-	//	// имитируем загрузку контента - при вставке реального кода УДАЛИТЬ обертку в таймаут!!!
-	//	setTimeout(function(){
-	//		$.ajax({
-	//			url: page,
-	//			cache: false
-	//		})
-	//		.done(function( html ) {
-	//			container.html( html );
+    //	// имитируем загрузку контента - при вставке реального кода УДАЛИТЬ обертку в таймаут!!!
+    //	setTimeout(function(){
+    //		$.ajax({
+    //			url: page,
+    //			cache: false
+    //		})
+    //		.done(function( html ) {
+    //			container.html( html );
     //
-	//			container.find(".readLater").on('click', function(){
-	//				$(this).toggleClass("view_saved");
-	//				return false;
-	//			});
-	//		})
-	//		.fail(function() {
-	//			// console.log( "error" );
-	//		})
-	//		.always(function() {
-	//			container.height(""); // обнулим высоту
-	//			pageSwiperArray[1].slideTo(0); // сдайлим на 0й слайд
+    //			container.find(".readLater").on('click', function(){
+    //				$(this).toggleClass("view_saved");
+    //				return false;
+    //			});
+    //		})
+    //		.fail(function() {
+    //			// console.log( "error" );
+    //		})
+    //		.always(function() {
+    //			container.height(""); // обнулим высоту
+    //			pageSwiperArray[1].slideTo(0); // сдайлим на 0й слайд
     //
-	//		});
-	//	}, 1000);
+    //		});
+    //	}, 1000);
     //
-	//	return false;
-	//});
+    //	return false;
+    //});
 
 
 
-	// ======================================
-	// кнопка смотреть больше новостей
-	// ======================================
+    // ======================================
+    // кнопка смотреть больше новостей
+    // ======================================
 
 
-	$(".moreButton").on('click', function () {
+    $(".moreButton").on('click', function () {
 
-		var page = $(this).attr("data-url");
-		var target = $(this).attr("data-target");
-		var button = $(this);
+        var page = $(this).attr("data-url");
+        var target = $(this).attr("data-target");
+        var button = $(this);
 
-		var container = $("." + target);
+        var container = $("." + target);
 
-		button.addClass("state_loading");
-
-		 
-
-		// имитируем загрузку контента - при вставке реального кода УДАЛИТЬ обертку в таймаут!!!
-		setTimeout(function(){
-			$.ajax({
-				url: page,
-				cache: false
-			})
-			.done(function( html ) {
-				container.append( html );
-			})
-			.always(function() {
-				button.removeClass("state_loading");
-				updateStickySize(); // обновляем высоту правой колонки!
-
-			});
-		}, 1000);
-
-		return false;
-	});
+        button.addClass("state_loading");
 
 
 
-	// ======================================
-	// читать позже
-	// ======================================
+        // имитируем загрузку контента - при вставке реального кода УДАЛИТЬ обертку в таймаут!!!
+        setTimeout(function(){
+            $.ajax({
+                url: page,
+                cache: false
+            })
+                .done(function( html ) {
+                    container.append( html );
+                })
+                .always(function() {
+                    button.removeClass("state_loading");
+                    updateStickySize(); // обновляем высоту правой колонки!
 
-	$(".readLater, .saveButton").on('click', function(){
-		$(this).toggleClass("view_saved");
-		$(this).find("span").toggleClass("state_hidderHidden");
-		return false;
-	});
+                });
+        }, 1000);
 
-	//var flexSlider = $('.flexSlider__container');
-	//
-	//if(flexSlider.length){
-	//	var prev = flexSlider.find('.swiper-button-prev');
-	//	var next = flexSlider.find('.swiper-button-next');
-	//	var container = flexSlider.find('.bricks__wrapper');
-	//
-	//	prev.click(function(){
-	//		container.css({'transform': 'translate(0, 0)'});
-	//	});
-	//	next.click(function(){
-	//		container.css({'transform': 'translate(-50%, 0)'});
-	//	});
-	//}
+        return false;
+    });
+
+
+
+    // ======================================
+    // читать позже
+    // ======================================
+
+    $(".readLater, .saveButton").on('click', function(){
+        $(this).toggleClass("view_saved");
+        $(this).find("span").toggleClass("state_hidderHidden");
+        return false;
+    });
+
+    //var flexSlider = $('.flexSlider__container');
+    //
+    //if(flexSlider.length){
+    //	var prev = flexSlider.find('.swiper-button-prev');
+    //	var next = flexSlider.find('.swiper-button-next');
+    //	var container = flexSlider.find('.bricks__wrapper');
+    //
+    //	prev.click(function(){
+    //		container.css({'transform': 'translate(0, 0)'});
+    //	});
+    //	next.click(function(){
+    //		container.css({'transform': 'translate(-50%, 0)'});
+    //	});
+    //}
 
 });
 

@@ -817,8 +817,6 @@ $(function() {
 
             if (window.globalstorage.pageSwiperArray) {
                 window.globalstorage.pageSwiperArray.push(flexSlider);
-            } else {
-                pageSwiperArray[1] = flexSlider;
             }
         });
 
@@ -1156,6 +1154,7 @@ $(function() {
                 })
                 .always(function() {
                     container.height(""); // обнулим высоту
+                    pageSwiperArray[1].slideTo(0);
                     initFlexSlider();
                 });
         }, 1000);

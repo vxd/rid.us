@@ -784,7 +784,8 @@ $(function() {
 
         var slides = flexSliders.find('.width_twice');
         var margin = slides.eq(0).outerWidth(true) - slides.eq(0).outerWidth();
-        var twiceWidth = $('.flexSlider-onresize').find('.swiper-slide').not(".width_twice")[0].getBoundingClientRect().width * 2 + margin;
+        var swiperSlides = flexSliders.find('.swiper-slide').not(".width_twice");
+        var twiceWidth = swiperSlides[swiperSlides.length - 1].getBoundingClientRect().width * 2 + margin;
 
         slides.attr('style', slides.attr('style') +  'width: ' + twiceWidth + 'px !important');
 
@@ -804,10 +805,10 @@ $(function() {
         var windowHeight = $(window).height();
 
         if ($flexSliders && (windowWidth !== prevWindowWidth || windowHeight !== prevWindowHeight)) {
-            flexSlider.update(true);
 
             var margin = slides.eq(0).outerWidth(true) - slides.eq(0).outerWidth();
-            var twiceWidth = $('.flexSlider-onresize').find('.swiper-slide').not(".width_twice")[0].getBoundingClientRect().width * 2 + margin;
+            var swiperSlides = flexSlidersOnResize.find('.swiper-slide').not(".width_twice");
+            var twiceWidth = swiperSlides[swiperSlides.length - 1].getBoundingClientRect().width * 2 + margin;
 
             slides.attr('style', slides.attr('style') +  'width: ' + twiceWidth + 'px !important');
 

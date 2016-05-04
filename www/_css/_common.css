@@ -1434,3 +1434,8 @@ blockquote b {
 .important.in-text:after {
     border-width: 11px 0 0 6px;
 }
+
+.brick.null-pillow {
+    position: relative;
+    z-index: -1;
+}

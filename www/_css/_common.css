@@ -588,6 +588,7 @@ blockquote b {
 }
 /* здоровье */
 .pageSwiper__container.contentBackground_dark .pageSwiper,
+.pageSwiper__container.contentBackground_dark .flexSlider,
 .contentBackground_dark {
 	background: #252525;
 	color: #fff;
@@ -609,6 +610,7 @@ blockquote b {
 
 /* технологии */
 .pageSwiper__container.contentBackground_deepblue .pageSwiper,
+.pageSwiper__container.contentBackground_deepblue .flexSlider,
 .contentBackground_deepblue {
 	background: #677a87;
 	color: #fff;
@@ -629,6 +631,7 @@ blockquote b {
 
 /* происшествия */
 .pageSwiper__container.contentBackground_red .pageSwiper,
+.pageSwiper__container.contentBackground_red .flexSlider,
 .contentBackground_red {
 	background: #7a1800;
 	color: #fff;
@@ -652,6 +655,7 @@ blockquote b {
 
 /* происшествия темнее */
 .pageSwiper__container.contentBackground_gunmetal .pageSwiper,
+.pageSwiper__container.contentBackground_gunmetal .flexSlider,
 .contentBackground_gunmetal {
 	background: #2b3336;
 	color: #fff;

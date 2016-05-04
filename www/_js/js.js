@@ -733,6 +733,7 @@ $(function() {
     var sliders = [];
     var prevWindowWidth = $(window).width();
     var prevWindowHeight = $(window).height();
+    var styleTwiceWidth;
     //var slidesPerGroup = 2, slidesPerView = 2;
 
     //if(prevWindowWidth > 1279) {
@@ -742,6 +743,21 @@ $(function() {
     //	slidesPerGroup = 3;
     //	slidesPerView = 3;
     //}
+
+    function setTwiceWidth () {
+        var flexSliders = $('.flexSlider-onresize');
+        var slides = flexSliders.find('.width_twice');
+        var margin = slides.eq(0).outerWidth(true) - slides.eq(0).outerWidth();
+        var swiperSlides = flexSliders.find('.swiper-slide').not(".width_twice");
+        var twiceWidth = swiperSlides[swiperSlides.length - 1].getBoundingClientRect().width * 2 + margin;
+        if (!styleTwiceWidth) {
+            styleTwiceWidth = $('<style type="text/css">.swiper-slide.width_twice {width: '+ twiceWidth +'px !important;}</style>');
+            $('head').append(styleTwiceWidth);
+        } else {
+            styleTwiceWidth.html('.swiper-slide.width_twice {width: '+ twiceWidth +'px !important;}');
+        }
+        slides.attr('style', slides.attr('style') +  'width: ' + twiceWidth + 'px !important');
+    }
 
     function initFlexSlider() {
         var flexSliders = $('.flexSlider-onresize');
@@ -781,14 +797,7 @@ $(function() {
                 window.globalstorage.pageSwiperArray.push(flexSlider);
             }
         });
-
-        var slides = flexSliders.find('.width_twice');
-        var margin = slides.eq(0).outerWidth(true) - slides.eq(0).outerWidth();
-        var swiperSlides = flexSliders.find('.swiper-slide').not(".width_twice");
-        var twiceWidth = swiperSlides[swiperSlides.length - 1].getBoundingClientRect().width * 2 + margin;
-
-        slides.attr('style', slides.attr('style') +  'width: ' + twiceWidth + 'px !important');
-
+        setTwiceWidth();
     }
 
     initFlexSlider();
@@ -806,12 +815,7 @@ $(function() {
 
         if ($flexSliders && (windowWidth !== prevWindowWidth || windowHeight !== prevWindowHeight)) {
 
-            var margin = slides.eq(0).outerWidth(true) - slides.eq(0).outerWidth();
-            var swiperSlides = flexSlidersOnResize.find('.swiper-slide').not(".width_twice");
-            var twiceWidth = swiperSlides[swiperSlides.length - 1].getBoundingClientRect().width * 2 + margin;
-
-            slides.attr('style', slides.attr('style') +  'width: ' + twiceWidth + 'px !important');
-
+            setTwiceWidth();
             //if(windowWidth < 1040) {
             //	var hhh = flexSlidersOnResize.find('.height-twice-container');
             //	hhh.attr('style', slides.attr('style') +  'width: ' + width + 'px !important');

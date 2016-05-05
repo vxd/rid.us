@@ -158,9 +158,9 @@
     <section class="flexSlider wrapper paddings_side padding_top clearfix">
 
 		<div id="pageTabs__target" class="flexSlider-onresize">
-
-			<!--#include virtual="_index3-page-1.shtml"-->
-
+			<div class="bricks__wrapper swiper-wrapper">
+				<!--#include virtual="_index3-page-1.shtml"-->
+			</div>
 		</div>
 
         <div class="swiper-button-next"></div>

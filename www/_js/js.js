@@ -797,6 +797,7 @@ $(function() {
                 window.globalstorage.pageSwiperArray.push(flexSlider);
             }
         });
+
         setTwiceWidth();
     }
 
@@ -1142,23 +1143,30 @@ $(function() {
             return v.indexOf('contentBackground') === 0;
         }).join(); // узнаем текущий класс фона
 
-        var container = $("#" + target);
+        var container = $("#" + target).find('.swiper-wrapper');
         var heightStill = container.height();
+        var widthStill = container.parent().width();
+
         container.height(heightStill); // установим высоту, чтоб при удалении не схлопнулась
 
+        // добавляем спиннер
         $.ajax({
             url: "_md-preloader.shtml"
             // cache: false
         })
             .done(function( html ) {
                 container.html(html);
+
+                //устанавливаем ширину, чтобы видеть спиннер
+                container.width(widthStill);
+
                 $("#" + wrapper).removeClass(currentClass).addClass(bgClass);
 
                 $(".pageTabs__item.state_current").removeClass("state_current");
                 _this.addClass("state_current");
             })
             .always(function() {
-                // console.log( "complete" );
+                pageSwiperArray[1].slideTo(0, 0);
             });
 
 
@@ -1169,8 +1177,8 @@ $(function() {
                 cache: false
             })
                 .done(function( html ) {
-                    container.html( html );
-
+                    //добавляем новый контень
+                    container.html(html);
                     container.find(".readLater").on('click', function(){
                         $(this).toggleClass("view_saved");
                         return false;
@@ -1181,81 +1189,12 @@ $(function() {
                 })
                 .always(function() {
                     container.height(""); // обнулим высоту
-                    pageSwiperArray[1].slideTo(0);
-                    initFlexSlider();
+                    pageSwiperArray[1].update();
                 });
         }, 1000);
 
         return false;
     });
-
-
-
-    // DUPLICATED CODE
-
-    // ======================================
-    // цветные табы-секции на всю страницу
-    // ======================================
-    //
-    //pageSwiperArray = window.globalstorage.pageSwiperArray; // все слайдеры
-    //
-    //$(".pageTabs__item").on('click', function () {
-    //
-    //	var page = $(this).attr("data-url");
-    //	var target = $(this).attr("data-target");
-    //	var wrapper =  $(this).attr("data-wrapper");
-    //
-    //	var bgClass = $.grep(this.className.split(" "), function(v, i){
-    //	   return v.indexOf('contentBackground') === 0;
-    //	}).join(); // узнаем класс фона таба, по которому кликнули
-    //
-    //	var currentClass = $.grep(document.getElementById(wrapper).className.split(" "), function(v, i){
-    //	   return v.indexOf('contentBackground') === 0;
-    //	}).join(); // узнаем текущий класс фона
-    //
-    //	var container = $("#" + target);
-    //	var heightStill = container.height();
-    //	container.height(heightStill); // установим высоту, чтоб при удалении не схлопнулась
-    //
-    //	$.ajax({
-    //		url: "_md-preloader.shtml",
-    //		// cache: false
-    //	})
-    //	.done(function( html ) {
-    //		container.html(html);
-    //		$("#" + wrapper).removeClass(currentClass).addClass(bgClass);
-    //	})
-    //	.always(function() {
-    //		// console.log( "complete" );
-    //	});
-    //
-    //
-    //	// имитируем загрузку контента - при вставке реального кода УДАЛИТЬ обертку в таймаут!!!
-    //	setTimeout(function(){
-    //		$.ajax({
-    //			url: page,
-    //			cache: false
-    //		})
-    //		.done(function( html ) {
-    //			container.html( html );
-    //
-    //			container.find(".readLater").on('click', function(){
-    //				$(this).toggleClass("view_saved");
-    //				return false;
-    //			});
-    //		})
-    //		.fail(function() {
-    //			// console.log( "error" );
-    //		})
-    //		.always(function() {
-    //			container.height(""); // обнулим высоту
-    //			pageSwiperArray[1].slideTo(0); // сдайлим на 0й слайд
-    //
-    //		});
-    //	}, 1000);
-    //
-    //	return false;
-    //});
 
 
 

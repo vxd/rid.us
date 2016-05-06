@@ -290,7 +290,9 @@
 
 
 
-
+.width100 {
+	width: 100% !important;
+}
 
 
 

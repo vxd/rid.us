@@ -1456,7 +1456,7 @@
 .flexSlider .view_banner.view_banner-2 {
 	order: 7 !important;
 }
-.swiper-slide .swiper-container-horizontal {
+.flexSlider .swiper-slide .swiper-container-horizontal {
 	width: 100%;
 	margin: 0 !important;
 }

@@ -677,6 +677,16 @@ blockquote b {
 	background-color: rgba(0,0,0,.3);
 }
 
+/* еще */
+.contentBackground_lightBlack {
+    background: #17191b;
+    color: #fff;
+}
+
+.contentBackground_lightBlack a {
+    color: #fff;
+    text-decoration: none;
+}
 
 /* внури страницы */
 @media screen and (max-width: 1023px) {
@@ -1324,7 +1334,7 @@ blockquote b {
 }
 @media screen and (max-width: 1023px) {
 	.pageTabs__item {
-		font-size: 23px;
+		font-size: 20px;
 	}
 }
 .pageTabs__item:hover {

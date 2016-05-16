@@ -100,6 +100,11 @@
 	width: calc(100% - 155px);
 	border: 1px solid #e1e1e1;
 }
+@media screen and (max-width: 1023px) {
+    .popoverReadLater .newsList__item:after {
+        width: calc(100% - 80px);
+    }
+}
 .readLater_tab-2 .newsList__item:after {
 	width: calc(100% - 30px);
 }

@@ -718,14 +718,14 @@ $(function() {
 
         var container = slider.container;
 
-        if(width > 1280) {
+        if(width > 1279) {
             container.find('.swiper-hidden-slide.hideOn_1024, .swiper-hidden-slide.hideOn_768')
                 .addClass("swiper-slide").removeClass("swiper-hidden-slide");
 
             container.find('.hideOn_1280')
                 .addClass("swiper-hidden-slide")
                 .removeClass("swiper-slide swiper-slide-visible swiper-slide-active");
-        } else if (width > 1024) {
+        } else if (width > 1023) {
             container.find('.swiper-hidden-slide.hideOn_1280, .swiper-hidden-slide.hideOn_768')
                 .addClass("swiper-slide").removeClass("swiper-hidden-slide");
 
@@ -759,12 +759,12 @@ $(function() {
                 spaceBetween: 16,
                 threshold: 50,
                 breakpoints: {
-                    1280: {
+                    1279: {
                         spaceBetween: 22,
                         slidesPerGroup: 3,
                         slidesPerView: 3
                     },
-                    1024: {
+                    1023: {
                         grabCursor: true,
                         slidesPerGroup: 2,
                         slidesPerView: 2

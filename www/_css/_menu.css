@@ -62,7 +62,9 @@
 	}
 	.headerPanel.view_scrolling .mainLogo,
 	.headerPanel.view_scrolling .header__loginButton,
+	.headerPanel.view_scrolling .header__userButton,
 	.headerPanel.view_scrolling .header__searchButton,
+	.headerPanel.view_scrolling .header__readLater,
 	.headerPanel.view_scrolling .wrapper > .yellowButton,
 	.headerPanel.view_scrolling .dayInfo,
 	.headerPanel.view_scrolling .mainLogo {
@@ -70,6 +72,10 @@
 	}
 	.headerPanel.view_scrolling .state_open ~ .mainLogo,
 	.headerPanel.view_scrolling .state_open ~ .yellowButton,
+	.headerPanel.view_scrolling .state_open ~ .header__loginButton,
+	.headerPanel.view_scrolling .state_open ~ .header__userButton,
+	.headerPanel.view_scrolling .state_open ~ .header__searchButton,
+	.headerPanel.view_scrolling .state_open ~ .header__readLater,
 	.headerPanel.view_scrolling .state_open ~ .dayInfo,
 	.headerPanel.view_scrolling .state_open ~ .mainLogo {
 		display: block;

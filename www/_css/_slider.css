@@ -288,7 +288,7 @@
     cursor: pointer;
     top: -2px;
     background: transparent url(../_images/icons_sprite.png);
-    z-index: 100;
+    z-index: 1000;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
     .opinion-button-next,

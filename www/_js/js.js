@@ -783,9 +783,11 @@ $(function() {
             }
         });
 
-        hideSlides(flexSlidersArray[0]);
+        $(flexSlidersArray).each(function(i, slider){
+            hideSlides(slider);
+        });
 
-        setTwiceWidth();
+        //setTwiceWidth();
     }
 
     initFlexSlider();
@@ -801,8 +803,10 @@ $(function() {
         var windowHeight = $(window).height();
 
         if ($flexSliders && (windowWidth !== prevWindowWidth || windowHeight !== prevWindowHeight)) {
-            hideSlides(flexSlidersArray[0]);
-            setTwiceWidth();
+            $(flexSlidersArray).each(function(i, slider){
+                hideSlides(slider);
+            });
+            //setTwiceWidth();
 
             prevWindowWidth = windowWidth;
             prevWindowHeight = windowHeight;

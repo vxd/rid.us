@@ -200,6 +200,9 @@
     		<td class="pageTabs__item contentBackground_gunmetal"  data-url="_index3-page-3.shtml" data-target="pageTabs__target" data-wrapper="pageTabs__wrapper">
 		            Операция в Сирии
     		</td>
+            <td class="pageTabs__item contentBackground_lightBlack">
+                <a href="#">еще</a>
+            </td>
     	</tr>
     </table>
 

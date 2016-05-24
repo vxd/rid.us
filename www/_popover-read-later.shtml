@@ -13,43 +13,64 @@
 			<li class="newsList__item">
 				<span class="newsList__date">сегодня</span>
 				<a class="newsList__link" href="#" title="">Исследование: где в Москве опаснее безопаснее всего жить</a>
-				<button class="newsList__button">Сохранить</button>
+				<button class="newsList__button">
+                    <span class="hideOn_768">Сохранить</span>
+                    <i class="fa fa-floppy-o hideOn_1024 hideOn_1280" aria-hidden="true"></i>
+                </button>
 				<i class="fa fa-trash-o" aria-hidden="true"></i>
 			</li>
 			<li class="newsList__item">
 				<span class="newsList__date">сегодня</span>
 				<a class="newsList__link" href="#" title="">Известная модель надела паранджу после операции шмоперации</a>
-				<button class="newsList__button">Сохранить</button>
+                <button class="newsList__button">
+                    <span class="hideOn_768">Сохранить</span>
+                    <i class="fa fa-floppy-o hideOn_1024 hideOn_1280" aria-hidden="true"></i>
+                </button>
 				<i class="fa fa-trash-o" aria-hidden="true"></i>
 			</li>
 			<li class="newsList__item">
 				<span class="newsList__date">вчера</span>
 				<a class="newsList__link" href="#" title="">На борту А321 могла взорваться жидкая бомба</a>
-				<button class="newsList__button">Сохранить</button>
+                <button class="newsList__button">
+                    <span class="hideOn_768">Сохранить</span>
+                    <i class="fa fa-floppy-o hideOn_1024 hideOn_1280" aria-hidden="true"></i>
+                </button>
 				<i class="fa fa-trash-o" aria-hidden="true"></i>
 			</li>
 			<li class="newsList__item">
 				<span class="newsList__date">вчера</span>
 				<a class="newsList__link" href="#" title="">Украина сравнила депутатов в Крыму с варварами</a>
-				<button class="newsList__button">Сохранить</button>
+                <button class="newsList__button">
+                    <span class="hideOn_768">Сохранить</span>
+                    <i class="fa fa-floppy-o hideOn_1024 hideOn_1280" aria-hidden="true"></i>
+                </button>
 				<i class="fa fa-trash-o" aria-hidden="true"></i>
 			</li>
 			<li class="newsList__item">
 				<span class="newsList__date">02.04.2016</span>
 				<a class="newsList__link" href="#" title="">Известная модель надела паранджу после операции шмоперации</a>
-				<button class="newsList__button">Сохранить</button>
+                <button class="newsList__button">
+                    <span class="hideOn_768">Сохранить</span>
+                    <i class="fa fa-floppy-o hideOn_1024 hideOn_1280" aria-hidden="true"></i>
+                </button>
 				<i class="fa fa-trash-o" aria-hidden="true"></i>
 			</li>
 			<li class="newsList__item">
 				<span class="newsList__date">02.04.2016</span>
 				<a class="newsList__link" href="#" title="">На борту А321 могла взорваться жидкая бомба</a>
-				<button class="newsList__button">Сохранить</button>
+                <button class="newsList__button">
+                    <span class="hideOn_768">Сохранить</span>
+                    <i class="fa fa-floppy-o hideOn_1024 hideOn_1280" aria-hidden="true"></i>
+                </button>
 				<i class="fa fa-trash-o" aria-hidden="true"></i>
 			</li>
 			<li class="newsList__item">
 				<span class="newsList__date">01.04.2016</span>
 				<a class="newsList__link" href="#" title="">Украина сравнила депутатов в Крыму с варварами</a>
-				<button class="newsList__button">Сохранить</button>
+                <button class="newsList__button">
+                    <span class="hideOn_768">Сохранить</span>
+                    <i class="fa fa-floppy-o hideOn_1024 hideOn_1280" aria-hidden="true"></i>
+                </button>
 				<i class="fa fa-trash-o" aria-hidden="true"></i>
 			</li>
 		</ul>

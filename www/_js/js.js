@@ -1084,70 +1084,74 @@ $(function() {
 
     $(".pageTabs__item").on('click', function () {
 
-        var page = $(this).attr("data-url");
-        var target = $(this).attr("data-target");
-        var wrapper =  $(this).attr("data-wrapper");
-        var _this = $(this);
+        var wrapper = $(this).attr("data-wrapper");
 
-        var bgClass = $.grep(this.className.split(" "), function(v, i){
-            return v.indexOf('contentBackground') === 0;
-        }).join(); // узнаем класс фона таба, по которому кликнули
+        if (wrapper) {
 
-        var currentClass = $.grep(document.getElementById(wrapper).className.split(" "), function(v, i){
-            return v.indexOf('contentBackground') === 0;
-        }).join(); // узнаем текущий класс фона
+            var page = $(this).attr("data-url");
+            var target = $(this).attr("data-target");
+            var _this = $(this);
 
-        var container = $("#" + target).find('.swiper-wrapper');
-        var heightStill = container.height();
-        var widthStill = container.parent().width();
+            var bgClass = $.grep(this.className.split(" "), function (v, i) {
+                return v.indexOf('contentBackground') === 0;
+            }).join(); // узнаем класс фона таба, по которому кликнули
 
-        container.height(heightStill); // установим высоту, чтоб при удалении не схлопнулась
+            var currentClass = $.grep(document.getElementById(wrapper).className.split(" "), function (v, i) {
+                return v.indexOf('contentBackground') === 0;
+            }).join(); // узнаем текущий класс фона
 
-        // добавляем спиннер
-        $.ajax({
-            url: "_md-preloader.shtml"
-            // cache: false
-        })
-            .done(function( html ) {
-                container.html(html);
+            var container = $("#" + target).find('.swiper-wrapper');
+            var heightStill = container.height();
+            var widthStill = container.parent().width();
 
-                //устанавливаем ширину, чтобы видеть спиннер
-                container.width(widthStill);
+            container.height(heightStill); // установим высоту, чтоб при удалении не схлопнулась
 
-                $("#" + wrapper).removeClass(currentClass).addClass(bgClass);
-
-                $(".pageTabs__item.state_current").removeClass("state_current");
-                _this.addClass("state_current");
-            })
-            .always(function() {
-                pageSwiperArray[1].slideTo(0, 0);
-            });
-
-
-        // имитируем загрузку контента - при вставке реального кода УДАЛИТЬ обертку в таймаут!!!
-        setTimeout(function(){
+            // добавляем спиннер
             $.ajax({
-                url: page,
-                cache: false
+                url: "_md-preloader.shtml"
+                // cache: false
             })
-                .done(function( html ) {
-                    //добавляем новый контень
+                .done(function (html) {
                     container.html(html);
-                    container.find(".readLater").on('click', function(){
-                        $(this).toggleClass("view_saved");
-                        return false;
-                    });
-                })
-                .fail(function() {
-                    // console.log( "error" );
-                })
-                .always(function() {
-                    container.height(""); // обнулим высоту
-                    pageSwiperArray[1].update();
-                });
-        }, 1000);
 
-        return false;
+                    //устанавливаем ширину, чтобы видеть спиннер
+                    container.width(widthStill);
+
+                    $("#" + wrapper).removeClass(currentClass).addClass(bgClass);
+
+                    $(".pageTabs__item.state_current").removeClass("state_current");
+                    _this.addClass("state_current");
+                })
+                .always(function () {
+                    pageSwiperArray[1].slideTo(0, 0);
+                });
+
+
+            // имитируем загрузку контента - при вставке реального кода УДАЛИТЬ обертку в таймаут!!!
+            setTimeout(function () {
+                $.ajax({
+                    url: page,
+                    cache: false
+                })
+                    .done(function (html) {
+                        //добавляем новый контень
+                        container.html(html);
+                        container.find(".readLater").on('click', function () {
+                            $(this).toggleClass("view_saved");
+                            return false;
+                        });
+                    })
+                    .fail(function () {
+                        // console.log( "error" );
+                    })
+                    .always(function () {
+                        container.height(""); // обнулим высоту
+                        pageSwiperArray[1].update();
+                    });
+            }, 1000);
+
+            return false;
+        }
     });
 
 

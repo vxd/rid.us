@@ -525,7 +525,7 @@
 	.header__searchButton,
 	.header__userButton,
 	.header__readLater {
-		display: none;
+		display: none !important;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {

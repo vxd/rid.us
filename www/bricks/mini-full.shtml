@@ -26,6 +26,12 @@
 	<!--#if expr="$image = 3" -->
 	<a href="#" class="brick__image" style="background-image: url(https://static2.smi2.net/img/135x90/2631075.jpeg)">
 	<!--#endif -->
+	<!--#if expr="$image = 4" -->
+	<a href="#" class="brick__image" style="background-image: url(http://f1.s.qip.ru/jAMAwieF.jpg)">
+	<!--#endif -->
+	<!--#if expr="$image = 5" -->
+	<a href="#" class="brick__image" style="background-image: url(http://molbiol.ru/forums/uploads/a003/b047/post-24502-1338479907.jpg)">
+	<!--#endif -->
 		<span class="clickable"></span>
 	</a>
 </div>

@@ -34,7 +34,7 @@
 
 				<div class="bricks__wrapper swiper-wrapper">
 
-					<div class="brick swiper-slide view_withTranslation height-twice-container hideOn_768">
+					<div class="brick swiper-slide view_withTranslation height-twice-container hideOn_768 not_for_hover">
 
 						<div class="translation__wrapper swiper-no-swiping">
 							<div class="translationControls">
@@ -59,7 +59,7 @@
 						<!--#include virtual="slider.shtml"-->
 					</div>
 
-					<div class="brick view_withTranslation swiper-slide hideOn_1024 hideOn_1280">
+					<div class="brick view_withTranslation swiper-slide hideOn_1024 hideOn_1280 not_for_hover">
 
 						<div class="translation__wrapper swiper-no-swiping">
 							<div class="translationControls">
@@ -353,7 +353,7 @@
                     <!--#include virtual="bricks/alaslideimage.shtml?image=1"-->
                 </div>
 	            <div class="brick swiper-slide hideOn_768">
-		            <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=22&count1=120&count2=35&count3=3812"-->
+		            <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
 	            </div>
 	            <div class="brick swiper-slide view_banner hideOn_1024 hideOn_1280">
 		            <!--#include virtual="bricks/banner-mts.shtml"-->
@@ -364,13 +364,13 @@
                 </div>
 	            <div class="brick swiper-slide not_for_hover hideOn_1024 hideOn_1280">
 		            <div class="brick view_floatText">
-			            <!--#include virtual="bricks/mini-full.shtml?image=1&data=4&label=11"-->
+			            <!--#include virtual="bricks/mini-full.shtml?image=4&data=5&label=13"-->
 		            </div>
 		            <div class="brick view_floatText">
-			            <!--#include virtual="bricks/mini-full.shtml?image=2&data=5&label=13"-->
+			            <!--#include virtual="bricks/mini-full.shtml?image=5&data=4&label=11"-->
 		            </div>
 		            <div class="brick view_floatText">
-			            <!--#include virtual="bricks/mini-full.shtml?image=3&data=6&label=12"-->
+			            <!--#include virtual="bricks/mini-full.shtml?image=4&data=6&label=12"-->
 		            </div>
 	            </div>
 	            <div class="brick swiper-slide hideOn_768 hideOn_1024">

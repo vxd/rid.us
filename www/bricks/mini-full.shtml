@@ -49,16 +49,35 @@
 		<a href="#" title="">Aэробус мог быть взорван с помощью жидкого взрывчатого вещества.</a> 
 	</h5>
 <!--#endif -->
+<!--#if expr="$data = 4" -->
+    <a href="#" class="brick__label" title="">Здоровье</a>
+    <h5>
+        <a href="#" title="">Исследование: где в Москве опаснее безопаснее всего жить.</a>
+    </h5>
+<!--#endif -->
+<!--#if expr="$data = 5" -->
+    <a href="#" class="brick__label" title="">Знаменитости</a>
+    <h5>
+        <a href="#" title="">Известная модель надела паранджу после операции шмоперации.</a>
+    </h5>
+<!--#endif -->
+<!--#if expr="$data = 6" -->
+    <a href="#i" class="brick__label" title="">Интересное</a>
+    <a href="#l" class="brick__label" title="">Жизнь</a>
+    <h5>
+        <a href="#" title="">На борту А321 могла взорваться жидкая бомба.</a>
+    </h5>
+<!--#endif -->
 </div>
 <div class="countersBlock">
 	<span class="countersBlock__item view_count1">
-		234 <i class="icon"><!-- icon --></i>
+		120 <i class="icon"><!-- icon --></i>
 	</span>
 	<span class="countersBlock__item view_count2">
-		56 <i class="icon"><!-- icon --></i>
+		305 <i class="icon"><!-- icon --></i>
 	</span>
 	<span class="countersBlock__item view_count3">
-		88 <i class="icon"><!-- icon --></i>
+		318 <i class="icon"><!-- icon --></i>
 	</span>
 	<a href="#" class="countersBlock__item readLater">
 		<span>читать позже</span>

@@ -364,13 +364,13 @@
                 </div>
 	            <div class="brick swiper-slide not_for_hover hideOn_1024 hideOn_1280">
 		            <div class="brick view_floatText">
-			            <!--#include virtual="bricks/mini-full.shtml?image=1&data=1&label=11"-->
+			            <!--#include virtual="bricks/mini-full.shtml?image=1&data=4&label=11"-->
 		            </div>
 		            <div class="brick view_floatText">
-			            <!--#include virtual="bricks/mini-full.shtml?image=2&data=3&label=13"-->
+			            <!--#include virtual="bricks/mini-full.shtml?image=2&data=5&label=13"-->
 		            </div>
 		            <div class="brick view_floatText">
-			            <!--#include virtual="bricks/mini-full.shtml?image=3&data=2&label=12"-->
+			            <!--#include virtual="bricks/mini-full.shtml?image=3&data=6&label=12"-->
 		            </div>
 	            </div>
 	            <div class="brick swiper-slide hideOn_768 hideOn_1024">
@@ -380,7 +380,7 @@
 		            <!--#include virtual="bricks/banner-mts.shtml"-->
 	            </div>
                 <div class="brick swiper-slide hideOn_768">
-                    <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->
+                    <!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
                 </div>
                 <div class="brick swiper-slide hideOn_1280">
                     <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&count1=120&count2=35&count3=3812"-->

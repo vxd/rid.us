@@ -742,7 +742,7 @@ $(function() {
         }
 
         slider.update();
-        setTimeout(setTwiceWidth.bind(undefined, slider), 0);
+        //setTimeout(setTwiceWidth.bind(undefined, slider), 0);
         //setTwiceWidth(slider);
     }
 
@@ -787,7 +787,7 @@ $(function() {
             hideSlides(slider);
         });
 
-        //setTwiceWidth();
+        setTwiceWidth();
     }
 
     initFlexSlider();
@@ -806,7 +806,7 @@ $(function() {
             $(flexSlidersArray).each(function(i, slider){
                 hideSlides(slider);
             });
-            //setTwiceWidth();
+            setTwiceWidth();
 
             prevWindowWidth = windowWidth;
             prevWindowHeight = windowHeight;

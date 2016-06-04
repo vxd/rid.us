@@ -85,7 +85,7 @@
 	<span class="countersBlock__item view_count3">
 		318 <i class="icon"><!-- icon --></i>
 	</span>
-	<a href="#" class="countersBlock__item readLater">
+	<a href="#" class="countersBlock__item readLater only_icon__mobile">
 		<span>читать позже</span>
 		<span class="state_hidderHidden">читаю позже</span>
 		<i class="icon"><!-- icon --></i>

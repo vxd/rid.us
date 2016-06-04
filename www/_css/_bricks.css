@@ -573,14 +573,6 @@
     background: #e2e2e2;
 }
 
-.countersBlock__item.readLater.only_icon {
-    opacity: 0.5;
-    height: 12px;
-    padding-right: 20px;
-    vertical-align: text-bottom;
-}
-
-
 .countersBlock__item.delete {
     z-index: 25;
     padding: 2px 20px 1px 8px;
@@ -688,6 +680,24 @@
     background: rgba(50,50,50,.7);
 }
 
+
+.countersBlock__item.readLater.only_icon {
+	opacity: 0.5;
+	height: 11px;
+	padding-right: 20px;
+	vertical-align: text-bottom;
+}
+@media screen and (max-width: 1023px) {
+	.readLater.only_icon__mobile {
+		opacity: 0.5;
+		height: 12px;
+		padding-right: 20px;
+		vertical-align: text-bottom;
+	}
+	.readLater.only_icon__mobile span {
+		display: none;
+	}
+}
 
 
 

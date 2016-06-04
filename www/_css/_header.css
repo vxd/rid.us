@@ -52,6 +52,19 @@ header {
 .floatingInfo {
 	height: 56px;
 }
+.floatingInfo .mainLogo {
+	overflow: hidden;
+	width: 0;
+	opacity: 0;
+	transition: all 500ms ease-out;
+}
+@media screen and (min-width: 1280px) {
+	.floatingInfo.view_scrolling .mainLogo {
+		width: 100px;
+		opacity: 1;
+		transition: all 500ms 1s ease-out;
+	}
+}
 .floatingInfo .yellowButton.view_backButton {
 	height: 56px;
 	width: 46px;

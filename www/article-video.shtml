@@ -15,7 +15,7 @@
     </a>
     <section class="floatingInfo__wrapper wrapper clearfix">
         <div class="floatingInfo paddings_side wrapper">
-            <a href="#" class="mainLogo mainLogo_black view_sideBorder" title="На главную">
+            <a href="#" class="mainLogo mainLogo_black" title="На главную">
                 <img src="_images/logo-black.png" class="x1" width="100" height="34" alt="РИДУС">
                 <img src="_images/logo-black_2x.png" class="x2" width="100" height="34" alt="РИДУС">
             </a>

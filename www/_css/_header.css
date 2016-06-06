@@ -60,9 +60,10 @@ header {
 }
 @media screen and (min-width: 1280px) {
 	.floatingInfo.view_scrolling .mainLogo {
+        margin-right:  16px;
 		width: 100px;
 		opacity: 1;
-		transition: all 500ms 1s ease-out;
+		transition: all 200ms 1s ease-out;
 	}
 }
 .floatingInfo .yellowButton.view_backButton {

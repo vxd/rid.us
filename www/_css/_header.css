@@ -65,6 +65,10 @@ header {
 		opacity: 1;
 		transition: all 200ms 1s ease-out;
 	}
+
+    .floatingInfo.view_scrolling .mainLogo-slow {
+        transition: all 500ms 1s ease-out;
+    }
 }
 .floatingInfo .yellowButton.view_backButton {
 	height: 56px;

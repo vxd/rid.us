@@ -1,0 +1,216 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    <!--#include virtual="_head.shtml"-->
+    <link href="_css/article.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="page_article" itemscope itemtype="http://schema.org/WebPage">
+
+<header itemscope itemtype="http://schema.org/WPHeader">
+    <!--#include virtual="_menu.shtml?float=false"-->
+    <a href="" class="banner_top margin_bottom wrapper" title="">
+        <img src="_images/header_banner.jpg" alt="" />
+    </a>
+    <section class="floatingInfo__wrapper wrapper clearfix">
+        <div class="floatingInfo paddings_side wrapper">
+            <a href="#" class="mainLogo mainLogo_black mainLogo-slow" title="На главную">
+                <img src="_images/logo-black.png" class="x1" width="100" height="34" alt="РИДУС">
+                <img src="_images/logo-black_2x.png" class="x2" width="100" height="34" alt="РИДУС">
+            </a>
+            <div class="articleSocials">
+                <div class="ridusLikes view_sideBorder">
+                    <div class="ridusLikesButton">
+                        <a href="#" class="ridusLikesButton__link">+</a>
+                        <span>123</span>
+                        <a href="#" class="ridusLikesButton__link">−</a>
+                    </div>
+                </div>
+            </div>
+            <!--#include virtual="_floating-info.shtml"-->
+            <a href="#" class="saveButton">
+                <span>Сохранить</span>
+                <span class="state_hidderHidden">Сохранено</span>
+            </a>
+            <a href="#" class="yellowButton view_backButton" title="назад">
+                &times;
+                <i class="corner"><!-- corner --></i>
+            </a>
+        </div>
+    </section>
+</header>
+
+<section class="wrapper contentBackground_white paddings_side padding_top clearfix">
+
+
+
+    <div class="table clearfix">
+        <div class="table__mainColumn">
+
+
+            <ul class="textTabs view_dotBetween view_h5 clearfix">
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Гражданская журналистика</a></li>
+                <li class="textTabs__item"><a href="#" class="textTabs__link" title="">Политика</a></li>
+            </ul>
+
+
+            <div class="article">
+
+                <!--#include virtual="_article-short.shtml?sidebanner=2"-->
+
+                <div class="text">
+                    <p>
+                        В пятницу утром 21 августа баррель нефти марки Brent вплотную приблизился к очередному психологическому рубежу — $46 за баррель, хотя так и не пробил его, немного отскочив назад. К 11.19 по Москве она торговалась на отметке $46,23 за баррель. Текущая неделя может стать восьмой подряд, когда зафиксировано недельное удешевление «черного золота» — это самый продолжительный период с 1986 года, отмечает РИА Новости. И большинство аналитиков пока не видят поводов к развороту нисходящего тренда.
+                    </p>
+                    <p>
+                        На нефтяные цены действует сразу несколько негативных факторов. К уже привычному превышению предложения над спросом добавились ожидания предстоящего выхода на рынок дешевой иранской нефти, неутешительная статистика из Китая и рост числа действующих буровых установок в США.
+                    </p>
+                    <p>
+                        <div class="brick view_inArticle">
+                            <h3>Читайте также:</h3>
+                            <div class="brick view_floatText">
+                                <!--#include virtual="bricks/mini.shtml?image=1&data=1&label=11"-->
+                            </div>
+                            <div class="brick view_floatText">
+                                <!--#include virtual="bricks/mini.shtml?image=2&data=3&label=13"-->
+                            </div>
+                            <div class="brick view_floatText">
+                                <!--#include virtual="bricks/mini.shtml?image=1&data=2&label=12"-->
+                            </div>
+                        </div>
+                        Примечательно, что всего пару дней назад президент Казахстана Нурсултан Назарбаев призвал готовиться к продолжительному периоду нефтяных цен на уровне $30−40 за баррель. Как отмечают некоторые эксперты, для матерого политика этот призыв необычен: казахский лидер всегда избегал озвучивать конкретные цифры и прогнозы по нефти, поскольку страна сильно зависит от сырьевого экспорта. Его заявление — наглядное свидетельство того, насколько тревожная ситуация складывается на нефтяном рынке. И не только для экспортеров энергоресурсов.
+                    </p>
+                    <p>
+                        Падение стоимости черного золота провоцирует гонку девальваций. Тот же Назарбаев сделал свое заявление накануне объявления об освобождении тенге и последовавшего затем его масштабного обвала. Ранее Китай — один из основных потребителей нефти — девальвировал юань. Аналитики уже начали перечислять возможных претендентов на следующий раунд обесценивания национальных валют, в их числе страны СНГ — Армения, Туркмения, Таджикистан. Гонка девальваций дестабилизирует экономическую ситуацию во всем мире и может привести к масштабным социальным протестам вплоть до смены действующих политических режимов.
+                    </p>
+                    <div class="clearfix" style="margin-bottom: 20px; background: #eee">
+                        [yandex direct вставлять сюда]
+                    </div>
+                    <p>
+                        Продолжается ослабление национальной валюты и в России. На фоне дешевеющей нефти доллар перешагнул рубеж в 68 рублей. К 12.05 по Москве он торговался на уровне 68,17 рублей. Евро подорожал на 32 копейки — до 76,7 рублей.
+                    </p>
+
+                    <p>
+                    <div class="contentBackground_grey padding_top padding_bottom">
+                        <h2>Какой прогноз цен на нефть вам кажется наиболее вероятным?</h2>
+                        <ul class="percentage__list">
+                            <li class="percentage__item">
+                                <span>Сбудется пророчество Назарбаева - цена опустится до $30-40 за баррель и останется там минимум 5 лет</span>
+                                <div class="percentage">
+                                    <div class="percentage__amount clearfix" style="width:17.2%">
+                                        <div class="percentage__slider"></div>
+                                        <b class="percentage__description">17.2% (37)</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="percentage__item">
+                                <span>В ближайшие 3 года нефть будет колебаться в диапазоне $50-70 за баррель</span>
+                                <div class="percentage">
+                                    <div class="percentage__amount clearfix" style="width:22.3%">
+                                        <div class="percentage__slider"></div>
+                                        <b class="percentage__description">22.3% (48)</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="percentage__item">
+                                <span>К середине 2016 года нефть может вернутся к $65 за баррель</span>
+                                <div class="percentage">
+                                    <div class="percentage__amount clearfix" style="width:26.0%">
+                                        <div class="percentage__slider"></div>
+                                        <b class="percentage__description">26.0% (56)</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="percentage__item">
+                                <span>В ближайшее время возможен провал нефтяных цен до $15 за баррель</span>
+                                <div class="percentage">
+                                    <div class="percentage__amount clearfix" style="width:34.4%">
+                                        <div class="percentage__slider"></div>
+                                        <b class="percentage__description">34.4% (74)</b>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <span>
+                            Проголосовало 232 человек <br>
+                            (Для голосования нажмите на соответствующую вашему выбору строку)
+                        </span>
+                    </div>
+                    </p>
+
+                    <p>
+                        Назарбаев, когда провёл на этой неделе девальвацию своей валюты, предварительно все вклады населения перевёл в доллары, чтобы люди ничего не потеряли на падении курса валюты и не говорили про своего руководителя плохо. Это же родное государство? Продолжается ослабление национальной валюты и в России. На фоне дешевеющей нефти доллар перешагнул рубеж в 68 рублей. Но это же не какое-то вражеское население, это родное государство, свои люди, братья свои, одна семья, одна страна - Казахстан.
+                    </p>
+
+                </div>
+
+                <div class="readAlso">
+                    Читайте также:
+                    <ul class="readAlso__list">
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Тысяча читинцев митинговала «за солнце»</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">К осени россиянам вернут зимнее время</a></li>
+                        <li class="readAlso__item"><a class="readAlso__link" href="#" title="">Время России подвластно ее парламентариям</a></li>
+                    </ul>
+                </div>
+                
+                <div class="articleSocials__wrapper clearfix">
+                    <div class="ridusLikes view_sideBorder">
+                        <p class="hint">
+                            Нам важно ваше мнение!
+                        </p>
+                        <div class="ridusLikesButton">
+                            <a href="#" class="ridusLikesButton__link">+</a>
+                            <span>123</span>
+                            <a href="#" class="ridusLikesButton__link">−</a>
+                        </div>
+                    </div>
+                    <div class="articleSocials">
+                        <p class="hint">
+                            Нашли опечатку? Выделите её мышкой и нажмите: Ctrl+Enter
+                        </p>
+                        <!--#include virtual="_socials-article.shtml"-->
+                    </div>
+                </div>
+
+                <p class="article__tags">
+                    Теги: 
+                    <a href="#" title="">нефть</a>, 
+                    <a href="#" title="">Казахстан</a>, 
+                    <a href="#" title="">прогнозы</a>, 
+                    <a href="#" title="">Назарбаев</a>
+                </p>
+
+                <div class="clearfix" style="margin-bottom: 20px; background: #eee">
+                    [yandex direct вставлять сюда]
+                </div>
+
+                <!--#include virtual="_comments.shtml"-->
+            </div>
+
+            <!--#include virtual="_article-maincolumn.shtml"-->
+
+        </div>
+
+        <div class="table__sideColumn hideOn_768">
+
+            <!--#include virtual="_article-sidecolumn.shtml"-->
+
+        </div>
+
+    </div>
+
+
+
+</section>
+
+
+
+<a href="#" class="banner_footer">
+	<img src="_images/footer_banner.jpg" alt="">
+</a>
+
+<!--#include virtual="_footer.shtml"-->
+
+</body>
+</html>

@@ -1219,6 +1219,127 @@ $(function() {
     //	});
     //}
 
+
+    /* Translations */
+    $(window).load(function() {
+        var translations = [];
+        var state;
+        var position = 0;
+        var whereId;
+        var translationWrappers = $(".view_withTranslation");
+        var jwTranslationWrappers = translationWrappers.filter('.jwTranslation');
+        var translationControls = translationWrappers.find(".translationControls");
+        var firstPlay = true;
+
+        var flipButton = document.createElement('a');
+        flipButton.className = 'translation__flip';
+        flipButton.setAttribute("href", "#");
+        flipButton.setAttribute("title", "");
+
+
+        function placeTranslation(toID) {
+
+            translations.push(jwplayer(toID).setup({
+                // file: "//www.youtube.com/watch?v=Siy69o-rKU4",
+                // image: "http://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",
+                width: "100%",
+                height: 170,
+                autostart: true,
+                mute: true,
+                repeat: true,
+                playlist: [{
+                    image: "http://img.gravlab.com/003119/sparse/v1d30/pages/928x522-nighsky-player-image.jpg",
+                    sources: [{
+                        file: "https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
+                    }, {
+                        file: "http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4"
+                    }, {
+                        file: "http://stream.gravlab.net/003119/sparse/v1d30/pages/lapse2_896x504.webm"
+                    }]
+                }],
+                skin: {
+                    name: "seven",
+                    active: "#ffd051"
+                }
+            }));
+
+            //
+            // wrapper = $("#"+toID).parent().parent(".view_withTranslation:visible");
+            //
+            //transl.onReady(function(){
+            //    // добавляем сворачивалку
+            //    // $(".jw-controlbar-right-group").append(flipButton);
+            //    // и добавляем ей событие
+            //    // $(".translation__flip").unbind("click"); // убираем отовсюду
+            //    //    $(".translation__flip").on('click', function() {
+            //    //    	$(wrapper).toggleClass("state_translationMinimized");
+            //    //    	translSizeFlip();
+            //    //    	return false;
+            //    //    });
+            //});
+            //
+            //transl.onBuffer(function(){
+            //});
+            //
+            //transl.onPlay(function(){
+            //});
+
+        }
+
+        var viewer = UstreamEmbed('id123');
+
+        translationControls.on('click', function () {
+            var parent = $(this).closest('.view_withTranslation');
+            parent.toggleClass("state_translationMinimized");
+
+            if (parent.hasClass('jwTranslation')) {
+                translSizeFlip(parent);
+            } else if (parent.hasClass('uStreamTranslation')) {
+                viewer.callMethod('pause');
+            } else if (parent.hasClass('youTubeTranslation')){
+
+            }
+            return false;
+        });
+
+
+        function translSizeFlip(elem) {
+            var index = translationWrappers.index(elem);
+            var translation = translations[index];
+            if (translation && elem.hasClass("state_translationMinimized")) { // если идёт и если свернули
+                translation.remove();
+                translations[index] = false;
+            } else if (!elem.hasClass("state_translationMinimized")) { // если не идёт
+                whereId = $(".translationPlaceholder:visible").attr("id"); // ищем видимый плейсхолдер
+                placeTranslation(whereId);
+            }
+
+            // реинициализируем искролл чтобы пересчиталась высота
+            if (window.globalstorage) {
+                var iscroll;
+                for (var i = 0; i < window.globalstorage.iscroll.length; i++) {
+                    iscroll = window.globalstorage.iscroll[i];
+                    iscroll.refresh()
+                }
+            }
+        }
+
+        jwTranslationWrappers.each(function (i, el) {
+            translSizeFlip($(el));
+        });
+
+
+        $(window).resize(function () {
+            if (transl) { // если проигрывается
+                if (!$("#" + transl.id).is(":visible")) { // как только исчезает
+                    transl.remove();
+                    transl = false;
+                    translSizeFlip();
+                }
+            }
+        });
+    });
+
 });
 
 

@@ -7,6 +7,8 @@
 
 	<!-- файлы видеоплеера -->
 	<script src="jwplayer/jwplayer.js" type="text/javascript"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<link rel="canonical" href="http://developers.ustream.tv/player-api/dynamic-insertion.html">
 	<script src="_js/ustream-embedapi.js" type="text/javascript"></script>
 	<script>jwplayer.key="00DvZV0BV0Wm4az/8jnnOlON+elKEaUrD1Cddg==";</script>
 	<link rel="stylesheet" type="text/css" href="jwplayer/skins/translation.css">
@@ -38,10 +40,15 @@
 
 		            <div class="brick view_2x view_withTranslation jwTranslation hideOn_768">
 
-		            	<div class="translation__wrapper swiper-no-swiping">
+		            	<div class="translation__wrapper swiper-no-swiping" data-translation="jwPlayer"
+			                 data-image="http://img.gravlab.com/003119/sparse/v1d30/pages/928x522-nighsky-player-image.jpg"
+			                 data-source1="https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
+			                 data-source2="http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4"
+			                 data-source3="http://stream.gravlab.net/003119/sparse/v1d30/pages/lapse2_896x504.webm">
 							<div class="translationControls">
 								<span class="translation__type">Онлайн трансляция</span>
 								<a href="#" class="translation__flip"></a>
+								<i class="fa fa-expand translation__size hideOn_1024 hideOn_768" aria-hidden="true"></i>
 							</div>
 							<div id="translationPlayer" class="translationPlaceholder translation"></div>
 						</div>
@@ -63,13 +70,18 @@
 
 		            <div class="brick view_withTranslation hideOn_1024 hideOn_1280">
 
-		            	<div class="translation__wrapper swiper-no-swiping">
-							<div class="translationControls">
-								<span class="translation__type">Онлайн трансляция</span>
-								<a href="#" class="translation__flip"></a>
-							</div>
-							<div id="translationPlayerMobile" class="translationPlaceholder"></div>
-						</div>
+			            <div class="translation__wrapper swiper-no-swiping" data-translation="jwPlayer"
+			                 data-image="http://img.gravlab.com/003119/sparse/v1d30/pages/928x522-nighsky-player-image.jpg"
+			                 data-source1="https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
+			                 data-source2="http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4"
+			                 data-source3="http://stream.gravlab.net/003119/sparse/v1d30/pages/lapse2_896x504.webm">
+				            <div class="translationControls">
+					            <span class="translation__type">Онлайн трансляция</span>
+					            <a href="#" class="translation__flip"></a>
+					            <i class="fa fa-expand translation__size hideOn_1024 hideOn_768" aria-hidden="true"></i>
+				            </div>
+				            <div id="translationPlayerMobile" class="translationPlaceholder translation"></div>
+			            </div>
 
 						<div class="brick view_grey not_for_hover hideOn_1280">
 							<!--#include virtual="bricks/main-for-today.shtml"-->
@@ -106,52 +118,32 @@
 		    <div class="swiper-slide">
 			    <div class="bricks__wrapper">
 					<div class="brick">
-						<div class="translation__wrapper view_withTranslation uStreamTranslation">
+						<div class="translation__wrapper view_withTranslation" data-translation="uStream"
+						     data-src="https://www.ustream.tv/embed/recorded/53173134?autoplay=true&volume=0&wmode=direct&adfree=1&html5ui=1">
 							<div class="translationControls">
 								<span class="translation__type">Онлайн трансляция</span>
 								<a href="#" class="translation__flip"></a>
+								<i class="fa fa-expand translation__size hideOn_1024 hideOn_768" aria-hidden="true"></i>
 							</div>
-							<iframe id="id123" class="translation" width="100%" height="190" src="https://www.ustream.tv/embed/recorded/53173134?autoplay=true&volume=0&wmode=direct&adfree=1&html5ui=1" allowfullscreen webkitallowfullscreen scrolling="no" frameborder="0" style="border: 0 none transparent; margin-bottom: 15px;"></iframe>
+							<div id="uStream">
+
+							</div>
 		                </div>
-		                <!-- 1. The <div> tag will contain the <iframe> (and video player) -->
-					    <div class="translation__wrapper view_withTranslation youTubeTranslation" style="width:100%; overflow: hidden">
+						<!--<div class="translation__wrapper swiper-no-swiping" data-translation="jwPlayer"-->
+						     <!--data-image="http://img.gravlab.com/003119/sparse/v1d30/pages/928x522-nighsky-player-image.jpg"-->
+						     <!--data-source1="https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"-->
+						     <!--data-source2="http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4"-->
+						     <!--data-source3="http://stream.gravlab.net/003119/sparse/v1d30/pages/lapse2_896x504.webm">-->
+					    <div class="translation__wrapper view_withTranslation" data-translation="youTube"
+					         data-videoid="Xa0Q0J5tOP0"
+					         style="width:100%; overflow: hidden">
 							<div class="translationControls">
 								<span class="translation__type">Онлайн трансляция</span>
 								<a href="#" class="translation__flip"></a>
+								<i class="fa fa-expand translation__size hideOn_1024 hideOn_768" aria-hidden="true"></i>
 							</div>
 							<div class="translation" id="YTplayer"></div>
 						</div>
-						<script>      // 2. This code loads the IFrame Player API code asynchronously.
-						      var tag = document.createElement('script');
-						      tag.src = "https://www.youtube.com/player_api";
-						      var firstScriptTag = document.getElementsByTagName('script')[0];
-						      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-						      // 3. This function creates an <iframe> (and YouTube player)
-						      //    after the API code downloads.
-						      var player;
-						      function onYouTubePlayerAPIReady() {
-						        player = new YT.Player('YTplayer', {
-						          playerVars: { 'autoplay': 1, 
-						          				'controls': 1,
-						          				'autohide':1,
-						          				'wmode':'opaque' 
-						          },
-						          videoId: 'Siy69o-rKU4',
-						          width: "102%",
-						          height: 190,
-						          events: {
-						            'onReady': onPlayerReady}
-						        });
-						      }
-
-						      // 4. The API will call this function when the video player is ready.
-						      function onPlayerReady(event) {
-						        event.target.mute();
-						        $("#YTplayer").css({"margin-left": "-1%"}).attr({"allowfullscreen":"true", "webkitallowfullscreen":"true"})
-						      }
-						</script>
-		                <!--iframe width="100%" height="190" src="https://www.youtube.com/embed/Siy69o-rKU4?autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe-->
 					</div>
 		            <div class="brick">
 		                <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=22&count1=120&count2=35&count3=3812"-->
@@ -835,6 +827,11 @@
 
     });
 </script>
-
+<div class="translation-big__container" style="display:none;">
+	<i class="fa fa-times translation-big__container__close" aria-hidden="true"></i>
+	<div class="translation-big__wrapper__container">
+	</div>
+</div>
+<div class="translation__overlay" style="display: none;"></div>
 </body>
 </html>

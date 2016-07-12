@@ -1044,7 +1044,7 @@
 	.brick.view_3x.view_yellow .iscroll {
 	    height: 1188px;
 	}
-	.brick.view_withTranslation.state_translationMinimized .iscroll {
+	.brick.view_withTranslation .state_translationMinimized ~ .brick .iscroll {
 		height: 714px;
 	}
 }

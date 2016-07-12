@@ -1222,99 +1222,70 @@ $(function() {
 
     /* Translations */
     $(window).load(function() {
-        var translations = [];
-        var state;
-        var position = 0;
-        var whereId;
-        var translationWrappers = $(".view_withTranslation");
-        var jwTranslationWrappers = translationWrappers.filter('.jwTranslation');
-        var translationControls = translationWrappers.find(".translationControls");
-        var firstPlay = true;
+        var bigTranslation;
+        var bigTranslationType;
+        var timeForSeekYoutube = false;
+        var timeForSeekUstream = false;
+        var translations = {
+            byType: {},
+            instants: {
+                jwPlayer: [],
+                youTube: [],
+                uStream: []
+            }
+        };
 
-        var flipButton = document.createElement('a');
-        flipButton.className = 'translation__flip';
-        flipButton.setAttribute("href", "#");
-        flipButton.setAttribute("title", "");
+        translations.all = $('[data-translation]');
+        translations.byType.jwPlayer = translations.all.filter('[data-translation="jwPlayer"]');
+        translations.byType.uStream = translations.all.filter('[data-translation="uStream"]');
+        translations.byType.youTube = translations.all.filter('[data-translation="youTube"]');
 
 
-        function placeTranslation(toID) {
 
-            translations.push(jwplayer(toID).setup({
-                // file: "//www.youtube.com/watch?v=Siy69o-rKU4",
-                // image: "http://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",
-                width: "100%",
-                height: 170,
-                autostart: true,
-                mute: true,
-                repeat: true,
-                playlist: [{
-                    image: "http://img.gravlab.com/003119/sparse/v1d30/pages/928x522-nighsky-player-image.jpg",
-                    sources: [{
-                        file: "https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
-                    }, {
-                        file: "http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4"
-                    }, {
-                        file: "http://stream.gravlab.net/003119/sparse/v1d30/pages/lapse2_896x504.webm"
-                    }]
-                }],
-                skin: {
-                    name: "seven",
-                    active: "#ffd051"
-                }
-            }));
-
-            //
-            // wrapper = $("#"+toID).parent().parent(".view_withTranslation:visible");
-            //
-            //transl.onReady(function(){
-            //    // добавляем сворачивалку
-            //    // $(".jw-controlbar-right-group").append(flipButton);
-            //    // и добавляем ей событие
-            //    // $(".translation__flip").unbind("click"); // убираем отовсюду
-            //    //    $(".translation__flip").on('click', function() {
-            //    //    	$(wrapper).toggleClass("state_translationMinimized");
-            //    //    	translSizeFlip();
-            //    //    	return false;
-            //    //    });
-            //});
-            //
-            //transl.onBuffer(function(){
-            //});
-            //
-            //transl.onPlay(function(){
-            //});
-
+        function initTranslations() {
+            translations.all.each(function(i, el){
+                initTranslation($(el));
+            });
         }
 
-        var viewer = UstreamEmbed('id123');
+        function initTranslation(el) {
+            var type = el.data('translation'),
+                index = translations.byType[type].index(el),
+                translation = translations.instants[type][index];
 
-        translationControls.on('click', function () {
-            var parent = $(this).closest('.view_withTranslation');
-            parent.toggleClass("state_translationMinimized");
-
-            if (parent.hasClass('jwTranslation')) {
-                translSizeFlip(parent);
-            } else if (parent.hasClass('uStreamTranslation')) {
-                viewer.callMethod('pause');
-            } else if (parent.hasClass('youTubeTranslation')){
-
+            if (translation && el.hasClass("state_translationMinimized")) { // if playing or minimized
+                switch (type) {
+                    case 'jwPlayer':
+                        translation.remove();
+                        translations.instants.jwPlayer[index] = false;
+                        break;
+                    case 'uStream':
+                        el.find('iframe').remove();
+                        translations.instants.uStream[index] = false;
+                        break;
+                    case 'youTube':
+                        translation.destroy();
+                        translations.instants.youTube[index] = false;
+                        break;
+                }
+            } else if (!translation && !el.hasClass("state_translationMinimized")) { // if isn't playing
+                switch (type) {
+                    case 'jwPlayer':
+                        translations.instants.jwPlayer[index] =
+                            initJwPlayerTranslations(el.find(".translationPlaceholder:visible").attr("id"), 170, el);
+                        break;
+                    case 'uStream':
+                        translations.instants.uStream[index] = initUStreamTranslations('uStream', 146, el.data('src'));
+                        break;
+                    case 'youTube':
+                        translations.instants.youTube[index] = initYouTubeTranslations('YTplayer', el.data('videoid'), 146);
+                        break;
+                }
             }
-            return false;
-        });
 
+            //autoplay();
 
-        function translSizeFlip(elem) {
-            var index = translationWrappers.index(elem);
-            var translation = translations[index];
-            if (translation && elem.hasClass("state_translationMinimized")) { // если идёт и если свернули
-                translation.remove();
-                translations[index] = false;
-            } else if (!elem.hasClass("state_translationMinimized")) { // если не идёт
-                whereId = $(".translationPlaceholder:visible").attr("id"); // ищем видимый плейсхолдер
-                placeTranslation(whereId);
-            }
-
-            // реинициализируем искролл чтобы пересчиталась высота
+            // reinit iscroll to calculate height
             if (window.globalstorage) {
                 var iscroll;
                 for (var i = 0; i < window.globalstorage.iscroll.length; i++) {
@@ -1324,20 +1295,280 @@ $(function() {
             }
         }
 
-        jwTranslationWrappers.each(function (i, el) {
-            translSizeFlip($(el));
+        function initJwPlayerTranslations(id, height, el) {
+            var instant;
+
+            var toID = el.find(".translationPlaceholder:visible").attr("id"); // look for placeholder element
+
+            if (!id) {
+                return;
+            }
+
+            instant = (jwplayer(id).setup({
+                width: "100%",
+                height: height,
+                autostart: true,
+                mute: true,
+                repeat: true,
+                playlist: [{
+                    image: el.data('image'),
+                    sources: [{
+                        file: el.data('source1')
+                    }, {
+                        file: el.data('source2')
+                    }, {
+                        file: el.data('source3')
+                    }]
+                }],
+                skin: {
+                    name: "seven",
+                    active: "#ffd051"
+                }
+            }));
+
+            return instant;
+        }
+
+        function initYouTubeTranslations(id, videoId, height) {
+            var instant;
+
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/player_api";
+
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            instant = new YT.Player(id, {
+                playerVars: {
+                    'autoplay': 1,
+                    'controls': 1,
+                    'autohide': 1,
+                    'wmode': 'opaque'
+                },
+                videoId: videoId,
+                width: "100%",
+                height: height,
+                events: {
+                    'onReady': configurationYoutube
+                }
+            });
+
+
+            return instant;
+        }
+
+        function initUStreamTranslations(id, height, src) {
+            var uStreamHolder = $('#'+id);
+
+            var uStreamFrame = $('<iframe class="translation" width="100%" height="'+height+'" ' +
+                'src="'+ src+'" ' +
+                'allowfullscreen ' +
+                'webkitallowfullscreen ' +
+                'scrolling="no" ' +
+                'frameborder="0" ' +
+                'style="border: 0 none transparent;">' +
+                '</iframe>'
+            );
+            uStreamHolder.append(uStreamFrame);
+
+            var instant = UstreamEmbed(uStreamFrame[0]);
+
+            return instant;
+        }
+
+       // var translations = [];
+        var state;
+        var position = 0;
+        var whereId;
+        var translationWrappers = $(".view_withTranslation");
+        var jwTranslationWrappers = translationWrappers.filter('.jwTranslation');
+        var translationControls = translationWrappers.find(".translationControls");
+        var translationSize = translationWrappers.find('.translation__size');
+        var firstPlay = true;
+
+        var flipButton = document.createElement('a');
+        flipButton.className = 'translation__flip';
+        flipButton.setAttribute("href", "#");
+        flipButton.setAttribute("title", "");
+
+
+        //function placeTranslation(toID) {
+        //
+        //    translations.push(jwplayer(toID).setup({
+        //        // file: "//www.youtube.com/watch?v=Siy69o-rKU4",
+        //        // image: "http://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",
+        //        width: "100%",
+        //        height: 170,
+        //        autostart: true,
+        //        mute: true,
+        //        repeat: true,
+        //        playlist: [{
+        //            image: "http://img.gravlab.com/003119/sparse/v1d30/pages/928x522-nighsky-player-image.jpg",
+        //            sources: [{
+        //                file: "https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
+        //            }, {
+        //                file: "http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4"
+        //            }, {
+        //                file: "http://stream.gravlab.net/003119/sparse/v1d30/pages/lapse2_896x504.webm"
+        //            }]
+        //        }],
+        //        skin: {
+        //            name: "seven",
+        //            active: "#ffd051"
+        //        }
+        //    }));
+        //
+        //    //
+        //    // wrapper = $("#"+toID).parent().parent(".view_withTranslation:visible");
+        //    //
+        //    //transl.onReady(function(){
+        //    //    // добавляем сворачивалку
+        //    //    // $(".jw-controlbar-right-group").append(flipButton);
+        //    //    // и добавляем ей событие
+        //    //    // $(".translation__flip").unbind("click"); // убираем отовсюду
+        //    //    //    $(".translation__flip").on('click', function() {
+        //    //    //    	$(wrapper).toggleClass("state_translationMinimized");
+        //    //    //    	translSizeFlip();
+        //    //    //    	return false;
+        //    //    //    });
+        //    //});
+        //    //
+        //    //transl.onBuffer(function(){
+        //    //});
+        //    //
+        //    //transl.onPlay(function(){
+        //    //});
+        //
+        //}
+
+        //var viewer = UstreamEmbed('id123');
+
+        translationControls.on('click', function () {
+            var parent = $(this).closest('[data-translation]');
+            parent.toggleClass("state_translationMinimized");
+
+            initTranslations();
+            return false;
         });
 
+        translationSize.on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-        $(window).resize(function () {
-            if (transl) { // если проигрывается
-                if (!$("#" + transl.id).is(":visible")) { // как только исчезает
-                    transl.remove();
-                    transl = false;
-                    translSizeFlip();
-                }
+            var smallTranslation = $(this).closest('[data-translation]');
+            bigTranslationType = smallTranslation.data('translation');
+            var smallPlayer = translations.instants[bigTranslationType][translations.byType[bigTranslationType].index(smallTranslation)];
+
+            if (!smallPlayer) {
+                return;
+            }
+
+            switch (bigTranslationType) {
+                case 'jwPlayer':
+                    $('.translation-big__wrapper__container').append('<div id="BigJwPlayer"></div>');
+                    bigTranslation = initJwPlayerTranslations('BigJwPlayer', '100%', smallTranslation);
+                    bigTranslation.seek(smallPlayer.getPosition());
+                    break;
+                case 'uStream':
+                    $('.translation-big__wrapper__container').append('<div id="BigUStream" style="height: 100%"></div>');
+                    bigTranslation = initUStreamTranslations('BigUStream', '100%', smallTranslation.data('src'));
+                    smallPlayer.getProperty('progress', function (progress) {
+                        timeForSeekUstream = progress;
+                    });
+                    bigTranslation.addListener('share', configurationUstream);
+                    break;
+                case 'youTube':
+                    $('.translation-big__wrapper__container').append('<div id="BigYTplayer"></div>');
+                    timeForSeekYoutube = smallPlayer.getCurrentTime();
+                    bigTranslation = initYouTubeTranslations('BigYTplayer', smallTranslation.data('videoid'), '100%');
+                    break;
+            }
+
+            $('.translation__overlay').show();
+            $('.translation-big__container').show();
+        });
+
+        function configurationUstream () {
+            if (timeForSeekUstream) {
+                bigTranslation.callMethod('seek', timeForSeekUstream);
+            }
+            timeForSeekUstream = false;
+        }
+
+        function configurationYoutube(event) {
+            event.target.mute();
+            if (timeForSeekYoutube) {
+                event.target.seekTo(timeForSeekYoutube);
+            }
+            timeForSeekYoutube = false;
+        }
+
+        $(".translation-big__container__close").on('click', function () {
+            $('.translation__overlay').hide();
+            $('.translation-big__container').hide();
+
+            switch (bigTranslationType) {
+                case 'jwPlayer':
+                    bigTranslation.remove();
+                    $('.translation-big__wrapper__container').find('div').remove();
+                    break;
+                case 'youTube':
+                    $('.translation-big__wrapper__container').find('iframe').remove();
+                    break;
+                case 'uStream':
+                    $('.translation-big__wrapper__container').find('div').remove();
+                    break;
             }
         });
+
+
+        //function translSizeFlip(elem) {
+        //    var index = translationWrappers.index(elem);
+        //    var translation = translations[index];
+        //    if (translation && elem.hasClass("state_translationMinimized")) { // если идёт и если свернули
+        //        translation.remove();
+        //        translations[index] = false;
+        //    } else if (!elem.hasClass("state_translationMinimized")) { // если не идёт
+        //        whereId = $(".translationPlaceholder:visible").attr("id"); // ищем видимый плейсхолдер
+        //        placeTranslation(whereId);
+        //    }
+        //
+        //    // реинициализируем искролл чтобы пересчиталась высота
+        //    if (window.globalstorage) {
+        //        var iscroll;
+        //        for (var i = 0; i < window.globalstorage.iscroll.length; i++) {
+        //            iscroll = window.globalstorage.iscroll[i];
+        //            iscroll.refresh()
+        //        }
+        //    }
+        //}
+
+        //jwTranslationWrappers.each(function (i, el) {
+        //    translSizeFlip($(el));
+        //});
+
+        function firstInitTranslations() {
+
+            if ($(window).width() < 1025) {
+                translationControls.each(function(i, el){
+                    var parent = $(el).closest('[data-translation]');
+                    parent.addClass("state_translationMinimized");
+                });
+            }
+            initTranslations();
+        }
+
+        firstInitTranslations();
+
+        //$(window).resize(function () {
+        //    if (transl) { // если проигрывается
+        //        if (!$("#" + transl.id).is(":visible")) { // как только исчезает
+        //            transl.remove();
+        //            transl = false;
+        //            translSizeFlip();
+        //        }
+        //    }
+        //});
     });
 
 });

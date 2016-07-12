@@ -7,6 +7,9 @@
 
 	<!-- файлы видеоплеера -->
 	<script src="jwplayer/jwplayer.js" type="text/javascript"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<link rel="canonical" href="http://developers.ustream.tv/player-api/dynamic-insertion.html">
+	<script src="_js/ustream-embedapi.js" type="text/javascript"></script>
 	<script>jwplayer.key="00DvZV0BV0Wm4az/8jnnOlON+elKEaUrD1Cddg==";</script>
 	<link rel="stylesheet" type="text/css" href="jwplayer/skins/translation.css">
 
@@ -34,14 +37,19 @@
 
 				<div class="bricks__wrapper swiper-wrapper">
 
-					<div class="brick swiper-slide view_withTranslation height-twice-container hideOn_768 not_for_hover">
+					<div class="brick swiper-slide view_withTranslation jwTranslation height-twice-container hideOn_768 not_for_hover">
 
-						<div class="translation__wrapper swiper-no-swiping">
+						<div class="translation__wrapper swiper-no-swiping" data-translation="jwPlayer"
+						     data-image="http://img.gravlab.com/003119/sparse/v1d30/pages/928x522-nighsky-player-image.jpg"
+						     data-source1="https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
+						     data-source2="http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4"
+						     data-source3="http://stream.gravlab.net/003119/sparse/v1d30/pages/lapse2_896x504.webm">
 							<div class="translationControls">
 								<span class="translation__type">Онлайн трансляция</span>
 								<a href="#" class="translation__flip"></a>
+								<i class="fa fa-expand translation__size hideOn_1024 hideOn_768" aria-hidden="true"></i>
 							</div>
-							<div id="translationPlayer" class="translationPlaceholder"></div>
+							<div id="translationPlayer" class="translationPlaceholder translation"></div>
 						</div>
 
 						<div class="brick view_grey not_for_hover hideOn_1280">
@@ -59,14 +67,19 @@
 						<!--#include virtual="slider.shtml"-->
 					</div>
 
-					<div class="brick view_withTranslation swiper-slide hideOn_1024 hideOn_1280 not_for_hover">
+					<div class="brick view_withTranslation jwTranslation swiper-slide hideOn_1024 hideOn_1280 not_for_hover">
 
-						<div class="translation__wrapper swiper-no-swiping">
+						<div class="translation__wrapper swiper-no-swiping" data-translation="jwPlayer"
+						     data-image="http://img.gravlab.com/003119/sparse/v1d30/pages/928x522-nighsky-player-image.jpg"
+						     data-source1="https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
+						     data-source2="http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4"
+						     data-source3="http://stream.gravlab.net/003119/sparse/v1d30/pages/lapse2_896x504.webm">
 							<div class="translationControls">
 								<span class="translation__type">Онлайн трансляция</span>
 								<a href="#" class="translation__flip"></a>
+								<i class="fa fa-expand translation__size hideOn_1024 hideOn_768" aria-hidden="true"></i>
 							</div>
-							<div id="translationPlayerMobile" class="translationPlaceholder"></div>
+							<div id="translationPlayerMobile" class="translationPlaceholder translation"></div>
 						</div>
 
 						<div class="brick view_grey not_for_hover">
@@ -108,8 +121,34 @@
 					</div>
 
 					<div class="brick swiper-slide">
-						<!--#include virtual="bricks/news-simple.shtml?image=2&data=1&label=31&count1=120&count2=35&count3=3812"-->
+						<div class="translation__wrapper view_withTranslation" data-translation="uStream"
+						     data-src="https://www.ustream.tv/embed/recorded/53173134?autoplay=true&volume=0&wmode=direct&adfree=1&html5ui=1">
+							<div class="translationControls">
+								<span class="translation__type">Онлайн трансляция</span>
+								<a href="#" class="translation__flip"></a>
+								<i class="fa fa-expand translation__size hideOn_1024 hideOn_768" aria-hidden="true"></i>
+							</div>
+							<div id="uStream">
+
+							</div>
+						</div>
+						<!--<div class="translation__wrapper swiper-no-swiping" data-translation="jwPlayer"-->
+						<!--data-image="http://img.gravlab.com/003119/sparse/v1d30/pages/928x522-nighsky-player-image.jpg"-->
+						<!--data-source1="https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"-->
+						<!--data-source2="http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4"-->
+						<!--data-source3="http://stream.gravlab.net/003119/sparse/v1d30/pages/lapse2_896x504.webm">-->
+						<div class="translation__wrapper view_withTranslation" data-translation="youTube"
+						     data-videoid="Xa0Q0J5tOP0"
+						     style="width:100%; overflow: hidden">
+							<div class="translationControls">
+								<span class="translation__type">Онлайн трансляция</span>
+								<a href="#" class="translation__flip"></a>
+								<i class="fa fa-expand translation__size hideOn_1024 hideOn_768" aria-hidden="true"></i>
+							</div>
+							<div class="translation" id="YTplayer"></div>
+						</div>
 					</div>
+
 					<div class="brick swiper-slide">
 						<!--#include virtual="bricks/news-simple.shtml?image=2&data=1&label=31&count1=120&count2=35&count3=3812"-->
 					</div>
@@ -741,120 +780,120 @@
 
 <!--#include virtual="_footer.shtml"-->
 
-<script type="text/javascript">
+<!--<script type="text/javascript">-->
 
-	var transl;
-	var state;
-	var position = 0;
-	var whereId;
-	var wrapper = $(".view_withTranslation");
-	var firstPlay = true;
+	<!--var transl;-->
+	<!--var state;-->
+	<!--var position = 0;-->
+	<!--var whereId;-->
+	<!--var wrapper = $(".view_withTranslation");-->
+	<!--var firstPlay = true;-->
 
-	var flipButton = document.createElement('a');
-	flipButton.className = 'translation__flip';
-	flipButton.setAttribute("href", "#");
-	flipButton.setAttribute("title", "");
-
-
-    function placeTranslation(toID) {
-
-		transl = jwplayer(toID).setup({
-			// file: "//www.youtube.com/watch?v=Siy69o-rKU4",
-			// image: "https://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",
-			width: "100%",
-			height: 170,
-			autostart: true,
-			mute: true,
-			repeat: true,
-			playlist: [{
-			    image: "http://img.gravlab.com/003119/sparse/v1d30/pages/928x522-nighsky-player-image.jpg",
-			    sources: [{ 
-			        file: "https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
-			    },{
-			        file: "http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4"
-			    },{
-			        file: "http://stream.gravlab.net/003119/sparse/v1d30/pages/lapse2_896x504.webm"
-			    }]
-			}],
-			skin: {
-				name: "seven",
-				active: "#ffd051"
-			}
-		});
+	<!--var flipButton = document.createElement('a');-->
+	<!--flipButton.className = 'translation__flip';-->
+	<!--flipButton.setAttribute("href", "#");-->
+	<!--flipButton.setAttribute("title", "");-->
 
 
-	    // wrapper = $("#"+toID).parent().parent(".view_withTranslation:visible");
+    <!--function placeTranslation(toID) {-->
 
-	    transl.onReady(function(){
-			// добавляем сворачивалку
-			// $(".jw-controlbar-right-group").append(flipButton);
-			// и добавляем ей событие
-			// $(".translation__flip").unbind("click"); // убираем отовсюду
-		 //    $(".translation__flip").on('click', function() {
-		 //    	$(wrapper).toggleClass("state_translationMinimized");
-		 //    	translSizeFlip();
-		 //    	return false;
-		 //    });
-	    });
+		<!--transl = jwplayer(toID).setup({-->
+			<!--// file: "//www.youtube.com/watch?v=Siy69o-rKU4",-->
+			<!--// image: "https://artandyou.ru/upload/mce/image/media/BlueXmas-ND-00-web-280x190_copy.jpg",-->
+			<!--width: "100%",-->
+			<!--height: 170,-->
+			<!--autostart: true,-->
+			<!--mute: true,-->
+			<!--repeat: true,-->
+			<!--playlist: [{-->
+			    <!--image: "http://img.gravlab.com/003119/sparse/v1d30/pages/928x522-nighsky-player-image.jpg",-->
+			    <!--sources: [{ -->
+			        <!--file: "https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"-->
+			    <!--},{-->
+			        <!--file: "http://download.openbricks.org/sample/H264/big_buck_bunny_720p_H264_AAC_25fps_3400K_short.MP4"-->
+			    <!--},{-->
+			        <!--file: "http://stream.gravlab.net/003119/sparse/v1d30/pages/lapse2_896x504.webm"-->
+			    <!--}]-->
+			<!--}],-->
+			<!--skin: {-->
+				<!--name: "seven",-->
+				<!--active: "#ffd051"-->
+			<!--}-->
+		<!--});-->
 
-		transl.onBuffer(function(){
-		});	    
 
-		transl.onPlay(function(){
-		});
+	    <!--// wrapper = $("#"+toID).parent().parent(".view_withTranslation:visible");-->
 
-    }
+	    <!--transl.onReady(function(){-->
+			<!--// добавляем сворачивалку-->
+			<!--// $(".jw-controlbar-right-group").append(flipButton);-->
+			<!--// и добавляем ей событие-->
+			<!--// $(".translation__flip").unbind("click"); // убираем отовсюду-->
+		 <!--//    $(".translation__flip").on('click', function() {-->
+		 <!--//    	$(wrapper).toggleClass("state_translationMinimized");-->
+		 <!--//    	translSizeFlip();-->
+		 <!--//    	return false;-->
+		 <!--//    });-->
+	    <!--});-->
 
+		<!--transl.onBuffer(function(){-->
+		<!--});	    -->
 
+		<!--transl.onPlay(function(){-->
+		<!--});-->
+
+    <!--}-->
 
 
 
-	$(".translationControls").on('click', function() {
-		$(wrapper).toggleClass("state_translationMinimized");
-		// $(this).parent().parent().toggleClass("state_translationMinimized");
-		translSizeFlip();
-		return false;
-	});
+
+
+	<!--$(".translationControls").on('click', function() {-->
+		<!--$(wrapper).toggleClass("state_translationMinimized");-->
+		<!--// $(this).parent().parent().toggleClass("state_translationMinimized");-->
+		<!--translSizeFlip();-->
+		<!--return false;-->
+	<!--});-->
 
 
 
-    function translSizeFlip() {
-    	if (transl) { // если идёт
-	    	if ($(wrapper).hasClass("state_translationMinimized")) { // и если свернули
-		    	transl.remove();
-		    	transl = false;
-	    	}    		
-    	} else { // если не идёт
-    		whereId = $(".translationPlaceholder:visible").attr("id"); // ищем видимый плейсхолдер
-    		if (!$(wrapper).hasClass("state_translationMinimized")) {
-		    	placeTranslation(whereId);		
-    		}
-    	} 	
+    <!--function translSizeFlip() {-->
+    	<!--if (transl) { // если идёт-->
+	    	<!--if ($(wrapper).hasClass("state_translationMinimized")) { // и если свернули-->
+		    	<!--transl.remove();-->
+		    	<!--transl = false;-->
+	    	<!--}    		-->
+    	<!--} else { // если не идёт-->
+    		<!--whereId = $(".translationPlaceholder:visible").attr("id"); // ищем видимый плейсхолдер-->
+    		<!--if (!$(wrapper).hasClass("state_translationMinimized")) {-->
+		    	<!--placeTranslation(whereId);		-->
+    		<!--}-->
+    	<!--} 	-->
 
-		// реинициализируем искролл чтобы пересчиталась высота
-		if (window.globalstorage) {
-	    	var iscroll;
-			for (var i = 0; i < window.globalstorage.iscroll.length; i++) {
-				iscroll = window.globalstorage.iscroll[i];
-				iscroll.refresh()
-			}
-		}
-    }
+		<!--// реинициализируем искролл чтобы пересчиталась высота-->
+		<!--if (window.globalstorage) {-->
+	    	<!--var iscroll;-->
+			<!--for (var i = 0; i < window.globalstorage.iscroll.length; i++) {-->
+				<!--iscroll = window.globalstorage.iscroll[i];-->
+				<!--iscroll.refresh()-->
+			<!--}-->
+		<!--}-->
+    <!--}-->
 
-	translSizeFlip();
+	<!--translSizeFlip();-->
 
 
-	$(window).resize(function(){
-		if (transl) { // если проигрывается
-			if ( !$("#"+transl.id).is(":visible") ) { // как только исчезает
-				transl.remove();
-				transl = false;
-	    		translSizeFlip();		
-			}
-		}
-	});
+	<!--$(window).resize(function(){-->
+		<!--if (transl) { // если проигрывается-->
+			<!--if ( !$("#"+transl.id).is(":visible") ) { // как только исчезает-->
+				<!--transl.remove();-->
+				<!--transl = false;-->
+	    		<!--translSizeFlip();		-->
+			<!--}-->
+		<!--}-->
+	<!--});-->
 
-</script>
+<!--</script>-->
 
 
 
@@ -915,6 +954,11 @@
 
     });
 </script>
-
+<div class="translation-big__container" style="display:none;">
+	<i class="fa fa-times translation-big__container__close" aria-hidden="true"></i>
+	<div class="translation-big__wrapper__container">
+	</div>
+</div>
+<div class="translation__overlay" style="display: none;"></div>
 </body>
 </html>

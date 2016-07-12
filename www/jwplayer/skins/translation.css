@@ -8,7 +8,46 @@
     display: block;
 }
 
+.translation__overlay {
+    position: fixed;
+    left:0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+    background: rgba(0,0,0,.8);
+}
 
+.translation-big__container {
+    position: fixed;
+    left: 0;
+    height: 480px;
+    background: #222;
+    width: 884px;
+    top: 10%;
+    right: 0;
+    margin: 0 auto;
+    z-index: 10001;
+}
+
+.translation-big__container__close {
+    position: absolute;
+    left: auto;
+    top: 10px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.translation-big__container__close:hover {
+    color: #FFF;;
+}
+
+.translation-big__wrapper__container {
+    position: relative;
+    display: block;
+    width: 854px;
+    height: 480px;
+}
 
 
 .translation__type {
@@ -54,7 +93,7 @@
         margin-bottom: 22px;
     }
     .view_withTranslation .brick {
-        height: 167px;  
+        height: 167px;
     }
     .view_withTranslation.state_translationMinimized .brick {
         height: 335px;
@@ -75,11 +114,11 @@
         /*height: 822px; !* = x2 + margin *!*/
     }
     .view_withTranslation .brick {
-        height: 283px;  
+        height: 283px;
         margin-bottom: 22px;
     }
     .view_withTranslation.state_translationMinimized .brick.view_yellow {
-        height: 453px;  
+        height: 453px;
     }
 }
 @media screen and (min-width: 1280px) {
@@ -90,10 +129,10 @@
         /*height: 816px;  !* = x2 + margin *!*/
     }
     .view_withTranslation .brick {
-        height: 589px;  
+        height: 589px;
     }
-    .view_withTranslation.state_translationMinimized .brick {
-        height: 758px;  
+    .view_withTranslation .state_translationMinimized ~ .brick {
+        height: 758px;
     }
 }
 
@@ -106,12 +145,20 @@
 
 
 
-.translation__flip {
-    float: right; 
+.translation__flip,
+.translation__size {
+    float: right;
     width: 42px;
     height: 42px;
     position: relative;
 }
+.translation__size:before {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    color: #FFF;
+}
+
 .translation__flip:before {
     position: absolute;
     content: "";

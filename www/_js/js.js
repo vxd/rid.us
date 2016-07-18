@@ -1260,6 +1260,7 @@ $(function() {
                         translations.instants.jwPlayer[index] = false;
                         break;
                     case 'uStream':
+                        translations.instants.uStream[index].destroy();
                         el.find('iframe').remove();
                         translations.instants.uStream[index] = false;
                         break;

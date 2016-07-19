@@ -1234,6 +1234,7 @@ $(function() {
                 uStream: []
             }
         };
+        var resizedPlayer;
 
         translations.all = $('[data-translation]');
         translations.byType.jwPlayer = translations.all.filter('[data-translation="jwPlayer"]');
@@ -1463,16 +1464,20 @@ $(function() {
             if (!smallPlayer) {
                 return;
             }
+            resizedPlayer = smallPlayer;
 
+            console.log(smallPlayer);
             switch (bigTranslationType) {
                 case 'jwPlayer':
                     $('.translation-big__wrapper__container').append('<div id="BigJwPlayer"></div>');
                     bigTranslation = initJwPlayerTranslations('BigJwPlayer', '100%', smallTranslation);
+                    smallPlayer.pause();
                     bigTranslation.seek(smallPlayer.getPosition());
                     break;
                 case 'uStream':
                     $('.translation-big__wrapper__container').append('<div id="BigUStream" style="height: 100%"></div>');
                     bigTranslation = initUStreamTranslations('BigUStream', '100%', smallTranslation.data('src'));
+                    smallPlayer.callMethod('pause');
                     smallPlayer.getProperty('progress', function (progress) {
                         timeForSeekUstream = progress;
                     });
@@ -1480,6 +1485,7 @@ $(function() {
                     break;
                 case 'youTube':
                     $('.translation-big__wrapper__container').append('<div id="BigYTplayer"></div>');
+                    smallPlayer.pauseVideo();
                     timeForSeekYoutube = smallPlayer.getCurrentTime();
                     bigTranslation = initYouTubeTranslations('BigYTplayer', smallTranslation.data('videoid'), '100%');
                     break;
@@ -1512,12 +1518,15 @@ $(function() {
                 case 'jwPlayer':
                     bigTranslation.remove();
                     $('.translation-big__wrapper__container').find('div').remove();
+                    resizedPlayer.play();
                     break;
                 case 'youTube':
                     $('.translation-big__wrapper__container').find('iframe').remove();
+                    resizedPlayer.playVideo();
                     break;
                 case 'uStream':
                     $('.translation-big__wrapper__container').find('div').remove();
+                    resizedPlayer.callMethod('play');
                     break;
             }
         });

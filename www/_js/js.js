@@ -1466,7 +1466,6 @@ $(function() {
             }
             resizedPlayer = smallPlayer;
 
-            console.log(smallPlayer);
             switch (bigTranslationType) {
                 case 'jwPlayer':
                     $('.translation-big__wrapper__container').append('<div id="BigJwPlayer"></div>');
@@ -1518,15 +1517,20 @@ $(function() {
                 case 'jwPlayer':
                     bigTranslation.remove();
                     $('.translation-big__wrapper__container').find('div').remove();
+                    resizedPlayer.seek(bigTranslation.getPosition());
                     resizedPlayer.play();
                     break;
                 case 'youTube':
                     $('.translation-big__wrapper__container').find('iframe').remove();
+                    resizedPlayer.seekTo(bigTranslation.getCurrentTime());
                     resizedPlayer.playVideo();
                     break;
                 case 'uStream':
-                    $('.translation-big__wrapper__container').find('div').remove();
-                    resizedPlayer.callMethod('play');
+                    bigTranslation.getProperty('progress', function (progress) {
+                        resizedPlayer.callMethod('seek', progress);
+                        $('.translation-big__wrapper__container').find('div').remove();
+                        resizedPlayer.callMethod('play');
+                    });
                     break;
             }
         });

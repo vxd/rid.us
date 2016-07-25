@@ -1275,6 +1275,19 @@ $(function() {
                     case 'jwPlayer':
                         translations.instants.jwPlayer[index] =
                             initJwPlayerTranslations(el.find(".translationPlaceholder:visible").attr("id"), 170, el);
+                        if (!translations.instants.jwPlayer[index] ||  $(window).width() < 769 ) {
+                            return;
+                        }
+                        translations.instants.jwPlayer[index].on('ready', function (e) {
+                            el.find('.jw-group.jw-controlbar-right-group.jw-reset').append('<a class="jwtPopup"></a>');
+                            el.find('.jw-group.jw-controlbar-right-group.jw-reset .jwtPopup').on('click', createBigPlayer);
+                            el.find('.jw-group.jw-controlbar-right-group.jw-reset .jwtPopup').hover(function () {
+                                el.find('.jw-icon-fullscreen').addClass('jw-icon-fullscreen-hover');
+                            }, function() {
+                                console.log('222');
+                                el.find('.jw-icon-fullscreen').removeClass('jw-icon-fullscreen-hover');
+                            });
+                        });
                         break;
                     case 'uStream':
                         translations.instants.uStream[index] = initUStreamTranslations('uStream', 146, el.data('src'));
@@ -1360,6 +1373,7 @@ $(function() {
         }
 
         function initUStreamTranslations(id, height, src) {
+            console.log('1111');
             var uStreamHolder = $('#'+id);
 
             var uStreamFrame = $('<iframe class="translation" width="100%" height="'+height+'" ' +
@@ -1453,7 +1467,7 @@ $(function() {
             return false;
         });
 
-        translationSize.on('click', function (e) {
+        function createBigPlayer (e) {
             e.preventDefault();
             e.stopPropagation();
 
@@ -1492,7 +1506,9 @@ $(function() {
 
             $('.translation__overlay').show();
             $('.translation-big__container').show();
-        });
+        }
+
+        translationSize.on('click', createBigPlayer);
 
         function configurationUstream () {
             if (timeForSeekUstream) {

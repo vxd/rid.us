@@ -207,5 +207,35 @@
 }
 
 .view_withTranslation .jw-icon-fullscreen {
-    display: none;
+    position: relative;
+}
+
+.view_withTranslation .jw-icon-fullscreen.jw-icon-fullscreen-hover {
+    color: #ffd051;
+}
+
+.view_withTranslation .jwtPopup {
+    position: absolute;
+    top: 3px;
+    right: 4px;
+    z-index: 12;
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.translation-big__container .jw-skin-seven .jw-controlbar {
+    border-top: none;
+}
+
+.translation-big__container .jw-skin-seven .jw-background-color {
+    background: transparent;
+}
+
+.translation-big__container .jw-skin-seven .jw-text-duration {
+    color: #FFF;
+}
+
+.translation-big__container .jw-skin-seven .jw-time-tip, .jw-skin-seven .jw-menu, .jw-skin-seven .jw-volume-tip, .jw-skin-seven .jw-skip {
+    border: none;
 }

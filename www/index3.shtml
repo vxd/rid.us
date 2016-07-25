@@ -47,7 +47,6 @@
 							<div class="translationControls">
 								<span class="translation__type">Онлайн трансляция</span>
 								<a href="#" class="translation__flip"></a>
-								<i class="translation__size hideOn_768" aria-hidden="true"></i>
 							</div>
 							<div id="translationPlayer" class="translationPlaceholder translation"></div>
 						</div>

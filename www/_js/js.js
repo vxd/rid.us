@@ -1283,7 +1283,6 @@ $(function() {
                             var jwPopup = el.find('.jw-group.jw-controlbar-right-group.jw-reset .jwPopup');
                             jwPopup.on('click', createBigPlayer);
 
-                            console.log(jwPopup);
                             jwPopup.hover(function () {
                                 el.find('.jw-icon-fullscreen').addClass('jw-icon-fullscreen-hover');
                             }, function() {

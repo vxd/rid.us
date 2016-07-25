@@ -1275,16 +1275,18 @@ $(function() {
                     case 'jwPlayer':
                         translations.instants.jwPlayer[index] =
                             initJwPlayerTranslations(el.find(".translationPlaceholder:visible").attr("id"), 170, el);
-                        if (!translations.instants.jwPlayer[index] ||  $(window).width() < 769 ) {
+                        if (!translations.instants.jwPlayer[index]) {
                             return;
                         }
                         translations.instants.jwPlayer[index].on('ready', function (e) {
-                            el.find('.jw-group.jw-controlbar-right-group.jw-reset').append('<a class="jwtPopup"></a>');
-                            el.find('.jw-group.jw-controlbar-right-group.jw-reset .jwtPopup').on('click', createBigPlayer);
-                            el.find('.jw-group.jw-controlbar-right-group.jw-reset .jwtPopup').hover(function () {
+                            el.find('.jw-group.jw-controlbar-right-group.jw-reset').append('<a class="jwPopup hideOn_768"></a>');
+                            var jwPopup = el.find('.jw-group.jw-controlbar-right-group.jw-reset .jwPopup');
+                            jwPopup.on('click', createBigPlayer);
+
+                            console.log(jwPopup);
+                            jwPopup.hover(function () {
                                 el.find('.jw-icon-fullscreen').addClass('jw-icon-fullscreen-hover');
                             }, function() {
-                                console.log('222');
                                 el.find('.jw-icon-fullscreen').removeClass('jw-icon-fullscreen-hover');
                             });
                         });
@@ -1373,7 +1375,6 @@ $(function() {
         }
 
         function initUStreamTranslations(id, height, src) {
-            console.log('1111');
             var uStreamHolder = $('#'+id);
 
             var uStreamFrame = $('<iframe class="translation" width="100%" height="'+height+'" ' +

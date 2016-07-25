@@ -1035,6 +1035,9 @@
 	}
 }
 @media screen and (min-width: 1280px) {
+	.height-twice-container .view_yellow .iscroll {
+		height: 772px;
+	}
 	.brick.view_withTranslation .iscroll {
 		height: 545px;
 	}
@@ -1452,7 +1455,12 @@
 	float: none;
 	margin-top: 0 !important;
 }
-.height-twice-container .height-twice {
+@media screen and (min-width: 1280px) {
+	.height-twice-container .height-twice {
+		height: 815px;
+	}
+}
+.view_withTranslation .height-twice {
 	height: 588px;
 }
 .flexSlider .brick.null {

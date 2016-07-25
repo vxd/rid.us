@@ -115,8 +115,12 @@
     .view_withTranslation .todayMainNewsList__item:last-child {
         display: none;
     }
-    .view_withTranslation .state_translationMinimized ~ .todayMainNewsList__item:last-child {
+    .view_withTranslation .state_translationMinimized ~ .view_grey .todayMainNewsList__item:last-child {
         display: list-item;
+    }
+
+    .swiper-slide > .todayMainNewsList .todayMainNewsList__link {
+        font-size: 20px;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -214,7 +218,7 @@
     color: #ffd051;
 }
 
-.view_withTranslation .jwtPopup {
+.view_withTranslation .jwPopup {
     position: absolute;
     top: 3px;
     right: 4px;

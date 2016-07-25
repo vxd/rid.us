@@ -59,13 +59,7 @@
 		margin: 0 3% 22px 0;
 	}
 }
-@media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.brick {
-		width: 31.33333%;
-		margin: 0 2% 22px 0;
-	}
-}
-@media screen and (min-width: 1041px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
 	.brick {
 		width: 300px;
 		margin: 0 22px 22px 0;

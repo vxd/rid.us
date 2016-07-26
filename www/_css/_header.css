@@ -58,7 +58,7 @@ header {
 	opacity: 0;
 	transition: all 500ms ease-out;
 }
-@media screen and (min-width: 1280px) {
+/*@media screen and (min-width: 1280px) {*/
 	.floatingInfo.view_scrolling .mainLogo {
         margin-right:  32px;
 		width: 100px;
@@ -69,6 +69,16 @@ header {
     .floatingInfo.view_scrolling .mainLogo-slow {
         transition: all 500ms 1s ease-out;
     }
+/*}*/
+@media screen and (max-width: 870px) {
+	.floatingInfo.view_scrolling .mainLogo,
+	.floatingInfo.view_scrolling .view_sideBorder {
+		margin-right: 10px;
+	}
+
+	.floatingInfo.view_scrolling .ya-share2__item .ya-share2__icon {
+		padding: 0 12px;
+	}
 }
 .floatingInfo .yellowButton.view_backButton {
 	height: 56px;

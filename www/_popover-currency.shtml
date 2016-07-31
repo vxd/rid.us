@@ -1,0 +1,13 @@
+<div class="popoverCurrency">
+	<h6 class="clearfix">
+		Динамика за 2 недели
+		<i class="popover__close"></i>
+	</h6>
+	<div data-chart></div>
+</div>
+
+
+
+
+
+

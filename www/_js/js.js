@@ -114,9 +114,10 @@ $(function() {
         $(".menu").toggleClass("state_open");
         $(this).closest('.headerPanel').toggleClass("state_open");
         searchClose();
-        $(".popover__wrapper, .header__loginButton").removeClass("state_open");
-        $(".popover__wrapper, .header__readLater").removeClass("state_open");
+        $(".popover-login, .header__loginButton").removeClass("state_open");
+        $(".popover-login, .header__readLater").removeClass("state_open");
         $(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+        $(".dayInfo.with_popover li").removeClass("state_open");
         return false;
     });
 
@@ -125,12 +126,12 @@ $(function() {
         $(this).toggleClass("state_open");
         $(".subMenu").toggleClass("state_open");
 
-        $(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
+        $(".popover-login, .header__loginButton, .header__readLater, .dayInfo.with_popover li").removeClass("state_open");
         return false;
     });
     $(document).on(clickHandler, function(event) {
-        if ($(event.target).closest(".menu__link.view_menuIcon, .subMenu .tagList").length) return;
-        $(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
+        if ($(event.target).closest(".menu__link.view_menuIcon, .subMenu .tagList, .dayInfo.with_popover li").length) return;
+        $(".subMenu, .menu__link.view_menuIcon, .dayInfo.with_popover li").removeClass("state_open");
         event.stopPropagation();
     });
 
@@ -138,7 +139,7 @@ $(function() {
     /* логин */
     $(".header__loginButton, .menu__link.view_enter, .header__readLater, .menu__link.view_readLater").on(clickHandler, function(){
         $(this).toggleClass("state_open");
-        $(".popover__wrapper").toggleClass("state_open");
+        $(".popover-login").toggleClass("state_open");
 
         searchClose();
         $(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
@@ -153,17 +154,17 @@ $(function() {
         if ($(event.target).closest(".header__readLater, .popoverReadLater").length && headerReadLater) return;
 
         if(headerLoginButton){
-            $(".popover__wrapper, .header__loginButton").removeClass("state_open");
+            $(".popover-login, .header__loginButton").removeClass("state_open");
         }
         if(headerReadLater){
-            $(".popover__wrapper, .header__readLater").removeClass("state_open");
+            $(".popover-login, .header__readLater").removeClass("state_open");
         }
 
         event.stopPropagation();
     });
 
     $(window).resize(function(){
-        $(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
+        $(".popover-login, .header__loginButton, .header__readLater").removeClass("state_open");
     });
 
 
@@ -181,7 +182,7 @@ $(function() {
         $(".headerSearch__form .search__input").focus();
 
         $(".subMenu, .menu__link.view_menuIcon").removeClass("state_open");
-        $(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
+        $(".popover-login, .header__loginButton, .header__readLater").removeClass("state_open");
         return false;
     });
 
@@ -210,7 +211,22 @@ $(function() {
         event.stopPropagation();
     });
 
+    $('.dayInfo.with_popover').on(clickHandler, function(e){
+        var target = $(e.target),
+            parent;
 
+        if(target.tagName === 'li') {
+            parent = target;
+        } else {
+            parent = target.closest('li')
+        }
+
+        parent.toggleClass('state_open');
+    });
+
+    $('.popover__close').on(clickHandler, function(){
+        $(this).closest('.state_open').toggleClass('.state_open');
+    });
 
     // ======================================
     // скролл 
@@ -420,7 +436,7 @@ $(function() {
 
             if ( yDiff > 0 ) {
                 // вниз
-                $(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
+                $(".popover-login, .header__loginButton, .header__readLater").removeClass("state_open");
                 if (currentScrollTop > floatingHeight) {
                     // скрываем, только если проскроллили больше высоты меню
                     floatingTarget.addClass('view_hidden').addClass('view_scrolling');;
@@ -538,7 +554,7 @@ $(function() {
 
             if ( yDiff > 0 ) {
                 // вниз
-                $(".popover__wrapper, .header__loginButton, .header__readLater").removeClass("state_open");
+                $(".popover-login, .header__loginButton, .header__readLater").removeClass("state_open");
 
                 if (currentScrollTop > floatingHeight) {
                     // скрываем, только если проскроллили больше высоты меню
@@ -1604,5 +1620,90 @@ $(function() {
 });
 
 
+// ======================================
+// Init google charts
+// ======================================
 
+google.charts.load('current', {packages: ['corechart', 'line'], 'language': 'ru'});
+google.charts.setOnLoadCallback(drawBasic);
 
+function drawBasic() {
+    var dataEur = new google.visualization.DataTable();
+    dataEur.addColumn('date', 'date');
+    dataEur.addColumn('number', '');
+
+    dataEur.addRows([
+        [new Date(2014, 6, 1), 66.6],
+        [new Date(2014, 6, 2), 66.7],
+        [new Date(2014, 6, 3), 66.75],
+        [new Date(2014, 6, 4), 66.8],
+        [new Date(2014, 6, 5), 65.6],
+        [new Date(2014, 6, 6), 65.2],
+        [new Date(2014, 6, 7), 64.6],
+        [new Date(2014, 6, 8), 63.7],
+        [new Date(2014, 6, 9), 64.7],
+        [new Date(2014, 6, 10), 64.7],
+        [new Date(2014, 6, 11), 64.7],
+        [new Date(2014, 6, 12), 64.6],
+        [new Date(2014, 6, 13), 66],
+        [new Date(2014, 6, 14), 65.6]
+    ]);
+
+    var formatter_long = new google.visualization.DateFormat({pattern: 'd MMMM, EE'});
+    formatter_long.format(dataEur, 0);
+
+    var optionsEur = {
+        height: 225,
+        width: 495,
+        animation: {startup: true},
+        pointSize: 10,
+        colors: ['#c6271b'],
+        fontSize: 12,
+        hAxis: {
+            format: 'd MMMM, EE',
+            baselineColor: '#000',
+            textPosition: 'none',
+            gridlines: {
+                color: '#f5f5f5',
+                count: 4
+            },
+            minorGridlines: {
+                color: '#f5f5f5',
+                count: 15
+            }
+        },
+        vAxis: {
+            color: '#f5f5f5',
+            gridlines: {
+                color: '#a3a3a3',
+                count: 8
+            },
+            textStyle: {
+                fontName: 'Roboto Slab',
+                fontSize: 12,
+                color: '#333'
+            }
+        },
+        legend: {
+            position: 'none'
+        },
+        tooltip: {
+            textStyle: {
+                fontName: 'Roboto Slab',
+                fontSize: 12,
+                bold: true,
+                color: '#333'
+            }
+        },
+        chartArea: {
+            left: 40,
+            top: 10,
+            width: 440,
+            height: 205
+        }
+    };
+
+    var chartEur = new google.visualization.LineChart($('.b-rate_eur [data-chart]')[0]);
+
+    chartEur.draw(dataEur, optionsEur);
+}

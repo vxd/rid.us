@@ -1,4 +1,21 @@
-<ul class="dayInfo">
+<!-- //// определяем переменные -->
+
+<!--#set var="popover" value="" -->
+
+<!-- //// извлекаем из параметров урла -->
+
+<!--#if expr="\"$QUERY_STRING\" = /popover=([a-zA-Z0-9]+)/" -->
+<!--#set var="popover" value="$1" -->
+<!--#endif -->
+
+<!-- //// конец -->
+
+<!--#if expr="$popover != true" -->
+	<ul class="dayInfo">
+<!--#endif -->
+<!--#if expr="$popover = true" -->
+	<ul class="dayInfo with_popover">
+<!--#endif -->
 	<li class="b-date">
 		<span>среда</span>
 		<b class="b-rate_value">11 ноября</b>
@@ -9,6 +26,9 @@
 			<sup>-0.33</sup>
 			<b class="b-rate_value">69.14</b>
 		</a>
+		<!--#if expr="$popover = true" -->
+			<!--#include virtual="_popover-currency.shtml"-->
+		<!--#endif -->
 	</li>
 	<li class="b-rate_usd" title="Курс ММВБ на 11/10 23:43">
 		<a href="#" title="">

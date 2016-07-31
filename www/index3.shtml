@@ -11,6 +11,7 @@
 	<link rel="canonical" href="http://developers.ustream.tv/player-api/dynamic-insertion.html">
 	<script src="_js/ustream-embedapi.js" type="text/javascript"></script>
 	<script>jwplayer.key="00DvZV0BV0Wm4az/8jnnOlON+elKEaUrD1Cddg==";</script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<link rel="stylesheet" type="text/css" href="jwplayer/skins/translation.css">
 
 </head>
@@ -22,7 +23,7 @@
         <img src="_images/header_banner.jpg" alt="" />
     </a>
     <section class="globalInfo wrapper paddings_side clearfix">
-        <!--#include virtual="_dayinfo.shtml"-->
+        <!--#include virtual="_dayinfo.shtml?popover=true"-->
         <!--#include virtual="_yellowbutton.shtml?text=1"-->
         <!--#include virtual="_socials-header.shtml"-->
     </section>

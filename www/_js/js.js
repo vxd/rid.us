@@ -1703,7 +1703,11 @@ function drawBasic() {
         }
     };
 
-    var chartEur = new google.visualization.LineChart($('.b-rate_eur [data-chart]')[0]);
+    var chartEur = [],
+        dataCharts = $('.b-rate_eur [data-chart]');
 
-    chartEur.draw(dataEur, optionsEur);
+    dataCharts.each(function(i, el){
+        chartEur[i] = new google.visualization.LineChart(el);
+        chartEur[i].draw(dataEur, optionsEur);
+    });
 }

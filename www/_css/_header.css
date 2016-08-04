@@ -172,6 +172,12 @@ header {
 	background: #fff;
 	z-index: 101;
 }
+.headerPanel .dayInfo.with_popover .b-rate_eur.state_open {
+	background: #ffd051;
+}
+.headerPanel .dayInfo.with_popover .b-rate_eur.state_open:after {
+	display: none;
+}
 .dayInfo sup {
 	color: #ea5429;
 }
@@ -199,6 +205,9 @@ header {
 	height: 32px;
 	width: 1px;
 	background: #e8e8e8;
+}
+.headerPanel .dayInfo.with_popover .b-date:after {
+	display: none;
 }
 .dayInfo .b-date span {
 	text-transform: uppercase;
@@ -248,7 +257,7 @@ header {
 	.headerPanel .dayInfo {
 		display: block;
 		float: right;
-		margin: 13px 0;
+		margin: 0;
 	}
 
 	.headerPanel .dayInfo b {
@@ -257,11 +266,12 @@ header {
 	}
 
 	.headerPanel .dayInfo li {
-		padding: 0 0 0 10px;
+		padding: 15px 0 15px 10px;
 		font-size: 13px;
 	}
 
 	.headerPanel .dayInfo .b-date {
+		margin-top: 15px;
 		border-right: 1px solid #fff;
 		padding: 0 10px 0 0;
 	}

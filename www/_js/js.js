@@ -1633,20 +1633,20 @@ function drawBasic() {
     dataEur.addColumn('number', '');
 
     dataEur.addRows([
-        [new Date(2014, 6, 1), 66.6],
-        [new Date(2014, 6, 2), 66.7],
-        [new Date(2014, 6, 3), 66.75],
-        [new Date(2014, 6, 4), 66.8],
-        [new Date(2014, 6, 5), 65.6],
-        [new Date(2014, 6, 6), 65.2],
-        [new Date(2014, 6, 7), 64.6],
-        [new Date(2014, 6, 8), 63.7],
-        [new Date(2014, 6, 9), 64.7],
-        [new Date(2014, 6, 10), 64.7],
-        [new Date(2014, 6, 11), 64.7],
-        [new Date(2014, 6, 12), 64.6],
-        [new Date(2014, 6, 13), 66],
-        [new Date(2014, 6, 14), 65.6]
+        [new Date(2014, 6, 1), 71.3],
+        [new Date(2014, 6, 2), 71],
+        [new Date(2014, 6, 3), 71],
+        [new Date(2014, 6, 4), 70],
+        [new Date(2014, 6, 5), 71.6],
+        [new Date(2014, 6, 6), 71.5],
+        [new Date(2014, 6, 7), 70.9],
+        [new Date(2014, 6, 8), 71.2],
+        [new Date(2014, 6, 9), 71.2],
+        [new Date(2014, 6, 10), 70],
+        [new Date(2014, 6, 11), 71],
+        [new Date(2014, 6, 12), 70.5],
+        [new Date(2014, 6, 13), 70.3],
+        [new Date(2014, 6, 14), 70]
     ]);
 
     var formatter_long = new google.visualization.DateFormat({pattern: 'd MMMM, EE'});

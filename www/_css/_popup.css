@@ -275,18 +275,18 @@
 	width: 100%;
 	min-width: 768px;
 }
-
-.state_open .popoverCurrency {
-	display: block;
-}
 .popoverCurrency h6 {
 	margin-bottom: 15px;
 }
-.dayInfo li:hover .popoverCurrency {
-	display: block;
+@media screen and (max-width: 1023px) {
+	.state_open .popoverCurrency {
+		display: block;
+	}
 }
-@media screen and (max-width: 1040px){
-
+@media screen and (min-width: 1024px) {
+	.dayInfo li:hover .popoverCurrency {
+		display: block;
+	}
 }
 
 div[data-chart] {
@@ -304,7 +304,7 @@ div[data-chart] [dir] {
 	background: url(../_images/icons_sprite.png) -50px -381px no-repeat;
 	cursor: pointer;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
 	.popover__close {
 		display: block;
 	}

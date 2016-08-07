@@ -282,6 +282,9 @@
 .popoverCurrency h6 {
 	margin-bottom: 15px;
 }
+.dayInfo li:hover .popoverCurrency {
+	display: block;
+}
 @media screen and (max-width: 1040px){
 
 }
@@ -295,11 +298,16 @@ div[data-chart] [dir] {
 
 .popover__close {
 	float: right;
-	display: block;
+	display: none;
 	width: 12px;
 	height: 12px;
 	background: url(../_images/icons_sprite.png) -50px -381px no-repeat;
 	cursor: pointer;
+}
+@media screen and (max-width: 1024px){
+	.popover__close {
+		display: block;
+	}
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
 	.popover__close {

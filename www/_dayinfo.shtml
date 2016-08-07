@@ -36,6 +36,9 @@
 			<sup>-0.01</sup>
 			<b class="b-rate_value">64.58</b>
 		</a>
+		<!--#if expr="$popover = true" -->
+			<!--#include virtual="_popover-currency.shtml"-->
+		<!--#endif -->
 	</li>
 	<li class="b-rate_brent" title="Цена на 11/11 01:45">
 		<a href="#" title="">

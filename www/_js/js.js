@@ -1628,31 +1628,11 @@ google.charts.load('current', {packages: ['corechart', 'line'], 'language': 'ru'
 google.charts.setOnLoadCallback(drawBasic);
 
 function drawBasic() {
-    var dataEur = new google.visualization.DataTable();
-    dataEur.addColumn('date', 'date');
-    dataEur.addColumn('number', '');
+	/**
+     * Common data
+     * */
 
-    dataEur.addRows([
-        [new Date(2014, 6, 1), 71.3],
-        [new Date(2014, 6, 2), 71],
-        [new Date(2014, 6, 3), 71],
-        [new Date(2014, 6, 4), 70],
-        [new Date(2014, 6, 5), 71.6],
-        [new Date(2014, 6, 6), 71.5],
-        [new Date(2014, 6, 7), 70.9],
-        [new Date(2014, 6, 8), 71.2],
-        [new Date(2014, 6, 9), 71.2],
-        [new Date(2014, 6, 10), 70],
-        [new Date(2014, 6, 11), 71],
-        [new Date(2014, 6, 12), 70.5],
-        [new Date(2014, 6, 13), 70.3],
-        [new Date(2014, 6, 14), 70]
-    ]);
-
-    var formatter_long = new google.visualization.DateFormat({pattern: 'd MMMM, EE'});
-    formatter_long.format(dataEur, 0);
-
-    var optionsEur = {
+    var optionsAll = {
         height: 225,
         width: 495,
         animation: {startup: true},
@@ -1703,11 +1683,75 @@ function drawBasic() {
         }
     };
 
+    var dateFormatterAll = new google.visualization.DateFormat({pattern: 'd MMMM, EE'});
+
+	/**
+	 * Euro popover
+     */
+
+    var dataEur = new google.visualization.DataTable();
+    dataEur.addColumn('date', 'date');
+    dataEur.addColumn('number', '');
+
+    dataEur.addRows([
+        [new Date(2014, 6, 1), 71.3],
+        [new Date(2014, 6, 2), 71],
+        [new Date(2014, 6, 3), 71],
+        [new Date(2014, 6, 4), 70],
+        [new Date(2014, 6, 5), 71.6],
+        [new Date(2014, 6, 6), 71.5],
+        [new Date(2014, 6, 7), 70.9],
+        [new Date(2014, 6, 8), 71.2],
+        [new Date(2014, 6, 9), 71.2],
+        [new Date(2014, 6, 10), 70],
+        [new Date(2014, 6, 11), 71],
+        [new Date(2014, 6, 12), 70.5],
+        [new Date(2014, 6, 13), 70.3],
+        [new Date(2014, 6, 14), 70]
+    ]);
+
+    dateFormatterAll.format(dataEur, 0);
+
     var chartEur = [],
         dataCharts = $('.b-rate_eur [data-chart]');
 
     dataCharts.each(function(i, el){
         chartEur[i] = new google.visualization.LineChart(el);
-        chartEur[i].draw(dataEur, optionsEur);
+        chartEur[i].draw(dataEur, optionsAll);
+    });
+
+    /**
+     * Dollar popover
+     */
+
+    var dataUsd = new google.visualization.DataTable();
+    dataUsd.addColumn('date', 'date');
+    dataUsd.addColumn('number', '');
+
+    dataUsd.addRows([
+        [new Date(2014, 6, 1), 64.2],
+        [new Date(2014, 6, 2), 64],
+        [new Date(2014, 6, 3), 64],
+        [new Date(2014, 6, 4), 64],
+        [new Date(2014, 6, 5), 63.6],
+        [new Date(2014, 6, 6), 64.2],
+        [new Date(2014, 6, 7), 64.6],
+        [new Date(2014, 6, 8), 64.2],
+        [new Date(2014, 6, 9), 64.2],
+        [new Date(2014, 6, 10), 63.9],
+        [new Date(2014, 6, 11), 63.1],
+        [new Date(2014, 6, 12), 63.1],
+        [new Date(2014, 6, 13), 62.9],
+        [new Date(2014, 6, 14), 63.4]
+    ]);
+
+    dateFormatterAll.format(dataUsd, 0);
+
+    var chartUsd = [],
+        dataCharts = $('.b-rate_usd [data-chart]');
+
+    dataCharts.each(function(i, el){
+        chartUsd[i] = new google.visualization.LineChart(el);
+        chartUsd[i].draw(dataUsd, optionsAll);
     });
 }

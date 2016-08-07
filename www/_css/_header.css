@@ -158,11 +158,17 @@ header {
 	position: relative;
 	padding: 10px 5px 10px 14px;
 }
-.dayInfo.with_popover .b-rate_eur.state_open {
+.dayInfo.with_popover .b-rate_eur.state_open,
+.dayInfo.with_popover .b-rate_usd.state_open,
+.dayInfo.with_popover .b-rate_eur:hover,
+.dayInfo.with_popover .b-rate_usd:hover {
 	-webkit-box-shadow: inset 0 3px 0 0px #ffd051, 0 3px 0 3px #ffd051;
 	box-shadow: inset 0 3px 0 0px #ffd051, 0 3px 0 3px #ffd051;
 }
-.dayInfo.with_popover .b-rate_eur.state_open:after {
+.dayInfo.with_popover .b-rate_eur.state_open:after,
+.dayInfo.with_popover .b-rate_usd.state_open:after,
+.dayInfo.with_popover .b-rate_eur:hover:after,
+.dayInfo.with_popover .b-rate_usd:hover:after {
 	content: '';
 	position: absolute;
 	top: 100%;
@@ -172,10 +178,16 @@ header {
 	background: #fff;
 	z-index: 101;
 }
-.headerPanel .dayInfo.with_popover .b-rate_eur.state_open {
+.headerPanel .dayInfo.with_popover .b-rate_eur.state_open,
+.headerPanel .dayInfo.with_popover .b-rate_usd.state_open,
+.headerPanel .dayInfo.with_popover .b-rate_eur:hover,
+.headerPanel .dayInfo.with_popover .b-rate_usd:hover {
 	background: #ffd051;
 }
-.headerPanel .dayInfo.with_popover .b-rate_eur.state_open:after {
+.headerPanel .dayInfo.with_popover .b-rate_eur.state_open:after,
+.headerPanel .dayInfo.with_popover .b-rate_usd.state_open:after,
+.headerPanel .dayInfo.with_popover .b-rate_eur:hover:after,
+.headerPanel .dayInfo.with_popover .b-rate_usd:hover:after {
 	display: none;
 }
 .dayInfo sup {

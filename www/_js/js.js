@@ -221,6 +221,8 @@ $(function() {
             parent = target.closest('li')
         }
 
+        $(this).find('li').not(parent).removeClass('state_open');
+
         parent.toggleClass('state_open');
     });
 

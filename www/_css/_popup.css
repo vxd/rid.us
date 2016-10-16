@@ -279,7 +279,7 @@
 	margin-bottom: 15px;
 }
 @media screen and (max-width: 1023px) {
-	.state_open .popoverCurrency {
+	.state_open > .popoverCurrency {
 		display: block;
 	}
 }

@@ -190,6 +190,20 @@
 
 </div>
 
+<section class="wrapper contentBackground_white paddings_side clearfix">
+	<div class="bricks__wrapper bricks_article-previews clearfix">
+		<div class="brick width_twice">
+			<!--#include virtual="bricks/article-preview.shtml?author=1&data=1&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/article-preview.shtml?author=2&data=2&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/article-preview.shtml?author=3&data=3&count1=120&count2=35&count3=3812"-->
+		</div>
+	</div>
+</section>
+
 <section class="wrapper hideOn_mobile contentBackground_white padding_bottom clearfix">
 	<!--#include virtual="_ridus-map.shtml"-->
 </section>

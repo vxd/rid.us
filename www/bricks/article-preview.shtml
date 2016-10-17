@@ -1,0 +1,93 @@
+<!-- //// определяем переменные -->
+
+<!--#set var="author" value="" -->
+<!--#set var="data" value="" -->
+<!--#set var="count1" value="" -->
+<!--#set var="count2" value="" -->
+<!--#set var="count3" value="" -->
+
+<!-- //// извлекаем из параметров урла -->
+
+<!--#if expr="\"$QUERY_STRING\" = /author=([a-zA-Z0-9]+)/" -->
+<!--#set var="author" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /data=([a-zA-Z0-9]+)/" -->
+<!--#set var="data" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /count1=([a-zA-Z0-9]+)/" -->
+<!--#set var="count1" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /count2=([a-zA-Z0-9]+)/" -->
+<!--#set var="count2" value="$1" -->
+<!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /count3=([a-zA-Z0-9]+)/" -->
+<!--#set var="count3" value="$1" -->
+<!--#endif -->
+
+<!-- //// конец -->
+
+<div class="brick__article-preview">
+	<div class="brick__side">
+		<!--#if expr="$author = 1" -->
+		<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="Александр Иванов" />
+		<p>Александр Иванов</p>
+		<!--#endif -->
+		<!--#if expr="$author = 2" -->
+		<img src="http://www.ridus.ru/images/avatars/151502/large_457d41f144.jpg" alt="Александр Иванов" />
+		<p>Константин Петрашкевич</p>
+		<!--#endif -->
+		<!--#if expr="$author = 3" -->
+		<img src="http://www.ridus.ru/images/avatars/161899/small_ed7491c6e2.jpg" alt="Александр Иванов" />
+		<p>Наталья Редактурова</p>
+		<!--#endif -->
+	</div>
+
+	<div class="brick__content">
+		<!--#if expr="$data = 1" -->
+		<div class="brick__mainLinkWrapper">
+			<a href="#" class="brick__mainLink" title="">В нашей стране его расстреляли в пятнадцать лет вопреки закону</a>
+		</div>
+		<p class="brick__text">
+			30 сентября — годовщина начала операции ВКС России в Сирии. Каковы ее итоги и что будет дальше?
+		</p>
+		<!--#endif -->
+		<!--#if expr="$data = 2" -->
+		<div class="brick__mainLinkWrapper">
+			<a href="#" class="brick__mainLink" title="">В коммунальных платежах появится строка расходов «за вывоз мусора»</a>
+		</div>
+		<p class="brick__text">
+			30 сентября — годовщина начала операции ВКС России в Сирии. Каковы ее итоги и что будет дальше?
+		</p>
+		<!--#endif -->
+		<!--#if expr="$data = 3" -->
+		<div class="brick__mainLinkWrapper">
+			<a href="#" class="brick__mainLink" title="">Украинский Генштаб опроверг заявление о седьмой волне мобилизации</a>
+		</div>
+		<p class="brick__text">
+			30 сентября — годовщина начала операции ВКС России в Сирии. Каковы ее итоги и что будет дальше?
+		</p>
+		<!--#endif -->
+
+
+		<!--#if expr="$count1 != 'false'" -->
+		<div class="countersBlock countersBlock-inline">
+			<span class="countersBlock__item view_count1">
+				<!--#echo var="count1" --> <i class="icon"><!-- icon --></i>
+			</span>
+			<span class="countersBlock__item view_count2">
+				<!--#echo var="count2" --> <i class="icon"><!-- icon --></i>
+			</span>
+			<span class="countersBlock__item view_count3">
+				<!--#echo var="count3" --> <i class="icon"><!-- icon --></i>
+			</span>
+			<a href="#" class="countersBlock__item readLater">
+				<span>читать позже</span>
+				<span class="state_hidderHidden">читаю позже</span>
+				<i class="icon"><!-- icon --></i>
+			</a>
+		</div>
+		<!--#endif -->
+	</div>
+	<a href="#" class="clickable hideOn_1024 hideOn_768"></a>
+</div>
+

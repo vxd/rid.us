@@ -29,15 +29,15 @@
 <div class="brick__article-preview">
 	<div class="brick__side">
 		<!--#if expr="$author = 1" -->
-		<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="Александр Иванов" />
+		<img src="https://www.ridus.ru/images/avatars/135449/small_8a8d13e804.jpg" alt="Александр Иванов" />
 		<p>Александр Иванов</p>
 		<!--#endif -->
 		<!--#if expr="$author = 2" -->
-		<img src="http://www.ridus.ru/images/avatars/151502/large_457d41f144.jpg" alt="Александр Иванов" />
+		<img src="http://www.ridus.ru/images/avatars/151502/large_457d41f144.jpg" alt="Константин Петрашкевич" />
 		<p>Константин Петрашкевич</p>
 		<!--#endif -->
 		<!--#if expr="$author = 3" -->
-		<img src="http://www.ridus.ru/images/avatars/161899/small_ed7491c6e2.jpg" alt="Александр Иванов" />
+		<img src="https://www.ridus.ru/images/avatars/141302/small_b069844c20.jpg" alt="Наталья Редактурова" />
 		<p>Наталья Редактурова</p>
 		<!--#endif -->
 	</div>

@@ -206,3 +206,44 @@
 .videoPlaylist__item .brick__image {
 	float: none !important;
 }
+
+@media only screen and (max-width: 1023px) {
+	.videoSection {
+		display: flex;
+		flex-direction: column;
+	}
+	.videoSection iframe {
+		height: 200px;
+	}
+	.videoSection .label {
+		top: 0;
+		left: -8px;
+		padding: 10px 48px 10px 20px;
+		font-size: 16px;
+	}
+	.videoSection .label:after {
+		right: 0;
+		height: 39px;
+		background-position: 0 -240px;
+	}
+	.videoSection .table__sideColumn,
+	.videoSection .table__mainColumn {
+		width: 100%;
+	}
+	.videoSection .table__sideColumn:first-child .brick {
+		height: auto;
+		padding-top: 50px;
+	}
+	.videoSection .table__sideColumn:first-child .brick h2 a {
+		font-size: 16px;
+	}
+	.videoSection .table__sideColumn:first-child .brick .brick__description,
+	.videoSection .table__sideColumn:first-child .brick .brick__text,
+	.videoSection .table__sideColumn:first-child .brick .countersBlock {
+		display: none;
+	}
+	.videoSection .table__mainColumn .table__mainColumn {
+		width: 100%;
+		padding: 0;
+	}
+}

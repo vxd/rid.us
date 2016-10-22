@@ -247,13 +247,6 @@ header {
 	font-size: 12px;
 }
 
-
-/* последний пункт - погода */
-.dayInfo .b-weather b {
-	display: inline;
-	color: inherit;
-}
-
 @media screen and (min-width: 1280px) {
 
 	.dayInfo li {

@@ -52,14 +52,15 @@
 
 .footerSocials {
 	margin-bottom: 10px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
 }
-@media screen and (max-width: 1023px) {
-	.footerSocials {
-		-webkit-column-count: 5;
-		-moz-column-count: 5;
-		column-count: 5;
-	}
+
+.footerInfo__separator-tablet {
+    display: none;
 }
+
 .socialNetwork__item {
 	color: #fff;
     margin-bottom: 5px;
@@ -121,6 +122,9 @@
 .socialNetwork__link.view_iconTwitter:before {
 	background-position: -76px -108px;
 }
+.socialNetwork__link.view_iconOkRu:before {
+    background-position: -147px -108px;
+}
 .socialNetwork__link.view_iconRSS:before {
 	background-position: -181px -109px;
 }
@@ -136,8 +140,8 @@
 
 .footerSubscribe p {
 	color: #fff;
-	font-size: 12px;
-	margin-bottom: 15px
+	font-size: 13px;
+	margin-bottom: 10px
 }
 .footerSubscribe__form {
 	position: relative;
@@ -190,10 +194,9 @@
 	margin-bottom: 4px;
 }
 .footerFaq__link {
-	color: #fff;
-	font-size: 14px;
+	color: #939798;
+	font-size: 13px;
 	text-decoration: none;
-	font-weight: bold;
 }
 
 
@@ -256,8 +259,75 @@
 .footerCopy__text {
 	font-size: 12px;
 }
+.footer__mobile {
+    display: flex;
+}
 
+.footer__appStore {
+    height: 45px;
+}
 
+.footer__googlePlay {
+    height: 67px;
+    width: 174px;
+    margin-left: -11px;
+    margin-top: -8px;
+}
 
+.footer__mobile__text {
+    width: 113px;
+}
 
+.footer__mobile__text p {
+    color: #fff;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 0;
+}
+
+.footer__mobile__links {
+    width: 152px;
+}
+
+@media screen and (max-width: 1023px) {
+    .footerSocials {
+        -webkit-column-count: 6;
+        -moz-column-count: 6;
+        column-count: 6;
+    }
+
+    .footerInfo__separator-desktop {
+        display: none;
+    }
+
+    .footerInfo__separator-tablet {
+        display: block;
+    }
+    .footer__mobile {
+        flex-direction: column;
+    }
+    .footer__mobile div {
+        width: 100%;
+    }
+    .footer__mobile__links {
+        display: flex;
+    }
+    .footer__googlePlay {
+        margin-left: 0px;
+        margin-top: -11px;
+    }
+    .footer__mobile__text {
+        margin-bottom: 6px;
+    }
+    .footerSubscribe {
+        width: 50%;
+    }
+    .footerActions {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footerSubscribe p {
+        margin-bottom: 15px;
+    }
+}
 

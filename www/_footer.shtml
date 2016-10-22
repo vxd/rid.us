@@ -28,6 +28,11 @@
 							Twitter
 						</a>
 					</li>
+                    <li class="socialNetwork__item">
+                        <a class="socialNetwork__link view_iconOkRu" href="#" title="">
+                            Ok.ru
+                        </a>
+                    </li>
 					<li class="socialNetwork__item">
 						<a class="socialNetwork__link view_iconRSS" href="#" title="">
 							RSS
@@ -37,21 +42,36 @@
 
 				<hr class="footerInfo__separator" />
 
-				<div class="footerSubscribe">
-					<p>Ежедневная рассылка лучших новостей от Ридуса</p>
-					<form>
-						<div class="footerSubscribe__form">
-							<input class="footerSubscribe__input" type="text" placeholder="Введите e-mail" />
-							<a class="yellowButton" href="" title="">
-								подписаться
-								<i class="corner"><!-- corner --></i>
-							</a> 
-							<!--button class="footerSubscribe__button" type="submit">подписаться</button-->
-						</div>
-					</form>
-				</div>
+                <div class="footerActions">
+                    <div class="footerSubscribe">
+                        <p>Ежедневная рассылка лучших новостей</p>
+                        <form>
+                            <div class="footerSubscribe__form">
+                                <input class="footerSubscribe__input" type="text" placeholder="Введите e-mail" />
+                                <a class="yellowButton" href="" title="">
+                                    подписаться
+                                    <i class="corner"><!-- corner --></i>
+                                </a>
+                                <!--button class="footerSubscribe__button" type="submit">подписаться</button-->
+                            </div>
+                        </form>
+                    </div>
 
-				<hr class="footerInfo__separator" />
+                    <hr class="footerInfo__separator footerInfo__separator-desktop" />
+
+                    <div class="footer__mobile clearfix">
+                        <div class="footer__mobile__text">
+                            <p>Попробуйте мобильные приложения Ридуса:</p>
+                        </div>
+                        <div class="footer__mobile__links">
+                            <a href="#"><img class="footer__appStore" src="_images/app-store.svg"></a>
+                            <a href="#"><img class="footer__googlePlay" src="_images/google-play.png"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="footerInfo__separator footerInfo__separator-tablet" />
 
 				<ul class="footerFaq">
 					<li class="footerFaq__item">

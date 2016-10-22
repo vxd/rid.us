@@ -50,8 +50,7 @@
 	<li class="b-weather" title="Погода на 11/11 01:45">
 		<a href="#" title="">
 			Москва
-			<b>+25&deg;C, ясно</b>
-			<div class="b-rate_value">732 мм. рт. ст., ЮЗ 5 м/с, вл. 50%</div>
+			<b class="b-rate_value">+25&deg;C, ясно</b>
 		</a>
 	</li>
 </ul>

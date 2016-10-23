@@ -1514,7 +1514,9 @@
 		order: 8 !important;
 	}
 }
-
+.bricks_article-previews {
+	margin-right: 0;
+}
 .brick__article-preview {
 	display: flex;
 	height: 100%;
@@ -1524,8 +1526,10 @@
 	background: #f3f3f3;
 }
 .brick__article-preview .brick__side {
+	width: 60px;
 	margin-right: 10px;
 	text-align: center;
+	flex-shrink: 0;
 }
 .brick__article-preview .brick__side img {
 	width: 40px;
@@ -1570,5 +1574,16 @@
 	}
 	.bricks_article-previews .brick.width_twice .countersBlock__item.readLater {
 		display: inline-block;
+	}
+}
+@media screen and (max-width: 1040px) {
+	.bricks_article-previews {
+		flex-direction: column;
+	}
+	.bricks_article-previews .brick {
+		width: 100%;
+	}
+	.brick__article-preview .brick__text {
+		display: block;
 	}
 }

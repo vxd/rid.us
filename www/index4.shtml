@@ -72,7 +72,7 @@
 						<!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=21&count1=120&count2=35&count3=3812"-->
 					</div>
 
-					<div class="brick view_blue swiper-slide">
+					<div class="brick swiper-slide">
 						<!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
 					</div>
 
@@ -262,7 +262,7 @@
 	            <div class="brick swiper-slide">
 	                <!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=32&typelabel=1&count1=120&count2=35&count3=3812"-->
 	            </div>
-				<div class="brick swiper-slide">
+				<div class="brick swiper-slide view_blue">
 					<!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
 				</div>
 				<div class="brick swiper-slide hideOn_768">

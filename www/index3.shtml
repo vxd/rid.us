@@ -23,7 +23,7 @@
         <img src="_images/header_banner.jpg" alt="" />
     </a>
     <section class="globalInfo wrapper paddings_side clearfix">
-        <!--#include virtual="_dayinfo.shtml?popover=true"-->
+        <!--#include virtual="_dayinfo.shtml"-->
         <!--#include virtual="_yellowbutton.shtml?text=1"-->
         <!--#include virtual="_socials-header.shtml"-->
     </section>

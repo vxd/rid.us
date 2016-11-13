@@ -1,0 +1,77 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+    <!--#include virtual="_head.shtml"-->
+</head>
+<body class="photo_story" itemscope itemtype="http://schema.org/WebPage">
+
+<div class="photo_story-clickable">
+    <span class='preview-info'>Открыть фоторепортаж</span>
+</div>
+
+<div class="photo_story-view">
+    <div class="photo_story-header">
+        <span class="photo_story-logo"></span>
+        <div class="photo_story-title">
+            <h2 class="">Тут идёт заголовок репортажа</h2>
+            <div class="photo_story-page">
+                <span class="photo_story-current">1</span> / <span class="photo_story-total">5</span>
+            </div>
+        </div>
+        <span class="photo_story-close close"></span>
+    </div>
+    <div class="photo_story-content">
+        <div class="photo_story-content-arrow-wrapper-left">
+            <span class="line-arrow left"></span>
+        </div>
+        <div class="photo_story-content-arrow-wrapper-right">
+            <span class="line-arrow right"></span>
+        </div>
+        <div class="photo_story-item">
+            <div class="photo_story-item-left">
+                <div class="photo_story-images"><img src="https://www.ridus.ru/images/2016/3/9/374291/in_article_bdef9cafaa.jpg" alt=""/></div>
+            </div>
+            <div class="photo_story-item-right">
+                <div class="photo_story-author">Екатерина Трофимова</div>
+                <div class="photo_story-description"><b>Олег, 25 лет, лидер Русского объединенного национального альянса (слева):</b> «"Новороссия" — это чужеродное образование для любого русского человека. Просто какой-то волк в овечьей шкуре».
+                </br>
+                </br>
+                <b>Александр, 28 лет, рабочий (справа):</b> «Сейчас "Новороссия" — это отдельное государство. Эти территории никогда Украине не принадлежали. К тому же сейчас в Киеве сидит фашистская хунта».</div>
+            </div>
+        </div>
+        <div class="photo_story-item">
+            <div class="photo_story-item-left">
+                <div class="photo_story-images"><img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt=""/></div>
+            </div>
+            <div class="photo_story-item-right">
+                <div class="photo_story-author">Екатерина Трофимова</div>
+                <div class="photo_story-description"><b>Олег, 25 лет, лидер Русского объединенного национального альянса (слева):</b> «"Новороссия" — это чужеродное образование для любого русского человека. Просто какой-то волк в овечьей шкуре».
+                </br>
+                </br>
+                <b>Александр, 28 лет, рабочий (справа):</b> «Сейчас "Новороссия" — это отдельное государство. Эти территории никогда Украине не принадлежали. К тому же сейчас в Киеве сидит фашистская хунта».</div>
+            </div>
+        </div>
+        <div class="photo_story-item">
+            <div class="photo_story-item-left">
+                <div class="photo_story-images"><img src="https://www.ridus.ru/images/2016/3/9/374241/in_article_6e0fbfdc98.jpg" alt=""/></div>
+            </div>
+            <div class="photo_story-item-right">
+                <div class="photo_story-author">Екатерина Трофимова</div>
+                <div class="photo_story-description"><b>Олег, 25 лет, лидер Русского объединенного национального альянса (слева):</b> «"Новороссия" — это чужеродное образование для любого русского человека. Просто какой-то волк в овечьей шкуре».
+                </br>
+                </br>
+                <b>Александр, 28 лет, рабочий (справа):</b> «Сейчас "Новороссия" — это отдельное государство. Эти территории никогда Украине не принадлежали. К тому же сейчас в Киеве сидит фашистская хунта».</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="socials-article">
+        <!--#include virtual="_socials-article.shtml"-->
+    </div>
+</div>
+
+<!--#include virtual="_footer.shtml"-->
+
+<script src="_js/photo-story.js" type="text/javascript"></script>
+</body>
+</html>

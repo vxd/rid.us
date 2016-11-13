@@ -4,7 +4,7 @@
 <!--#set var="page" value="" -->
 
 <!-- //// извлекаем из параметров урла --> 
-<!--#if expr="\"$QUERY_STRING\" = /page=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /page=([a-zA-Z0-9]+)/" -->
 <!--#set var="page" value="$1" -->
 <!--#endif -->
 
@@ -21,6 +21,6 @@
     <li><a href="#" title="">5</a></li>
 </ul>
 
-<!--#if expr="$page < 5" -->
+<!--#if expr="$page = /^([0-4]{1})/" -->
 <a href="#" class="pagination__nav view_next" title=""></a>
 <!--#endif -->

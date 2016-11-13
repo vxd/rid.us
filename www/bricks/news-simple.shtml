@@ -1,5 +1,5 @@
 
-<!-- //// определяем переменные -->  
+<!-- //// определяем переменные -->
 
 <!--#set var="image" value="" -->
 <!--#set var="data" value="" -->
@@ -15,42 +15,42 @@
 <!--#set var="action" value="read" -->
 <!--#set var="important" value="" -->
 
-<!-- //// извлекаем из параметров урла --> 
+<!-- //// извлекаем из параметров урла -->
 
-<!--#if expr="\"$QUERY_STRING\" = /image=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /image=([a-zA-Z0-9]+)/" -->
 <!--#set var="image" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /data=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /data=([a-zA-Z0-9]+)/" -->
 <!--#set var="data" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /videolabel=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /videolabel=([a-zA-Z0-9]+)/" -->
 <!--#set var="videolabel" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /label=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /label=([a-zA-Z0-9]+)/" -->
 <!--#set var="label" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /typelabel=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /typelabel=([a-zA-Z0-9]+)/" -->
 <!--#set var="typelabel" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /video=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /video=([a-zA-Z0-9]+)/" -->
 <!--#set var="video" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /count1=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /count1=([a-zA-Z0-9]+)/" -->
 <!--#set var="count1" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /count2=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /count2=([a-zA-Z0-9]+)/" -->
 <!--#set var="count2" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /count3=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /count3=([a-zA-Z0-9]+)/" -->
 <!--#set var="count3" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /issaved=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /issaved=([a-zA-Z0-9]+)/" -->
 <!--#set var="issaved" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /isliked=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /isliked=([a-zA-Z0-9]+)/" -->
 <!--#set var="isliked" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /important=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /important=([a-zA-Z0-9]+)/" -->
 <!--#set var="important" value="$1" -->
 <!--#endif -->
 <!-- //// конец -->
@@ -65,146 +65,146 @@
 
 <!--#if expr="$image = 1" -->
 <div class="brick__image" style="background-image: url(http://molbiol.ru/forums/uploads/a003/b047/post-24502-1338479907.jpg)">
-<!--#endif -->
-<!--#if expr="$image = 2" -->
-<div class="brick__image" style="background-image: url(http://f1.s.qip.ru/jAMAwieF.jpg)">
-<!--#endif -->
-<!--#if expr="$image = 3" -->
-<div class="brick__image" style="background-image: url(http://joinfo.ua/images/news/2013/03/130320_01.jpg&prefix=slider310&a=310&b=250)">
-<!--#endif -->
+    <!--#endif -->
+    <!--#if expr="$image = 2" -->
+    <div class="brick__image" style="background-image: url(http://f1.s.qip.ru/jAMAwieF.jpg)">
+        <!--#endif -->
+        <!--#if expr="$image = 3" -->
+        <div class="brick__image" style="background-image: url(http://joinfo.ua/images/news/2013/03/130320_01.jpg&prefix=slider310&a=310&b=250)">
+            <!--#endif -->
 
-<!--#if expr="$important = 'true'" -->
-    <i class="important">важное</i>
-<!--#endif -->
+            <!--#if expr="$important = true" -->
+            <i class="important">важное</i>
+            <!--#endif -->
 
-<!--#if expr="$video = 'true'" -->
-	<i class="brick__videoIcon"></i>
-<!--#endif -->
+            <!--#if expr="$video = true" -->
+            <i class="brick__videoIcon"></i>
+            <!--#endif -->
 
-<!--#if expr="$typelabel = 1" -->
-	<span class="brick__typeLabel">спецрепортаж</span>
-<!--#endif -->
-<!--#if expr="$typelabel = 2" -->
-	<span class="brick__typeLabel">обзор прессы</span>
-<!--#endif -->
+            <!--#if expr="$typelabel = 1" -->
+            <span class="brick__typeLabel">спецрепортаж</span>
+            <!--#endif -->
+            <!--#if expr="$typelabel = 2" -->
+            <span class="brick__typeLabel">обзор прессы</span>
+            <!--#endif -->
 
-<!--#if expr="$label = 11" -->
-	<a href="#11" class="brick__label brick__label-position" title="">Антон плисецкий</a>
-<!--#endif -->
-<!--#if expr="$label = 12" -->
-	<a href="#12" class="brick__label brick__label-position" title="">Степан липсченко</a>
-<!--#endif -->
-<!--#if expr="$label = 13" -->
-	<a href="#13" class="brick__label brick__label-position" title="">Павел Горохов</a>
-<!--#endif -->
-<!--#if expr="$label = 21" -->
+            <!--#if expr="$label = 11" -->
+            <a href="#11" class="brick__label brick__label-position" title="">Антон плисецкий</a>
+            <!--#endif -->
+            <!--#if expr="$label = 12" -->
+            <a href="#12" class="brick__label brick__label-position" title="">Степан липсченко</a>
+            <!--#endif -->
+            <!--#if expr="$label = 13" -->
+            <a href="#13" class="brick__label brick__label-position" title="">Павел Горохов</a>
+            <!--#endif -->
+            <!--#if expr="$label = 21" -->
 	<span class="brick__label-position">
         <a href="#g" class="brick__label" title="">Гражданская журналистика</a>
         <br>
         <a href="#p" class="brick__label" title="">Политика</a>
     </span>
-<!--#endif -->
-<!--#if expr="$label = 22" -->
+            <!--#endif -->
+            <!--#if expr="$label = 22" -->
 	<span class="brick__label-position">
         <a href="#i" class="brick__label" title="">Интересное</a>
         <br>
         <a href="#l" class="brick__label" title="">Жизнь</a>
     </span>
-<!--#endif -->
-<!--#if expr="$label = 31" -->
-	<a href="#31" class="brick__label brick__label-position" title="">здоровье</a>
-<!--#endif -->
-<!--#if expr="$label = 32" -->
-	<a href="#32" class="brick__label brick__label-position" title="">знаменитости</a>
-<!--#endif -->
-<!--#if expr="$label = 33" -->
-	<a href="#33" class="brick__label brick__label-position" title="">кино</a>
-<!--#endif -->
-<!--#if expr="$label = 'c1'" -->
-	<a href="#c1" class="brick__fullscreenLabel" title="">+145 &nbsp;</a>
-<!--#endif -->
-<!--#if expr="$label = 'c2'" -->
-	<a href="#c2" class="brick__fullscreenLabel" title="">+12 &nbsp;</a>
-<!--#endif -->
-<!--#if expr="$label != 'c2' && $label != 'c1'" -->
-	<a href="#" class="clickable"></a>
-<!--#endif -->
-</div>
+            <!--#endif -->
+            <!--#if expr="$label = 31" -->
+            <a href="#31" class="brick__label brick__label-position" title="">здоровье</a>
+            <!--#endif -->
+            <!--#if expr="$label = 32" -->
+            <a href="#32" class="brick__label brick__label-position" title="">знаменитости</a>
+            <!--#endif -->
+            <!--#if expr="$label = 33" -->
+            <a href="#33" class="brick__label brick__label-position" title="">кино</a>
+            <!--#endif -->
+            <!--#if expr="$label = c1" -->
+            <a href="#c1" class="brick__fullscreenLabel" title="">+145 &nbsp;</a>
+            <!--#endif -->
+            <!--#if expr="$label = c2" -->
+            <a href="#c2" class="brick__fullscreenLabel" title="">+12 &nbsp;</a>
+            <!--#endif -->
+            <!--#if expr="$label != c2 && $label != c1" -->
+            <a href="#" class="clickable"></a>
+            <!--#endif -->
+        </div>
 
-<div class="brick__content">
-<!--#if expr="$data = 1" -->
-	<div class="brick__mainLinkWrapper">
-		<a href="#" class="brick__mainLink" title="">Исследование: где в Москве опаснее безопаснее всего жить</a> <span class="brick__mainLinkDate">сегодня</span>
-	</div>
-	<p class="brick__text">
-		Каждый старшеклассник знает, что сила тока измеряется в амперах. В чем измерить?
-	</p>
-<!--#endif -->
-<!--#if expr="$data = 2" -->
-	<div class="brick__mainLinkWrapper">
-		<a href="#" class="brick__mainLink" title="">Известная модель надела паранджу после операции шмоперации</a> <span class="brick__mainLinkDate">сегодня</span>
-	</div>
-	<p class="brick__text">
-		Главный научный сотрудник лаборатории солнечного ветра ИКИ РАН Олег Вайсберг рассказал.
-	</p>
-<!--#endif -->
-<!--#if expr="$data = 3" -->
-	<div class="brick__mainLinkWrapper">
-		<a href="#" class="brick__mainLink" title="">На борту А321 могла взорваться жидкая бомба</a> <span class="brick__mainLinkDate">вчера</span>
-	</div>
-	<p class="brick__text">
-		Эксперт по борьбе с терроризмом Ронен Соломон заявил, что российский аэробус мог быть взорван.
-	</p>
-<!--#endif -->
-<!--#if expr="$data = 1x" -->
-	<div class="brick__mainLinkWrapper">
-		<a href="#" class="brick__mainLink" title="">Исследование: где в Москве опаснее безопаснее всего жить</a>
-	</div>
-	<p class="brick__text">
-		Каждый старшеклассник знает, что сила тока измеряется в амперах. В чем измерить?
-	</p>
-<!--#endif -->
-<!--#if expr="$data = 2x" -->
-	<div class="brick__mainLinkWrapper">
-		<a href="#" class="brick__mainLink" title="">Известная модель надела паранджу после операции шмоперации</a>
-	</div>
-	<p class="brick__text">
-		Главный научный сотрудник лаборатории солнечного ветра ИКИ РАН Олег Вайсберг рассказал.
-	</p>
-<!--#endif -->
-<!--#if expr="$data = 3x" -->
-	<div class="brick__mainLinkWrapper">
-		<a href="#" class="brick__mainLink" title="">На борту А321 могла взорваться жидкая бомба</a>
-	</div>
-	<p class="brick__text">
-		Эксперт по борьбе с терроризмом Ронен Соломон заявил, что российский аэробус мог быть взорван.
-	</p>
-<!--#endif -->
-<!--#if expr="$data = 4" -->
-	<div class="brick__mainLinkWrapper">
-		<a href="#" class="brick__mainLink" title="">На борту А321 могла взорваться жидкая бомба</a>
-	</div>
-	<p class="brick__text">
-		Эксперт по борьбе с терроризмом Ронен Соломон заявил, что российский аэробус мог быть взорван.<br>
-		<a href="#c" class="brick__moreLink" title="">Читать дальше</a>
-	</p>
-<!--#endif -->
-<!--#if expr="$data = 'c1'" -->
-	<div class="brick__mainLinkWrapper">
-		<a href="#" class="brick__mainLink" title="">Фотоматериалы</a> <span class="rick__mainLinkCounter">145</span>
-	</div>
-	<span class="brick__mainLinkDate">06 августа 2013 — 15 декабря 2015</span>
-<!--#endif -->
-<!--#if expr="$data = 'c2'" -->
-	<div class="brick__mainLinkWrapper">
-		<a href="#" class="brick__mainLink" title="">Видеоматериалы</a> <span class="rick__mainLinkCounter">12</span>
-	</div>
-	<span class="brick__mainLinkDate">06 августа 2013 — 15 декабря 2015</span>
-<!--#endif -->
-</div>
+        <div class="brick__content">
+            <!--#if expr="$data = 1" -->
+            <div class="brick__mainLinkWrapper">
+                <a href="#" class="brick__mainLink" title="">Исследование: где в Москве опаснее безопаснее всего жить</a> <span class="brick__mainLinkDate">сегодня</span>
+            </div>
+            <p class="brick__text">
+                Каждый старшеклассник знает, что сила тока измеряется в амперах. В чем измерить?
+            </p>
+            <!--#endif -->
+            <!--#if expr="$data = 2" -->
+            <div class="brick__mainLinkWrapper">
+                <a href="#" class="brick__mainLink" title="">Известная модель надела паранджу после операции шмоперации</a> <span class="brick__mainLinkDate">сегодня</span>
+            </div>
+            <p class="brick__text">
+                Главный научный сотрудник лаборатории солнечного ветра ИКИ РАН Олег Вайсберг рассказал.
+            </p>
+            <!--#endif -->
+            <!--#if expr="$data = 3" -->
+            <div class="brick__mainLinkWrapper">
+                <a href="#" class="brick__mainLink" title="">На борту А321 могла взорваться жидкая бомба</a> <span class="brick__mainLinkDate">вчера</span>
+            </div>
+            <p class="brick__text">
+                Эксперт по борьбе с терроризмом Ронен Соломон заявил, что российский аэробус мог быть взорван.
+            </p>
+            <!--#endif -->
+            <!--#if expr="$data = 1x" -->
+            <div class="brick__mainLinkWrapper">
+                <a href="#" class="brick__mainLink" title="">Исследование: где в Москве опаснее безопаснее всего жить</a>
+            </div>
+            <p class="brick__text">
+                Каждый старшеклассник знает, что сила тока измеряется в амперах. В чем измерить?
+            </p>
+            <!--#endif -->
+            <!--#if expr="$data = 2x" -->
+            <div class="brick__mainLinkWrapper">
+                <a href="#" class="brick__mainLink" title="">Известная модель надела паранджу после операции шмоперации</a>
+            </div>
+            <p class="brick__text">
+                Главный научный сотрудник лаборатории солнечного ветра ИКИ РАН Олег Вайсберг рассказал.
+            </p>
+            <!--#endif -->
+            <!--#if expr="$data = 3x" -->
+            <div class="brick__mainLinkWrapper">
+                <a href="#" class="brick__mainLink" title="">На борту А321 могла взорваться жидкая бомба</a>
+            </div>
+            <p class="brick__text">
+                Эксперт по борьбе с терроризмом Ронен Соломон заявил, что российский аэробус мог быть взорван.
+            </p>
+            <!--#endif -->
+            <!--#if expr="$data = 4" -->
+            <div class="brick__mainLinkWrapper">
+                <a href="#" class="brick__mainLink" title="">На борту А321 могла взорваться жидкая бомба</a>
+            </div>
+            <p class="brick__text">
+                Эксперт по борьбе с терроризмом Ронен Соломон заявил, что российский аэробус мог быть взорван.<br>
+                <a href="#c" class="brick__moreLink" title="">Читать дальше</a>
+            </p>
+            <!--#endif -->
+            <!--#if expr="$data = c1" -->
+            <div class="brick__mainLinkWrapper">
+                <a href="#" class="brick__mainLink" title="">Фотоматериалы</a> <span class="rick__mainLinkCounter">145</span>
+            </div>
+            <span class="brick__mainLinkDate">06 августа 2013 — 15 декабря 2015</span>
+            <!--#endif -->
+            <!--#if expr="$data = c2" -->
+            <div class="brick__mainLinkWrapper">
+                <a href="#" class="brick__mainLink" title="">Видеоматериалы</a> <span class="rick__mainLinkCounter">12</span>
+            </div>
+            <span class="brick__mainLinkDate">06 августа 2013 — 15 декабря 2015</span>
+            <!--#endif -->
+        </div>
 
-<!--#if expr="$count1 != 'false'" -->
-<div class="countersBlock countersBlock-inline">
+        <!--#if expr="$count1 != false" -->
+        <div class="countersBlock countersBlock-inline">
 	<span class="countersBlock__item view_count1">
 		<!--#echo var="count1" --> <i class="icon"><!-- icon --></i>
 	</span>
@@ -214,53 +214,53 @@
 	<span class="countersBlock__item view_count3">
 		<!--#echo var="count3" --> <i class="icon"><!-- icon --></i>
 	</span>
-</div>
-<!--#endif -->
-<!--#if expr="$action = 'read'" -->
-<a href="#" class="countersBlock__item readLater">
-    <span>читать позже</span>
-    <span class="state_hidderHidden">читаю позже</span>
-    <i class="icon"><!-- icon --></i>
-</a>
-<!--#endif -->
-<!--#if expr="$action = 'delete'" -->
-<a href="#" class="countersBlock__item delete">
-    <span>Удалить</span>
-    <i class="icon"></i>
-</a>
-<!--#endif -->
-<!--#if expr="$action = 'save'" -->
-<a href="#" class="countersBlock__item readLater view_saved only_icon">
-    <i class="icon"><!-- icon --></i>
-</a>
-<a href="#" class="countersBlock__item save">
-    <span>Сохранить</span>
-</a>
-<!--#endif -->
+        </div>
+        <!--#endif -->
+        <!--#if expr="$action = read" -->
+        <a href="#" class="countersBlock__item readLater">
+            <span>читать позже</span>
+            <span class="state_hidderHidden">читаю позже</span>
+            <i class="icon"><!-- icon --></i>
+        </a>
+        <!--#endif -->
+        <!--#if expr="$action = delete" -->
+        <a href="#" class="countersBlock__item delete">
+            <span>Удалить</span>
+            <i class="icon"></i>
+        </a>
+        <!--#endif -->
+        <!--#if expr="$action = save" -->
+        <a href="#" class="countersBlock__item readLater view_saved only_icon">
+            <i class="icon"><!-- icon --></i>
+        </a>
+        <a href="#" class="countersBlock__item save">
+            <span>Сохранить</span>
+        </a>
+        <!--#endif -->
 
 
 
-<!--#if expr="$videolabel = 'true'" -->
+        <!--#if expr="$videolabel = true" -->
 <span class="brick__dateLabel">
 	<script>
-	// генерим случайную дату
-	function randomInteger(min, max) {
-	    var rand = min - 0.5 + Math.random() * (max - min + 1)
-	    rand = Math.round(rand);
-	    if (rand < 10) {
-	    	rand += " ноября"
-	    }
-	    if (rand >= 10 && rand < 20) {
-	    	rand += " декабря"
-	    }
-	    if (rand >= 20) {
-	    	rand += " октября"
-	    }
-	    return rand;
-	}
-	document.write(randomInteger(1, 31))
-	</script>	
+        // генерим случайную дату
+        function randomInteger(min, max) {
+            var rand = min - 0.5 + Math.random() * (max - min + 1)
+            rand = Math.round(rand);
+            if (rand < 10) {
+                rand += " ноября"
+            }
+            if (rand >= 10 && rand < 20) {
+                rand += " декабря"
+            }
+            if (rand >= 20) {
+                rand += " октября"
+            }
+            return rand;
+        }
+        document.write(randomInteger(1, 31))
+    </script>
 </span>
-<!--#endif -->
+        <!--#endif -->
 
-<a href="#" class="clickable hideOn_1024 hideOn_768"></a>
+        <a href="#" class="clickable hideOn_1024 hideOn_768"></a>

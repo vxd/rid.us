@@ -8,19 +8,19 @@
 
 <!-- //// извлекаем из параметров урла -->
 
-<!--#if expr="\"$QUERY_STRING\" = /author=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /author=([a-zA-Z0-9]+)/" -->
 <!--#set var="author" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /data=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /data=([a-zA-Z0-9]+)/" -->
 <!--#set var="data" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /count1=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /count1=([a-zA-Z0-9]+)/" -->
 <!--#set var="count1" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /count2=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /count2=([a-zA-Z0-9]+)/" -->
 <!--#set var="count2" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /count3=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /count3=([a-zA-Z0-9]+)/" -->
 <!--#set var="count3" value="$1" -->
 <!--#endif -->
 

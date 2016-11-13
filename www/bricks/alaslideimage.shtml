@@ -2,44 +2,42 @@
 
 <!--#set var="image" value="" -->
 <!--#set var="label" value="" -->
+<!--#set var="urlImg" value="" -->
+<!--#set var="number" value="" -->
 
 <!-- //// извлекаем из параметров урла --> 
 
-<!--#if expr="\"$QUERY_STRING\" = /image=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /image=([a-zA-Z0-9]+)/" -->
 <!--#set var="image" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /label=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /label=([a-zA-Z0-9]+)/" -->
 <!--#set var="label" value="$1" -->
 <!--#endif -->
 
-<!-- //// конец --> 
+<!--#if expr="$image = 1" -->
+<!--#set var="urlImg" value="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" -->
+<!--#set var="number" value="+12" -->
+<!--#endif -->
 
+<!--#if expr="$image = 2" -->
+<!--#set var="urlImg" value="http://www.ridus.ru/images/2015/12/1/340559/in_article_e6d5d3c187.jpg" -->
+<!--#set var="number" value="+145" -->
+<!--#endif -->
 
+<!--#if expr="$image = 3" -->
+<!--#set var="urlImg" value="https://www.ridus.ru/images/2016/3/9/374241/in_article_6e0fbfdc98.jpg" -->
+<!--#set var="number" value="+8" -->
+<!--#endif -->
 
+<!-- //// конец -->
 
 
 <a href="#" class="slider__image" title="">
-	<!--#if expr="$image = 1" -->
-		<img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt="">
-		<!--#if expr="$label = 'true'" -->
-		<span class="brick__fullscreenLabel"></span>
-		<span class="photoNumber">+12</span>
-		<!--#endif -->
-	<!--#endif -->
-	<!--#if expr="$image = 2" -->
-		<img src="http://www.ridus.ru/images/2015/12/1/340559/in_article_e6d5d3c187.jpg" alt="">
-		<!--#if expr="$label = 'true'" -->
-		<span class="brick__fullscreenLabel"></span>
-		<span class="photoNumber">+145</span>
-		<!--#endif -->
-	<!--#endif -->
-	<!--#if expr="$image = 3" -->
-		<img src="https://www.ridus.ru/images/2016/3/9/374241/in_article_6e0fbfdc98.jpg" alt="">
-		<!--#if expr="$label = 'true'" -->
-		<span class="brick__fullscreenLabel"></span>
-		<span class="photoNumber">+8</span>
-		<!--#endif -->
-	<!--#endif -->
+    <img src='<!--# echo var="urlImg" -->' alt="">
+    <!--#if expr="$label = true" -->
+    <span class="brick__fullscreenLabel"></span>
+    <span class="photoNumber"><!--# echo var="number" --></span>
+    <!--#endif -->
 </a>
 
 <div class="slider__text">

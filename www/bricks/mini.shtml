@@ -6,10 +6,10 @@
 
 <!-- //// извлекаем из параметров урла --> 
 
-<!--#if expr="\"$QUERY_STRING\" = /image=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /image=([a-zA-Z0-9]+)/" -->
 <!--#set var="image" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /data=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /data=([a-zA-Z0-9]+)/" -->
 <!--#set var="data" value="$1" -->
 <!--#endif -->
 

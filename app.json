@@ -1,0 +1,8 @@
+{
+  "name": "Nginx SSI Server",
+  "description": "Run SSI code from public/",
+  "keywords": ["nginx","ssi"],
+  "env": {
+    "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git" 
+  }
+}

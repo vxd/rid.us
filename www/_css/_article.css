@@ -1,11 +1,11 @@
 .article {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .article__title {
-	font-size: 36px;
-	text-transform: none;
-	margin-bottom: 15px;
+    font-size: 36px;
+    text-transform: none;
+    margin-bottom: 15px;
 }
 
 
@@ -29,45 +29,45 @@
 
 
 .articleInfo__avatarContainer {
-	margin-bottom: 20px;
-	position: relative;
-	display: flex;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
     align-items: center;
 }
 
 
 .articleInfo {
-	font-size: 14px;
-	color: #848484;
+    font-size: 14px;
+    color: #848484;
 }
 .articleInfo a {
-	text-decoration: underline;
-	color: inherit;
-	font-weight: bold;
+    text-decoration: underline;
+    color: inherit;
+    font-weight: bold;
 }
 .articleInfo a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 
 
 .articleInfo__avatarContainer .articleInfo {
-/*	float: left;
-	padding-left: 10px;
-	border-left: 2px solid #dbdbdb;
-	min-height: 44px;*/
+    /*	float: left;
+        padding-left: 10px;
+        border-left: 2px solid #dbdbdb;
+        min-height: 44px;*/
 }
 
 
 .articleInfo__avatarContainer .articleInfo__avatar {
-	float: left;
-	width: 44px;
-	height: 44px;
-	margin-right: 15px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    margin-right: 15px;
 }
 .articleInfo__avatarContainer .articleInfo__avatar img {
-	width: 100%;
-	border-radius: 50%;
+    width: 100%;
+    border-radius: 50%;
 }
 
 
@@ -82,38 +82,38 @@
 
 
 .brick.view_articlePhoto {
-	width: 606px;
-	height: auto;
+    width: 606px;
+    height: auto;
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
-	.brick.view_articlePhoto {
-		width: calc(100% - 13px)
-	}
+    .brick.view_articlePhoto {
+        width: calc(100% - 13px)
+    }
 }
 @media screen and (min-width: 1041px) and (max-width: 1279px) {
-	.brick.view_articlePhoto {
-		width: calc(100% - 22px)
-	}
+    .brick.view_articlePhoto {
+        width: calc(100% - 22px)
+    }
 }
 .articlePhoto__link {
-	display: inline-block;
-	font-size: 0; /* чтою не было пустых пикселей внизу */
-	margin-bottom: 8px;
-	/*width: 100%;*/
+    display: inline-block;
+    font-size: 0; /* чтою не было пустых пикселей внизу */
+    margin-bottom: 8px;
+    /*width: 100%;*/
 }
 .article__image {
-	width: 100%; /* позаботьтесь, чтобы изображение было подходящих пропорций */
-	/*height: 400px;*/
+    width: 100%; /* позаботьтесь, чтобы изображение было подходящих пропорций */
+    /*height: 400px;*/
 }
 .articlePhoto__info {
-	font-size: 14px;
-	color: #525252;
-	margin-bottom: 0;
+    font-size: 14px;
+    color: #525252;
+    margin-bottom: 0;
 }
 .articlePhoto__author {
-	font-size: 14px;
-	color: #848484;
-	margin-bottom: 0;
+    font-size: 14px;
+    color: #848484;
+    margin-bottom: 0;
 }
 
 .article__picture {
@@ -165,7 +165,7 @@
     background: url(../_images/icons_sprite.png) -10px -199px no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
-	.article__readmore:after {
+    .article__readmore:after {
         background-image: url(../_images/icons_sprite_2x.png);
         background-size: 282px 500px;
     }
@@ -182,26 +182,26 @@
 
 
 .readAlso {
-	font-size: 18px;
-	font-style: italic;
-	line-height: 1.8;
-	margin-bottom: 20px;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 .readAlso__list {
-	font-size: 18px;
-	font-style: normal;
+    font-size: 18px;
+    font-style: normal;
 }
 .readAlso__item {
-	color: #de0606;
-	list-style: square;
-	margin-left: 25px;
+    color: #de0606;
+    list-style: square;
+    margin-left: 25px;
 }
 .readAlso__link {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 .readAlso__link:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 
@@ -210,9 +210,9 @@
 
 
 .hint {
-	color: #a6a5a5;
-	font-size: 14px;
-	margin-bottom: 10px;
+    color: #a6a5a5;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 
@@ -223,15 +223,15 @@
 
 
 .article__tags {
-	font-size: 14px;
-	margin-bottom: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 .article__tags a {
-	color: inherit;
-	text-decoration: underline;
+    color: inherit;
+    text-decoration: underline;
 }
 .article__tags a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .author {

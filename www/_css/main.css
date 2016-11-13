@@ -22,8 +22,6 @@
 
 @import "_popup.css";
 
-@import "photo-story.css";
-
 @import "md-preloader.min.css";
 
 /* СЮДА НЕ ПИСАТЬ СТИЛИ! ЭТОТ ФАЙЛ ДЛЯ СБОРКИ! */

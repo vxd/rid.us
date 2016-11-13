@@ -5,10 +5,10 @@
 
 <!-- //// извлекаем из параметров урла --> 
 
-<!--#if expr="\"$QUERY_STRING\" = /sidebanner=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /sidebanner=([a-zA-Z0-9]+)/" -->
 <!--#set var="sidebanner" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /display=([a-zA-Z0-9]+)/" -->
+<!--#if expr="QUERY_STRING = /display=([a-zA-Z0-9]+)/" -->
 <!--#set var="display" value="$1" -->
 <!--#endif -->
 
@@ -41,9 +41,12 @@
 	</ul>
 </div>
 
+<!--#if expr="$display = 0" -->
+<div class="bricks__wrapper clearfix bricks__wrapper-none">
+<!--#endif -->
 <!--#if expr="$display != 0" -->
 <div class="bricks__wrapper clearfix">
-
+<!--#endif -->
 	<div class="brick view_articlePhoto">
 		<a class="articlePhoto__link" href="#" title="">
 			<img class="article__image" src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt="">
@@ -76,8 +79,6 @@
     <!--#endif -->
 
 </div>
-<!--#endif -->
-
 
 
 

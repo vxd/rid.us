@@ -6,10 +6,10 @@
 
 <!-- //// извлекаем из параметров урла --> 
 
-<!--#if expr="\"$QUERY_STRING\" = /float=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /float=([a-zA-Z0-9]+)/" -->
 <!--#set var="float" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /float=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /float=([a-zA-Z0-9]+)/" -->
 <!--#set var="user" value="$1" -->
 <!--#endif -->
 

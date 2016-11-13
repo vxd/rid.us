@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <link href="_css/pages.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="pages">
+    <h3>Pages</h3>
+    <a href="404.shtml">404.shtml</a>
+    <a href="500.shtml">500.shtml</a>
+    <a href="article-live.shtml">article-live.shtml</a>
+    <a href="article-picture.shtml">article-picture.shtml</a>
+    <a href="article-video.shtml">article-video.shtml</a>
+    <a href="article.shtml">article.shtml</a>
+    <a href="article-2.shtml">article-2.shtml</a>
+    <a href="author-article.shtml">author-article.shtml</a>
+    <a href="authors-articles.shtml">authors-articles.shtml</a>
+    <a href="authors-list.shtml">authors-list.shtml</a>
+    <a href="authors.shtml">authors.shtml</a>
+    <a href="block.shtml">block.shtml</a>
+    <a href="chapter.shtml">chapter.shtml</a>
+    <a href="chapters.shtml">chapters.shtml</a>
+    <a href="editor.shtml">editor.shtml</a>
+    <a href="index.shtml">index.shtml</a>
+    <a href="index2.shtml">index2.shtml</a>
+    <a href="index3.shtml">index3.shtml</a>
+    <a href="index4.shtml">index4.shtml</a>
+    <a href="landing.shtml">landing.shtml</a>
+    <a href="my-articles.shtml">my-articles.shtml</a>
+    <a href="my-comments.shtml">my-comments.shtml</a>
+    <a href="my-liked-articles.shtml">my-liked-articles.shtml</a>
+    <a href="my-profile.shtml">my-profile.shtml</a>
+    <a href="my-saved-articles.shtml">my-saved-articles.shtml</a>
+    <a href="news-archive.shtml">news-archive.shtml</a>
+    <a href="news-list.shtml">news-list.shtml</a>
+    <a href="news-short.shtml">news-short.shtml</a>
+    <a href="photos.shtml">photos.shtml</a>
+    <a href="photo-story.shtml">photo-story.shtml</a>
+    <a href="search.shtml">search.shtml</a>
+    <a href="section.shtml">section.shtml</a>
+    <a href="signup.shtml">signup.shtml</a>
+    <a href="slider.shtml">slider.shtml</a>
+    <a href="tags.shtml">tags.shtml</a>
+    <a href="terms-of-agreement.shtml">terms-of-agreement.shtml</a>
+    <a href="videos.shtml">videos.shtml</a>
+</div>
+</body>
+</html>

@@ -1,13 +1,13 @@
-    <div class="slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-            	<a href="#" class="slider__image" title="">
-            		<img src="https://www.ridus.ru/images/2016/3/9/374241/in_article_6e0fbfdc98.jpg" alt="">
-                    <i class="important">важное</i>
-            	</a>
-            	<div class="slider__text">
-            		<h1><a href="" title="">Яценюк запустил &laquo;план Ы&raquo;</a></h1>
-            		<div class="countersBlock">
+<div class="slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="#" class="slider__image" title="">
+                <img src="https://www.ridus.ru/images/2016/3/9/374241/in_article_6e0fbfdc98.jpg" alt="">
+                <i class="important">важное</i>
+            </a>
+            <div class="slider__text">
+                <h1><a href="" title="">Яценюк запустил &laquo;план Ы&raquo;</a></h1>
+                <div class="countersBlock">
 						<span class="countersBlock__item view_count1">
 							12 <i class="icon"><!-- icon --></i>
 						</span>
@@ -17,68 +17,68 @@
 						<span class="countersBlock__item view_count3">
 							57 <i class="icon"><!-- icon --></i>
 						</span>
-                        <a href="#" class="countersBlock__item readLater">
-                            <span>читать позже</span>
-                            <span class="state_hidderHidden">читаю позже</span>
-                            <i class="icon"><!-- icon --></i>
-                        </a>
-					</div>
-            	</div>
-                <a href="#" class="clickable"></a>
+                    <a href="#" class="countersBlock__item readLater">
+                        <span>читать позже</span>
+                        <span class="state_hidderHidden">читаю позже</span>
+                        <i class="icon"><!-- icon --></i>
+                    </a>
+                </div>
             </div>
-            <div class="swiper-slide">
-            	<a href="#" class="slider__image" title="">
-            		<img src="https://www.ridus.ru/images/2016/3/9/374291/in_article_bdef9cafaa.jpg" alt="">
-            	</a>
-            	<div class="slider__text">
-            		<h1><a href="" title="">Яценюк запустил &laquo;план Ы&raquo;</a></h1>
-            		<div class="countersBlock">
-						<span class="countersBlock__item view_count1">
-							12 <i class="icon"><!-- icon --></i>
-						</span>
-						<span class="countersBlock__item view_count2">
-							34 <i class="icon"><!-- icon --></i>
-						</span>
-						<span class="countersBlock__item view_count3">
-							57 <i class="icon"><!-- icon --></i>
-						</span>
-                        <a href="#" class="countersBlock__item readLater">
-                            <span>читать позже</span>
-                            <span class="state_hidderHidden">читаю позже</span>
-                            <i class="icon"><!-- icon --></i>
-                        </a>
-					</div>
-            	</div>
-                <a href="#" class="clickable"></a>
-            </div>
-            <div class="swiper-slide">
-            	<a href="#" class="slider__image" title="">
-            		<img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt="">
-            	</a>
-             	<div class="slider__text">
-            		<h1>
-                        <a href="" title="">Яценюк запустил &laquo;план Ы&raquo;</a>
-                    </h1>
-            		<div class="countersBlock">
-						<span class="countersBlock__item view_count1">
-							12 <i class="icon"><!-- icon --></i>
-						</span>
-						<span class="countersBlock__item view_count2">
-							34 <i class="icon"><!-- icon --></i>
-						</span>
-						<span class="countersBlock__item view_count3">
-							57 <i class="icon"><!-- icon --></i>
-						</span>
-                        <a href="#" class="countersBlock__item readLater">
-                            <span>читать позже</span>
-                            <span class="state_hidderHidden">читаю позже</span>
-                            <i class="icon"><!-- icon --></i>
-                        </a>
-					</div>
-            	</div>
-                <a href="#" class="clickable"></a>
-           </div>
+            <a href="#" class="clickable"></a>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide">
+            <a href="#" class="slider__image" title="">
+                <img src="https://www.ridus.ru/images/2016/3/9/374291/in_article_bdef9cafaa.jpg" alt="">
+            </a>
+            <div class="slider__text">
+                <h1><a href="" title="">Яценюк запустил &laquo;план Ы&raquo;</a></h1>
+                <div class="countersBlock">
+						<span class="countersBlock__item view_count1">
+							12 <i class="icon"><!-- icon --></i>
+						</span>
+						<span class="countersBlock__item view_count2">
+							34 <i class="icon"><!-- icon --></i>
+						</span>
+						<span class="countersBlock__item view_count3">
+							57 <i class="icon"><!-- icon --></i>
+						</span>
+                    <a href="#" class="countersBlock__item readLater">
+                        <span>читать позже</span>
+                        <span class="state_hidderHidden">читаю позже</span>
+                        <i class="icon"><!-- icon --></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="clickable"></a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#" class="slider__image" title="">
+                <img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt="">
+            </a>
+            <div class="slider__text">
+                <h1>
+                    <a href="" title="">Яценюк запустил &laquo;план Ы&raquo;</a>
+                </h1>
+                <div class="countersBlock">
+						<span class="countersBlock__item view_count1">
+							12 <i class="icon"><!-- icon --></i>
+						</span>
+						<span class="countersBlock__item view_count2">
+							34 <i class="icon"><!-- icon --></i>
+						</span>
+						<span class="countersBlock__item view_count3">
+							57 <i class="icon"><!-- icon --></i>
+						</span>
+                    <a href="#" class="countersBlock__item readLater">
+                        <span>читать позже</span>
+                        <span class="state_hidderHidden">читаю позже</span>
+                        <i class="icon"><!-- icon --></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="clickable"></a>
+        </div>
     </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>

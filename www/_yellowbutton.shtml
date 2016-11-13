@@ -3,24 +3,28 @@
 
 <!--#set var="text" value="" -->
 <!--#set var="hided" value="" -->
+<!--#set var="page" value="" -->
 
 <!-- //// извлекаем из параметров урла --> 
 
-<!--#if expr="\"$QUERY_STRING\" = /text=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /text=([a-zA-Z0-9]+)/" -->
 <!--#set var="text" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /hided=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /hided=([a-zA-Z0-9]+)/" -->
 <!--#set var="hided" value="$1" -->
 <!--#endif -->
 
-<!-- //// конец --> 
+<!-- //// конец -->
 
+<!--#if expr="$text = 1" -->
+<!--#set var="page" value="editor.shtml" -->
+<!--#endif -->
 
 <!--#if expr="$hided = 1" -->
-<a class="yellowButton hideOn_desktop view_whiteCorner" href="'<!--#if expr="$text = 1" -->editor.shtml<!--#endif -->'" title="">
+<a class="yellowButton hideOn_desktop view_whiteCorner" href='<!--# echo var="page" -->' title="">
 <!--#endif -->
 <!--#if expr="$hided != 1" -->
-<a class="yellowButton" href='<!--#if expr="$text = 1" -->editor.shtml<!--#endif -->' title="">
+<a class="yellowButton" href='<!--# echo var="page" -->' title="">
 <!--#endif -->
 	<!--#if expr="$text = 1" -->
 	предложить новость

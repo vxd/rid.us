@@ -104,7 +104,6 @@ function Slider() {
     var PHOTO_STORY_CURRENT_ITEM_CLASS = 'photo_story-current';
     var PHOTO_STORY_NEXT = 'photo_story-content-arrow-wrapper-right';
     var PHOTO_STORY_PREV = 'photo_story-content-arrow-wrapper-left';
-    var PHOTO_STORY_IMAGE_CLASS = 'photo_story-images';
 
     var currentPosition;
     var totalSize;
@@ -112,6 +111,7 @@ function Slider() {
     var $elements;
 
     function initSlider(element, position) {
+        console.log('init');
         parentElement = element;
 
         initHandlers();
@@ -135,17 +135,15 @@ function Slider() {
     function initHandlers() {
         $("body").keydown(keyboardNavigation);
 
-        parentElement.find('.' + PHOTO_STORY_NEXT).click(next);
-        parentElement.find('.' + PHOTO_STORY_IMAGE_CLASS).click(next);
-        parentElement.find('.' + PHOTO_STORY_PREV).click(prev);
+        $('.' + PHOTO_STORY_NEXT).click(next);
+        $('.' + PHOTO_STORY_PREV).click(prev);
     }
 
     function removeHandlers() {
         $('body').off('keydown', keyboardNavigation);
 
-        parentElement.find('.' + PHOTO_STORY_IMAGE_CLASS).off('click', next);
-        parentElement.find('.' + PHOTO_STORY_NEXT).off('click', next);
-        parentElement.find('.' + PHOTO_STORY_PREV).off('click', prev);
+        $('.' + PHOTO_STORY_NEXT).off('click', next);
+        $('.' + PHOTO_STORY_PREV).off('click', prev);
     }
 
     function removeActiveClass() {

@@ -1,24 +1,24 @@
 <h4 class="brick__header">
-	главное за сегодня
+    главное за сегодня
 </h4>
 <ul class="todayMainNewsList">
-	<li class="todayMainNewsList__item todayMainNewsList__item-important">
-		<a class="todayMainNewsList__link" href="#" title="">Кадырова пытались убить взорвавшие «Домодедово»
+    <li class="todayMainNewsList__item todayMainNewsList__item-important">
+        <a class="todayMainNewsList__link" href="#" title="">Кадырова пытались убить взорвавшие «Домодедово»
         </a>
-		<a href="#" class="countersBlock__item readLater">
-			<i class="icon"><!-- icon --></i>
-		</a>
-	</li>
-	<li class="todayMainNewsList__item">
-		<a class="todayMainNewsList__link" href="#" title="">Зацепер парализовал движение электричек в Москве</a>
-		<a href="#" class="countersBlock__item readLater">
-			<i class="icon"><!-- icon --></i>
-		</a>
-	</li>
-	<li class="todayMainNewsList__item">
-		<a class="todayMainNewsList__link" href="#" title="">Украина сравнила депутатов в Крыму с варварами</a>
-		<a href="#" class="countersBlock__item readLater">
-			<i class="icon"><!-- icon --></i>
-		</a>
-	</li>
+        <a href="#" class="countersBlock__item readLater">
+            <i class="icon"><!-- icon --></i>
+        </a>
+    </li>
+    <li class="todayMainNewsList__item">
+        <a class="todayMainNewsList__link" href="#" title="">Зацепер парализовал движение электричек в Москве</a>
+        <a href="#" class="countersBlock__item readLater">
+            <i class="icon"><!-- icon --></i>
+        </a>
+    </li>
+    <li class="todayMainNewsList__item">
+        <a class="todayMainNewsList__link" href="#" title="">Украина сравнила депутатов в Крыму с варварами</a>
+        <a href="#" class="countersBlock__item readLater">
+            <i class="icon"><!-- icon --></i>
+        </a>
+    </li>
 </ul>

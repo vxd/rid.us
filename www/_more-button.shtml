@@ -5,7 +5,7 @@
 
 <!-- //// извлекаем из параметров урла --> 
 
-<!--#if expr="\"$QUERY_STRING\" = /text=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /text=([a-zA-Z0-9]+)/" -->
 <!--#set var="text" value="$1" -->
 <!--#endif -->
 

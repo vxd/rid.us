@@ -2,6 +2,7 @@
 <html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
 <head>
     <!--#include virtual="_head.shtml"-->
+    <link href="_css/photo-story.css" rel="stylesheet" type="text/css">
 </head>
 <body class="photo_story" itemscope itemtype="http://schema.org/WebPage">
 

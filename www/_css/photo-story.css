@@ -118,7 +118,7 @@
 
 .photo_story-images img {
     width: 100%;
-    height: 100%;
+    max-height: 100%;
 }
 
 .photo_story-item-left {
@@ -150,6 +150,7 @@
 .photo_story .socials-article {
     text-align: center;
     padding: 40px 0;
+    opacity: 0.5;
 }
 
 .photo_story-view .ya-share2__container_size_m .ya-share2__icon {

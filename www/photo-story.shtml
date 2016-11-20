@@ -29,7 +29,7 @@
         </div>
         <div class="photo_story-item">
             <div class="photo_story-item-left">
-                <div class="photo_story-images"><img src="http://pwsg.net/wp-content/uploads/2014/07/california_coast-1272746-1920x1200.jpg" alt=""/></div>
+                <div class="photo_story-images"><img src="https://www.ridus.ru/images/2013/12/22/137645/hd_b8da3de95f.JPG" alt=""/></div>
             </div>
             <div class="photo_story-item-right">
                 <div class="photo_story-author">Екатерина Трофимова</div>
@@ -41,7 +41,7 @@
         </div>
         <div class="photo_story-item">
             <div class="photo_story-item-left">
-                <div class="photo_story-images"><img src="http://www.ridus.ru/images/2015/11/27/339969/in_article_f324f74275.png" alt=""/></div>
+                <div class="photo_story-images"><img src="https://www.ridus.ru/images/2015/1/20/264186/hd_675ccbc58b.png" alt=""/></div>
             </div>
             <div class="photo_story-item-right">
                 <div class="photo_story-author">Екатерина Трофимова</div>
@@ -53,7 +53,7 @@
         </div>
         <div class="photo_story-item">
             <div class="photo_story-item-left">
-                <div class="photo_story-images"><img src="https://www.ridus.ru/images/2016/3/9/374241/in_article_6e0fbfdc98.jpg" alt=""/></div>
+                <div class="photo_story-images"><img src="https://www.ridus.ru/images/2015/1/20/264183/hd_a813849858.png" alt=""/></div>
             </div>
             <div class="photo_story-item-right">
                 <div class="photo_story-author">Екатерина Трофимова</div>
@@ -62,6 +62,24 @@
                 </br>
                 <b>Александр, 28 лет, рабочий (справа):</b> «Сейчас "Новороссия" — это отдельное государство. Эти территории никогда Украине не принадлежали. К тому же сейчас в Киеве сидит фашистская хунта».</div>
             </div>
+        </div>
+
+        <div class="photo_story-another">
+            <a class="photo_story-another-item" href="#">
+                <img src="https://img.gazeta.ru/files3/269/5276269/upload-02-pic280-280x187-83177.jpg" alt="text">
+                <div class="photo_story-another-title">Ученые ищут следы жизни на Марсе</div>
+                <div class="photo_story-another-text">NASA подтвердило наличие следов сезонных потоков воды на Красной планете</div>
+            </a>
+              <a class="photo_story-another-item" href="#">
+                <img src="https://img.gazeta.ru/files3/517/6176517/upload-06-pic280-280x187-50199.jpg" alt="text">
+                <div class="photo_story-another-title">Необычные церкви России</div>
+                <div class="photo_story-another-text">Как русское православие одухотворило западную готику</div>
+            </a>
+              <a class="photo_story-another-item" href="#">
+                <img src="https://img.gazeta.ru/files3/265/5276265/upload-01-pic280-280x187-59757.jpg" alt="text">
+                <div class="photo_story-another-title">Православные достопримечательности России</div>
+                <div class="photo_story-another-text">Места духовной силы российского государства и русского народа</div>
+            </a>
         </div>
     </div>
 

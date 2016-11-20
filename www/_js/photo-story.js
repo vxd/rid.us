@@ -105,11 +105,14 @@ function Slider() {
     var PHOTO_STORY_NEXT = 'photo_story-content-arrow-wrapper-right';
     var PHOTO_STORY_PREV = 'photo_story-content-arrow-wrapper-left';
     var PHOTO_STORY_IMAGE_CLASS = 'photo_story-images';
+    var PHOTO_STORY_ANOTHER_LINKS = 'photo_story-another';
+    var PHOTO_STORY_ANOTHER_OPEN = 'photo_story-another--open';
 
     var currentPosition;
     var totalSize;
     var parentElement;
     var $elements;
+    var isAnotherShow = false;
 
     function initSlider(element, position) {
         parentElement = element;
@@ -169,18 +172,14 @@ function Slider() {
     }
 
     function prev() {
-        var prevPosition = currentPosition - 1 >= 0 ? currentPosition - 1 : currentPosition;
+        var prevPosition = currentPosition - 1 >= 0 && !isAnotherShow ? currentPosition - 1 : currentPosition;
 
-        goTo(prevPosition);
+        goTo(prevPosition, true);
     }
 
-    function goTo(index) {
-        if (currentPosition === index) {
-            return;
-        }
-
-        if ($elements[index]) {
-            removeActiveClass();
+    function goTo(index, isPrev) {
+       if (!currentPosition || currentPosition !== index || (isPrev && isAnotherShow)) {
+           removeActiveClass();
             // set new active element
             $($elements[index]).addClass(PHOTO_STORY_ITEM_ACTIVE_CLASS);
 
@@ -189,7 +188,15 @@ function Slider() {
             currentPosition = index;
 
             parentElement.find('.' + PHOTO_STORY_CURRENT_ITEM_CLASS).html(currentPosition + 1);
-        }
+            parentElement.removeClass(PHOTO_STORY_ANOTHER_OPEN);
+
+            isAnotherShow = false;
+       } else if(currentPosition || !isAnotherShow) {
+            removeActiveClass();
+            parentElement.find('.' + PHOTO_STORY_ANOTHER_LINKS).addClass(PHOTO_STORY_ITEM_ACTIVE_CLASS);
+            parentElement.addClass(PHOTO_STORY_ANOTHER_OPEN);
+            isAnotherShow = true;
+       }
     }
 
     return {

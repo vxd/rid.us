@@ -1,0 +1,89 @@
+<div class="comments-live comments">
+	<div class="comments-live__header">
+		<span class="comments-live__title">
+			Комментарии
+			<span class="comments__expand"></span>
+		</span>
+		<div class="comments__button">
+			<span class="comments__number">3</span>
+			<a href="#" class="comments__link">+</a>
+			<a href="#" class="comments__link">−</a>
+		</div>
+	</div>
+	<div class="comments__content">
+		<div class="comments__login">
+			<b>Для комментирования новости <a href="#" title="">авторизуйтесь</a> или войдите через социальные сети:</b>
+			<ul class="commentsSocials">
+				<li class="socialNetwork__item">
+					<a class="socialNetwork__link view_iconFacebook" href="#" title="">
+						Facebook
+					</a>
+				</li>
+				<li class="socialNetwork__item">
+					<a class="socialNetwork__link view_iconvKontakte" href="#" title="">
+						vKontakte
+					</a>
+				</li>
+				<li class="socialNetwork__item">
+					<a class="socialNetwork__link view_iconGoogle" href="#" title="">
+						Google+
+					</a>
+				</li>
+				<li class="socialNetwork__item">
+					<a class="socialNetwork__link view_iconTwitter" href="#" title="">
+						Twitter
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<ul class="comments__list">
+			<li>
+				<div class="comments__avatar">
+					<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="avatar" />
+				</div>
+				<div class="comments__body">
+					<header>
+						<span class="comments__name">Strelok</span>
+						<span class="comments__time">сегодня, 18:35</span>
+					</header>
+					<p>Curabitur dolor velit, consectetur quis nisi a, accumsan cursus massa. Fusce sem lacus, dignissim pretium enim a, mollis
+						malesuada metus.</p>
+					<footer>
+						<span class="comments__answer">
+							Ответить
+						</span>
+						<div class="comments__button">
+							<span class="comments__number">3</span>
+							<a href="#" class="comments__link">+</a>
+							<a href="#" class="comments__link">−</a>
+						</div>
+					</footer>
+				</div>
+			</li>
+			<li>
+				<div class="comments__avatar">
+					<img src="http://www.ridus.ru/images/avatars/143296/large_4826eae277.jpg" alt="avatar" />
+				</div>
+				<div class="comments__body">
+					<header>
+						<span class="comments__name">LeoMacho</span>
+						<span class="comments__time">сегодня, 17:40</span>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum finibus purus, eu malesuada turpis pulvinar eu.
+						In vulputate lectus vitae turpis ornare ultricies. Quisque ac metus at leo rhoncus porttitor.</p>
+					<footer>
+						<span class="comments__answer">
+							Ответить
+						</span>
+						<div class="comments__button">
+							<span class="comments__number">3</span>
+							<a href="#" class="comments__link">+</a>
+							<a href="#" class="comments__link">−</a>
+						</div>
+					</footer>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

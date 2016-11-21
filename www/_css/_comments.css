@@ -1,3 +1,5 @@
+@import "_comments-live.css";
+
 .comments {
 	border: 1px dashed #e8e8e8;
 	border-left: none;

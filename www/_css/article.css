@@ -29,6 +29,7 @@
     width: calc(100% - 120px); /* отнять ширину текста */
 }
 .percentage__description {
+<<<<<<< HEAD
     float: left;
     width: 120px;
     padding: 0 12px;
@@ -36,4 +37,40 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+||||||| parent of 39a4cb4... add live comments and show updates btn
+	float: left;
+	width: 120px;
+	padding: 0 12px;
+	font-size: 16px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+=======
+	float: left;
+	width: 120px;
+	padding: 0 12px;
+	font-size: 16px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.show-updates {
+	cursor: pointer;
+    background: #ffd051;
+    padding: 12px 0;
+    margin-bottom: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.show-updates__expand {
+    display: inline-block;
+    margin-bottom: -3px;
+    margin-left: 10px;
+    border: 5px solid transparent;
+    border-top: 5px solid #000;
+>>>>>>> 39a4cb4... add live comments and show updates btn
 }

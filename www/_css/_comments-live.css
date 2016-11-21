@@ -1,0 +1,196 @@
+ /*----- variables.scss ----- */
+.comments {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.comments__expand {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+  margin-left: 10px;
+  background: #ffd051;
+  text-align: center;
+  cursor: pointer;
+}
+.comments__expand:after {
+  content: "";
+  display: inline-block;
+  border: 5px solid transparent;
+  border-top: 5px solid #000;
+}
+.comments__content {
+  display: none;
+  margin-top: 15px;
+  font: normal 13px/13px 'Roboto Slab', sans-serif;
+  text-transform: none;
+}
+.comments__content .socials {
+  margin: 20px 0;
+  justify-content: flex-start;
+}
+.comments__content .socials .socialNetwork__link {
+  background: #657788;
+}
+.comments__content .comments__body p {
+  margin-bottom: 15px;
+}
+.comments__number {
+  display: inline-block;
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #d4d4d4;
+  vertical-align: top;
+  font: 600 13px/32px 'Roboto', serif;
+  color: #84c61b;
+}
+.comments__link {
+  display: inline-block;
+  height: 32px;
+  width: 31px;
+  background: #eee;
+  color: #686b6f;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+}
+.comments__list {
+  font: normal 13px 'Roboto';
+}
+.comments__list li {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px dashed #c2c2c2;
+}
+.comments__list li:first-child {
+  border-top: 1px dashed #c2c2c2;
+}
+.comments__list li.comments__second-level {
+  border: none;
+  padding: 0;
+}
+.comments__list li.comments__second-level li {
+  padding: 20px 0 20px 40px;
+}
+.comments__list li.comments__second-level li:first-child {
+  border-top: none;
+}
+.comments__body header {
+    padding-top: 0;
+  margin-bottom: 10px;
+}
+.comments__body footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comments__name {
+  font-weight: 600;
+}
+.comments__time {
+  color: #c2c2c2;
+  line-height: 23px;
+  font-weight: 200;
+}
+.comments__time:before {
+  content: ' | ';
+}
+.comments__avatar {
+  display: flex;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.comments__avatar img {
+  width: 100%;
+}
+.comments__answer {
+  font: 600 13px 'Roboto', serif;
+  color: #c64a1b;
+}
+.comments.state_open .comments-live__content {
+  display: block;
+}
+.comments.state_open .comments-live__expand:after {
+  margin-top: 3px;
+  border: 5px solid transparent;
+  border-bottom: 5px solid #c64a1b;
+  vertical-align: 6px;
+}
+.comments.state_open .comments__content {
+  display: block;
+}
+.comments.state_open .comments__expand:after {
+  border: 5px solid transparent;
+  border-bottom: 5px solid #000;
+  vertical-align: 6px;
+}
+
+.comments-live {
+  margin: 20px 0;
+}
+.comments-live__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comments-live__title {
+  display: flex;
+  align-items: center;
+  font: 600 13px 'Roboto', serif;
+  color: #c64a1b;
+  text-transform: none;
+}
+.comments-live .comments__expand {
+  background: #eee;
+}
+.comments-live .comments__expand:after {
+  margin-top: 7px;
+  border-top-color: #c64a1b;
+}
+.comments-live.state_open .comments__expand:after {
+  margin-top: 3px;
+  border-bottom-color: #c64a1b;
+}
+
+
+/* ----- variables.scss ----- */
+.socials {
+  display: flex;
+}
+.socials .socialNetwork__item {
+  display: inline-block;
+  margin-right: 4px;
+}
+.socials .socialNetwork__link {
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #2a3436;
+  transition: color .2s ease-in-out;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.socials .socialNetwork__link:before {
+  font-size: 20px;
+  line-height: 36px;
+}
+.socials .socialNetwork__link:hover {
+  color: #ffc336;
+}
+
+.comments__answer {
+    cursor: pointer;
+}

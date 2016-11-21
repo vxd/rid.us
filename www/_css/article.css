@@ -37,3 +37,22 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+.show-updates {
+	cursor: pointer;
+    background: #ffd051;
+    padding: 12px 0;
+    margin-bottom: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.show-updates__expand {
+    display: inline-block;
+    margin-bottom: -3px;
+    margin-left: 10px;
+    border: 5px solid transparent;
+    border-top: 5px solid #000;
+}

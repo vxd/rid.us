@@ -678,6 +678,12 @@ $(function() {
         return false;
     });
 
+     $(".comments-live > div").on('click', function(){
+            $(this).closest('.comments-live').toggleClass("state_open");
+
+            return false;
+        });
+
 
 
     // ======================================

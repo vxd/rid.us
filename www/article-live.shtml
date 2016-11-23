@@ -99,6 +99,9 @@
                                 &copy; Маша Росс/РИА Новости
                             </p>
                         </div>
+                        <div class="brick view_banner hideOn_1024 hideOn_768">
+                            <!--#include virtual="bricks/banner-mts.shtml"-->
+                        </div>
 
                     </div>
 

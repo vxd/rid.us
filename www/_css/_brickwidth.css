@@ -26,7 +26,13 @@
 		margin-right: -16px;
 	}
 }
-
+.authors-list .bricks__wrapper {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	margin: 0;
+}
 
 
 
@@ -73,7 +79,9 @@
 }
 
 
-
+.authors-list .brick {
+	margin: 0;
+}
 
 
 
@@ -265,20 +273,20 @@
 }
 @media screen and (max-width: 1023px) {
 	.brick.view_authors {
-		height: 285px;
+		height: 345px;
 		width: 22%;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
 	.brick.view_authors {
 		padding: 0 40px;
-		height: 260px;
+		height: 380px;
 	}
 }
 @media screen and (min-width: 1280px) {
 	.brick.view_authors {
 		padding: 0 30px;
-		height: 275px;
+		height: 395px;
 	}
 }
 

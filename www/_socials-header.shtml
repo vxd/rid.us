@@ -29,6 +29,13 @@
 					<!-- </span> -->
 				</a>
 			</li>
+			<li class="headerSocials__item view_google">
+				<a class="headerSocials__link" href="http://google.com" title="Google">
+					<!-- <span class="headerSocials__badge"> -->
+						<span class="headerSocials__icon"></span><span class="headerSocials__counter">34.4K</span>
+					<!-- </span> -->
+				</a>
+			</li>
 		</ul>
 </div>
 

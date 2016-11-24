@@ -326,7 +326,17 @@ header {
 	}
 }
 
+.page_home .b-rate_brent {
+	display: none;
+}
 
-
+.page_home .globalInfo .socials__wrapper {
+	float: none;
+}
+@media screen and (min-width: 1280px) {
+	.page_home .globalInfo .socials__wrapper .headerSocials {
+		margin-left: 20px;
+	}
+}
 
 

@@ -95,30 +95,34 @@
 
 
 .comment__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 	margin-bottom: 17px;
     background: #f5f5f5;
     padding: 13px 16px;
 }
 .comment__date {
-    float: left;
     color: #c64a1b;
     font-size: 14px;
 }
-.comment__date a {
+.comment__link {
     display: inline-block;
-    width: auto;
+    flex: 1;    
     color: #b1b1b1;
     margin-bottom: 5px;
     text-decoration: none;
     margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-.comment__date a:hover {
+.comment__link:hover {
     color: #c64a1b;
 }
 .comment__likes {
     color: #667887;
-    float: right;
-    width: auto;
     font-size: 13px;
 }
 .comment__likes.view_up {
@@ -128,7 +132,7 @@
     color: #c64a1b;
 }
 .comment__text {
-    clear: both;
+    width: 100%;
     padding: 2px 0 0;
     font-size: 15px;
 }

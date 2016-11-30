@@ -71,6 +71,11 @@
 		margin: 0 22px 22px 0;
 	}
 }
+@media screen and (min-width: 1024px) and (max-width: 1041px) {
+	.brick {
+		margin-right: 15px;
+	}
+}
 @media screen and (min-width: 1280px) {
 	.brick {
 		width: 295px;

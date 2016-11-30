@@ -85,6 +85,17 @@
 	width: 606px;
 	height: auto;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.tags .brick.view_articlePhoto {
+		width: calc(100% - 3%);
+	}
+
+	.tags .articlePhoto__link {
+		width: 100%;
+	}
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
 	.brick.view_articlePhoto {
 		width: calc(100% - 13px)

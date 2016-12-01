@@ -53,7 +53,7 @@
 <!--#if expr="$QUERY_STRING = /important=([a-zA-Z0-9]+)/" -->
 <!--#set var="important" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /isnoread=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /isnoread=([a-zA-Z0-9]+)/" -->
 <!--#set var="isnoread" value="$1" -->
 <!--#endif -->
 <!-- //// конец -->

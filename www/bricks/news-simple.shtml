@@ -53,6 +53,9 @@
 <!--#if expr="\"$QUERY_STRING\" = /important=([a-zA-Z0-9]+)/" -->
 <!--#set var="important" value="$1" -->
 <!--#endif -->
+<!--#if expr="\"$QUERY_STRING\" = /isnoread=([a-zA-Z0-9]+)/" -->
+<!--#set var="isnoread" value="$1" -->
+<!--#endif -->
 <!-- //// конец -->
 
 <!--#if expr="$issaved = true" -->
@@ -61,6 +64,10 @@
 
 <!--#if expr="$isliked = true" -->
 <!--#set var="action" value="save" -->
+<!--#endif -->
+
+<!--#if expr="$isnoread = true" -->
+<!--#set var="action" value="" -->
 <!--#endif -->
 
 <!--#if expr="$image = 1" -->

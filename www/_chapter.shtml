@@ -1,7 +1,7 @@
 <div class="table view_dontHideColumn clearfix">
     <div class="table__sideColumn">
         <div class="brick">
-            <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&label=false&count1=120&count2=35&count3=3812"-->
+            <!--#include virtual="bricks/news-simple.shtml?image=2&data=1&label=false&count1=false&count2=35&count3=3812&isnoread=true"-->
         </div>
         <a href="#" class="article__readmore" title="">Читать сюжет</a>
     </div>

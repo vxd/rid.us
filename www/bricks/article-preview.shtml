@@ -89,7 +89,11 @@
 				<span class="state_hidderHidden">читаю позже</span>
 				<i class="icon"><!-- icon --></i>
 			</a>
-			
+			<!--#if expr="$glass = 1" -->
+				<span class="countersBlock__item readLater only-glass">
+					<i class="icon"><!-- icon --></i>
+				</span>
+			<!--#endif -->
 		</div>
 		<!--#endif -->
 	</div>

@@ -24,7 +24,7 @@
 <!--#if expr="$QUERY_STRING = /count3=([a-zA-Z0-9]+)/" -->
 <!--#set var="count3" value="$1" -->
 <!--#endif -->
-<!--#if expr="\"$QUERY_STRING\" = /glass=([a-zA-Z0-9]+)/" -->
+<!--#if expr="$QUERY_STRING = /glass=([a-zA-Z0-9]+)/" -->
 <!--#set var="glass" value="$1" -->
 <!--#endif -->
 

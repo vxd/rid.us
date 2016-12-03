@@ -179,11 +179,11 @@
 	color: #494949;
 }
 .authorPopularity .watchers .eye-icon {
-	width: 11px;
-	height: 9px;
-	display: inline-block;
-	margin-left: 4px;
-	background: url(../_images/icons.png) -280px -20px no-repeat;
+	width: 12px;
+    height: 9px;
+    display: inline-block;
+    margin-left: 4px;
+    background: url(../_images/icons_sprite.png) -25px -285px no-repeat;
 }
 .authorPopularity .rate .positive {
 	color: #399800;
@@ -192,6 +192,14 @@
 	color: #e80f00;
 }
 
+.author__readmore {
+    font-size: 18px;
+    border-bottom: 1px dashed;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 25px;
+    display: inline-block;
+}
 
 
 

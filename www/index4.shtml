@@ -191,15 +191,18 @@
 </div>
 
 <section class="wrapper contentBackground_white paddings_side clearfix">
-	<div class="bricks__wrapper bricks_article-previews clearfix">
-		<div class="brick width_twice">
+	<div class="bricks__wrapper bricks_article-previews">
+		<div class="brick width_twice hideOn_1024 hideOn_768">
 			<!--#include virtual="bricks/article-preview.shtml?author=1&data=1&count1=120&count2=35&count3=3812"-->
 		</div>
-		<div class="brick">
-			<!--#include virtual="bricks/article-preview.shtml?author=2&data=2&count1=120&count2=35&count3=3812"-->
+		<div class="brick width_twice hideOn_1280">
+			<!--#include virtual="bricks/article-preview.shtml?author=1&data=1&count1=120&count2=35&count3=3812&glass=1"-->
 		</div>
 		<div class="brick">
-			<!--#include virtual="bricks/article-preview.shtml?author=3&data=3&count1=120&count2=35&count3=3812"-->
+			<!--#include virtual="bricks/article-preview.shtml?author=2&data=2&count1=120&count2=35&count3=3812&glass=1"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/article-preview.shtml?author=3&data=3&count1=120&count2=35&count3=3812&glass=1"-->
 		</div>
 	</div>
 </section>

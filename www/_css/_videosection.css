@@ -213,7 +213,7 @@
 		flex-direction: column;
 	}
 	.videoSection iframe {
-		height: 200px;
+		height: 400px;
 	}
 	.videoSection .label {
 		top: 0;

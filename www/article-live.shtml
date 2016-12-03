@@ -58,7 +58,8 @@
 
                 <h1 class="article__title">
                     Кличко возглавил партию Порошенко
-                    <div class="countersBlock countersBlock-inline">
+                    <!-- используй countersBlock-inline что бы было в одну строчку с загаловком -->
+                    <div class="countersBlock">
                         <span class="countersBlock__item view_count1">
                             123 <i class="icon"><!-- icon --></i>
                         </span>

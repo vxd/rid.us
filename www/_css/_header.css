@@ -24,6 +24,7 @@ header {
 
 .floatingInfo {
 	height: 80px;
+	position: relative;
 	min-width: 768px;
 	background: #fff;
 	border-bottom: 1px solid #eee;

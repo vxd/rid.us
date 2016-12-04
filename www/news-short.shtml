@@ -15,7 +15,7 @@
     </a>
     <section class="floatingInfo__wrapper wrapper clearfix">
         <div class="floatingInfo paddings_side wrapper">
-            <a href="#" class="mainLogo mainLogo_black" title="На главную">
+            <a href="#" class="mainLogo mainLogo_black mainLogo-slow" title="На главную">
                 <img src="_images/logo-black.png" class="x1" width="100" height="34" alt="РИДУС">
                 <img src="_images/logo-black_2x.png" class="x2" width="100" height="34" alt="РИДУС">
             </a>
@@ -33,10 +33,18 @@
                 <span>Сохранить</span>
                 <span class="state_hidderHidden">Сохранено</span>
             </a>
+            <span href="#" class="header__readLater-white hideOn_768">
+				<i class="icon"><!-- icon --></i>
+				<span class="number">7</span>
+				<div class="readLater__popover">
+
+				</div>
+			</span>
             <a href="#" class="yellowButton view_backButton" title="назад">
                 &times;
                 <i class="corner"><!-- corner --></i>
             </a>
+            <!--#include virtual="_popover-read-later.shtml"-->
         </div>
     </section>
 </header>
@@ -73,7 +81,7 @@
                     </ul>
                 </div>
                 
-                <div class="articleSocials__wrapper clearfix">
+                <div class="articleSocials__wrapper clearfix ridusLikes-hide">
                     <div class="ridusLikes view_sideBorder">
                         <p class="hint">
                             Нам важно ваше мнение!
@@ -139,7 +147,7 @@
                     </ul>
                 </div>
                 
-                <div class="articleSocials__wrapper clearfix">
+                <div class="articleSocials__wrapper clearfix ridusLikes-hide">
                     <div class="ridusLikes view_sideBorder">
                         <p class="hint">
                             Нам важно ваше мнение!
@@ -226,7 +234,7 @@
                     </ul>
                 </div>
                 
-                <div class="articleSocials__wrapper clearfix">
+                <div class="articleSocials__wrapper clearfix ridusLikes-hide">
                     <div class="ridusLikes view_sideBorder">
                         <p class="hint">
                             Нам важно ваше мнение!
@@ -311,7 +319,7 @@
                     </ul>
                 </div>
                 
-                <div class="articleSocials__wrapper clearfix">
+                <div class="articleSocials__wrapper clearfix ridusLikes-hide">
                     <div class="ridusLikes view_sideBorder">
                         <p class="hint">
                             Нам важно ваше мнение!
@@ -393,7 +401,7 @@
                     </ul>
                 </div>
                 
-                <div class="articleSocials__wrapper clearfix">
+                <div class="articleSocials__wrapper clearfix ridusLikes-hide">
                     <div class="ridusLikes view_sideBorder">
                         <p class="hint">
                             Нам важно ваше мнение!
@@ -489,8 +497,8 @@
                     </ul>
                 </div>
                 
-                <div class="articleSocials__wrapper clearfix">
-                    <div class="ridusLikes view_sideBorder">
+                <div class="articleSocials__wrapper clearfix ridusLikes-hide">
+                    <div class="ridusLikes  view_sideBorder">
                         <p class="hint">
                             Нам важно ваше мнение!
                         </p>

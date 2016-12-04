@@ -1454,7 +1454,35 @@
 
 
 
-
+/* определения классов		
+.view_banner.view_banner-1 - баннер для перового слайда		
+.view_banner.view_banner-2 -баннер для второго слайда		
+.view_opinion - блок "мнение"		
+*/		
+/* логика работы		
+В разметку нужно дублировать баннер для второго слайда,		
+т.е один баннер на первом слайде с классами .view_banner.view_banner-1		
+и одина на втором слайде с классами .view_banner.view_banner-2		
+в стилях ниже им задется жесткое порядковое значние для каждого разрешения, чтобы		
+баннеры всегда стояли на нужном месте, так же и для блока "мнение":		
+.flexSlider .view_banner.view_banner-1 {		
+	order: 4 !important;		
+}		
+.flexSlider .view_banner.view_banner-2 {		
+	order: 7 !important;		
+}		
+@media screen and (max-width: 1280px) {		
+	.flexSlider .view_banner.view_banner-1 {		
+		order: 1 !important;		
+	}		
+	.flexSlider .view_banner.view_banner-2 {		
+		order: 4 !important;		
+	}		
+	.flexSlider .view_opinion {		
+		order: 9 !important;		
+	}		
+}		
+*/
 
 
 .flexSlider__container {

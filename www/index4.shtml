@@ -37,6 +37,36 @@
 
 				<div class="bricks__wrapper swiper-wrapper">
 
+
+					<!--определения классов-->
+
+
+					<!--.showOn_1024 - показать на разрешении 1024 -->
+					<!--.showOn_1280 - показать на разрешении 1280 -->
+
+					<!--.hideOn_768 - спрятать на 768 -->
+					<!--.hideOn_1024 - спрятать на 1024 -->
+					<!--.showOn_1024 - показать на 1024 -->
+					<!--.hideOn_1280 - спрятать на 1280 -->
+					<!--.showOn_1280 - показать на 1280 -->
+					<!--.hideOn_desktop - спрятать на десктопе -->
+					<!--.hideOn_mobile - спрятать на мобилке {-->
+
+
+					<!--логика работы-->
+
+
+					<!--Для того, чтобы блоки не терялись на разных разрешениях их нужно дублировать:
+					если скрли блок на разрешении 768 (.hideOn_768), то необходимо его добавить в нужное
+					место для этого разрешения с классами скрытия на других (.hideOn_1024, .hideOn_1280).
+					Подробнее в комментариях к слайду ниже.-->
+
+
+					<!--комменты для каждого блока-->
+
+
+					<!-- блок скрывается на разрешении 768 .hideOn_768, и дублируется ниже для этого разрешения
+					.hideOn_1024.hideOn_1280 -->
 					<div class="brick swiper-slide height-twice-container hideOn_768 not_for_hover">
 
 						<div class="brick view_grey not_for_hover hideOn_1280">
@@ -49,25 +79,39 @@
 						</div>
 
 					</div>
+
+					<!-- этот блок .null-pillow нужен для того, чтобы сделать блок с .height-twice-container
+					двойной высоты -->
 					<div class="brick swiper-slide null-pillow hideOn_768"></div>
+
+					<!-- блок двойной ширины .width_twice -->
 					<div class="brick swiper-slide width_twice">
 						<!--#include virtual="slider.shtml"-->
 					</div>
 
-
+					<!-- дубликат для первого блока с hideOn_768 -->
 					<div class="brick view_grey swiper-slide hideOn_1024 hideOn_1280 not_for_hover">
 						<!--#include virtual="bricks/main-for-today.shtml"-->
 					</div>
 
+					<!-- этот блок скрывается на разрешении 768 -->
 					<div class="brick swiper-slide hideOn_768">
 						<!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=21&count1=120&count2=35&count3=3812"-->
 					</div>
+
+					<!-- этот блок нужен для компенсации двойной ширины блока с классом .width_twice,
+					он не виден пользователю, но его учитывает плагин при инициализации -->
 					<div class="brick swiper-slide null"></div>
+
+					<!-- блок скрыт на разрешениях .hideOn_1024 .hideOn_1280,
+					выше он же вставлен для этих разрешений с классом .hideOn_768 -->
 					<div class="brick view_yellow swiper-slide hideOn_1024 hideOn_1280">
 						<a href="#" class="brick__header view_arrowed" title="">Бездна новостей</a>
 						<!--#include virtual="bricks/newslist.shtml?banner=none"-->
 					</div>
 
+					<!-- блок скрыт на разрешениях .hideOn_1024 .hideOn_1280,
+					выше он же вставлен для этих разрешений с классом .hideOn_768 -->
 					<div class="brick swiper-slide hideOn_1024 hideOn_1280">
 						<!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=21&count1=120&count2=35&count3=3812"-->
 					</div>
@@ -76,6 +120,8 @@
 						<!--#include virtual="bricks/news-simple.shtml?image=2&data=3&label=22&count1=120&count2=35&count3=3812"-->
 					</div>
 
+					<!-- блок скрыт на разрешениях .hideOn_1024 .hideOn_768,
+					далее он же вставлен для этих разрешений с классом .hideOn_1280 -->
 					<div class="brick view_grey swiper-slide hideOn_1024 hideOn_768 not_for_hover">
 						<!--#include virtual="bricks/main-for-today.shtml"-->
 					</div>
@@ -190,22 +236,33 @@
 
 </div>
 
+<!-- Блок авторских мнений -->
 <section class="wrapper contentBackground_white paddings_side clearfix">
 	<div class="bricks__wrapper bricks_article-previews">
+
+		<!--Один блок на разных разрешения-->
+		<!-- Широкий блок который занимает ширину 2-ух блоков на 1280 -->
 		<div class="brick width_twice hideOn_1024 hideOn_768">
 			<!--#include virtual="bricks/article-preview.shtml?author=1&data=1&count1=120&count2=35&count3=3812"-->
 		</div>
+		<!--Замена широкого блока так как у них разные иконки readLater -->
 		<div class="brick width_twice hideOn_1280">
 			<!--#include virtual="bricks/article-preview.shtml?author=1&data=1&count1=120&count2=35&count3=3812&glass=1"-->
 		</div>
+		<!--Коец одного блока на разных разрешениях-->
+
+		<!--обычный блок -->
 		<div class="brick">
 			<!--#include virtual="bricks/article-preview.shtml?author=2&data=2&count1=120&count2=35&count3=3812&glass=1"-->
 		</div>
+
+		<!--обычный блок -->
 		<div class="brick">
 			<!--#include virtual="bricks/article-preview.shtml?author=3&data=3&count1=120&count2=35&count3=3812&glass=1"-->
 		</div>
 	</div>
 </section>
+<!-- Конец блока авторских мнений -->
 
 <section class="wrapper hideOn_mobile contentBackground_white padding_bottom clearfix">
 	<!--#include virtual="_ridus-map.shtml"-->

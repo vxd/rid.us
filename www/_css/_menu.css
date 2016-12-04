@@ -587,6 +587,63 @@
 	box-sizing: border-box;
 }
 
+.floatingInfo .popoverReadLater {
+	display: none;
+}
+
+.floatingInfo .popoverReadLater.state_open {
+	display: block;
+}
+
+.header__readLater-white {
+	display: inline-block;
+	height: 100%;
+	margin: 0 0 0 15px;
+	padding: 0 9px 0 0;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 0px;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+	color: #686b6f;
+	text-align: center;
+}
+@media screen and (min-width: 1023px) and (max-width: 1279px) {
+	.header__readLater-white {
+		margin: 0 0 0 8px;
+	}
+}
+
+.header__readLater-white:hover,
+.header__readLater-white.state_open {
+	background-color: #c64a1b;
+	color: #fff;
+}
+.header__readLater-white .icon {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 13px 5px 15px 0;
+	background-color: #c64a1b;
+	border-radius: 50%;
+}
+.header__readLater-white .icon:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: inline-block;
+	width: 16px;
+	height: 8px;
+	margin: -4px 0 0 -8px;
+	background: url(../_images/icons_sprite.png) -48px -301px no-repeat;
+}
+.header__readLater-white .number {
+	font-size: 10px;
+	vertical-align: 26px;
+}
 
 
 

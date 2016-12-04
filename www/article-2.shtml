@@ -33,10 +33,18 @@
                 <span>Сохранить</span>
                 <span class="state_hidderHidden">Сохранено</span>
             </a>
+            <span href="#" class="header__readLater-white hideOn_768">
+				<i class="icon"><!-- icon --></i>
+				<span class="number">7</span>
+				<div class="readLater__popover">
+
+				</div>
+			</span>
             <a href="#" class="yellowButton view_backButton" title="назад">
                 &times;
                 <i class="corner"><!-- corner --></i>
             </a>
+            <!--#include virtual="_popover-read-later.shtml"-->
         </div>
     </section>
 </header>

@@ -224,6 +224,11 @@
 
 	border: 3px solid #c64a1b;
 }
+
+.floatingInfo .popoverReadLater {
+	z-index: 100;
+}
+
 .popoverReadLater .ui-tabs-active,
 .popoverReadLater .ui-state-active,
 .popoverReadLater .ui-state-hover {
@@ -243,6 +248,11 @@
 		height: calc(100% - 60px);
 		width: calc(100% - 220px);
 		min-width: 548px;
+	}
+
+	.floatingInfo .popoverReadLater {
+		top: initial;
+		height: calc(100% - 120px);
 	}
 }
 

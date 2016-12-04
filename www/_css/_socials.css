@@ -331,7 +331,7 @@
     font-weight: bold;
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
-    padding: 14px 23px 0 50px;
+    padding: 14px 23px 0 23px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -344,7 +344,7 @@
                 opacity .2s ease;;
 
 }
-.saveButton:before {
+/*.saveButton:before {
     position: absolute;
     left: 20px;
     top: 16px;
@@ -353,28 +353,28 @@
     height: 13px;
     background: url(../_images/icons_sprite.png) -64px -285px;
     opacity: .5;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
+}*/
+/*@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) { 
     .saveButton:before {
         background-image: url(../_images/icons_sprite_2x.png);
         background-size: 282px 500px;
     }
-}
+}*/
 .saveButton:hover {
     background: #ffd051;
     color: #000;
 }
-.saveButton:hover:before {
+/*.saveButton:hover:before {
     opacity: 1;
-}
+}*/
 .saveButton.view_saved {
    background: #c64a1b;
    color: #fff;
 }
-.saveButton.view_saved:before {
+/*.saveButton.view_saved:before {
     background-position:  -64px -301px;
     opacity: 1;
-}
+}*/
 .saveButton.view_saved:hover {
     opacity: .9;
 }

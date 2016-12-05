@@ -45,6 +45,9 @@
                 <i class="corner"><!-- corner --></i>
             </a>
             <!--#include virtual="_popover-read-later.shtml"-->
+             <div class="header__loading">
+                <div class="header__progress js-article-loading"></div>
+            </div>
         </div>
     </section>
 </header>
@@ -63,7 +66,7 @@
             </ul>
 
 
-            <div class="article">
+            <div class="article article__container">
 
                 <!--#include virtual="_article-short.shtml?sidebanner=2"-->
 

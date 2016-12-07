@@ -185,6 +185,34 @@
 	cursor: pointer;
 }
 
+.myprofileSocials__linkLabel {
+	float: right;
+	width: calc(100% - 130px);
+}
+
+.myprofileSocials__linkLabel input {
+	height: 30px;
+}
+
+
+.social_links {
+	width: 608px;
+}
+
+@media screen and (max-width: 1023px) {
+	.social_links {
+		width: calc(100% - 3%);
+	}
+
+	.myprofileSocials__linkLabel {
+		width: calc(100% - 170px);
+	}
+}
+
+
+.social_links .socialNetwork__link {
+	float: left;
+}
 
 
 

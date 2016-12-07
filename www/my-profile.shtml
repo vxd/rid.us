@@ -341,6 +341,49 @@
 
 	<hr class="view__dashed">
 	<br>
+
+	<label>Ссылки на социальные сети</label>
+    <div class="bricks__wrapper padding_top clearfix">
+		<div class="brick view_noHeight social_links">
+			<ul class="myprofileSocials">
+				<li class="socialNetwork__item">
+					<span class="socialNetwork__link view_iconFacebook">
+						Facebook
+					</span>
+					<label class="myprofileSocials__linkLabel myprofileSocials__linkLabel-fb">
+						<input type="text">
+					</label>
+				</li>
+				<li class="socialNetwork__item">
+					<span class="socialNetwork__link view_iconvKontakte">
+						vKontakte
+					</span>
+					<label class="myprofileSocials__linkLabel myprofileSocials__linkLabel-vk">
+						<input type="text">
+					</label>
+				</li>
+				<li class="socialNetwork__item">
+					<span class="socialNetwork__link view_iconGoogle">
+						Google+
+					</span>
+					<label class="myprofileSocials__linkLabel myprofileSocials__linkLabel-google">
+						<input type="text">
+					</label>
+				</li>
+				<li class="socialNetwork__item">
+					<span class="socialNetwork__link view_iconTwitter">
+						Twitter
+					</span>
+					<label class="myprofileSocials__linkLabel myprofileSocials__linkLabel-twitter">
+						<input type="text">
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<hr class="view__dashed">
+	<br>
 	<label>
 		<input type="checkbox" checked="checked">
 		Получать ответы на комментарии по почте

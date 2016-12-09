@@ -71,14 +71,6 @@
 
         <div class="authorInfoDetails">
 
-            <ul class="authorSocials">
-                <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconFacebook"></a></li>
-                <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconVkontakte"></a></li>
-                <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconTwitter"></a></li>
-                <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconGoogle"></a></li>
-                <li class="authorSocials__item"><a href="#" class="authorSocials__link view_iconOdnoklassniki"></a></li>
-            </ul>
-
             <ul class="authorPopularity">
                 <li class="watchers">
                     <b>408 <span class="eye-icon"></span></b>
@@ -93,6 +85,31 @@
                     </b>
                 </li>
             </ul>
+
+            <ul class="authorSocialsLinks">
+					<li class="socialNetwork__item">
+						<a class="socialNetwork__link view_iconFacebook" href="#" title="">
+						</a>
+					</li>
+					<li class="socialNetwork__item">
+						<a class="socialNetwork__link view_iconvKontakte" href="#" title="">
+						</a>
+					</li>
+					<li class="socialNetwork__item">
+						<a class="socialNetwork__link view_iconGoogle" href="#" title="">
+						</a>
+					</li>
+					<li class="socialNetwork__item">
+						<a class="socialNetwork__link view_iconTwitter" href="#" title="">
+						</a>
+					</li>
+                    <li class="socialNetwork__item">
+                        <a class="socialNetwork__link view_iconOkRu" href="#" title="">
+                        </a>
+                    </li>
+				</ul>
+
+            
             
         </div>
 

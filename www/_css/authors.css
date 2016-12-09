@@ -88,24 +88,27 @@
 
 
 .authorInfoDetails {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 	position: absolute;
 	bottom: 46px;
 }
 @media screen and (max-width: 1023px) {
 	.authorInfoDetails {
-	    margin-left: 260px;
+	    margin-left: 255px;
 	    width: calc(100% - 253px);
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
 	.authorInfoDetails {
-		margin-left: 324px;
+		margin-left: 320px;
 		width: calc(100% - 318px);
 	}
 }
 @media screen and (min-width: 1280px) {
 	.authorInfoDetails {
-		margin-left: 316px;
+		margin-left: 305px;
 		width: calc(100% - 309px);
 	}
 }
@@ -164,9 +167,17 @@
 
 
 
+.authorSocialsLinks {
+	display: flex;
+}
+
+.authorSocialsLinks .authorSocialsLinks {
+	margin-bottom: 0;
+}
+
 
 .authorPopularity {
-	float: right;
+	display: flex;
 	/*margin: 0 0 3px;*/
 	/*padding-top: 5px;*/
 }

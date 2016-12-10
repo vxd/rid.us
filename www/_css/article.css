@@ -56,3 +56,23 @@
     border: 5px solid transparent;
     border-top: 5px solid #000;
 }
+
+.authorSocialsLinks {
+	display: flex;
+}
+
+.authorSocialsLinks .authorSocialsLinks {
+	margin-bottom: 0;
+}
+
+.author .authorSocialsLinks {
+	margin-top: 20px;
+}
+
+.author .socialNetwork__item {
+	margin-right: 5px;
+}
+
+.socialNetwork__item--hidden {
+	display: none;
+}

@@ -76,7 +76,39 @@
                         трудные вопросы» (2003) (в соавторстве с Ольгой Брилевой и Михаилом Логачевым), «О вещах простых и
                         ясных» (2011) (в соавторстве с Мариной Журинской), и «Как доказать, что Бог существует.
                         Краткое введение в Апологетику» (2012)</p>
+
+                    <ul class="authorSocialsLinks">
+                        <li class="socialNetwork__item">
+                            <a class="socialNetwork__link view_iconFacebook" href="#" title="">
+                            </a>
+                        </li>
+                        <!-- socialNetwork__item--hidden клас для прятанья  -->
+                        <li class="socialNetwork__item">
+                            <a class="socialNetwork__link view_iconvKontakte" href="#" title="">
+                            </a>
+                        </li>
+                        <li class="socialNetwork__item">
+                            <a class="socialNetwork__link view_iconGoogle" href="#" title="">
+                            </a>
+                        </li>
+                        <li class="socialNetwork__item">
+                            <a class="socialNetwork__link view_iconTwitter" href="#" title="">
+                            </a>
+                        </li>
+                        <li class="socialNetwork__item">
+                            <a class="socialNetwork__link view_iconOkRu" href="#" title="">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="author-web-site">
+                        <a href="http://google.com" target="_blank">Веб сайт</a>
+                    </div>
+                    
                     <a href="#">Все статьи автора</a>
+
+                     
+
                 </div>
                 <img class="author__photo" src="_images/author.jpg">
             </div>

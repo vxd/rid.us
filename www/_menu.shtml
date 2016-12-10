@@ -55,9 +55,18 @@
 			<a class="header__loginButton" href="#" title="">&nbsp;</a>
 		<!--#endif -->
 		<!--#if expr="$user = true" -->
+		<div class="user_wrapper">
 			<a class="header__userButton" href="#" title="">
 				<span class="user-name">Марина</span>
 			</a>
+			<ul class="user-elements">
+				<li class="user-element"><a href="">Предложить новость</a></li>
+				<li class="user-element"><a href="">Мой профиль</a></li>
+				<li class="user-element"><a href="">Мои статьи</a></li>
+				<li class="user-element"><a href="">Мои комментарии</a></li>
+				<li class="user-element"><a href="">Выйти</a></li>
+			</ul>
+		</div>
 			<a href="#" class="header__readLater">
 				<i class="icon"><!-- icon --></i>
 				<span class="number">7</span>

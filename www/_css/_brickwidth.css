@@ -302,3 +302,13 @@
 }
 
 
+.landing .brick.view_withTag .brick__image {
+	height: 149px;
+}
+
+.landing .brick.view_withTag .brick__label {
+	position: absolute;
+	top: 117px;
+	left: 15px;
+}
+

@@ -28,7 +28,6 @@ header {
 	min-width: 768px;
 	background: #fff;
 	border-bottom: 1px solid #eee;
-	overflow: hidden;
 }
 
 .floatingInfo__wrapper {
@@ -344,6 +343,22 @@ header {
 /*header .header__loading {
     display: block;
 }*/
+.header__loading__wrapper {
+	overflow: hidden;
+    position: relative;
+    height: 2px;
+    width: calc(100% + 40px);
+    top: -11px;
+    left: -40px;
+}
+
+@media screen and (min-width: 1280px) {
+	.header__loading__wrapper {
+		left: -17px;
+		width: calc(100% + 17px);
+	}
+}
+
 .header__loading {
     display: block;
     position: absolute;

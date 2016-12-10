@@ -45,8 +45,10 @@
                 <i class="corner"><!-- corner --></i>
             </a>
             <!--#include virtual="_popover-read-later.shtml"-->
-             <div class="header__loading">
-                <div class="header__progress js-article-loading"></div>
+             <div class="header__loading__wrapper">
+                <div class="header__loading">
+                    <div class="header__progress js-article-loading"></div>
+                </div>
             </div>
         </div>
     </section>

@@ -6,7 +6,7 @@
     <link href="_css/landing.css" rel="stylesheet" type="text/css">
 
 </head>
-<body class="page_block" itemscope itemtype="http://schema.org/WebPage">
+<body class="page_block landing" itemscope itemtype="http://schema.org/WebPage">
 
 <header itemscope itemtype="http://schema.org/WPHeader">
     <!--#include virtual="_menu.shtml?float=true"-->

@@ -22,6 +22,8 @@
 
 @import "_popup.css";
 
+@import "_newslist.css";
+
 @import "photo-story.css";
 
 @import "md-preloader.min.css";

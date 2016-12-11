@@ -74,7 +74,7 @@
 <div class="brick__image" style="background-image: url(http://molbiol.ru/forums/uploads/a003/b047/post-24502-1338479907.jpg)">
 <!--#endif -->
 <!--#if expr="$image = 2" -->
-<div class="brick__image" style="background-image: url(http://f1.s.qip.ru/jAMAwieF.jpg)">
+<div class="brick__image" style="background-image: url(http://molbiol.ru/forums/uploads/a003/b047/post-24502-1338479907.jpg)">
 <!--#endif -->
 <!--#if expr="$image = 3" -->
 <div class="brick__image" style="background-image: url(http://joinfo.ua/images/news/2013/03/130320_01.jpg&prefix=slider310&a=310&b=250)">

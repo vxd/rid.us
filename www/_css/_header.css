@@ -348,7 +348,8 @@ header {
 	.page_authors header .floatingPanel .paddings_side,
 	.page_news header .floatingPanel .paddings_side,
 	.page_search header .floatingPanel .paddings_side,
-	.page_signup header .floatingPanel .paddings_side {
+	.page_signup header .floatingPanel .paddings_side,
+	.page_section header .floatingPanel .paddings_side {
 		padding-left: 20px;
 		padding-right: 20px;
 

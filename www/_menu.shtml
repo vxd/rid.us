@@ -115,7 +115,7 @@
 				<li class="menu__item">
 					<a class="menu__link" href="#">Полезное</a>
 				</li>
-				<li class="menu__item hideOn_1024">
+				<li class="menu__item">
 					<a class="menu__link" href="#">Развлечения</a>
 				</li>
 				<li class="menu__item">

@@ -340,6 +340,21 @@ header {
 	}
 }
 
+@media screen and (min-width: 1040px) and (max-width: 1279px) {
+	.page_home header .floatingPanel .paddings_side,
+	.page_chapter header .floatingPanel .paddings_side,
+	.page_my-profile header .floatingPanel .paddings_side,
+	.page_block header .floatingPanel .paddings_side,
+	.page_authors header .floatingPanel .paddings_side,
+	.page_news header .floatingPanel .paddings_side,
+	.page_search header .floatingPanel .paddings_side,
+	.page_signup header .floatingPanel .paddings_side {
+		padding-left: 20px;
+		padding-right: 20px;
+
+	}
+}
+
 /*header .header__loading {
     display: block;
 }*/

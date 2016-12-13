@@ -1559,7 +1559,7 @@
 }
 .brick__article-preview {
 	display: flex;
-	height: 100%;
+	/*height: 100%;*/
 	box-sizing: border-box;
 	padding: 12px 12px 8px 12px;
 	border-bottom: 3px solid #e0e0e0;
@@ -1601,6 +1601,7 @@
 	justify-content: space-between;
 }
 .bricks_article-previews .brick {
+	display: flex;
 	height: auto;
 	margin-right: 0;
 }

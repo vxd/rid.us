@@ -1801,3 +1801,34 @@ $(function() {
         }));
     });
 });
+
+$(function() {
+    $(document).ready(function() {
+        var commentsElements  = $('.comments__answer');
+        var answerForms = $('.comments__list .comments__comment-wrapper');
+
+        commentsElements.on('click', function() {
+            var answerForm = $(this).closest('li').find('.comments__comment-wrapper');
+            
+            if (answerForm.length) {
+                answerForm.toggleClass('comments-flex');
+            }
+        });
+
+        answerForms.find('.comments__comment-button').on('click', function() {
+            $(this).closest('.comments__comment-wrapper').toggleClass('comments-flex');
+        })
+
+        initNiceSelect();
+
+        function initNiceSelect() {
+            $('.comments__select').niceSelect();
+
+            var liElements = $('.comments__body .nice-select li');
+            
+            liElements.on('click', function () {
+                $(this).closest('.nice-select').css('background-color', $(this).css('background-color'));
+            });
+        }
+    });
+});

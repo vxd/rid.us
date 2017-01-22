@@ -1,0 +1,5 @@
+<select name="select" class="comments__select">
+    <option value="new" class="comments__select-new" selected>НОВЫЙ</option> 
+    <option value="accept" class="comments__select-accepted">ОДОБРЕН</option>
+    <option value="discard" class="comments__select-discard">ЗАБАНЕН</option>
+</select>

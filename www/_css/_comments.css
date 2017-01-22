@@ -121,7 +121,7 @@
 }
 
 .comments__checkbox {
-    display: flex;
+    display: none;
     align-items: center;
     flex: 1;
 }
@@ -212,7 +212,9 @@
 
 
 
-
+.comments__comment-first .comments__checkbox {
+    display: flex;
+}
 
 
 

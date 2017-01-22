@@ -46,7 +46,7 @@
 		</div>
 		<!--#endif -->
 
-		<!--#include virtual="_comments-form.shtml?auth=$auth?single=1"-->
+		<!--#include virtual="_comments-form.shtml?auth=$auth&single=1"-->
 
 		<ul class="comments__list">
 			<li>

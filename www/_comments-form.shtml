@@ -17,9 +17,11 @@
 
 
 <div class="comments__comment-wrapper">
+    <!--#if expr="$auth = 0" -->
     <div class="comments-form">
         <textarea name="" id="" cols="30" rows="10" class="comments__textarea"></textarea>
         <button class="comments__comment-button">Комментировать</button>
     </div>
-    
+    <!--#endif -->
+
 </div>

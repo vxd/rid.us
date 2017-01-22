@@ -24,4 +24,19 @@
     </div>
     <!--#endif -->
 
+    <!--#if expr="$auth = 1" -->
+
+    <div class="comments__avatar">
+        <img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="avatar">
+    </div>
+
+    <div class="comments-form">
+        <textarea name="" id="" cols="30" rows="10" class="comments__textarea"></textarea>
+
+       
+
+        <button class="comments__comment-button">Комментировать</button>
+    </div>
+
+    <!--#endif -->
 </div>

@@ -1,4 +1,19 @@
+<!-- //// определяем переменные -->  
 
+<!--#set var="auth" value="" -->
+<!--#set var="single" value="" -->
+
+<!-- //// извлекаем из параметров урла --> 
+
+<!--#if expr="$QUERY_STRING = /auth=([a-zA-Z0-9]+)/" -->
+<!--#set var="auth" value="$1" -->
+<!--#endif -->
+<!--#if expr="$QUERY_STRING = /single=([a-zA-Z0-9]+)/" -->
+<!--#set var="single" value="$1" -->
+<!--#endif -->
+
+
+<!-- //// конец --> 
 
 
 <div class="comments__comment-wrapper">

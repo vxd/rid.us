@@ -33,15 +33,16 @@
     <div class="comments-form">
         <textarea name="" id="" cols="30" rows="10" class="comments__textarea"></textarea>
 
-        <!--#if expr="$single = 1" -->
-        <div class="comments__checkbox">
-            <input type="checkbox" id="edition" name="cc">
-            <label for="edition">От редакции</label>
-        </div>
-        <!--#endif -->
+       
 
         <button class="comments__comment-button">Комментировать</button>
     </div>
 
     <!--#endif -->
+     <!--#if expr="$single = 1" -->
+        <div class="comments__checkbox">
+            <input type="checkbox" id="edition" name="cc">
+            <label for="edition">От редакции</label>
+        </div>
+        <!--#endif -->
 </div>

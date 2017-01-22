@@ -39,10 +39,5 @@
     </div>
 
     <!--#endif -->
-     <!--#if expr="$single = 1" -->
-        <div class="comments__checkbox">
-            <input type="checkbox" id="edition" name="cc">
-            <label for="edition">От редакции</label>
-        </div>
-        <!--#endif -->
+    
 </div>

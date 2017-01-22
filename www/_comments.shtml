@@ -49,6 +49,241 @@
 
 		<!--#include virtual="_comments-form.shtml?auth=$auth&single=1"-->
 
-		
+		<ul class="comments__list">
+			<li>
+				<div class="comments__avatar">
+					<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="avatar">
+				</div>
+				<div class="comments__body">
+					<header>
+						<span class="comments__name">Strelok</span>
+						<span class="comments__time">сегодня, 18:35</span>
+					</header>
+					<!--#if expr="$auth = 1" -->
+					<!--#include virtual="_comments-select.shtml"-->
+					<!--#endif -->
+					<p>Curabitur dolor velit, consectetur quis nisi a, accumsan cursus massa. Fusce sem lacus, dignissim pretium enim a, mollis
+						malesuada metus.</p>
+					<footer>
+						<span class="comments__answer">
+							Ответить
+						</span>
+						<div class="comments__button">
+							<span class="comments__number">3</span>
+							<a href="#" class="comments__link">+</a>
+							<a href="#" class="comments__link">−</a>
+						</div>
+					</footer>
+				</div>
+				<!--#include virtual="_comments-form.shtml?auth=$auth"-->
+			</li>
+			<li>
+				<div class="comments__avatar">
+					<img src="http://www.ridus.ru/images/avatars/143296/large_4826eae277.jpg" alt="avatar">
+				</div>
+				<div class="comments__body">
+					<header>
+						<span class="comments__name">LeoMacho</span>
+						<span class="comments__time">сегодня, 17:40</span>
+					</header>
+					<!--#if expr="$auth = 1" -->
+					<!--#include virtual="_comments-select.shtml"-->
+					<!--#endif -->
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum finibus purus, eu malesuada turpis pulvinar eu.
+						In vulputate lectus vitae turpis ornare ultricies. Quisque ac metus at leo rhoncus porttitor.</p>
+					<footer>
+						<span class="comments__answer">
+							Ответить
+						</span>
+						<div class="comments__button">
+							<span class="comments__number">3</span>
+							<a href="#" class="comments__link">+</a>
+							<a href="#" class="comments__link">−</a>
+						</div>
+					</footer>
+				</div>
+				<!--#include virtual="_comments-form.shtml?auth=$auth"-->
+			</li>
+			<li class="comments__second-level">
+
+				<ul class="comments__list">
+						<li>
+							<div class="comments__avatar">
+								<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="avatar">
+							</div>
+							<div class="comments__body">
+								<header>
+									<span class="comments__name">Strelok</span>
+									<span class="comments__time">сегодня, 18:35</span>
+								</header>
+								<!--#if expr="$auth = 1" -->
+								<!--#include virtual="_comments-select.shtml"-->
+								<!--#endif -->
+								<p>Curabitur dolor velit, consectetur quis nisi a, accumsan cursus massa. Fusce sem lacus, dignissim pretium enim a, mollis
+									malesuada metus.</p>
+								<footer>
+									<span class="comments__answer">
+										Ответить
+									</span>
+									<div class="comments__button">
+										<span class="comments__number">3</span>
+										<a href="#" class="comments__link">+</a>
+										<a href="#" class="comments__link">−</a>
+									</div>
+								</footer>
+							</div>
+							<!--#include virtual="_comments-form.shtml?auth=$auth"-->
+						</li>
+						<li>
+							<div class="comments__avatar">
+								<img src="http://www.ridus.ru/images/avatars/143296/large_4826eae277.jpg" alt="avatar">
+							</div>
+							<div class="comments__body">
+								<header>
+									<span class="comments__name">LeoMacho</span>
+									<span class="comments__time">сегодня, 17:40</span>
+								</header>
+								<!--#if expr="$auth = 1" -->
+								<!--#include virtual="_comments-select.shtml"-->
+								<!--#endif -->
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum finibus purus, eu malesuada turpis pulvinar eu.
+									In vulputate lectus vitae turpis ornare ultricies. Quisque ac metus at leo rhoncus porttitor.</p>
+								<footer>
+									<span class="comments__answer">
+										Ответить
+									</span>
+									<div class="comments__button">
+										<span class="comments__number">3</span>
+										<a href="#" class="comments__link">+</a>
+										<a href="#" class="comments__link">−</a>
+									</div>
+								</footer>
+							</div>
+							<!--#include virtual="_comments-form.shtml?auth=$auth"-->
+						</li>
+						<li class="comments__second-level">
+							<ul class="comments__list">
+								<li>
+									<div class="comments__avatar">
+										<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="avatar">
+									</div>
+									<div class="comments__body">
+										<header>
+											<span class="comments__name">Strelok</span>
+											<span class="comments__time">сегодня, 18:35</span>
+										</header>
+										<!--#if expr="$auth = 1" -->
+										<!--#include virtual="_comments-select.shtml"-->
+										<!--#endif -->
+										<p>Curabitur dolor velit, consectetur quis nisi a, accumsan cursus massa. Fusce sem lacus, dignissim pretium enim a, mollis
+											malesuada metus.</p>
+										<footer>
+											<span class="comments__answer">
+												Ответить
+											</span>
+											<div class="comments__button">
+												<span class="comments__number">3</span>
+												<a href="#" class="comments__link">+</a>
+												<a href="#" class="comments__link">−</a>
+											</div>
+										</footer>
+									</div>
+									<!--#include virtual="_comments-form.shtml?auth=$auth"-->
+								</li>
+								<li class="comments__second-level">
+									<ul class="comments__list">
+										<li>
+											<div class="comments__avatar">
+												<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="avatar">
+											</div>
+											<div class="comments__body">
+												<header>
+													<span class="comments__name">Strelok</span>
+													<span class="comments__time">сегодня, 18:35</span>
+												</header>
+												<!--#if expr="$auth = 1" -->
+												<!--#include virtual="_comments-select.shtml"-->
+												<!--#endif -->
+												<p>Curabitur dolor velit, consectetur quis nisi a, accumsan cursus massa. Fusce sem lacus, dignissim pretium enim a, mollis
+													malesuada metus.</p>
+												<footer>
+													<span class="comments__answer">
+														Ответить
+													</span>
+													<div class="comments__button">
+														<span class="comments__number">3</span>
+														<a href="#" class="comments__link">+</a>
+														<a href="#" class="comments__link">−</a>
+													</div>
+												</footer>
+											</div>
+											<!--#include virtual="_comments-form.shtml?auth=$auth"-->
+										</li>
+										<li class="comments__second-level">
+											<ul class="comments__list">
+												<li>
+													<div class="comments__avatar">
+														<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="avatar">
+													</div>
+													<div class="comments__body">
+														<header>
+															<span class="comments__name">Strelok</span>
+															<span class="comments__time">сегодня, 18:35</span>
+														</header>
+														<!--#if expr="$auth = 1" -->
+														<!--#include virtual="_comments-select.shtml"-->
+														<!--#endif -->
+														<p>Curabitur dolor velit, consectetur quis nisi a, accumsan cursus massa. Fusce sem lacus, dignissim pretium enim a, mollis
+															malesuada metus.</p>
+														<footer>
+															<span class="comments__answer">
+																Ответить
+															</span>
+															<div class="comments__button">
+																<span class="comments__number">3</span>
+																<a href="#" class="comments__link">+</a>
+																<a href="#" class="comments__link">−</a>
+															</div>
+														</footer>
+													</div>
+													<!--#include virtual="_comments-form.shtml?auth=$auth"-->
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+				</ul>
+			</li>
+			
+			<li>
+				<div class="comments__avatar">
+					<img src="http://www.ridus.ru/images/avatars/141718/large_b7147dcd85.jpg" alt="avatar">
+				</div>
+				<div class="comments__body">
+					<header>
+						<span class="comments__name">Strelok</span>
+						<span class="comments__time">сегодня, 18:35</span>
+					</header>
+					<!--#if expr="$auth = 1" -->
+					<!--#include virtual="_comments-select.shtml"-->
+					<!--#endif -->
+					<p>Curabitur dolor velit, consectetur quis nisi a, accumsan cursus massa. Fusce sem lacus, dignissim pretium enim a, mollis
+						malesuada metus.</p>
+					<footer>
+						<span class="comments__answer">
+							Ответить
+						</span>
+						<div class="comments__button">
+							<span class="comments__number">3</span>
+							<a href="#" class="comments__link">+</a>
+							<a href="#" class="comments__link">−</a>
+						</div>
+					</footer>
+				</div>
+				<!--#include virtual="_comments-form.shtml?auth=$auth"-->
+			</li>
+		</ul>
 	</div>
 </div>

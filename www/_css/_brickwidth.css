@@ -58,7 +58,52 @@
 .brick .brick__content {
 	max-height: 145px;
 	overflow: hidden;
+	position: relative;
 }
+
+.brick .brick__content:after {
+	content: "";
+    position: absolute;
+    top: 0;
+	bottom: -10px;
+    left: -15px;
+    right: -15px;
+    box-shadow: inset white 0 -15px 10px;
+}
+
+.view_floatText.brick .brick__content:after,
+.brick__article-preview .brick__content:after,
+.view_opinion .brick__content:after{
+	display: none;
+}
+
+.contentBackground_deepblue .brick .brick__content:after {
+	box-shadow: inset #677a87 0 -15px 10px;
+}
+
+.contentBackground_red .brick .brick__content:after {
+	box-shadow: inset #7a1800 0 -15px 10px;
+}
+
+.contentBackground_gunmetal .brick .brick__content:after {
+	box-shadow: inset #2b3336 0 -15px 10px;
+}
+
+.view_blue.brick .brick__content:after {
+	box-shadow: inset #cee0ed 0 -15px 10px;
+}
+
+.contentBackground_dark .brick .brick__content:after {
+	box-shadow: inset #252525 0 -15px 10px;
+}
+
+.contentBackground_blue .brick .brick__content:after {
+	box-shadow: inset #cee0ed 0 -15px 10px;
+}
+
+
+
+
 @media screen and (max-width: 1023px) {
 	.brick {
 		width: 47%;

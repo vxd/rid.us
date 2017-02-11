@@ -28,6 +28,15 @@
 	<!--#endif -->
 		<span class="clickable"></span>
 	</a>
+	<!--#if expr="$data = 4" -->
+		<a href="#2" class="brick__label view_partner" title="">СМИ2</a>
+	<!--#endif -->
+	<!--#if expr="$data = 5" -->
+		<a href="#3" class="brick__label view_partner" title="">Лентаинформ</a>
+	<!--#endif -->
+	<!--#if expr="$data = 6" -->
+		<a href="#1" class="brick__label view_partner" title="">24СМИ</a>
+	<!--#endif -->
 </div>
 
 <div class="brick__content">

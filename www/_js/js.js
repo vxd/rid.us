@@ -672,7 +672,8 @@ $(function() {
     // тэги на _block-selector
     // ======================================
     $(".blockSelector__link").on('click', function(){
-        $(this).parent().toggleClass("state_selected");
+        $(".blockSelector__link").parent().removeClass('state_selected');
+        $(this).parent().addClass("state_selected");
         return false;
     });
 
@@ -1832,3 +1833,99 @@ $(function() {
         }
     });
 });
+
+$(function() {
+    $(document).ready(function() {
+        var isKartinaDnuy = $('.kartina-dnua').length > 0;
+        if (!isKartinaDnuy) { return; }
+        var currentPoint = document.body.clientWidth;
+
+        var firstBlock = $('.kartina-first');
+        var secondBlock = $('.kartina-second');
+        var thirdBlock = $('.kartina-third');
+
+        var fn = $.debounce(100, false, function() {
+            if (document.body.clientWidth >= 1280 && currentPoint < 1280) {
+                rendreForDesktop();
+                currentPoint = document.body.clientWidth;
+            } else if ((document.body.clientWidth >= 1024 && document.body.clientWidth < 1280) && (currentPoint >= 1280 || currentPoint < 1024)) {
+                renderForTablet();
+                currentPoint = document.body.clientWidth;
+            } else if (document.body.clientWidth < 1024 && currentPoint >= 1024) {
+                renderForMobile();
+                currentPoint = document.body.clientWidth;
+            }
+        });
+
+        $(window).resize(fn);
+
+        function renderForTablet() {
+            var firstBlockItems = firstBlock.find('.brick:not(.not-search)');
+            var countItemsToSecondBlock = firstBlockItems.length - 2;
+
+            secondBlock.find('.brick').first().after(firstBlockItems.slice(0, countItemsToSecondBlock).detach());
+
+            alignItemInSecondBlock(9, 3, secondBlock.find('.brick'), thirdBlock.find('.brick'));
+
+            setBlockToIndex(secondBlock.find('.view_opinion'), secondBlock.find('.brick'), 2);
+            setBlockToIndex(thirdBlock.find('.view_banner'), thirdBlock.find('.brick'), 5);
+        }
+
+        function rendreForDesktop() {
+            var firstBlockItems = firstBlock.find('.brick:not(.not-search)');
+            var countItemsToFirstBlock = 2 - firstBlock.length;
+
+            firstBlock.append(secondBlock.find('.brick:not(.not-search)').slice(0, countItemsToFirstBlock).detach());
+
+            alignItemInSecondBlock(12, 4, secondBlock.find('.brick'), thirdBlock.find('.brick'));
+
+            setBlockToIndex(secondBlock.find('.view_opinion'), secondBlock.find('.brick'), 3);
+            setBlockToIndex(thirdBlock.find('.view_banner'), thirdBlock.find('.brick'), 7);
+        }
+
+        function renderForMobile() {
+            var firstBlockItems = firstBlock.find('.brick:not(.not-search)');
+            if (firstBlockItems.length !== 2) {
+                var countItemsToFirstBlock  = firstBlockItems.length - 2;
+                secondBlock.find('.brick').first().after(firstBlockItems.slice(0, countItemsToFirstBlock).detach());
+            }
+
+            alignItemInSecondBlock(6, 2, secondBlock.find('.brick'), thirdBlock.find('.brick'));
+
+            setBlockToIndex(secondBlock.find('.view_opinion'), secondBlock.find('.brick'), 1);
+            setBlockToIndex(thirdBlock.find('.view_banner'), thirdBlock.find('.brick'), 3);
+        }
+
+        if (document.body.clientWidth < 1280 && document.body.clientWidth >= 1024) {
+            renderForTablet();
+        } else if (document.body.clientWidth < 1024) {
+            renderForMobile();
+        }
+
+        function alignItemInSecondBlock(totalCount, itemsInRow, secondBlockItems, thirdBlockItems) {
+            if (secondBlockItems.length > totalCount) {
+                 var itemsToMoveForNextBlock = secondBlockItems.length - totalCount;
+
+                var itemsToMove = secondBlockItems.slice(-itemsToMoveForNextBlock);
+                thirdBlock.prepend(itemsToMove.detach());
+
+            } else if (secondBlockItems.length < totalCount)  {
+                var itemsToMoveFromNextBlock = totalCount - secondBlockItems.length;
+                secondBlockItems.parent().append(thirdBlockItems.filter(':not(.not-search)').slice(0, itemsToMoveFromNextBlock).detach());
+            }
+        }
+
+        function setBlockToIndex(block, items, index) {
+            var blockIndex = items.index(block);
+            if (blockIndex !== index) {
+                if (blockIndex > index) {
+                    items.eq(index).before(block.detach());
+                } else {
+                    items.eq(index).after(block.detach());
+                }
+            }
+        }
+        
+    });
+});
+    

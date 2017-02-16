@@ -1,7 +1,7 @@
 .blockSelector {
 	border-top: 3px solid #d4d4d4;
     margin-bottom: 30px;
-    width: 100%;
+    /*width: 100%;*/
 }
 .blockSelector tr {	
 }
@@ -27,12 +27,12 @@
 	color: #a3a3a3;
     display: inline-block;
 	width: 100%;
-	padding: 9px 0 8px;
+	padding: 9px 10px 8px;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border-bottom: 1px solid #d4d4d4;
-	border-right: 1px solid #d4d4d4;
+	/*border-right: 1px solid #d4d4d4;*/
 }
 .blockSelector__link:hover {
     color: #c64a1b;

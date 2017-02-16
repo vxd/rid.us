@@ -1,0 +1,203 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#" prefix="ya: https://webmaster.yandex.ru/vocabularies/">
+<head>
+
+    <!--#include virtual="_head.shtml"-->
+    <link href="_css/block.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="page_block kartina-dnua" itemscope itemtype="http://schema.org/WebPage">
+
+<header itemscope itemtype="http://schema.org/WPHeader">
+    <!--#include virtual="_menu.shtml?float=true"-->
+    <a href="" class="banner_top wrapper" title="">
+        <img src="_images/header_banner.jpg" alt="" />
+    </a>
+    <section class="globalInfo wrapper paddings_side clearfix">
+        <!--#include virtual="_dayinfo.shtml"-->
+        <!--#include virtual="_yellowbutton.shtml?text=1"-->
+        <!--#include virtual="_socials-header.shtml"-->
+    </section>
+</header>
+
+<section class="wrapper contentBackground_white paddings_side padding_top clearfix">
+
+    <h1 class="categoryFilter__positionContainer clearfix">
+    	<span class="categoryFilter__widthAdjuster">Картина дня</span>
+    	<!--#include virtual="_category-filter.shtml"-->
+    </h1>
+
+	<!--#include virtual="_block-selector.shtml"-->
+
+    <div class="bricks__wrapper kartina-first clearfix">
+
+        <div class="brick view_2x view_withTranslation hideOn_768 not-search">
+
+        	<iframe width="100%" height="190" src="http://www.ustream.tv/embed/10203453?html5ui=1&autoplay=true&volume=0&wmode=direct&adfree=1" allowfullscreen webkitallowfullscreen scrolling="no" frameborder="0" style="border: 0 none transparent; margin-bottom: 14px;"></iframe>
+
+			<div class="brick view_grey not_for_hover hideOn_1280 not-search">
+				<!--#include virtual="bricks/main-for-today.shtml"-->
+			</div>
+
+	        <div class="brick view_yellow not-search">
+				<a href="#" class="brick__header view_arrowed" title="">Бездна новостей</a>
+				<!--#include virtual="bricks/newslist.shtml?banner=none"-->
+	        </div>
+
+        </div>
+
+        <!--#include virtual="slider.shtml"-->
+
+
+
+        <div class="brick view_withTranslation hideOn_1024 hideOn_1280 not-search">
+
+        	<iframe width="100%" height="190" src="http://www.ustream.tv/embed/10203453?html5ui=1&autoplay=true&volume=0&wmode=direct&adfree=1" allowfullscreen webkitallowfullscreen scrolling="no" frameborder="0" style="border: 0 none transparent; margin-bottom: 22px;"></iframe>
+
+			<div class="brick view_grey not_for_hover hideOn_1280 not-search">
+				<!--#include virtual="bricks/main-for-today.shtml"-->
+			</div>
+
+        </div>
+
+        <div class="brick view_yellow hideOn_1024 hideOn_1280 not-search">
+			<a href="#" class="brick__header view_arrowed" title="">Бездна новостей</a>
+			<!--#include virtual="bricks/newslist.shtml?banner=none"-->
+        </div>
+
+
+
+		<div class="brick view_grey not_for_hover hideOn_1024 hideOn_768 not-search">
+			<!--#include virtual="bricks/main-for-today.shtml"-->
+		</div>
+
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=1&data=3&label=21&count1=120&count2=35&count3=3812"-->
+        </div>
+
+        <div class="brick">
+            <!--#include virtual="bricks/news-simple.shtml?image=3&data=3&label=22&count1=120&count2=35&count3=3812"-->
+        </div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=31&count1=120&count2=35&count3=3812"-->
+		</div>
+
+
+
+
+    </div>
+
+    <!--#include virtual="bricks/videosection.shtml"-->
+
+    <div class="bricks__wrapper kartina-second clearfix">
+
+		<div class="brick view_banner not-search">
+			<!--#include virtual="bricks/banner-mts.shtml"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+
+        <div class="brick view_yellow view_opinion not-search">
+            <!--#include virtual="bricks/opinion.shtml"-->          
+        </div>
+        
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+	</div>
+
+</section>
+
+<!--#include virtual="bricks/photosection.shtml"-->
+
+<section class="contentBackground_white paddings_side padding_top wrapper clearfix">
+    <div class="bricks__wrapper kartina-third clearfix">
+
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick view_banner not-search">
+			<!--#include virtual="bricks/banner-mts.shtml"-->
+		</div>
+		
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=1&data=1&label=11&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=2&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+		<div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+        <div class="brick">
+			<!--#include virtual="bricks/news-simple.shtml?image=3&data=2&label=12&count1=120&count2=35&count3=3812"-->
+		</div>
+	</div>
+</section>
+
+<section class="pageBottom contentBackground_white padding_top wrapper clearfix">
+	<!--#include virtual="_more-button.shtml"-->
+	<hr>
+</section>
+
+<section class="bottomDatapicker contentBackground_white padding_top padding_bottom wrapper clearfix">
+	<!--#include virtual="_datapicker-bottom.shtml"-->
+</section>
+
+<a href="#" class="banner_footer">
+	<img src="_images/footer_banner.jpg" alt="">
+</a>
+
+<!--#include virtual="_footer.shtml"-->
+
+</body>
+</html>

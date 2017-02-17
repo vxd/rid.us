@@ -672,8 +672,8 @@ $(function() {
     // тэги на _block-selector
     // ======================================
     $(".blockSelector__link").on('click', function(){
-        $(".blockSelector__link").parent().removeClass('state_selected');
-        $(this).parent().addClass("state_selected");
+        $(".blockSelector__link").removeClass('state_selected');
+        $(this).addClass("state_selected");
         return false;
     });
 
@@ -1861,9 +1861,11 @@ $(function() {
 
         function renderForTablet() {
             var firstBlockItems = firstBlock.find('.brick:not(.not-search)');
-            var countItemsToSecondBlock = firstBlockItems.length - 2;
 
-            secondBlock.find('.brick').first().after(firstBlockItems.slice(0, countItemsToSecondBlock).detach());
+            if (firstBlockItems.length !== 2) {
+                var countItemsToSecondBlock = firstBlockItems.length - 2;
+                secondBlock.find('.brick').first().after(firstBlockItems.slice(-countItemsToSecondBlock).detach());
+            }
 
             alignItemInSecondBlock(9, 3, secondBlock.find('.brick'), thirdBlock.find('.brick'));
 
@@ -1887,7 +1889,7 @@ $(function() {
             var firstBlockItems = firstBlock.find('.brick:not(.not-search)');
             if (firstBlockItems.length !== 2) {
                 var countItemsToFirstBlock  = firstBlockItems.length - 2;
-                secondBlock.find('.brick').first().after(firstBlockItems.slice(0, countItemsToFirstBlock).detach());
+                secondBlock.find('.brick').first().after(firstBlockItems.slice(-countItemsToFirstBlock).detach());
             }
 
             alignItemInSecondBlock(6, 2, secondBlock.find('.brick'), thirdBlock.find('.brick'));

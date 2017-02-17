@@ -1,40 +1,5 @@
-<table class="blockSelector">
-	<tr>
-		<td class="blockSelector_cell">
-			<a href="#" class="blockSelector__link" title="">Война на Украине</a>
-		</td>
-		<td class="blockSelector_cell state_selected">
-			<a href="#" class="blockSelector__link" title="">Операция в Сирии</a>
-		</td>
-		<td class="blockSelector_cell">
-			<a href="#" class="blockSelector__link" title="">Выборы президента в России</a>
-		</td>
-		<!--<td class="blockSelector_cell">
-			<a href="#" class="blockSelector__link" title="">Искусство</a>
-		</td>
-		<td class="blockSelector_cell state_selected">
-			<a href="#" class="blockSelector__link" title="">религия</a>
-		</td>
-		<td class="blockSelector_cell">
-			<a href="#" class="blockSelector__link" title="">кино</a>
-		</td>-->
-	</tr>
-	<!--<tr>
-		<td class="blockSelector_cell state_selected">
-			<a href="#" class="blockSelector__link" title="">экология</a>
-		</td>
-		<td class="blockSelector_cell state_selected">
-			<a href="#" class="blockSelector__link" title="">Молодежь</a>
-		</td>
-		<td class="blockSelector_cell">
-			<a href="#" class="blockSelector__link" title="">биографии</a>
-		</td>
-		<td class="blockSelector_cell state_selected">
-			<a href="#" class="blockSelector__link" title="">наука и техника</a>
-		</td>
-		<td class="blockSelector_cell">
-		</td>
-		<td class="blockSelector_cell">
-		</td>
-	</tr>-->
-</table>
+<div class="blockSelector">
+	<a href="#" class="blockSelector__link" title="">Война на Украине</a>
+	<a href="#" class="blockSelector__link" title="">Операция в Сирии</a>
+	<a href="#" class="blockSelector__link" title="">Выборы президента в России</a>
+</div>

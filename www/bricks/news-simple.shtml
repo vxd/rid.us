@@ -71,13 +71,19 @@
 <!--#endif -->
 
 <!--#if expr="$image = 1" -->
-<div class="brick__image" style="background-image: url(http://molbiol.ru/forums/uploads/a003/b047/post-24502-1338479907.jpg)">
+<div class="brick__image" style="background-image: url(http://dev.ridus.ru/images/2017/1/25/531730/preview_beca090840.jpg)">
 <!--#endif -->
 <!--#if expr="$image = 2" -->
-<div class="brick__image" style="background-image: url(http://molbiol.ru/forums/uploads/a003/b047/post-24502-1338479907.jpg)">
+<div class="brick__image" style="background-image: url(http://dev.ridus.ru/images/2017/1/25/531731/preview_62035471bc.jpg)">
 <!--#endif -->
 <!--#if expr="$image = 3" -->
-<div class="brick__image" style="background-image: url(http://joinfo.ua/images/news/2013/03/130320_01.jpg&prefix=slider310&a=310&b=250)">
+<div class="brick__image" style="background-image: url(http://dev.ridus.ru/images/2017/1/25/531732/preview_d2992afbbe.jpg)">
+<!--#endif -->
+<!--#if expr="$image = 4" -->
+<div class="brick__image" style="background-image: url(http://dev.ridus.ru/images/2017/1/24/531733/preview_f756df7384.jpg)">
+<!--#endif -->
+<!--#if expr="$image = 5" -->
+<div class="brick__image" style="background-image: url(http://dev.ridus.ru/images/2017/1/24/531735/preview_50ff0f9f84.jpg)">
 <!--#endif -->
 
 <!--#if expr="$important = 'true'" -->

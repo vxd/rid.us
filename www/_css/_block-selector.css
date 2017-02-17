@@ -1,5 +1,5 @@
 .blockSelector {
-	border-top: 3px solid #d4d4d4;
+	/*border-top: 3px solid #d4d4d4;*/
     margin-bottom: 30px;
     /*width: 100%;*/
 }
@@ -15,8 +15,9 @@
 /*.blockSelector tr:last-child .blockSelector_cell:last-child {
 	border-right: 1px solid #ffd051;
 }*/
-.blockSelector_cell.state_selected {
+.blockSelector__link.state_selected {
 	background: #ffd051;
+	color: #000;
 }
 
 .blockSelector__link {
@@ -26,12 +27,13 @@
 	font-size: 16px;
 	color: #a3a3a3;
     display: inline-block;
-	width: 100%;
 	padding: 9px 10px 8px;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	border-bottom: 1px solid #d4d4d4;
+	margin-right: 20px;
+	border: 1px solid #d4d4d4;
+	/*border-bottom: 1px solid #d4d4d4;*/
 	/*border-right: 1px solid #d4d4d4;*/
 }
 .blockSelector__link:hover {

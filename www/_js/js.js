@@ -1836,98 +1836,117 @@ $(function() {
 
 $(function() {
     $(document).ready(function() {
-        var isKartinaDnuy = $('.kartina-dnua').length > 0;
-        if (!isKartinaDnuy) { return; }
+        var mainBlock = $('.brick-play').length > 0;
+        var isKD = $('.kartina-dnua').length > 0;
+        var isInteresnoe = $('.interesnoe').length > 0;
+        if (!mainBlock) { return; }
         var currentPoint = document.body.clientWidth;
 
-        var firstBlock = $('.kartina-first');
-        var secondBlock = $('.kartina-second');
-        var thirdBlock = $('.kartina-third');
+        var firstBlock = $('.first-main-block');
+        var secondBlock = $('.second-main-block');
+        var thirdBlock = $('.third-main-block');
+        var specificItems = $('[data-specific-size]');
 
         var fn = $.debounce(100, false, function() {
             if (document.body.clientWidth >= 1280 && currentPoint < 1280) {
-                rendreForDesktop();
+                doAlign();
                 currentPoint = document.body.clientWidth;
             } else if ((document.body.clientWidth >= 1024 && document.body.clientWidth < 1280) && (currentPoint >= 1280 || currentPoint < 1024)) {
-                renderForTablet();
+                doAlign('tablet');
                 currentPoint = document.body.clientWidth;
             } else if (document.body.clientWidth < 1024 && currentPoint >= 1024) {
-                renderForMobile();
+                doAlign('mobile');
                 currentPoint = document.body.clientWidth;
             }
         });
 
         $(window).resize(fn);
 
-        function renderForTablet() {
-            var firstBlockItems = firstBlock.find('.brick:not(.not-search)');
-
-            if (firstBlockItems.length !== 2) {
-                var countItemsToSecondBlock = firstBlockItems.length - 2;
-                secondBlock.find('.brick').first().after(firstBlockItems.slice(-countItemsToSecondBlock).detach());
-            }
-
-            alignItemInSecondBlock(9, 3, secondBlock.find('.brick'), thirdBlock.find('.brick'));
-
-            setBlockToIndex(secondBlock.find('.view_opinion'), secondBlock.find('.brick'), 2);
-            setBlockToIndex(thirdBlock.find('.view_banner'), thirdBlock.find('.brick'), 5);
-        }
-
-        function rendreForDesktop() {
-            var firstBlockItems = firstBlock.find('.brick:not(.not-search)');
-            var countItemsToFirstBlock = 2 - firstBlock.length;
-
-            firstBlock.append(secondBlock.find('.brick:not(.not-search)').slice(0, countItemsToFirstBlock).detach());
-
-            alignItemInSecondBlock(12, 4, secondBlock.find('.brick'), thirdBlock.find('.brick'));
-
-            setBlockToIndex(secondBlock.find('.view_opinion'), secondBlock.find('.brick'), 3);
-            setBlockToIndex(thirdBlock.find('.view_banner'), thirdBlock.find('.brick'), 7);
-        }
-
-        function renderForMobile() {
-            var firstBlockItems = firstBlock.find('.brick:not(.not-search)');
-            if (firstBlockItems.length !== 2) {
-                var countItemsToFirstBlock  = firstBlockItems.length - 2;
-                secondBlock.find('.brick').first().after(firstBlockItems.slice(-countItemsToFirstBlock).detach());
-            }
-
-            alignItemInSecondBlock(6, 2, secondBlock.find('.brick'), thirdBlock.find('.brick'));
-
-            setBlockToIndex(secondBlock.find('.view_opinion'), secondBlock.find('.brick'), 1);
-            setBlockToIndex(thirdBlock.find('.view_banner'), thirdBlock.find('.brick'), 3);
-        }
-
-        if (document.body.clientWidth < 1280 && document.body.clientWidth >= 1024) {
-            renderForTablet();
+         if (document.body.clientWidth < 1280 && document.body.clientWidth >= 1024) {
+            doAlign('tablet')
         } else if (document.body.clientWidth < 1024) {
-            renderForMobile();
+            doAlign('mobile');
         }
 
-        function alignItemInSecondBlock(totalCount, itemsInRow, secondBlockItems, thirdBlockItems) {
-            if (secondBlockItems.length > totalCount) {
-                 var itemsToMoveForNextBlock = secondBlockItems.length - totalCount;
+        function doAlign(size) {
+            switch (size) {
+                case 'mobile':
+                    if (isInteresnoe) {
+                        alignItemsInBlocks(3, 6);
+                    } else {
+                        alignItemsInBlocks(4, 6);
+                    }
+                    break;
+                case 'tablet':
+                    if (isKD) {
+                        alignItemsInBlocks(3, 9);
+                    } else if (isInteresnoe) {
+                        alignItemsInBlocks(5, 9);
+                    } else {
+                        alignItemsInBlocks(6, 9);
+                    }
+                    break;
+                default:
+                    if (isKD) {
+                        alignItemsInBlocks(5, 12);    
+                    } else if (isInteresnoe) {
+                        alignItemsInBlocks(7, 12);
+                    } else {
+                        alignItemsInBlocks(8, 12);
+                    }
+            }
+            setSpecificPositions(size);
+        }
 
-                var itemsToMove = secondBlockItems.slice(-itemsToMoveForNextBlock);
-                thirdBlock.prepend(itemsToMove.detach());
+        function alignItemsInBlocks(firstBlockCount, secondBlockCount) {
+            var firstBlockItems = firstBlock.find('>.brick').filter(function(i, item) {
+                return $(item).css('display') !== 'none';
+            });
+            if (firstBlockItems.length > firstBlockCount) {
+                var countToRemove = firstBlockItems.length - firstBlockCount;
+                secondBlock.find('>.brick').first().before(firstBlockItems.filter(':not(.not-search)').slice(-countToRemove).detach());
+            } else if (firstBlockItems.length < firstBlockCount) {
+                var countToAdd = firstBlockCount - firstBlockItems.length;
+                firstBlock.append(secondBlock.find('>.brick').filter('.brick:not(.not-search)').slice(0, countToAdd).detach());
+            }
 
-            } else if (secondBlockItems.length < totalCount)  {
-                var itemsToMoveFromNextBlock = totalCount - secondBlockItems.length;
-                secondBlockItems.parent().append(thirdBlockItems.filter(':not(.not-search)').slice(0, itemsToMoveFromNextBlock).detach());
+            var secondBlockItems = secondBlock.find('>.brick');
+            if (secondBlockItems.length > secondBlockCount) {
+                var countToRemove = secondBlockItems.length - secondBlockCount;
+                thirdBlock.find('>.brick').first().before(secondBlockItems.filter('.brick:not(.not-search)').slice(-countToRemove).detach());
+            } else if (secondBlockItems.length < secondBlockCount) {
+                var countToAdd = secondBlockCount - secondBlockItems.length;
+                secondBlock.append(thirdBlock.find('>.brick').filter('.brick:not(.not-search)').slice(0, countToAdd));
             }
         }
 
-        function setBlockToIndex(block, items, index) {
-            var blockIndex = items.index(block);
-            if (blockIndex !== index) {
-                if (blockIndex > index) {
-                    items.eq(index).before(block.detach());
-                } else {
-                    items.eq(index).after(block.detach());
+        function setSpecificPositions(size) {
+            specificItems.each(function (index, item) {
+                var $item = $(item);
+                var data = $item.data().specificSize.split(',');
+                var position;
+                 switch (size) {
+                    case 'mobile': 
+                        position = +data[0] - 1;
+                        break;
+                    case 'tablet': 
+                        position = +data[1] - 1;
+                        break;
+                    default:
+                        position = +data[2] - 1;
                 }
-            }
+                var items = $item.parent().find('>.brick');
+                var currentIndex = items.index(item);
+                if (currentIndex === position) {
+                    return;
+                }
+                if (currentIndex > position) {
+                    items.eq(position).before($item.detach());
+                } else {
+                    items.eq(position).after($item.detach());
+                }
+            });
         }
-        
     });
 });
-    
+

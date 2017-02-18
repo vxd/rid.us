@@ -6,7 +6,7 @@
     <link href="_css/block.css" rel="stylesheet" type="text/css">
 
 </head>
-<body class="page_block kartina-dnua" itemscope itemtype="http://schema.org/WebPage">
+<body class="page_block kartina-dnua brick-play" itemscope itemtype="http://schema.org/WebPage">
 
 <header itemscope itemtype="http://schema.org/WPHeader">
     <!--#include virtual="_menu.shtml?float=true"-->
@@ -29,7 +29,7 @@
 
 	<!--#include virtual="_block-selector.shtml"-->
 
-    <div class="bricks__wrapper kartina-first clearfix">
+    <div class="bricks__wrapper first-main-block clearfix">
 
         <div class="brick view_2x view_withTranslation hideOn_768 not-search">
 
@@ -47,8 +47,6 @@
         </div>
 
         <!--#include virtual="slider.shtml"-->
-
-
 
         <div class="brick view_withTranslation hideOn_1024 hideOn_1280 not-search">
 
@@ -89,9 +87,9 @@
 
     <!--#include virtual="bricks/videosection.shtml"-->
 
-    <div class="bricks__wrapper kartina-second clearfix">
+    <div class="bricks__wrapper second-main-block clearfix">
 
-		<div class="brick view_banner not-search">
+		<div class="brick view_banner not-search" data-specific-size="1,1,1">
 			<!--#include virtual="bricks/banner-mts.shtml"-->
 		</div>
 		<div class="brick">
@@ -101,7 +99,7 @@
 			<!--#include virtual="bricks/news-simple.shtml?image=5&data=2&label=12&count1=120&count2=35&count3=3812"-->
 		</div>
 
-        <div class="brick view_yellow view_opinion not-search">
+        <div class="brick view_yellow view_opinion not-search" data-specific-size="2,3,4">
             <!--#include virtual="bricks/opinion.shtml"-->          
         </div>
         
@@ -138,7 +136,7 @@
 <!--#include virtual="bricks/photosection.shtml"-->
 
 <section class="contentBackground_white paddings_side padding_top wrapper clearfix">
-    <div class="bricks__wrapper kartina-third clearfix">
+    <div class="bricks__wrapper third-main-block clearfix">
 
 		<div class="brick">
 			<!--#include virtual="bricks/news-simple.shtml?image=4&data=2&label=12&count1=120&count2=35&count3=3812"-->
@@ -162,7 +160,7 @@
 		<div class="brick">
 			<!--#include virtual="bricks/news-simple.shtml?image=5&data=2&label=12&count1=120&count2=35&count3=3812"-->
 		</div>
-		<div class="brick view_banner not-search">
+		<div class="brick view_banner not-search" data-specific-size="4,6,8">
 			<!--#include virtual="bricks/banner-mts.shtml"-->
 		</div>
 		

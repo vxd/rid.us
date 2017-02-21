@@ -1805,6 +1805,8 @@ $(function() {
 
 $(function() {
     $(document).ready(function() {
+	//не выполняем код ниже, если нет коментов на странице    
+	if($('.comments').length < 1) return false;    
         var commentsElements  = $('.comments__answer');
         var answerForms = $('.comments__list .comments__comment-wrapper');
 
